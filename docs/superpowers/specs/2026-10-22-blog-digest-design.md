@@ -42,7 +42,7 @@ blog-digest/
 About 25 engineering and AI blogs with feed URLs (e.g. Google, Meta, Microsoft, Amazon, Netflix, Uber, Stripe, Cloudflare, GitHub, OpenAI, Anthropic). Each entry: `company`, `feed_url`. Adding a source is a one-line edit. Companies without a working feed are omitted.
 
 ### feeds.py
-`fetch_posts(source) -> list[Post]`. Uses `feedparser` with a request timeout. `Post` fields: `url`, `company`, `title`, `published` (ISO date), `excerpt`. A feed that fails to load or parse is logged and yields no posts; it never raises past this boundary.
+`fetch_posts(source) -> list[Post]`. Uses `feedparser` with a request timeout. `Post` fields: `url`, `company`, `title`, `published` (ISO date), `excerpt`. A feed that fails to load or parse raises `FeedError`; `run.py` catches it per feed, logs it, and continues with the other feeds.
 
 ### store.py
 Loads `site/data/posts.json` (empty list if missing), merges new posts keyed by `url`, keeps existing summaries untouched, and prunes posts older than 90 days. Writes sorted newest first.
