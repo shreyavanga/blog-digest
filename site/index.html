@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Blog Digest</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Digest">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blog Digest</h1>
+    <div class="filters">
+      <select id="company" aria-label="Company"><option value="">All companies</option></select>
+      <select id="tag" aria-label="Topic"><option value="">All topics</option></select>
+      <label><input type="checkbox" id="unread"> Unread only</label>
+    </div>
+  </header>
+  <main id="feed" aria-live="polite"></main>
+  <script src="app.js"></script>
+</body>
+</html>
