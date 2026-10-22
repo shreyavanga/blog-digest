@@ -1,0 +1,25 @@
+# Blog feeds to follow. Add a source with one line; remove dead ones after `python -m digest.run --check`.
+- {company: Google Developers, feed_url: "https://developers.googleblog.com/feeds/posts/default"}
+- {company: Google Research, feed_url: "https://research.google/blog/rss/"}
+- {company: Google DeepMind, feed_url: "https://deepmind.google/blog/rss.xml"}
+- {company: Meta Engineering, feed_url: "https://engineering.fb.com/feed/"}
+- {company: Microsoft Engineering, feed_url: "https://devblogs.microsoft.com/engineering-at-microsoft/feed/"}
+- {company: AWS, feed_url: "https://aws.amazon.com/blogs/aws/feed/"}
+- {company: Netflix, feed_url: "https://netflixtechblog.com/feed"}
+- {company: Uber, feed_url: "https://www.uber.com/blog/engineering/rss/"}
+- {company: Stripe, feed_url: "https://stripe.com/blog/feed.rss"}
+- {company: Cloudflare, feed_url: "https://blog.cloudflare.com/rss/"}
+- {company: GitHub, feed_url: "https://github.blog/engineering/feed/"}
+- {company: OpenAI, feed_url: "https://openai.com/news/rss.xml"}
+- {company: Hugging Face, feed_url: "https://huggingface.co/blog/feed.xml"}
+- {company: NVIDIA, feed_url: "https://developer.nvidia.com/blog/feed"}
+- {company: Airbnb, feed_url: "https://medium.com/feed/airbnb-engineering"}
+- {company: Pinterest, feed_url: "https://medium.com/feed/pinterest-engineering"}
+- {company: Spotify, feed_url: "https://engineering.atspotify.com/feed/"}
+- {company: Dropbox, feed_url: "https://dropbox.tech/feed"}
+- {company: Slack, feed_url: "https://slack.engineering/feed/"}
+- {company: Shopify, feed_url: "https://shopify.engineering/blog.atom"}
+- {company: Discord, feed_url: "https://discord.com/blog/rss.xml"}
+- {company: Figma, feed_url: "https://www.figma.com/blog/feed/atom.xml"}
+- {company: Vercel, feed_url: "https://vercel.com/atom"}
+- {company: Databricks, feed_url: "https://www.databricks.com/feed"}
