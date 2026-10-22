@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 from digest.models import Post
 from digest.summarize import summarize
 from tests.fakes import FakeClient
@@ -25,7 +27,10 @@ def test_prompt_contains_title_and_excerpt():
 
 def test_fenced_json_is_accepted():
     client = FakeClient('```json\n{"summary": "S", "tags": []}\n```')
-    assert summarize(make_post(), client).summary == "S"
+    result = summarize(make_post(), client)
+    assert result.summary == "S"
+    assert result.tags == []
+    assert result.summarized is True
 
 
 def test_bad_json_falls_back_to_excerpt():
@@ -38,9 +43,50 @@ def test_bad_json_falls_back_to_excerpt():
 def test_empty_summary_falls_back():
     result = summarize(make_post(), FakeClient('{"summary": "  ", "tags": []}'))
     assert result.summarized is False
+    assert result.summary == "E" * 300
+    assert result.tags == []
 
 
 def test_api_error_falls_back():
     result = summarize(make_post(), FakeClient(error=RuntimeError("boom")))
     assert result.summary == "E" * 300
     assert result.summarized is False
+
+
+GOOD = '{"summary": "S", "tags": ["ai"]}'
+
+
+def test_thinking_block_first_then_text():
+    blocks = [SimpleNamespace(type="thinking", thinking="hmm"),
+              SimpleNamespace(type="text", text=GOOD)]
+    result = summarize(make_post(), FakeClient(blocks=blocks))
+    assert result.summarized is True and result.summary == "S"
+
+
+def test_no_text_block_falls_back():
+    client = FakeClient(blocks=[SimpleNamespace(type="thinking", thinking="hmm")])
+    result = summarize(make_post(), client)
+    assert result.summarized is False and result.summary == "E" * 300
+
+
+def test_max_tokens_stop_reason_falls_back():
+    result = summarize(make_post(), FakeClient(GOOD, stop_reason="max_tokens"))
+    assert result.summarized is False and result.tags == []
+
+
+def test_refusal_stop_reason_falls_back():
+    assert summarize(make_post(), FakeClient(GOOD, stop_reason="refusal")).summarized is False
+
+
+def test_string_tags_become_empty_list():
+    result = summarize(make_post(), FakeClient('{"summary": "S", "tags": "ai, infra"}'))
+    assert result.summarized is True and result.tags == []
+
+
+def test_request_parameters():
+    client = FakeClient(GOOD)
+    summarize(make_post(), client)
+    call = client.calls[0]
+    assert call["thinking"] == {"type": "disabled"}
+    assert call["max_tokens"] == 1024
+    assert call["model"] == "claude-haiku-5-5"

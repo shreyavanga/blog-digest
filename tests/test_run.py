@@ -2,7 +2,9 @@ from datetime import date
 
 import httpx
 
-from digest.run import run
+import pytest
+
+from digest.run import Report, exit_code, load_sources, run
 from digest.store import load_posts
 from tests.fakes import FakeClient
 from tests.test_feeds import RSS
@@ -64,3 +66,27 @@ def test_all_feeds_failing_reports_zero_ok(tmp_path):
     failing = httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(500)))
     report = run(SOURCES, tmp_path / "posts.json", FakeClient(GOOD_JSON), failing, TODAY)
     assert report.feeds_ok == 0 and report.new == 0
+
+
+def test_exit_code():
+    assert exit_code(Report(feeds_ok=0)) == 1
+    assert exit_code(Report(feeds_ok=1, summarized=0, failed=3)) == 1
+    assert exit_code(Report(feeds_ok=1, summarized=2, failed=1)) == 0
+    assert exit_code(Report(feeds_ok=1)) == 0
+
+
+def test_load_sources_valid(tmp_path):
+    f = tmp_path / "s.yaml"
+    f.write_text("- company: A\n  feed_url: https://a.test/f\n", encoding="utf-8")
+    assert load_sources(f) == [{"company": "A", "feed_url": "https://a.test/f"}]
+
+
+@pytest.mark.parametrize("content", [
+    "", "{}", "[]", "- just a string", "- company: A", "- feed_url: https://a.test",
+    "- company: ''\n  feed_url: https://a.test", "- company: A\n  feed_url: ' '",
+])
+def test_load_sources_invalid_exits(tmp_path, content):
+    f = tmp_path / "s.yaml"
+    f.write_text(content, encoding="utf-8")
+    with pytest.raises(SystemExit):
+        load_sources(f)

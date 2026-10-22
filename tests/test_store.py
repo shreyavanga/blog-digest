@@ -37,3 +37,12 @@ def test_save_sorts_newest_first_and_roundtrips(tmp_path):
     loaded = load_posts(path)
     assert [p.url for p in loaded] == ["b", "a"]
     assert loaded[0].tags == ["ai"] and loaded[0].summarized is True
+
+
+def test_save_is_atomic_and_leaves_no_temp_file(tmp_path):
+    import json
+    path = tmp_path / "data" / "posts.json"
+    save_posts(path, [post("a"), post("b")])
+    save_posts(path, [post("a")])
+    assert len(json.loads(path.read_text(encoding="utf-8"))) == 1
+    assert [p.name for p in path.parent.iterdir()] == ["posts.json"]

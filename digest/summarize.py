@@ -30,7 +30,10 @@ def _parse(text: str) -> tuple[str, list[str]]:
     summary = str(data["summary"]).strip()
     if not summary:
         raise ValueError("empty summary")
-    tags = [str(t).strip().lower() for t in data.get("tags", []) if str(t).strip()][:3]
+    raw_tags = data.get("tags", [])
+    if not isinstance(raw_tags, list):
+        raw_tags = []
+    tags = [str(t).strip().lower() for t in raw_tags if str(t).strip()][:3]
     return summary, tags
 
 
@@ -39,10 +42,16 @@ def summarize(post: Post, client, model: str = MODEL) -> Post:
     try:
         response = client.messages.create(
             model=model,
-            max_tokens=300,
+            max_tokens=1024,
+            thinking={"type": "disabled"},
             messages=[{"role": "user", "content": prompt}],
         )
-        summary, tags = _parse(response.content[0].text)
+        if response.stop_reason in ("max_tokens", "refusal"):
+            raise ValueError(f"unusable response: stop_reason={response.stop_reason}")
+        text = next((b.text for b in response.content if b.type == "text"), None)
+        if text is None:
+            raise ValueError("no text block in response")
+        summary, tags = _parse(text)
     except Exception as exc:  # any failure degrades to the excerpt and is retried next run
         log.warning("summary failed for %s: %s", post.url, exc)
         return replace(post, summary=post.excerpt[:FALLBACK_LEN], tags=[], summarized=False)
