@@ -1,9 +1,18 @@
 const READ_KEY = "blog-digest-read";
 const SUMMARY_MAX = 300;
 
+function loadRead() {
+  try {
+    const data = JSON.parse(localStorage.getItem(READ_KEY) || "[]");
+    return new Set(Array.isArray(data) ? data : []);
+  } catch (err) {
+    return new Set();
+  }
+}
+
 const state = {
   posts: [],
-  read: new Set(JSON.parse(localStorage.getItem(READ_KEY) || "[]")),
+  read: loadRead(),
 };
 
 const $ = (id) => document.getElementById(id);
@@ -17,11 +26,16 @@ function el(tag, className, text) {
 
 function markRead(url) {
   state.read.add(url);
-  localStorage.setItem(READ_KEY, JSON.stringify([...state.read]));
+  try {
+    localStorage.setItem(READ_KEY, JSON.stringify([...state.read]));
+  } catch (err) {
+    // storage unavailable or full; the card is still marked read for this session
+  }
 }
 
 function formatDay(iso) {
   const date = new Date(iso + "T00:00:00");
+  if (typeof iso !== "string" || isNaN(date.getTime())) return "Unknown date";
   return date.toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
 }
 
@@ -42,10 +56,12 @@ function card(post) {
     post.tags.forEach((t) => tags.append(el("span", "tag", t)));
     a.append(tags);
   }
-  a.addEventListener("click", () => {
+  const onOpen = () => {
     markRead(post.url);
     a.classList.add("read");
-  });
+  };
+  a.addEventListener("click", onOpen);
+  a.addEventListener("auxclick", onOpen);
   return a;
 }
 
@@ -84,7 +100,10 @@ function fillSelect(select, values) {
 async function load() {
   try {
     const response = await fetch("data/posts.json", { cache: "no-cache" });
-    state.posts = await response.json();
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error("unexpected data");
+    state.posts = data;
   } catch (err) {
     $("feed").append(el("p", "empty", "Could not load posts."));
     return;
@@ -98,5 +117,5 @@ async function load() {
 load();
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
+  navigator.serviceWorker.register("sw.js").catch(() => {});
 }
