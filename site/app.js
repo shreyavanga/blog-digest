@@ -65,22 +65,49 @@ function card(post) {
   return a;
 }
 
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+// Returns YYYY-MM-DD (local date) for `days` before `now`, or null for "all".
+function cutoffDate(days, now = new Date()) {
+  if (days === "all") return null;
+  const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - Number(days));
+  return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+}
+
+function inRange(post, cutoff) {
+  if (cutoff === null) return true;
+  const p = post && post.published;
+  return typeof p === "string" && /^\d{4}-\d{2}-\d{2}$/.test(p) && p >= cutoff;
+}
+
+function rangePosts() {
+  const cutoff = cutoffDate($("range").value);
+  return state.posts.filter((p) => inRange(p, cutoff));
+}
+
 function visiblePosts() {
   const company = $("company").value;
   const tag = $("tag").value;
   const unreadOnly = $("unread").checked;
-  return state.posts.filter((p) =>
+  return rangePosts().filter((p) =>
     (!company || p.company === company) &&
     (!tag || (p.tags || []).includes(tag)) &&
     (!unreadOnly || !state.read.has(p.url)));
 }
+
+const RANGE_WORDING = { "7": "in the last 7 days", "30": "in the last 30 days" };
 
 function render() {
   const feed = $("feed");
   feed.replaceChildren();
   const posts = visiblePosts();
   if (!posts.length) {
-    feed.append(el("p", "empty", "No posts to show."));
+    const range = $("range").value;
+    const wording = RANGE_WORDING[range];
+    feed.append(el("p", "empty", wording ? "No posts " + wording + "." : "No posts to show."));
+    if (range !== "all") feed.append(el("p", "empty", "Try a longer time range."));
     return;
   }
   let day = null;
@@ -97,6 +124,20 @@ function fillSelect(select, values) {
   [...new Set(values)].sort().forEach((v) => select.append(new Option(v, v)));
 }
 
+// Rebuild company/topic dropdowns from posts in the current range,
+// keeping the current selection when still available.
+function rebuildFilters() {
+  const posts = rangePosts();
+  [["company", posts.map((p) => p.company)],
+   ["tag", posts.flatMap((p) => p.tags || [])]].forEach(([id, values]) => {
+    const select = $(id);
+    const previous = select.value;
+    select.options.length = 1;
+    fillSelect(select, values);
+    select.value = [...select.options].some((o) => o.value === previous) ? previous : "";
+  });
+}
+
 async function load() {
   try {
     const response = await fetch("data/posts.json", { cache: "no-cache" });
@@ -108,12 +149,15 @@ async function load() {
     $("feed").append(el("p", "empty", "Could not load posts."));
     return;
   }
-  fillSelect($("company"), state.posts.map((p) => p.company));
-  fillSelect($("tag"), state.posts.flatMap((p) => p.tags || []));
+  rebuildFilters();
   render();
 }
 
 ["company", "tag", "unread"].forEach((id) => $(id).addEventListener("change", render));
+$("range").addEventListener("change", () => {
+  rebuildFilters();
+  render();
+});
 load();
 
 if ("serviceWorker" in navigator) {
