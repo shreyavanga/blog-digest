@@ -10,7 +10,7 @@ import httpx
 import yaml
 
 from .feeds import FeedError, fetch_posts
-from .store import load_posts, merge, prune, save_posts
+from .store import MAX_PER_COMPANY, cap_per_company, load_posts, merge, prune, save_posts
 from .summarize import summarize
 
 log = logging.getLogger("digest")
@@ -47,8 +47,9 @@ def run(sources, store_path, client, http_client, today, max_summaries=MAX_SUMMA
             report.feed_errors.append(str(exc))
 
     merged = merge(existing, fetched)
-    report.new = len(merged) - len(existing)
-    posts = prune(merged, today)
+    posts = cap_per_company(prune(merged, today), MAX_PER_COMPANY)
+    known = {p.url for p in existing}
+    report.new = sum(1 for p in posts if p.url not in known)
 
     pending = sorted((p for p in posts if not p.summarized),
                      key=lambda p: (p.published, p.url), reverse=True)[:max_summaries]

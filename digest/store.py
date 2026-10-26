@@ -8,6 +8,7 @@ from pathlib import Path
 from .models import Post
 
 RETENTION_DAYS = 90
+MAX_PER_COMPANY = 20
 
 
 def load_posts(path: Path) -> list[Post]:
@@ -30,6 +31,17 @@ def merge(existing: list[Post], new: list[Post]) -> list[Post]:
 def prune(posts: list[Post], today: date) -> list[Post]:
     cutoff = (today - timedelta(days=RETENTION_DAYS)).isoformat()
     return [p for p in posts if p.published >= cutoff]
+
+
+def cap_per_company(posts: list[Post], limit: int = MAX_PER_COMPANY) -> list[Post]:
+    by_company: dict[str, list[Post]] = {}
+    for p in posts:
+        by_company.setdefault(p.company, []).append(p)
+    kept = []
+    for group in by_company.values():
+        group.sort(key=lambda p: (p.published, p.url), reverse=True)
+        kept += group[:limit]
+    return kept
 
 
 def save_posts(path: Path, posts: list[Post]) -> None:

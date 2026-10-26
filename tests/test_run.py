@@ -90,3 +90,26 @@ def test_load_sources_invalid_exits(tmp_path, content):
     f.write_text(content, encoding="utf-8")
     with pytest.raises(SystemExit):
         load_sources(f)
+
+
+def many_items_http(n):
+    items = "".join(
+        f"<item><title>P{i}</title><link>https://acme.test/p{i}</link>"
+        f"<pubDate>{'%02d' % (i + 1)} Oct 2026 10:00:00 GMT</pubDate>"
+        f"<description>d{i}</description></item>" for i in range(n))
+    body = f'<?xml version="1.0"?><rss version="2.0"><channel><title>E</title>{items}</channel></rss>'.encode()
+    return httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200, content=body)))
+
+
+def test_per_company_cap_limits_store_and_summaries(tmp_path, monkeypatch):
+    monkeypatch.setattr("digest.run.MAX_PER_COMPANY", 5)
+    client = FakeClient(GOOD_JSON)
+    path = tmp_path / "posts.json"
+    src = [{"company": "Acme", "feed_url": "https://acme.test/feed"}]
+    first = run(src, path, client, many_items_http(9), TODAY)
+    stored = load_posts(path)
+    assert len(stored) == 5 and first.new == 5
+    assert {p.url for p in stored} == {f"https://acme.test/p{i}" for i in range(4, 9)}
+    assert len(client.calls) == 5 and first.summarized == 5
+    second = run(src, path, client, many_items_http(9), TODAY)
+    assert second.new == 0 and len(client.calls) == 5

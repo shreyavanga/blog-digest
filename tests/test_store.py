@@ -1,7 +1,7 @@
 from datetime import date
 
 from digest.models import Post
-from digest.store import load_posts, merge, prune, save_posts
+from digest.store import MAX_PER_COMPANY, cap_per_company, load_posts, merge, prune, save_posts
 
 
 def post(url, published="2026-10-20", **kw):
@@ -46,3 +46,32 @@ def test_save_is_atomic_and_leaves_no_temp_file(tmp_path):
     save_posts(path, [post("a")])
     assert len(json.loads(path.read_text(encoding="utf-8"))) == 1
     assert [p.name for p in path.parent.iterdir()] == ["posts.json"]
+
+
+def cpost(url, company, published):
+    return Post(url=url, company=company, title="t", published=published, excerpt="e")
+
+
+def test_cap_default_is_20():
+    assert MAX_PER_COMPANY == 20
+
+
+def test_cap_keeps_newest_per_company_independently():
+    posts = [cpost(f"a{i}", "A", f"2026-10-{i:02d}") for i in range(1, 6)]
+    posts += [cpost("b1", "B", "2026-01-01"), cpost("b2", "B", "2026-01-02")]
+    kept = cap_per_company(posts, limit=3)
+    assert sorted(p.url for p in kept) == ["a3", "a4", "a5", "b1", "b2"]
+
+
+def test_cap_ties_broken_by_url_descending():
+    posts = [cpost(u, "A", "2026-10-01") for u in ("a", "c", "b", "d")]
+    assert sorted(p.url for p in cap_per_company(posts, limit=2)) == ["c", "d"]
+    assert sorted(p.url for p in cap_per_company(list(reversed(posts)), limit=2)) == ["c", "d"]
+
+
+def test_cap_drops_existing_post_outside_newest_n():
+    old = cpost("old", "A", "2026-09-01")
+    new = [cpost(f"n{i}", "A", f"2026-10-{i:02d}") for i in range(1, 4)]
+    kept = cap_per_company(merge([old], new), limit=3)
+    assert "old" not in {p.url for p in kept}
+    assert len(kept) == 3
