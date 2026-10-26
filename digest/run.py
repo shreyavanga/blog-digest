@@ -21,6 +21,7 @@ STORE_PATH = ROOT / "site" / "data" / "posts.json"
 MAX_SUMMARIES = 50
 HTTP_TIMEOUT = 15.0
 USER_AGENT = "blog-digest/1.0 (personal feed reader)"
+ACCEPT = "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
 
 
 @dataclass
@@ -96,7 +97,7 @@ def main(argv=None) -> int:
 
     sources = load_sources(SOURCES_PATH)
     today = date.today()
-    http_client = httpx.Client(timeout=HTTP_TIMEOUT, headers={"User-Agent": USER_AGENT})
+    http_client = httpx.Client(timeout=HTTP_TIMEOUT, headers={"User-Agent": USER_AGENT, "Accept": ACCEPT})
 
     if args.check:
         ok = 0
