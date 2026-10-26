@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES_PATH = ROOT / "sources.yaml"
 STORE_PATH = ROOT / "site" / "data" / "posts.json"
 MAX_SUMMARIES = 50
-HTTP_TIMEOUT = 15.0
+HTTP_TIMEOUT = 30.0
 USER_AGENT = "blog-digest/1.0 (personal feed reader)"
 ACCEPT = "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5"
 

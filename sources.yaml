@@ -6,7 +6,6 @@
 - {company: Microsoft Engineering, feed_url: "https://devblogs.microsoft.com/engineering-at-microsoft/feed/"}
 - {company: AWS, feed_url: "https://aws.amazon.com/blogs/aws/feed/"}
 - {company: Netflix, feed_url: "https://netflixtechblog.com/feed"}
-- {company: Uber, feed_url: "https://www.uber.com/blog/engineering/rss/"}
 - {company: Stripe, feed_url: "https://stripe.com/blog/feed.rss"}
 - {company: Cloudflare, feed_url: "https://blog.cloudflare.com/rss/"}
 - {company: GitHub, feed_url: "https://github.blog/engineering/feed/"}
