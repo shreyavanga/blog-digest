@@ -1,3 +1,4 @@
+import logging
 from types import SimpleNamespace
 
 from digest.models import Post
@@ -90,3 +91,21 @@ def test_request_parameters():
     assert call["thinking"] == {"type": "disabled"}
     assert call["max_tokens"] == 1024
     assert call["model"] == "claude-haiku-5-5"
+
+
+def test_prompt_has_teaser_and_always_json_instruction():
+    client = FakeClient(GOOD)
+    summarize(make_post(), client)
+    content = client.calls[0]["messages"][0]["content"]
+    assert "may be only a short teaser" in content
+    assert "ALWAYS reply with the JSON object only" in content
+
+
+def test_prose_reply_logs_start_of_reply_and_falls_back(caplog):
+    prose = "I need more text\nto write a summary. " + "x" * 400
+    with caplog.at_level(logging.WARNING, logger="digest.summarize"):
+        result = summarize(make_post(), FakeClient(prose))
+    assert result.summarized is False and result.summary == "E" * 300
+    assert "I need more text to write a summary." in caplog.text
+    assert "x" * 200 not in caplog.text
+    assert "EEEE" not in caplog.text
