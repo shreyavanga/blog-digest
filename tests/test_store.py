@@ -75,3 +75,13 @@ def test_cap_drops_existing_post_outside_newest_n():
     kept = cap_per_company(merge([old], new), limit=3)
     assert "old" not in {p.url for p in kept}
     assert len(kept) == 3
+
+
+def test_record_without_summary_version_loads(tmp_path):
+    import json
+    path = tmp_path / "posts.json"
+    path.write_text(json.dumps([{
+        "url": "u", "company": "Acme", "title": "T", "published": "2026-10-20",
+        "excerpt": "e", "summary": "S", "tags": [], "summarized": True}]), encoding="utf-8")
+    loaded = load_posts(path)
+    assert loaded[0].summary_version == 0 and loaded[0].summarized is True

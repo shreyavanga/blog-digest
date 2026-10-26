@@ -11,7 +11,7 @@ import yaml
 
 from .feeds import FeedError, fetch_posts
 from .store import MAX_PER_COMPANY, cap_per_company, load_posts, merge, prune, save_posts
-from .summarize import summarize
+from .summarize import SUMMARY_VERSION, summarize
 
 log = logging.getLogger("digest")
 
@@ -51,15 +51,17 @@ def run(sources, store_path, client, http_client, today, max_summaries=MAX_SUMMA
     known = {p.url for p in existing}
     report.new = sum(1 for p in posts if p.url not in known)
 
-    pending = sorted((p for p in posts if not p.summarized),
+    pending = sorted((p for p in posts if not p.summarized or p.summary_version < SUMMARY_VERSION),
                      key=lambda p: (p.published, p.url), reverse=True)[:max_summaries]
     updated = {}
     for post in pending:
         result = summarize(post, client)
-        updated[post.url] = result
         if result.summarized:
+            updated[post.url] = result
             report.summarized += 1
         else:
+            if not post.summarized:  # never replace a good old summary with an excerpt
+                updated[post.url] = result
             report.failed += 1
     posts = [updated.get(p.url, p) for p in posts]
 

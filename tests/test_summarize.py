@@ -109,3 +109,20 @@ def test_prose_reply_logs_start_of_reply_and_falls_back(caplog):
     assert "I need more text to write a summary." in caplog.text
     assert "x" * 200 not in caplog.text
     assert "EEEE" not in caplog.text
+
+
+def test_success_sets_summary_version_and_failure_does_not():
+    from digest.summarize import SUMMARY_VERSION
+    assert summarize(make_post(), FakeClient(GOOD)).summary_version == SUMMARY_VERSION
+    assert summarize(make_post(), FakeClient("nope")).summary_version == 0
+
+
+def test_prompt_asks_for_plain_language():
+    client = FakeClient(GOOD)
+    summarize(make_post(), client)
+    content = client.calls[0]["messages"][0]["content"]
+    assert "everyday words" in content
+    assert "at most 2 short sentences" in content
+    assert "explain it in a few plain words" in content
+    assert "Reply with ONLY the JSON object" in content
+    assert "<article>" in content

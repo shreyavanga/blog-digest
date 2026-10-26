@@ -9,10 +9,18 @@ log = logging.getLogger(__name__)
 MODEL = "claude-haiku-5-5"
 FALLBACK_LEN = 300
 
-PROMPT = """You summarize engineering blog posts for a busy reader.
+SUMMARY_VERSION = 2
 
-Write a 2-3 sentence summary of the post below and 1-3 short lowercase topic tags.
-Reply with ONLY a JSON object: {{"summary": "...", "tags": ["...", "..."]}}
+PROMPT = """You summarize engineering blog posts for a busy non-specialist reading on a phone.
+
+Write a summary of the post below and 1-3 tags.
+Summary rules:
+- Use everyday words, in at most 2 short sentences (about 40 words total).
+- Say concretely what happened or what is new. Only if the text supports it, add why it matters.
+- Avoid jargon and marketing words. If a technical term is unavoidable, explain it in a few plain words.
+- Do not invent facts.
+Tags: 1-3 short, lowercase topics in plain words (for example "cloud costs", not "finops").
+Reply with ONLY the JSON object: {{"summary": "...", "tags": ["...", "..."]}}
 The article text may be only a short teaser. In that case base the summary on the title and the
 teaser, say less rather than inventing details, and never ask for more text.
 ALWAYS reply with the JSON object only, even when the text is short.
@@ -62,4 +70,4 @@ def summarize(post: Post, client, model: str = MODEL) -> Post:
     except Exception as exc:  # any failure degrades to the excerpt and is retried next run
         log.warning("summary failed for %s: %s", post.url, exc)
         return replace(post, summary=post.excerpt[:FALLBACK_LEN], tags=[], summarized=False)
-    return replace(post, summary=summary, tags=tags, summarized=True)
+    return replace(post, summary=summary, tags=tags, summarized=True, summary_version=SUMMARY_VERSION)

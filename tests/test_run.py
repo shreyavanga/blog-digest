@@ -113,3 +113,66 @@ def test_per_company_cap_limits_store_and_summaries(tmp_path, monkeypatch):
     assert len(client.calls) == 5 and first.summarized == 5
     second = run(src, path, client, many_items_http(9), TODAY)
     assert second.new == 0 and len(client.calls) == 5
+
+
+def seed(tmp_path, posts):
+    from dataclasses import asdict
+    import json
+    (tmp_path / "posts.json").write_text(json.dumps([asdict(p) for p in posts]), encoding="utf-8")
+
+
+def old_post(url, published, version=1):
+    from digest.models import Post
+    return Post(url=url, company="Acme", title="T", published=published, excerpt="e",
+                summary="old summary", tags=["x"], summarized=True, summary_version=version)
+
+
+def one_src_http(urls_dates):
+    items = "".join(
+        f"<item><title>T</title><link>{u}</link><pubDate>{d} Oct 2026 10:00:00 GMT</pubDate>"
+        f"<description>d</description></item>" for u, d in urls_dates)
+    body = f'<?xml version="1.0"?><rss version="2.0"><channel><title>E</title>{items}</channel></rss>'.encode()
+    return httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200, content=body)))
+
+
+SRC = [{"company": "Acme", "feed_url": "https://acme.test/feed"}]
+NO_FEED = httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(500)))
+
+
+def test_old_version_post_is_resummarized(tmp_path):
+    from digest.summarize import SUMMARY_VERSION
+    seed(tmp_path, [old_post("https://acme.test/p1", "2026-10-20")])
+    report = run(SRC, tmp_path / "posts.json", FakeClient(GOOD_JSON), NO_FEED, TODAY)
+    assert (report.summarized, report.failed) == (1, 0)
+    p = load_posts(tmp_path / "posts.json")[0]
+    assert p.summary == "A summary." and p.summary_version == SUMMARY_VERSION
+
+
+def test_current_version_post_is_not_resent(tmp_path):
+    from digest.summarize import SUMMARY_VERSION
+    seed(tmp_path, [old_post("https://acme.test/p1", "2026-10-20", version=SUMMARY_VERSION)])
+    client = FakeClient(GOOD_JSON)
+    report = run(SRC, tmp_path / "posts.json", client, NO_FEED, TODAY)
+    assert client.calls == [] and report.summarized == 0
+
+
+def test_failed_resummary_keeps_original(tmp_path):
+    seed(tmp_path, [old_post("https://acme.test/p1", "2026-10-20")])
+    report = run(SRC, tmp_path / "posts.json", FakeClient("not json"), NO_FEED, TODAY)
+    assert (report.summarized, report.failed) == (0, 1)
+    p = load_posts(tmp_path / "posts.json")[0]
+    assert p.summary == "old summary" and p.summarized is True
+    assert p.summary_version == 1 and p.tags == ["x"]
+
+
+def test_cap_applies_across_new_and_old_newest_first(tmp_path):
+    seed(tmp_path, [old_post("https://acme.test/old1", "2026-10-10"),
+                    old_post("https://acme.test/old2", "2026-10-15")])
+    http = one_src_http([("https://acme.test/new", "20")])
+    client = FakeClient(GOOD_JSON)
+    report = run(SRC, tmp_path / "posts.json", client, http, TODAY, max_summaries=2)
+    assert report.summarized == 2
+    posts = {p.url: p for p in load_posts(tmp_path / "posts.json")}
+    assert posts["https://acme.test/new"].summary == "A summary."
+    assert posts["https://acme.test/old2"].summary == "A summary."
+    assert posts["https://acme.test/old1"].summary == "old summary"

@@ -11,3 +11,4 @@ class Post:
     summary: str = ""
     tags: list[str] = field(default_factory=list)
     summarized: bool = False
+    summary_version: int = 0
