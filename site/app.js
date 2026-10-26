@@ -97,7 +97,10 @@ function visiblePosts() {
     (!unreadOnly || !state.read.has(p.url)));
 }
 
-const RANGE_WORDING = { "7": "in the last 7 days", "30": "in the last 30 days" };
+function rangeWording(range) {
+  if (range === "all") return null;
+  return "in the last " + (range === "1" ? "day" : range + " days");
+}
 
 function render() {
   const feed = $("feed");
@@ -105,7 +108,7 @@ function render() {
   const posts = visiblePosts();
   if (!posts.length) {
     const range = $("range").value;
-    const wording = RANGE_WORDING[range];
+    const wording = rangeWording(range);
     feed.append(el("p", "empty", wording ? "No posts " + wording + "." : "No posts to show."));
     if (range !== "all") feed.append(el("p", "empty", "Try a longer time range."));
     return;

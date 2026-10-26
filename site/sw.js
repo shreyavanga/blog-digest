@@ -1,5 +1,5 @@
 // Network-first for same-origin GETs, falling back to the cache so the last digest opens offline.
-const CACHE = "digest-v1";
+const CACHE = "digest-v2";
 const SHELL = ["./", "index.html", "app.js", "style.css", "manifest.webmanifest", "icons/icon-192.png", "data/posts.json"];
 
 self.addEventListener("install", (event) => {
@@ -20,7 +20,7 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET" || new URL(req.url).origin !== self.location.origin) return;
   event.respondWith(
-    fetch(req)
+    fetch(req, { cache: "no-cache" }) // revalidate with the server so updates show up immediately
       .then((res) => {
         if (res.ok) {
           const copy = res.clone();
