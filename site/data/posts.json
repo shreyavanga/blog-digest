@@ -1,5 +1,344 @@
 [
   {
+    "url": "https://www.databricks.com/blog/unlocking-investment-insights-without-migrating-your-data-lakehouse-federation",
+    "company": "Databricks",
+    "title": "Unlocking Investment Insights Without Migrating Your Data: Lakehouse Federation",
+    "published": "2026-10-27",
+    "excerpt": "Lakehouse Federation: Query Anywhere, Move NothingIn today's enterprise landscape,...",
+    "summary": "Databricks describes Lakehouse Federation, a way to run queries on data that stays in other systems without copying or moving it first. The article suggests this can give investment insights while keeping your data where it already is.",
+    "tags": [
+      "data analysis",
+      "databases",
+      "cloud data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/spot-fixes-measured-gains-improving-document-extraction-accuracy-aiextract-and-mlflow-prompt",
+    "company": "Databricks",
+    "title": "From spot fixes to measured gains: improving document extraction accuracy with ai_extract and MLflow Prompt Registry",
+    "published": "2026-10-27",
+    "excerpt": "Document extraction often starts with a simple loop: spot an incorrect field, adjust...",
+    "summary": "Databricks describes a way to improve document data extraction by moving from quick manual fixes to measured results. It uses its ai_extract tool together with MLflow Prompt Registry to track changes and check whether accuracy actually gets better.",
+    "tags": [
+      "document extraction",
+      "ai tools",
+      "data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/bigquery-databricks-strategic-framework",
+    "company": "Databricks",
+    "title": "BigQuery to Databricks: A Strategic Framework",
+    "published": "2026-10-27",
+    "excerpt": "Migration as a strategic evolutionMany organizations support a range of data and analytics workloads on BigQuery today...",
+    "summary": "Databricks published a guide for companies moving their data work from Google's BigQuery to Databricks. It treats the switch as a planned, strategic change rather than just a technical copy job.",
+    "tags": [
+      "data migration",
+      "cloud data",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-agent-sessions-now-cost-67-percent-less",
+    "company": "Vercel",
+    "title": "Vercel Agent sessions now cost 67% less",
+    "published": "2026-10-27",
+    "excerpt": "Vercel Agent sessions in the dashboard and Slack now cost 67% less on average. We rebuilt how Agent manages context, reducing the tokens needed per session and improving prompt-cache reuse. These improvements are live and require no action. What changed: Workflow-based CLI skills: Updated Vercel CLI skills give agents clearer guidance for common workflows and error recovery. Other agents using these skills also benefit. Incremental context management: Agent manages context more efficiently as conversations grow, including long Slack threads. Improved prompt caching: Agent preserves more reusable context across turns so more of it can be read from the cache. More efficient coding and planning: Updated guidance helps Agent plan changes and write code with fewer tokens. Vercel Agent’s billing rates are unchanged. Paid sessions are billed at the model provider’s inference rates plus a Vercel Agent fee of $0.25 per million tokens. View usage and costs in the Agent section of your dashboard. Read more",
+    "summary": "Vercel's AI helper Agent now costs about 67% less per session, thanks to reworked context handling and better reuse of saved data. The change is automatic and billing rates are unchanged.",
+    "tags": [
+      "ai agents",
+      "cloud costs"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/harness-agent-image-inputs",
+    "company": "Vercel",
+    "title": "HarnessAgent now supports image inputs for all harness adapters",
+    "published": "2026-10-27",
+    "excerpt": "The AI SDK HarnessAgent layer now accepts image inputs across every harness adapter. Pass images alongside text in the standard AI SDK message format: a content array mixing { type: 'text' } and { type: 'file' } parts. Image input is processed by the harnesses' underlying vision models and supported across all available adapters: Claude Code, Cline, Codex, Cursor, Deep Agents, fx, GitHub Copilot, Grok Build, OpenCode, Pi. Read the HarnessAgent image inputs documentation to get started. Read more",
+    "summary": "Vercel's AI SDK can now take pictures along with text when you ask its AI agents to do work. This works across all ten supported agent tools, such as Claude Code and Cursor, so you can send an image and text together in one request.",
+    "tags": [
+      "ai tools",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://stripe.com/blog/how-the-fastest-growing-enterprises-on-stripe-scale-globally",
+    "company": "Stripe",
+    "title": "How the fastest-growing enterprises on Stripe scale globally",
+    "published": "2026-10-27",
+    "excerpt": "Despite slower global economic growth and greater geopolitical fragmentation, the fastest-growing enterprises continue to look beyond their home markets and are investing in tools and workflows that make expansion faster and more repeatable.",
+    "summary": "Stripe says fast-growing companies are still expanding into other countries despite a slowing world economy and more political divisions. They are investing in tools that make going global quicker and easier to repeat.",
+    "tags": [
+      "global expansion",
+      "payments",
+      "business growth"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "company": "Google Research",
+    "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+    "published": "2026-10-27",
+    "excerpt": "Education Innovation",
+    "summary": "Google Research describes a new method called Sleep, meant to help AI language models keep what they learn over time without forgetting older knowledge. The article is only a short teaser, so details are limited.",
+    "tags": [
+      "ai",
+      "machine learning",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+    "company": "OpenAI",
+    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+    "published": "2026-10-27",
+    "excerpt": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+    "summary": "OpenAI and Oracle are expanding their partnership. Oracle's business apps and AI agents will be brought into ChatGPT, so companies can use them from that one place.",
+    "tags": [
+      "ai",
+      "enterprise software",
+      "partnerships"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/novelty-bench",
+    "company": "Hugging Face",
+    "title": "Can we trust LLMs to judge whether a research idea is novel?",
+    "published": "2026-10-27",
+    "excerpt": "",
+    "summary": "Hugging Face asks whether large AI language models can be trusted to judge if a research idea is new. The post is only a title, so details of their findings are not known from this text.",
+    "tags": [
+      "ai research",
+      "language models"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+    "company": "Hugging Face",
+    "title": "Build specialized multimodal models with LFM3",
+    "published": "2026-10-27",
+    "excerpt": "",
+    "summary": "Hugging Face has announced LFM3, a new family of multimodal models, meaning AI models that work with more than one kind of input such as text and images. The article is only a short teaser, so further details are not available here.",
+    "tags": [
+      "ai models",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
+    "company": "Meta Engineering",
+    "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+    "published": "2026-10-27",
+    "excerpt": "This latest deep dive into Meta’s Privacy Aware Infrastructure (PAI) takes a look at PrivacyLib. A privacy requirement must hold as data moves through Meta’s diverse data and processing systems. Historically, supporting a new requirement meant implementing the same enforcement logic separately in each system. PrivacyLib replaces this with a common library that runs inside the clients of Meta’s data and processing systems. A system integrates with PrivacyLib once, and new privacy capabilities plug in as modules that reuse that integration. PrivacyLib performs billions of checks every second, and changes are simulated and rolled out per module. For internal AI agents, whose data access paths may not be known in advance, tool calls on supported paths carry agent context to PrivacyLib. The propagated context links each access to its session, so modules can observe data use and block operations that are not allowed. At Meta, many privacy requirements ultimately come down to the same question: Can we prove that a piece of data goes only where it is allowed? At Meta’s scale, rather than relying solely on manual privacy audits, which can go out of sync as systems change, we have developed Privacy Aware Infrastructure (PAI) to answer this question within the infrastructure itself. PAI offers efficient and reliable first-class privacy constructs embedded in Meta’s infrastructure so that products can keep evolving quickly. In previous posts, we have covered how data understanding , data lineage , and Policy Zones (our information flow control technology) play a role in PAI. Now, we are diving deep into PrivacyLib , a common library that runs inside the clients of hundreds of our data and processing systems at the point of data access. PrivacyLib plays an important role in the final stage of the broader PAI workflow: continuously enforcing and monitoring data flows. This blog post focuses on PrivacyLib’s role in the final stage of the PAI workflow. Before PrivacyLib, we integrated privacy enforcement separately into the clients of each data and processing system for each requirement. With this approach, implementing a new requirement across systems could take months. Each new requirement, whether purpose limitation or data flow discovery, needed the same set of capabilities: covering a wide range of systems; deploying in weeks rather than months; running on every data access without becoming a latency problem; and rolling out enforcement changes without taking the fleet down. Over time, this approach became harder to scale as requirements and systems evolved. PrivacyLib separates system integration from requirement implementation. We integrate each system once. When a requirement can be met at the point of data access, we implement it as a PrivacyLib module shared across the systems already integrated, so a new requirement no longer needs a separate implementation in each system. There are two kinds of modules: Enforcing modules can block a data access. For example, Policy Zones enforces purpose limitation . Observing modules only record a data access. For example, Privacy Probes collects the runtime signals used to discover data flows. As internal AI agents became a new way of accessing data, we also added the Agent Observability module to observe agent-related data access events and help safeguard the data that agents can reach. Systems already integrated with PrivacyLib picked it up without new integration work, which is what integrating once buys: each new privacy capability arrives as a module, not as a project. PrivacyLib replaces repeated implementations across systems. Engineering Challenges and Approaches of PrivacyLib at Meta’s Scale PrivacyLib operates across a broad range of data access paths at Meta: More than a hundred libraries used to access data services, from key/value stores to AI features. Thousands of production services with versions of the deployed library. Millions of assets being accessed daily. Billions of checks",
+    "summary": "Meta built PrivacyLib, a shared library that runs inside its data systems and checks each data access against privacy rules. Teams now add a new privacy rule once as a module instead of rebuilding it in every system, which speeds up rollouts. It also watches what internal AI agents access.",
+    "tags": [
+      "privacy",
+      "data security",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/",
+    "company": "Meta Engineering",
+    "title": "Python Typing Survey 2026: AI Tools and the Shifting Checker Landscape",
+    "published": "2026-10-27",
+    "excerpt": "The 2026 Python Typing Survey received 1,794 responses. Type hint use changed little across three years, but checker selection changed sharply. Among respondents who reported which checkers they use, half selected more than one, and missing library type information was the most common difficulty. For the third consecutive year, we asked Python developers how they use and experience Python typing: the language features, specifications, and tools used to describe and check types in Python code. We run the survey to learn what is working and what library maintainers, tool builders, documentation authors, and standards contributors should tackle next. Most respondents were experienced Python developers: 76.4% had used Python for at least five years. The clearest change was the shift in checker choice, while missing library type information remained the most common difficulty. Key Takeaways From the 2026 Python Typing Survey This year’s findings show several recurring opportunities: Broader and more accurate type information would help users of data-science packages: Dynamic frameworks pose a different challenge because current type systems cannot express some runtime behavior. Possible directions include new typing features and checker support tailored to individual libraries and frameworks. Tool builders could focus on editor feedback and an initial checker run that requires little configuration: Error messages could link to short explanations and examples. Typing documentation can assume Python experience. Projects using multiple checkers would benefit from clear explanations of intentional differences between them. Better callable syntax remains a practical area for standards work , especially if improvements keep common typing tasks straightforward. AI usage remains an open question: The findings on AI leave an open question about which interactions between AI tools and type checkers help developers. Further empirical study could inform future designs. AI Tools Now Write Types and Respond to Checker Errors The share of respondents who selected “Makes AI-generated code more accurate/reliable” rose from 18.5% in 2025 to 38.4% in 2026. AI tools wrote type hints for 42.5% of 1,517 respondents, while 32.6% wrote types to improve AI-generated code. Respondents also used AI to fix or explain type errors. Across all four activities listed for AI tool use in typing, 61.0% of respondents reported they used at least one of these options. Some respondents said their AI coding tool runs the checker and then fixes the errors. Of the 1,517 developers who answered how they run a checker, 24.4%, said an AI coding tool invoked their checker. Among the 370 respondents, 61.6% also used AI to fix checker errors. The rate was 19.3% among everyone else. Some respondents described AI-generated types that are too broad and agents that suppress checker errors: “I fix AI coded type hints because AI often gets lazy and uses object for everything.” “Lazy coding agents that spam #type: ignore comments everywhere.” When asked how useful types are for better AI-assisted coding, 29.8% of 1,551 respondents chose “I’m not sure.” The uncertainty rate for AI-assisted coding was nearly four times the 7.7% rate for runtime guarantees, the next-highest of the six benefits. We still need empirical evidence about which interactions actually help. The Pyrefly team is already studying how AI coding tools and type checkers work together. At the 2026 Python Typing Summit, the team presented Type Checking in Agentic Workflows . Library Gaps Lead Overall; Occasional Users Struggle With Complexity Missing type information in third-party libraries was the leading difficulty, selected by 65.1% of 1,486 respondents. Another 44.6% said the type system could not describe everything their code does. Developers can still have a poor experience after a library ships dedicated stubs. Among 156 people who wrote their own answer, 22 described dynamic constructs, decorators, metaprogram",
+    "summary": "Meta's 2026 survey of 1,794 Python developers found that type hint use barely changed, but many people switched or added type checker tools. The most common problem was missing type information in outside libraries, and many developers now use AI tools that write types or fix checker errors.",
+    "tags": [
+      "python",
+      "developer tools",
+      "ai coding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover",
+    "company": "Discord",
+    "title": "Making Content from Discoverable Servers Easier to Discover",
+    "published": "2026-10-27",
+    "excerpt": "Starting on November 16, 2026, conversations in Discoverable Servers will be easier to find for people searching the web. Admins can choose which channels are surfaced on the web. Private servers, DMs, and GDMs are not included.",
+    "summary": "Starting November 16, 2026, chats in Discord's Discoverable Servers will be easier to find through web search. Server admins can pick which channels appear on the web, and private servers and direct messages are not included.",
+    "tags": [
+      "discord",
+      "privacy",
+      "web search"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+    "company": "Google Developers",
+    "title": "Fast, reliable A2UI, with swappable inference formats",
+    "published": "2026-10-27",
+    "excerpt": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
+    "summary": "A2UI, a tool for building screens that AI generates, now has a faster option called A2UI Express that uses up to 3 times fewer tokens and responds quicker. It works without changing the screen display parts, so developers can pick a speed setting that suits them.",
+    "tags": [
+      "ai tools",
+      "app development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
+    "company": "Google Developers",
+    "title": "Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype",
+    "published": "2026-10-27",
+    "excerpt": "This document provides a publication template and metadata structure for a technical blog post focused on building Conversational User Interfaces (CUIs) using AI. It outlines key developer focus areas, product stacks, and approval workflows required for publishing technical content through Google Developer Studio. The framework helps engineers organize their guides and solutions to effectively share AI-driven conversational interface designs with the developer community.",
+    "summary": "Google Developers has shared a template for writing technical blog posts about building chatbot-style interfaces with AI. It explains how to organize the topics, tools, and approval steps for publishing such guides.",
+    "tags": [
+      "ai",
+      "developer tools",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/",
+    "company": "Google Developers",
+    "title": "Announcing DPoP Support for Google OAuth: Securing Refresh Tokens",
+    "published": "2026-10-27",
+    "excerpt": "Google OAuth Platform now supports DPoP (Demonstrating Proof-of-Possession) to sender-constrain refresh tokens, neutralizing Infostealer malware and adversary-in-the-middle attacks. By cryptographically binding long-lived refresh tokens while maintaining short-lived access tokens as standard Bearer tokens, developers achieve robust credential security without incurring high-QPS API performance overhead. Additionally, developers integrating multi-agent or Model Context Protocol (MCP) workloads can use Google Cloud Secure Token Service (STS) to handle secure token delegation across agent chains.",
+    "summary": "Google's login system now supports a new security method called DPoP for long-lived login tokens. It ties each token to the app that owns it, so stolen tokens are much harder to misuse, without slowing down everyday requests.",
+    "tags": [
+      "security",
+      "login",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
+    "company": "NVIDIA",
+    "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
+    "published": "2026-10-27",
+    "excerpt": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX... NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX GPU and NVIDIA Grace CPU, it combines up to 128 GB of unified memory with the full NVIDIA CUDA stack and RTX technologies including ray tracing and DLSS 5. This post covers the following technologies for game developers building on RTX… Source",
+    "summary": "NVIDIA has introduced RTX Spark, a new Windows PC platform for AI work, content creation, and gaming in thin laptops and small desktops. It pairs NVIDIA's graphics chip with its CPU and offers up to 128 GB of shared memory.",
+    "tags": [
+      "gaming hardware",
+      "ai",
+      "laptops"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+    "company": "NVIDIA",
+    "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+    "published": "2026-10-27",
+    "excerpt": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve... As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve as a powerful foundation, but they sometimes lack the local knowledge, cultural nuance, and precision a particular application needs. Post-training can adapt an open model to these needs. With suitable data and evaluation… Source",
+    "summary": "NVIDIA describes how to adapt its open Nemotron AI model with extra training so it understands local rules and culture, not just local languages. The teaser suggests this helps general AI tools fit specific regions and uses better.",
+    "tags": [
+      "ai models",
+      "local language ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+    "company": "NVIDIA",
+    "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
+    "published": "2026-10-27",
+    "excerpt": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA... Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA DGX Spark, profiling showed that decoding was memory-bound: reading model weights drove execution time. Two operations stood out—the mixture-of-experts (MoE) computation and the output-layer projection that produces scores across the model’… Source",
+    "summary": "Engineers found that running the Ling-3.0-flash AI model on an NVIDIA DGX Spark computer was slowed mainly by reading model data from memory. They focused on two operations that cost the most time to speed up output.",
+    "tags": [
+      "ai models",
+      "nvidia",
+      "speed"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "company": "Google DeepMind",
+    "title": "Genie 4: A new generation of world simulation",
+    "published": "2026-10-27",
+    "excerpt": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "summary": "Google DeepMind has announced Genie 4, a new version of its world model that creates interactive simulated environments. The teaser says it aims for much more realistic simulations that run in real time.",
+    "tags": [
+      "ai",
+      "simulation",
+      "google deepmind"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
+    "company": "Cloudflare",
+    "title": "What took the Internet offline in Q3 2026",
+    "published": "2026-10-27",
+    "excerpt": "The Internet can feel invisible when everything is working normally. But when connectivity breaks, the many systems it depends upon become evident in an instant. Because Cloudflare’s global network handles more than 20% of the web’s traffic, it offers a unique perspective of how Internet traffic is behaving. When failures in infrastructure, power, policy, or security disrupt access to the Internet, Cloudflare Radar can observe the impact by monitoring traffic to our customers. Each quarter, we review the disruptions detected and annotated on Radar, highlighting what happened, where it happened, and the broader conditions that shaped each event. In this post, we examine the major categories of Internet disruptions observed during the third quarter of 2026, including government-directed shutdowns, power outages and natural disasters. Disruptions at a glance Between July and September, Internet disruptions were largely driven by failures in the systems the Internet depends on. Power grids failed in Cuba, Honduras, Guam, Ukraine, and several other countries. Natural disasters damaged electricity and telecommunications infrastructure from Nepal to Colombia. Government-directed shutdowns remained the most frequent source of disruption, driven largely by exam-related shutdowns in Iraq, while renewed conflict in Ethiopia’s Tigray region showed how quickly connectivity can become part of a broader political and humanitarian crisis. Outages within the United States, Japan, and Portugal — countries with a relatively strong history of Internet resilience — remind us that no country is immune to disruption. In total, Cloudflare Radar recorded 49 disruptions during the quarter. Government-directed shutdowns accounted for 19 incidents, including 18 exam shutdowns in Iraq. Power outages followed with 14 incidents, while natural disasters accounted for five. Power failure was a leading cause of disruptions The Internet is designed to be distributed and resilient, but that resilience still depends on electricity. When power fails, routers, mobile base stations, data centers, interconnection facilities, and the networks that connect them can fail with it. Over the past three months, that dependency was one of the clearest patterns in Radar’s disruption data. Power outages were the second-most common cause of disruptions by incident count this quarter, behind government-directed exam shutdowns. In Cuba, Internet disruptions followed the erratic patterns of an unstable power grid. Radar observed four power-related outages across the quarter, meaning connectivity was affected by grid failures at least once a month. The outages took place July 6, July 14, August 3, and a three-day blackout from September 18 to 20. The traffic volume decreases ranged from 18% on July 14 to 59% on August 3. Honduras illustrated how a localized infrastructure failure can produce national-level effects. A power failure on September 10 at an interconnection facility affected at least 11 major providers, showing how concentrated traffic exchange points can become single points of failure. The outage lasted approximately three hours, during which HTTP traffic across the country fell by 63%. Two notable exceptions were the cross-border provider Telecomunicaciones de Guatemala (AS14754) and mobile carrier Celtel (AS52262), which were unaffected. This suggests that their Honduran connectivity may rely more heavily on infrastructure outside the country. Cloudflare Radar - Traffic volume by autonomous system On July 5, a power outage in Sevastopol, Ukraine, caused an eight-hour blackout, with HTTP traffic dropping by 98%. A little over a month later, on August 12, drone strikes targeting energy infrastructure caused another power outage, resulting in a ten-hour Internet disruption and up to a 95% decline in traffic volume. As discussed in more detail below, geopolitical conflict remains a major driver of Internet disruptions. These incidents also show how conflict, energy infra",
+    "summary": "Cloudflare reviewed internet outages from July to September 2026, finding 49 disruptions. Power failures were a leading cause, knocking out connections in places like Cuba, Honduras and Ukraine, and exam-related government shutdowns in Iraq were the most common overall.",
+    "tags": [
+      "internet outages",
+      "power grids",
+      "cloudflare"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/php-ctf/",
+    "company": "Cloudflare",
+    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+    "published": "2026-10-27",
+    "excerpt": "Last week was one for the Internet security history books. First, eight eMudhra intermediate certificates were compromised , creating the possibility of forged certificates that could be used to impersonate servers. Then came php2shell : serious vulnerabilities in PHP, the runtime behind a large portion of the Web. Cloudflare worked around the clock as these events unfolded to protect our customers and help protect the Internet. We shipped client updates and multiple mitigations , updated our web application firewall (WAF) with new rules to block attackers from exploiting the PHP vulnerabilities, and introduced a new feature called full transaction detection . As always in situations like this, these new capabilities were made available on all plans, including Free. Put our WAF to the test Protecting systems from vulnerabilities like these is always an ongoing process, not a one-time event. The widespread adoption of AI allows attackers to discover new vectors with unprecedented speed and efficiency, so collecting real-world data to test our assumptions and strengthen defenses is essential. That’s why today we're launching the Cloudflare PHP Capture the Flag challenge , run through our Bug Bounty program . We've put a deliberately vulnerable PHP installation behind our WAF, and we're inviting security researchers on HackerOne to try to bypass the protections and capture a flag. How this Capture the Flag (CTF) works We are keeping this simple. The challenge focuses on CVE-2026-109618 and CVE-2026-109619 , the two PHP vulnerabilities behind php2shell . The target runs stock PHP 8.5.11 (with standard PHP extensions), Apache 2 (via mod_php), and an empty index.php inside a Cloudflare Container , with our default WAF protection rules for these vulnerabilities enabled in front of it. Inside the sandbox is a file called /flag . The sandbox is reset every few minutes, including the flag file. Your mission, should you choose to accept it: bypass the WAF protections, exploit the PHP sandbox, and recover the contents of /flag . You can use your own research tools. The challenge page has the environment details, scope, and flag verification form. Challenge requirements This limited-time challenge is run via Cloudflare's Bug Bounty program on HackerOne . All aspects of this challenge are subject to HackerOne terms and the Cloudflare HackerOne program rules the (“Bounty Terms”). If you find an eligible bypass, you must follow these requirements in order to claim the bounty: All participants must sign up for a HackerOne account and review and agree to the Bounty Terms before participating in the CTF. Demonstrate attacker-controlled PHP code or command execution inside the sandbox through an authorized POST request. Use that remote code execution (RCE) to recover the current contents of /flag, then successfully verify the flag through the CTF user interface (UI). Verify promptly before a reset; retain the successful result for later review. Submit a private report to Cloudflare on HackerOne. Include PHP CTF in the title and provide: The endpoint, complete payload, and request sequence, preserving relevant headers, encoding, and body bytes. Raw request/response captures or a readable proof of concept sufficient to reproduce the full chain. An explanation of the WAF bypass, executed code or command, and how that execution recovered /flag. The attempt ID, successful UI verification result, and exploit/verification UTC timestamps. Include the flag privately if needed for verification. What makes the method or payload materially distinct, and related submissions you know about. UI verification does not submit a HackerOne report or establish reporting priority. File disclosure without RCE, RCE without successful flag recovery and UI verification, local-only exploits, rediscovery of the known PHP vulnerabilities, and WAF detection differences or partial chains without the full objective are not eligible. Awards require a materially distinct bypass m",
+    "summary": "Cloudflare is running a time-limited hacking challenge where security researchers try to break through its firewall protections for a deliberately weak PHP website and steal a hidden file. The goal is to test defenses against two serious PHP flaws, since AI now helps attackers find new weaknesses faster.",
+    "tags": [
+      "cybersecurity",
+      "web security",
+      "bug bounty"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/unify-your-productivity-and-ai-data-lakeflow-connect",
+    "company": "Databricks",
+    "title": "Unify your productivity and AI data with Lakeflow Connect",
+    "published": "2026-10-26",
+    "excerpt": "This is the second post in our series on how Lakeflow Connect brings fully managed...",
+    "summary": "Databricks describes Lakeflow Connect, a tool that automatically copies data from everyday work apps into its data platform without needing hand-built pipelines. This post is the second in a series on the tool. It may help teams use business data for AI projects more easily.",
+    "tags": [
+      "data pipelines",
+      "databricks",
+      "ai data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/media-industry-becoming-prediction-economy",
     "company": "Databricks",
     "title": "The media industry is becoming a prediction economy",
@@ -15,6 +354,36 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.databricks.com/blog/how-teach-databricks-free-edition",
+    "company": "Databricks",
+    "title": "How to teach with Databricks Free Edition",
+    "published": "2026-10-26",
+    "excerpt": "You can run a full data or AI course on the same platform enterprises use in production - for free...",
+    "summary": "Databricks describes how teachers can run a full data or AI course on its platform using a free edition. The teaser says the same tools businesses use are available at no cost for classes.",
+    "tags": [
+      "data science",
+      "teaching",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/building-live-intelligence-databricks-ai-search-supports-streaming-tables-materialized-views",
+    "company": "Databricks",
+    "title": "Building live intelligence: Databricks AI Search supports Streaming Tables, Materialized Views, and Managed tables using Iceberg",
+    "published": "2026-10-26",
+    "excerpt": "AI Search now natively supports Streaming Tables, Materialized Views, and Managed...",
+    "summary": "Databricks AI Search can now work directly with three kinds of data tables: streaming tables, materialized views, and managed Iceberg tables. This means search results can stay up to date with changing data, without a separate copy step.",
+    "tags": [
+      "data",
+      "search",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-sandbox-commands-now-support-stdin",
     "company": "Vercel",
     "title": "Vercel Sandbox commands now support stdin",
@@ -25,6 +394,21 @@
       "vercel",
       "sandboxes",
       "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
+    "company": "Vercel",
+    "title": "Vercel Agent can now validate alerts before paging",
+    "published": "2026-10-26",
+    "excerpt": "Vercel Agent can now investigate alerts from Vercel monitors before they reach your paging system. With validation enabled for a webhook destination, only alerts Agent classifies as Critical are sent to it. To enable validation: Open a monitor’s notification settings and create or link a webhook destination for your paging system, such as incident.io. Select Critical Only next to that destination. You can also configure notification destinations with the Vercel CLI using vercel monitors notifications . Add --critical-only when linking or updating a webhook destination. Agent checks logs and metrics to assess impact. For example, it can identify health-check errors that don’t affect customers or confirm sustained 5xx errors affecting checkout requests. You can also add context to each monitor to guide Agent’s investigation. Alert validation is available on Pro and Enterprise plans with Observability Plus. Observability Plus includes 10 Agent investigations per billing cycle, with additional investigations billed separately . Custom monitors cost $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Learn more in the alert webhook documentation . Read more",
+    "summary": "Vercel Agent can now check alerts from Vercel monitors before they reach your paging system. If you turn on Critical Only for a webhook, only alerts the Agent marks as critical get sent through, which can cut down on unneeded pages.",
+    "tags": [
+      "alerts",
+      "monitoring",
+      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -90,6 +474,95 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/customizable-widgets-for-project-cards",
+    "company": "Vercel",
+    "title": "Customizable widgets for project cards",
+    "published": "2026-10-26",
+    "excerpt": "The Overview tab in the dashboard now lets you choose which metric appears on each project card. Project cards used to show a fixed Real Experience Score in the top right, but not everyone on your team watches the same signal. You can now swap that slot for whichever metric matters for that project. A security-sensitive project can show firewall activity, while a marketing site project shows traffic. Available widgets Firewall: allowed requests, denied requests Observability: alerts, edge requests, function invocations, error rate Speed Insights: Real Experience Score, LCP, CLS Web Analytics: visitors online, visitors, page views Pick per project Open the switcher in the top right of any project card. The menu shows the current value for each available metric. When you select one, your choice is saved for that project and follows your account across refreshes and devices. Enable features from the card If a project does not have a feature enabled, you can start the enable flow from the widget menu without leaving the Overview tab. This is available for Speed Insights Plus, Web Analytics, and alerts. Get started Open your team’s Overview tab and use the switcher on any project card. Read more",
+    "summary": "Vercel's dashboard now lets you pick which metric shows on each project card, instead of a fixed speed score. You can choose from firewall, error, speed, or visitor numbers, and your choice is saved per project.",
+    "tags": [
+      "web hosting",
+      "dashboards",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/create-custom-monitors-in-vercel-observability",
+    "company": "Vercel",
+    "title": "Create custom monitors in Vercel Observability",
+    "published": "2026-10-26",
+    "excerpt": "You can now create custom monitors to get alerts based on your Vercel Observability query results. For example, you can track signals such as AI Gateway costs, Core Web Vitals and other performance metrics, Workflow and external API failure rates, or Vercel Sandbox CPU time. Each monitor tracks a single metric, such as response time, or a ratio of two metrics, such as errors divided by total requests. Choose statistical anomaly detection or a fixed threshold, then configure the detection window, filters, and grouping. To create a monitor, inspect a chart’s query in Observability, start from a preset, or open Settings > Alerts for your team. You can also define a custom monitor in a JSON file and create it with vercel monitors add in the Vercel CLI . Run vercel monitors schema --type custom for the schema and examples. Receive alerts through email, Slack, Vercel Inbox, push notifications, or team-level webhooks. You can also add context for Vercel Agent to use when investigating an alert. Custom monitors are available on Pro and Enterprise plans with Observability Plus, at $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Create a custom monitor or learn more in the configuration documentation . Read more",
+    "summary": "Vercel now lets you create custom monitors that send you alerts when a tracked number, like error rate or site speed, goes off track. You can set them up in the dashboard, from a preset, or with a config file, and get alerts by email, Slack, or other channels.",
+    "tags": [
+      "monitoring",
+      "alerts",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/openai-cut-incident-investigation",
+    "company": "OpenAI",
+    "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+    "published": "2026-10-26",
+    "excerpt": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+    "summary": "OpenAI says its engineers now use a tool called Codex Ultrafast to look into system incidents in minutes instead of hours. The post also mentions faster security checks and code cleanup.",
+    "tags": [
+      "incident response",
+      "ai tools",
+      "software engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+    "company": "OpenAI",
+    "title": "Introducing GPT-6.1 Terra",
+    "published": "2026-10-26",
+    "excerpt": "Bringing fast and capable computer use to everyone",
+    "summary": "OpenAI has announced GPT-6.1 Terra, a new AI model. The short teaser says it is meant to bring fast, capable computer use to everyone, meaning the AI can operate computers on people's behalf.",
+    "tags": [
+      "ai models",
+      "computer use"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/greptile-code-review-codex-astra",
+    "company": "OpenAI",
+    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+    "published": "2026-10-26",
+    "excerpt": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+    "summary": "Greptile, a code-review company, now uses OpenAI's GPT-6 Astra to find bugs beyond just reading code, such as testing how users actually work through software. The post also mentions using Daybreak to improve security and Codex to cut down on repeated fixes.",
+    "tags": [
+      "ai tools",
+      "software bugs",
+      "code review"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "company": "OpenAI",
+    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+    "published": "2026-10-26",
+    "excerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+    "summary": "CodeRabbit now uses GPT-6.1 Sol, an OpenAI model, to look for security risks in large software projects. Its security tool also helps developers review the problems it finds and suggested fixes.",
+    "tags": [
+      "software security",
+      "ai tools",
+      "coding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/fanatics-streamline-fan-experience",
     "company": "OpenAI",
     "title": "How Fanatics and OpenAI streamline the fan experience",
@@ -115,6 +588,20 @@
       "chatgpt",
       "ai at work",
       "usage data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+    "company": "OpenAI",
+    "title": "Working with academic communities to build scientific understanding",
+    "published": "2026-10-26",
+    "excerpt": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+    "summary": "OpenAI shared its AI model's results on three hard science problems: the Kakeya conjecture, the Exponential Time Hypothesis, and quantum chromodynamics. The post also explains how other researchers can check these results and build on them.",
+    "tags": [
+      "ai research",
+      "science"
     ],
     "summarized": true,
     "summary_version": 2
@@ -419,51 +906,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
-    "company": "Google Developers",
-    "title": "Architecting Governed, Self-Evolving AI Agents on Google Cloud",
-    "published": "2026-10-26",
-    "excerpt": "Learn how Project Chrysalis combines Google Cloud's Gemini Enterprise Agent Platform, Agent Development Kit (ADK), BigQuery, and a four-gate defense-in-depth security stack (Model Armor, Cloud KMS, Binary Authorization, and OPA) to build governed, self-evolving AI agents that remediate live production outages in 1.8 seconds.",
-    "summary": "Google Developers describes Project Chrysalis, a system of AI agents built on Google Cloud that fixes live production outages in about 1.8 seconds. The agents are kept in check by several layers of security checks.",
-    "tags": [
-      "ai agents",
-      "google cloud",
-      "security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
-    "company": "Google Developers",
-    "title": "Announcing New vLLM and SGLang Inference Engines on TPU",
-    "published": "2026-10-26",
-    "excerpt": "This post announces native PyTorch backends for vLLM and SGLang powered by TorchTPU, enabling developers to run and optimize serving workloads using familiar PyTorch tools. Built in collaboration with open-source project maintainers, these engines include optimized TPU kernel implementations, production-ready features like KV cache management with TPU Sync, and disaggregated serving. Public benchmarks demonstrate state-of-the-art performance and industry-leading cost efficiency on Ironwood TPU across long-context and agentic workloads.",
-    "summary": "Google announced new versions of two popular AI-serving tools, vLLM and SGLang, that run on its TPU chips using PyTorch. The post says they perform well and cost less to run on its Ironwood TPUs for long and complex AI tasks.",
-    "tags": [
-      "ai inference",
-      "google tpu",
-      "cloud costs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/",
-    "company": "Google Developers",
-    "title": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster",
-    "published": "2026-10-26",
-    "excerpt": "Apigee hybrid 1.17.0 introduces native Model Context Protocol (MCP) support, enabling the MCP data plane to run directly within your own Kubernetes cluster. This architecture ensures that AI agent request traffic and tool execution remain entirely inside your infrastructure while pulling configuration updates from the control plane. Developers can expose OpenAPI 3.0.x specifications as discoverable MCP tools, leverage existing security policies and API products, and trace end-to-end requests using W3C trace context headers.",
-    "summary": "Google's Apigee hybrid 1.17.0 now lets AI agent tools run inside your own Kubernetes cluster. Agent traffic stays on your own servers, and existing API rules and security settings can be reused.",
-    "tags": [
-      "cloud software",
-      "ai agents",
-      "apis"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
     "company": "NVIDIA",
     "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
@@ -489,6 +931,21 @@
       "ai infrastructure",
       "data centers",
       "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "company": "Cloudflare",
+    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+    "published": "2026-10-26",
+    "excerpt": "On September 8, 2026, we were alerted by a security researcher, Gadi Evron from Knostic , to a tenant isolation issue affecting the GLM-5.3 Workers AI model ( @cf/zai-org/glm-5.3 ) starting on August 27, 2026. We have remediated the issue, and we restored the model on September 9. We have confirmed that no other model hosted on Workers AI was affected. Between August 27 and September 9, a small number of customers using the GLM 5.3 Workers AI model received responses that contained data from other customers' requests made to the same model shortly before theirs. In total, 155 responses were affected, all to prompts longer than 681,280 tokens. After excluding our own testing and the researcher's, the requests we identified are consistent in timing and volume with ordinary long-context use, not with someone repeatedly exploiting the bug. We found no evidence of deliberate exploitation. Today we are publishing this report alongside a post from SGLang, the open-source inference engine that we use, as a coordinated disclosure. This post describes the bug that caused this issue, our response timeline, and the subsequent hardening we have conducted on our production SGLang deployments. We also detail our continued efforts with the upstream maintainers of SGLang to address this and similar bugs. What happened GLM is a text generation model from Z.ai that is built for agentic coding workflows; it is one of the many models available through Workers AI. Gadi Evron submitted a report on September 8 through our HackerOne program stating that very long prompts sent to @cf/zai-org/glm-5.3 on Workers AI sometimes returned text that belonged to other users' sessions. Cloudflare reproduced the issue the next morning and took the model offline within 40 minutes of declaring an incident. We then deployed a corrected configuration and a patched inference engine, and restored service the same day. This specific report of cross-request KV cache exposure was the result of two overlapping issues. The first was a misconfiguration of the open-source inference engine, SGLang, used by Cloudflare. We deployed GLM 5.3 with a 1,048,576-token context window, but the KV cache pool on our prefill GPUs only had room for 681,280 tokens. We were aware of this mismatch before launch. We expected the engine to return an error for any prompt it could not process, and our long-context tests returned successful responses, so we did not believe this to be an issue. The second was a bug in how SGLang handled the resulting over-length requests in disaggregated prefill/decode mode. A prompt that did not fit the pool was internally marked as rejected and replaced with a one-token placeholder, but instead of aborting the request and returning a client error, prefill generated the KV cache for the placeholder prompt and transferred it to the decode node. The decode node received a \"transfer complete\" message and assumed that prefill overwrote the KV cache from previous requests with the full prompt for this request, when in fact it left the majority of the previous state intact. The decode node subsequently generated a response while attending over stale cache pages that still held data from earlier requests. As a result, responses to prompts longer than 681,280 tokens could contain data from other users' GLM 5.3 sessions. Immediate remediation After disabling the model , we took the following actions to correct this vulnerability before restoring public access to it: To fix our configuration, we made the pool hold the full context. We adjusted our GLM 5.3 configuration to match our GLM 5.2 configuration, which freed enough GPU memory that the prefill KV pool now holds about 2.04 million tokens, roughly twice the 1,048,576-token context length. A prompt that fits the context window now always fits the pool, so the rejection path is never reached for a valid request. This alone prevents the bug from being exercised. To fix the engine, we also made the rejection path safe. Rely",
+    "summary": "Cloudflare found that its GLM-5.3 AI model sometimes sent very long requests' replies containing bits of other customers' data, from August 27 to September 9, 2026. About 155 replies were affected, and they fixed the problem by correcting the model's memory setup and patching the software.",
+    "tags": [
+      "ai security",
+      "cloud services",
+      "data privacy"
     ],
     "summarized": true,
     "summary_version": 2
@@ -745,19 +1202,34 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/anima",
+    "company": "OpenAI",
+    "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+    "published": "2026-10-23",
+    "excerpt": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
+    "summary": "Anima, a healthcare company, uses OpenAI's GPT-6 and GPT-Live models to help clinics answer patient calls faster. The clinics report cutting call waits by 75%, giving care teams more room to respond to patients.",
+    "tags": [
+      "healthcare",
+      "ai assistants",
+      "patient calls"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4",
     "company": "Netflix",
     "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
     "published": "2026-10-23",
     "excerpt": "By Roberto Perez Alcolea , Java Platform Team Quasar connects a proposed API change with observed references in consumer repositories, giving the producer evidence for a release decision At Netflix, shared Java libraries support applications developed across a large, independently evolving repository ecosystem. A library change begins in one repository, but its impact can reach many others. Producers can see the API diff in front of them. What they often cannot see is who still depends on the symbols that changed. The need for that visibility grows as coding agents take on more of the software development lifecycle. An agent can accelerate a local edit, but without cross-repository context it cannot judge downstream risk or help plan consumer migrations. The evidence a producer uses to assess a change can also guide the agent working on it. Consider a common case: removing a deprecated API. Deprecated entry points expand the surface producers must test, document, and support, and they can constrain how a library evolves. Suppose a replacement has been available for several releases and the old method cannot express options required by new behavior. The library’s tests pass, and a compatibility checker flags the removal. The producer still cannot answer the questions that determine what to do next: Does any consumer still call this method? Are consumers concentrated on one version or spread across several generations? Does another library implement or wrap the API, multiplying its impact? Is direct coordination sufficient, or does this require a deprecation and migration campaign? At small scale, producers can ask nearby teams or search a handful of repositories. Across many repositories, it is harder to find every caller of a method and the library version each one uses. Those answers are scattered across consumer codebases and builds. Without that evidence, a producer may release a breaking change and discover the impact through consumer failures, or preserve an old API indefinitely because the risk is unknown. Libraries need to evolve, and their producers need evidence that helps them do so intentionally. We built Quasar to index symbol definitions and references across Netflix repositories. For library producers, that shared index helps answer two questions: What changed in the library’s public API? Which repositories use the exact symbols that changed? The first identifies a potentially incompatible change. The second estimates its observed blast radius. Together, they turn a generic compatibility warning into evidence a producer can act on before merging or releasing. From API Changes to Consumer Impact Existing techniques each see a different part of the problem. Binary and source compatibility tools identify contract changes, but cannot tell who uses the changed API. Dependency graphs show declared reach, but cannot prove that code calls a particular method. Text search may miss overloads, inheritance, or the artifact version behind a call. Consumer builds provide strong validation, but running them across the fleet is expensive. Quasar builds on SCIP , an open interchange format for semantic code intelligence. Language-specific indexers encode definitions, references, and relationships using stable symbol identifiers. Quasar retains API definitions for library versions and commits alongside references from consumer repositories. That shared identity lets it connect an API change in one repository to exact usages elsewhere, even when those repositories were indexed independently. On each enrolled CI build, language-specific indexers submit SCIP indexes to Quasar’s ingestion service. It writes API definitions and consumer references as Parquet in Amazon S3, retaining the symbol identity, dependency version, and source location needed to investigate a change. During pull-request review, Quasar compares indexed base and head definitions and counts direct consumer references with Amazon Athena. Quasar exposes those findings",
-    "summary": "Netflix describes Quasar, a tool that indexes symbol definitions and references across its repositories using the SCIP format, so library producers can connect an API change to the exact consumer repositories that use the changed symbols. This turns compatibility warnings into evidence about observed blast radius before merging or releasing. The approach is motivated by the need for cross-repository context, including for coding agents making library changes.",
+    "summary": "Netflix built a tool called Quasar that tracks which Netflix code repositories use each shared Java library method. Before a library producer removes or changes an API, they can see how many other teams' code would be affected.",
     "tags": [
-      "api-compatibility",
-      "code-intelligence",
-      "monorepo-tooling"
+      "software engineering",
+      "java",
+      "netflix"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/torch-neuronx-model-support",
@@ -765,14 +1237,14 @@
     "title": "Does Your Model Run on AWS Trainium? Look It Up",
     "published": "2026-10-23",
     "excerpt": "",
-    "summary": "Hugging Face introduces a lookup tool for checking whether a given model runs on AWS Trainium hardware. The teaser suggests the feature helps developers quickly confirm Trainium compatibility before deploying or training a model; no further technical detail is available in the provided text.",
+    "summary": "Hugging Face has added a way to check whether a given AI model can run on AWS Trainium, Amazon's custom chip for training AI. The title suggests users can simply look up a model to find out. The article text itself is empty, so details are limited.",
     "tags": [
-      "aws-trainium",
-      "model-compatibility",
-      "hugging-face"
+      "ai models",
+      "cloud computing",
+      "amazon aws"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/allenai/litpivot",
@@ -780,14 +1252,14 @@
     "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
     "published": "2026-10-23",
     "excerpt": "",
-    "summary": "Hugging Face introduces LitPivot, a tool for developing research ideas by dynamically placing them within the surrounding literature landscape. The article text provided is empty, so this summary is based on the title alone.",
+    "summary": "Hugging Face has released LitPivot, a tool that helps researchers shape their ideas by placing them within the existing body of scientific papers. The post is only a title with no article text, so details beyond that are unclear.",
     "tags": [
       "research tools",
-      "literature review",
-      "llm"
+      "scientific papers",
+      "ai"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
@@ -795,14 +1267,14 @@
     "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
     "published": "2026-10-23",
     "excerpt": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions... Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions when obstacles block the path ahead. Developing these capabilities connects several stages: creating assets and an environment, using physics simulation to model how the robot interacts with its environment, and training and evaluating… Source",
-    "summary": "NVIDIA describes how AI agents can help teach small robots like Microduck to walk and navigate obstacle courses in simulation. The approach requires combining perception, balance control, and action adjustment, supported by asset and environment creation, physics simulation, and training and evaluation stages.",
+    "summary": "NVIDIA shows how AI agents can help teach small robots, like Microduck, to walk and get around obstacles inside a computer simulation. The robot must sense its surroundings, keep its balance, and adjust its steps, which the work does in stages from building the environment to training and testing.",
     "tags": [
       "robotics",
-      "simulation",
-      "reinforcement-learning"
+      "ai training",
+      "simulation"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
@@ -810,14 +1282,14 @@
     "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
     "published": "2026-10-23",
     "excerpt": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and... The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and end-to-end performance tuning within TensorRT by customizing different optimizations for different models. For more details, see Part 1 of this series, which introduces the challenges associated with scheduling (a critical stage in deep learning… Source",
-    "summary": "This is Part 2 of NVIDIA's series on the Global Performance Tuner, a TensorRT 11.1 feature that automatically tunes performance in an accuracy-aware, end-to-end way by customizing optimizations per model. The article builds on Part 1, which covers scheduling challenges in deep learning deployment. The excerpt is truncated, so the specific techniques discussed in this installment are not visible.",
+    "summary": "NVIDIA released a feature called the Global Performance Tuner in TensorRT 11.1. It automatically picks the best speed settings for each AI model while keeping accuracy in check. This is part 2 of a series; the article is only a short teaser.",
     "tags": [
-      "tensorrt",
-      "gpu-optimization",
-      "model-inference"
+      "ai models",
+      "performance tuning",
+      "nvidia"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
@@ -825,14 +1297,14 @@
     "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
     "published": "2026-10-23",
     "excerpt": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For... Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For example, when NVIDIA TensorRT builds an engine, it makes interdependent decisions about graph-IR transformations, fusion, implementation selection, memory placement, and quantization. This process is called scheduling. Source",
-    "summary": "NVIDIA introduces the Global Performance Tuner for TensorRT, framing neural network deployment as a compilation problem with many valid solutions rather than a one-to-one operator-to-kernel mapping. The post notes that TensorRT engine builds involve interdependent choices across graph transformations, fusion, kernel selection, memory placement, and quantization. This is Part 1 of the series; the excerpt provided is truncated, so the full approach is not described.",
+    "summary": "NVIDIA describes a new tool, the Global Performance Tuner for TensorRT, that looks at many possible ways to build a neural network engine instead of just one. Choosing among these build options can make AI models run faster on GPUs.",
     "tags": [
-      "tensorrt",
-      "gpu-optimization",
-      "model-deployment"
+      "ai",
+      "gpu computing",
+      "performance"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
@@ -840,14 +1312,14 @@
     "title": "Bringing post-quantum cryptography to geographically fenced key management",
     "published": "2026-10-23",
     "excerpt": "Today, Cloudflare is launching a post-quantum geographically restricted key manager in support of our Data Localization Suite (DLS) in closed beta. This new PQ GeoKey Manager is a cornerstone of Cloudflare’s data sovereignty solutions, making sure that a customer's decryption keys are only accessible in their chosen geography. GeoKey Manager implements this by wrapping each decryption key such that it can only be decrypted by Cloudflare servers that are located in the allowed geography. While general availability (GA) is planned for Q1 2027, today’s launch is an important milestone on our journey to support our customers’ data sovereignty goals while also migrating all Cloudflare products to post-quantum (PQ) cryptography . Governments, financial institutions, healthcare providers, and defense organizations process highly sensitive data that can remain sensitive for years or decades after it is produced. Encryption is often required to protect this data. When classical, public-key encryption is used, adversaries do not immediately need a quantum computer today to put that data at risk: they can store the ciphertext and retain them until quantum computers can break the public key cryptography protecting it — an attack strategy known as harvest now, decrypt later. For organizations with geographic requirements, resisting that threat is only half the challenge. At Cloudflare's scale, high availability requires replicating customer data across many servers across our global network. However, many data sovereignty regulations require that certain types of data be processed only within a given geographical region. We must therefore ensure the data is end-to-end encrypted such that only servers within the region have access to the plaintext. In this post, we describe the system that makes this work. The evolution of GeoKey Manager Cloudflare pioneered the concept of geo-restricted transport layer security ( TLS ) keys back in 2017 with GeoKey Manager . This gave customers control over the locations where their private TLS keys could be unwrapped on Cloudflare’s anycast network to provide stronger technical guarantees of which region their requests are decrypted into. For instance, a customer could choose to only unwrap their private keys in India. So instead of allowing decryption across Cloudflare’s entire global network, GeoKey Manager makes sure TLS signing for each customer request happens in our India network. GeoKey Manager evolved again in 2022 with ciphertext policy attribute based encryption (ABE). Instead of tying encrypted keys to a fixed set of data centers, ABE expressed geographic requirements using attributes such as country or region, like “region = European Union” or “region = Canada + United States + Mexico”. Newly authorized servers could receive matching decryption capabilities without rewrapping every customer key. That flexibility created a challenge and opportunity for the post-quantum transition. No production-ready post-quantum ABE scheme is available today, and customers do not need a large number of regions. A simpler design meets the requirement and is easier to maintain and operate. Cloudflare therefore uses hybrid ML-KEM-768 and X25519 protection with two kinds of keys, out of which ML-KEM-768 is a NIST standard that also opens doors to highly sensitive customers. A regional root key is a symmetric secret tied to one region, and an application-specific key pair is derived from it for a single service, such as Gateway or Tunnel . This protects private-key material against harvest now, decrypt later while preserving regional key-use boundaries. Global ciphertext, regional key unwrapping In its new form, GeoKey Manager is the key foundation for Cloudflare’s data sovereignty solutions. It controls which region protected decryption keys can be used from and when. Separate workstreams determine where tunnels terminate, where traffic is inspected, how it is routed, and where plaintext processing occurs. But all",
-    "summary": "Cloudflare launched a post-quantum GeoKey Manager in closed beta as part of its Data Localization Suite, ensuring customers' decryption keys can only be unwrapped by servers in an allowed geography. The system replaces earlier attribute-based encryption with a simpler design using hybrid ML-KEM-768 and X25519 protection and regional root keys, guarding against harvest-now-decrypt-later attacks while keeping key use confined to a region.",
+    "summary": "Cloudflare has launched a closed beta of a new key manager that keeps customers' decryption keys usable only in their chosen region, and it uses encryption designed to resist future quantum computers. This helps organizations meet local data-location rules while protecting sensitive data that must stay secret for years.",
     "tags": [
-      "post-quantum cryptography",
-      "data sovereignty",
-      "key management"
+      "data privacy",
+      "encryption",
+      "cloudflare"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/origin-range-requests/",
@@ -855,14 +1327,14 @@
     "title": "Origin Range Requests: Serving large files without range-request tuning",
     "published": "2026-10-23",
     "excerpt": "A video player seeking to the middle of a movie asks for a few megabytes. Under our old range caching, that one request could make Cloudflare pull 128 MiB from the origin and move it between data centers, sometimes after the viewer had already left. Range requests are how large files get delivered, and caching them naively easily leads to wasted network bandwidth and wasted disk operations when running a CDN at scale. So we rebuilt how our cache handles them. For R2, Cloudflare's object storage, p99 time to first byte dropped by about half, and a follow-up improvement cut tiered cache traffic for R2 and similar workloads by about 6%. Today, we're making that new implementation available as Origin Range Requests , a self-service feature on all plans. There's no range size to tune and no need to contact support. Turn it on with a Cache Rule , and Cloudflare handles the rest. A request for part of a file An HTTP range request asks for part of a resource instead of the whole resource. The client sends a normal GET with a Range header: GET /movie.mp4 HTTP/1.1 Host: example.com Range: bytes=1048576-2097151 If the server supports the request, it returns 206 Partial Content and identifies the returned bytes with Content-Range : HTTP/1.1 206 Partial Content Content-Range: bytes 1048576-2097151/524288000 Content-Length: 1048576 Range requests are common for large objects. A video player can request bytes around a seek position instead of the whole file. A download manager can resume after an interruption. A package manager can fetch part of an artifact. A client can inspect the end of a file without downloading everything before it. The client decides whether to request a range, and Cloudflare does not change that request. Instead, Origin Range Requests changes how Cloudflare satisfies it. The range-size problem Cloudflare has supported range-request caching for years via static zone configuration. The previous implementation resembled the cache-slicing described in an nginx blog post : each client request was mapped to fixed-size ranges of the file, with the range size and file extensions configured per zone. The size of each range created a tradeoff: small ranges led to many small origin requests and memory pressure on Cloudflare from coalescing all of the requests in-memory, while large ranges caused Cloudflare to download much more data than the client requested. Updates to the range size itself would invalidate cache entries, since the size was part of the cache key. This design also meant people requesting content through our network could have unpleasant experiences accessing these files. Concurrent requests that fell inside the same range, no matter how far apart each client’s requested range was, could block each other. Our nginx-based cache also couldn’t combine range caching with concurrent streaming , a feature we built to let multiple clients read a file from cache while it's still being written. Turning both on together cut responses short, so each range had to be fully downloaded before anyone could read it, and popular files needed a separate origin fetch for every range. The extra bytes could also cross several parts of our distributed cache: from the origin to one data center, between cache tiers, and then toward the client. Every hop multiplied the waste. No value works equally well for a small seek, a sequential download, a large media file, and every origin and cache topology. Our internal cache limitations were directly exposed to customers, who should not need to understand our capabilities in-depth to have files served efficiently. Fortunately, our transition from nginx to a Pingora -based caching server created an opportunity to address the implementation problems that had forced a hard-to-use setting onto customers. Fixed-size cache chunks The fix came from something Pingora was already doing. To make it easy to resume interrupted downloads, it stores every cached file on disk in fixed-size chunks. If the cache",
-    "summary": "Cloudflare replaced its fixed, per-zone range-request cache slicing with a new implementation that stores cached files in fixed-size chunks, eliminating the range-size tuning tradeoff. The result cut R2 p99 time to first byte roughly in half and reduced tiered cache traffic by about 6%. It is now available to all plans as Origin Range Requests, enabled via a Cache Rule.",
+    "summary": "Cloudflare rebuilt how its cache handles partial file requests, like video seeking, so it no longer pulls large extra chunks from the origin. The new Origin Range Requests feature is available on all plans, needs no size tuning, and is turned on with a Cache Rule.",
     "tags": [
       "cdn",
       "caching",
-      "http-range-requests"
+      "cloudflare"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/lufthansa-figma-make/",
@@ -870,14 +1342,14 @@
     "title": "How Lufthansa Systems prototypes realistic maps for the cockpit with Figma Make",
     "published": "2026-10-22",
     "excerpt": "Pilots depend on in-flight software to navigate routes, see air traffic, avoid turbulence, and more. To bring more dynamic prototypes to user testing, Lufthansa Systems turned to Figma Make.",
-    "summary": "Lufthansa Systems used Figma Make to build more dynamic, realistic prototypes of in-flight cockpit software, such as navigation, air traffic, and turbulence displays. The more lifelike prototypes allowed them to bring richer designs into user testing.",
+    "summary": "Lufthansa Systems used Figma Make to build more realistic prototypes of cockpit software for pilots, such as navigation and air traffic displays. The goal was to make designs more lifelike for user testing.",
     "tags": [
-      "figma make",
-      "prototyping",
-      "aviation ux"
+      "design tools",
+      "aviation software",
+      "prototyping"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.databricks.com/blog/fraud-analyst-ai-coworker-detecting-telecom-fraud-real-time-one-platform",
@@ -885,14 +1357,14 @@
     "title": "The Fraud Analyst AI Coworker: Detecting Telecom Fraud in Real-Time on One Platform",
     "published": "2026-10-22",
     "excerpt": "BackgroundAccording to the Communications Fraud Control Association's 2025 survey...",
-    "summary": "Databricks presents an AI 'fraud analyst coworker' designed to detect telecom fraud in real time on a single platform. The post appears to frame fraud as a growing industry problem, citing a 2025 Communications Fraud Control Association survey. Full details of the approach were not available in the provided excerpt.",
+    "summary": "Databricks describes an AI assistant that helps analysts spot telecom fraud as it happens, using a single data platform. The article is only a short teaser, so details are limited, but it focuses on catching fraud in real time.",
     "tags": [
-      "fraud-detection",
+      "fraud detection",
       "telecom",
-      "real-time-analytics"
+      "ai tools"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.databricks.com/blog/ai-cost-management",
@@ -900,14 +1372,13 @@
     "title": "The new economics of AI cost management",
     "published": "2026-10-22",
     "excerpt": "For the past two years, the story around enterprise AI adoption has mostly been about...",
-    "summary": "Databricks argues that enterprise AI adoption is shifting attention from capability to cost, and that managing the economics of AI workloads is becoming a central concern. The teaser suggests the post will examine how organizations can reason about and control AI spending as usage scales.",
+    "summary": "Databricks has written about how companies are managing the rising costs of using AI. The post is only a short teaser, so it does not give specific numbers or details.",
     "tags": [
-      "ai-costs",
-      "enterprise-ai",
-      "finops"
+      "ai costs",
+      "enterprise ai"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.databricks.com/blog/ai-bill-coming",
@@ -915,14 +1386,13 @@
     "title": "The AI Bill is coming",
     "published": "2026-10-22",
     "excerpt": "In this conversation, Catherine Brown talks with Patrick about what happened when...",
-    "summary": "The post, a short teaser from Databricks titled \"The AI Bill is coming,\" previews a conversation between Catherine Brown and Patrick about an unspecified development. The available excerpt is cut off before the details, so the specific topic and conclusions cannot be determined from it.",
+    "summary": "Databricks published a conversation between Catherine Brown and Patrick about the rising costs of AI, based on a short teaser. The full details are not shown, so the specific points made are unclear.",
     "tags": [
-      "ai",
-      "cost-management",
-      "interview"
+      "ai costs",
+      "cloud computing"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://vercel.com/changelog/eight-more-tlds-now-eligible-for-a-free-domain-with-pro",
@@ -930,14 +1400,14 @@
     "title": "Eight more TLDs now eligible for a free domain with Pro",
     "published": "2026-10-22",
     "excerpt": "Every Pro team can claim a free domain for one year. That offer now includes .co , .studio , .company , .info , .pro , .live , .digital , and .agency , bringing the eligible TLDs to sixteen. The offer still covers one domain per team, and premium domains are not eligible. After the first year, your domain will renew automatically at the regular price shown at checkout when you claim it. Claim yours at vercel.com/domains , and see the free domain FAQ for the full list of eligible TLDs and terms. Read more",
-    "summary": "Vercel has expanded its free-domain offer for Pro teams to include eight more TLDs (.co, .studio, .company, .info, .pro, .live, .digital, .agency), for a total of sixteen eligible extensions. Each team can claim one free domain for the first year, premium domains are excluded, and renewal after year one occurs automatically at the regular price.",
+    "summary": "Vercel's Pro plan now includes a free one-year domain for eight more website endings, such as .co and .agency, for a total of sixteen. Each team can claim one domain, premium domains are excluded, and it renews at the regular price after the first year.",
     "tags": [
-      "vercel",
-      "domains",
-      "pricing"
+      "web hosting",
+      "domain names",
+      "vercel"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://vercel.com/changelog/deploy-without-an-account-using-vercel-cli",
@@ -945,29 +1415,13 @@
     "title": "Deploy without an account using Vercel CLI",
     "published": "2026-10-22",
     "excerpt": "You can now deploy apps to Vercel without an account using Vercel CLI . Share prototypes faster with a live URL before signing in to claim your project. From a project directory that isn't linked to Vercel, run: The CLI builds your project locally when needed and returns a deployment URL you can share. Temporary deployments use the dedicated tmp.now domain, separate from vercel.app , and expire after one hour unless claimed. To keep your project live, open the claim link in the CLI output and sign in or create an account. Keep this link private. Read the Vercel CLI documentation to get started. Read more",
-    "summary": "Vercel CLI now lets developers deploy projects without signing in, returning a shareable live URL on a temporary tmp.now domain. Deployments expire after one hour unless claimed through a private link that prompts sign-in or account creation.",
+    "summary": "Vercel now lets you put an app online without making an account, using its command-line tool. The link works for one hour unless you sign in and claim the project, which keeps it live.",
     "tags": [
-      "vercel",
-      "cli",
-      "deployment"
+      "web hosting",
+      "developer tools"
     ],
     "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://vercel.com/blog/death-to-long-lived-static-credentials",
-    "company": "Vercel",
-    "title": "Death to long-lived static credentials",
-    "published": "2026-10-22",
-    "excerpt": "Fifteen years ago, TLS was something you'd use to protect the most sensitive areas of your app. Then Google, Let's Encrypt, the EFF, and others led the push for HTTPS everywhere, making encryption the default for every request. Without it, anyone between the browser and server can read and tamper with the traffic. OAuth, OIDC, DBSC, and related standards already provide building blocks for secure authentication, but standards alone do not make secure methods the norm. HTTPS needed tooling that made encryption easy and a sustained push that made it expected. Machine-to-machine authentication still resembles HTTPS in 2010, with some vendors and enterprises leading the way while long-lived static credentials remain the default for many SaaS vendors and infrastructure providers. At Vercel, we want to make fast and secure the default across the web, including in our own services and the integrations in our Marketplace. We’ve built OIDC UI , a shadcn/ui registry that gives providers trust-policy forms and token verification code. We’re expanding OIDC support across Vercel and setting new authentication requirements for Marketplace providers. Long-lived static credentials are insecure Long-lived static credentials are secrets such as API keys and database passwords that applications keep reusing, often with no expiration. As agents take on more useful work, we give them access to our systems, tools, and data through credentials that can grant permissions far beyond the task at hand. Those credentials can leak into a code repository or chat, be stolen when a service or dependency is compromised, or be exposed when prompt injection leads an agent to reveal them. However it happens, an attacker can use the credential with the permissions it grants until it expires or is revoked. Recent credential-theft and supply-chain incidents across the industry show why encryption at rest isn’t enough when malicious code can read an application’s credentials in production. Rotating exposed credentials takes time and coordination across the systems that use them, and mistakes can disrupt production. At Vercel, we’ve previously spent thousands of engineering hours on multiple, very painful key rotations out of an abundance of caution, and we never want to have to do this again. Better solutions already exist With OIDC , your application can authenticate without storing a long-lived provider key. A trusted issuer provides a signed, short-lived token identifying the application, and the receiving service verifies that token before deciding what access to grant. A stolen token stops working when it expires, limiting how long that copy can be used even if the leak goes unnoticed. Your application can obtain fresh credentials programmatically, removing the need to distribute and manually rotate a persistent provider key across the systems that use it. We’ve been prioritizing OIDC across Vercel so applications can access Blob , AI Gateway , and Sandbox without storing long-lived keys for those services. Our OIDC federation has been generally available since 2024, letting applications running on Vercel exchange Vercel-issued identity tokens for temporary AWS, Google Cloud, and Azure credentials under configured project and environment trust policies . But for developers to stop managing long-lived keys, that support has to extend to all the services their applications depend on. The rest of the web hasn’t followed We surveyed more than 1,000 SaaS vendors and found that only 8.4% supported secure authentication methods. But getting vendors to support secure authentication is only part of the problem. Even when a service offers a secure method, developers often choose a static key because it can be simpler to use. We see three main barriers to broader adoption: Tooling and setup that make secure authentication more complicated than using a static key. Added latency from fetching or exchanging tokens on the request path. Weak incentives for vendors to offer and",
-    "summary": "Vercel argues that long-lived static credentials like API keys and database passwords are insecure, since leaked or stolen secrets remain usable until revoked, and that the industry needs machine-to-machine authentication to become the default as HTTPS did. The post describes Vercel's push for OIDC across its platform and Marketplace, including an OIDC UI registry and new authentication requirements for providers. It notes that only 8.4% of over 1,000 surveyed SaaS vendors support secure authentication methods.",
-    "tags": [
-      "security",
-      "oidc",
-      "authentication"
-    ],
-    "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services",
@@ -975,14 +1429,14 @@
     "title": "Trends from Money20/20 2026: The rise of “hidden” financial services",
     "published": "2026-10-22",
     "excerpt": "As fintech products become increasingly capable, the infrastructure behind them fades into the background. Three trends from Money20/20 show how stablecoins, agents, and always-on money are changing financial services.",
-    "summary": "Stripe highlights three trends from Money20/20 2026 showing how fintech infrastructure is increasingly invisible to end users. The teaser points to stablecoins, agents, and always-on money as the forces reshaping financial services. Details beyond this framing are not available in the excerpt.",
+    "summary": "Stripe shares three trends from the Money20/20 fintech conference: stablecoins, AI agents, and always-on money. The article says financial tools are becoming more capable while the technology behind them stays out of sight.",
     "tags": [
       "fintech",
       "payments",
       "stablecoins"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/remote-dev",
@@ -1225,66 +1679,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://vercel.com/changelog/skipped-monorepo-deployments-no-longer-count-against-limits",
-    "company": "Vercel",
-    "title": "Skipped monorepo deployments no longer count against limits",
-    "published": "2026-10-21",
-    "excerpt": "Deployments that Vercel automatically skips in a monorepo no longer count against your deployment rate limits. Teams with monorepos now get more deployments from the same limits. Vercel skips a project's deployment when its source code and internal dependencies haven't changed, using Turborepo 's package graph and lockfile analysis to determine which projects a commit affects. Skipping is enabled by default for new monorepo projects. You can turn it on for existing projects under Build and Deployment in the project's settings . Learn more about skipping unaffected projects and deployment limits . Read more",
-    "summary": "Vercel will no longer count automatically skipped deployments in monorepos against deployment rate limits, so teams get more deployments from the same quota. Skipping relies on Turborepo's package graph and lockfile analysis to detect unaffected projects, and it is enabled by default for new monorepo projects and can be turned on for existing ones in project settings.",
-    "tags": [
-      "vercel",
-      "monorepo",
-      "deployments"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://vercel.com/changelog/routing-middleware-now-supports-python",
-    "company": "Vercel",
-    "title": "Routing Middleware now supports Python",
-    "published": "2026-10-21",
-    "excerpt": "You can now write routing middleware in Python for FastAPI, Flask, Django, and other Python frameworks. It runs before requests reach your app, and can rewrite, redirect, or answer them. To set it up, point the proxy entrypoint in vercel.toml at your proxy: Your middleware is an ASGI or WSGI app that runs separately from your main app, with only the packages in the vercel.proxy dependency group of your pyproject.toml . Add the packages your middleware imports to that group: The vercel-proxy package provides utilities for writing routing middleware on Vercel, including a Proxy app that routes requests by path: Requests that match no route continue to your app unchanged. For more information, see the Routing Middleware Python reference . Read more",
-    "summary": "Vercel now lets you write Routing Middleware in Python for frameworks like FastAPI, Flask, and Django. The middleware runs before requests reach your app, can rewrite, redirect, or respond to them, and is configured via a proxy entrypoint in vercel.toml with dependencies in a dedicated pyproject.toml group.",
-    "tags": [
-      "python",
-      "middleware",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://vercel.com/changelog/redesigned-flags-explorer-for-sharing-overrides-with-your-team",
-    "company": "Vercel",
-    "title": "Redesigned Flags Explorer for sharing overrides with your team",
-    "published": "2026-10-21",
-    "excerpt": "Flags Explorer is a tool in the Vercel Toolbar where you can see which feature flags are active on your end, and share them with your team. Either by setting them for the branch or through a URL. The Explorer surface has been redesigned to co-locate overrides, branch recommendations, and any related actions. Whenever a branch has overrides set, they will be recommended to anyone visiting the deployment through a dialog. Flags Explorer is available on all plans. Read the documentation to get started. Read more",
-    "summary": "Vercel has redesigned Flags Explorer, a Vercel Toolbar tool for viewing active feature flags and sharing overrides with your team, either per branch or via URL. The new surface co-locates overrides, branch recommendations, and related actions, and branches with overrides now prompt visiting teammates through a dialog. The tool is available on all plans.",
-    "tags": [
-      "feature-flags",
-      "vercel-toolbar",
-      "developer-tools"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://vercel.com/changelog/basetens-mammoth-1-and-elephant-1-now-available-on-ai-gateway-for-free",
-    "company": "Vercel",
-    "title": "Baseten's Mammoth-1 and Elephant-1 now available on AI Gateway for free",
-    "published": "2026-10-21",
-    "excerpt": "Mammoth-1 and Elephant-1 from Baseten are now available for free on AI Gateway for one week. Free access is available through October 27. These decision models classify text, route requests, and score content against criteria you define. Mammoth-1 is the larger, 27B model, while Elephant-1 is a smaller, 9B option. Mammoth-1 is #1 on the Jev Decision Index and Elephant-1 is tied for #1 on the Artificial Analysis Decision Index. Both support a 16k-token context window and return choices, probabilities, and scores. Ask several questions about the same input in one request: select a support team with a Choice question, check for a refund request with a Boolean question, or rate urgency with a Score question. Your application chooses the probability threshold for acting automatically or sending a result for review. Use baseten/mammoth-1 or baseten/elephant-1 as the model name: See the decision models documentation for question types and additional usage details. AI Gateway provides a unified API for accessing models and tracking usage and cost. Decision calls appear in logs and count toward budgets alongside other model requests. Browse all decision models available on AI Gateway. Read more",
-    "summary": "Baseten's Mammoth-1 (27B) and Elephant-1 (9B) decision models are free on Vercel's AI Gateway through October 27. They classify text, route requests, and score content against user-defined questions, returning choices, probabilities, and scores with a 16k-token context window.",
-    "tags": [
-      "ai-models",
-      "ai-gateway",
-      "decision-models"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
     "url": "https://shopify.engineering/open-model-task-experts",
     "company": "Shopify",
     "title": "How Shopify turns open models into task experts",
@@ -1385,66 +1779,6 @@
       "security",
       "vulnerability-management",
       "ai-coding"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-    "company": "OpenAI",
-    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-    "published": "2026-10-21",
-    "excerpt": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
-    "summary": "OpenAI announced that ChatGPT Ads is expanding to 26 new countries, with over 100,000 advertisers having used the platform so far. The teaser says the ads let businesses, from local shops to global brands, reach people as they explore, compare, and decide what to buy within ChatGPT.",
-    "tags": [
-      "advertising",
-      "chatgpt",
-      "product-launch"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/building-chatgpt-ad-stack",
-    "company": "OpenAI",
-    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-    "published": "2026-10-21",
-    "excerpt": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
-    "summary": "OpenAI describes how it built an LLM-powered advertising stack for ChatGPT that interprets conversational intent to serve relevant ads. The design keeps ads separate from model answers to preserve user trust, and is built to deliver ads at scale.",
-    "tags": [
-      "llm",
-      "advertising",
-      "chatgpt"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/broad-access-through-consistent-standards",
-    "company": "OpenAI",
-    "title": "Broad access through consistent standards",
-    "published": "2026-10-21",
-    "excerpt": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-    "summary": "OpenAI describes how it works with distribution partners to keep safeguards consistent across access channels while supporting responsible use. The post frames its Usage Policies as the shared standard that clarifies expectations for everyone distributing its models. The teaser gives no further technical or operational detail.",
-    "tags": [
-      "ai-safety",
-      "usage-policies",
-      "partnerships"
-    ],
-    "summarized": true,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/att-legal",
-    "company": "OpenAI",
-    "title": "How AT&T is rethinking in-house legal work with OpenAI",
-    "published": "2026-10-21",
-    "excerpt": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
-    "summary": "AT&T is partnering with OpenAI to make legal knowledge more accessible across its in-house legal function. The teaser says the LegalEdge team is rethinking how legal requests are intake-processed and how legal judgment can be scaled.",
-    "tags": [
-      "legal-ops",
-      "enterprise-ai",
-      "case-study"
     ],
     "summarized": true,
     "summary_version": 0
@@ -1687,39 +2021,6 @@
     "title": "Cross-store product clustering across millions of stores",
     "published": "2026-10-20",
     "excerpt": "How we group product listings across millions of stores using tiered matching models, graph partitioning, and learned cluster merge decisions.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/terminal-x",
-    "company": "OpenAI",
-    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-    "published": "2026-10-20",
-    "excerpt": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/ted-taylor-restaurant",
-    "company": "OpenAI",
-    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-    "published": "2026-10-20",
-    "excerpt": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-    "company": "OpenAI",
-    "title": "OpenAI acquires Orchestra Bio",
-    "published": "2026-10-20",
-    "excerpt": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -2441,28 +2742,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://developer.nvidia.com/blog/rewrite-apache-spark-udfs-gpu-acceleration-ai-agents/",
-    "company": "NVIDIA",
-    "title": "How to Rewrite Apache Spark UDFs for GPU Acceleration with AI Agents",
-    "published": "2026-10-13",
-    "excerpt": "Enterprise applications have become increasingly demanding. Agentic AI has compounded the need for vast amounts of enterprise data with frequent, complex... Enterprise applications have become increasingly demanding. Agentic AI has compounded the need for vast amounts of enterprise data with frequent, complex queries across increasingly large datasets. Meeting that demand requires greater data throughput without a proportional increase in cost. NVIDIA cuDF addresses this challenge by leveraging the massive parallelism and high-bandwidth memory of… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
-    "company": "NVIDIA",
-    "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
-    "published": "2026-10-13",
-    "excerpt": "NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to... NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to production-grade AI workload and GPU orchestration capabilities. This release expands the NVIDIA DSX AI Factory Platform by establishing NVIDIA Run:ai as an open foundation that enables the broader ecosystem to bring differentiated solutions to market… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
     "company": "Google DeepMind",
     "title": "Gemini 4 Argon: Built to solve your hardest problems",
@@ -2496,28 +2775,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://blog.cloudflare.com/rewinding-the-exponential/",
-    "company": "Cloudflare",
-    "title": "Rewinding the exponential: How we keep hardware usage down",
-    "published": "2026-10-13",
-    "excerpt": "More than 20% of the web sits behind Cloudflare’s network, and our team, the Data team, owns the data pipeline responsible for plumbing that data (and more) from our global network to applicable central data centers. The Cloudflare network is a globally distributed system supporting tens of thousands of servers. Data that power Cloudflare Logs , SQL API , observability , internal analytics, and more flow through this network and use our data pipeline to serve customers. In May of this year, we were providing data delivery at roughly two billion events per second. This includes customer traffic as well as data sent from internal teams. Year after year, we tackle the same problem — exponential traffic growth against linear hardware growth. We have to react to this increase in order to keep resource costs under control. Over the past five years, we’ve made various improvements to compensate for the data volume increase in comparison to hardware allocation, equivalent to deferring two and a half years of hardware expansion. This post details those changes: breaking up our monolithic data schema in 2022, adjusting compression in 2024, rearchitecting pipeline replication in spring 2026, decentralizing sampling in summer 2026, and introducing aggregations into the pipeline in fall 2026. Background Our pipeline starts with an internal service called Logfwdr, where we collect from highly distributed data sources (think: Workers, FL ). We then feed this data to a set of centralized receivers, which eventually push them onto our buffering system , Buftee. Consumers fetch data from Buftee and distribute data to their final destinations, like ClickHouse, which we rely on heavily . Unpacking the monolith In 2022, we dismantled our one and only schema. Previously, there was a single stream packed with every product's fields, forcing Cloudflare-internal consumers to ingest everything and demux or discard records via filters. At the time, most of Cloudflare’s data products were built on HTTP, Security and CDN metadata. In 2021, our message schema looked like this: Some fields here belonged under the same product, but some were completely irrelevant to each other. The hypothesis was that none of these teams require 100% of fields in the monolithic schema. In other words, we can create small messages for each product’s required fields. Although we were going to duplicate fields, some of them in every message, replacing this firehose with product-specific schemas actually reduced the backbone bandwidth usage by 35-40%, knocking out roughly a year’s worth of compressed traffic growth. Compression By 2024, as traffic steadily grew, we were tackling network congestion issues on a daily basis. To react to this, we changed our compression algorithm from LZ4 to zstd. We had already experimented with zstd compression before, but we noticed a higher CPU usage at the time. Therefore, we were careful to track the metrics to ensure the trade-off was worth it. Initially, we rolled this change out to a few servers. To our relief, we didn’t observe a noticeable difference in CPU usage. With more confidence, we gradually rolled out to our entire fleet, which also showed little impact to CPUs. In the end, there was nearly a 40% reduction in compressed traffic throughput. The uncompressed bytes remained at the same growth, meaning we could support more than 1.5x the amount of traffic with the same size pipe. Or another way to put it, the estimated growth-equivalent reductions put us at about 10 months prior. Now, in 2026, we attempted three strategies to reduce uncompressed bytes (and thus, compressed bytes). Load balancing To make analytics resilient against regional disasters, our systems require redundant data to be stored in multiple centralized regions (data subject to Customer Metadata Boundaries is stored strictly within its designated region). Historically, the simplest way to achieve disaster resilience was double-writing: Logfwdr transmitted two full co",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://blog.cloudflare.com/d1-control-plane/",
-    "company": "Cloudflare",
-    "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
-    "published": "2026-10-13",
-    "excerpt": "Traditional database architecture assumes you have one or two big database clusters per application, usually accompanied by a connection pooling solution. AI-assisted development and vibe coding platforms turn this model inside out and are driving applications toward many small databases: one per user, application, preview environment, or tenant. That model fits D1 particularly well. D1 is Cloudflare's managed, serverless database based on SQLite. It allows you to create millions of databases and only pay for what you use. The question becomes: how do you scale the control plane for millions of databases without making every query slower by sending it through centralized bottlenecks? We made a lot of architectural changes to scale out D1 to support platforms with millions of created databases, hundreds of thousands of which are active at any point. This post is a behind-the-scenes deep dive into how the D1 control plane works. Many of the architectural patterns we will describe can be used by anyone building on top of Cloudflare’s Developer Platform. The post also gives a glimpse into how we build our own control planes. Growth in numbers There was already a steady growth in D1 usage when we started planning these changes, but we knew we would need to support a much bigger scale once large platforms started building with D1. Here is how things have played out so far. D1 has seen a 15x growth in the number of live non-deleted databases over the past one year , and a 65x growth over the past 2 years (as of October 8, 2026). We have also seen 18x growth in the number of daily active databases over the past year (as of October 8, 2026). A database is considered active if it executed at least one query during that day. Established and successful platforms are already building with D1, using the same tools available to all Cloudflare users. \"ChatGPT Sites lets anyone turn ideas into shareable experiences. D1 gives our users a simple, scalable way to add features like custom metrics, leaderboards, and comments to their dashboards, games, and tools.\" - Jon Abrams, ChatGPT Sites @ OpenAI While we were making the changes described in this blog post, we periodically load-tested against a target well above our expected growth. This guided where to focus our optimization efforts. Guiding engineering principles Applications built on the Cloudflare Developer Platform range from full-stack applications to service APIs, from internal single-user portals to massive multi-tenant vibe coding platforms, and everything in between. While building out the D1 control plane to support millions of databases, the following tenets and principles were guiding our architecture decisions and are useful for anyone building their control and data planes on our platform. Design all processes with failure and idempotency in mind. Failures will happen, so the system needs to self-correct where possible and continue making progress. Avoid centralized single-region components in any hot path for data plane operations (in our case all query requests). Use Workers KV , a globally distributed KV store, for critical routing metadata so that cache misses only rarely need to query central databases. Use Hyperdrive to access central Postgres databases for efficient connection pooling and optimized routing and caching, using read replicas wherever possible. Periodically precompute aggregations in the database to avoid scan queries during user request processing. Use eventual consistency and queuing between components that don’t need strong consistency to increase reliability and availability. Load-test the application with realistic workloads to discover bottlenecks and inefficiencies, and focus on optimizing those first. There are more engineering principles we follow internally to build our systems, but the above are generic enough and apply to anyone building on Cloudflare. The following sections will dive into the main system components and processes of the D1 control ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/",
     "company": "AWS",
     "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
@@ -2545,28 +2802,6 @@
     "title": "OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks",
     "published": "2026-10-12",
     "excerpt": "At the 2026 Open Compute Project Global Summit, Meta is sharing the next generation of open networking infrastructure, including: Our first liquid-cooled network rack (IcePack), and 102.4T switch platform (IceCube). Flattened Planar Fabric (FPF), a multiplane backend scale-out fabric that fundamentally changes how GPUs connect to the network MetaRoCE, our open-source AI transport protocol. Launching the Open Switch Platform Architecture (OSPA) initiative within OCP. We’re inviting engineers, silicon vendors, system integrators, and operators to join us and the OCP community in meeting the challenges of building open, efficient, and sustainable AI infrastructure. At Meta, we believe that open networking is critical for building high-performance, scalable, and sustainable infrastructure, and we’ve acted on that conviction since co-founding the Open Compute Project (OCP) in 2011. Throughout the ongoing AI revolution, Meta has pushed the boundaries of what’s possible in data center networking and shared our advances with the industry. At OCP 2025, we introduced our latest AI scale-out fabrics and drove the creation of the Ethernet for Scale-Up Networking (ESUN) initiative. This year at OCP 2026, we’re sharing the networking innovations that directly support our latest AI workloads such as Meta’s Muse Wonder and Muse Spark models, and Muse, our personal AI agent built for everyone . Here’s some of what’s new: The 102.4T scale-out switch : Meta’s first liquid-cooled network rack (IcePack) and 102.4T switch blades (IceCube), designed to support high power density, deliver higher thermal efficiency, and enable gigawatt-scale AI clusters. The scale-out Flattened Planar Fabric (FPF) : Meta’s multiplane fabric, enabling larger, highly efficient GPU clusters with lower latency — with learnings shared with our cloud partners. Scale-across for multi-site clusters : Meta’s petabit-scale backend aggregation (BAG) super-spine and how large-scale training jobs deal with failures at this scale — with an overview of how we’ve built SRv6 regional backbones using FBOSS and SAI to handle even longer distances Ethernet for Scale-Up Networking: Meta’s MTIA 300 system uses Tahan, an Ethernet-based 51.2T scale-up switch, delivering 6.4 Tbps per accelerator — with a preview of next-gen 72-accelerator-per-rack design on 102.4T silicon and moving toward an ESUN-based implementation with future chips. Open Switch Platform Architecture (OSPA) : a new OCP initiative, co-led by Meta, Microsoft, and Alibaba, that standardizes the switch platform layer — with specification v1.0 now submitted to OCP. MetaRoCE : Meta’s RDMA transport protocol for AI networks — now with open-source implementations. The 102.4T Generation: Liquid-Cooled Networking at AI Scale As AI clusters grow to gigawatt scale, network switches must deliver dramatically more bandwidth while fitting within increasingly dense power and cooling envelopes. Our answer is the IcePack rack, Meta’s first-generation liquid-cooled network rack. IcePack is based on OCP’s ORV3-HPRv1 rack standard . IceCube switch blades — 102.4-Tbps fabric switches that deliver 128×800G non-blocking switching capacity — sit inside each rack. IceCube comes in two variants , one built on Broadcom’s Tomahawk6C switch ASIC and one on NVIDIA Spectrum-6 Switch ASIC. Both run Meta’s open-source FBOSS network operating system that leverages OCP SAI (Switch Abstraction Interface). This new generation represents a 2x bandwidth increase over our 51.2T platforms while achieving the thermal density required for next-generation AI data centers. The IcePack rack — Meta’s first liquid-cooled network rack, populated with IceCube 102T switch blades. IceCube — Meta’s 102.4 Tbps liquid-cooled switch blade, delivering 128×800G non-blocking capacity and running FBOSS. Scaling AI Fabrics From Building to Region As seen at Meta and across the industry, AI clusters now span buildings, campuses, and multiple regions . This demands fabric architectures",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
-    "company": "NVIDIA",
-    "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-    "published": "2026-10-12",
-    "excerpt": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are... Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are all built this way, with Mamba-2, Gated DeltaNet (GDN), or Kimi Delta Attention (KDA) as the SSM layer. SSM layers are designed to make decoding fast: they use a fixed-size state in place of a key-value (KV) cache that grows with… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://blog.cloudflare.com/transformers-on-logpush/",
-    "company": "Cloudflare",
-    "title": "Filter, reshape, and redact logs before export with Transformers",
-    "published": "2026-10-12",
-    "excerpt": "Logpush delivers logs in batches as quickly as possible, enabling Cloudflare to provide information almost in real time. During our recent Birthday Week , we made Logpush available on all self-serve plans and Transformers generally available. Those changes were among eight major updates to Cloudflare Observability and reflect our commitment to make every Cloudflare feature available to everyone . This post takes a deeper look at how Transformers work inside Logpush's export pipeline. Observability teams use Logpush to export Cloudflare logs to security information and event management systems (SIEMs), analytics platforms, and object storage. Before those logs reach their destination, teams may need to remove health checks, omit sensitive fields, or reshape records for dashboards and investigations. Today, this often requires a separate processing service that teams must deploy, scale, monitor, and maintain. For example, a team that collects logs from multiple CDNs can add a static provider field to normalize records before they reach its analytics platform. Teams also pay to export, ingest, and store records they discard as soon as they arrive, so filtering them before delivery can reduce downstream data volume and cost. With Transformers, that processing moves into the Logpush export workflow.Teams define a SQL query to filter records, redact sensitive data, and reshape the output by adding, renaming, removing, or nesting fields. Logpush applies the query before export, so each destination receives data in the form it needs. We made this workflow simple for customers by embedding a SQL transformation engine in Logpush's high-throughput export pipeline while keeping performance and resource use predictable. How Logpush Transformers work A Transformer is a SQL query written for a specific Logpush dataset. The query references fields from that dataset and defines which records and fields Logpush should export. Logpush applies the query to each batch before export. Records that do not match the WHERE clause are removed. For the remaining records, the output of the SELECT statement becomes the exported record. Transformers can change the structure and contents of each record, and the transformed results are exported in NDJSON format. Customers can create, preview, and manage Transformers in the Cloudflare dashboard through Transformer Studio or programmatically through the API . After saving a Transformer, they can attach it to a compatible NDJSON Logpush job that uses the same dataset. Each update creates a new version, so customers can review how a Transformer has changed over time. The following example reshapes a Cloudflare HTTP request log to match a team-defined schema used across CDN providers. It does not convert between serialization formats: both the input and output use NDJSON. { \"ClientIP\": \"203.0.113.42\", \"ClientRequestHost\": \"example.com\", \"ClientRequestMethod\": \"POST\", \"ClientRequestPath\": \"/api/checkout\", \"ClientRequestUserAgent\": \"Mozilla/5.0\", \"EdgeResponseStatus\": 502, \"EdgeStartTimestamp\": \"2026-05-21T15:00:00Z\", \"RayID\": \"8e2a1c60ef9e1c9a\" } The Transformer renames and nests fields, redacts part of the client IP address, adds provider and error information, removes unused fields, and filters out internal and health-check traffic: SELECT extract(epoch FROM to_timestamp(EdgeStartTimestamp)) AS unix_ts, regexp_replace(ClientIP, '\\.\\d+\\.\\d+$', '.XXX.XXX') AS redacted_ip, UPPER(ClientRequestMethod) AS method, EdgeResponseStatus AS status, RayID AS ray_id, 'cloudflare' AS provider, named_struct( 'host', ClientRequestHost, 'path', ClientRequestPath ) AS request, EdgeResponseStatus >= 500 AS is_server_error FROM http_requests WHERE ClientRequestHost NOT IN ( 'internal.example.com', 'health.example.com' ) AND ClientRequestPath NOT LIKE '/healthz%' AND ClientRequestPath NOT LIKE '/metrics%' The resulting NDJSON record uses the normalized schema: { \"unix_ts\": 1779375600, \"redacted_ip\": \"203.0.XXX.XXX\", \"method\": \"POST\", ",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -2642,17 +2877,6 @@
     "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
     "company": "Google Research",
     "title": "Does better work always mean better workers?",
-    "published": "2026-10-07",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
-    "company": "Hugging Face",
-    "title": "Introducing Falcon ASR",
     "published": "2026-10-07",
     "excerpt": "",
     "summary": "",
@@ -2787,17 +3011,6 @@
     "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
     "published": "2026-10-05",
     "excerpt": "Last week, we announced a public preview of Amazon Bedrock Managed Agents powered by OpenAI , built on a customized version of OpenAI’s Agents API engineered to be AWS-native and integrated with AWS resources. You can now build agents optimized for OpenAI models that run entirely inside AWS with the identities, permissions, and governance controls you already use. You can choose an execution environment: self-hosted compute to use an existing development machine, container, or compute environment or Amazon Bedrock AgentCore Runtime, for managed runtime sessions and configurable storage in your AWS account. To learn more, visit the Amazon Bedrock documentation . In addition, we are adding new frontier models on Amazon Bedrock to expand your model choices: OpenAI GPT-6.1 Sol : An upgrade to GPT-6 Sol, GPT-6.1 Sol delivers exceptionally strong performance on agentic coding, computer use, and professional work. According to OpenAI, it approaches GPT-6 Astra across demanding evaluations at roughly one-fifth of the cost, giving developers more room to build and run capable agents at scale. To learn more, visit the GPT-6.1 Sol model card . OpenAI GPT-6 Astra UltraFast mode : Ultrafast is a premium speed tier for GPT-6 Astra, built for workloads where speed matters most. According to OpenAI, Ultrafast delivers up to 6x faster inference in the API, with up to 300 tokens per second. The Amazon Bedrock inference engine delivers the performance, security, and reliability required for production workloads. To learn more, visit the GPT-6 Astra model card . Anthropic Claude Sonnet 5.5 : Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It’s stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. To learn more, visit the Claude Sonnet 5.5 model card . SpaceXAI Grok 4.7 : Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. To learn more, visit the Grok 4.7 model card . Last week’s launches Here are some launches that got my attention: AWS Well-Architected Agent (preview) : You can use an AI-powered agent service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications’ cost, security, performance, and resilience. The agent analyzes your infrastructure, understands your unique business goals, and delivers contextual recommendations. Amazon Aurora PostgreSQL supports direct querying of Apache Iceberg and Parquet data : You can directly query operational data together with data stored in data lakes in Apache Iceberg and Parquet formats using your existing PostgreSQL applications and tools, without extract, transform, and load (ETL) pipelines or data duplication. Amazon S3 Tables support all Apache Iceberg V3 data types : Amazon S3 Tables add support for geometry, geography, unknown, and nanosecond timestamp data types, along with column default values, as defined in the Iceberg V3 specification. You can now store geospatial coordinates and nanosecond-precision event times natively instead of encoding them in strings or integers. For a full list of AWS announcements, be sure to keep an eye on the What’s New with AWS page. AWS service availability updates When the availability of an AWS service or feature changes, we provide customers guidance in AWS Product Lifecycle Changes on available alternatives and support for migration so that disruptions to your operations are minimized. The following lifecycle changes were updated on September 29, 2026. Services moving to Maintenance (no longer accessible to new customers starting October 29, 2026): Amazon Chime SDK SIP Media Application Amazon WorkSpaces Secure Br",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-    "company": "Hugging Face",
-    "title": "The Agent Said It Was Done. The Database Disagreed.",
-    "published": "2026-10-03",
-    "excerpt": "",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -3563,17 +3776,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/",
-    "company": "Google Research",
-    "title": "TimesFM-3: A zero-shot foundation model for multivariate forecasting",
-    "published": "2026-08-31",
-    "excerpt": "Data Management",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://dropbox.tech/security/how-our-inhouse-auditor-tests-cookie-behavior-across-hundreds-of-web-surfaces",
     "company": "Dropbox",
     "title": "Testing cookie behavior across hundreds of web surfaces with our in-house auditor",
@@ -3590,17 +3792,6 @@
     "title": "Piloting the world's first double-blind AI evaluations",
     "published": "2026-08-27",
     "excerpt": "Piloting the world's first double-blind AI evaluations",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
-    "company": "Google DeepMind",
-    "title": "Gemini Omni 1.1 Flash lets you build with more control",
-    "published": "2026-08-27",
-    "excerpt": "",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -3810,17 +4001,6 @@
     "title": "Introducing Profile Frames: Decorative Borders to Make Your Discord Profile Museum-Worthy",
     "published": "2026-07-29",
     "excerpt": "Introducing Profile Frames: a new way to put a finishing touch on your Discord profile. Frames add a decorative border around your profile, giving the whole thing a look that's unmistakably yours.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4",
-    "company": "Airbnb",
-    "title": "Eval-driven development: Lessons from evaluating GenAI at scale",
-    "published": "2026-07-28",
-    "excerpt": "How Airbnb teams build trustworthy Generative AI products by treating evaluation as a first-class engineering discipline; not an afterthought. Nestled into the lush hillside, this stunning modern retreat features striking natural wood architecture, terraced balconies, and a serene landscape. By: Rohit Girme , Dan Miller , Mia Zhao , Lifan Yang , Clint Kelly Introduction Generative AI breaks a lot of the assumptions that used to hold true for software testing. Unlike traditional software, LLM outputs are non-deterministic, and “ correct ” is subjective. Because so much judgment is involved, you often need an AI to evaluate an AI, which introduces its own potential failure modes. Making matters more complicated, a single interaction with an LLM can chain retrieval, reasoning, tool calls, and generation, each of which can fail independently. At Airbnb, we build LLM-powered features across our product, with recent launches including review highlights, AI customer support, smart communication features for guests and hosts, and more. Behind the scenes, we also use AI to help us spot trends and understand what’s working, guiding where we improve the product next. Each product team may have its own evaluation criteria, process, workflows, etc. However, these are built on top of some common foundations and principles. An infrastructure team provides tooling and best practices, incorporating learnings across domains so that they are shared with everyone building products at Airbnb. In this article, we wanted to share some of these best practices and learnings with the broader engineering community. Please note that the recommendations here are not intended to be prescriptive; there is no one-size-fits all approach when it comes to running evals. 1. Foundation Evaluating LLM-based systems is challenging work, and this should be planned for at the outset. Without a deliberate strategy, three things tend to happen: False confidence : A generic “helpfulness” metric scores well, you ship, but it didn’t capture the failure mode people actually hit. Undetected regressions : A prompt change subtly degrades a dimension you weren’t measuring. Wasted effort: You build a scaled eval pipeline for metrics that don’t correlate with outcomes. Expect to spend a meaningful share of your total project effort on evaluation. This is not unnecessary overhead, it’s how you build products that actually work. 1.1 The one rule When in doubt, look at your data. Manually reviewing your data and building an intuition for what counts as success is always the starting point we recommend to teams. Build your prototype, and run it through 100 examples (synthetic is fine). Then read the outputs . Read the traces and find the model’s mistakes. Categorize them and build an eval. This single habit will do more for your product quality than any framework, tool, or methodology in this document. 1.2 Eval-driven development Formalized, that habit becomes eval-driven development (EDD) , the GenAI analogue of test-driven development. Rather than predicting every failure upfront, EDD builds the infrastructure and habits to discover, encode, and continuously test for failure modes as they appear. It also forces stakeholders to externalize what “good” means, which shapes the product roadmap. Five principles anchor EDD: Define goals and gates upfront. What are you optimizing for? What must be true before you ship? These answers may not be clear right away; you might discover them as part of your data exploration. Let real errors guide your metrics. Co-develop them with cross-functional partners based on observed failures. Don’t invent them in a vacuum. Keep your evaluator set small and sharp. 3–5 well-calibrated LLM-as-judge evaluators beat 20–30 noisy ones. Each should target one specific correctness dimension. Appoint a decision-maker. While what constitutes correctness should be a team discussion, people will sometimes disagree. Include a final (human) decision-maker who makes th",
     "summary": "",
     "tags": [],
     "summarized": false,
