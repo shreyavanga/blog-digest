@@ -127,18 +127,24 @@ function fillSelect(select, values) {
   [...new Set(values)].sort().forEach((v) => select.append(new Option(v, v)));
 }
 
-// Rebuild company/topic dropdowns from posts in the current range,
-// keeping the current selection when still available.
-function rebuildFilters() {
-  const posts = rangePosts();
-  [["company", posts.map((p) => p.company)],
-   ["tag", posts.flatMap((p) => p.tags || [])]].forEach(([id, values]) => {
-    const select = $(id);
-    const previous = select.value;
-    select.options.length = 1;
-    fillSelect(select, values);
-    select.value = [...select.options].some((o) => o.value === previous) ? previous : "";
-  });
+// The company list always covers every stored post, so any company can be picked regardless of date.
+function rebuildCompanies() {
+  const select = $("company");
+  const previous = select.value;
+  select.options.length = 1;
+  fillSelect(select, state.posts.map((p) => p.company));
+  select.value = [...select.options].some((o) => o.value === previous) ? previous : "";
+}
+
+// Topics come from the posts matching the current time range and company.
+function rebuildTags() {
+  const company = $("company").value;
+  const posts = rangePosts().filter((p) => !company || p.company === company);
+  const select = $("tag");
+  const previous = select.value;
+  select.options.length = 1;
+  fillSelect(select, posts.flatMap((p) => p.tags || []));
+  select.value = [...select.options].some((o) => o.value === previous) ? previous : "";
 }
 
 async function load() {
@@ -152,13 +158,35 @@ async function load() {
     $("feed").append(el("p", "empty", "Could not load posts."));
     return;
   }
-  rebuildFilters();
+  rebuildCompanies();
+  rebuildTags();
   render();
 }
 
-["company", "tag", "unread"].forEach((id) => $(id).addEventListener("change", render));
+["tag", "unread"].forEach((id) => $(id).addEventListener("change", render));
+
+// Picking a company shows all of its stored posts (time range switches to "All");
+// clearing the company puts the previous time range back.
+$("company").addEventListener("change", () => {
+  const range = $("range");
+  if ($("company").value) {
+    if (range.value !== "all") {
+      state.rangeBeforeCompany = range.value;
+      range.value = "all";
+    }
+  } else if (state.rangeBeforeCompany && range.value === "all") {
+    range.value = state.rangeBeforeCompany;
+    state.rangeBeforeCompany = null;
+  } else {
+    state.rangeBeforeCompany = null;
+  }
+  rebuildTags();
+  render();
+});
+
 $("range").addEventListener("change", () => {
-  rebuildFilters();
+  state.rangeBeforeCompany = null;
+  rebuildTags();
   render();
 });
 load();
