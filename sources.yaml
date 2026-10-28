@@ -22,3 +22,7 @@
 - {company: Figma, feed_url: "https://www.figma.com/blog/feed/atom.xml"}
 - {company: Vercel, feed_url: "https://vercel.com/atom"}
 - {company: Databricks, feed_url: "https://www.databricks.com/feed"}
+# Anthropic has no official RSS feed; these are community-generated (github.com/Olshansk/rss-feeds) and could change or go stale.
+- {company: Anthropic, feed_url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"}
+- {company: Anthropic, feed_url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml"}
+- {company: Anthropic, feed_url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"}
