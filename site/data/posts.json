@@ -1,5 +1,313 @@
 [
   {
+    "url": "https://www.databricks.com/blog/smarter-cost-controls-serverless",
+    "company": "Databricks",
+    "title": "Smarter cost controls for serverless",
+    "published": "2026-10-29",
+    "excerpt": "At Databricks, our serverless compute usage has grown more than 3x in the past year,...",
+    "summary": "Databricks says its serverless computing use has grown more than three times in the past year. The post introduces new ways to control spending on it, though the teaser does not list the details.",
+    "tags": [
+      "cloud costs",
+      "serverless computing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-procore-powering-construction-analytics-opensharing-0",
+    "company": "Databricks",
+    "title": "How Procore is powering construction analytics with OpenSharing",
+    "published": "2026-10-29",
+    "excerpt": "Connecting an industry built on disconnected dataConstruction runs on data that rarely sits in one place...",
+    "summary": "Databricks describes how Procore, a construction software company, uses a sharing method called OpenSharing to let its construction data be used across different companies and tools. The post focuses on bringing together data that is usually scattered across many separate systems.",
+    "tags": [
+      "construction",
+      "data sharing",
+      "analytics"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-plugin-is-now-available-in-antigravity",
+    "company": "Vercel",
+    "title": "Vercel Plugin is now available in Antigravity",
+    "published": "2026-10-29",
+    "excerpt": "The Vercel Plugin is now available in the Google Antigravity marketplace. Use the Vercel Plugin to give your Antigravity agent guidance on Vercel APIs and recommended patterns, with skills for products such as AI SDK , Vercel Functions , and Workflow . This demo shows an Antigravity agent using the Vercel Plugin to build and deploy a Python backend with Vercel Sandbox : Install the Vercel Plugin by opening Customizations → Marketplace in the Antigravity App and searching for Vercel , then see the Vercel Plugin documentation for available skills and guidance. Read more",
+    "summary": "Vercel's plugin for building apps can now be installed in Google's Antigravity tool. It gives the AI coding assistant tips and guidance on Vercel's tools, and a demo shows it building and deploying a Python backend.",
+    "tags": [
+      "developer tools",
+      "cloud hosting",
+      "ai coding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
+    "published": "2026-10-29",
+    "excerpt": "Mistral Large 4 from Mistral now uses updated weights on AI Gateway , with lower pricing for input, cached input, and output tokens. According to Mistral’s release announcement , the updated weights improve agentic coding and defensive cybersecurity, with greater token efficiency on coding tasks. The release also improves spreadsheet creation and editing, web research, and resistance to prompt injection. If you were already using mistral/mistral-large-4 via AI Gateway, there is no need to change your model to start using the updated version. The existing model ID string uses the new model with updated weights and pricing. To use Mistral Large 4 in fx, Pi, Claude Code, Codex, Cursor, or other harnesses, install the latest Vercel CLI and run setup: Then select mistral/mistral-large-4 in the agent. See the coding agents guide for details. You can also try Mistral Large 4 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Mistral Large 4 on Vercel's AI Gateway now uses updated model weights and costs less to use. The update reportedly improves coding help, spreadsheet work, and resistance to prompt injection, and existing users need to change nothing.",
+    "tags": [
+      "ai models",
+      "cloud pricing",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/improved-ip-geolocation-data",
+    "company": "Vercel",
+    "title": "IP geolocation now covers more visitors at higher resolution",
+    "published": "2026-10-29",
+    "excerpt": "IP geolocation on Vercel now resolves visitor locations with finer network granularity, delivering city-level data for nearly all requests and postal-code data for 90% of traffic. Geolocation data is now refreshed more often, so locations keep up as IP ranges are reassigned and routing changes. This is enabled for all projects with no code or configuration changes required. Existing geolocation headers along with the geolocation() helper in @vercel/functions , return the same fields for Vercel Functions and Routing Middleware . If you use geolocation for access controls, localization, or compliance, some visitors will now resolve to a different city or country, most often traffic from VPNs, hosting providers, and leased IP ranges: Physical termination location: Subnets announced from a hosting provider in a different country than their regional internet registry (RIR) record now resolve to the data center where the traffic actually terminates. Testing geo-dependent routes: Verify access rules against an IP's active network location rather than its static registry allocation. Read the request headers documentation for all available geolocation headers and fields. Read more",
+    "summary": "Vercel now shows visitor locations with more detail, mostly city-level and postal-code data, and refreshes them more often. It turns on automatically, but some VPN and hosting-provider visitors may now appear in a different country or city than before.",
+    "tags": [
+      "web hosting",
+      "location data",
+      "privacy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules",
+    "company": "Vercel",
+    "title": "Control AI crawlers and assistants separately in Vercel Firewall",
+    "published": "2026-10-29",
+    "excerpt": "You can now log or block requests from AI crawlers and AI assistants separately with the AI Bots managed ruleset in Vercel Firewall . AI crawlers: bots that collect content for indexing and model training AI assistants: bots that fetch pages in response to user actions or search queries For example, you can block AI crawlers while allowing AI assistants to retrieve your content to answer users’ questions. Vercel updates the rules as new bots are added. To configure these controls, open your project’s Security > Firewall > Rules . Under Bot Management , enable AI Bots and select the gear icon beside it. Set an action for AI crawlers and AI assistants, then review and publish your changes. You can also modify these rule settings using the Vercel CLI: type: embedded-entry-inline id: 30azXU4HVTfrsO9MbBOCLv Review the changes with vercel firewall diff , then apply them with vercel firewall publish . The AI Bots managed ruleset is available on all plans. Learn more in the documentation . Read more",
+    "summary": "Vercel's firewall now lets site owners log or block AI crawlers (bots that collect content for training) separately from AI assistants (bots that fetch pages to answer a user's question). This means you can, for example, block training bots while still letting assistants read your pages.",
+    "tags": [
+      "web security",
+      "ai bots"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/updated-model-spec",
+    "company": "OpenAI",
+    "title": "An updated Model Spec for more capable and beneficial AI",
+    "published": "2026-10-29",
+    "excerpt": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+    "summary": "OpenAI has released an updated Model Spec, a document laying out five core values to guide its AI. The goal is for the AI to use sound judgment, respect people's own choices, and follow what people actually intend.",
+    "tags": [
+      "ai safety",
+      "openai",
+      "ai guidelines"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/ropes-gray-ai-diligence",
+    "company": "OpenAI",
+    "title": "How Ropes & Gray is developing AI for transactional diligence",
+    "published": "2026-10-29",
+    "excerpt": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+    "summary": "Law firm Ropes & Gray is building AI tools with OpenAI to help lawyers check large sets of company documents during deals. Lawyers still review the grouped documents, summaries, and reports before advising clients.",
+    "tags": [
+      "ai",
+      "law",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "company": "OpenAI",
+    "title": "How we detect frontier model misalignment",
+    "published": "2026-10-29",
+    "excerpt": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+    "summary": "OpenAI describes how it uses several layers of monitoring to spot when its advanced AI models act in ways not intended or act without permission. The goal is to let teams step in before problems grow.",
+    "tags": [
+      "ai safety",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/mistral-large4",
+    "company": "Hugging Face",
+    "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+    "published": "2026-10-29",
+    "excerpt": "",
+    "summary": "Hugging Face has announced that Mistral Large 4, a new large AI language model from Mistral, is now available on its platform. The post is a short announcement with no details beyond the title.",
+    "tags": [
+      "ai models",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+    "company": "Hugging Face",
+    "title": "Granite Switch 4.1.1 — Update models like you update software",
+    "published": "2026-10-29",
+    "excerpt": "",
+    "summary": "Hugging Face has released Granite Switch 4.1.1, an update to a set of AI models. The post presents it as a way to update models in a manner similar to how software gets updated, though the article text provided was empty, so details are limited.",
+    "tags": [
+      "ai models",
+      "software updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/anydecisionmodel",
+    "company": "Hugging Face",
+    "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+    "published": "2026-10-29",
+    "excerpt": "",
+    "summary": "Hugging Face has introduced two new open models, AnySpeechRecognizer and AnyDecisionModel, designed to run on Apple devices. The article is only a title here, so details are limited.",
+    "tags": [
+      "speech recognition",
+      "apple devices",
+      "open models"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/announcing-project-protostar",
+    "company": "Hugging Face",
+    "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+    "published": "2026-10-29",
+    "excerpt": "",
+    "summary": "Hugging Face has announced Project ProtoStar, an effort to make publicly funded science data ready for use with AI. The article text is empty, so details beyond the title are unknown.",
+    "tags": [
+      "ai",
+      "open science"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+    "company": "Meta Engineering",
+    "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+    "published": "2026-10-29",
+    "excerpt": "Over the last year we’ve been sharing our work leveraging large language models to catch bugs on the fly — a novel approach we call Catching Just-in-Time Tests (JiTTests). Now, we’re sharing the results and positive impact we’ve seen with Catching JiTTests deployed into production. Our paper, “ Just-in-Time Catching Test Generation at Meta ,” fully details our initial deployment and testing with Catching JiTTests. Every code change improves our platform, but it also introduces new complexity. With hundreds of millions of lines of code constantly evolving at Meta, traditional testing can’t keep pace. Catching risks proactively, before code lands, enables us to identify risks earlier, respond more effectively, and deliver reliable experiences at scale. Over the last year, we’ve shared our research into applying large language models (LLMs) to generate software tests . More specifically, we’ve shared our work with Just-in-Time Tests (JiTTests) , a novel testing approach where we leverage LLMs to catch bugs on the fly, even ones that traditional testing might not catch. In the five months since we first unveiled this work, we’ve deployed our Catching JiTTests approach to determine its scalability and applicability to the wider industry. Today, Catching JiTTests are no longer a research prototype; they’re part of Meta’s infrastructure, and they’re helping our engineers catch more bugs with less load and a smaller chance of false positives. The Advantage of Catching JiTTests Most AI-based approaches to preventing bugs in code use LLMs and/or agentic AI to review code and detect faults based on prior experience. They work through the same review process that a human reviewer would, only faster. Catching JiTTests is a fundamentally different approach (Table 1): It generates executable tests that demonstrate a concrete behavioral difference introduced by the change. While it requires more computational steps, it catches classes of bugs that LLM- or agent-based code reviews might not. Table 1. Key differences between traditional LLM-based code review and Catching JiTTests. How We Implemented Catching JiTTests at Meta JiTTests are automatically generated and designed to fail, surfacing bugs in code changes (diffs) before they land in production. When they’re applied to a codebase as large as Meta’s, one challenge is distinguishing strong catches (i.e., true-positive failures that reveal real bugs) from weak catches (i.e., tests that may be false positives). It boils down to a specific question: For every proposed diff, how can we automatically generate tests that find the most severe bugs before they cause severe issues, and do so with a high true-positive rate and without impeding the velocity of our engineers? To address this, we developed two tandem workflows: An “intent-aware” workflow that infers the intention and risks of a code change and targets test generation toward likely failure points. A “dodgy diff” workflow that treats every code change as if it were a mutant/bug and generates tests to expose its behavioral differences without reasoning about intent. It implicitly asserts that a diff is buggy (hence the term “dodgy”). Figure 1. The architecture of the dodgy diff and intent-aware workflows for Catching JiTTests. To filter false positives, we employed a traditional rule-based approach combined with an ensemble approach we call “LLM-as-Judge,” which aggregates judgements from several state-of-the-art (SOTA) LLMs, all tasked with classifying weak catches as likely true or false positives. We also maintained human review, with an eye toward reducing review load. Our goal is to maintain the consistency of human labeling but reduce the likelihood of an engineer being brought in to review a weak catch. How It Works The entire system workflow happens in five stages: Stage 1: Targeting and Triggering The system runs overnight on spare capacity and targets diffs submitted the previous day that are deemed “risky” using a mechanism sim",
+    "summary": "Meta has moved its Just-in-Time Tests (JiTTests) out of research and into production. The system uses AI to write tests for each proposed code change, aiming to catch bugs before they reach users, with fewer false alarms.",
+    "tags": [
+      "software testing",
+      "ai tools",
+      "bug prevention"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+    "company": "Google Developers",
+    "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
+    "published": "2026-10-29",
+    "excerpt": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
+    "summary": "Google Play services now runs GPU-based AI model work for apps, about 1.4 times faster, through a new tool called CompiledModel. Using it instead of bundled files makes apps roughly 8 MB smaller and lets the AI engine update automatically on devices.",
+    "tags": [
+      "android",
+      "machine learning",
+      "app performance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
+    "company": "Google Developers",
+    "title": "Evaluating AI agents: moving past the vibe check",
+    "published": "2026-10-29",
+    "excerpt": "A practical engineering guide and reference architecture for establishing continuous evaluation pipelines for multi-turn AI agents using Gemini Enterprise Agent Platform, Google ADK, and OpenInference standards.",
+    "summary": "Google Developers published a practical guide for checking AI agents automatically over time, instead of relying on informal manual testing. It shows a setup that uses Google's agent tools and common tracing standards to keep evaluating agents that hold multi-step conversations.",
+    "tags": [
+      "ai agents",
+      "testing",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+    "company": "Google Developers",
+    "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
+    "published": "2026-10-29",
+    "excerpt": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
+    "summary": "Google shows how to build apps where an AI agent creates the screen layout itself, using the A2UI standard with CopilotKit tools. It works with several popular agent frameworks, including LangChain, AWS Strands, Microsoft agents, and Google ADK.",
+    "tags": [
+      "ai agents",
+      "app development",
+      "user interface"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/",
+    "company": "Google Developers",
+    "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
+    "published": "2026-10-29",
+    "excerpt": "Google AI Edge Model Explorer now supports custom compiler intermediate representations and open-source adapters like TOSA, VGF, and PTE for on-device machine learning. Developers can leverage hierarchical graph visualization, split-pane views, and per-node trace overlays to catch export regressions and verify hardware delegation. These tools enable engineering teams to transparently debug execution graphs and pinpoint cycle-level latency bottlenecks locally.",
+    "summary": "Google's Model Explorer tool can now show the internal step-by-step graphs that custom compilers use for on-device AI models. Developers can use it to see visually where a model's export or hardware setup goes wrong and where it runs slowly.",
+    "tags": [
+      "machine learning",
+      "developer tools",
+      "on-device ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
+    "company": "NVIDIA",
+    "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
+    "published": "2026-10-29",
+    "excerpt": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These... Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These simulations come with a cost-accuracy trade-off. Quantum-mechanical methods such as density functional theory (DFT) can provide accurate energies and forces, but their computational cost often limits their use for large systems or long… Source",
+    "summary": "NVIDIA describes ways to speed up computer simulations of how atoms and molecules behave. Accurate methods are very slow, so faster tools that still give good results are needed for large systems.",
+    "tags": [
+      "computer simulation",
+      "materials science",
+      "gpu computing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+    "company": "Cloudflare",
+    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+    "published": "2026-10-29",
+    "excerpt": "Welcome to the 26th edition of Cloudflare's DDoS Threat Report. This edition covers the third quarter of 2026 — July, August, and September — and returns the series to its quarterly cadence following the combined H1 2026 volume. The analysis is produced by Cloudforce One , Cloudflare's Threat Intelligence organization, providing a comprehensive analysis of the evolving threat landscape of Distributed Denial of Service (DDoS) attacks based on data from the Cloudflare network . Key insights Short-burst, low-bandwidth attacks lasting under 10 minutes and 1 Gbps surged by 208%. Conversely, hyper-volumetric attacks exceeding 1 Tbps plummeted by nearly 69% from Q2, possibly a reflection of law enforcement actions against four major Internet of Things (IoT) botnets earlier in the year. However, variants continue to emerge, proving that IoT botnets remain a durable, high-volume threat to network infrastructure. Threat actors dramatically shifted their reflection and amplification tactics, abruptly abandoning CLDAP floods, which collapsed by 99.5% quarter-over-quarter. Instead, attackers pivoted heavily toward other connectionless protocols, driving a 215% surge in DNS amplification and a 122% increase in general UDP floods. Attack targets broadened significantly across both industries and geographies, with the United States reclaiming the most-attacked position from China. Canada and Israel experienced sharp spikes in targeted attacks — jumping 10 and 7 spots respectively — while juggling geopolitical tensions, trade disputes, and contentious domestic events. At the same time, the operational focus shifted away from media organizations toward a wider array of industry targets, including consumer services, Internet infrastructure, and adult entertainment. Q3 by the numbers: 8,200 DDoS attacks every hour Across its network in the third quarter of 2026, Cloudflare autonomously mitigated 18.2 million network-layer DDoS attacks and 14.4 trillion HTTP DDoS requests. That works out to approximately 8,226 network-layer DDoS attacks per hour, or about 197,400 per day — one attack every 0.44 seconds. The quarter's mitigated traffic totaled 272.6 PB at the network layer and 95.1 PB at the HTTP layer. More swarms, fewer giants Short-burst, mid-range, high-count attacks — the operational signature of DDoS-for-hire \"booter\" services — accelerated this quarter. These attacks primarily targeted computer software, gambling and casinos, and information technology industries. Cloudflare autonomously mitigated 18.2 million network-layer DDoS attacks in Q3 2026, a +208% increase from the same quarter in 2025 : 96% ended in under 10 minutes 98% stayed under 1 Gbps, more than enough to overwhelm a server or website On the other hand, network-level hyper-volumetric attacks (those exceeding 1 Tbps) reversed course, dropping to 251 attacks in Q3 from 805 in Q2 — coinciding with law enforcement action in early 2026 that dismantled four of the largest IoT DDoS botnets: Aisuru, KimWolf, JackSkid, and Mossad. Still, IoT-based botnets remain a durable high-volume threat as the ecosystem churns through new variants such as Dysphoria and Evooo1Bot . Mirai -classified mitigation peaked in August at 57.23 PB, representing 46.5% of all mitigated network-layer bytes in Q3, including four days — August 16, 19, 23, and 25 — that each cleared three petabytes. The quarter's longest sustained Mirai attack ran 49.7 hours between August 19 and August 21. Vector shifts: the collapse of CLDAP and rise of UDP The most dramatic vector shift of the quarter was downward. CLDAP (Connectionless Lightweight Directory Access Protocol) attacks — where small queries with a forged victim IP address trick public domain controllers (UDP 389) into reflecting massive, amplified responses back at the target — experienced a dramatic +580% quarter-over-quarter surge in the first half of the year before collapsing to just 0.05% of attacks in Q3. Meanwhile, DNS amplification surged 215% to account f",
+    "summary": "Cloudflare's Q3 2026 report says tiny, short attacks under 10 minutes and 1 Gbps jumped 208%, while huge attacks over 1 Tbps fell about 69% after police shut down four major botnets. Attackers also switched methods, dropping one attack type almost entirely and using DNS and UDP floods more.",
+    "tags": [
+      "ddos attacks",
+      "cybersecurity",
+      "internet threats"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/source-material-brent-david-freaney/",
+    "company": "Figma",
+    "title": "Source material: \"BRAT\" Art Director Brent David Freaney finds design inspiration from everyday life",
+    "published": "2026-10-28",
+    "excerpt": "The designer takes us through his world of color theory, photography, graphic systems, and found ephemeral.",
+    "summary": "Figma shares a feature on Brent David Freaney, an art director who worked on the BRAT album look. He talks about how everyday life, color, photos, and found printed items shape his design ideas.",
+    "tags": [
+      "design",
+      "creative work"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/voice-agents-are-here-context-turns-them-real-customer-value",
     "company": "Databricks",
     "title": "Voice Agents are here. Context turns them into real customer value.",
@@ -10,6 +318,94 @@
       "voice ai",
       "ai agents",
       "customer data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+    "company": "Anthropic",
+    "title": "AI for Science expands to foundations and research institutions",
+    "published": "2026-10-28",
+    "excerpt": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
+    "summary": "Anthropic has expanded its AI for Science program to include 20 scientific foundations, institutions, and research groups around the world. The company says these partners will use its AI tools for research.",
+    "tags": [
+      "ai research",
+      "science"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/virtual-models-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Virtual models now available on AI Gateway",
+    "published": "2026-10-28",
+    "excerpt": "Virtual models are now available on AI Gateway . A virtual model is a saved configuration that tells AI Gateway which model and settings to use. Your apps and agents call it with a custom model ID, such as vmc/coding-agent . You can change the model or settings centrally in AI Gateway without redeploying your apps or reconfiguring your agents. Use virtual models to: Configure coding agents: Set reasoning effort, fast mode, prompt caching, and other options even when your agent doesn’t expose them. Control routing and compliance: Choose providers, configure fallback models, and enforce requirements such as Zero Data Retention . Attribute spend: Attach custom reporting tags to every request that uses the virtual model. To create a virtual model, open the Virtual Models page and click Create Virtual Model . Enter a slug, choose the underlying model, configure the settings you want requests to use, and save. Or create one with the Vercel CLI : To use a virtual model, replace the provider model ID in your AI SDK or compatible API requests with vmc/<slug> , such as vmc/coding-agent . For coding agents , connect to AI Gateway with vercel ai-gateway setup if needed, then select your virtual model in the agent’s model picker or configuration. Virtual models work with every model type on AI Gateway. Read the launch post for examples or learn more in the virtual models documentation . Read more",
+    "summary": "Vercel's AI Gateway now lets you save a model setup under a custom name, like vmc/coding-agent. Apps and agents use that name, so you can change the model or settings in one place without redeploying or reconfiguring them.",
+    "tags": [
+      "ai tools",
+      "cloud services",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers-new",
+    "company": "Vercel",
+    "title": "Vercel Container Registry now supports 2 GB compressed image layers",
+    "published": "2026-10-28",
+    "excerpt": "Vercel Container Registry now supports up to 2 GB per compressed image layer, up from 500 MB, allowing larger layers to be pushed without splitting them. The total image size limit remains 15 GB. The higher layer limit is useful for images with large toolchains or dependency sets, such as custom Vercel Sandbox environments for coding-agent evaluations. With Docker and the Vercel CLI installed, run these commands from the directory containing your Dockerfile: Read the Vercel Container Registry getting-started guide to build, push, and pull your first container image. Read more",
+    "summary": "Vercel's container registry now accepts single image layers up to 2 GB, up from 500 MB, so large layers no longer need splitting. The total image size limit stays at 15 GB.",
+    "tags": [
+      "cloud hosting",
+      "containers"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+    "company": "Vercel",
+    "title": "Vercel CI is now in beta",
+    "published": "2026-10-28",
+    "excerpt": "You can now run CI for your Turborepo with one line of configuration. In Vercel's internal repositories, our wait time from git push to \"CI passed\" is 2-6x shorter, dramatically improving our CI's ability to keep up with our coding agents. To get started, prompt your agent in your repo: Each task marked with a ci tag runs on every push. Vercel CI automatically takes care of: Only running CI that is affected by your code changes Task caching with Vercel Remote Cache Installing dependencies once per run Caching dependencies across code updates To learn more: Check out our blog post Visit the documentation Discuss Vercel CI on the Community announcement Read more",
+    "summary": "Vercel has launched a beta of its own CI service, which checks code automatically on each change. The company says its internal tests now finish 2 to 6 times faster, and setup takes one line of configuration for Turborepo projects.",
+    "tags": [
+      "software testing",
+      "vercel",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/run-paseo-agents-on-vercel-sandbox",
+    "company": "Vercel",
+    "title": "Run Paseo agents on Vercel Sandbox",
+    "published": "2026-10-28",
+    "excerpt": "Paseo now supports running fx, Codex, Claude Code, OpenCode, and Pi in the cloud with the Vercel Sandbox plugin . You can now start an agent in Vercel Sandbox from Paseo on your laptop, then connect from your phone to control the same session, even when your laptop is closed. Stopping a sandbox saves your files and conversation history so you can pick up where you left off. Active processes stop with the sandbox. Enter your Vercel AI Gateway key once during setup. The plugin reuses it for model requests across your sessions, keeping the key outside the sandbox. To get started, enable plugins in Settings → Plugins in Paseo. Then install the plugin: Learn more in the Sandbox documentation , Paseo plugin listing , and the Paseo related projects documentation . Read more",
+    "summary": "Paseo now lets you run AI coding helpers in the cloud using Vercel Sandbox. You can start one from your laptop and check on it from your phone, even when the laptop is closed.",
+    "tags": [
+      "ai coding tools",
+      "cloud",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/particle-1-is-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Particle-1 is now available on AI Gateway",
+    "published": "2026-10-28",
+    "excerpt": "Particle-1 from Particle AI is now available on AI Gateway . It is post-trained on DeepSeek V4.1 Flash, with a focus on completing software engineering tasks using fewer tokens. Particle describes the gains as shorter reasoning, fewer rounds of trial and repair, and more focused exploration. Use it for debugging, planning code changes, and breaking down multi-step engineering problems. Particle-1 has a 1M-token context window for working with code and extended task histories. Set AI_GATEWAY_API_KEY in your environment. Use particle/particle-1 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest version of Vercel CLI and run setup: Then select particle/particle-1 in the agent. See the coding agents guide for details. Try Particle-1 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Particle-1, a new AI model for writing and fixing code, is now available through Vercel's AI Gateway. Its maker says it uses fewer steps to finish software tasks like debugging and planning code changes.",
+    "tags": [
+      "ai models",
+      "software development",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -30,6 +426,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/box-mount-now-runs-in-vercel-sandbox",
+    "company": "Vercel",
+    "title": "Box Mount now runs in Vercel Sandbox",
+    "published": "2026-10-28",
+    "excerpt": "Box Mount lets agents running in Vercel Sandbox read and write Box files through standard filesystem operations. It syncs a Box folder with a directory inside the sandbox. Unmount before you stop the sandbox, and everything the agent wrote is in Box after the sandbox is deleted. The contract-review example uses AI Gateway to review a synthetic contract in Vercel Sandbox and save the review back to Box. The sync process and agent run as separate sandbox users, keeping the Box credentials separate from the agent's workspace. Box Mount is in private preview. Request access from Box, then follow the Box Mount documentation to set it up in Vercel Sandbox. Read more",
+    "summary": "Agents running in Vercel Sandbox can now read and write Box files like ordinary folders on the computer. Changes saved in the sandbox end up in Box, and the feature is in private preview, so you need to request access from Box first.",
+    "tags": [
+      "cloud",
+      "ai agents",
+      "file storage"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/ai-traffic-insights-now-available-in-vercel-observability",
     "company": "Vercel",
     "title": "AI traffic insights now available in Vercel Observability",
@@ -45,6 +456,51 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/agents-can-now-enable-web-analytics-and-observability-plus-with-vercel-cli",
+    "company": "Vercel",
+    "title": "Agents can now enable Web Analytics and Observability Plus with Vercel CLI",
+    "published": "2026-10-28",
+    "excerpt": "Vercel CLI no longer requires an interactive terminal to enable Web Analytics or Observability Plus . Agents can now turn them on for your projects without asking you to run the commands yourself. To get started, run either command from a linked project directory: Teams must already be subscribed to Observability Plus to be able to enable it for a project. Update Vercel CLI to version 64.2.0 or later and learn more in the Vercel CLI project documentation . Read more",
+    "summary": "Vercel's command-line tool can now turn on Web Analytics and Observability Plus without a manual terminal prompt, so AI agents can enable them for you. Teams need an existing Observability Plus subscription, and the tool must be version 64.2.0 or later.",
+    "tags": [
+      "developer tools",
+      "analytics",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/introducing-vercel-ci",
+    "company": "Vercel",
+    "title": "Introducing Vercel CI",
+    "published": "2026-10-28",
+    "excerpt": "Coding agents are opening more pull requests than ever, and each one waits on CI before anyone can review or merge it. Most CI systems run the entire workflow on every push, even a one-line change. The more your agents push, the more time you spend waiting on CI. Today, we're announcing Vercel CI in Beta. It runs only the tasks affected by your code change, and spins up only the compute those checks need, the same way Fluid compute scales with your traffic. At Vercel, our CI now keeps up with our coding agents. Time from git push to \"CI passed\" is 2-6x faster than it was before. How it works Vercel CI uses Turborepo to understand your tasks and which ones depend on each other. It reads turbo.json , so if you're already using Turborepo, there's no separate CI config to write. If you're not on Turborepo yet, add turbo.json and the turbo package. It works in single-package repos too. Then tag the tasks you want Vercel CI to run. \"tags\": [\"ci\"] is all you need to get started. No workflow YAML to maintain, no drift between your CI config and turbo.json , and Remote Cache is on by default. When you or your agent push code, Vercel CI determines which tasks need to run based on the change. Tasks whose inputs haven't changed come from cache. The remaining tasks each run on their own machine, powered by Hive , Vercel's compute layer, and start as soon as their dependencies finish. Vercel CI gives each task the compute it needs and nothing more. Running your CI on Vercel To get started, follow the documentation or prompt your agent from your repo: Once set up, you or your agent can watch and inspect CI through the Vercel dashboard , Vercel CLI , or Vercel MCP . When something fails, go straight to the failing task, see what's blocked behind it, and open its logs, or search across recent runs to see whether a test has been flaky all week. Vercel CI posts a check to your pull request on GitHub, so your existing branch protection rules can block merges on failure, the same way they do today. Closing the loop Vercel CI has already completed nearly 8 million tasks across our own repositories and the private beta, and we're just getting started. We're working to keep shrinking the time between writing code and running it in production. As we work toward general availability, we plan to add: Advanced observability A vc ci CLI command for distributed execution before pushing code More granular test selection Vercel CI is available in Beta today on all plans. Read the docs and try it on your repository. Read more",
+    "summary": "Vercel has launched a beta of Vercel CI, a testing system that only runs the checks affected by a code change and uses only the computing power they need. Vercel says its own pull-request checks now finish 2 to 6 times faster.",
+    "tags": [
+      "continuous integration",
+      "developer tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/ai-gateway-virtual-models",
+    "company": "Vercel",
+    "title": "Introducing Virtual Models on AI Gateway",
+    "published": "2026-10-28",
+    "excerpt": "Today, we are introducing Virtual Models on AI Gateway . Virtual Models are an abstraction of the model string and configurations your apps and developers use. With a single virtual model ID, you can change and update models, configure fallbacks and priority, and enforce Zero Data Retention centrally. The virtual model configuration applies wherever the ID is used. Assign a virtual model ID to an agent task, and pass it as the model string wherever that task is called. You can then change the model and settings behind the virtual model ID in AI Gateway, and your apps and agents will pick up the new configuration automatically, without code changes or redeploys. New models use the same virtual model ID In the last 90 days, 125 new models from more than 10 labs became available on AI Gateway. That adds up to about 10 a week. AI Gateway already makes switching a one-line change. You call any of those models by ID, and AI Gateway routes each request to a healthy provider and can fall back to others when one fails. That one line still lives in your code, so switching usually means a redeploy. Virtual Models move model selection and configuration to AI Gateway. You create an ID for a task, like vmc/coding-agent , and then configure the model and the settings it should use: You can then use that virtual model ID as the model string wherever the task runs: For coding agents like Claude Code , Codex , and others, connect them with vercel ai-gateway setup , then select your virtual model in each harness's model picker or configuration. When a different model is available, including one from another provider, edit the virtual model . Every app and agent that calls vmc/coding-agent picks it up within a few minutes, with no code change or deployment needed: Give each task its own model An agent task like support ticket triage can run hundreds of times an hour and needs to be cheap. Other tasks, like legal contract review, may only run a few times a day, but require a high level of reasoning. You can now give each task a purpose-built virtual model and easily evolve that model and configuration over time: Settings such as fallbacks, Zero Data Retention, and tags stay with the virtual model when you switch models. Provider options apply per provider, so an Anthropic-specific setting stops applying when you point the virtual model at an OpenAI model. Review your provider options whenever you switch providers. Before you switch a virtual model that serves production traffic, point a second one, like vmc/coding-agent-candidate , at the new model and run your evals against it. If quality drops after the switch, point the original back at the previous model. Govern which models your team uses and how Anyone on your team can call a virtual model, and team roles control who can make changes to it. Platform and security teams can centrally govern and test models and settings, while still easily giving teams access to new models as they are released. Settings on a virtual model win over the same settings in a request, so callers can't override the provider order, fallbacks, or service tier you chose. For example, you can configure the fallback models for vmc/storefront-assistant centrally, and every app using that virtual model ID will use the same failover configuration, even if a request specifies different fallbacks. If a virtual model requires Zero Data Retention or providers that don't train on request data, those configurations are enforced even if a request explicitly sets zeroDataRetention or disallowPromptTraining to false. Tags on a virtual model replace any tags sent with the request, so spend lands on the task no matter how each app tags its calls. The Virtual Models page shows requests, spend, and success rate for each task. Get started Create a virtual model from your team dashboard or with the Vercel CLI . About AI Gateway AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, ",
+    "summary": "Vercel released Virtual Models on its AI Gateway, which let you give a task one ID and change the AI model behind it later without touching code or redeploying. Teams can set fallbacks, data-privacy rules, and tags once, and every app using that ID picks up the change within minutes.",
+    "tags": [
+      "ai models",
+      "cloud platforms",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/the-future-of-the-firm",
     "company": "OpenAI",
     "title": "The future of the firm",
@@ -54,6 +510,21 @@
     "tags": [
       "ai at work",
       "company structure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "company": "OpenAI",
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "published": "2026-10-28",
+    "excerpt": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+    "summary": "OpenAI and ServiceNow are expanding their partnership. OpenAI's AI models and agents will work inside ServiceNow, and ServiceNow's work tools will connect to ChatGPT and Codex.",
+    "tags": [
+      "ai partnerships",
+      "enterprise software",
+      "openai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -365,21 +836,6 @@
       "deployment",
       "containers",
       "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/elevenlabs-on-ai-gateway",
-    "company": "Vercel",
-    "title": "ElevenLabs on AI Gateway",
-    "published": "2026-10-27",
-    "excerpt": "Vercel and ElevenLabs are partnering to bring 14 ElevenLabs models to AI Gateway . To celebrate the launch, all ElevenLabs models are 50% off on AI Gateway for the first 14 days, through November 9th. AI Gateway supports six different types of ElevenLabs audio models: Speech to text: Transcribe recordings or caption live audio as people speak. Streaming text to speech: Start playing audio while a language model is still writing its reply, so users don't have to wait for the full answer. Realtime voice agents: Let users talk to your app and listen to it respond out loud in a single live session. Useful for support lines, tutors, and in-app assistants. Music: Describe a track in plain text and get back a finished song or instrumental at the length you need. Sound effects: Generate game and interface sounds, or ambience that loops cleanly, from a short description. Multi-voice dialogue: Voice a whole conversation in one call, with a different voice for each speaker. All of these audio models are accessible through a single gateway API key. Your app or agent can transcribe what a user says, reason over it with your choice of hundreds of models, then answer in an ElevenLabs voice. You can also create soundtracks with generated music and sound effects. Every request lands in the same usage, cost, and trace views as your other AI Gateway traffic. Model types AI Gateway gives you access to 14 ElevenLabs models, spanning speech to text, realtime voice, and music. Speech and transcription Scribe v2 Realtime turns a user's speech into text while they are still talking. A language model of your choice then writes the answer. Eleven Flash v2.5 , a low-latency ElevenLabs voice model, reads that answer aloud as it streams in, so the user hears the reply begin before the model finishes writing it. Because each step is its own model, you can swap the transcription, language, or speech model without touching the rest of the pipeline. In the example below, a user asks whether they’ll make a connecting flight. The text model combines flight status and gate distance to answer, then the speech model delivers the response. Realtime voice agents Eleven Realtime v1 Max and Eleven Realtime v1 Mini run the whole spoken conversation in one model, which suits conversations where users expect natural back-and-forth, like a support call or an in-app assistant. Both models take the user's audio in and speak a reply back over a single WebSocket session, so there's no separate transcription or speech step to wire up. Eleven Realtime hears “Can I change the delivery address for my order?” and responds “I can help with that. What’s your order number?” over one WebSocket session. In the browser, connect with the useRealtime hook from @ai-sdk/react , which handles the WebSocket connection, microphone capture, and audio playback. In the hook's sessionConfig , set an ElevenLabs voice ID and turnDetection: { type: 'semantic-vad' } . These models support semantic voice activity detection (VAD) to decide when the user has finished speaking, but they don't support server-vad . The realtime guide walks through the full browser setup. Music and sound effects Music v2.5 and Music v2 compose original music from a text description. Name a genre, a mood, or the instruments you want, and the model returns a finished track at the length you ask for, with or without vocals. For more control, you can lay out a song section by section and give each section its own style and length. Sound Effects v2 works the same way for shorter sounds, such as footsteps, a door slamming, or rain that loops under a game level. All three models use generateSpeech , with text describing the sound you want instead of words to read aloud. This example requests a 30-second track: Multi-voice dialogue Eleven v4 , Eleven v4 Turbo , and Eleven v3 perform a script with several speakers in a single request. You assign a voice to each line, and each change of voice starts a new turn. A two-host podcast or a ",
-    "summary": "Vercel's AI Gateway now offers 14 ElevenLabs audio models, including speech-to-text, live voice assistants, music, and sound effects, all through one API key. ElevenLabs models are 50% off for the first 14 days, through November 9th.",
-    "tags": [
-      "ai tools",
-      "voice ai",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -756,126 +1212,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-sandbox-commands-now-support-stdin",
-    "company": "Vercel",
-    "title": "Vercel Sandbox commands now support stdin",
-    "published": "2026-10-26",
-    "excerpt": "Vercel Sandbox now lets you send input to running commands through standard input (stdin). Use it to exchange messages with stdio MCP servers such as agent-browser , or send data to other command-line programs while they run. In the TypeScript SDK, set stdin: true and detached: true in runCommand() . Use writeStdin() to send input and closeStdin() when you’re done: You can also set stdin to a Node.js readable stream, such as process.stdin . The SDK forwards the stream’s data and closes the command’s standard input when the stream ends. In the Python SDK, set stdin=subprocess.PIPE and send input with server.stdin.send() . Call communicate() to close stdin, collect remaining output, and wait for the process to exit: For commands that receive all their input at once, you can pass input directly to Python’s run_process() . Read the Sandbox documentation to get started. Read more",
-    "summary": "Vercel Sandbox commands can now receive typed input while they run, through a feature called stdin. This lets programs in a sandbox exchange messages with other tools, such as browser helper servers, while they are working.",
-    "tags": [
-      "vercel",
-      "sandboxes",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
-    "company": "Vercel",
-    "title": "Vercel Agent can now validate alerts before paging",
-    "published": "2026-10-26",
-    "excerpt": "Vercel Agent can now investigate alerts from Vercel monitors before they reach your paging system. With validation enabled for a webhook destination, only alerts Agent classifies as Critical are sent to it. To enable validation: Open a monitor’s notification settings and create or link a webhook destination for your paging system, such as incident.io. Select Critical Only next to that destination. You can also configure notification destinations with the Vercel CLI using vercel monitors notifications . Add --critical-only when linking or updating a webhook destination. Agent checks logs and metrics to assess impact. For example, it can identify health-check errors that don’t affect customers or confirm sustained 5xx errors affecting checkout requests. You can also add context to each monitor to guide Agent’s investigation. Alert validation is available on Pro and Enterprise plans with Observability Plus. Observability Plus includes 10 Agent investigations per billing cycle, with additional investigations billed separately . Custom monitors cost $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Learn more in the alert webhook documentation . Read more",
-    "summary": "Vercel Agent can now check alerts from Vercel monitors before they reach your paging system. If you turn on Critical Only for a webhook, only alerts the Agent marks as critical get sent through, which can cut down on unneeded pages.",
-    "tags": [
-      "alerts",
-      "monitoring",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/run-scale-ais-agentenv-evals-on-vercel-sandbox",
-    "company": "Vercel",
-    "title": "Run Scale AI’s AgentEnv evals on Vercel Sandbox",
-    "published": "2026-10-26",
-    "excerpt": "AgentEnv , Scale AI's framework for testing agents against tasks and scoring their results, now runs on Vercel Sandbox . The Vercel provider ships in AgentEnv 0.9.1334 and later, and runs the agent and its task environment in separate Sandboxes. Try the AgentEnv example to run an evaluation on Vercel Sandbox and inspect the task’s score and the agent’s recorded actions. After completing the setup guide , run this command from the cloned repository. It uses your existing Vercel CLI login: Replace YOUR_TEAM with your Vercel team slug and YOUR_PROJECT with an existing project name. Learn more in the Sandbox ecosystem documentation . Read more",
-    "summary": "Scale AI's tool for testing AI agents on tasks now runs on Vercel Sandbox, a separate isolated environment for each part of the test. Users can follow a setup guide and run an example to see how the agent scored and what it did.",
-    "tags": [
-      "ai agents",
-      "testing",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/gpt-6-1-terra-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "GPT-6.1 Terra now available on AI Gateway",
-    "published": "2026-10-26",
-    "excerpt": "GPT-6.1 Terra from OpenAI is now available on AI Gateway . GPT-6.1 Terra is a fast model for visual reasoning, computer use, and writing, and it improves on the previous Terra model in visual reasoning, factual accuracy, and coding. It suits high-volume work in documents and desktop apps, such as filling out forms, interpreting technical drawings, or entering invoice details into accounting software. OpenAI still recommends its larger GPT-6 models for the most complex coding tasks. The model accepts text and images and returns text, with a context window of more than 1M tokens. It supports configurable reasoning effort , structured outputs , tool calling, and implicit and explicit prompt caching . For latency-sensitive work, fast mode is available as openai/gpt-6.1-terra-fast . GPT-6.1 Terra works with the AI SDK , the OpenAI-compatible Chat Completions API , the Responses API , and coding agents connected to AI Gateway. Use openai/gpt-6.1-terra as the model name: To use it in Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select openai/gpt-6.1-terra in the agent. See the coding agents guide for details. Try GPT-6.1 Terra in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Vercel's AI Gateway now offers OpenAI's GPT-6.1 Terra, a fast model that handles images and text well, good for form filling, reading drawings, and entering invoices. It is not the best pick for the hardest coding tasks, where OpenAI's larger models are recommended.",
-    "tags": [
-      "ai models",
-      "openai",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/faster-pnpm-installs",
-    "company": "Vercel",
-    "title": "Faster pnpm installs",
-    "published": "2026-10-26",
-    "excerpt": "pnpm installs on Vercel are now faster, reducing the time spent installing dependencies before your build. For Pro deployments with restored build cache, we observed 14% lower average install times with the optimization enabled. Vercel now reuses successful dependency verification across deployments. In the best case, when dependencies are unchanged and the previous verification can be reused, installs can complete in milliseconds. Before: type: embedded-entry-inline id: 4AGN257WKPLKtImRHWI6pR After: type: embedded-entry-inline id: 7khPGeUapv18SPPoDw6Wq4 This improvement is available on all plans and applies automatically, with no configuration required. Read more",
-    "summary": "Vercel made installing project dependencies faster when deploying with pnpm, a tool for managing code libraries. Installs now reuse earlier checks, cutting average install time by 14% on Pro plans with cached builds, and this happens automatically on all plans.",
-    "tags": [
-      "deployment",
-      "build speed",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/discover-1000-services-on-vercel-connect-from-the-cli",
-    "company": "Vercel",
-    "title": "Discover 1000+ services on Vercel Connect from the CLI",
-    "published": "2026-10-26",
-    "excerpt": "You and your agents can now browse and search more than 1000 services available in Vercel Connect without leaving your terminal. vercel connect discover searches by name, alias, keyword, and description. type: embedded-entry-inline id: H1F06IGrASdIU5HbPDOFM Results can be filtered by category, connection method (such as mcp or oauth ) or the product a service exposes. You can also limit results to services that forward webhook triggers. vercel connect categories lists the category slugs you can filter by. Both commands support --format=json for scripts and agents. type: embedded-entry-inline id: 3qxhz833AJeAwUqgX6LAZi You can then pass the service name while creating any connector to the command: Update to version 64.1.0 or later of the CLI to get started, and read the Vercel Connect CLI docs to learn more. Read more",
-    "summary": "Vercel's command-line tool now lets you search and browse over 1,000 services available through Vercel Connect, without leaving the terminal. You can filter results by category or connection type, and the output can be read by scripts and AI agents.",
-    "tags": [
-      "vercel",
-      "developer tools",
-      "command line"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/customizable-widgets-for-project-cards",
-    "company": "Vercel",
-    "title": "Customizable widgets for project cards",
-    "published": "2026-10-26",
-    "excerpt": "The Overview tab in the dashboard now lets you choose which metric appears on each project card. Project cards used to show a fixed Real Experience Score in the top right, but not everyone on your team watches the same signal. You can now swap that slot for whichever metric matters for that project. A security-sensitive project can show firewall activity, while a marketing site project shows traffic. Available widgets Firewall: allowed requests, denied requests Observability: alerts, edge requests, function invocations, error rate Speed Insights: Real Experience Score, LCP, CLS Web Analytics: visitors online, visitors, page views Pick per project Open the switcher in the top right of any project card. The menu shows the current value for each available metric. When you select one, your choice is saved for that project and follows your account across refreshes and devices. Enable features from the card If a project does not have a feature enabled, you can start the enable flow from the widget menu without leaving the Overview tab. This is available for Speed Insights Plus, Web Analytics, and alerts. Get started Open your team’s Overview tab and use the switcher on any project card. Read more",
-    "summary": "Vercel's dashboard now lets you pick which metric shows on each project card, instead of a fixed speed score. You can choose from firewall, error, speed, or visitor numbers, and your choice is saved per project.",
-    "tags": [
-      "web hosting",
-      "dashboards",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/create-custom-monitors-in-vercel-observability",
-    "company": "Vercel",
-    "title": "Create custom monitors in Vercel Observability",
-    "published": "2026-10-26",
-    "excerpt": "You can now create custom monitors to get alerts based on your Vercel Observability query results. For example, you can track signals such as AI Gateway costs, Core Web Vitals and other performance metrics, Workflow and external API failure rates, or Vercel Sandbox CPU time. Each monitor tracks a single metric, such as response time, or a ratio of two metrics, such as errors divided by total requests. Choose statistical anomaly detection or a fixed threshold, then configure the detection window, filters, and grouping. To create a monitor, inspect a chart’s query in Observability, start from a preset, or open Settings > Alerts for your team. You can also define a custom monitor in a JSON file and create it with vercel monitors add in the Vercel CLI . Run vercel monitors schema --type custom for the schema and examples. Receive alerts through email, Slack, Vercel Inbox, push notifications, or team-level webhooks. You can also add context for Vercel Agent to use when investigating an alert. Custom monitors are available on Pro and Enterprise plans with Observability Plus, at $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Create a custom monitor or learn more in the configuration documentation . Read more",
-    "summary": "Vercel now lets you create custom monitors that send you alerts when a tracked number, like error rate or site speed, goes off track. You can set them up in the dashboard, from a preset, or with a config file, and get alerts by email, Slack, or other channels.",
-    "tags": [
-      "monitoring",
-      "alerts",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/openai-cut-incident-investigation",
     "company": "OpenAI",
     "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
@@ -1159,66 +1495,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/",
-    "company": "Google Developers",
-    "title": "Native Model Authoring for Edge with LiteRT Tensor API",
-    "published": "2026-10-26",
-    "excerpt": "Meet the LiteRT Tensor API: giving developers native C++ control over the model graph to unify end-to-end ML computations on heterogeneous edge hardware.",
-    "summary": "Google introduced the LiteRT Tensor API, which lets developers write machine learning models directly in C++. It is meant to run the full model on many different kinds of devices at the edge, such as phones and small gadgets.",
-    "tags": [
-      "machine learning",
-      "on-device ai",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/",
-    "company": "Google Developers",
-    "title": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-    "published": "2026-10-26",
-    "excerpt": "Google AI Edge has introduced ML Drift, a high-performance, universal GPU compute framework designed to accelerate on-device AI and machine learning inference. By abstracting the complexities of hardware and low-level APIs—including OpenGL ES, OpenCL, Metal, and WebGPU—ML Drift enables developers to build real-time, interactive ML experiences, from sophisticated video effects to generative AI, across mobile and desktop platforms.",
-    "summary": "Google AI Edge has released ML Drift, a tool that helps AI models run faster directly on phones and computers using their graphics chips. It hides the hard hardware details, so developers can more easily build real-time features like video effects and generative AI.",
-    "tags": [
-      "on-device ai",
-      "machine learning",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
-    "company": "Google Developers",
-    "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
-    "published": "2026-10-26",
-    "excerpt": "TorchTPU integrates a native torch.device(\"tpu\") backend directly into PyTorch, allowing developers to train large-scale models on Google Cloud TPUs without rewriting code in JAX. The TorchTitan TPU fork enhances this with production-grade scaling primitives like SimpleFSDP, Graph Trainer, and custom Pallas kernels that achieve high Model Flops Utilization (MFU) across dense and MoE architectures. Developers can leverage these battle-tested optimization playbooks, recipes, and the Hugging Face modeling backend to efficiently scale their own workloads on TPU infrastructure.",
-    "summary": "Google's TorchTPU lets people use the popular PyTorch tool to train big AI models on Google's TPU chips, without rewriting code in another language. A new TorchTitan version adds tools and tips to make these large training runs faster and more efficient.",
-    "tags": [
-      "machine learning",
-      "google cloud",
-      "pytorch"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
-    "company": "Google Developers",
-    "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
-    "published": "2026-10-26",
-    "excerpt": "EmbeddingGemma 2 is a new 740M open-weight multimodal model that maps text, images, video, and audio into a unified vector space for privacy-first, on-device retrieval. Developers can easily integrate these capabilities cross-platform using MediaPipe Tasks or optimize fine-grained performance across CPU, GPU, and NPU accelerators with LiteRT. The model enables ultra-low-latency local solutions like search-as-you-type media retrieval, keyframe video moments finding, and zero-shot intent routing.",
-    "summary": "Google released EmbeddingGemma 2, a free, open model that lets phones and devices search text, images, video, and audio by meaning, all on the device itself. This means quick, private search without sending data to the cloud.",
-    "tags": [
-      "machine learning",
-      "on-device ai",
-      "search"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
     "company": "NVIDIA",
     "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
@@ -1351,65 +1627,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-connect-adds-managed-stripe-api-keys",
-    "company": "Vercel",
-    "title": "Vercel Connect adds managed Stripe API keys",
-    "published": "2026-10-23",
-    "excerpt": "Vercel Connect can now create a separate restricted Stripe API key for each agent or task. When you create a Stripe connector, you can now choose Managed API Key as the connection method. Vercel creates the key in your Stripe account, limited to the permissions you pick. The existing MCP and bring-your-own API key methods are unchanged. type: embedded-entry-inline id: 3rOuKp0F4Nk80dMYJ5QX6U Most apps and agents run on Stripe’s default secret key, which has full access to the account. With per-agent keys, each agent gets only the access its job needs. For example, a daily revenue report agent can be limited to read-only access to charges, and an onboarding agent can be limited to write access to customers. Vercel creates and stores the key, so there is no secret key to paste. You can rotate it from the connector's settings without redeploying, and the old key stays valid for up to 24 hours while you switch. Add the Stripe connector Create a Stripe connector from the connectors directory, choose Managed API Key, pick its permissions, and attach it to your project. You can also start from the CLI, which opens the browser to finish setup: type: embedded-entry-inline id: 1I7ChkvBWny4SCOzp2xI3E type: embedded-entry-inline id: 66OV4WkA85AVl8hbRgk4PU To get started, add the Stripe connector or read the documentation . Read more",
-    "summary": "Vercel now lets you create a separate, limited Stripe key for each agent or task, instead of sharing one key with full account access. Vercel makes and stores the key for you, and you can swap it out without redeploying.",
-    "tags": [
-      "payments",
-      "security",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-cli-adds-spend-management",
-    "company": "Vercel",
-    "title": "Vercel CLI adds Spend Management",
-    "published": "2026-10-23",
-    "excerpt": "You can now view and manage your team's Spend Management budget from the Vercel CLI. Run vercel budgets and you, or the scripts and agents you run, get back your current spend and the active budget. View, set, and remove a budget This is the same On-Demand Budget shown in your team's billing settings. Setting a budget does not stop usage on its own. The --pause flag pauses production deployments of all projects when spend reaches 100%. List budget alert history You can now see your budget alert history. Run vercel budgets alerts for the full log, filtered with --since , --until , --limit , and --json . A bare vercel budgets prints the three most recent alerts. Managing budgets requires the Owner or Billing role. Spend Management is available at no additional cost to Pro teams and to Enterprise teams on the Flexible Commitment plan. Full reference now available in the vercel budgets CLI reference . Read more about Spend Management . Read more",
-    "summary": "Vercel's command-line tool now lets you check, set, and remove your team's spending budget, and see a history of budget alerts. Setting a budget alone doesn't stop spending, but an option can pause production deployments once spending hits 100%.",
-    "tags": [
-      "cloud costs",
-      "developer tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/send-feedback-from-vercel-mcp",
-    "company": "Vercel",
-    "title": "Send feedback from the Vercel MCP",
-    "published": "2026-10-23",
-    "excerpt": "Vercel MCP now includes submit_feedback , a tool for sending bug reports, friction reports, and feature requests directly to the Vercel team from your agent or harness. Ask your agent to give feedback in plain language: Send Vercel feedback that the deployment error didn't explain which environment variable was missing. Your assistant can attach structured context that describes the task, the expected behavior, and what went wrong: The tool requires sign-in, and it sends feedback only when you ask your agent to share it. Connect your agent to Vercel MCP and read the submit_feedback documentation to get started. Read more",
-    "summary": "Vercel's MCP tool now includes a feature that lets your AI agent send bug reports, complaints, and feature ideas straight to the Vercel team. It only sends feedback when you ask, and you need to sign in first.",
-    "tags": [
-      "developer tools",
-      "vercel",
-      "feedback"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/send-feedback-from-vercel-cli",
-    "company": "Vercel",
-    "title": "Send feedback from the Vercel CLI",
-    "published": "2026-10-23",
-    "excerpt": "The Vercel CLI now includes vercel feedback , which sends bugs, friction reports, and feature requests to the Vercel team from your terminal. Coding agents can also send feedback when they run into issues. Use vercel feedback with -f or --field to include structured context as key=value pairs. Repeat the flag to describe the task, expected behavior, and what went wrong. Update to the latest Vercel CLI and read the vercel feedback documentation to get started. Read more",
-    "summary": "Vercel's command-line tool now has a feedback command. You can send bug reports, complaints, or feature ideas to the Vercel team straight from your terminal, and coding tools can send them too.",
-    "tags": [
-      "developer tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
     "company": "Google Research",
     "title": "Bringing foundational models to the front lines of TB screening",
@@ -1464,21 +1681,6 @@
       "ai safety",
       "poland",
       "cybersecurity"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/anima",
-    "company": "OpenAI",
-    "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
-    "published": "2026-10-23",
-    "excerpt": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
-    "summary": "Anima, a healthcare company, uses OpenAI's GPT-6 and GPT-Live models to help clinics answer patient calls faster. The clinics report cutting call waits by 75%, giving care teams more room to respond to patients.",
-    "tags": [
-      "healthcare",
-      "ai assistants",
-      "patient calls"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1730,49 +1932,6 @@
       "ai agents",
       "mobile apps",
       "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/uber-chatgpt-work-rollout",
-    "company": "OpenAI",
-    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
-    "published": "2026-10-22",
-    "excerpt": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
-    "summary": "Uber is giving ChatGPT Work to more than 30,000 of its employees. Staff can use it to research topics, analyze data, make presentations, and handle complex tasks.",
-    "tags": [
-      "ai tools",
-      "workplace",
-      "uber"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/forward-deployed-engineering-means",
-    "company": "OpenAI",
-    "title": "What FDE means at OpenAI",
-    "published": "2026-10-22",
-    "excerpt": "What forward deployed engineering means at OpenAI",
-    "summary": "OpenAI has written a post explaining what its forward deployed engineering role means. The article text is only a short title, so the details of the role are not described here.",
-    "tags": [
-      "engineering jobs",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/decisions-api",
-    "company": "OpenAI",
-    "title": "Build more responsive apps with the Decisions API",
-    "published": "2026-10-22",
-    "excerpt": "Fast, focused, low-cost decisions for any application.",
-    "summary": "OpenAI has announced the Decisions API, a new tool meant to help apps make quick, focused, low-cost decisions. The article is only a short teaser, so details about how it works are not yet clear.",
-    "tags": [
-      "ai tools",
-      "apps"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2035,14 +2194,14 @@
     "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
     "published": "2026-10-21",
     "excerpt": "",
-    "summary": "Hugging Face introduces a series on profiling TorchNeuron, starting with system-level profiling on AWS Trainium accelerators. The full article text was not included, so details beyond the title are limited.",
+    "summary": "Hugging Face wrote about a new way to measure how well AI training runs on AWS Trainium, Amazon's custom chip. This is the first part of a series on profiling, which means checking where a system spends its time so it can be made faster.",
     "tags": [
-      "profiling",
-      "aws-trainium",
-      "torchneuron"
+      "ai chips",
+      "machine learning",
+      "performance"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
@@ -2050,14 +2209,13 @@
     "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
     "published": "2026-10-21",
     "excerpt": "",
-    "summary": "The post, from Hugging Face, reportedly shows that specializing the vocabulary of small language models can cut inference cost by about 77% in real applications. The article body is empty, so this summary rests on the title alone and does not describe the method or results in detail.",
+    "summary": "Hugging Face describes how tailoring a small language model's vocabulary to a specific application can cut the cost of running it by about 77%. The approach aims to make small AI models cheaper to use in real products.",
     "tags": [
-      "inference",
-      "small-language-models",
-      "tokenization"
+      "ai models",
+      "cloud costs"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
@@ -2065,14 +2223,14 @@
     "title": "The bridge to agent-scale Git infrastructure",
     "published": "2026-10-21",
     "excerpt": "Over the past year, while Git traffic grew exponentially, 99.99999% of the Git repositories on GitHub began living in two places at once: our own data centers and Azure. The rest are among the busiest on the platform, and they’re held back by just one thing: a 25ms round trip. In an earlier blog post , we laid out the two principles behind our next-generation storage architecture: Minimize coordination Decouple storage from compute In this post, we’ll look at the immediate bridge between our old design and our new one. We’ll talk about how a change to the way our quorum serializes writes gets the busiest repositories into Azure, and how that same step opens the door to replicas that keep no persistent state of their own. How we got here The timing and shape of the move were driven by the agentic shift: rapidly growing traffic, a hard ceiling on the power capacity of our data centers and the surrounding geographical region, and physical supply chain constraints. At the beginning of our migration, the remaining capacity with all possible expansion gave us enough time to migrate safely, but not enough to do it slowly. While we had prototyped new architectural approaches for scaling Git on cloud infrastructure, changing the storage architecture and the hosting platform at the same time, under that growth, carried too much risk. Given our scale and how critical the service is to the community, we needed to sequence the work carefully: move the data first, then evolve the architecture once it arrived. Git operations are a Tier 0 service: they’re a core function of GitHub, and nearly everything in GitHub depends on the repository data. That meant the data, services, and every dependency had to move first. The first copy of a repository landed in Azure’s Central US region in August 2025. Today, most repositories have two of their five replicas in Azure, and Azure serves about half of Git traffic. For most of that time, Azure absorbed our growth while our own data centers held steady. During the migration, traffic follows the data. Most repositories have five replicas to balance durability, availability, and scale. To minimize read latency, Spokes uses preferential routing to direct traffic to a replica in the same region and availability zone as the request. As replicas move to Azure, the share of the traffic that can be served from Azure grows with each one, until the last replica arrives and the old region stops receiving requests entirely. Every repository goes through this process: No repository left behind So, what about the remaining 0.00001% of repositories? In our current architecture, a repository hosted in more than one region has a lower write throughput ceiling. Spokes’ quorum only needs a majority to commit a write, but it waits for every healthy replica to respond (up to a timeout) before moving on, so slow replicas delay every write rather than falling behind. In practice, that means the slowest healthy replica sets the latency of every write, and because each write holds a repository-wide lock until it commits, it also sets the throughput ceiling. Once a replica lives in the target Azure region, it’s about 1,000 miles from our data centers, making each network round trip around 25ms, and a write requires multiple round trips. A repository already near its throughput ceiling can’t absorb that on every serialized write; it would fall further behind with every push. This is where our first principle, minimizing coordination, comes into play. Specifically for this case: don’t serialize what doesn’t need to be. Git’s consistency requirements apply to each reference individually. Once the server accepts an update to a reference, no client should see an older value afterward, only that value or a newer one. That holds whether the update is a fast-forward, a force push, or a delete. But in most cases, updates to different references don’t depend on each other and can be applied independently. So, we’re changing the scope of th",
-    "summary": "GitHub describes how most of its Git repositories are now split across its own data centers and Azure, driven by rapid agentic-driven traffic growth and power/supply constraints. The post focuses on the bridge step: changing how the quorum serializes writes so the busiest repositories can move to Azure despite ~25ms cross-region round trips, by narrowing write serialization to per-reference scope.",
+    "summary": "GitHub is moving most of its busiest code repositories into Microsoft Azure, which now serves about half of Git traffic. The team also changed how writes are handled, so repositories with far-apart copies can keep up with heavy use.",
     "tags": [
-      "git",
-      "distributed-systems",
-      "infrastructure"
+      "github",
+      "cloud infrastructure",
+      "git"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
@@ -2080,14 +2238,13 @@
     "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
     "published": "2026-10-21",
     "excerpt": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using... An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using tools, credentials, and services to pursue their assigned goals. Monitoring and enforcement need to operate outside the agent’s reach so that it can’t alter or disable them. NVIDIA Sentry is a security software framework that monitors AI… Source",
-    "summary": "NVIDIA introduces Sentry, a security framework for AI agents that enforces controls at runtime. The post argues that agents can cross security boundaries while pursuing their goals, so monitoring must run outside the agent's reach where it cannot alter or disable it.",
+    "summary": "NVIDIA has released Sentry, a security tool that watches AI agents while they run. It checks their actions from outside, so an agent cannot switch off or change the checks, even when it misuses tools or access to finish a task.",
     "tags": [
-      "ai-agents",
-      "runtime-security",
-      "nvidia"
+      "ai security",
+      "ai agents"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
@@ -2095,14 +2252,14 @@
     "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
     "published": "2026-10-21",
     "excerpt": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex... Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex tasks over long time horizons leads to compounding risk: the agents may download code, build new tools, request additional privileges, and touch more of the underlying infrastructure. The agents’ action paths are determined as they work… Source",
-    "summary": "The post introduces NVIDIA's OpenShell reference architecture for securing and governing AI agent workloads at scale. It frames the core problem as autonomous agents that run for hours, access files, tools, and the internet, and spawn other agents, which compounds risk as they download code, build tools, request privileges, and reach more infrastructure. The teaser is short, so details of the architecture itself are not covered here.",
+    "summary": "NVIDIA describes a reference design called OpenShell for keeping AI agents safe and under control when they run for hours. The concern is that long-running agents can download code, request more access, and reach more systems as they work.",
     "tags": [
-      "ai-agents",
+      "ai agents",
       "security",
-      "governance"
+      "nvidia"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
@@ -2110,14 +2267,14 @@
     "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
     "published": "2026-10-21",
     "excerpt": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams... Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams can inspect, revise, and prepare for simulation. Connecting these inputs into an editable workflow helps teams explore design alternatives and incorporate engineering feedback as the design evolves. The NVIDIA Omniverse DSX Blueprint… Source",
-    "summary": "NVIDIA describes an agent-assisted workflow for building an AI factory digital twin, combining site plans, equipment assets, and engineering requirements into one consistent, editable model. The approach lets teams explore design alternatives and fold in engineering feedback before simulation. The post is a teaser, so details beyond this overview are not covered here.",
+    "summary": "NVIDIA describes a way to build a digital twin, a computer model, of an AI data center. It links site plans, equipment, and engineering needs into one editable model so teams can test design options and update the design as feedback comes in.",
     "tags": [
-      "digital-twin",
-      "ai-infrastructure",
-      "simulation"
+      "data centers",
+      "digital twins",
+      "nvidia"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
@@ -2125,14 +2282,14 @@
     "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
     "published": "2026-10-21",
     "excerpt": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino... Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino acids for a 100-residue protein sequence and the number of possibilities exceeds the number of atoms in the observable universe. Somewhere in that space is a protein that opens a path to a new therapy. There are too many combinations to… Source",
-    "summary": "NVIDIA introduces RFD4-Proteina, a protein design approach that frames design as a search problem over an enormous space of possible amino acid sequences. The post highlights reward-guided inference-time search as a way to navigate that space efficiently. The article text is only a teaser, so the specific method details are not covered here.",
+    "summary": "NVIDIA describes a new way to design proteins using RFD4-Proteina, a method that searches for good designs while it runs. The search space is huge: even an 8-amino-acid protein has over 25 billion possible versions, so smarter searching helps find useful designs faster.",
     "tags": [
-      "protein-design",
-      "inference-time-search",
-      "generative-models"
+      "protein design",
+      "ai",
+      "drug discovery"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
@@ -2140,14 +2297,14 @@
     "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
     "published": "2026-10-21",
     "excerpt": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,... AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute, networking, storage, power, cooling, and software online as one productive unit. In a conventional data center build, teams must first select the site, design power and cooling for the deployment, lay out the data center… Source",
-    "summary": "NVIDIA argues that AI factories must bring compute, networking, storage, power, cooling, and software online together as one productive unit before any workload produces output. The post contrasts this with conventional data center builds, where site selection and power and cooling design come first, and presents NVIDIA DSX POD as a way to reach productive AI capacity faster and more predictably. The teaser cuts off early, so the specific technical details are not covered here.",
+    "summary": "NVIDIA describes its DSX POD approach for building AI data centers faster. Before AI work can start, many parts like computers, networks, power, and cooling must all be set up together, and this approach aims to make that process quicker and more predictable.",
     "tags": [
-      "ai-infrastructure",
-      "data-centers",
-      "gpu-computing"
+      "ai data centers",
+      "nvidia",
+      "infrastructure"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/webmcp-commerce/",
@@ -2155,14 +2312,14 @@
     "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
     "published": "2026-10-21",
     "excerpt": "AI can write code and pass the bar exam, but it still struggles to buy a pair of shoes online. That’s because websites were built for humans, not agents. Most agents that shop for someone today work from a site’s HTML — they look at the page, guess which button does what, click, and try again when they get it wrong. This process is slow, uses a lot of tokens, and something as seemingly innocuous as a theme change can break it. Enter WebMCP: a browser standard from Google that gives AI agents structured tools on a page, like search_products . Instead of hunting for buttons, the agent calls the exact tool it needs directly, making shopping faster, cheaper, and far more reliable. Because WebMCP is still an experimental proposed browser standard in early preview, it’s currently available behind experimental Chrome flags ( chrome://flags/#enable-webmcp-testing ), in Chrome Origin Trials, in some agentic browsers, and across developer environments like Cloudflare Kitesurf . In August, we launched edge implementation of WebMCP in beta. Turn it on, and Cloudflare injects a tiny script at the edge to make those tools available automatically, without site owners writing a single line of code. Commerce.com , a flexible commerce platform built for the age of AI, already uses Cloudflare to run their almost 100,000 domains. So when the preview came out, they asked: Can we turn this on for all of our stores at once? Here’s why Commerce.com wanted WebMCP, how we built edge-level opt-outs to give every merchant control, and what we learned along the way. Why Commerce.com wanted WebMCP Kristina Pototska, Product Management Director at Commerce.com, explains why this matters for storefronts: “Merchants keep asking us how they can keep up with agentic shopping. When a shopper asks an agent to find something, merchants want their store to be in the answer. They want to keep the customer, keep control of the checkout, and do it without rebuilding their site. WebMCP helps with all three. The agent gets real tools to search products, check details, build a cart, and get a checkout link, so it doesn’t have to guess its way around the page. The human shopper stays on the merchant’s site, and the merchant keeps the relationship. We wanted to turn this on in a secure way, and without asking merchants to edit their theme or do anything by hand. That’s where the Cloudflare partnership worked perfectly. WebMCP also works side by side with our server-side MCP , and together they cover the different ways people shop with agents. Server-side MCP supports agents that connect to a store directly, like an assistant helping someone shop across several sites. WebMCP supports agents that work in the shopper’s browser. It’s the same set of shopping tools in both cases, so merchants don’t have to choose between the two or manage them separately.” Under the hood, this integration relies on two key principles. First, the WebMCP tools execute directly inside the shopper's active browser session on the storefront's domain, ensuring the agent sees the same prices and cart. No credentials go to a third party, and the visit still happens on the merchant's site. Second, Cloudflare serves as the edge delivery layer for Commerce.com’s backend MCP server, proxying tool definitions and actions unchanged so merchants maintain full control over their tool logic. What a shopper's agent sees When visiting an enabled Commerce.com storefront, an AI assistant no longer has to guess how to navigate the site. Instead, it can instantly discover tools via WebMCP. Suppose you tell your agent: \"Find me a waterproof trail running shoe under $140 in size 10 and add it to my cart.\" Without WebMCP: The agent attempts to simulate human clicks, only to get blocked by cookie banners, misinterpret variant drop-downs, or get tripped up by bot challenges that try to distinguish automated traffic from real customers. With WebMCP: The agent detects the store's tools on document.modelContext and makes two",
-    "summary": "Cloudflare and Commerce.com describe how they are making storefronts usable by AI shopping agents via WebMCP, a proposed browser standard that exposes structured tools (like search_products) so agents can call them directly instead of clicking through HTML. Cloudflare's edge implementation (in beta) injects these tools automatically without merchant code, letting Commerce.com's roughly 100,000 domains opt in while keeping checkout and customer relationships on the merchant's site.",
+    "summary": "Cloudflare and Commerce.com now let AI shopping agents use online stores through built-in tools, instead of clicking around pages. Stores can turn this on without writing code, so agents can find products and add items to carts more reliably.",
     "tags": [
-      "webmcp",
-      "ai-agents",
-      "ecommerce"
+      "ai agents",
+      "online shopping",
+      "cloudflare"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
@@ -2170,14 +2327,14 @@
     "title": "Cloudflare deploys protections against php2shell vulnerability",
     "published": "2026-10-21",
     "excerpt": "Update - On October 23, the PHP project published an informational advisory for a related vulnerability, CVE-2026-115560, in PHP's session upload progress feature. It affects fully patched PHP releases, including 8.5.12, and will be fixed in PHP's next regular release. All Cloudflare WAF customers are protected against known exploit attempts if their site uses PHP's default upload progress field name. Customers who have changed session.upload_progress.name are not covered by the WAF rule. The existing rules \"PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619) #6\" protects against this vulnerability. More information to follow. October 21, Calif.io, Wiz, OpenAI and Quarkslab disclosed two vulnerabilities in PHP, tracked as CVE-2026-109618 and CVE-2026-109619 and known as php2shell . The vulnerabilities affect all web servers running PHP 5.4 or later and they may allow an attacker to cause denial of service, remote code execution, and data exposure when an application processes specially crafted HTTP traffic. Cloudflare has been part of a coordinated effort to deploy mitigations to protect the Internet, working with PHP foundation , OpenAI and Wiz among others. Cloudflare has developed and deployed web application firewall (WAF) protections since early October 2026, which were deployed about 9 hours ahead of public disclosure. Starting on October 21 3:02 am UTC, Cloudflare customers using our free or paid WAF were protected by default against php2shell. Cloudflare successfully deployed multiple mitigations for all its customers while the vulnerability was leaked before the official release date and we observed attack traffic targeting our customers. We observed how attackers were mutating the attack payload to try to bypass our protections by tracking the volume of matches and cross-referencing with the rule logic. Protecting against php2shell required more than standard request-based rules. Request data alone does not always provide enough evidence to distinguish an exploit from legitimate traffic. The origin’s response adds context, helping identify whether an exploit succeeded while reducing the risk of false positives. To deliver this protection, we developed full transaction detection, a new Cloudflare WAF capability that combines signals from the request and response within the same HTTP transaction. Response rules can then block a matching origin response before it reaches the requester. The php2shell protections are the first managed detections we have released using this capability. Customers should patch their PHP repos even with WAF protections providing an additional layer of defense-in-depth mitigation. Our security analysts continue monitoring attack activity and update the rules when and if new techniques and variations emerge in the hours and days ahead. You can track new rules in the changelog . The protections are available and deployed automatically on all plans with WAF deployed, including Free users. What we know about the vulnerabilities PHP is used by almost 70% of websites . The php2shell vulnerabilities affect the PHP runtime itself and can allow attackers to execute malicious code on vulnerable servers, expose customer data, or disrupt services. Because PHP underpins widely used platforms such as WordPress and Magento, these flaws could potentially affect a large number of applications across the Internet. The two vulnerabilities involve how PHP handles memory when something goes wrong while processing a HTTP request. Normally, PHP allocates memory to store the data it needs to process a request, then releases it when that work finishes. If processing stops unexpectedly, for example because it runs out of memory, PHP fails to clean up the memory safely. These vulnerabilities arise when PHP handles an error and then tries to use data that was not fully set up or memory that has already been released. An attacker can send specially crafted HTTP requests to trigger these conditions. Large r",
-    "summary": "Cloudflare describes its coordinated response to the php2shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) in PHP, which can allow denial of service, remote code execution, or data exposure. The company deployed WAF protections about nine hours before public disclosure, including a new full-transaction detection capability that checks both request and origin response. A later update notes a related advisory (CVE-2026-115560) that is covered by existing rules only when PHP's default upload progress field name is used.",
+    "summary": "Security researchers found two serious flaws in PHP, a popular web language, that could let attackers run harmful code on servers. Cloudflare rolled out automatic protections for its customers about nine hours before the public announcement, and says patching PHP is still needed.",
     "tags": [
       "security",
       "php",
-      "web-application-firewall"
+      "web servers"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/full-transaction-waf/",
@@ -2185,14 +2342,14 @@
     "title": "Introducing full transaction detection for Cloudflare WAF",
     "published": "2026-10-21",
     "excerpt": "Today, we are expanding our web application firewall (WAF) by adding two new capabilities: full transaction detections and response rules. Full transaction detections evaluate each HTTP request alongside its response to identify evidence of exploitation. It helps answer both \"Does this request look malicious?\" and \"What happened when the application handled it?\" Response rules can then block the origin’s response before it reaches the requester. These are valuable protections because the latest frontier models are uncovering vulnerabilities buried deep in widely used software, giving defenders clarity on what to fix — and attackers new paths to exploit. The recent php2shell vulnerability shows the stakes: a flaw in a common software component can put applications across the Internet at risk. AI agents scanning for vulnerabilities can be extremely persistent, adapting payloads using feedback, and chaining vulnerabilities, credentials, and permissions. An application's response can reveal whether an attempt worked and give an attacker information that helps them go deeper. Inspecting incoming requests remains essential for stopping recognizable attacks before they reach an application. But some threats become clear only when the request is considered alongside what the origin returns. A suspicious input followed by a response exposing sensitive information tells a different story from the same input followed by a rejection or an error. With these new capabilities, customers can use Cloudflare-managed protections or build their own policies combining request and response properties. This extends our always-on application security framework, with detection results available in Security Analytics to support investigation. Our first managed protections using this capability address the recently disclosed php2shell vulnerability. And the best part? We are making these new capabilities generally available to all Cloudflare customers, including Free plans. Request inspection is not enough Cloudflare WAF protects websites and APIs with managed rules, custom rules, and rate limiting. Managed rules provide protection for known attack techniques and vulnerabilities while custom rules let teams create their own policies using parameters such as an IP address, URL path, headers, and request body. These controls operate at the request level to stop exploits or unwanted traffic from reaching the origin. For many threats, this is the right place to act. However, treating every suspicious request as a confirmed exploit creates a difficult choice. Broad request signatures can catch more potential attacks, but they can also show “false positives”, such as matching legitimate traffic — which then breaks the applications. Deploying only rules that do not trigger false positives reduces that risk, but can leave more room for more ambiguous traffic to reach the server. The response provides the missing evidence. Cloudflare can now correlate it with the request that produced it, so detections can account for the outcome of the entire HTTP transaction. As an illustrative example, consider an application that lets users download files. An attacker manipulates the file parameter to request a private configuration file outside the permitted directory: GET /download?file=../../config/database.ini Request inspection can recognize this path traversal attempt and block it before it reaches the application. The request alone, however, cannot establish whether the application would expose the file. It might reject the request, ignore the traversal, or return an error. If the request reaches the origin, a response like this provides additional evidence: 200 OK Content-Type: text/plain [database] username=app_service password=EXAMPLE_SECRET Full transaction detection provides a missing piece: it can correlate the attempted file access with response content characteristic of a private configuration file. Configuration-like text can legitimately appear in documentat",
-    "summary": "Cloudflare is expanding its web application firewall with full transaction detections, which evaluate each HTTP request together with the origin's response to spot evidence of exploitation, plus response rules that can block a response before it reaches the requester. The motivation is that some attacks, like path traversal leaking secrets, are only clear once the response is considered, and the first managed protections target the php2shell vulnerability. The capabilities are generally available to all Cloudflare customers, including Free plans.",
+    "summary": "Cloudflare is adding a feature to its web firewall that checks both the incoming request and the server's reply together. It can spot when an attack worked, like a leaked password, and block that reply before it reaches the attacker. This is available to all customers, including free plans.",
     "tags": [
-      "web-application-firewall",
-      "security",
-      "cloudflare"
+      "web security",
+      "firewalls",
+      "cyber attacks"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/source-material-ben-ganz/",
@@ -2200,14 +2357,13 @@
     "title": "Source material: Designer Ben Ganz on pushing the limits of what we can do",
     "published": "2026-10-20",
     "excerpt": "From experimental typography and print artifacts to architecture, furniture, and fashion, PIN-UP Magazine’s creative director explores how materials, systems, and unexpected connections can shape new visual worlds.",
-    "summary": "Figma interviews designer Ben Ganz, creative director of PIN-UP Magazine, about pushing creative boundaries across experimental typography, print, architecture, furniture, and fashion. The piece centers on how materials, systems, and unexpected connections can generate new visual worlds. The provided text is only a short teaser, so further technical or process details are not available here.",
+    "summary": "Figma interviews designer Ben Ganz, who creates experimental work in typography, print, architecture, furniture, and fashion. The piece looks at how materials and unexpected connections can shape new visual ideas.",
     "tags": [
       "design",
-      "creative-process",
-      "typography"
+      "interviews"
     ],
     "summarized": true,
-    "summary_version": 0
+    "summary_version": 2
   },
   {
     "url": "https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents",
@@ -2215,21 +2371,14 @@
     "title": "MemCurrent: Designing Persistent Memory for Production Agents",
     "published": "2026-10-20",
     "excerpt": "AI tools have made it easy to vibe code agents. Building and maintaining an enterprise...",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://www.databricks.com/blog/introducing-agent-memory-databricks",
-    "company": "Databricks",
-    "title": "Introducing Agent Memory on Databricks",
-    "published": "2026-10-20",
-    "excerpt": "Today we're introducing agent memory on Agent Bricks, Databricks' agent developer...",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Databricks describes MemCurrent, a way to give AI agents a memory that lasts between sessions. The teaser notes that building such agents is now easy, but keeping them running reliably in a company is harder.",
+    "tags": [
+      "ai agents",
+      "databricks",
+      "software engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
@@ -2237,10 +2386,13 @@
     "title": "How Claude designed protein binders against scorpion neurotoxins",
     "published": "2026-10-20",
     "excerpt": "We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic says an internal research version of Claude was asked to design tiny proteins that latch onto scorpion neurotoxins, the venom chemicals that harm nerves. The teaser does not say how well the designs worked.",
+    "tags": [
+      "ai research",
+      "protein design"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/catalog-clustering-part-ii",
@@ -2248,10 +2400,13 @@
     "title": "Cross-store product clustering across millions of stores",
     "published": "2026-10-20",
     "excerpt": "How we group product listings across millions of stores using tiered matching models, graph partitioning, and learned cluster merge decisions.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify describes how it groups matching product listings from millions of different stores into shared clusters. The method uses several matching stages, splits the work into smaller graph pieces, and learns when to merge groups.",
+    "tags": [
+      "ecommerce",
+      "data matching"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/mps-pytorch-2-15",
@@ -2259,10 +2414,14 @@
     "title": "MPS in PyTorch 2.15",
     "published": "2026-10-20",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Hugging Face has shared news about MPS support in PyTorch 2.15. MPS is Apple's graphics chip technology, so this likely makes it easier to run AI models on Apple devices.",
+    "tags": [
+      "pytorch",
+      "apple chips",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/hf-torchtpu",
@@ -2270,10 +2429,13 @@
     "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
     "published": "2026-10-20",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Hugging Face announced support for running its AI model tools directly on Google's TPU chips, a type of processor built for AI work. The article is a short teaser, so the details of how it works are not included.",
+    "tags": [
+      "ai tools",
+      "machine learning hardware"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
@@ -2281,10 +2443,14 @@
     "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
     "published": "2026-10-20",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Hugging Face marks one year of AnyLanguageModel, a tool that lets Apple developers run AI language models directly on their own devices. The 1.0 release looks back on that first year of local model use on Apple platforms.",
+    "tags": [
+      "apple devices",
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/typescript-rust-port/",
@@ -2672,39 +2838,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-    "company": "Hugging Face",
-    "title": "Apertus 1.5 Release Notes",
-    "published": "2026-10-15",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/meta-muse-spark-open",
-    "company": "Hugging Face",
-    "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-    "published": "2026-10-15",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/flux-3",
-    "company": "Hugging Face",
-    "title": "Welcome FLUX.3 Image Klein in Diffusers",
-    "published": "2026-10-15",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
     "company": "GitHub",
     "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
@@ -2754,17 +2887,6 @@
     "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
     "published": "2026-10-15",
     "excerpt": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on... Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories. The 1M token context window holds an entire… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-    "company": "NVIDIA",
-    "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-    "published": "2026-10-15",
-    "excerpt": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,... Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources, following company policy, and calling several tools. NVIDIA Nemotron 3.5 Super VL is an open, customizable multimodal model for these specialized workflows. Its 120B-parameter mixture-of-experts (MoE) architecture activates 12B… Source",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -2980,17 +3102,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://blog.cloudflare.com/hyperdrive-mysql/",
-    "company": "Cloudflare",
-    "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
-    "published": "2026-10-14",
-    "excerpt": "Hyperdrive support for MySQL is now generally available (GA). Hyperdrive , Cloudflare’s database connection pooler for Workers, initially only supported Postgres. Since we announced the beta for MySQL protocol support last year, we have been working on making our MySQL handling as reliable as our Postgres support. We’ve learned some things from building and running a MySQL connection pooler on Cloudflare’s network. It turns out that the difference between beta and GA is just 20 bug fixes in a trenchcoat. During the beta, our goal was to validate that real-world customer usage hit our production availability target of 99.99%. We knew there were gaps in our reliability since we track how often client connections from a Worker end in an error related to Hyperdrive. In addition, we had feedback from customers in the beta that led to the discovery of a rare and subtle bug in our production environment. To convey the complexity of this particular bug, we first need to explain how Hyperdrive works. What is Hyperdrive? Hyperdrive is a distributed database connection pooler that connects Cloudflare Workers to SQL databases. Hyperdrive holds warm SQL connections open on our global network and shares these connections across many Worker requests. In addition to connection pooling, Hyperdrive can also cache common queries in our global CDN cache, reducing latency and load on the origin database. Establishing a connection to a SQL database is expensive, taking a minimum of five network round trips. On a serverless compute platform like Workers, establishing a connection for each request would be impractical, both because of the amount of latency added to each request, but also because a large number of open connections can incur high per-connection resource costs. While MySQL fares better here than Postgres since MySQL doesn’t use an entire OS process per connection, a typical deployment can still run into resource issues with a large number of connections. For more details, see our blog post introducing Hyperdrive. A journey to stability Some of the issues we ran into were small and easy to fix once reported. One of the first problems reported in the beta was that emojis written to the database were not being correctly returned. This was a bug related to character set encoding. Hyperdrive negotiates the encoding for the connection in the startup handshake, and we negotiate utf8 as the encoding. As it turns out, utf8 is a deprecated alias for utf8mb3 which is not all of UTF-8: it only supports 1–3 bytes per Unicode code point, while full UTF-8 has a max of 4 bytes per code point. To get all of UTF-8, we needed to change our handshake to use utf8mb4 , which fixed the emoji issue. Another encoding-related bug occurred when we added connection cleanup via COM_RESET_CONNECTION . This is a lightweight MySQL command to clear any session state in a given connection, which is exactly what Hyperdrive needs to ensure that no session-level state leaks between checkouts. But adding this connection cleanup step caused encoding issues once again! It turns out that COM_RESET_CONNECTION does not reset the connection state to the character set encoding we negotiated at connection startup; it instead resets the connection to the server default. This means that after negotiating utf8mb4 on a MySQL server instance that defaults to latin1 , once we run COM_RESET_CONNECTION, our connection now has an encoding of latin1 . The fix is to always run a command setting the encoding to utf8mb4 after a connection reset. A hard-to-find bug During the beta, our highest-volume MySQL customer reported a small but consistent rate of empty query responses for which a non-empty response was always expected. We started the investigation by combing through all of our telemetry and understanding the user’s logic. Then we also increased the trace rate for this Hyperdrive instance, hoping to see the execution flow of this bug. We searched for network issues that could explain the ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
     "company": "AWS",
     "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
@@ -3013,17 +3124,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://www.anthropic.com/research/redesigning-source-control",
-    "company": "Anthropic",
-    "title": "Redesigning source control at Anthropic",
-    "published": "2026-10-13",
-    "excerpt": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://stripe.com/blog/economics-of-ai-monetization",
     "company": "Stripe",
     "title": "The “alien” economics of AI monetization",
@@ -3040,17 +3140,6 @@
     "title": "CASTLE: training natural language search before the first real query",
     "published": "2026-10-13",
     "excerpt": "How we addressed the cold-start problem for Airbnb’s natural language search by jointly generating synthetic training data — queries and relevance labels — from de-identified booking and search signals. By : Wendy Ran Wei , Hao Li , Weiwei Guo , Xiaowei Liu , Xueyin Chen , Chun How Tan , Malay Haldar , Soumyadip Banerjee , Kedar Bellare , Huiji Gao , Sanjeev Katariya , and Stephanie Moyerman Introduction Natural language search lets guests express intent in their own words, such as “romantic cabin near skiing” or “pet-friendly beach house that sleeps eight,” rather than navigating filters and categories. We needed to introduce this kind of search for Airbnb, and to have it work well from the start. However, this required training the model before we had actual user queries to train the model on, and a reasonable set of relevance labels (inferred from the queries) to map queries to matching listings. Without prior traffic, both must be synthesized from scratch. This is the cold-start problem for natural-language search. Other organizations have faced similar challenges and have created methods to address them. However, prior approaches address the need for a body of queries and the need for relevance labels separately. Passage-based methods such as InPars [1] prompt a large language model (LLM) to generate queries conditioned on a single document, then rely on additional LLM judgments to assign relevance labels, introducing a second source of error. Promptagator [2] improves query diversity using few-shot examples, but is still limited by the gap between its generation distribution and real user behavior. In this post, we describe Contrastive And Seed-guided Training for natural Language sEarch (CASTLE), our framework for jointly generating queries and producing relevance labels from Airbnb’s own de-identified booking data. Our paper describing CASTLE was accepted as a full research paper at the 35th ACM International Conference on Information and Knowledge Management, more widely known as CIKM 2026 [3]. Challenges Generating useful synthetic training data for search requires more than producing grammatically plausible queries. The distribution of synthetic queries must match how real guests actually search; their preferred phrasing, query length, and attributes they tend to mention. If queries fail to match real-world search patterns, the model trained on them will generalize poorly. We measured this mismatch using Kullback–Leibler (KL) divergence (a measure of how much one probability distribution differs from a reference distribution) between synthetic and real query distributions — both over surface-level query statistics and over attribute types (property type, amenity, location, and so on). Prior approaches scored between 9.33 and 26.2 on the KL divergence metric: far from the real-user distribution. Beyond distributional alignment, we also needed relevance labels. Generating a query is only half the problem; knowing which listings are relevant to it is the other half. Solution CASTLE addresses both challenges through a single mechanism: contrastive listing pairs derived from de-identified booking sessions, selected in accordance with user privacy permissions. When a guest books a specific listing after viewing several possible alternatives, that event implicitly encodes preference: the booked listing was selected over the others. We use these (positive, negative) pairs of listings — where the negative is randomly sampled from the other viewed-but-not-booked alternatives — as the structured input for query generation. Listing features include amenities, property details, and a one sentence summary of recent public guest reviews, with personal identifying information removed. Because we instruct the LLM to generate a query that is satisfied by the positive listing but not the negative, the relevance label is correct by construction; no post-hoc judgment is required. Crucially, what is “positive” and “negative” is determine",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-    "company": "Hugging Face",
-    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-    "published": "2026-10-13",
-    "excerpt": "",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -3722,17 +3811,6 @@
     "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
     "published": "2026-09-22",
     "excerpt": "Today, Amazon CloudWatch introduces CloudWatch Omni, a unified observability experience for application and AI workloads that is app-centric, AI-powered, built on open standards, and delivered off-console. CloudWatch Omni is a purpose-built observability, evaluation, and experimentation solution for AI agents. It helps teams design, evaluate, and operate AI agents across any model provider, framework, or runtime, with an eval-driven workflow, support for the tools you already use, and observability delivered where you work: directly in your IDE and through a standalone web experience, separate from the AWS Management Console. Organizations deploying agentic AI systems face observability challenges that traditional monitoring can’t address. Agent behavior is non-deterministic: a prompt change can degrade response quality even when standard metrics show no errors. Teams spend hours manually reviewing logs across multiple systems, unable to pinpoint what changed or why. Existing tools force teams to choose between siloed generative AI monitoring or fragmented solutions requiring constant context-switching between their coding environment and browser-based dashboards. CloudWatch Omni captures every trace and includes built-in evaluators for correctness, coherence, retrieval quality, and tool selection, among others. You can compare prompt versions side by side in the playground, build test datasets from production traffic, run experiments across different configurations, and detect regressions automatically. Two surfaces for development and operations CloudWatch Omni delivers observability through two complementary surfaces. Developers get a native extension inside VS Code and Kiro (the currently supported IDEs), where traces appear as you run your agent with a playground and evaluators a click away. Operators get a standalone web experience, separate from the AWS Management Console to monitor the fleet, accessible through SSO with no AWS console needed. Both share the same data: the trace a developer debugs is the trace an operator investigates. The Cloud Login feature connects your local IDE environment to your AWS account, enabling you to send telemetry data to Amazon CloudWatch for persistent storage, share traces with your team, and access production dashboards. This connection is optional. You can use CloudWatch Omni entirely locally during development, then connect to the cloud when you are ready to monitor agents in production. Getting started CloudWatch Omni offers two ways to get started: through the IDE extension (for VS Code and Kiro) or directly through the cloud experience, where you can start sending telemetry data to CloudWatch without installing any IDE extension. In this walkthrough, I install the extension, create an agent, run it, and explore the traces and evaluation tools from my IDE. After installing the CloudWatch Omni extension from the VS Code Marketplace , the CloudWatch Omni icon appears in the Activity Bar. From the welcome screen, I selected Get started with Sample Project to load a pre-configured agent with sample trace data or use shortcut to Command Palette using Command + Shift + P (on macOS) or Ctrl + Shift + P (on Windows/Linux) and select Omni: Create a new Project Figure 1. CloudWatch Omni welcome screen & create new project in VS Code The sample project comes with an agent implementation and example datasets. Part of the getting-started experience is adding OpenTelemetry instrumentation, and CloudWatch Omni guides you through each step. You can also create a new agent from scratch. CloudWatch Omni walks you through the process using an interactive chat where you define the agent’s purpose, select a model provider, and configure tools. All data is stored locally by default. You can optionally connect to AWS to send data to Amazon CloudWatch. After verifying the configuration, I started the local dev server and sent a question to the agent. What makes this different from a typical chatbot inter",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://www.figma.com/blog/source-material-aitana-pico/",
-    "company": "Figma",
-    "title": "Source material: Graphic designer Aitana Picó wants us to appreciate bad trends",
-    "published": "2026-09-21",
-    "excerpt": "The multidisciplinary designer and artist shares what’s in her “mental database”: an off-putting tarot deck, a Jockstrap CD, and a recurring dream about aerial silks.",
     "summary": "",
     "tags": [],
     "summarized": false,
