@@ -1,5 +1,256 @@
 [
   {
+    "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
+    "company": "Vercel",
+    "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free",
+    "published": "2026-10-30",
+    "excerpt": "Ling 3.1 Flash 1019 from InclusionAI is now available on AI Gateway , free until November 3, 2026. The updated model is designed for coding, multi-step reasoning, and agents that use tools. Its 1M-token context window supports workflows involving long documents, code, and extended task histories. Use inclusionai/ling-3.1-flash-1019 as the model name: Free requests still appear in your spend dashboard with a full request trace, they just cost nothing. On November 3, requests will begin charging at the published rate. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select inclusionai/ling-3.1-flash-1019 in the agent. See the coding agents guide for details. You can also try Ling 3.1 Flash 1019 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Vercel's AI Gateway now offers the Ling 3.1 Flash 1019 model for free until November 3, 2026. It is aimed at coding, step-by-step reasoning, and AI helper tools, and can handle very long inputs.",
+    "tags": [
+      "ai models",
+      "coding tools",
+      "cloud services"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache",
+    "company": "Vercel",
+    "title": "Data Cache is moving to Runtime Cache",
+    "published": "2026-10-30",
+    "excerpt": "Data Cache is exiting beta and moving to Runtime Cache . Next.js fetch caching and unstable_cache will switch over on every version without code changes. On Pro, each project and environment gets its own Runtime Cache storage allocation, with 8x the space of Data Cache’s previous team-wide pool. Enterprise projects get 10x their previous Data Cache storage. Once your team migrates, Data Cache reads and writes that were previously unbilled are charged at Runtime Cache pricing . Rates start at $0.40 per million read units and $4.00 per million write units, and vary by region. Hobby teams get 1 million read units and 200,000 write units free each month across all projects. On Pro, usage draws from your $20 infrastructure credit each month, and anything beyond it is billed at regional rates. For Enterprise pricing, contact your account team. Migration Teams created on or after October 30, 2026 use Runtime Cache by default. If your team already uses Data Cache: Hobby: We’ll migrate your team on November 29, 2026. Pro: We’ll notify you of your migration date and when billing changes take effect. Enterprise: Your account team will contact you with migration details. Before you migrate, review your project's Data Cache usage in Observability . To cut unnecessary reads and writes, follow the optimization guide or copy the agent prompt into your coding agent. In the Runtime Cache dashboard, you can also select Optimize with Vercel Agent. Starting October 30, existing Hobby and Pro teams can opt in early from your team's CDN settings . Runtime Cache pricing applies as soon as you opt in. You can also disable fetch and unstable_cache caching in CDN settings, which sends more requests to your data sources but doesn’t stop your migration. Read about the architecture and recent improvements in the blog post . Read more",
+    "summary": "Vercel's Data Cache is becoming Runtime Cache, and Hobby teams move over automatically on November 29, 2026. Once moved, cache use that was free before will be billed at per-use rates, with Hobby getting a free monthly allowance.",
+    "tags": [
+      "cloud costs",
+      "caching",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons",
+    "company": "Vercel",
+    "title": "Add liveness checks to your Daemons",
+    "published": "2026-10-30",
+    "excerpt": "Vercel Daemons now support configuring HTTP liveness checks. Start with an HTTP endpoint in your daemon that reports its health. Keep it lightweight so it responds quickly, and have it return an error status when the daemon is no longer healthy: The daemon configuration now accepts a livenessProbe value pointing at that endpoint: Vercel periodically requests the endpoint and restarts the daemon's container when the check fails, catching a daemon that is still running but no longer healthy. Read the Daemon documentation for more information about liveness checks, including default values and the optional tuning fields. Read more",
+    "summary": "Vercel Daemons can now run a health check on your background service. Vercel regularly visits a health endpoint you set up and restarts the service if it fails, which catches services that are still running but have stopped working properly.",
+    "tags": [
+      "vercel",
+      "cloud hosting",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
+    "company": "Vercel",
+    "title": "Simplifying runtime caching on Vercel",
+    "published": "2026-10-30",
+    "excerpt": "Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js fetch caching or unstable_cache , you won’t need to change your code. Pro and Enterprise projects will get larger storage allocations. Runtime Cache lets your code reuse fetched or computed data across requests without operating a separate caching service. Over the past year, we’ve improved read performance during traffic bursts, increased storage budgets, and made cache usage easier to investigate. Why we built Runtime Cache Data Cache was originally launched as Vercel’s data caching service for the Next.js App Router, used by fetch caching and unstable_cache . Unlike CDN caching , which stores complete HTTP responses, it caches the data used to produce them. A product page, for example, can reuse cached catalog data while rendering a personalized response for each visitor. We wanted developers to have access to that service without depending on Next.js. Last year, we introduced Runtime Cache with a direct API: getCache from @vercel/functions . Applications can use it for feature flag lookups in Routing Middleware, caching CMS content during builds, and data caching in SvelteKit and Nuxt apps. Frameworks can expose this service through their own APIs, too. On Vercel, Next.js itself uses the Runtime Cache API for 'use cache: remote' , which caches function and component outputs. How Runtime Cache works The infrastructure behind Runtime Cache is a distributed caching service shared by many teams. A Go API handles requests, backed by Redis fleets in every Vercel region. Every hour, the service handles more than 440 million reads and moves more than 18 TB of data. Each region has its own cache. A cache hit takes one round trip to the cache service in the region where your code runs. Vercel handles authentication with short-lived credentials, so you don’t need to manage API keys. On a miss, your app or framework fetches or computes the value and writes it to that region’s cache. The service doesn’t check other regions for a cached copy. Each cached entry stores its tags and write time. When the service reads an entry, it checks a separate tag store in the same region for those tags’ invalidation timestamps. If any tag was invalidated after the entry was written, the entry is stale. For example, an application can tag cached product data with catalog . When the catalog changes, invalidating catalog records one timestamp, whether the tag covers one entry or a million. The service doesn’t need to find and delete every matching entry. The invalidation immediately updates the tag store in the region receiving the request. Vercel’s shared tag infrastructure, also used by the CDN , distributes the timestamp through the global push pipeline, typically reaching other regions within a few hundred milliseconds. Your app or framework chooses what to cache and handles misses. Runtime Cache handles regional storage, authentication, and distributing tag invalidations across regions. What we’ve shipped Faster reads during traffic bursts Checking whether an entry is still fresh adds a dependency to every cache hit. During traffic bursts, a slow shard in the tag store could delay reads even when the cached value was already available. We added circuit breakers that let reads temporarily check freshness using tag timestamps cached in memory, so they can proceed without waiting for the slow shard to respond. During this fallback, a read can briefly treat recently invalidated data as fresh. We enabled the breakers in every region in August. During the heaviest bursts in our largest region, p99 cache-service read latency fell to about one fifth of its previous level at comparable traffic. On-call alerts for this failure mode stopped. More storage and fewer evictions When a cache exceeds its storage budget, Runtime Cache evicts its least recently used entries, even if they haven’t reached their expiration tim",
+    "summary": "Vercel is merging its Data Cache into Runtime Cache, so one product now handles data caching. Existing Next.js caching code keeps working without changes, and Pro and Enterprise projects get more storage.",
+    "tags": [
+      "caching",
+      "web hosting",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/introducing-geist-serif",
+    "company": "Vercel",
+    "title": "Introducing Geist Serif",
+    "published": "2026-10-30",
+    "excerpt": "Geist started as a monospace typeface for developers, built for the editors and terminals where they spend their day doing their work. From there it grew into Geist Sans for product interfaces, and then into Geist Pixel, which was inspired by the grids of early computer screens. Today, we're adding a new member to the family: Geist Serif . Geist Serif is a high-contrast display serif built on the same foundations as Geist Sans, Geist Mono, and Geist Pixel. It has fine, saw-toothed serifs and sharp hairlines, and it was drawn to communicate messages powerfully both in the physical world and on the high-density screens on modern devices. Same system, new voice At Vercel, Geist Sans runs the product. For headlines, though, we wanted a second voice, one that belongs to the same system, instead of a stranger picked from a drop-down menu. A lot of tech brands have moved away from clean sans-serifs to get some personality back, and many of them borrow from vintage computer ads. Geist Serif takes a different path: toward fashion, editorial design, and magazine headlines. It's our homage to the artists behind Rolling Stone and Harper's Bazaar . From the beginning, each Geist family has read from a chapter of type history: the Swiss design movement, early terminal and DOS computing, and now editorial print. Display first Geist Serif began as a set of sketches by Evil Rabbit , which Andrés Briganti then expanded. The first letters already showed an expressive serif, in the spirit of typefaces like Victor Serif and Stanley. When Mark Davis took over the drawings, we made the first release a display face for headlines, posters, and other large sizes, while work on the full family continued. Print has always struggled to hold fine hairlines and sharp serifs, but today's displays can handle a high level of detail. We wanted the new face to take full advantage of modern screens, so we thinned every downstroke by 50% and tightened the sidebearings to push the contrast as far as it would go. Each serif has a wedge on one side and a curve on the other, so the proportions are classical and look beautiful in print, but the construction is new and optimized for digital devices. From the first prototype to today The first prototype of Geist Serif was shared on April 1, 2026. Here's the same word, Geist, in that prototype, compared with the display drawing shipping today. Geist grew teeth The goal was to honor our original intent and keep the serif closely tied to the sans, even when the letters sit on top of each other. Geist Serif’s stems match Geist Sans, and the two share widths and postures. The saw-toothed serifs and high contrast give Geist an editorial voice. One phrase kept coming up as each character was drawn: “Geist grew teeth.” Four families, one x-height Geist Serif uses the same cap height and x-height as Geist Sans, so you can drop it into any Geist layout without moving a line. Mix Sans, Mono, Pixel, and Serif in the same sentence and every word looks the same size. Metric Geist Sans Geist Serif UPM 1000 1000 Cap height 710 710 x-height 530 530 Ascender 710 750 Descender -150 -200 Four variants, one axis Like Geist Pixel, Geist Serif has a variable axis that swaps the shape of every dot in the font, including those on i and j and in punctuation. The axis is called Element Shape ( ELSH ), and it gives you four variants: Regular with round dots (the default), Square, Triangle (a nod to the Vercel logo), and Heart. Each variant also ships as its own static file. If you use the variable font, pick a variant with font-variation-settings : Crafted by hand In July the font had 227 glyphs . It now has 894 and covers 352 Latin-script languages, and we worked through more than 52,000 kerning pairs to get the spacing right. Some of the details are tiny. The eye of the g , for example, is tilted exactly 7°. Specs at a glance Geist Serif ships with: 1 weight (Regular) 4 variants (Regular, Square, Triangle, Heart) 894 glyphs 5 stylistic sets ( ss0",
+    "summary": "Vercel has released Geist Serif, a new headline typeface that joins its Geist family of fonts. It is built to look sharp on modern screens and suits magazine-style and editorial designs.",
+    "tags": [
+      "fonts",
+      "design",
+      "web tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "company": "OpenAI",
+    "title": "Making it easier for websites to express AI training preferences",
+    "published": "2026-10-30",
+    "excerpt": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+    "summary": "OpenAI says it will respect a shared robots.txt signal that lets website owners state whether they allow their content to be used for AI training. This gives site operators a simpler, common way to set their training preferences.",
+    "tags": [
+      "ai training",
+      "web privacy",
+      "robots.txt"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "company": "OpenAI",
+    "title": "Community safety report and new protections for teens",
+    "published": "2026-10-30",
+    "excerpt": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+    "summary": "OpenAI announced new safety steps for ChatGPT to help prevent violence, including added protections, earlier action, and a plan to publish public safety reports. The post is a short teaser, so details are limited.",
+    "tags": [
+      "ai safety",
+      "chatgpt",
+      "online safety"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+    "company": "Hugging Face",
+    "title": "nemotron-halloween",
+    "published": "2026-10-30",
+    "excerpt": "",
+    "summary": "Hugging Face published a post titled \"nemotron-halloween,\" but the article text is empty, so the details of what it covers are unknown. The title suggests a Halloween-themed project related to Nvidia's Nemotron models.",
+    "tags": [
+      "ai models",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/",
+    "company": "Google Developers",
+    "title": "Native Model Authoring for Edge with LiteRT Tensor API",
+    "published": "2026-10-30",
+    "excerpt": "Meet the LiteRT Tensor API: giving developers native C++ control over the model graph to unify end-to-end ML computations on heterogeneous edge hardware.",
+    "summary": "Google introduced the LiteRT Tensor API, which lets developers write models directly in C++ for devices at the edge, like phones and small gadgets. It aims to run whole machine learning tasks smoothly across different kinds of hardware.",
+    "tags": [
+      "machine learning",
+      "on-device ai",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
+    "company": "Google Developers",
+    "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
+    "published": "2026-10-30",
+    "excerpt": "TorchTPU integrates a native torch.device(\"tpu\") backend directly into PyTorch, allowing developers to train large-scale models on Google Cloud TPUs without rewriting code in JAX. The TorchTitan TPU fork enhances this with production-grade scaling primitives like SimpleFSDP, Graph Trainer, and custom Pallas kernels that achieve high Model Flops Utilization (MFU) across dense and MoE architectures. Developers can leverage these battle-tested optimization playbooks, recipes, and the Hugging Face modeling backend to efficiently scale their own workloads on TPU infrastructure.",
+    "summary": "Google is adding a built-in option to run PyTorch code on its TPU chips, so people can train large AI models without rewriting them in another language. A special version of TorchTitan, a PyTorch training tool, adds scaling features and speed-ups to help those models run efficiently.",
+    "tags": [
+      "machine learning",
+      "pytorch",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/devfest-is-back/",
+    "company": "Google Developers",
+    "title": "DevFest is back!",
+    "published": "2026-10-30",
+    "excerpt": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
+    "summary": "Google's DevFest 2026 runs from October to December with over 800 events worldwide. Developers can join hands-on sessions to learn Google's AI tools for building and securing apps.",
+    "tags": [
+      "ai",
+      "developer events",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
+    "company": "NVIDIA",
+    "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
+    "published": "2026-10-30",
+    "excerpt": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path... NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path between NVIDIA GPUs and storage targets to increase bandwidth, minimize latency, and reduce CPU and memory utilization across a broad range of platforms, application frameworks, and workload patterns. Configuring NVIDIA GPUDirect Storage… Source",
+    "summary": "NVIDIA has written a guide on checking and setting up GPUDirect Storage, a feature that lets graphics chips read and write data directly from storage. It is meant to speed up data transfers and ease the load on the main processor and memory.",
+    "tags": [
+      "gpu computing",
+      "data storage",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+    "company": "NVIDIA",
+    "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+    "published": "2026-10-30",
+    "excerpt": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces... Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces policies, along with optimization and observability tools for reliable execution. For production agents, the challenge lies in making these agents capable and safe to operate with access to real enterprise systems and data. Source",
+    "summary": "NVIDIA introduces NemoClaw, a tool for building AI agents, which are programs that act on their own. It aims to help developers run these agents safely with set rules, plus tools to monitor and improve them, so they can use real company systems and data.",
+    "tags": [
+      "ai agents",
+      "ai safety",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
+    "company": "Cloudflare",
+    "title": "Cloudflare services for private origins is now generally available",
+    "published": "2026-10-30",
+    "excerpt": "Today, Cloudflare services for private origins is generally available. Point a proxied DNS record at a private IP, and Cloudflare reaches the origin over your existing Cloudflare One connection . Your origin stays private, while web application firewall ( WAF ), caching , bot management , and Workers work just as they do for public origins. In June, we launched this capability in closed beta to address a problem we kept hearing from customers: Their internal APIs, AI agent backends, MCP servers, and operational tools weren’t built to face the Internet, but those services still need to accept requests from partners, customers, or agents over the Internet. Before the beta, putting Cloudflare in front of these services meant exposing a public IP, opening a firewall port, or running cloudflared alongside the origin. Those requirements often left private applications without the same protections and controls they used for public applications, including WAF, bot management, rate limiting, caching, traffic acceleration, rewrites, and Workers. What is generally available today During the closed beta, eligible customers requested access through their account team. Today, we’re opening access beyond that beta group. Point a proxied A or AAAA record at a private IP, and Cloudflare’s application services work as they do for public origins: WAF and managed rules Bot management Rate limiting Caching Transform and rewrite rules Workers Some limitations remain. Argo Smart Routing and Dedicated CDN Egress IPs aren’t supported, and origin health checks require Load Balancing . See the developer documentation for the full list of current limitations. Your origin keeps its private IP, with no inbound firewall exception required. With Cloudflare WAN , no connector software on the origin is required. With Cloudflare Mesh , a connector runs within your private network and can serve multiple origins. How it works Create a proxied A or AAAA record pointing to your origin. For supported private IP ranges, use private network routing is enabled automatically. If your origin uses a public IP that’s reachable only through your private network, you can enable the setting manually. The rest of the request flow stays the same: TLS termination, WAF, rules, and caching continue to run on Cloudflare’s network. The setting turns on automatically for RFC 1918 private IPv4 addresses, RFC 6598 CGNAT addresses (100.64.0.0/10), and RFC 4193 unique local IPv6 addresses (fc00::/7). It can’t be turned off for these ranges; attempts to disable it through the API return an error. What the API looks like For customers automating deployments through the API, private routing is simply an additional attribute on a standard DNS record. POST /zones/{zone_id}/dns_records { \"type\": \"A\", \"name\": \"app.example.com\", \"content\": \"10.0.0.50\", \"ttl\": 300, \"proxied\": true, \"private_routing\": true } Behind the scenes, Cloudflare's proxy platform determines where to send traffic for app.example.com by querying Cloudflare's Origin API. The response includes metadata indicating that the destination should be reached through a private network path: { \"zone_name\": \"example.com\", \"ipv4_addresses\": [\"10.0.0.50\"], \"private_routing\": true } The private_routing flag is the key signal. When our proxy sees it, instead of attempting to connect directly to the private IP address over the public Internet, it hands the request to our private networking layer, which then routes the connection across the customer's existing private network connectivity, whether that's IPsec , GRE , Cloudflare Tunnel , CNI , or Cloudflare Mesh. The beta post covers the routing layer in more detail. Get started Before you begin, you’ll need: The Private Origins entitlement on your account. Ask your account team to turn it on. Cloudflare One connectivity using IPsec, GRE, CNI, Cloudflare Tunnel, or Cloudflare Mesh . Unified Routing enabled on your account, unless you connect over Cloudflare Tunnel (Tunnel doesn't need it). Ne",
+    "summary": "Cloudflare now lets websites and apps that sit on private networks use its protection tools, like firewall, bot blocking, and caching, without opening them to the public internet. Traffic reaches the private service over the company's existing private connection.",
+    "tags": [
+      "cloud security",
+      "networking"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/emudhra-patching/",
+    "company": "Cloudflare",
+    "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+    "published": "2026-10-30",
+    "excerpt": "On October 19, 2026, we learned about eMudhra’s eight shockingly weak keys: where eMudhra was trusted to pick a 115-digit number for their virtual combination lock protecting the Internet, they picked the number 4. Not even four digits, just the number 4. The other seven keys were similarly weak: 56, 66, 115, 155, 156, 230 and 237. The next day, we wrote a blog post on the immediate action we took to mitigate this leak, and what customers needed to do on their end to stay secure. Now, we are sharing a more in-depth follow up on the evidence we’ve seen of exploitation, and the progress seen on visitors patching their systems. Let's start with the scale of the problem. A certificate authority (CA) with weak keys this serious is unprecedented, and the potential consequences are significant. While there have been plenty of compromised certification authorities in the past (such as DigiNotar , TÜRKTRUST , and TrustWave ), access to their keys has always been contained to a degree; these incidents gave a limited set of attackers or organizations the ability to issue fraudulent certificates. The eMudhra incident is fundamentally different; the affected intermediate private keys could be recovered almost instantly by anyone from the public certificates themselves. Anyone can independently recover these same signing keys and create certificates for any domain that an unpatched client not enforcing Certificate Transparency would accept. eMudhra announced they’re exiting the public CA business and have claimed a mistake in a key generation script, but have not yet shared the script. They signed a certificate revocation list (CRL) with what might’ve been a correctly generated key, and subsequently corrected it to be signed with the weak key. How did that come to be and why didn’t that set off alarms? Much has to be cleared up, including the role of the auditors and cross signers. This blog proposes the fixes and next steps for organizations to ensure they are secure. Patching Cloudflare Our primary concern remains the security impact on Cloudflare, our customers, and the Internet as a whole. At the time of writing, all high priority Cloudflare systems have been patched. A small number of confirmed low impact tickets is being worked on. We started patching high-impact systems immediately on October 19. These included customer origin-facing proxies using Pingora , responsible for most of our outbound connections. These were patched in hours to reject the vulnerable eMudhra keys. At the same time, we started an AI-assisted analysis of our source code to find all other systems that trust these weak keys. Within four hours we had a full analysis. We assigned a ticket with preliminary analysis for each system, and asked the team to confirm and/or adjust the analysis before the end of the day. Where high impact was identified, we asked to patch immediately, and for the lower impact, remediation was due at the end of last week. Has Cloudflare seen exploitation across its network? To track whenever a customer’s server (or attacker) presents a certificate signed by eMudhra’s weak keys, we added logging to Pingora. As this outbound service accounts for the vast majority of outgoing TLS connections from a Cloudflare machine, any attacker attempting to snoop using the eMudhra keys would trigger this logging. The logging finished rolling out October 21. At the time of writing, a week later, we’ve seen about 22,000 attempted handshakes with the weak eMudhra keys. Two-thirds of the attempts were fetches of test sites such as emudhra.we-have-a-problem.com (which we mentioned in the developer guidance in our earlier post). Almost all of the remaining third went to origins who appeared to set up a certificate for themselves using the weak intermediate. Every handshake configured to verify the certificate was refused, as we already patched. About 160 of these handshakes stood out: the certificates’ Subject Alternative Names (SANs) were naming other organizat",
+    "summary": "Cloudflare found that eMudhra, a certificate authority, used extremely weak signing keys, letting anyone rebuild them from public certificates. Cloudflare patched its systems within days and logged about 22,000 attempts to use the weak keys, mostly tests.",
+    "tags": [
+      "internet security",
+      "certificates"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+    "company": "Figma",
+    "title": "How we’re training a Figma-fluent editing model",
+    "published": "2026-10-29",
+    "excerpt": "We’ve increasingly seen that specialized post-training can compete with frontier models. Here, we’re sharing the research behind how we’re translating that to design editing workflows.",
+    "summary": "Figma describes how it is training its own AI model to edit designs in Figma's specific style. The team says extra specialized training can let a smaller model compete with the largest general AI models.",
+    "tags": [
+      "ai",
+      "design tools",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/making-something-human-4-things-we-took-away-from-config-india/",
+    "company": "Figma",
+    "title": "Making something human: 4 things we took away from Config India",
+    "published": "2026-10-29",
+    "excerpt": "AI can help us create almost anything now. But from icons and NFTs to art installations and fashion design, it's still up to the maker to deliver something that resonates.",
+    "summary": "Figma shares four lessons from its Config India event. The main idea: AI can now help make almost anything, but people still have to make the final work feel meaningful to others.",
+    "tags": [
+      "design",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/smarter-cost-controls-serverless",
     "company": "Databricks",
     "title": "Smarter cost controls for serverless",
@@ -29,6 +280,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.databricks.com/blog/announcing-general-availability-real-time-mode-spark-declarative-pipelines-databricks",
+    "company": "Databricks",
+    "title": "Announcing General Availability of Real-Time Mode for Spark Declarative Pipelines on Databricks",
+    "published": "2026-10-29",
+    "excerpt": "We introduced Real-Time Mode (RTM) last year which enabled customers to build low-latency, operational use cases...",
+    "summary": "Databricks has made Real-Time Mode for Spark Declarative Pipelines generally available, so customers can now use it in production. It is meant for data tasks that need very fast results.",
+    "tags": [
+      "data pipelines",
+      "real-time data",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-plugin-is-now-available-in-antigravity",
     "company": "Vercel",
     "title": "Vercel Plugin is now available in Antigravity",
@@ -39,6 +305,66 @@
       "developer tools",
       "cloud hosting",
       "ai coding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
+    "company": "Vercel",
+    "title": "Vercel Flags starts 7x faster and no longer extends function duration",
+    "published": "2026-10-29",
+    "excerpt": "On Vercel, the Vercel Flags SDK now initializes faster on cold starts, and usage reporting no longer keeps functions running after the response. Faster cold starts Two changes speed up SDK initialization on cold starts: The SDK loads and parses the flags datafile bundled with your deployment as soon as the client is created, so it’s ready before your code evaluates its first flag. Every function invocation now includes the current datafile revision, so the SDK can check whether the bundled datafile is up to date without a network request. In internal testing, eliminating the network wait reduced p75 cold-start SDK initialization time from over 70 ms to 10 ms, roughly 7x faster. After initialization, flag reads are effectively instant. Across cold and warm invocations, p99 flag-read latency is under 1 ms. Usage reporting no longer extends function duration The SDK previously used waitUntil for usage reporting, keeping functions running after the response was sent. It now passes usage events to the Vercel runtime, so reporting no longer adds to function duration. Update @flags-sdk/vercel to version 1.5.3 or later and redeploy your application: Learn more in the Flags SDK documentation . Read more",
+    "summary": "Vercel's flags tool now starts up about 7 times faster when a server wakes up, cutting wait time from over 70 ms to 10 ms in internal tests. It also no longer makes functions run longer after sending a reply, which can lower usage costs.",
+    "tags": [
+      "vercel",
+      "web hosting",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-connect-adds-webhook-triggers-for-more-providers",
+    "company": "Vercel",
+    "title": "Vercel Connect adds webhook triggers for more providers",
+    "published": "2026-10-29",
+    "excerpt": "Vercel Connect now supports webhook triggers for Resend , X , Twilio , Notion , and Telegram . Connect receives webhook events, such as Telegram bot messages or emails received by your Resend domain, and forwards them to an endpoint in your Vercel project. It verifies incoming requests and handles provider heartbeats and verification challenges for you. To get started: Open Vercel Connect in the dashboard. Enable triggers when creating a connector for your provider or in an existing connector’s settings. Connect registers webhooks automatically for Resend and Telegram. For Twilio, Notion, and X, use the webhook URL from Connect and follow its instructions to complete setup in the provider’s settings. Add a trigger destination to choose the project and endpoint that should receive events. You can turn triggers on or off later in the connector’s settings. In the connector’s Observability tab, select Live to watch incoming trigger events. These connectors join existing trigger support for Slack, Discord, Microsoft Teams, GitHub, and Linear. Learn more in the Connect triggers documentation . Read more",
+    "summary": "Vercel Connect can now receive webhook events from Resend, X, Twilio, Notion, and Telegram and pass them to your Vercel project. It checks incoming requests and handles setup steps for you, so your app gets these messages without extra work.",
+    "tags": [
+      "vercel",
+      "webhooks",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
+    "company": "Vercel",
+    "title": "Strix now supports Vercel AI Gateway",
+    "published": "2026-10-29",
+    "excerpt": "Strix , the open-source AI penetration testing tool, can now run on any of the 400+ models on Vercel AI Gateway . Strix can reach models from Anthropic, OpenAI, Kimi, GLM, Deepseek, and others through a single API with no markup, removing the need to sign up for multiple providers. Usage and cost are tracked across all models in AI Gateway. Strix selects the Gateway through STRIX_LLM , where the model is the standard AI Gateway <provider>/<model> ID behind a vercel_ai_gateway/ prefix: See Strix's AI Gateway setup guide to configure it and get started today. Read more",
+    "summary": "Strix, an open-source tool that tests computer systems for security weaknesses using AI, can now use over 400 AI models through Vercel's AI Gateway. Users can reach models from several providers with one connection and no extra fees, and see usage and costs in one place.",
+    "tags": [
+      "ai tools",
+      "security testing",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
+    "company": "Vercel",
+    "title": "Node.js 26 LTS is now Generally Available on Vercel",
+    "published": "2026-10-29",
+    "excerpt": "Node.js 26 LTS is now Generally Available for builds and Vercel Functions . This release includes: HTTP/2 by default for built-in fetch ( Undici 8 ) lets multiple requests share a connection with servers that support it. This can reduce latency when your functions call APIs or databases over HTTP. Temporal API offers an alternative to Date with immutable values and built-in time zone and calendar support. V8 version 14.6 , the updated JavaScript engine, adds features such as Map.prototype.getOrInsert() to retrieve an existing value or insert a default when a key is missing. Using Node.js 26 Node.js 26 is the default for all new projects. Automatic upgrades: If engines.node in your existing project’s package.json allows 26, such as >=20 , your Node.js builds on Vercel will use 26 on the next deployment. Manual upgrades: Set engines.node to 26.x in your project's package.json and redeploy. Prebuilt deployments: Use Vercel CLI version 65.8.0 or later to deploy Node.js 26 Functions. HTTP/1.1 in Functions: To keep HTTP/1.1, set the VERCEL_FETCH_DISABLE_H2 environment variable to 1 and redeploy. Minor and patch updates to Node.js 26 roll out automatically for builds and Vercel Functions. Read the Node.js version documentation to learn more. Read more",
+    "summary": "Node.js 26, a long-term-support version of the tool that runs JavaScript on servers, is now available on Vercel and is the default for new projects. It can reduce wait times when apps call other services, and existing projects upgrade automatically if their settings allow it.",
+    "tags": [
+      "nodejs",
+      "vercel",
+      "web development"
     ],
     "summarized": true,
     "summary_version": 2
@@ -127,6 +453,21 @@
     "tags": [
       "ai safety",
       "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/credit-saison",
+    "company": "OpenAI",
+    "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+    "published": "2026-10-29",
+    "excerpt": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+    "summary": "Credit Saison ran a pilot of ChatGPT Enterprise, an AI tool for businesses, and the company reports a 954% return on investment. The teaser says leaders and staff used the results to bring the tool to the whole company.",
+    "tags": [
+      "ai tools",
+      "workplace software",
+      "company case study"
     ],
     "summarized": true,
     "summary_version": 2
@@ -381,6 +722,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
+    "company": "Vercel",
+    "title": "Vercel Agent can now validate alerts before paging",
+    "published": "2026-10-28",
+    "excerpt": "Vercel Agent can now investigate alerts from Vercel monitors before they reach your paging system. With validation enabled for a webhook destination, only alerts Agent classifies as Critical are sent to it. To enable validation: Open a monitor’s notification settings and create or link a webhook destination for your paging system, such as incident.io. Select Critical Only next to that destination. You can also configure notification destinations with the Vercel CLI using vercel monitors notifications . Add --critical-only when linking or updating a webhook destination. Agent checks logs and metrics to assess impact. For example, it can identify health-check errors that don’t affect customers or confirm sustained 5xx errors affecting checkout requests. You can also add context to each monitor to guide Agent’s investigation. Alert validation is available on Pro and Enterprise plans with Observability Plus. Observability Plus includes ten Agent investigations per billing cycle, with additional investigations billed separately . Custom monitors cost $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Learn more in the alert webhook documentation . Read more",
+    "summary": "Vercel's monitoring tool, Agent, can now check alerts before they reach your paging system. When you choose \"Critical Only\" for a webhook, only alerts Agent marks as serious get sent to your pager.",
+    "tags": [
+      "monitoring",
+      "alerts",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/run-paseo-agents-on-vercel-sandbox",
     "company": "Vercel",
     "title": "Run Paseo agents on Vercel Sandbox",
@@ -421,81 +777,6 @@
       "coding tools",
       "ai agents",
       "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/box-mount-now-runs-in-vercel-sandbox",
-    "company": "Vercel",
-    "title": "Box Mount now runs in Vercel Sandbox",
-    "published": "2026-10-28",
-    "excerpt": "Box Mount lets agents running in Vercel Sandbox read and write Box files through standard filesystem operations. It syncs a Box folder with a directory inside the sandbox. Unmount before you stop the sandbox, and everything the agent wrote is in Box after the sandbox is deleted. The contract-review example uses AI Gateway to review a synthetic contract in Vercel Sandbox and save the review back to Box. The sync process and agent run as separate sandbox users, keeping the Box credentials separate from the agent's workspace. Box Mount is in private preview. Request access from Box, then follow the Box Mount documentation to set it up in Vercel Sandbox. Read more",
-    "summary": "Agents running in Vercel Sandbox can now read and write Box files like ordinary folders on the computer. Changes saved in the sandbox end up in Box, and the feature is in private preview, so you need to request access from Box first.",
-    "tags": [
-      "cloud",
-      "ai agents",
-      "file storage"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/ai-traffic-insights-now-available-in-vercel-observability",
-    "company": "Vercel",
-    "title": "AI traffic insights now available in Vercel Observability",
-    "published": "2026-10-28",
-    "excerpt": "You can now query AI traffic in Vercel Observability to understand how AI bots are accessing your site. AI traffic insights show: Requests by verified AI bot: how many requests each bot makes Most-crawled pages: pages most frequently requested by AI crawlers for indexing or model training Assistant retrievals: pages AI assistants fetch in response to user actions or search queries Markdown requests: pages AI bots request in Markdown format Errors: pages where requests from AI bots return errors To view AI traffic insights, open Observability > AI Traffic in the Vercel dashboard. You and your agents can also query these metrics with vercel metrics in the Vercel CLI . CLI queries require Observability Plus. type: embedded-entry-inline id: 6E78NBZeL598kMHZ7c4zyk Learn more in the AI traffic documentation . Read more",
-    "summary": "Vercel's Observability tool now shows how AI bots visit your website. You can see which bots visit, which pages they crawl most, and which pages return errors to them.",
-    "tags": [
-      "web hosting",
-      "ai bots",
-      "website analytics"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/agents-can-now-enable-web-analytics-and-observability-plus-with-vercel-cli",
-    "company": "Vercel",
-    "title": "Agents can now enable Web Analytics and Observability Plus with Vercel CLI",
-    "published": "2026-10-28",
-    "excerpt": "Vercel CLI no longer requires an interactive terminal to enable Web Analytics or Observability Plus . Agents can now turn them on for your projects without asking you to run the commands yourself. To get started, run either command from a linked project directory: Teams must already be subscribed to Observability Plus to be able to enable it for a project. Update Vercel CLI to version 64.2.0 or later and learn more in the Vercel CLI project documentation . Read more",
-    "summary": "Vercel's command-line tool can now turn on Web Analytics and Observability Plus without a manual terminal prompt, so AI agents can enable them for you. Teams need an existing Observability Plus subscription, and the tool must be version 64.2.0 or later.",
-    "tags": [
-      "developer tools",
-      "analytics",
-      "ai agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/introducing-vercel-ci",
-    "company": "Vercel",
-    "title": "Introducing Vercel CI",
-    "published": "2026-10-28",
-    "excerpt": "Coding agents are opening more pull requests than ever, and each one waits on CI before anyone can review or merge it. Most CI systems run the entire workflow on every push, even a one-line change. The more your agents push, the more time you spend waiting on CI. Today, we're announcing Vercel CI in Beta. It runs only the tasks affected by your code change, and spins up only the compute those checks need, the same way Fluid compute scales with your traffic. At Vercel, our CI now keeps up with our coding agents. Time from git push to \"CI passed\" is 2-6x faster than it was before. How it works Vercel CI uses Turborepo to understand your tasks and which ones depend on each other. It reads turbo.json , so if you're already using Turborepo, there's no separate CI config to write. If you're not on Turborepo yet, add turbo.json and the turbo package. It works in single-package repos too. Then tag the tasks you want Vercel CI to run. \"tags\": [\"ci\"] is all you need to get started. No workflow YAML to maintain, no drift between your CI config and turbo.json , and Remote Cache is on by default. When you or your agent push code, Vercel CI determines which tasks need to run based on the change. Tasks whose inputs haven't changed come from cache. The remaining tasks each run on their own machine, powered by Hive , Vercel's compute layer, and start as soon as their dependencies finish. Vercel CI gives each task the compute it needs and nothing more. Running your CI on Vercel To get started, follow the documentation or prompt your agent from your repo: Once set up, you or your agent can watch and inspect CI through the Vercel dashboard , Vercel CLI , or Vercel MCP . When something fails, go straight to the failing task, see what's blocked behind it, and open its logs, or search across recent runs to see whether a test has been flaky all week. Vercel CI posts a check to your pull request on GitHub, so your existing branch protection rules can block merges on failure, the same way they do today. Closing the loop Vercel CI has already completed nearly 8 million tasks across our own repositories and the private beta, and we're just getting started. We're working to keep shrinking the time between writing code and running it in production. As we work toward general availability, we plan to add: Advanced observability A vc ci CLI command for distributed execution before pushing code More granular test selection Vercel CI is available in Beta today on all plans. Read the docs and try it on your repository. Read more",
-    "summary": "Vercel has launched a beta of Vercel CI, a testing system that only runs the checks affected by a code change and uses only the computing power they need. Vercel says its own pull-request checks now finish 2 to 6 times faster.",
-    "tags": [
-      "continuous integration",
-      "developer tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/ai-gateway-virtual-models",
-    "company": "Vercel",
-    "title": "Introducing Virtual Models on AI Gateway",
-    "published": "2026-10-28",
-    "excerpt": "Today, we are introducing Virtual Models on AI Gateway . Virtual Models are an abstraction of the model string and configurations your apps and developers use. With a single virtual model ID, you can change and update models, configure fallbacks and priority, and enforce Zero Data Retention centrally. The virtual model configuration applies wherever the ID is used. Assign a virtual model ID to an agent task, and pass it as the model string wherever that task is called. You can then change the model and settings behind the virtual model ID in AI Gateway, and your apps and agents will pick up the new configuration automatically, without code changes or redeploys. New models use the same virtual model ID In the last 90 days, 125 new models from more than 10 labs became available on AI Gateway. That adds up to about 10 a week. AI Gateway already makes switching a one-line change. You call any of those models by ID, and AI Gateway routes each request to a healthy provider and can fall back to others when one fails. That one line still lives in your code, so switching usually means a redeploy. Virtual Models move model selection and configuration to AI Gateway. You create an ID for a task, like vmc/coding-agent , and then configure the model and the settings it should use: You can then use that virtual model ID as the model string wherever the task runs: For coding agents like Claude Code , Codex , and others, connect them with vercel ai-gateway setup , then select your virtual model in each harness's model picker or configuration. When a different model is available, including one from another provider, edit the virtual model . Every app and agent that calls vmc/coding-agent picks it up within a few minutes, with no code change or deployment needed: Give each task its own model An agent task like support ticket triage can run hundreds of times an hour and needs to be cheap. Other tasks, like legal contract review, may only run a few times a day, but require a high level of reasoning. You can now give each task a purpose-built virtual model and easily evolve that model and configuration over time: Settings such as fallbacks, Zero Data Retention, and tags stay with the virtual model when you switch models. Provider options apply per provider, so an Anthropic-specific setting stops applying when you point the virtual model at an OpenAI model. Review your provider options whenever you switch providers. Before you switch a virtual model that serves production traffic, point a second one, like vmc/coding-agent-candidate , at the new model and run your evals against it. If quality drops after the switch, point the original back at the previous model. Govern which models your team uses and how Anyone on your team can call a virtual model, and team roles control who can make changes to it. Platform and security teams can centrally govern and test models and settings, while still easily giving teams access to new models as they are released. Settings on a virtual model win over the same settings in a request, so callers can't override the provider order, fallbacks, or service tier you chose. For example, you can configure the fallback models for vmc/storefront-assistant centrally, and every app using that virtual model ID will use the same failover configuration, even if a request specifies different fallbacks. If a virtual model requires Zero Data Retention or providers that don't train on request data, those configurations are enforced even if a request explicitly sets zeroDataRetention or disallowPromptTraining to false. Tags on a virtual model replace any tags sent with the request, so spend lands on the task no matter how each app tags its calls. The Virtual Models page shows requests, spend, and success rate for each task. Get started Create a virtual model from your team dashboard or with the Vercel CLI . About AI Gateway AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, ",
-    "summary": "Vercel released Virtual Models on its AI Gateway, which let you give a task one ID and change the AI model behind it later without touching code or redeploying. Teams can set fallbacks, data-privacy rules, and tags once, and every app using that ID picks up the change within minutes.",
-    "tags": [
-      "ai models",
-      "cloud platforms",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -764,78 +1045,6 @@
       "government",
       "ai tools",
       "pricing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-plugin-now-available-in-opencode",
-    "company": "Vercel",
-    "title": "Vercel Plugin now available in OpenCode",
-    "published": "2026-10-27",
-    "excerpt": "The Vercel Plugin is now available in OpenCode . The plugin provides on-demand guidance on Vercel APIs and recommended patterns, with skills for AI SDK, Vercel Functions, Workflow, and more. It also includes specialist agents for deployment, performance optimization, and AI application design. Use /vercel:deploy to deploy projects and /vercel:env to manage environment variables. The plugin requires OpenCode 2. To install it, run this command in your terminal: Then run /mcps in OpenCode, select vercel , and sign in to connect the Vercel MCP server to your account. Learn more in the Vercel Plugin documentation . Read more",
-    "summary": "Vercel's plugin for OpenCode, a coding tool, now gives built-in help on Vercel's tools and best practices. It adds commands to deploy projects and manage settings, and needs OpenCode 2 to run.",
-    "tags": [
-      "developer tools",
-      "deployment",
-      "ai coding"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-agent-sessions-now-cost-67-percent-less",
-    "company": "Vercel",
-    "title": "Vercel Agent sessions now cost 67% less",
-    "published": "2026-10-27",
-    "excerpt": "Vercel Agent sessions in the dashboard and Slack now cost 67% less on average. We rebuilt how Agent manages context, reducing the tokens needed per session and improving prompt-cache reuse. These improvements are live and require no action. What changed: Workflow-based CLI skills: Updated Vercel CLI skills give agents clearer guidance for common workflows and error recovery. Other agents using these skills also benefit. Incremental context management: Agent manages context more efficiently as conversations grow, including long Slack threads. Improved prompt caching: Agent preserves more reusable context across turns so more of it can be read from the cache. More efficient coding and planning: Updated guidance helps Agent plan changes and write code with fewer tokens. Vercel Agent’s billing rates are unchanged. Paid sessions are billed at the model provider’s inference rates plus a Vercel Agent fee of $0.25 per million tokens. View usage and costs in the Agent section of your dashboard. Read more",
-    "summary": "Vercel's AI helper Agent now costs about 67% less per session, thanks to reworked context handling and better reuse of saved data. The change is automatic and billing rates are unchanged.",
-    "tags": [
-      "ai agents",
-      "cloud costs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/harness-agent-image-inputs",
-    "company": "Vercel",
-    "title": "HarnessAgent now supports image inputs for all harness adapters",
-    "published": "2026-10-27",
-    "excerpt": "The AI SDK HarnessAgent layer now accepts image inputs across every harness adapter. Pass images alongside text in the standard AI SDK message format: a content array mixing { type: 'text' } and { type: 'file' } parts. Image input is processed by the harnesses' underlying vision models and supported across all available adapters: Claude Code, Cline, Codex, Cursor, Deep Agents, fx, GitHub Copilot, Grok Build, OpenCode, Pi. Read the HarnessAgent image inputs documentation to get started. Read more",
-    "summary": "Vercel's AI SDK can now take pictures along with text when you ask its AI agents to do work. This works across all ten supported agent tools, such as Claude Code and Cursor, so you can send an image and text together in one request.",
-    "tags": [
-      "ai tools",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
-    "company": "Vercel",
-    "title": "The fx adapter now runs the harness on the host",
-    "published": "2026-10-27",
-    "excerpt": "The fx adapter for the AI SDK’s HarnessAgent now runs the harness and model requests in the same process as your application. Built-in filesystem and shell operations remain isolated in the sandbox. The adapter uses libfx , the TypeScript library for fx. It no longer needs to install fx inside the sandbox, run a sandbox bridge, or expose a sandbox port. Model credentials stay on the host rather than being forwarded into the sandbox. The rewrite also adds: Built-in tool filtering: choose which built-in tools the agent can use Mid-turn steering: send new instructions while a turn is running Structured output: generate responses that match a schema Image tool results: return images to the model through toModelOutput() Sessions can be saved and resumed in a new host process. Update @ai-sdk/harness-fx to the latest version to use the new adapter. Learn more in the fx harness documentation . Read more",
-    "summary": "The fx adapter for the AI SDK now runs the agent's core logic and model requests inside your app's own process instead of inside a sandbox. File and command actions still stay isolated in the sandbox, and model passwords no longer get passed into it. It also adds tool filtering, mid-task instructions, and saved sessions.",
-    "tags": [
-      "ai agents",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/deploy-a-container-from-a-plain-dockerfile",
-    "company": "Vercel",
-    "title": "Deploy a container from a plain Dockerfile",
-    "published": "2026-10-27",
-    "excerpt": "You can now deploy a plain root Dockerfile or Containerfile on Vercel's Container runtime when no other framework is detected. Vercel selects the Container preset, builds that file, and routes all traffic to the resulting image. To get started with containers on Vercel, add a Dockerfile: When project detection matches another framework, such as Django, that framework still wins. To build use the Dockerfile or Containerfile instead, run vercel project update --framework container , or set the framework in vercel.json : A Dockerfile.vercel or Containerfile.vercel continues to win over a detected framework, and multi-service projects still use vercel.json services with a per-service entrypoint . The Container runtime is in beta, runs on Vercel Functions, and is billed with Active CPU pricing. Read the Container runtime documentation to get started. Read more",
-    "summary": "Vercel now lets you deploy a plain Dockerfile (a file that describes how to build a container) when no other framework is detected. Vercel builds that file and sends all web traffic to the result; the feature is in beta.",
-    "tags": [
-      "deployment",
-      "containers",
-      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1450,51 +1659,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
-    "company": "Google Developers",
-    "title": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive",
-    "published": "2026-10-26",
-    "excerpt": "Google Workspace now offers native support for Markdown (.md) files, allowing developers and AI agents to seamlessly collaborate on documentation directly in Google Docs without manual file conversions. This integration preserves native file fidelity for use with Git repositories and developer tools while unlocking standard Docs features like line-level commenting, rendered Drive previews, and tracked version history.",
-    "summary": "Google Docs and Drive can now open, preview, and edit Markdown (.md) files directly. Developers and AI tools can work on the same file without converting it, and it still works with code tools like Git.",
-    "tags": [
-      "google docs",
-      "markdown",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
-    "company": "Google Developers",
-    "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
-    "published": "2026-10-26",
-    "excerpt": "The Agents CLI Extension System enables developers to use frameworks like LangChain, LangGraph, or custom enterprise stacks while retaining a unified deployment and evaluation workflow. It details a first-party LangChain template that scaffolds, runs, and deploys agents without requiring the Agent Development Kit (ADK). Additionally, it demonstrates how platform teams can author custom extensions to enforce policies such as automated software bill of materials (SBOM) scans during deployment.",
-    "summary": "Google's Agents CLI now lets developers build AI agents with other frameworks, like LangChain, instead of only Google's own Agent Development Kit. The post also shows how teams can add custom rules, such as automatic security checks before deployment.",
-    "tags": [
-      "ai agents",
-      "developer tools",
-      "software security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/",
-    "company": "Google Developers",
-    "title": "Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon",
-    "published": "2026-10-26",
-    "excerpt": "How our engineering team ran Gemini 4 Argon unattended overnight with .agents/skills and /goal mode to cut in-memory session prep overhead by 40% in long sessions and speed up cold imports by 21% in Google's open-source Python Agent Development Kit (ADK).",
-    "summary": "Google's engineering team used its Gemini 4 Argon AI model to improve a large open-source Python toolkit while it ran unattended overnight. The result was about 40% less setup work in long sessions and 21% faster startup.",
-    "tags": [
-      "ai coding",
-      "python",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
     "company": "NVIDIA",
     "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
@@ -1637,50 +1801,6 @@
       "ai",
       "health",
       "tuberculosis"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-    "company": "OpenAI",
-    "title": "Securing our frontier model training environment",
-    "published": "2026-10-23",
-    "excerpt": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-    "summary": "OpenAI wrote about making the places where its most advanced AI models are trained and tested safer. The company describes tighter controls, including offline setups and intense testing where people try to break the system.",
-    "tags": [
-      "ai safety",
-      "security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-    "company": "OpenAI",
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-    "published": "2026-10-23",
-    "excerpt": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-    "summary": "OpenAI wrote a follow-up post about how it expanded its online storage system to handle more than a billion ChatGPT users. The changes make reading data about 12 times faster, using shared-use setup, copies kept close to users around the world, and a cloud database service from Microsoft Azure.",
-    "tags": [
-      "cloud storage",
-      "chatgpt",
-      "scaling"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-    "company": "OpenAI",
-    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-    "published": "2026-10-23",
-    "excerpt": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
-    "summary": "OpenAI and Poland's national research institute NASK have agreed to work together on AI safety, security, and technical research. The goal is stronger protections and a more reliable digital environment.",
-    "tags": [
-      "ai safety",
-      "poland",
-      "cybersecurity"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2366,21 +2486,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents",
-    "company": "Databricks",
-    "title": "MemCurrent: Designing Persistent Memory for Production Agents",
-    "published": "2026-10-20",
-    "excerpt": "AI tools have made it easy to vibe code agents. Building and maintaining an enterprise...",
-    "summary": "Databricks describes MemCurrent, a way to give AI agents a memory that lasts between sessions. The teaser notes that building such agents is now easy, but keeping them running reliably in a company is harder.",
-    "tags": [
-      "ai agents",
-      "databricks",
-      "software engineering"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
     "company": "Anthropic",
     "title": "How Claude designed protein binders against scorpion neurotoxins",
@@ -2458,10 +2563,14 @@
     "title": "Introducing tsrs: A port of TypeScript to Rust",
     "published": "2026-10-20",
     "excerpt": "Cloudflare and VoidZero are now working with Max Schwenk of Owner.com on tsrs , a Rust port of the TypeScript compiler. We are doing this work in close collaboration with the TypeScript team, and incubating tsrs as part of the Oxc JavaScript compiler toolchain . Our goal is to help developers spend less time waiting for their code to be checked and more time building. Making TypeScript faster and more memory-efficient also helps bring complete development environments to more places, including right in your browser. To be clear, we are not forking TypeScript. We believe the TypeScript team should remain in full control of the language’s design and direction. They have maintained a long-term vision while guiding TypeScript’s adoption across the JavaScript community. We do not want to change that. The TypeScript team can move quite fast on many things, but for some features they may spend years intentionally exploring options and making prototypes before picking the right implementation. A Rust port has to follow those decisions closely, or it will eventually fall apart and become incompatible. We have to preserve the TypeScript language strictly based on its original implementation – and the TypeScript team should remain solely responsible for deciding what that looks like. Performance and memory improvements Early benchmarks of our Rust port of TypeScript are promising: tsrs is up to 8x faster and uses ~70% less memory compared to TypeScript 7.0 when using the same number of type check workers: As you can see, the next version of TypeScript already brings many performance improvements, making TypeScript 7.1 beta up to 2.5x faster than TypeScript 7.0. Some of these optimizations were upstreamed from tsrs , and we’re hoping to find more. You may have seen recent benchmarks of different TypeScript ports with various performance claims, often due to using larger machine types and different options compared to TypeScript’s defaults. We worked with the TypeScript team to ensure the above benchmarks are comparing the same configuration. By default, tsrs ships with an adaptive configuration dependent on the machine type that uses more memory but is even faster: Try tsrs TypeScript in Rust aims to be a faithful port of TypeScript. You can try an experimental release by installing the tsrs package from npm: npm install tsrs npx tsrs Why now? We’ve seen many attempts at porting TypeScript to other languages over the years. Because of the complexity involved, only one of the ports succeeded: the TypeScript team’s port of TypeScript from JavaScript to Go. However, frontier AI models can now do large-scale ports almost independently in a matter of days. We have now seen slopforks, faithful ports, and completely re-architected versions of TypeScript in Rust or C++. There is clearly a demand for even faster TypeScript. Why Rust? You might be thinking: “TypeScript’s Go port already made TypeScript 10x faster and far more memory efficient than the previous version written in TypeScript. Why isn’t that enough?” However, it’s not just about speed. Rust offers some unique advantages: running in WebAssembly . The Rust + Wasm story has always been strong, and one of the reasons comes down to the fundamentals of Rust’s language design. When you compile a Go program to Wasm, you have to compile Go’s garbage collector along with it. But Rust’s memory management model enables straightforward memory interactions between a WebAssembly guest and host. This is one of the key things that makes Rust a much better fit for the WebAssembly use-case: memory efficiency. Cloudflare Workers have supported Wasm for a long time. Just a few weeks ago we announced supporting native Rust in Workers with the new Emscripten target for wasm-bindgen. When you run entire software build and deployment systems in tight loops on Workers, the benefits of a small memory footprint pay off quickly. It means you can run these workloads so efficiently that it’s now possible to run ful",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare, VoidZero, and Owner.com are building tsrs, a version of the TypeScript code checker rewritten in Rust, working with the TypeScript team. Early tests show it can run up to 8 times faster and use about 70% less memory than TypeScript 7.0.",
+    "tags": [
+      "typescript",
+      "developer tools",
+      "performance"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
@@ -2469,10 +2578,14 @@
     "title": "8 eMudhra certificates are compromised. Here's what you need to know",
     "published": "2026-10-20",
     "excerpt": "On October 19, 2026, at approximately 17:00 UTC, Cloudflare became aware that private keys associated with eight eMudhra intermediate certificates were compromised. These certificates were widely trusted by browsers, operating systems, and also within Cloudflare. Because the keys themselves are weak, an attacker can create a forged certificate for any domain and use it to impersonate servers to intercept or modify traffic. This is a serious security incident with implications across the Internet. For reference, here is a link to more information about how SSL certificates work and why they are so critical to the operation of the Internet. We immediately prioritized patching critical services across Cloudflare to protect our customers ahead of the public disclosure of the vulnerability. Our security review has not identified active exploitation of this issue on Cloudflare services. We have released updates for the Cloudflare One Clients, also known as WARP or the 1.1.1.1 app, and Cloudflare Tunnel, also known as cloudflared. We have also deployed mitigations across our CDN, Developer, and Zero Trust products. If you are using Cloudflare Zero Trust with Gateway and an up-to-date client (see below), you are automatically protected. Our response We prioritized updating services that use public certificates to authenticate remote endpoints, including proxies connecting to origins and applications calling external APIs. In parallel, we updated shared trust stores, base images, and other shared foundations, providing a common mitigation path for services that inherit their certificate trust from those sources. We paired these updates with reloads, restarts, and image deployments needed to activate them. Applications with bundled or custom trust stores received separate assessment and updates. This work addresses certificate-based authentication, not a weakness in TLS’s encryption algorithms. Teams across Cloudflare are presently working on further remediation. We are making progress, but there's much work still to be done. Some customers will need to take action on software or trust configurations that they operate, especially on their origin servers. The recommended actions are summarized below. What customers should do Developer guidance For developers, look beneath the SDK. An API client may delegate certificate verification to an HTTP library, a language runtime, the operating system, or a custom trust configuration. Updating the SDK alone may not change the underlying policy. Once you patch, you may notice certificate errors in your dashboards. It's important to not resolve these errors by disabling verification. That would remove the authentication protection these updates are intended to restore. This incident affects many software stacks that rely on the WebPKI for authentication. Mozilla’s Dennis Jackson has crowdsourced a list of commonly used packages that have been patched. We advise readers to upgrade as soon as possible. (Note that some of these may be indirect dependencies of your software stack, so look at the dependency tree.) Apply the relevant dependency updates, rebuild affected images, and confirm whether applications require a reload, restart, or redeployment. Dennis Jackson’s test site provides browser checks, non-browser testing instructions, and package update information. Results apply to the verification path being tested, not every application on the device. Validate through the application’s actual TLS path. A successful browser test does not prove that a background service is protected. Neither does a curl test if the application uses a different verifier. Timeline The timeline of events so far is below. Date and Time Event October 19, approximately 17:00 UTC Cloudflare becomes aware of the compromise and begins assessment. October 20, 02:00 UTC Cloudflare One Client and WARP app security updates published across platforms. October 20 09:15 UTC Cloudflare Tunnel (cloudflared) security update published. O",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare found that private keys for eight eMudhra certificates, which browsers and systems widely trust, were stolen. Attackers could use them to fake secure websites, so Cloudflare patched its services and says it found no active abuse of its own systems.",
+    "tags": [
+      "security",
+      "certificates",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/",
@@ -2480,10 +2593,14 @@
     "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
     "published": "2026-10-20",
     "excerpt": "When platform teams manage containerized applications at scale on Amazon Elastic Container Service (Amazon ECS) , configuring ingress networking for each service often becomes a bottleneck. For every new service, teams must provision and connect Application Load Balancers (ALBs) , AWS Certificate Manager (ACM) certificates, AWS WAF web ACLs, and security groups, then keep those resources in sync as services scale, update, or operate. This per-service overhead slows down deployment velocity and increases the risk of configuration drift across an organization. Today, we’re announcing Amazon ECS Gateway , a new account-level resource that simplifies ingress networking for containerized workloads by dynamically provisioning and managing the necessary infrastructure on your behalf, with all resources created directly in your account. ECS Gateway introduces a clear separation of responsibilities between platform teams and application teams. Platform teams create and configure a gateway, defining organizational networking standards including subnets, security groups, TLS certificates, listener settings, and WAF web ACLs, in a single place. They then associate the gateway with one or more ECS clusters, making it available to services running on those clusters. Application teams opt their services in by adding a gateway connector parameter when creating or updating a service. ECS provisions the required per-service resources automatically: an ACM certificate, a unique DNS hostname, listener rules, target groups, and a service security group that permits inbound traffic only from the ALB. No networking expertise required. ECS Gateway offers host-based routing using ALBs and enables up to 25 services to share a single ALB, optimizing infrastructure costs. ECS manages the full lifecycle of the underlying infrastructure, provisioning the first ALB when your first service connects, adding more ALBs as capacity is reached, and removing them when no longer needed. Each service receives a unique DNS hostname, giving your teams a ready-to-use endpoint the moment provisioning completes. A first look at ECS Gateway In the ECS console , platform team can create a gateway and sets its configuration. The infrastructure role is an IAM role that ECS assumes to provision and manage networking resources such as ALBs, security groups, and certificates in your account. To create a gateway, provide a gateway name and select an infrastructure role. You can optionally associate the gateway with ECS clusters during creation or later. Choose a load balancing scheme, either public or VPC-internal traffic routing. Under Additional Settings , you can also set up a listener, port, maximum count of load balancers the gateway can scale to, and a web ACL lets you protect your web applications. Some settings, including the name, scheme, VPC, subnets, IP address type, listener protocol and port cannot be changed after gateway creation. Using AWS Command Line Interface (AWS CLI) , call CreateGateway with a name (unique per account), an infrastructure role, and a configuration object. No infrastructure is provisioned until a service connects with a gateway connector. aws ecs create-gateway \\ --name my-team-gateway \\ --infrastructure-role-arn arn:aws:iam::123456789012:role/ECSGatewayRole \\ --configuration '{ \"HostSharedAlb\": { \"networkConfiguration\": { \"subnets\": [ \"subnet-080779f9bd887757a\", \"subnet-03d5b2fead6bc6258\", \"subnet-0861210a397d31252\", \"subnet-06539e194023cb77a\" ], \"ipAddressType\": \"ipv4\" }, \"scheme\": \"internet-facing\" } }' Once the gateway is created, you can take a look at the detailed configuration, gateway routes, load balancers, and associated clusters. Now associate the gateway with one or more clusters (many-to-many), to make it available to ECS services on those clusters. Use AssociateGatewayWithCluster to make the gateway available to services on a cluster: aws ecs associate-gateway-with-cluster \\ --gateway my-team-gateway \\ --cluster arn:aws:ecs:us-e",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon announced ECS Gateway, which automatically sets up the network pieces needed to reach containerized apps on Amazon ECS. Platform teams define standard settings once, and each new service gets its own web address and security setup without manual work.",
+    "tags": [
+      "cloud computing",
+      "networking",
+      "amazon web services"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/saas-platform-trends-in-AI-era",
@@ -2491,10 +2608,14 @@
     "title": "Stripe survey: Four trends reshaping how SaaS platforms compete in the AI era",
     "published": "2026-10-19",
     "excerpt": "AI is creating more SaaS competition, and platforms are feeling the pressure. A Stripe survey of 200 platform leaders shows how they plan to evolve pricing, grow revenue, and retain customers.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe surveyed 200 software platform leaders about AI-driven competition. They shared plans for changing pricing, growing revenue, and keeping customers.",
+    "tags": [
+      "software business",
+      "ai",
+      "pricing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/overexposed",
@@ -2502,10 +2623,13 @@
     "title": "Building Overexposed: understanding application exposure",
     "published": "2026-10-19",
     "excerpt": "Our first scanner read config files and missed what was running. We rebuilt it with the cloud inventory, a careful probe, and honest results.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify rebuilt its tool that finds which of its applications are reachable from the internet. The first version read config files and missed what was actually running, so the new version checks a live inventory of cloud resources and probes them carefully.",
+    "tags": [
+      "security",
+      "cloud infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/introducing-modulelens-zooming-into-pytorch-modules-for-human-and-agentic-engineering-b7e9be9d29f8?source=rss----4c5a5f6279b6---4",
@@ -2513,10 +2637,14 @@
     "title": "Introducing ModuleLens: Zooming into PyTorch Modules for Human and Agentic Engineering",
     "published": "2026-10-19",
     "excerpt": "Lida Li, Sr. Staff Software Engineer, Product ML Infra Introduction Modern recommendation systems, including those used for ads ranking and content discovery, have grown substantially in scale and complexity. This growth stems from both increasingly large model architectures. The resulting memory footprint often exceeds the capacity of a single GPU, making it necessary to shard production models across multiple GPUs using distributed training techniques such as Distributed Model Parallelism (DMP). This evolution brings challenges to the everyday engineer work on testing and debugging the model code. The bottleneck includes: Local Machine Hardware Limits : Because production models require multi-GPU setups, initializing a full model locally on a single-gpu workstation is virtually impossible. Input Data Dependencies : When an engineer modifies code inside a specific downstream module, getting realistic input data is a major hurdle. Traditionally, obtaining that input requires initializing the entire multi-GPU pipeline from scratch and executing every preceding module in the network — wasting immense amounts of time and computation resources. Slow Iteration Feedback Loops : Engineers face prolonged iteration loops when attempting to verify sub-module changes, as every code edit requires re-executing or re-initializing heavy distributed trainer setups. To eliminate these bottlenecks, we build ModuleLens , which pivots from a legacy “Model-First” paradigm to an isolated “Module-First” engineering framework. The following table contrasts these two operational paradigms across key engineering metrics: Under the module-first paradigm, engineers can isolate any given module, avoid multi-GPU model initialization entirely, and reconstruct and profile it locally within seconds. In addition to accelerating developer workflows, this modular foundation offers a fast, structured execution environment that empowers autonomous AI agents to analyze, refactor, and optimize PyTorch code independently. Architecture The architecture of ModuleLens is organized into three primary components: ModuleTracer for capturing runtime data, Module Repo for central storage, and a Consumption Layer serving human interfaces and AI-based tooling. The following diagram depicts this structure. ModuleTracer ModuleTracer is designed to capture and record all essential data — including input and output tensors, model parameter weights, and initialization arguments. This comprehensive tracking allows any target PyTorch module to be reconstructed seamlessly within the consumption layer, enabling offline execution with captured inputs and validation against expected outputs. To carry out trace capture, ModuleTracer relies on several key mechanisms: Non-Intrusive PyTorch Forward Hooks: Attaches listeners directly to PyTorch modules to seamlessly log parameter weights (state_dict), input and output tensors, and execution metadata during runtime. In-Memory Module Init Tracking: Ensures target modules can be reconstructed by dynamically tracking initialization arguments (__init__ args and kwargs). It achieves this in memory by inspecting imported classes and patching Python’s __import__ function. Resource-Efficient Tracing Loops: Reduces GPU compute overhead by registering early_stop_func and post_train_step_func callbacks. These wait for model warmup, capture data across a single training step, and terminate early. Optimized Handling of Large Tensors: To efficiently profile large tensors, ModuleTracer automatically enables shape-only tracing (log_shapes), logging solely tensor dimensions so that synthetic inputs can be reconstructed during restoration. Additionally, if an input tensor is shared across multiple modules, ModuleTracer retains only a single copy and uses reference links for all other instances. ModuleRepo Extracted module state is persisted within a queryable backend built on top of the Weights & Biases (WandB) Registry. All captured modules are stored into one",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest built ModuleLens, a tool that records the inputs and settings of one piece of a large AI model so engineers can test and debug it alone on a single machine. This avoids running the full multi-GPU model each time, saving time and compute. It also lets automated AI helpers work on the code.",
+    "tags": [
+      "machine learning",
+      "developer tools",
+      "debugging"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://huggingface.co/blog/hf-torchneuron",
@@ -2524,10 +2652,13 @@
     "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
     "published": "2026-10-19",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Hugging Face announced TorchNeuron, a tool that makes it easier to run its AI models on Amazon's Trainium chips. The post is a short teaser, so details are limited.",
+    "tags": [
+      "ai models",
+      "cloud chips"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
@@ -2535,10 +2666,14 @@
     "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
     "published": "2026-10-19",
     "excerpt": "Sometimes, giving an AI agent all of the knowledge it needs is the wrong approach. At Meta, we’ve seen notable improvements in efficiency and accuracy by keeping the orchestration layer of our data pipeline agents deliberately thin: It routes work and enforces reliability checks, while specialized agents do the domain reasoning. We’re sharing our own process and insights, plus how any team can apply this to their production AI agents. We built a 1,300-line orchestrator that routes 20+ workflows to 14 specialized AI agents. It performs zero domain work itself. That’s the point. When we first deployed AI agents to automate data column onboarding across Meta’s recommendation systems — a process spanning three code repositories, three programming languages, and up to six pipeline stages that must stay in sync — we did what most teams do: We built one smart agent that knew everything. It worked in demos. In production, it started hallucinating. The fix wasn’t better prompts or a bigger context window. It was giving the central agent less to do. We call this the thin orchestrator pattern: a router that owns sequencing and reliability checks, and leaves every domain decision to specialists. The Problem: More Context, Worse Results Our pipeline is config-as-code: Python configurations drive C++ code generation, which feeds data processing services, which populate analytics systems. Onboarding a single data column requires coordinated changes across configuration registries, backend services, and data pipelines, and each column moves through up to six stages before its data arrives. Our first approach was a single AI agent loaded with all domain knowledge, configuration schemas, code generation rules, pipeline routing logic, validation requirements, and population patterns for 10+ data sources. The agent had everything it needed. That was the problem. Past a certain context threshold, additional knowledge degraded rather than improved performance. The agent would cross-contaminate concepts, applying field naming conventions from one subsystem to another, or using a code generation pattern meant for one data source when populating from a different one. A preprint from the Windreich Department of Artificial Intelligence and Human Health at Mount Sinai found that orchestrated multiagent systems held 65.3% accuracy at 80-task batches where single agents fell to 16.6%, while reducing token usage up to 65-fold. The authors attribute this to the design’s isolation of tasks, which prevented context interference. We were experiencing the inverse, a single agent drowning in its own knowledge. We also evaluated an alternative single-agent approach. Its success rate was 70-80% with manual prompt engineering per task: An engineer had to craft a custom system prompt for each specific job. Without that handholding, success dropped to 10-20%. This wasn’t a prompt engineering problem. It was an architectural one. The Approach: A Thin Router With Specialist Workers We split the system into two layers: A deterministic orchestrator that performs zero domain work. It classifies intent, gathers required fields, runs reliability checks, and delegates to the right specialist. It never reasons about code, never generates configurations, and never touches the codebase. It’s a router. Fourteen specialized subagents , each a complete domain expert with isolated context. A schema management agent knows configuration registries. A population agent knows how to generate code for each of 10 data sources. A validation agent knows build systems and quality checks. No agent sees the full picture. That’s the feature, not the bug. The orchestrator follows a fixed 7-step protocol for every request: Read the relevant subagent’s instruction file. Check if the target already exists (prevent duplicates). Gather required fields from the user. Auto-discover what can be inferred (repository type, existing configurations). Reliability gate check for active warnings or required rev",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta built a small controller for its AI agents that only routes tasks and runs safety checks, while 14 specialist agents handle the actual work. A single do-everything agent had started making mistakes in production, and this split made the system more accurate and efficient.",
+    "tags": [
+      "ai agents",
+      "software architecture",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/",
@@ -2546,10 +2681,14 @@
     "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
     "published": "2026-10-19",
     "excerpt": "Generative Recommenders (GenRecs) represent a paradigm shift from scoring every ad to reasoning about ad content and user preferences together in order to predict the best outcome for advertisers. Leveraging the world knowledge built into LLMs makes ad matching more intelligent and precise, compounding gains for advertisers. GenRecs Tokenization is the foundational data representation that makes this possible. Rather than maintaining a dedicated ID for every item, GenRecs Tokenization represents each item with a set of tokens from a stable semantic vocabulary. Paired with Meta’s Generative Ads Model (GEM) and Meta’s Adaptive Ranking Model , GenRecs Tokenization has delivered a +0.35% lift in conversions across surfaces for advertisers. GenRecs improves the way Meta’s ads recommendation systems make predictions today. Short for Generative Recommenders , GenRecs shifts our approach from scoring every individual ad candidate to leveraging LLM architecture to deeply reason about ad content and user preferences simultaneously. By pairing pre-trained world knowledge with a semantic understanding of what an ad actually represents, the system moves beyond click-pattern matching to understand underlying user preferences. This allows the model to predict the most relevant ad for each person, even when surfacing brand-new products with no past product, ad or company engagement history. GenRecs Tokenization is the foundational data representation that makes this possible. Instead of maintaining a dedicated ID for every concept in the world, language models compose a small vocabulary of semantic tokens to represent any concept. Because tokens describe what an item (e.g., ads, products, services, etc.) is, the model can relate an item it has never seen engagement for, to items it knows well. A newly launched “trail shoe” inherits what the model has already learned about that category, rather than starting a new representation with no signal. GenRecs Tokenization introduces a structured vocabulary approach for ad recommendations, enabling GenRecs for both retrieval and ranking across every item type in the system, including ads, products, pages, and pixels. Meta’s state-of-the-art ads recommendation system drives ongoing advertiser performance improvements by learning about individual items and how they perform . LLMs present a unique opportunity to further improve the performance of recommendation systems by leveraging semantic tokenization in several ads use cases: Accelerating learning from new entities: Semantic tokenization helps models to infer relevance and establish relationships through shared concepts. New entities include newly created ads, niche products, and pages with limited engagement. Enabling cross-campaign transfer: Semantic tokenization creates a stable vocabulary that allows the models to carry insights across campaigns for advertisers. LLM scaling benefits: Semantic tokenization allows the benefits to compound with the LLM scaling curve’s improving performance. Infusing world knowledge: Semantic tokenization gives pre-trained language models a direct interface to reason about ad content and user intent. Once items are migrated to semantic tokens, models learn from token patterns much like LLMs do. In production, this yields: Prediction accuracy improvements in production: Paired with Meta’s GEM and Adaptive Ranking Model , GenRecs Tokenization delivered a +0.35% lift 1 in conversions. Compounding feedback loop: Better tail predictions yield better lessons from tail ads which enrich the training data to further improve predictions for all ads from the model, creating a performance improving feedback loop. A new way to scale: Across production ranking and retrieval, tokens bend the scaling curve along sequence length, training data, and model architecture. 1 Meta Internal Data, measured in February 2026. Introducing GenRecs Tokenization Pre-trained multimodal models read each ad, product, and page, including its text and ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta describes a new way to pick ads for people, using language-model style 'tokens' that describe what each ad is about instead of a fixed ID per ad. This helps the system guess well for brand-new products with no history, and it lifted advertiser conversions by 0.35% in Meta's own tests.",
+    "tags": [
+      "ads",
+      "machine learning",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
@@ -2557,10 +2696,14 @@
     "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
     "published": "2026-10-19",
     "excerpt": "With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible. The first phase of Prometheus, our gigawatt-scale supercluster, is already complete and we’re working toward scaling it to comprise ~1 million GPUs. Prometheus also features technologies like closed-loop liquid cooling to help it operate efficiently. Right now, in New Albany, Ohio, Meta is undertaking its most ambitious AI infrastructure project to date. Prometheus, our gigawatt-scale supercluster, is an advancement in our infrastructure that is training the next generation of foundational models that will bring new AI experiences to billions of people. Two years ago, New Albany was a conventional data center site running web traffic. With advancements in hardware, networking and building design, we reworked this site to be home to training programs for frontier models. We’re building the supercluster in phases. The first phase has already been completed and was used to train our Muse foundational models , including the Muse Wonder models, our new frontier models that deliver state-of-the-art performance on personal and professional agentic tasks. Large training jobs require everything to work optimally to sustain their performance; an issue on a single host can slow down or stop the entire job, lowering its ‘goodput’. By focusing on improving our systems’ stability and reliability we were able to achieve more than 85% goodput for pre-training runs and more than 90% goodput for reinforcement learning (RL) runs of Muse Wonder. During these training runs, we were able to achieve an overall wall-clock mean time between interruptions (MTBI) of ~47k GPU hours. Since then, we have landed further changes across our fleet including firmware fixes to increase MTBI to more than 54K GPU hours, and we are constantly improving it. Now, we’re continuing to scale Prometheus with our next frontier models from Meta Superintelligence Labs in mind. https://engineering.fb.com/wp-content/uploads/2026/10/AIM-1210-Superclusters_Video_v1.mp4 The Prometheus supercluster is housed in Meta’s New Albany, Ohio, data center. The Supercluster: Unlocking New AI Capabilities Today, Prometheus comprises an array of hundreds of thousands of GPUs across multiple interconnected buildings, including traditional and AI-optimized data center buildings and rapid deployment structures, all tightly interconnected by miles of fiber and functioning as a single machine. This capacity allows us to pursue larger models and longer context windows than were previously practical. At full scale, Prometheus will comprise roughly 1 million distributed GPUs, all functioning in lockstep. Multiple Generations of AI Hardware Prometheus currently deploys two NVIDIA GPU platforms, with a third (based on NVIDIA’s Vera Rubin NVL72 ) arriving soon. Each represents a generational leap in performance and efficiency, leveraging our NVL72 rack architecture where 72 GPUs act as a single accelerator within the same network fabric. Catalina: NVIDIA GB200 Our first platform, Catalina , leverages the NVIDIA GB200 NVL72. We deploy the Ariel variant, a two-rack configuration in which 36 GPUs per rack are interconnected via NVLink to form a unified 72-GPU domain. Catalina provides improvements in raw compute and memory capacity compared to Grand Teton H100 . It leverages our Open Rack V3 (ORv3) high-power rack (HPR) structure, an open hardware design contributed to the Open Compute Project (OCP) . The Ariel variant of GB200 NVL72 pairs each NVIDIA Blackwell GPU with an NVIDIA Grace CPU and 2x NVIDIA ConnectX-7 400G NICs at a 1:1 CPU-to-GPU ratio, letting us deploy 800G of I/O per GPU earlier than the rest of the industry. We chose Ariel because the GB200 NVL72 scaled up nearly every other dimension relative to the NVIDIA H100: FLOPS, HBM bandwidth, scale-up bandwidth, and scale-up domain size, while scale-out bandwidth per GPU would have stayed at 400G. We ex",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta has finished the first phase of Prometheus, a huge AI computing system in Ohio with hundreds of thousands of chips, and plans to grow it to about one million. It was used to train Meta's new Muse AI models.",
+    "tags": [
+      "ai infrastructure",
+      "data centers",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
@@ -2568,10 +2711,14 @@
     "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
     "published": "2026-10-19",
     "excerpt": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to... NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to deliver peak performance for tile-level GPU programming. By abstracting thread- and warp-level scheduling behind high-level, tile-centric primitives, cuTile enables you to write GPU kernels in Python while compiler optimizations automatically… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "NVIDIA shared a post about CUDA Tile, a Python tool for writing fast programs that run on NVIDIA graphics chips. It lets developers write this code with simple building blocks, while the software handles the low-level speed details. The post's details here are limited to a teaser.",
+    "tags": [
+      "gpu programming",
+      "python",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
@@ -2579,10 +2726,14 @@
     "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
     "published": "2026-10-19",
     "excerpt": "The recent disclosure of a major vulnerability in Citrix NetScaler pointed to a widespread weak point: a login page is an attack surface that can be used to compromise and access an application server. Indeed, the disclosures included an actively exploited flaw that allowed attackers to execute commands on affected gateways without signing in. As with any emergency patch, admins had to weigh cutting off or disrupting their users’ access with the risk of delaying a critical security update. If you’re a NetScaler customer and you haven’t patched your instance, stop reading and go do that. This was a bad one. Once you’ve finished the patch, we’ll explore how to avoid a future fire drill by laying additional security controls. This issue extends beyond NetScaler and can be applied to any internal application available on the Internet. Remote desktop portals, administrative consoles, and other publicly accessible authentication pages all deserve the same scrutiny: Does the intended audience require unrestricted Internet reachability? And can an attacker bypass this authentication check to reach the application's server? Citrix released software updates to address the flaw , and Cloudflare followed with an emergency web application firewall (WAF) rule on October 1. But having a patch available does not guarantee safety: every instance has to be identified, updated, and tested. Applying updates across a production deployment is painful — it can result in downtime or cause disruptions to employees who still need their desktops throughout that process. Customers, patients, and others dependent on users of a remote desktop definitely don’t care about your security patch. Using a web application firewall (WAF) can buy some additional time before a patch can be fully rolled out, but it’s reactive and does not account for the next exploit that’s discovered. Cloudflare and other security vendors do their best to cover variations and similar attacks. But AI is hastening how rapidly attackers can discover new and novel variants. That’s why it is crucial to build defense in depth , to ensure that no specific software failure or exploit will lead to a critical security issue. Cloudflare combines access policies, web application security, and restricted origin connections to protect the authentication service before a new vulnerability is disclosed. Access controls limit who can reach the application server; WAF inspection evaluates web requests for attacks; origin restrictions prevent direct connections from bypassing those defenses. These reduce exposure without waiting for a new exploit signature or replacing the existing desktop platform. The NetScaler exploit Citrix's September 27, 2026 bulletin reported observed exploitation of CVE-2026-88771 and CVE-2026-88772. The first allows unauthenticated command execution on affected appliances, including in their default configuration. The second affects configurations using Datagram Transport Layer Security, or DTLS. Further advisories on October 3 and October 8 addressed additional vulnerabilities in SAML configurations. These exploits allowed attackers to execute arbitrary scripts on target machines and also execute denial of service attacks. CISA's alert and Mandiant's technical investigation cover the vulnerabilities, observed exploitation, and response guidance in more detail. For details of the available web application protection, see Cloudflare's emergency WAF release for CVE-2026-88771 . In a typical Citrix deployment, the user authenticates through NetScaler Gateway, which then uses a secure ticket authority to pass through to the StoreFront, which presents the applications and desktops available to that user. The native-installed Citrix app then uses that information to establish a separate connection using Citrix's Independent Computing Architecture (ICA) protocol. The gateway validates the ticket before proxying the desktop connection. Citrix documents these as distinct stages of the ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "A serious flaw in Citrix NetScaler gateways let attackers run commands without logging in, and it is being actively exploited. The post urges fast patching, plus extra layers like access limits and firewall rules to guard login pages against future flaws.",
+    "tags": [
+      "cybersecurity",
+      "vulnerabilities",
+      "remote access"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
@@ -2590,10 +2741,14 @@
     "title": "Cutting our inference bill by 68% by being obsessive about optimization",
     "published": "2026-10-19",
     "excerpt": "When we previously blogged about our AI code reviewer in April , an average review cost a palatable $1.19. By the end of August, that figure had shot up to about $2.46. We hadn't made any significant architectural changes: the coordinator was still handing work to the same set of specialist reviewers, and the same risk tiers decided how intensive of a review we gave. Around mid-September we tasked our agents with working out where those tokens were going and cutting them — aggressively. With code quality at high effort, the average review now costs just $0.77, down 68% from the $2.43 it averaged over our two most expensive weeks before we started. Our main goal was to cut costs, but as part of this work we also managed to optimize the reviewer, so that the median review now takes just 1m 32s instead of the 4m 09s it took before. About 40% of the savings came from changes and optimizations to the reviewer's code, and the rest from experimenting with which models we use and how much effort they put in. How a review doubled in cost The chart below shows the cost of an average review on each weekday since March. It holds the mix of review tiers fixed, so a day with more large reviews doesn't skew the data. The cost per review steadily rose from $1.22 (March) → $1.44 (June) → $1.74 (July) and finally, to $2.32 (August). A small part of that is that more reviews landed in the most expensive tier (59% of reviews in March and then 65% in August). We believe there’s a simple answer for why: models are getting much better, and much more capable. Naturally, engineers are producing bigger, more complex changes which means more of them fall into our “full review” tier. We found that most of the cost increase actually came from model changes over those months, though. At the start of August we moved every reviewer onto Anthropic models, which raised the cost per job from $1.38 to $2.03. We made this choice because we found that during our evals, Anthropic models performed better on this specific workload than other models. Our internal standards reviewer, Codex , ended up on Claude Opus 4.7 due to a mix of performance and reliability. That took it from about $0.25 per review to $0.88 in August, which made it more expensive than the coordinator agent itself. The cache hit rate also increased, going from 85.7% in April to 97% by September, while the number of tokens per review more than tripled, from 0.91 million to 2.99 million. A high hit rate on three times as many tokens still costs a lot more, even with the low cache read cost. What else has changed since our last post? One of the biggest changes is that the reviewer now runs on OpenCode v2, which is a ground-up rewrite from v1. Before switching all reviews over from v1 to v2, we ran every review in every canary repo on both v1 and v2 in a comparative shadow mode. The two agreed on the approval decision in 98% of the merge requests we tested, so we moved everyone over in one go in early October and removed the v1 code. Comparing two days with the same models, full-tier reviews on v2 finish about 13% faster. We’re also currently experimenting with other ways to run our internal AI reviewer, including solely on Durable Objects using pi-durable . We’re hopefully going to have more on this coming soon, so keep an eye out! So, where were the tokens going? Right before we started focusing on cost optimization, our AI review spend was split by: output tokens making up about 23%, cache writes cost 43%, and cache reads cost 34%. This means that most of the money was going on context the model had already seen or was about to see again. That makes complete sense when you look into a single session. The code quality reviewer made 16.6 large language model (LLM) calls per review on average and over those calls it wrote 72k tokens to the cache and read back 1.08m, because each call sends the whole conversation as context. A session's cost grows with both the number of calls and the size of the contex",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare's AI code reviewer cost rose to about $2.46 per review by August, so they worked to cut it. Through tuning the reviewer's code and switching which AI models it uses, they lowered the average cost to $0.77 and made reviews faster.",
+    "tags": [
+      "cloud costs",
+      "ai tools",
+      "software engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/clairic-extraction-model/",
@@ -2601,10 +2756,13 @@
     "title": "Introducing Clairic, a new System One class of extraction models",
     "published": "2026-10-19",
     "excerpt": "Today, we're announcing a preview of a new class of System One-style models: extraction models. Our first one, Clairic, is available hosted on Workers AI as @cf/cloudflare/clairic. We intend to release the model open-weights soon. Clairic is an extraction model that is able to extract, compute, estimate, and forecast values from unstructured inputs — all at a significantly higher accuracy, faster latency, and cheaper cost than traditional LLMs. Context When System One models were announced by TypeSafe a month ago, it took the industry by storm. As referenced by TypeSafe in their blog and defined by Daniel Kahneman’s book Thinking, Fast and Slow , a System One model should be fast and precise, which contrasts a System Two model that is capable of deliberate reasoning (like LLMs). With this, TypeSafe introduced Jev — a model that is purpose-fit for a specific use case, and priced accessibly given its niche domain. It excelled where LLMs failed, helping users make decisions based on probabilities and well-typed outputs. The introduction of Jev prompted people to start thinking about a new class of models that were not LLMs and how to integrate them into their workflows. We were inspired by the concept of System One models and started thinking about other tasks where LLMs are inefficient. There are many structured-output calls going to frontier LLMs today with the same shapes again and again: What's the invoice total? When was this delivered? How many days late is it? What will this repair cost? What will traffic look like over the next 24 hours? None of these have answers you can list out in advance, which is needed for a decision model to give probabilities against. That led us to the class of models we're introducing today: System One extraction models. Introducing System One extraction models Until now, every System One model has been a decision model: Jev and Clef take an input state and a list of questions and give probabilities against the inputs and your listed questions. Clairic is the first model in a new class: System One extraction models. It is still fast, typed, and cheap, but it answers with values directly extracted from the input, computed from it, or predicted beyond it. Most model tasks ask for one of three kinds of output: a number, a choice from a fixed set, or open-ended text. Clairic handles the first, returning numbers with an 80% range, and also pulls typed values like names, dates and lists out of the input. Clef handles the second: it picks among options and returns a probability for each. LLMs handle the third. We call Clairic and Clef System One models because they answer in a single pass, without reasoning or generating tokens. They charge only for input and typically respond in under a second, while an LLM that reasons through the same step takes several seconds. An extraction model can return: Extracted values: Text copied from the input, such as a name, an order ID or a description. Each one comes back as a span with its character offsets and a confidence score. Including, computed values: Numbers, dates, times, datetimes, durations and lists, read from the input or worked out from it. They follow the rules of their type (for example, two decimals for cents) and come with a confidence score. Estimated values: Values the input doesn't state but gives evidence for. Each one comes back as a distribution inside the bounds you declare, on the grid you specify, with a median and an 80% interval. Forecasted values: Future values of a series, one estimate per step ahead, each with its own 80% interval. And because it generates no tokens, it can't produce a mistyped answer or “hallucinate” in the same way as an LLM (though it can, of course, make mistakes). Outputs are a value of the type you asked for, or null when the model fails to find an answer in the input. It also comes with confidence scores against the outputs to help you evaluate if it is appropriate to trust the model or to take a second look. He",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare announced a preview of Clairic, a fast, cheap AI model that pulls names, dates, and numbers out of messy text and makes estimates, without writing out long answers. It is available now on their platform, and they plan to release it openly soon.",
+    "tags": [
+      "ai models",
+      "cloudflare"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
@@ -2612,10 +2770,14 @@
     "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
     "published": "2026-10-19",
     "excerpt": "Nothing last week added a new kind of compute. What it did instead was shorten the distance between the code you already have and that code being live. AWS Lambda learned to run a plain HTTP server with no adapter in front of it, and Amazon S3 became something you can provision from inside the tool you were already using, without opening the AWS Management Console. Different services, same direction. The counterweight arrived on Thursday. As it gets easier to put things into production, it matters more that you can say what those things are allowed to do, and this week’s most interesting read is about exactly that. Now, let’s get into this week’s AWS news… Headlines AWS Lambda Web Functions is a new form factor that runs a standard HTTP web application on Lambda without rewriting it into an event handler. You take a port-listening server built with Express, Hono, Fastify, or Next.js, run aws lambda-web deploy , and get back a live HTTPS URL in under a minute. No adapters, no infrastructure to set up first, no framework lock-in. Lambda now has three form factors on the same Firecracker isolation, which compose inside one application: Event Functions (the model you already know) for async work, Web Functions for the user-facing layer, and MicroVMs for stateful sandboxes running untrusted code. Two details make this more than repackaging. Each execution environment handles up to 128 concurrent requests, so a burst of traffic shares warm environments instead of mapping one request to one environment, and billing meters the CPU time your code actually uses rather than wall-clock time. For server-side rendering, API backends, and inference endpoints streaming tokens, where most of the elapsed time is spent waiting, that changes the arithmetic. Adding --regions to the same deploy command replicates your code and configures latency-based routing behind a single global URL, and you can split traffic across revisions by weight for a canary rollout. It’s available in five Regions, running Node.js 24 on Arm64 with VPC connectivity. The AWS Compute Blog has a longer walkthrough, and Amazon CloudFront can now use a Web Function endpoint as an origin with origin access control. The week’s other headline isn’t a launch. Trust in Depth: giving agents more autonomy without losing control makes an argument I keep running into in practice: putting a person in the loop for every agent action works at small scale and then quietly stops working, because people asked to check everything stop catching what matters. The alternative is four questions answered at four moments, which AWS calls scope, know, bound, and observe. The part worth sitting with is that an agent’s limits belong outside its own reasoning, in Amazon Bedrock AgentCore policies enforced at the gateway, because an agent cannot turn off a control it does not run. AWS has run automated reasoning in production for more than a decade, including AWS Identity and Access Management at more than 2.1 billion requests per second, and the case here is for pointing it at the rules you write for agents. Last week’s launches Here are some launches and updates from this past week that caught my attention: Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel – You can now provision S3 general purpose buckets, S3 Tables , and S3 Vectors from the Vercel dashboard, or by describing what you want to build in v0. It joins existing integrations for Amazon Aurora , Amazon DynamoDB , and Amazon OpenSearch Serverless , so the whole stack sits in one AWS account with one bill. The authentication detail is the good part: a short-lived OIDC token is exchanged at runtime with AWS Security Token Service for credentials scoped to that resource, so no static keys are stored anywhere. Amazon EC2 T8i instances are now available in South America (São Paulo) – The newest burstable generation reached the São Paulo Region, which matters for the unglamorous half of a workload: login gateways, small database",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS Lambda can now run ordinary web apps directly, with no rewrite and no adapter, and you get a live web address in under a minute. Amazon S3 storage can also be set up from Vercel, a web-building tool, without opening the AWS console.",
+    "tags": [
+      "cloud computing",
+      "aws",
+      "web apps"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/news/public-benefit-fund",
@@ -2623,10 +2785,14 @@
     "title": "Investing in the public benefit",
     "published": "2026-10-18",
     "excerpt": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic is setting aside a share of its company stock for a new fund, the Anthropic Public Benefit Fund. The fund's stake is designed to grow as the company grows.",
+    "tags": [
+      "anthropic",
+      "company news",
+      "funding"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/expectations-for-the-future",
@@ -2634,10 +2800,13 @@
     "title": "Working at the frontier shapes expectations for the future",
     "published": "2026-10-16",
     "excerpt": "We’re sharing two reports: the first covers how AI is changing employment inside Anthropic, and the second looks at the gap between how the public and Anthropic employees expect AI to affect work and the economy.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic has shared two reports. One looks at how AI is changing jobs inside the company. The other compares what the public and Anthropic staff expect AI to do to work and the economy.",
+    "tags": [
+      "ai",
+      "jobs"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/employment-at-anthropic",
@@ -2645,10 +2814,13 @@
     "title": "How employment is changing at Anthropic",
     "published": "2026-10-16",
     "excerpt": "How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic is looking at how AI has changed work and hiring inside the company. Because it is an early adopter of AI, the company suggests its experience may show how jobs across the economy could shift.",
+    "tags": [
+      "ai and jobs",
+      "hiring"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
@@ -2656,10 +2828,13 @@
     "title": "Claude reveals ECDSA curve origins",
     "published": "2026-10-16",
     "excerpt": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic says its Claude AI has helped explain where one widely used encryption standard came from, a question that had puzzled experts for decades. The post is a short teaser, so details of the explanation are not given here.",
+    "tags": [
+      "encryption",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
@@ -2667,10 +2842,14 @@
     "title": "Designing more efficient quantum circuits with Claude",
     "published": "2026-10-16",
     "excerpt": "We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic gave its AI model Claude descriptions of eight quantum circuits and a tool to score its designs. Working mostly on its own, Claude beat the best published versions, sometimes by a large margin, which could help useful quantum computers arrive sooner.",
+    "tags": [
+      "quantum computing",
+      "ai",
+      "anthropic"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/research/ai-expectations-gap",
@@ -2678,10 +2857,14 @@
     "title": "The AI expectations gap",
     "published": "2026-10-16",
     "excerpt": "How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic shares new survey results on how people expect AI to change the economy in the coming years. The teaser says the main disagreement is about what AI's future economic impact will be.",
+    "tags": [
+      "ai",
+      "economy",
+      "surveys"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally",
@@ -2689,10 +2872,14 @@
     "title": "New ways for fintechs to move money and expand globally",
     "published": "2026-10-16",
     "excerpt": "We’re introducing three updates to help fintechs launch products and grow internationally more easily: simpler payout management with Stripe Global Payouts, support for stablecoin cards in more countries, and unified APIs for building global financial products.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe announced three updates to help financial tech companies move money and grow abroad: easier payout management, stablecoin cards in more countries, and shared tools for building global financial products. The goal is to make launching and expanding internationally simpler.",
+    "tags": [
+      "payments",
+      "fintech",
+      "international expansion"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
@@ -2700,10 +2887,14 @@
     "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
     "published": "2026-10-16",
     "excerpt": "General Science",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes building blocks that could let AI agents run biology experiments in real lab settings. The post is short, so details are limited.",
+    "tags": [
+      "ai agents",
+      "biology research",
+      "lab automation"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4",
@@ -2711,21 +2902,14 @@
     "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
     "published": "2026-10-16",
     "excerpt": "Prasanna Vijayanathan , Renzo Sanchez-Silva When Jake Paul and Mike Tyson stepped into the ring in November 2024, we delivered the fight to roughly 65 million concurrent streams. On an ordinary day our infrastructure takes in more than 2 billion requests and handles upwards of 38 million real-time logging events every second. At that scale, the whole picture doesn’t fit into a single engineering team’s head or onto a single dashboard. With more Live content, Podcasts and real-time streams, our need to understand and update our systems as quickly as possible becomes imperative to provide a good user experience. Understanding the system at this scale and within the time constraints we have, often becomes a daunting exercise in finding a needle in a haystack, in a dark jungle, blindfolded. This post is about that search for the needle. The Four hours before a fix Consider a regression of the kind we see in a given week. The home screen where you see the list of lists of movies, starts taking about 1.5 seconds longer to render. An alert fires. And then we go looking for what caused this issue and how do we fix it? As it so happens, a regression on the application could be related to anywhere in the system — a client app regression from a new version deployment or A/B test rollout, a load shedding in the infrastructure, a GraphQL query responding with bad data because of a service rollout 6 hops downstream, are all suspects at this point. So, answering “what caused the issue?” needs insights from across the system, and this involves combing through layers of data in a meticulous manner. The MELT Layer “What caused the issue?” Metrics, events, logs and traces, or MELT, in the industry’s shorthand, are the right raw materials for such an investigation, and each of them answers roughly a quarter of the question. We collect observability data across these four pillars, unified into a single observability data layer. This lets us observe our systems in real time, across what our users are experiencing, how our applications are doing and what our backend infrastructure and services are processing and responding to. MELT — Metrics, Events, Logs and Traces, and how they are captured across the system. The investigation that follows may look like this in each layer: What each layer of MELT tells us and what it leaves out The timeline of an investigation So how long does it take to investigate an issue, figure out the root cause and fix it, so our users stop running into this issue again? A timeline of an investigation: ~4 hours In our chosen example, four hours. Very little of it went into computing anything difficult. Most of it went into reconstructing relationships that our observability systems already knew but we had never written down anywhere a human or machine could simply read and discover. The disagreement underneath The instinct here could have been, around 2023, to reach for more data or better dashboards, and while both help at the margins, neither addresses what makes these investigations slow. It’s 2026 now, so we might say, “hey, agents”, but without the right context delivered to the agents, AI systems hallucinate, and especially when teams are on-call and need a fix “now”, we cannot let inaccurate agentic analysis lead us down the wrong path. We need the right needle, not any needle. Each of our systems is internally coherent and externally isolated. Atlas , our telemetry platform, knows applications and their time series. Radar, our alerting system, knows thresholds and firing history. incident.io knows severities and responders. PagerDuty knows rotations. Spinnaker knows what shipped and when. And our Slack history knows, in a form no query engine can reach, which engineer solved something very similar last quarter and what they found. The difficulty is that they do not agree on what they are talking about. A thing that is an application in one system is a service in a second and a cluster in a third, with names differin",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://huggingface.co/blog/reflection-beam",
-    "company": "Hugging Face",
-    "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-    "published": "2026-10-16",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix describes how investigating a slowdown can take about four hours, mostly spent piecing together how its many monitoring and alert tools relate to each other. They propose a shared map of these connections, called an ontology or knowledge graph, so engineers and AI helpers can find the cause faster.",
+    "tags": [
+      "software reliability",
+      "netflix",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.atspotify.com/2026/10/advancing-generative-recommendation-inference-our-collaboration-with-nvidia-on-tensorrt-llm/",
@@ -2733,21 +2917,14 @@
     "title": "Advancing Generative Recommendation Inference: our collaboration with NVIDIA on TensorRT LLM",
     "published": "2026-10-16",
     "excerpt": "At Spotify, every surface and interaction is personalized to you as a user: the content on the Home page, the... The post Advancing Generative Recommendation Inference: our collaboration with NVIDIA on TensorRT LLM appeared first on Spotify Engineering .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-    "company": "NVIDIA",
-    "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-    "published": "2026-10-16",
-    "excerpt": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As... AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As a result, the current workflow is split across a laptop, a cloud model API, and a cloud VM. NVIDIA RTX Spark is built for AI development. Thanks to the NVIDIA GB10 system-on-a-chip and large unified memory, developers can run local… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Spotify worked with NVIDIA to make its generative recommendation system run faster using NVIDIA's TensorRT LLM software. The post describes how personalized content, like what appears on your Home page, gets served to users.",
+    "tags": [
+      "spotify",
+      "recommendations",
+      "ai inference"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/verified-bots-accountability/",
@@ -2755,10 +2932,14 @@
     "title": "Continuous accountability for Verified bots",
     "published": "2026-10-16",
     "excerpt": "A driver’s license tells you who someone is and that they passed a driving test, not whether they’ll drive responsibly in the future. The same is true for bots: verifying who operates it creates accountability, but trust depends on what it does next. A known bot can still ignore website preferences, overwhelm origins, or evade controls. It’s not always malicious — often it’s just a misconfiguration or a bug. As we described in a previous blog post on bot behavior, we strive to verify two questions: “Are you who you say you are?” and “Can we trust you?” To be a Cloudflare Verified Bot, you broadly need to meet three criteria: Identify yourself accurately and securely Do only what you say you will do Don’t engage in abusive behavior Bots use Web Bot Auth to sign requests that establish their identity, which BotBase then catalogues in an open format. With identification addressed, our focus shifts to the second cardinal rule of Verified bots: thou shalt do no harm . Today we introduce a system to evaluate and report when Verified bot behavior starts to deviate from this rule, ensuring that the answer to “Can we trust you?” remains “Yes.” This is where the distinction between risk and trust becomes important: Risk describes the likelihood that a particular request or point-in-time action may be harmful, and it can change from one moment to the next. Trust is built over time through repeated and consistent behavior. For example, we de-listed Perplexity’s bot from our Verified bot list in 2025 when it sought to access resources on websites that opted out of scraping and subsequently attempted to circumvent controls when those requests were blocked. Do not engage in abusive behavior This simple requirement sounds like a freebie, but there is a lot of nuance in that statement. When crawlers don’t respect site preferences , that undermines trust. When sites request a crawler to not crawl or to slow down, and the crawler ignores these requests, that undermines trust. We developed a system to measure how often a crawler respects site preferences. These observations will translate to an explainable trust band: a range showing how consistently a bot respects site preferences and which observed behaviors informed that assessment, rather than a permanent judgment about a bot or its operator. The initial signals we evaluate are: Does the bot respect instructions? Did it respond to direct feedback? We consider these to be “common sense” rules, a courtesy to the operators who provide the information bots seek. In the future, we will be sharing these scores publicly on Radar , as well as expanding the ways we measure. This score gives responsible bot operators a way to demonstrate that trust is being upheld over time. Verify, but continuously re-verify. When in Rome, do as the Romans do A robots.txt file is the primary way to communicate site owner preferences. Our system considers whether a bot’s observed traffic is consistent with those published preferences over time. Robots.txt tells all (or specific) bots to only crawl specific parts of a website. Isolated violations and other types of one-offs may not be significant. What we look for instead are repeated patterns of behavior that disregards site preferences. The expectation is simply for responsible bots to consult and honor the preferences that websites publish, in line with RFC 9309 . And just to be clear, a robots.txt sets the minimum rules for what bots and agents should not do. But there is no implication that anything not stated is allowed. For example, a robots.txt does not need to say that a bot must stop when the site can communicate that continued access is unwelcome through other signals. What you do not wish for yourself, do not impose on others Bots can remain entirely within allowed paths while still placing substantial load on the websites they visit. One of the clearest ways a website can push back is with an HTTP 429 (“Too Many Requests”) response. A 429 is a directive for",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare is adding a system that scores how well its approved 'verified' bots respect website owners' rules, such as robots.txt and requests to slow down. Scores will be shown publicly on Cloudflare Radar, so bots that ignore site rules lose trust over time.",
+    "tags": [
+      "web bots",
+      "cloudflare",
+      "web crawling"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/websites-with-payload-in-figma/",
@@ -2882,17 +3063,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
-    "company": "NVIDIA",
-    "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
-    "published": "2026-10-15",
-    "excerpt": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on... Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories. The 1M token context window holds an entire… Source",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
     "company": "Google DeepMind",
     "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
@@ -2920,17 +3090,6 @@
     "title": "Deploy with Void",
     "published": "2026-10-15",
     "excerpt": "VoidZero's tools such as Vite, Vitest, Oxc, and Rolldown — bundled in one toolchain as Vite+ — have made frontend development faster, but building full-stack applications requires more than just a tooling stack. These applications need server routes, databases, local development environments, and a fast and easy way to deploy ideas to production. We’re excited to open-source three new products that bring server routing, typed data access, and Cloudflare deployment into a unified Vite workflow. Void Platform: A shared deployment platform for teams to host Void apps on Cloudflare. Void SDK: A composable JavaScript SDK for building full-stack apps with Vite. Void CLI: A CLI for provisioning resources and deploying Vite apps to Cloudflare. The CLI deploys apps built with the SDK to the Platform. All three products are open-sourced as a single JavaScript package and Vite plugin that you can install via npm install void . With Void , you can build your server and client together, carry types from your database to the UI, and let Void automatically provision the Cloudflare resources that your app uses. We originally set out to build a single, private platform for all users to deploy apps to. After VoidZero joined Cloudflare , we adjusted our direction to open-source the platform and allow anyone to install because we saw a growing need: companies want to encourage vibe-coded internal apps, but are concerned about security and do not want to give cloud access to every employee . Void addresses this problem. Void Platform: a cloud platform for your company The Void Platform is fully open source and you can fork it and adapt it to your needs by integrating your company's systems, customize deployment workflows, build features for your customers, or make it work on other deployment platforms. Use the platform as it is, contribute improvements upstream, or fork it and build only the features you need. The open source code can be used out of the box or as a starting point. As an admin of a Void Platform, you control access, set resource limits, inspect deployments and usage through the Void CLI or admin dashboard, and provide guardrails so everyone else can ship serious and vibe coded apps to the same shared platform. By installing a Void Platform, your team or customers have a shared deployment environment in your Cloudflare account on top of Workers for Platforms . Void Platform enables: Faster prototyping . Your team can quickly build prototypes, deploy them, and share working apps for feedback, without setting up a separate Cloudflare account or provisioning resources for every project. This reduces the time to ship internal apps from days/weeks to minutes. Non-technical teams building . This workflow also lets teammates who do not normally write code work with coding agents to build and share their own apps. A designer can create an interactive prototype, or an operations teammate can build an internal dashboard, then deploy it to the same platform. All with the right security measures in place. To self-host a Void platform, you need: A Cloudflare account with Workers for Platforms and R2 enabled A PostgreSQL database An account with your chosen login provider A domain for your apps Then install Void as a cloud platform by running a single command: Once your platform is set up, approved users can connect to it via the Void CLI for deployment. void connect https://api.orange-company.dev A user builds their app using the Void SDK, which is what powers Void Platform benefits like authentication, framework detection, resource provisioning, and more. In other words, Void Platform only works because of the accompanying SDK and CLI. Void SDK: zero-config infrastructure Void turns a Vite app into a full-stack Cloudflare Workers app. You or your agents can write code and Void will automatically infer resource bindings and provision resources such as databases, queues, or AI bindings during deployment. To get started, add Void as a Vite plugin:",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/",
-    "company": "Cloudflare",
-    "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-    "published": "2026-10-15",
-    "excerpt": "Optimizing your site for AI is of little use if AI can't find it. The answer to someone's question may already be on your website: the installation guide you spent a week writing, or a first-hand account of using a product, with the details that make the difference for whether they buy it. As more people turn to AI for help, you want those systems to find your work, represent it accurately, and send interested people your way. You also want control over how they access your site. Cloudflare and OpenAI launched a research pilot in July 2026 with those interests in mind. We wanted to find out whether signals from Cloudflare’s network could help ChatGPT users discover new content more efficiently. Today, we’re sharing early results. So far, the answer is a resounding yes: the pilot has brought previously unknown pages into OpenAI’s search index, giving ChatGPT more sources to draw on to help people find relevant, timely information. Along the way, we’ve learned more about what makes a page worth discovering and how AI systems use the web. Finding more of the web The web is full of specifics. Someone fixing a washing machine needs the manual for their exact model. Someone applying for a passport needs the current requirements and fees. Someone choosing a local restaurant needs its latest menu and opening hours. Finding the right page can be the difference between a wrong answer and one that actually helps. These pages can be valuable even if few other sites link to them. In the previous version of the web, discoverability was getting to the top of a search result page. It was then up to the human who visited your page to determine the value of the information, book that table, apply for that passport. As people increasingly rely on AI to find information and complete tasks, discoverability matters in new ways. AI systems need to find the right sources, understand what's useful, and connect people with relevant information – whether that's through an answer, a citation, or a visit to the website itself. Cloudflare's network provides signals that can help OpenAI’s search crawler discover more useful pages across the web to surface to ChatGPT users. OpenAI then independently evaluates and ranks how those pages appear based on how relevant and helpful they are. Together, this creates a feedback loop that can improve both discovery and the quality of information people find. This joint pilot, which used a participating cohort of ~1% of Cloudflare’s total network, has enabled OpenAI to discover and index hundreds of millions of new web pages, helping people discover more useful content and get more questions answered through ChatGPT. By linking back to relevant sources, ChatGPT Search also gives people a way to explore the original content and discover the websites and publishers behind it. With GPT-6 and Intelligent UI , OpenAI is also making ChatGPT an even better place to shop, learn, and find answers, with more visual, interactive experiences tailored to what people need. This work complements these advances by helping ChatGPT discover more useful, up-to-date information from across the web. From discovery to useful answers Finding a URL is only the start. We need to know whether it leads to a page someone can access, whether that page offers anything distinct, and what it might help someone do. We’ve learned, for example, how easily automated traffic can make a nonexistent page look interesting. Bots repeatedly ask for files that aren’t there. Some sites redirect almost any address to their homepage. Other addresses lead to copies of the same content. Recognizing these patterns gives us a way to cut wasted work before a crawler fetches the page, and improve efficiency in a way that benefits site owners. We're also testing signals that identify and flag potentially harmful pages, adding another layer of information to support safer, more reliable discovery. A legitimate site can have a single compromised page, such as a fake login f",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -3085,17 +3244,6 @@
     "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
     "published": "2026-10-14",
     "excerpt": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://blog.cloudflare.com/yandex-outage/",
-    "company": "Cloudflare",
-    "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-    "published": "2026-10-14",
-    "excerpt": "Following reported strikes on Yandex data centers, claims circulated on the Internet that Russian bot farms and influence operations had been knocked offline. HTTP traffic charts showed steep drops, fueling speculation that the infrastructure damage had stopped these malicious actors. However, aggregate traffic metrics can easily mislead. There are two autonomous system numbers ( ASNs ) associated with Yandex: AS13238 is used by Yandex’s search engine, while AS200350 runs its cloud services. Using Cloudflare Radar and Bot Management data, we analyzed how these two ASNs were affected — and while both saw drops in traffic, they saw differing impact. Yandex Search (AS13238) : The drop in traffic consisted almost entirely of verified search crawlers indexing web pages, images, and site resources. Yandex.Cloud (AS200350): There was a decline in malicious activities like vulnerability scanning and probing, but high-volume automation did not vanish — it simply migrated to other hosting providers. While malicious traffic may originate from a particular provider, it does not necessarily tell us who is responsible for the traffic. Understanding why the strikes had little lasting effect on malicious traffic requires analyzing request behavior, rather than just overall traffic patterns. What happened: the effect of the strikes and pre-event baseline Between October 7 and 11, reported Ukrainian drone strikes hit three Yandex facilities in Russia, progressively knocking data centers and network capacity offline. As seen on Cloudflare Radar , this culminated in a near-total collapse of the Yandex network on October 11 when traffic plummeted to 99% below baseline for Yandex Search (AS13238) and 90% for Yandex.Cloud (AS200350). Despite a brief partial recovery, both networks remained disrupted through October 13, settling at 86-90% below normal baselines. (As of October 14 at 18:00 UTC, traffic is at 85% of normal.) A drop in overall HTTP traffic only confirms that the network went down. It does not reveal whether malicious or evasive bots were disrupted. Looking at the pre-event automation baseline, we can see that before the strikes, automated requests accounted for 36.1% of all HTTP traffic observed globally across Cloudflare's network, and 35.8% of traffic from Russian IP addresses . The outage had different effects on automated activity on the two affected ASNs because they served different roles. Yandex Search ASN (AS13238) is used for search index crawling. Cloudflare classified 99.5% of its requests as automated, and 93.6% of its bot requests as Verified . Our analysis showed that traffic from this ASN indexed pages, rendered pages, and rendered images, which is consistent behavior for a search crawler. The Yandex Search ASN supplied about 7% of Russia-origin bot requests, and just 0.05% of the global total. Yandex.Cloud ASN (AS200350) is a cloud-hosting network and carries a very different mix of automation. Approximately 95.0% of its scored requests were bots, but none of its observed bot requests were verified by Cloudflare. Yandex.Cloud’s bots looked more like software apps: nearly two-thirds of their requests sent data to websites, some identified themselves as JavaScript, Python, or Go programs, and a larger share went to software companies than Yandex’s search bots. The Yandex.Cloud ASN supplied about 2% of Russia-origin bot requests, and just 0.01% of the global total. Impact of the event on overall bot traffic \"Bot traffic\" refers to automated requests to websites on Cloudflare's network, such as crawlers and scripts, not necessarily activity on social media platforms. As Yandex’s networks lost capacity, their bot requests fell too. That was expected: nearly all traffic from Yandex Search and Yandex.Cloud was automated. While we saw the obvious drop in total traffic, we did not see any evidence linking a global disruption in malicious traffic to the drop in traffic from Yandex. Russia-origin bot requests fell roughly in propor",
     "summary": "",
     "tags": [],
     "summarized": false,
@@ -3674,17 +3822,6 @@
     "summary_version": 0
   },
   {
-    "url": "https://www.figma.com/blog/what-it-takes-to-build-great-products-now/",
-    "company": "Figma",
-    "title": "What it takes to build great products now",
-    "published": "2026-09-24",
-    "excerpt": "Getting to a prototype is easier than ever. The harder work is sustaining speed all the way to launch, choosing the right direction, and creating products that stand out. Here’s what that takes.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
     "url": "https://research.google/blog/coherent-long-form-video-generation/",
     "company": "Google Research",
     "title": "Automating coherent long-form video generation",
@@ -3712,17 +3849,6 @@
     "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
     "published": "2026-09-24",
     "excerpt": "Organizations building event-driven applications on Amazon EventBridge typically start with a single custom event bus in one account. This works well when a single team owns the architecture. As adoption grows across the organization, though, things get complicated. AWS best practices recommend a multi-account structure, which means each team runs in its own account. To route events between them, teams create multiple event buses connected through cross-account rules or bus-to-bus configurations. This workaround reintroduces the operational complexity that serverless architectures are meant to eliminate. Platform teams lose visibility into who is subscribing to which events, cross-account and bus-to-bus routing charges compound quickly, and teams that need capabilities like event ordering are forced to build complex workarounds or adopt entirely different technologies. Today, we are announcing an enhanced custom event bus in Amazon EventBridge, purpose-built for organizations scaling event-driven applications across teams and accounts. With the new enhanced custom event bus, you can deploy a single, centralized event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and a new pricing model that delivers improved economics at scale and cost allocation for publishers and subscribers. Let’s try it out To get started with an enhanced custom event bus, I navigated to the EventBridge console in the AWS Management Console and opened the Create custom event bus page. I selected Custom event bus, the recommended option labeled New. The page also offered Custom event bus – classic, which continues to receive events and route them with rules and targets. Below the selection, EventBridge showed how the new bus works. One shared bus serves every team in the organization. Publishers send events, subscribers consume only what they need, and EventBridge handles ordering, retention, routing, and delivery. The Create custom event bus page. Custom event bus is the recommended new option, with ordered delivery, filter patterns, event replay, and sharing across your AWS organization. Custom event bus – classic remains available for existing workloads. Next, I configured resource sharing. I turned on Enable event bus sharing and selected Allow sharing only within your organization. I chose AWS account ID as the principal type. I could also share with an organization, an organizational unit, or an AWS Identity and Access Management (IAM) role or user. Sharing uses AWS Resource Access Manager (AWS RAM) , so I did not have to set up cross-account permissions or bus-to-bus routing myself. Resource sharing on the new custom event bus. I enabled sharing within my organization through AWS RAM and selected an AWS account as the principal, which is how teams publish and subscribe on the same bus without extra routing. Organization-wide sharing With the new enhanced custom event bus, you can create a single event bus and share it across all AWS accounts in your organization. Platform teams deploy one bus and establish it as the central event backbone, eliminating the need to configure cross-account permissions or bus-to-bus routing. Application teams across your organization can publish and subscribe to events on the same bus without waiting for infrastructure provisioning. Publishers send events without needing to know which teams consume them, and subscribers create their own Subscriptions independently. Platform teams maintain visibility into all event flows and fine-grained control over who can publish and consume events. The new enhanced custom event bus has a default quota of 10,000 Subscribers per bus, and you can request a higher quota. That reduces the fragmentation that occurs when subscriber limits force you to split across multiple buses. Event ordering Event-driven architectures work best when consumers are designed around asynchronous patterns, where the order of events does not",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://www.figma.com/blog/the-power-of-product-based-learning/",
-    "company": "Figma",
-    "title": "The power of product-based learning",
-    "published": "2026-09-23",
-    "excerpt": "There’s a big difference between having an idea and making it real, and in that space is where learning happens. Here’s how teachers are using Figma to give their students hands-on design experiences.",
     "summary": "",
     "tags": [],
     "summarized": false,
