@@ -1,5 +1,109 @@
 [
   {
+    "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
+    "company": "Figma",
+    "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
+    "published": "2026-10-31",
+    "excerpt": "Figma Weave brings AI generation and editing tools together into connected, reusable workflows, giving you a process your team can shape, refine, and repeat. Here’s what it unlocks for creative teams and how to get the most out of it.",
+    "summary": "Figma has released Weave, a tool that links AI image-making and editing steps into connected workflows. Teams can reuse and refine these workflows, so creative work can be repeated more easily.",
+    "tags": [
+      "design tools",
+      "ai",
+      "creative work"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+    "company": "Google Developers",
+    "title": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive",
+    "published": "2026-10-31",
+    "excerpt": "Google Workspace now offers native support for Markdown (.md) files, allowing developers and AI agents to seamlessly collaborate on documentation directly in Google Docs without manual file conversions. This integration preserves native file fidelity for use with Git repositories and developer tools while unlocking standard Docs features like line-level commenting, rendered Drive previews, and tracked version history.",
+    "summary": "Google Docs and Drive can now open, preview, and edit Markdown (.md) files directly, without converting them first. Developers and AI tools can work on the same docs, and comments and version history still work.",
+    "tags": [
+      "google docs",
+      "markdown",
+      "collaboration"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
+    "company": "Google Developers",
+    "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
+    "published": "2026-10-31",
+    "excerpt": "The Agents CLI Extension System enables developers to use frameworks like LangChain, LangGraph, or custom enterprise stacks while retaining a unified deployment and evaluation workflow. It details a first-party LangChain template that scaffolds, runs, and deploys agents without requiring the Agent Development Kit (ADK). Additionally, it demonstrates how platform teams can author custom extensions to enforce policies such as automated software bill of materials (SBOM) scans during deployment.",
+    "summary": "Google's Agents CLI now supports plug-in extensions, so teams can build AI agents with LangChain or other tools, not just Google's own kit. It includes a ready-made LangChain template and shows how companies can add their own rules, such as security checks before deployment.",
+    "tags": [
+      "ai agents",
+      "developer tools",
+      "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/wealth-management-client-onboarding-needs-more-ai",
+    "company": "Databricks",
+    "title": "Wealth Management Client Onboarding Needs More Than AI",
+    "published": "2026-10-30",
+    "excerpt": "Wealth Management client onboarding can stall even when every system has done its job. The document is collected...",
+    "summary": "Databricks argues that signing up new wealth management clients is slow for reasons beyond the software itself. The article is a short teaser, so it does not explain the full fix.",
+    "tags": [
+      "wealth management",
+      "client onboarding",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/deliberate-decisions-and-enterprise-ai-value",
+    "company": "Databricks",
+    "title": "Deliberate decisions and enterprise AI value",
+    "published": "2026-10-30",
+    "excerpt": "AI progress is moving quickly. Expectations are rising, experimentation is spreading...",
+    "summary": "Databricks argues that enterprises need to make deliberate decisions about AI to get real business value. The post is a short teaser, so details beyond this framing are not available.",
+    "tags": [
+      "enterprise ai",
+      "ai strategy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-and-sap-unleash-end-end-data-ai-capabilities-level-enterprise-ai-transformation",
+    "company": "Databricks",
+    "title": "Databricks and SAP unleash end-to-end data & AI capabilities to level up enterprise AI transformation",
+    "published": "2026-10-30",
+    "excerpt": "Today's AI models are more capable than ever. What they still lack is the business...",
+    "summary": "Databricks and SAP announced a partnership to offer data and AI tools together for large companies. The article's teaser says today's AI models lack business context, which the partnership aims to address.",
+    "tags": [
+      "enterprise ai",
+      "data platforms",
+      "partnerships"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
+    "company": "Vercel",
+    "title": "Vercel Daemons can now call services with bindings",
+    "published": "2026-10-30",
+    "excerpt": "Vercel Daemons can now call the services in their deployment through service bindings . Declare the binding on the daemon. It names the target service and the environment variable that receives the service's URL: The daemon calls that URL like any other HTTP endpoint. Vercel handles the internal routing, authentication, and TLS, and the service stays private: Bindings point one way: services can't bind to daemons. Each instance keeps calling the deployment that started it, even after a promotion or rollback. Learn more about daemon service bindings in the docs . Read more",
+    "summary": "Vercel Daemons can now call other services in their own deployment through a simple setup called a service binding. Vercel handles the internal connection and security, and the service stays private.",
+    "tags": [
+      "vercel",
+      "daemons",
+      "cloud services"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
     "company": "Vercel",
     "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free",
@@ -75,6 +179,20 @@
     "summary_version": 2
   },
   {
+    "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
+    "company": "Stripe",
+    "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+    "published": "2026-10-30",
+    "excerpt": "In early 2026, we began moving our vendor payments to Global Payouts, Stripe’s product for paying recipients in 160+ countries. New-market setup fell from six weeks to one, with a 99.9% payout success rate. Here’s what we learned.",
+    "summary": "Stripe moved about $1 billion of its vendor payments onto its own Global Payouts product, which pays people in over 160 countries. Setting up a new country dropped from six weeks to one, and 99.9% of payouts went through.",
+    "tags": [
+      "payments",
+      "stripe"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
     "company": "OpenAI",
     "title": "Making it easier for websites to express AI training preferences",
@@ -85,6 +203,21 @@
       "ai training",
       "web privacy",
       "robots.txt"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/fair-use-benefits-everyone",
+    "company": "OpenAI",
+    "title": "Fair use benefits everyone",
+    "published": "2026-10-30",
+    "excerpt": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+    "summary": "OpenAI shared excerpts from court filings by creators, academics, accessibility advocates, and legal experts. The filings argue that fair use, a legal rule that allows limited use of copyrighted material, supports training AI and encourages new technology.",
+    "tags": [
+      "ai training",
+      "copyright",
+      "legal"
     ],
     "summarized": true,
     "summary_version": 2
@@ -164,6 +297,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+    "company": "NVIDIA",
+    "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+    "published": "2026-10-30",
+    "excerpt": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,... AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions, helping robots understand their surroundings and plan tasks, and coordinating fleets of machines on production lines. These physical AI applications rely on models that perceive, reason, and act within tight memory, power, and latency budgets. Source",
+    "summary": "NVIDIA shows how developers can run AI models directly on devices at the edge, like in cars, robots, and factory machines, using just a few commands. This matters because these devices have limited memory, power, and speed, so the AI has to work within those tight limits.",
+    "tags": [
+      "edge ai",
+      "robotics",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
     "company": "NVIDIA",
     "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
@@ -189,6 +337,21 @@
       "ai agents",
       "ai safety",
       "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+    "company": "NVIDIA",
+    "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
+    "published": "2026-10-30",
+    "excerpt": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference... Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference framework that coordinates model serving across GPU workers. Deploying it on Kubernetes is only a first step. A successful model deployment requires more: GPU drivers, resource allocation, scheduling, networking, and monitoring must all work… Source",
+    "summary": "NVIDIA shares how to set up NVIDIA Dynamo, a tool that splits AI model work across many graphics chips, on Kubernetes, a system for running software on groups of computers. Getting it to run takes more than the first install, since drivers, chip assignment, networking, and monitoring must also work.",
+    "tags": [
+      "ai",
+      "cloud computing",
+      "kubernetes"
     ],
     "summarized": true,
     "summary_version": 2
@@ -395,6 +558,21 @@
       "web hosting",
       "location data",
       "privacy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+    "company": "Vercel",
+    "title": "The fx adapter now runs the harness on the host",
+    "published": "2026-10-29",
+    "excerpt": "The fx adapter for the AI SDK’s HarnessAgent now uses libfx , the TypeScript library for fx. The harness and model requests run in your application’s process, while built-in filesystem and shell operations remain isolated in the sandbox. This simplifies sandbox setup: you no longer need to install fx inside the sandbox, run a sandbox bridge, or expose a sandbox port. Model credentials stay on the host, outside the environment where the agent runs commands. The rewrite also adds: Built-in tool filtering: choose which built-in tools the agent can use Mid-turn steering: send new instructions while a turn is running Structured output: generate responses that match a schema Image tool results: return images to the model through toModelOutput() Sessions can be saved and resumed in a new host process. Update @ai-sdk/harness-fx to the latest version to use the new adapter. Learn more in the fx harness documentation . Read more",
+    "summary": "Vercel's fx adapter for its AI SDK now runs the agent's core logic in your app's own process, while file and command actions stay sandboxed. Setup is simpler, since you no longer install or expose extra pieces inside the sandbox, and model keys stay outside the sandbox.",
+    "tags": [
+      "ai agents",
+      "vercel",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -693,6 +871,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/vercel-plugin-now-available-in-opencode",
+    "company": "Vercel",
+    "title": "Vercel Plugin now available in OpenCode",
+    "published": "2026-10-28",
+    "excerpt": "The Vercel Plugin is now available in OpenCode . The plugin provides guidance on Vercel APIs and recommended patterns, with skills for AI SDK, Vercel Functions, Workflow, and more. It also includes specialist agents for deployment, performance optimization, and AI application design. Use /vercel:deploy to deploy projects and /vercel:env to manage environment variables. The plugin requires OpenCode 2. If you’re using OpenCode 1, upgrade with opencode upgrade --major . To install the plugin, run: Then run /mcps in OpenCode, select vercel , and sign in. This connects the Vercel MCP server so OpenCode can access your Vercel projects, deployments, and logs. Learn more in the Vercel Plugin documentation . Read more",
+    "summary": "Vercel's plugin for the OpenCode coding tool is now available. It gives guidance on Vercel features and includes commands to deploy projects and manage settings, and it needs OpenCode version 2.",
+    "tags": [
+      "developer tools",
+      "deployment",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers-new",
     "company": "Vercel",
     "title": "Vercel Container Registry now supports 2 GB compressed image layers",
@@ -732,51 +925,6 @@
       "monitoring",
       "alerts",
       "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/run-paseo-agents-on-vercel-sandbox",
-    "company": "Vercel",
-    "title": "Run Paseo agents on Vercel Sandbox",
-    "published": "2026-10-28",
-    "excerpt": "Paseo now supports running fx, Codex, Claude Code, OpenCode, and Pi in the cloud with the Vercel Sandbox plugin . You can now start an agent in Vercel Sandbox from Paseo on your laptop, then connect from your phone to control the same session, even when your laptop is closed. Stopping a sandbox saves your files and conversation history so you can pick up where you left off. Active processes stop with the sandbox. Enter your Vercel AI Gateway key once during setup. The plugin reuses it for model requests across your sessions, keeping the key outside the sandbox. To get started, enable plugins in Settings → Plugins in Paseo. Then install the plugin: Learn more in the Sandbox documentation , Paseo plugin listing , and the Paseo related projects documentation . Read more",
-    "summary": "Paseo now lets you run AI coding helpers in the cloud using Vercel Sandbox. You can start one from your laptop and check on it from your phone, even when the laptop is closed.",
-    "tags": [
-      "ai coding tools",
-      "cloud",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/particle-1-is-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Particle-1 is now available on AI Gateway",
-    "published": "2026-10-28",
-    "excerpt": "Particle-1 from Particle AI is now available on AI Gateway . It is post-trained on DeepSeek V4.1 Flash, with a focus on completing software engineering tasks using fewer tokens. Particle describes the gains as shorter reasoning, fewer rounds of trial and repair, and more focused exploration. Use it for debugging, planning code changes, and breaking down multi-step engineering problems. Particle-1 has a 1M-token context window for working with code and extended task histories. Set AI_GATEWAY_API_KEY in your environment. Use particle/particle-1 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest version of Vercel CLI and run setup: Then select particle/particle-1 in the agent. See the coding agents guide for details. Try Particle-1 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Particle-1, a new AI model for writing and fixing code, is now available through Vercel's AI Gateway. Its maker says it uses fewer steps to finish software tasks like debugging and planning code changes.",
-    "tags": [
-      "ai models",
-      "software development",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/fx-is-now-available-in-t3-code",
-    "company": "Vercel",
-    "title": "fx is now available in T3 Code",
-    "published": "2026-10-28",
-    "excerpt": "You can now use fx , our open-source coding agent harness, in T3 Code on web, desktop, and mobile. T3 Code is an open-source control plane for coding agents, allowing you to add agents like fx as providers for your coding sessions. The built-in fx provider supports Supervised and Auto modes, along with the models and skills you already use with fx. Get started by installing fx and setting up your model provider . Then download T3 Code and add fx from Settings > Providers > Add provider . Read more",
-    "summary": "Vercel's open-source coding agent fx can now be used inside T3 Code, a tool for running coding agents on web, desktop, and mobile. You install fx, connect a model provider, then add it as a provider in T3 Code's settings.",
-    "tags": [
-      "coding tools",
-      "ai agents",
-      "open source"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1510,20 +1658,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-    "company": "OpenAI",
-    "title": "Working with academic communities to build scientific understanding",
-    "published": "2026-10-26",
-    "excerpt": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
-    "summary": "OpenAI shared its AI model's results on three hard science problems: the Kakeya conjecture, the Exponential Time Hypothesis, and quantum chromodynamics. The post also explains how other researchers can check these results and build on them.",
-    "tags": [
-      "ai research",
-      "science"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4",
     "company": "Netflix",
     "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
@@ -1624,36 +1758,6 @@
       "ai tools",
       "google",
       "developer docs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
-    "company": "Google Developers",
-    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
-    "published": "2026-10-26",
-    "excerpt": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
-    "summary": "API Gateway now supports live, always-open data connections such as streaming and WebSockets, in preview, without changing existing API specs. This lets live and AI-powered apps run through the gateway while keeping login checks and usage limits in place.",
-    "tags": [
-      "cloud apis",
-      "streaming",
-      "google cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/",
-    "company": "Google Developers",
-    "title": "Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK",
-    "published": "2026-10-26",
-    "excerpt": "The open-source Agent Development Kit (ADK) and gemini-3.8-live enable developers to build responsive voice agents by implementing non-blocking tools in Python. Developers can use streaming tools to yield progress updates or background execution patterns to keep conversations fluid during long-running backend queries. Additionally, configuring response scheduling behaviors such as WHEN_IDLE, INTERRUPT, or SILENT gives developers precise control over when and how tool results are delivered into the conversation.",
-    "summary": "Google shows how to build a voice agent with its open-source Agent Development Kit that keeps talking during slow tasks. It uses background or streaming tools so the conversation doesn't freeze while waiting for results.",
-    "tags": [
-      "voice agents",
-      "ai tools",
-      "python"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2190,51 +2294,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/deploy-rfd4-proteina-model-databricks",
-    "company": "Databricks",
-    "title": "Deploy RFD4-Proteina on Databricks",
-    "published": "2026-10-21",
-    "excerpt": "Bring RFD4-Proteina to your research data with AI-assisted development and serverless NVIDIA GPU compute....",
-    "summary": "Databricks shows how to run RFD4-Proteina, a protein design model, on its platform using NVIDIA graphics chips that start up on demand. The goal is to let researchers work with their own data without managing servers.",
-    "tags": [
-      "databricks",
-      "protein design",
-      "gpu computing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/databricks-ai-runtime-nvidia-train-fine-tune-models",
-    "company": "Databricks",
-    "title": "Databricks AI Runtime and NVIDIA make it easier to customize open models with enterprise data",
-    "published": "2026-10-21",
-    "excerpt": "GPUs power today's most advanced AI workloads, from cutting-edge language models...",
-    "summary": "Databricks has launched AI Runtime, working with NVIDIA, to help companies train open AI models on their own data. The teaser suggests it uses powerful graphics chips (GPUs) to make this customization easier.",
-    "tags": [
-      "ai models",
-      "databricks",
-      "gpus"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/ai-runtime-generally-available",
-    "company": "Databricks",
-    "title": "AI Runtime is Generally Available",
-    "published": "2026-10-21",
-    "excerpt": "Today, we’re excited to announce the General Availability of AI Runtime (AIR), bringing...",
-    "summary": "Databricks has released AI Runtime (AIR) to all users, ending its testing phase. The teaser does not give details on what it does for users.",
-    "tags": [
-      "databricks",
-      "ai tools",
-      "software releases"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
     "company": "Anthropic",
     "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
@@ -2407,21 +2466,6 @@
       "protein design",
       "ai",
       "drug discovery"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
-    "company": "NVIDIA",
-    "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
-    "published": "2026-10-21",
-    "excerpt": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,... AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute, networking, storage, power, cooling, and software online as one productive unit. In a conventional data center build, teams must first select the site, design power and cooling for the deployment, lay out the data center… Source",
-    "summary": "NVIDIA describes its DSX POD approach for building AI data centers faster. Before AI work can start, many parts like computers, networks, power, and cooling must all be set up together, and this approach aims to make that process quicker and more predictable.",
-    "tags": [
-      "ai data centers",
-      "nvidia",
-      "infrastructure"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2706,21 +2750,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
-    "company": "NVIDIA",
-    "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
-    "published": "2026-10-19",
-    "excerpt": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to... NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to deliver peak performance for tile-level GPU programming. By abstracting thread- and warp-level scheduling behind high-level, tile-centric primitives, cuTile enables you to write GPU kernels in Python while compiler optimizations automatically… Source",
-    "summary": "NVIDIA shared a post about CUDA Tile, a Python tool for writing fast programs that run on NVIDIA graphics chips. It lets developers write this code with simple building blocks, while the software handles the low-level speed details. The post's details here are limited to a teaser.",
-    "tags": [
-      "gpu programming",
-      "python",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
     "company": "Cloudflare",
     "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
@@ -2947,10 +2976,13 @@
     "title": "Create, ship, and manage data-backed websites with Payload in Figma",
     "published": "2026-10-15",
     "excerpt": "With Payload in Figma, teams can go from prototype to production together, managing their content and data all in one place.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma announced Payload, a feature that lets teams build websites from designs and manage their content and data in one place. The teaser says this helps teams move from prototype to live site together.",
+    "tags": [
+      "web design",
+      "content management"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/introducing-figma-specs/",
@@ -2958,10 +2990,13 @@
     "title": "Introducing Specs: Markdown as a medium",
     "published": "2026-10-15",
     "excerpt": "We’re launching Specs, a container for your context that lives on the Figma canvas.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma is launching Specs, a new tool that lets you keep notes and context for a project directly on the Figma canvas. The teaser does not give more detail about how it works.",
+    "tags": [
+      "design tools",
+      "figma"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/figma-deepens-investment-in-india/",
@@ -2969,10 +3004,14 @@
     "title": "Figma deepens investment in India with largest international Config yet",
     "published": "2026-10-15",
     "excerpt": "Building off the Config momentum in India, Figma is launching an education program, new research, and an MCP partnership with Sarvam.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma is hosting its biggest Config event yet in India and launching an education program, new research, and a partnership with Sarvam, an AI company. The teaser suggests Figma is growing its investment in India.",
+    "tags": [
+      "design tools",
+      "india",
+      "partnerships"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/design-together-with-code-layers/",
@@ -2980,10 +3019,13 @@
     "title": "Design together with code layers on the canvas",
     "published": "2026-10-15",
     "excerpt": "Today, code layers moves into open beta. Now teams can explore and build prototypes backed by code on the canvas.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma has moved its code layers feature into open beta. Teams can now build prototypes on the design canvas that are backed by real code.",
+    "tags": [
+      "design tools",
+      "prototyping"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/build-by-design/",
@@ -2991,10 +3033,14 @@
     "title": "Build by design: New workflows for new ways of building",
     "published": "2026-10-15",
     "excerpt": "Here’s a look at everything we launched today to bring teams and agents, and the design, code, and context they work with, into Figma’s full-stack creative canvas.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma announced a set of new features that bring design, code, and the context around them together on its creative canvas, including tools that let teams and AI agents work side by side. The teaser gives few specifics beyond that.",
+    "tags": [
+      "design tools",
+      "ai agents",
+      "figma"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
@@ -3002,10 +3048,14 @@
     "title": "An update on independent evaluators",
     "published": "2026-10-15",
     "excerpt": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic is letting outside evaluators from METR, a nonprofit, get employee-like access to its AI systems to check their safety. The company is also in early talks with other groups, including Hugging Face.",
+    "tags": [
+      "ai safety",
+      "anthropic",
+      "independent testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/real-time-stripe-data-postgres",
@@ -3013,10 +3063,13 @@
     "title": "Sync real-time Stripe data to Postgres with Stripe Data Pipeline",
     "published": "2026-10-15",
     "excerpt": "Applications rely on current Stripe data to fulfill orders, update customer accounts, and manage access to paid features. Until now, developers have had to build and maintain custom integrations to keep application databases in sync with Stripe. We’re introducing real-time sync to Postgres for Stripe Data Pipeline, which lets them keep databases current without having to build custom integrations.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe now lets developers keep their own Postgres databases updated with live Stripe data automatically. Before this, teams had to build and maintain their own custom links to do it.",
+    "tags": [
+      "payments",
+      "databases"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
@@ -3024,10 +3077,14 @@
     "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
     "published": "2026-10-15",
     "excerpt": "Working with outside collaborators can add more work for a repository owner. You need to confirm who still needs access, change permissions as projects evolve, and archive repositories once they’ve served their purpose. To keep up, repository owners need to track collaborators, deadlines, and follow-ups for each repository. As a project grows, that manual housekeeping becomes harder to keep up with and easier to defer. We faced this problem in a shared organization where GitHub employees (“Hubbers”) collaborate with customers and partners on product trials and professional services engagements. Our answer was Evergreen , a GitHub App built with native GitHub features. The workflows below exhibit a pattern you can adapt for your own organization. Meet Evergreen Evergreen is a GitHub App that automates organization hygiene through two workflows: Outside collaborator access reviews. Every quarter, each repo’s outside collaborators are reviewed. Keep who you need, and everyone else is removed. Stale repository detection and archival. Repos with no human activity past a threshold get flagged, warned, and (if still untouched) archived. Two design principles shaped everything: Fail secure. If nobody responds to an access review, we don’t leave access in place and hope for the best. We revoke it. The safe outcome is the default outcome. Never destroy anything. Evergreen will never delete a repository or its contents. Archived repos are recoverable, and every access change is written into the repo’s tracking issue, so reverting a mistake is as easy as a copy-paste to Copilot. How it works: One brain, many hands Under the hood, Evergreen is a small Go webhook server running in a container. But the interesting part is the choreography . Every moving piece is a stock GitHub feature: a GitHub App, scheduled actions, webhooks, issues, custom properties, and plain files in a repo. Nothing exotic to reinvent. A controller that keeps time A dedicated controller repo acts as Evergreen’s clock and its memory. Four scheduled GitHub Actions workflows fire repository_dispatch events on a quarterly cadence, and the app wakes up and does the work: Day Workflow What happens 1st Stale repo review Flag repos with no recent human activity, open a warning issue 8th Access review Snapshot outside collaborators, open a checklist issue per repo 16th Stale repo cleanup Archive repos still stale after the grace period 23rd Access cleanup Auto‑revoke access for any review left unanswered Reviews open two weeks before their cleanup runs, and there’s a hard grace period baked in so a stray manual run can never fast‑forward the guillotine. Each workflow also supports workflow_dispatch , so we can trigger any step by hand as needed. State you can git blame Evergreen tracks every repo’s status as a JSON file (one per repository) committed to the controller repo under state/repos/<repo_id>.json . The snapshot of who had access, when the review opened, the deadline, who decided, and what happened all lives there. Here’s a completed review where a Hubber kept Alice’s access and let Bob’s lapse: { \"repo_id\": 123456789, \"full_name\": \"the-org/acme-trial\", \"last_seen_at\": \"2026-04-13T00:05:00Z\", \"access_review\": { \"deadline\": \"2026-04-27T00:00:00Z\", \"status\": \"renewed\", \"collaborators_at_open\": [ { \"login\": \"alice\", \"name\": \"Alice Example\", \"permission\": \"admin\" }, { \"login\": \"bob\", \"name\": \"Bob Example\", \"permission\": \"write\" } ], \"renewed_logins\": [\"alice\"], \"decided_by\": \"carol-hubber\", \"decided_at\": \"2026-04-15T16:42:10Z\", \"tracking_issue\": { \"repo_id\": 123456789, \"number\": 42 } }, \"staleness\": { \"last_activity_at\": \"2026-04-15T16:42:10Z\", \"warned_at\": null, \"archive_deadline\": null, \"status\": \"active\", \"tracking_issue\": null } } The best part: because state is just files in git, the commit history is the audit trail. Want to know why someone lost access last spring? git log the state file. There’s no separate database or bespoke audit pipeline to track. Issue‑ops, eve",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub built Evergreen, an automated tool that runs every quarter to check which outside collaborators still need access to each repository and removes access nobody confirms. It also flags unused repositories and archives them if they stay inactive, without ever deleting anything.",
+    "tags": [
+      "github",
+      "access control",
+      "automation"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/",
@@ -3035,10 +3092,14 @@
     "title": "2026 World Cup: Breaking Records, Spiky Charts and Reliability at Scale",
     "published": "2026-10-15",
     "excerpt": "Every four years, the World Cup becomes the largest planned stress test of our infrastructure. This year it also set an all-time record! There are a few moments throughout the year, like New Years Eve, that really let us see the collective impact of everything we’ve built — but none are bigger than the quadrennial World Cup tournament. The 2026 World Cup broke records across messaging, video, recommendations, and networking at the same time. Some highlights: WhatsApp: More than 30 million messages per second during the July 19 final (Argentina vs. Spain), 1.23x the peak of New Year’s Eve 2026 and an all-time platform record. The previous record had already fallen 12 days earlier, during the Round of 16 match between Argentina and Egypt, at 29 million messages per second. Messenger, Threads, and Instagram Direct: 49 million messages per minute at peak. Instagram: Recommendation system traffic up to 80% higher week-over-week. Final-squad players collectively added +213.6 million activated followers — a 6.6% increase — with combined followings surging from 3.26 billion to 3.47 billion. Live video: Watch time spiked +90% on Instagram and +242% on Facebook, versus the July baseline. Threads : 1.5 billion impressions on tournament-tagged posts, reaching about 15 million people daily and peaking at 25 million on July 6. Facebook : 80 million posts mentioning the World Cup. Traffic Followed the Breaks, Not the Ball Every World Cup match caused surges in traffic. During the final, for example, traffic surged +46% in about four minutes at the end of regular time, and +57% in about 15 minutes at the final whistle. But by lining game events up against global egress traffic we discovered a striking pattern – surges in sharing were primarily happening during breaks (hydration breaks, halftime, extra time, the final whistle, the awards ceremony). The end-of-regulation whistle produced the single biggest peak of the tournament. It wasn’t the gameplay that moved our charts. It was the conversations after it. The world came to Meta to watch the game and to share what it made them feel. Every capacity decision below follows from that one pattern. Layered Systems, No Manual Intervention Those spikes were absorbed by systems built for exactly this. Taiji balanced load across datacenters, Katran and Proxygen handled L4/L7 traffic distribution, our global load balancing system routed users to the best-positioned edge, and AutoScaling provisioned capacity on demand. Region-Specific Capacity Months before kickoff, Meta’s edge teams analyzed network capacity and worked closely with ISP partners so that upgrades landed where they would most improve quality of experience for end users. That targeted pre-build is now permanent capacity that will keep serving demand long after the tournament. Instagram: Preparing for 39 Consecutive Days of Surges For Instagram, the tournament meant 39 straight days of traffic spikes as billions of fans checked scores, posted Stories, and flooded Feed during breaks. Machine learning inference, Feed serving, Stories, Explore, and data infrastructure all had to absorb it without degrading the experience. During the final, halftime Instagram Feed traffic rose 76% above the previous day in the minute the match ended, and stayed about 21% above for the following two hours. Our approach rested on four things, deployed incrementally as the tournament moved from group stage to final. Capacity buffers: Our products went into the tournament with sufficient capacity, which meant real buffers were available to allocate. We pre-provisioned significant additional capacity across all serving tiers so that spikes never had to wait on autoscaling to catch up. These dedicated buffers were our single most effective lever of the tournament. Country-level graceful degradation: For high-risk matches, we shed non-critical background load in the top-traffic nations (Brazil, Argentina, India, Indonesia, Spain) to protect core functionality. Cascade",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta reports that its apps set new traffic records during the 2026 World Cup, with WhatsApp hitting over 30 million messages per second at the final. Most of the spikes came during breaks and after games, when people talked about the match, and Meta added spare computing capacity ahead of time to keep the apps running smoothly.",
+    "tags": [
+      "world cup",
+      "social media",
+      "reliability"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
@@ -3046,10 +3107,14 @@
     "title": "How Meta Built Forum With AI-Native Engineering",
     "published": "2026-10-15",
     "excerpt": "Meta’s newest app, Forum, is for anyone who wants to go deeper into the conversations in their Facebook groups. To build Forum, Meta engineers adopted a whole new way of working by bringing an AI agent into the development cycle. We’re sharing insights into what it took to build Forum with agentic AI: how we adapted the codebase, tested frameworks and internal tooling for agentic execution, what worked, and what didn’t. Forum is a standalone Groups app that a small team built from scratch. It’s also where we tested a different way of working: treating an AI agent as a participant in the engineering process rather than a faster way to type. That experiment needed a definition of success, and ours wasn’t code volume. We measured verified, production-ready outcomes — changes that build, pass tests, and survive review. From Human-In-The-Loop to Human-On-The-Loop Pointing AI at the coding step alone doesn’t change much. Our results compounded as we extended the approach to the stages around implementation — planning, building, testing, and verification. The clearest way to see the shift is in who owns each step. With human-in-the-loop , the engineer drives every step and the AI assists inside it by autocompleting a function, suggesting a fix, or answering a question. Each iteration advances at the pace of the person driving it. With human-on-the-loop , the agent runs the iteration itself — plan, implement, build, test, correct, repeat — while the engineer sets the goal, watches the run, steps in when it drifts, and approves the result. The person’s job moves from executing the steps to owning the outcome and holding the quality bar. This is the target we are driving toward, not a finished state: some stages run autonomously today, while others still keep an engineer in each iteration. When the engineer supervises, work stops being strictly sequential. Cycles that used to run one at a time can overlap, and an engineer’s time goes to direction and judgment rather than to sitting through the loop. But that only holds if what comes back can be trusted. Without verification, AI-generated code creates a familiar problem — plausible output that no one has confirmed actually works, which an engineer then has to read, debug, and often discard. Weak signals don’t remove the constraint; they move it from writing code to reviewing code that looks finished and isn’t. So we set the bar at verification rather than compilation. Compiling isn’t the finish line — a task is complete only once automated tests and visual checks have passed. Agents check their own work before an engineer sees it, which means what reaches review is a smaller set of higher-confidence results rather than a pile of output to sift through. Less gets generated, and less gets discarded. Every shipped outcome still carries an engineer’s sign-off; our effort went into making that sign-off fast and well-evidenced, with build results, test outcomes, and recorded verification sessions attached to the change. With the engineer outside of every cycle, the loop has to run safely on its own. Four capabilities make that possible: Planning as technical specification: Agentic execution requires extreme precision. Ambiguity that an engineer might resolve through intuition results in agent failure. We invested in rigorous upstream decomposition and machine-readable context, which tightened the engineering loop for engineers and agents alike. Automated verification inside the loop is the force multiplier: We integrated automated pass/fail signals — build status, unit tests, and UI spec matching — directly into the agent loop. This enabled asynchronous development producing ready-to-review pull requests with pre-populated test plans and recorded verification sessions. Verification is the hard part to get right, and how much we can safely hand to the loop is gated by how much we can trust the verifiers. Simulated user testing with agents: We deployed navigation agents that interact with the li",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta built its new Groups app, Forum, with a small team that let an AI agent run much of the work: planning, coding, and testing. The agent checks its own work before an engineer reviews and signs off, so less output gets thrown away.",
+    "tags": [
+      "ai",
+      "software development",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/",
@@ -3057,10 +3122,14 @@
     "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
     "published": "2026-10-15",
     "excerpt": "Ke Mao, Mark Harman, and Yue Jia have been recognized with the ACM SIGSOFT International Symposium on Software Testing and Analysis ( ISSTA) 2026 Most Influential Paper Award for their 2016 research, “ Sapienz: multi-objective automated testing for Android applications. ” The recognition celebrates a decade of impact from work that began at University College London and went on to become testing infrastructure at Meta. Sapienz automatically tests apps to find crashes and helps engineers reproduce them in fewer steps, making failures easier to investigate. The original research combined three goals: exploring more of an app, finding more crashes, and reducing the number of steps needed to trigger them. In its evaluation on 1,000 popular Google Play apps, Sapienz found 558 previously unknown crashes. Within 17 months of publication, Sapienz was deployed at scale at Meta. Today, it runs millions of tests daily across Meta’s platforms, surfaces thousands of unique crashes each week, and helps safeguard hundreds of app releases each month, supporting product reliability and quality. Sapienz’s applications quickly expanded beyond crash detection. By using test accounts with synthetic conversations, it became the app-exploration engine for dynamic taint analysis at WhatsApp. We shared Sapienz’s journey in October in our ISSTA 2026 keynote delivered by Ke Mao, “Finding the Bugs Users Would Find: From Sapienz to Autonomous Agents.” Beyond detecting crashes, large language model (LLM) agents can now explore apps and reason about whether their behavior matches what users should expect, extending automated testing from reliability to functional correctness and, increasingly, automated repair. Sapienz’s core ideas of multi-objective exploration and actionable fault revelation carry over directly. A decade on, those founding principles still hold true. As part of Meta’s overall privacy and risk management program, this work reflects our ongoing efforts to ensure privacy considerations are at the heart of our product development process, helping teams identify risks earlier in the development lifecycle, apply safeguards more consistently, and build privacy protections into each new innovation from the start. The post Sapienz Receives ISSTA 2026 Impact Paper Award appeared first on Engineering at Meta .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta's Sapienz tool, which automatically tests apps to find crashes, won a 2026 research award for its 2016 paper. Today it runs millions of tests daily across Meta's apps, helping catch thousands of crashes each week before app updates ship.",
+    "tags": [
+      "app testing",
+      "bug finding",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
@@ -3068,10 +3137,14 @@
     "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
     "published": "2026-10-15",
     "excerpt": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind describes using its Antigravity tool to speed up the search for new antimicrobial peptides, small molecules that could help fight germs. The post is short, so details of the results are not given.",
+    "tags": [
+      "ai",
+      "medicine",
+      "drug discovery"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
@@ -3079,10 +3152,14 @@
     "title": "A fully programmable secure web gateway",
     "published": "2026-10-15",
     "excerpt": "Every secure web gateway on the market works the same way: traffic matches a condition. A terminal action fires. Allow, Block, Isolate, Log. This model has been the foundation of network security for nearly 30 years, and it handles the common case well. But it has a ceiling, and customers with complex environments hit that ceiling regularly. Earlier this year, we shared our vision to build a truly programmable SASE platform . We also outlined how the term programmability has become diluted by the security industry. Most vendors claim programmability because they have public APIs, Terraform providers, webhooks, and alerting. Cloudflare offers all of those things too, but that’s not enough. True programmability means running your own code — arbitrary logic that you wrote for your specific environment — inline in the policy evaluation path, at the moment a security decision is made. Today, we’re excited to announce Cloudflare is bringing true programmability to Cloudflare Gateway and DLP (Data Loss Prevention) by integrating it with the entirety of our edge computing platform. We are releasing a new type of Gateway action, Forward , and custom validation functions, available to all Zero Trust plans. These capabilities allow you to use a Cloudflare Worker to transform and manipulate traffic, or to bring your own data to policy evaluation. The trade-off that every security team faces For as long as firewalls have existed, businesses have faced a binary choice. You can maintain your own security detection engine — your own firewall, your own proxy infrastructure — with high maintenance overhead and low portability, in exchange for maximum customization. Or, you can accept the constraints of a vendor, offloading the considerable maintenance cost, at the expense of flexibility to solve problems specific to your environment. In six years of building Cloudflare Gateway, we have heard from thousands of customers struggling with this trade-off. A security team migrating access controls for a critical internal application needs to inject HTTP headers based on JSON Web Token (JWT) claims from their identity provider. The data exists in the request context, but Gateway cannot read the JWT and write the header. So the team stands up a pool of NGINX proxies solely to perform this transformation. That infrastructure now must be patched, monitored, and secured... indefinitely. Another team wants a Slack notification the moment an employee signs up for a new SaaS service. The policy engine can detect the sign-up event, but it can only Allow or Block. So the team builds a Logpush-to-SIEM-to-Slack pipeline with a 5 to 15 minute delay and no guarantee of delivery. And piles on yet another piece of infrastructure. Dozens of enterprise customers have asked for warning pages that prompt users for justification before allowing access to sensitive destinations. Most then want to customize the ensuing behavior based on additional context about who the user is and the level of access requested. But serving customized, dynamic responses from a policy engine is exceedingly difficult. We have offered customers many extension points over the years. But along with every other firewall vendor, it is impossible to build features to cover threat vectors as quickly as they can appear. However, we also recognize that the best solutions are those which are infinitely extensible to your environment. Why only Cloudflare can solve this problem Cloudflare is not just a firewall, or a secure web gateway, a content delivery network, or an edge service. Cloudflare is a composable compute platform. Cloudflare Workers already allows customers to run complex logic on our network edge from any of our 330+ locations worldwide. Cloudflare Gateway already evaluates and enforces security policy on user traffic at those same locations, on the same machines, in the same data centers. Only Cloudflare runs both distributed customer compute and a full-featured secure web gateway and fir",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare is letting customers run their own code inside its web security filter, so security rules can do custom work like adding login details to traffic or asking users for a reason before opening sensitive sites. Previously, teams had to build separate tools for these jobs, which added cost and delay.",
+    "tags": [
+      "network security",
+      "cloud security",
+      "cloudflare"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://blog.cloudflare.com/deploy-with-void/",
@@ -3090,10 +3167,14 @@
     "title": "Deploy with Void",
     "published": "2026-10-15",
     "excerpt": "VoidZero's tools such as Vite, Vitest, Oxc, and Rolldown — bundled in one toolchain as Vite+ — have made frontend development faster, but building full-stack applications requires more than just a tooling stack. These applications need server routes, databases, local development environments, and a fast and easy way to deploy ideas to production. We’re excited to open-source three new products that bring server routing, typed data access, and Cloudflare deployment into a unified Vite workflow. Void Platform: A shared deployment platform for teams to host Void apps on Cloudflare. Void SDK: A composable JavaScript SDK for building full-stack apps with Vite. Void CLI: A CLI for provisioning resources and deploying Vite apps to Cloudflare. The CLI deploys apps built with the SDK to the Platform. All three products are open-sourced as a single JavaScript package and Vite plugin that you can install via npm install void . With Void , you can build your server and client together, carry types from your database to the UI, and let Void automatically provision the Cloudflare resources that your app uses. We originally set out to build a single, private platform for all users to deploy apps to. After VoidZero joined Cloudflare , we adjusted our direction to open-source the platform and allow anyone to install because we saw a growing need: companies want to encourage vibe-coded internal apps, but are concerned about security and do not want to give cloud access to every employee . Void addresses this problem. Void Platform: a cloud platform for your company The Void Platform is fully open source and you can fork it and adapt it to your needs by integrating your company's systems, customize deployment workflows, build features for your customers, or make it work on other deployment platforms. Use the platform as it is, contribute improvements upstream, or fork it and build only the features you need. The open source code can be used out of the box or as a starting point. As an admin of a Void Platform, you control access, set resource limits, inspect deployments and usage through the Void CLI or admin dashboard, and provide guardrails so everyone else can ship serious and vibe coded apps to the same shared platform. By installing a Void Platform, your team or customers have a shared deployment environment in your Cloudflare account on top of Workers for Platforms . Void Platform enables: Faster prototyping . Your team can quickly build prototypes, deploy them, and share working apps for feedback, without setting up a separate Cloudflare account or provisioning resources for every project. This reduces the time to ship internal apps from days/weeks to minutes. Non-technical teams building . This workflow also lets teammates who do not normally write code work with coding agents to build and share their own apps. A designer can create an interactive prototype, or an operations teammate can build an internal dashboard, then deploy it to the same platform. All with the right security measures in place. To self-host a Void platform, you need: A Cloudflare account with Workers for Platforms and R2 enabled A PostgreSQL database An account with your chosen login provider A domain for your apps Then install Void as a cloud platform by running a single command: Once your platform is set up, approved users can connect to it via the Void CLI for deployment. void connect https://api.orange-company.dev A user builds their app using the Void SDK, which is what powers Void Platform benefits like authentication, framework detection, resource provisioning, and more. In other words, Void Platform only works because of the accompanying SDK and CLI. Void SDK: zero-config infrastructure Void turns a Vite app into a full-stack Cloudflare Workers app. You or your agents can write code and Void will automatically infer resource bindings and provision resources such as databases, queues, or AI bindings during deployment. To get started, add Void as a Vite plugin:",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Cloudflare has open-sourced Void, a set of tools for building full-stack web apps with Vite and deploying them to Cloudflare. A company can host its own shared platform, so employees can quickly build and share internal apps without each needing their own cloud access.",
+    "tags": [
+      "web development",
+      "cloud hosting",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/news/singapore-office-opening",
@@ -3101,10 +3182,14 @@
     "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
     "published": "2026-10-14",
     "excerpt": "Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic has opened a new office in Singapore. It also signed an agreement with the Singapore government to help people use AI safely and responsibly.",
+    "tags": [
+      "ai",
+      "singapore",
+      "government"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.anthropic.com/news/2026-us-midterms",
@@ -3112,10 +3197,13 @@
     "title": "Preparing for the 2026 US midterms",
     "published": "2026-10-14",
     "excerpt": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Anthropic says it has kept strengthening its election safeguards ahead of the 2026 US midterm elections. The post is a short teaser, so details of the new measures are not given here.",
+    "tags": [
+      "elections",
+      "ai safety"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
@@ -3123,10 +3211,13 @@
     "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
     "published": "2026-10-14",
     "excerpt": "General Science",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research has published a post titled \"Research@ 2026: 10 ways we're amplifying human ingenuity,\" which outlines ten areas where the team plans to apply its work. The available text is only a short teaser, so the specific details are not clear.",
+    "tags": [
+      "google research",
+      "ai research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -3134,10 +3225,14 @@
     "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
     "published": "2026-10-14",
     "excerpt": "Earth AI",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research has introduced Earth AI, a set of tools that use AI agents to work with geographic and satellite data. The goal is to help tackle large environmental and planet-wide problems.",
+    "tags": [
+      "ai",
+      "earth science",
+      "google research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/",
@@ -3145,10 +3240,13 @@
     "title": "Analyzing technical documents with Deep Review",
     "published": "2026-10-14",
     "excerpt": "General Science",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research has introduced Deep Review, a tool for analyzing technical documents. The article text provided is only a short label, so the details of how it works are not known.",
+    "tags": [
+      "research tools",
+      "technical documents"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4",
@@ -3156,10 +3254,14 @@
     "title": "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads",
     "published": "2026-10-14",
     "excerpt": "By Oleksii Tkachuk , Rajiv Shringi , Chris Lohfink , Abe Ratnofsky , Kartik Sathyanarayanan Introduction In an earlier post , we introduced the TimeSeries Abstraction, our high-throughput, low-latency platform designed to store and query temporal event data at scale. It has since become the operational backbone for Netflix’s largest datasets, which now span multiple petabytes. However, managing such large datasets in hot storage, tuned for low-millisecond latency access , is not cheap. At Netflix, cost-efficiency is a continuous discipline rather than a temporary initiative. This post shares two solutions that significantly reduce storage costs by continuously moving older, less frequently accessed data into cheaper object storage: Solution 1 : Uses Apache Kafka and Flink to stream data directly to S3 Solution 2 : Leverages Cassandra backups in S3 and pluggable Memtables to read data directly from S3 We’ll start with the Kafka/Flink-based design, then describe how we evolved to a native Cassandra-based cold tier. Challenges As Netflix’s TimeSeries datasets have expanded, we’ve encountered several compounding challenges: Growing retention demands : Users often push for increasing data retention to serve a broader range of use cases, which in turn increases the storage costs. Escalating costs : Maintaining massive, dense clusters for infrequently accessed historical data is prohibitively expensive. Sparse historical access: Most queries target recent events, but older data must remain readily available for occasional audits and investigations. Operational strain : High storage density on hot nodes complicates scaling, deployment, and cluster stability. Latency requirements : Even historical data sometimes requires sub-second query performance for internal tooling and analysis. This creates a clear opportunity: keep the most recent data on fast storage and migrate older, rarely read data to cheaper storage while preserving a consistent API . Done well, this can meet user and operational needs while greatly reducing our infrastructure spend. TimeSeries Abstraction Before we dive into the cold storage solutions, here is a quick recap of how TimeSeries partitions its dataset into multiple tables, each covering a window of time we call Time Slices . Time Slices and Immutable Windows This enables several key optimizations, most notably allowing a table to become immutable once it crosses the write boundary, which lets us safely apply further optimizations. For more details, refer to our previous post . This slice information is critical and is maintained in a dedicated metadata table: Time Slice Metadata Storage Creating new Time Slices and maintaining their metadata is a primary responsibility of the TimeSeries control plane. The TimeSeries data plane uses this information to correctly route the read and write traffic to the provisioned tables. TimeSeries Data and Control Plane With that background, let’s look at the different solutions we built for data tiering. Solution 1: Streaming with Apache Kafka and Flink Our first solution followed a familiar streaming pattern using Apache Kafka and Flink, where we streamed data to S3 in realtime while simultaneously persisting it to Cassandra. Streaming with Apache Kafka and Flink Getting Data Into S3 Efficiently To optimize data streaming to S3, the system hash-partitions Time Series IDs into buckets. This partitions the stream and lets dedicated Flink tasks handle each bucket, ultimately batching and reducing the write throughput to S3. Flink workers batch events into Parquet files grouped by event time within the hour. These files are great for high-throughput streaming writes, but not for low-latency reads. Enter the Compaction job. Compaction Job to Optimize Reads The compaction job runs daily and merges small Parquet files into a single, optimized daily Parquet file per namespace. The job further optimizes the Parquet files in the following ways: Small Row Groups : Creates small (4–8 M",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix moved older, rarely read event data off expensive fast storage and into cheaper cloud storage to cut costs. It describes two approaches: streaming data to S3 with Kafka and Flink, and later reading old data straight from Cassandra backups in S3.",
+    "tags": [
+      "cloud costs",
+      "data storage",
+      "netflix"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4",
@@ -3167,10 +3269,14 @@
     "title": "Running Apache Spark experiments in my sleep (and on a plane)",
     "published": "2026-10-14",
     "excerpt": "By Prashanth Gedde Narayanaswamy As one of Netflix’s largest and critical data pipelines, member-sessionizer consolidates tens of billions of hourly client events, encompassing user taps, playbacks, and engagement signals, into individual viewing sessions per profile. A quick two-week tuning effort spiraled into two months when standard approaches hit a wall. Because the failures only happened at full production scale, each test took hours, limiting me to just three or four attempts daily. The turning point was changing the goal: instead of trying to speed up a single run, I built a way to run and monitor multiple tests at once and track every result. That mindset led to an unconventional setup: kicking off five Spark jobs at once and monitoring them over spotty inflight Wi-Fi during a day-long trip home, while cloud servers handled the actual heavy lifting. This post covers how I set up that loop, along with the Spark bottlenecks and memory quirks I uncovered along the way. The Scale Dilemma: Small Samples Don’t Catch Scale Bugs Standard engineering wisdom says that you should isolate bugs on small datasets to iterate quickly. That works for standard software bugs, but it fails completely for big data performance bottlenecks. While upgrading our sessionization pipeline from a legacy logging architecture to a modern platform, the new job hit critical failures, including executor Out-Of-Memory (OOM) errors, severe shuffle spillage, and thousands of stage retries. None of these issues could be reproduced using sampled data. The failures only triggered at full production scale because of data skew: an idle Netflix tab left streaming overnight generates tens of thousands of telemetry events, while a typical session only produces a handful. A standard 1% sample misses these extreme long-tail sessions entirely. To catch the real bugs, every test run had to execute against a full hour of unsampled production data, along with all the deployment overhead that came with it. The Strategy: Branch-Driven Isolation The biggest win came from a feature in Dataflow , Netflix’s command-line tool for building, testing, and deploying data pipelines. It supports branch-driven development : our workflows run on Maestro ( Netflix’s workflow orchestrator), which schedules and executes the jobs, and they already use a sanitized branch name (the ${dataflow.sanitizedbranch} placeholder). So if I push a branch like pgn/cap-experiment , then the deployed workflow, its tables, and its run namespace all get tagged with that branch name. This eliminates collisions with team members or between my own concurrent runs. With that isolation in place, the model was simple: one branch is one independent experiment . I parameterized the scheduler (cap size, shuffle partitions, heavy-device threshold, feature flags) and gave each variant its own branch and output table. Instead of queuing five sequential tests over 10 hours, I fired off five variants simultaneously against the same time window. Total execution time dropped from the sum of all runs to just the length of the single slowest job. Managing per-branch tables added zero overhead. Dataflow provisions and updates tables automatically from declared schemas without manual DDL. Whenever I modified the event bag structure between experiments, the table schema updated seamlessly, no CREATE TABLE or ALTER TABLE required. The only real constraint was cluster contention. Because these heavy Spark jobs shared resources with the rest of the company, peak hours sometimes limited me to two concurrent runs instead of five. But even running two or three jobs in parallel was a massive improvement over single-threaded debugging. The key takeaway: don’t focus on making a single multi-hour run faster, build a setup where you can run many experiments simultaneously without them stepping on each other. While the previous chart shows the time savings, the architecture that enables this isolation looks like below: How an AI Agent ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix engineer Prashanth Gedde Narayanaswamy tuned a huge data pipeline that groups viewing events into sessions. He sped up testing by running five full-scale experiments at once, each on its own branch, instead of one at a time.",
+    "tags": [
+      "data pipelines",
+      "apache spark",
+      "netflix"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/netflix-conductor-the-next-chapter-41ad21067649?source=rss----2615bd06b42e---4",
@@ -3178,10 +3284,14 @@
     "title": "Netflix Conductor: The Next Chapter",
     "published": "2026-10-14",
     "excerpt": "Netflix Conductor : The Next Chapter by Aravindan Ramkumar on behalf of the Conductor team Conductor is the workflow orchestration engine Netflix uses to stitch micro-services into reliable, observable business processes. If you’ve followed Conductor from the outside, the last thing you heard was probably the note on its GitHub repository : Netflix discontinued maintenance of Conductor OSS to refocus its resources on the internal fork. That announcement marked the end of the open-source chapter, and from the outside it may have looked like the end of the story. It wasn’t. Internally, Conductor never slowed down. If anything, it grew faster, and the demands of that growth pushed us to rebuild it from the ground up. This post is the answer to the natural question that announcement leaves open: what happened to Conductor after that? A lot, it turns out. The clearest way to put it is in terms of growth. Not long ago, Conductor crossing a billion workflow executions in a single year felt like a milestone. Today it clears that bar roughly every quarter , and the monthly volume is still climbing. Sustaining that kind of growth meant rethinking nearly every layer of the system. The data plane it runs on was modernized piece by piece. The evaluation engine was rewritten. The way it allocates work, controls concurrency, and runs compute all changes. The through-line is simple: scale forced a rethink of the evaluation engine and the layers beneath it, and everything else followed. The rest of this post walks through that evolution: how the architecture changed, the performance and scale work at the heart of it, the leap forward in developer experience, and the newer capabilities for controlling how workflows and tasks execute. How Netflix uses Conductor When we last wrote about Conductor, it ran a few hundred workflow definitions for a few dozen teams. That footprint has grown by orders of magnitude. Conductor now backs roughly 200,000 workflow definitions owned by around 150 applications , spanning Content and Studio Engineering, Ads, Games, and more. The runtime side has grown to match. In a typical month it executes on the order of 420 million workflows , and on a given day it runs anywhere from 5 to 20 million , with teams adding hundreds of new workflow types every month. Conductor and the Media Production Suite One of the clearest ways to see what Conductor does is Netflix’s Media Production Suite (MPS) . It’s a set of applications that move production data into the cloud. An average Netflix title generates around 200 terabytes of original camera files, and MPS is what gets that media ingested, validated, transcoded, and delivered to the right people around the world. The multi-step pipelines behind MPS’s workflows (Footage Ingest, Dailies, VFX Pulls, and Conform Pulls) run as Conductor workflows. A dedicated orchestration layer called Studio Orchestrator stitches together the platform services these pipelines depend on, such as asset management, media encoding, and storage, using Conductor under the hood to ensure reliable execution and the durability to recover from the inevitable failures of long-running, distributed work. Beyond the studio: Ads and Games Content engineering is where Conductor started, but it’s no longer the whole story. Two of Netflix’s newer businesses lean on it just as heavily. Netflix Ads has made Conductor a backbone of its programmatic pipelines. Creative ingestion, advertiser-certificate management, and privacy-preserving Data Clean Rooms all run as Conductor workflows. Netflix Games uses Conductor to orchestrate the path a game takes from a partner’s submission to the app stores. When a studio uploads a build, a Conductor pipeline ingests the binary, runs the required validations (for example, iOS privacy-manifest checks), and drives App Store publishing, coordinating steps that span multiple platform services and external stores with the same reliability and visibility the studio pipelines rely on. How",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix's workflow tool Conductor, which it stopped publicly maintaining, has kept growing inside the company and was rebuilt from the ground up. It now runs about 420 million workflows a month across film, ads, and games work.",
+    "tags": [
+      "netflix",
+      "software infrastructure",
+      "workflow automation"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96?source=rss----2615bd06b42e---4",
@@ -3189,10 +3299,14 @@
     "title": "Measuring the Impact of Personalized Recommendations",
     "published": "2026-10-14",
     "excerpt": "By Kevin Zielnicki, Guy Aridor, Aurélien Bibaut, Allen Tran, Winston Chou, and Nathan Kallus Introduction Personalization is everywhere on the internet. It shapes the products we discover, the stories we read, the music we hear, and the movies and TV shows we watch. At Netflix, personalization has been central to the member experience for decades — from the Netflix Prize to our modern recommender system that helps members navigate a large and constantly changing catalog. But personalization is not only an algorithmic problem, it is also a measurement problem. How do we know how much value personalization creates? More precisely, how do we separate the appeal of a title from the value created by recommending that title to the right member at the right time? In a new article in the International Journal of Industrial Organization — which we are also presenting at this year’s ACM Conference on Economics & Computation (EC ‘26) — we develop a model of member behavior, title choice, and personalized recommendations. The model lets us estimate how recommendations affect both whether members choose to watch and, if so, which titles they choose. In this post, we summarize our approach and main findings. The Measurement Challenge A natural first attempt at valuing recommendations is to ask: what share of viewing comes from titles that were recommended? This is an intuitive metric, but it fails to answer the causal question at hand. The problem is that recommendations are not randomly assigned. A title appears on a member’s homepage precisely because the recommender system predicts that the member might want to watch it. If a member watches that title, was it because the recommendation caused the member to watch it? Or would she have watched it anyway because of her underlying preference for that kind of title? This is the core measurement challenge: recommendations are targeted to demand, so viewing a recommended title combines the effect of personalization with the member’s underlying preferences. One way to solve this would be to run a large experiment that replaces Netflix’s personalized experience with an unpersonalized one. That would create clean variation — but it would also be a poor member experience. Personalization is a central part of how members locate valuable titles in a large catalog, so turning it off broadly is not an acceptable measurement strategy. Instead, we take a hybrid approach. We build a behavioral model that separates members’ underlying preferences from the incremental effect of recommendations. The model uses the natural variation in the recommendation system, for example due to algorithmic exploration, to estimate how recommendations affect choice. Then, to validate the model predictions about title substitutability, we use small-scale A/B tests that “nudge” the salience of a handful of titles exogenously, generating ground-truth substitution patterns for a subset of titles. This lets us combine the scale and richness of modeling with the credibility of experimental evidence. A Model of Member Choice To measure the value of personalization, we need a model of what members would watch under different recommendation systems. Our model treats Netflix viewing as a day-by-day choice process. On each day, a member chooses among the titles available in the catalog, or she chooses not to watch anything. This gives us a concrete target to estimate: the probability that a member watches each title on a given day, as a function of their preferences, their viewing history, and the recommendations they see. A simple version of this model would be too restrictive. It might assume, for example, that removing one title from the catalog shifts viewing toward all other titles in roughly proportional ways. But that isn’t how member choice works. If a member is considering a romantic comedy, the closest substitutes are likely other romantic comedies, not every title on Netflix equally. For similar reasons, two members may rea",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix researchers built a model to measure how much its personalized recommendations actually change what people watch, separating a member's own tastes from the effect of being shown a title. They checked parts of the model with small experiments that nudged which titles people saw.",
+    "tags": [
+      "recommendations",
+      "personalization",
+      "netflix"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb?source=rss----2615bd06b42e---4",
@@ -3200,10 +3314,14 @@
     "title": "Integrating Netflix’s Foundation Model into Personalization applications",
     "published": "2026-10-14",
     "excerpt": "Authors: Divya Gadde , Ko-Jen Hsiao , Dhaval Patel and Moumita Bhattacharya The motivation for building the Netflix Foundation Model for personalization was laid out in this previous blog post. The Netflix homepage is powered by several specialized models and it requires significant time and resources to maintain and continue innovating on these individual models. Therefore, we decided to centralize member preference learning and have one powerful model learned from comprehensive user interaction histories and content data at a large scale and have this model distribute its learnings to other models. The previous two blog posts( 1 , 2 ) focus on the development of the Foundation Model and here we talk about how we integrate the Foundation Model into various applications. We found that there is extensive literature focused on the training and inference of large-scale transformer-based models. However, there remains a significant gap in practical guidance and research on how to effectively and efficiently integrate large models into existing production systems. At Netflix, we experimented with 3 distinct integration approaches — embeddings, subgraph and fine-tuning. The motivation for trying different approaches stems from varying application needs. Specifically, different teams have different latency requirements, tech stack constraints and different appetites for leveraging the full power of a large foundation model. In this blog, we go over the 3 approaches we experimented with and which are now used in production for different use cases. Each integration approach has its own set of motivations, tradeoffs, complexities and learnings. The following sections go into the details of each of these integration approaches. Embeddings from Foundation model Transformer style foundation models naturally lend themselves to generating comprehensive user profile and item representations. Our approach for generating embeddings includes getting the hidden state of the last user event as the profile embedding and weights from the item tower as item embeddings. Netflix has an elaborate set up for refreshing the embeddings every day. First, the Foundation Model is pre-trained from scratch every month. Then, the monthly pre-trained model is fine-tuned everyday based on the latest data. The daily fine-tuning also expands the entity id space to include the newly launching titles. After the daily fine-tuned model is ready, we run batch inference to refresh the profile and item embeddings and publish them to the Embedding Store. An important part of this setup is the embedding stabilization technique ( paper ). When the pretraining job retrains the model from scratch, the embedding spaces between different runs are completely different due to the random initialization in the model. In addition, the embeddings start to drift when the daily job fine-tunes on the latest data, despite the daily fine-tuning job warm-starting from the previous day’s model. Therefore, it is important to map the embeddings generated everyday into the same embedding space, so that downstream models can consume pre-computed embeddings as features. This embedding approach relies heavily on the Embedding Store, which is a feature store specializing in embeddings built by the platform team at Netflix. The embedding store makes producing and consuming embeddings easy by taking care of versioning and timestamping the embeddings. The Embedding Store also provides various interfaces to access the embeddings offline and online. Embedding Store integration This approach is often the initial and most straightforward way for applications to interact with the Foundation Model. Embeddings can serve as powerful features for other models or for candidate generation, helping to retrieve appealing titles for a user or facilitate title-to-title recommendations. Integrating embeddings as features into existing pipelines is generally well-supported and offers a low barrier to entry. Compared to",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix has built one large model that learns what each member likes, then shares those learnings with its other recommendation models. This post explains three ways teams plug it in, starting with pre-computed embeddings, which are numeric summaries of users and titles refreshed daily.",
+    "tags": [
+      "machine learning",
+      "recommendations",
+      "netflix"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4",
@@ -3211,10 +3329,14 @@
     "title": "DataJunction as Netflix’s answer to the missing piece of the modern data stack",
     "published": "2026-10-14",
     "excerpt": "by Olek Gorajek , Samuel Redai , Yian Shang Intro Our Netflix journey from data to dashboards, particularly within the space of the experimentation platform, always presented a unique set of challenges. This blog post aims to illuminate these hurdles and explain how an innovative open-source metric platform became instrumental in overcoming some of them. We’ll showcase the critical role that DataJunction played in streamlining our data workflows and enhancing our ability to derive meaningful insights from our vast datasets. Metrics are the foundation of data-driven decision-making, but at many organizations, they are scattered, inconsistently defined, and difficult to discover or trust. At Netflix, this challenge first became apparent in our experimentation platform, where reliable metrics are essential for interpreting test results. But the complexity of the original tooling made it very difficult to understand and introspect these metrics both in terms of their definitions as well as their values. Initial Problem Scattered metric definitions, redundant datasets, and pipelines are often a natural effect of a fast-moving company with a large and powerful analytical workforce. This is a common problem in big data-driven firms, and it is not easy to solve across multiple departments, which are often governed by somewhat different rules and regulations. An easy-to-use, well-governed, and centralized semantic layer can help with these issues. Our initial problem was most evident in our Experimentation Platform team, where the previous system required: extensive business knowledge familiarity with experimentation conventions and complex engineering practices This led to metric authoring processes that would take weeks, which was a prohibitive requirement for Data Scientists and Analytics Engineers who wanted to onboard new metrics to the Experimentation Platform. Enter DataJunction To address this problem and to set ourselves on the path to a successful semantic layer solution in the future, we looked at several candidates. Among other solutions we evaluated Mando (an internal framework), Minerva (an open source semantic layer from AirBnB), and DataJunction (another open source solution, “DJ” for short). All of them had some strength, but DJ offered one thing that the others did not at the time: a solid SQL parsing and SQL generation engine. At the time of the POC, DJ was also the only open-source solution that stored all its definitions in a connected graph, similar to how relational databases store metadata on their views and queries. Easy “SQL wrangling” with rich metadata was the main feature that convinced us to try it for our immediate use case. DataJunction originated from a similar internal Facebook project created (around 2015) by the data science and infrastructure (DSI) team, mainly as an answer to the need for metrics portability. During several iterations of the Deltoid project — which was the main experimentation platform at Facebook at the time — users were required to rebuild and repopulate their metrics when they wanted to move to the next version of Deltoid. But after implementing DJ and abstracting all metric definitions the team offered seamless migrations by separating the concerns between the metrics and the stats computation platform. That project was subsequently renamed to MDF (Metrics and Dimensions Factory) and promoted as a generic semantic layer used widely by various departments. In 2021, one of the Facebook engineers ( Beto Dealmeida ), started the DJ Github project and built out some basic functionality. Then together with some folks at Netflix expanded the scope further, and soon after that the project was introduced at Netflix. Following that introduction, three Netflix engineers (authors of this blog) together with a couple of external contributors, most notably Nick Ouellet , have been building out the remaining features of the platform. Architecture Decisions A critical design constraint for bui",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix's experimentation team struggled because metric definitions were scattered and hard to add, sometimes taking weeks. They adopted DataJunction, an open-source tool that stores metric definitions in one connected place and generates SQL, to make metrics easier to define and trust.",
+    "tags": [
+      "data metrics",
+      "experimentation",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb?source=rss----2615bd06b42e---4",
@@ -3222,10 +3344,14 @@
     "title": "Behind the Scenes: Evolving Netflix’s Ads Event Pipeline for Live — Part II",
     "published": "2026-10-14",
     "excerpt": "By Yogesh Nagarur Introduction In Part 1 of this series , we shared how Netflix built the Ads Event pipeline and approached it as a system design problem: replacing fragmented pipelines with a centralized collection, enrichment, and a standard data contract. The result was Ads Event Publisher, the system that collects ad telemetry from client devices, enriches it with the context of the ad that was actually served, and publishes a single, unified stream of ad events to every downstream consumer: frequency capping, metrics, billing, measurement partners, and reporting. Any member viewing or account details that move through this pipeline end-to-end are encrypted and handled in accordance with Netflix’s strict privacy and security practices to safeguard member PII. If ad serving is the “brain” and ad events are the “heartbeats” that feed it, then enrichment is what gives each heartbeat its meaning, turning a bare “[Somebody] watched an ad to completion” signal into “ this campaign, this creative, at this price, for this break.” Part 1 described that enrichment step as a single box in the architecture. This post is about what was inside that box, and why we rebuilt it. Part 1 ended with a look at what was on the horizon: ads on live streams, de-duplication, and richer data signals. A single project delivered all three by rebuilding the Ads Event Publisher around stateful stream processing. We replaced a database lookup with a real-time streaming join in Apache Flink, which let the system scale for Live, took a dependency off the critical path, and replaced the engine of a high-traffic pipeline without downtime. Let’s dive in. A quick recap: enrichment and the Metadata Registry When an ad is served, the ad server knows everything about it: the campaign, the creative, the price of the impression, the targeting context, and the tracking URLs that measurement partners expect us to fire. The client device, by contrast, knows almost nothing: just an opaque token and when to send each event. Enrichment is the act of reuniting the two. In the architecture from Part 1, that reunion happened through the Ads Metadata Registry , a Key-Value store: When the ad server made a decision, it wrote the metadata for that impression into the registry. It encoded only reference identifiers into the opaque token returned to the device, keeping the token small. Later, when the client fired an event carrying that token, the Ads Event Publisher decoded the token, looked up the metadata in the registry, and stitched the two together into an enriched ad event. This design served us well. The registry was globally replicated, which gave us a useful property almost for free: an event arriving in any region could find its metadata regardless of where the ad was decided. It future-proofed the token against ever-growing metadata, and it carried us through the first phase of Netflix’s advertising growth. The ad server writes per-impression metadata to the globally replicated registry on the serving path, and the Ads Event Publisher reads it back to enrich each client event. But as we looked ahead, especially to ads on live streams, the limits of this design became clear. Why we needed to evolve The forcing function was Live. Netflix’s live slate has grown rapidly, from NFL games to blockbuster fight nights to the FIFA Women’s World Cup 2027 , and viewership keeps growing. That traffic looks nothing like Subscription Video on Demand (SVOD): a single event can surge toward tens of millions of concurrent viewers within minutes, then drain just as fast when it ends. Building the ad pipeline for Live meant building for that trajectory. To see why the old design could not get there, let’s put some numbers on it. When Netflix streamed the Jake Paul vs. Mike Tyson fight to more than 100 million viewers, a single ad break at that scale would generate an enormous volume of ad events. Serving those ads in the old design would have meant writing metadata for each of them to ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Netflix rebuilt the part of its ad event system that attaches ad details (campaign, price, and so on) to each ad view. The old database lookup could not keep up with huge live events like big sports fights, so the work moves this step onto a real-time data stream.",
+    "tags": [
+      "netflix",
+      "live streaming",
+      "data pipelines"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
@@ -3233,10 +3359,14 @@
     "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
     "published": "2026-10-14",
     "excerpt": "Maintainers look at star history to answer a practical question: did a launch, release, or event change a project’s trajectory? To reconstruct that curve from the GitHub API, tools had to request pages of stargazer records (each person who currently stars the repository and when they starred it), keep the timestamps, and throw the identities away. Over time, that design created problems at both ends. Identities were available for bulk collection, so bad actors started scraping public stargazer lists for spam and phishing campaigns. For highly starred repositories, the endpoint could also make the database process many thousands of entries to return a single page. The fix seemed clear: return counts instead of people. But returning less data didn’t actually make the query any cheaper. Now maintainers have a direct way to get the curve: we built an endpoint that returns up to 30 weeks of daily star counts in a single request, with no identities attached. Keeping that cheap to serve meant reducing how much data the database processed, not just how much it returned, and the endpoint does that by filtering stars by time before it counts anything . What maintainers need from star history We first addressed the immediate risks to developers and to our database by restricting stargazer and watcher lists to repository administrators and collaborators . After the access change, callers without the required permission could receive an empty response or a 403 Forbidden response. That change also cut off tools that had used the old response to calculate star history, often without displaying or otherwise using the usernames it returned. So we talked with maintainers and tool builders to understand what they still needed. They used star history as an approximate signal of interest: to compare activity before and after a release, or to see whether an announcement reached new developers. What they cared about was the curve. The old API response had made identity look like part of that contract because every timestamp arrived attached to a user. In practice, tools such as Star History needed counts and dates, not usernames or other user data. Once identity was no longer part of the requirement, we could design an aggregate endpoint for the actual job: retrieving changes in star counts over time at a useful resolution. When the API change disrupted Star History, users rallied around the project. GitHub’s Community team listened and connected us with product engineering, who dug into our use case and worked alongside us to design a purpose-built endpoint. A difficult situation became a constructive collaboration between GitHub, Star History, and the broader community—ultimately leading to a better solution. Tianzhou Chen, star-history.com maintainer and Bytebase co-founder Why the original endpoint was expensive Once we knew what maintainers needed, the next step was understanding why the original design couldn’t provide it cheaply. The original GET /repos/{owner}/{repo}/stargazers endpoint was built to answer a simple question: who starred this repository? It returned a paginated list of people, and if the request specified a custom media type, each entry also included when the star was created. The star model was built for the same job. It records the current set of people who have starred a repository, which keeps showing a star count or a list of stargazers simple. It was not designed as a historical event log: when someone removes a star, that record is removed. When tools began using the list as a time series, reconstructing a growth curve meant retrieving individual identities and processing every current star. Because each page held at most 100 people, the work grew with the repository’s popularity: building the full curve for react/react , with about 251,000 stars, took about 2,511 requests, so tools often ran into rate limits or sampled pages instead of reading them all. Serving a page required the database to query the repository’s cu",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub built a new endpoint that returns a repository's daily star counts for up to 30 weeks in one request, without listing who starred it. This replaces many paged requests and stops exposing user identities, which had been misused for spam.",
+    "tags": [
+      "github",
+      "open source",
+      "apis"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
@@ -3244,10 +3374,14 @@
     "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
     "published": "2026-10-14",
     "excerpt": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind and Singapore's GovTech built a small AI model that runs on phones to spot scam messages in private chats. Because it runs on the device, chat content does not need to be sent to the cloud.",
+    "tags": [
+      "ai",
+      "scams",
+      "privacy"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0/",
@@ -3255,10 +3389,14 @@
     "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
     "published": "2026-10-14",
     "excerpt": "Developers building web and AI applications on Vercel can now add Amazon S3 storage resources directly from the Vercel Marketplace and v0, combining the durability, scalability, and performance of S3 with the convenience of Vercel’s provisioning workflow. Starting today, Amazon Simple Storage Service (Amazon S3) , including Amazon S3 Tables and Amazon S3 Vectors , is natively available on the Vercel Marketplace and v0 by Vercel , covering three distinct workloads: everyday storage, analytics, and AI. Why this matters Millions of developers build, deploy, and scale web and AI applications on Vercel. Storage is essential to performant applications, but provisioning it previously required navigating to the AWS Management Console to configure policies and credentials. Now, S3 storage integrates directly into the Vercel developer experience, with resource provisioning and connection configuration handled automatically. Together with existing integrations for Amazon Aurora , Amazon DynamoDB , and Amazon OpenSearch Serverless , you get a complete application stack inside Vercel (from your database layer through to object, vector, and open table storage), all on one AWS account with one bill. Storage for every application S3 general purpose buckets : Store virtually unlimited objects, including files, images, videos, and documents, for data lakes, cloud-native applications, and mobile apps. S3 delivers the most durable storage in the cloud, designed to provide 99.999999999% (11 nines) data durability and 99.99% availability by default. S3 Tables : Fully managed Apache Iceberg storage optimized for analytics with automated table maintenance and compaction. S3 Tables are directly queryable from any Iceberg REST catalog API-compatible engine, including DuckDB. S3 Vectors : Purpose-built vector storage and query for AI applications such as retrieval-augmented generation (RAG) and semantic search, reducing the cost of uploading, storing, and querying vectors by up to 90%. Figure 1 – The AWS page on the Vercel Marketplace. Getting started From the Vercel dashboard, go to the Storage tab and choose Create. Select AWS, pick your S3 bucket type, choose a Region, and create the bucket. Provisioning takes a few seconds. Figure 2 – Creating an Amazon S3 general purpose bucket in Vercel by choosing a Region and a name. Connect the bucket to a project, then pull the environment variables with the Vercel CLI: vercel link vercel env pull .env.local The integration injects AWS_REGION , AWS_ROLE_ARN , AWS_RESOURCE_ARN , and a bucket name such as S3_BUCKET_NAME , S3_TABLE_BUCKET_NAME , or S3_VECTOR_BUCKET_NAME . At runtime, the awsCredentialsProvider from @vercel/functions/oidc exchanges a short-lived OIDC token with AWS Security Token Service (AWS STS) for temporary credentials scoped to your resource. No static keys are stored anywhere. Object storage with S3 This Next.js route uploads a file to a general purpose bucket: import { S3Client, PutObjectCommand } from \"@aws-sdk/client-s3\"; import { awsCredentialsProvider } from \"@vercel/functions/oidc\"; const s3 = new S3Client({ region: process.env.AWS_REGION, credentials: awsCredentialsProvider({ roleArn: process.env.AWS_ROLE_ARN, }), }); export async function POST(request) { const formData = await request.formData(); const file = formData.get(\"file\"); await s3.send(new PutObjectCommand({ Bucket: process.env.S3_BUCKET_NAME, Key: file.name, Body: Buffer.from(await file.arrayBuffer()), ContentType: file.type, })); return Response.json({ success: true }); } Use ListObjectsV2Command and GetObjectCommand with the same client to list and read objects. Analytics with S3 Tables S3 Tables offer S3 storage purpose-built for analytics and are designed to automatically optimize query performance as data volumes grow. They provide fully managed Apache Iceberg tables with automated table maintenance and compaction, and they work with any Apache Iceberg REST Catalog-compliant engine. You can use DuckDB inside a Vercel F",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Developers on Vercel can now add Amazon S3 storage straight from the Vercel dashboard, without going into the AWS console to set up permissions. Setup takes seconds, and it covers file storage, analytics tables, and AI search storage.",
+    "tags": [
+      "cloud storage",
+      "vercel",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/source-material-manon-macasaet/",
@@ -3266,10 +3404,13 @@
     "title": "Source material: Creative director Manon Macasaet’s spirituality shapes her process",
     "published": "2026-10-13",
     "excerpt": "The creative behind Poison Candy Apple is inspired by Harajuku fashion, early internet Tumblr, old rave graphics, and kidrobots.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma shares a profile of creative director Manon Macasaet, who says her spiritual beliefs shape how she works. Her style draws on Harajuku fashion, early Tumblr, old rave graphics, and kidrobot toys.",
+    "tags": [
+      "design",
+      "creative work"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/economics-of-ai-monetization",
@@ -3277,10 +3418,13 @@
     "title": "The “alien” economics of AI monetization",
     "published": "2026-10-13",
     "excerpt": "As usage, costs, and customer expectations change, AI companies are moving beyond traditional SaaS pricing. Leaders at Monetize 2026 shared how they’re combining subscriptions with usage-based billing, building spend controls into products, adapting packaging and value metrics, and making pricing readable for both human and AI buyers.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AI companies are moving past standard subscription pricing and mixing monthly plans with pay-per-use billing. Speakers at a Stripe event also discussed building spending limits into products and making prices easy to read for both people and AI buyers.",
+    "tags": [
+      "ai pricing",
+      "billing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/castle-training-natural-language-search-before-the-first-real-query-3818ef8b4828?source=rss----53c7c27702d5---4",
@@ -3288,10 +3432,14 @@
     "title": "CASTLE: training natural language search before the first real query",
     "published": "2026-10-13",
     "excerpt": "How we addressed the cold-start problem for Airbnb’s natural language search by jointly generating synthetic training data — queries and relevance labels — from de-identified booking and search signals. By : Wendy Ran Wei , Hao Li , Weiwei Guo , Xiaowei Liu , Xueyin Chen , Chun How Tan , Malay Haldar , Soumyadip Banerjee , Kedar Bellare , Huiji Gao , Sanjeev Katariya , and Stephanie Moyerman Introduction Natural language search lets guests express intent in their own words, such as “romantic cabin near skiing” or “pet-friendly beach house that sleeps eight,” rather than navigating filters and categories. We needed to introduce this kind of search for Airbnb, and to have it work well from the start. However, this required training the model before we had actual user queries to train the model on, and a reasonable set of relevance labels (inferred from the queries) to map queries to matching listings. Without prior traffic, both must be synthesized from scratch. This is the cold-start problem for natural-language search. Other organizations have faced similar challenges and have created methods to address them. However, prior approaches address the need for a body of queries and the need for relevance labels separately. Passage-based methods such as InPars [1] prompt a large language model (LLM) to generate queries conditioned on a single document, then rely on additional LLM judgments to assign relevance labels, introducing a second source of error. Promptagator [2] improves query diversity using few-shot examples, but is still limited by the gap between its generation distribution and real user behavior. In this post, we describe Contrastive And Seed-guided Training for natural Language sEarch (CASTLE), our framework for jointly generating queries and producing relevance labels from Airbnb’s own de-identified booking data. Our paper describing CASTLE was accepted as a full research paper at the 35th ACM International Conference on Information and Knowledge Management, more widely known as CIKM 2026 [3]. Challenges Generating useful synthetic training data for search requires more than producing grammatically plausible queries. The distribution of synthetic queries must match how real guests actually search; their preferred phrasing, query length, and attributes they tend to mention. If queries fail to match real-world search patterns, the model trained on them will generalize poorly. We measured this mismatch using Kullback–Leibler (KL) divergence (a measure of how much one probability distribution differs from a reference distribution) between synthetic and real query distributions — both over surface-level query statistics and over attribute types (property type, amenity, location, and so on). Prior approaches scored between 9.33 and 26.2 on the KL divergence metric: far from the real-user distribution. Beyond distributional alignment, we also needed relevance labels. Generating a query is only half the problem; knowing which listings are relevant to it is the other half. Solution CASTLE addresses both challenges through a single mechanism: contrastive listing pairs derived from de-identified booking sessions, selected in accordance with user privacy permissions. When a guest books a specific listing after viewing several possible alternatives, that event implicitly encodes preference: the booked listing was selected over the others. We use these (positive, negative) pairs of listings — where the negative is randomly sampled from the other viewed-but-not-booked alternatives — as the structured input for query generation. Listing features include amenities, property details, and a one sentence summary of recent public guest reviews, with personal identifying information removed. Because we instruct the LLM to generate a query that is satisfied by the positive listing but not the negative, the relevance label is correct by construction; no post-hoc judgment is required. Crucially, what is “positive” and “negative” is determine",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb built a way to train its new natural language search before any real guest queries exist. It makes fake search phrases and matching labels from anonymized booking data, where a guest picked one listing over others they viewed.",
+    "tags": [
+      "search",
+      "machine learning",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/",
@@ -3299,10 +3447,14 @@
     "title": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
     "published": "2026-10-13",
     "excerpt": "Last year, we introduced GEM , the industry’s largest recommendation system (RecSys) foundation model. GEM established Meta’s first LLM-inspired paradigm for ads recommendation, driving major performance gains. Building on this foundation, our next goal is to further scale both compute and intelligence transfer with next-generation hardware, and expand this capability across Meta’s entire ads ecosystem. This spans dozens of surfaces and objectives, delivering seamless full-funnel optimization across awareness, consideration, and conversions. The 2026 generation of GEM shifts from isolated per-domain optimizations — such as Facebook, Instagram, Reels — to a single central foundation model. It learns from data and signals across all of Meta’s ads platforms, bends the scaling curve at LLM-scale computation, and delivers strong advertiser outcomes through post-training techniques that provide a larger latency budget without requiring real-time evaluation of all ad candidates — all on a substantially more efficient training stack. The result is simultaneous ad performance gains across every surface and funnel stage, and deeper understanding that better matches ads to what people are looking for. GEM has delivered 18.9% conversion improvement and 12% ad click-through rate (CTR) improvement across Meta’s ad surfaces and objectives, and additionally contributed 5.8%, 4.1%, and 1.6% conversion uplift on Facebook, Instagram, and off-site conversion for targeted users over the past year. These gains span both upper-funnel surfaces and deep-funnel optimization goals, driving stronger returns for advertisers. GEM advances the frontier of recommender systems in the following four areas: 1. Bending the Scaling Curve, Enabling 2.5x Model Complexity Challenge: Empirical scaling laws demonstrate that model performance predictably improves with compute, parameter, and data size using transformer model architecture. However, recommender system models do not exhibit similar scaling properties with transformer due to massive heterogeneous features and shifting distributions. Solution: We built an LLM-style architecture — Kunlun , co-designed with the latest GPU hardware, to make larger, deeper models substantially more cost-efficient and to enable long-context learning over user engagement history. We observed an LLM-like scaling law at our largest pre-training scale with 2.5x model complexity growth from earlier versions of GEM. The pattern mirrors frontier LLMs: more capacity and longer context produce emergent gains in ranking quality that translate directly into business results. 2. Efficient Intelligence Transfer From GEM to User-Facing Models Challenge: Serving a model at this scale in real time is prohibitively expensive and drives up latency, compromising both user experience and advertiser ROI. Solution: The structured representation, LoopFM , a state-of-the-art post-training technique, transfers GEM’s internal representations and sequential historical memory to downstream models. Through computation sharing, it doubles the intelligence transfer together with the knowledge distillation deployed in the previous version, at no additional compute cost or latency. We also introduced elastic pre-computation ( Solaris ) to harvest the gains from the upstream model. 3. Accelerating the Central Compute Engine With Large-Scale Cross-Surface, Cross-Domain Learning at Meta Ads Scale Challenge: Meta’s apps span dozens of surfaces — Facebook, Instagram, Reels, Stories, and more — with 3.6 billion people using at least one of our apps each day. Each surface and optimization objective previously had its own independent prediction system. As the platform grows in surfaces and objectives, so does the challenge of improving ad performance simultaneously. Solution: GEM accelerates one single, unified compute engine through the central foundation model that jointly predicts clicks and conversions across all surfaces, including Facebook and Instagram, and acro",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta's ads team built GEM, one large central AI model that learns from ads data across all its apps instead of separate models for each app. It reports conversion gains of about 18.9% and click-through gains of about 12% across its ad surfaces.",
+    "tags": [
+      "ai models",
+      "online ads",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
@@ -3310,10 +3462,13 @@
     "title": "Gemini 4 Argon: Built to solve your hardest problems",
     "published": "2026-10-13",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 4 Argon, a new version of its AI model. The post describes it as built to tackle hard problems, but the text provided is only a title with no further details.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
@@ -3321,10 +3476,13 @@
     "title": "Gemini 4 Argon for Robotics",
     "published": "2026-10-13",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 4 Argon for robotics. The article text is empty, so details are unknown, but it appears to be a new AI model aimed at helping robots.",
+    "tags": [
+      "robotics",
+      "ai models"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
@@ -3332,10 +3490,13 @@
     "title": "Developing Gemini 4 Argon responsibly and safely",
     "published": "2026-10-13",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has written a post about how it is developing its Gemini 4 Argon AI model with safety in mind. The article text was not included, so details beyond the title are unknown.",
+    "tags": [
+      "ai safety",
+      "ai models"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/",
@@ -3343,10 +3504,14 @@
     "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
     "published": "2026-10-13",
     "excerpt": "Some numbers are hard to picture until you sit with them for a moment. Last week we published the Prime Day 2026 metrics, and the one that stuck with me is 2.3 quadrillion: the daily requests Amazon ElastiCache peaked at during the event. Prime Day ran back in June, so this post always lands as a retrospective, and that gap is part of what makes it worth reading. By the time the numbers reach you, the only evidence that any of it happened is that nothing went wrong. The rest of the week pulled in a different direction: smaller, cheaper, and more constrained. Claude Haiku 5.5 arrived on Amazon Bedrock at roughly 75 percent less than Haiku 4.5, Amazon Nova 2.5 Sonic made voice agents quicker on their feet, and Strands Box showed up to put real boundaries around what an agent is allowed to do. Now, let’s get into this week’s AWS news… Headlines All the numbers: Amazon Prime Day 2026 powered by AWS is the latest entry in a tradition that goes back to 2016, and the scale is still difficult to hold in your head. Over the four days of Prime Day, Amazon DynamoDB processed more than 59 trillion requests while peaking at 192 million requests per second, and kept single-digit millisecond responses throughout. AWS Lambda handled over 2.3 trillion invocations per day. Amazon EBS peaked above 24.8 trillion I/O operations, moving more than an exabyte of data daily. Amazon ECS launched an average of 158.3 million tasks per day on AWS Fargate , a 47.7 percent jump over last year, and AWS Graviton powered up to 49 percent of the Amazon EC2 compute that Amazon.com used. The number I keep coming back to, though, isn’t a throughput record. The team ran more than 44,000 AWS Fault Injection Service experiments ahead of the event, more than six times what they ran in 2025. Those are deliberate failures injected on purpose, months in advance, so that the trillions of requests above turn into an ordinary shopping afternoon. If you’re preparing for your own peak moment, AWS Countdown Premium is built for exactly that kind of planning. Last week’s launches Here are some launches and updates from this past week that caught my attention: Claude Haiku 5.5 is now available on AWS – You can now use the fastest model in the Claude 5.5 family on Amazon Bedrock and Claude Platform on AWS, at around 75 percent less than Claude Haiku 4.5 for most tasks. It’s the first Haiku with effort controls, so you can tune cost against intelligence per task instead of fixing one setting for a whole workload. It pairs naturally with Claude Opus 5.5: Opus plans and makes the judgment calls, and because Haiku is fast and cheap, you can run many Haiku subagents in parallel for routing, classification, and small code changes across many files. Amazon Nova 2.5 Sonic for voice agents – You can now build real-time voice agents on a speech-to-speech Amazon Nova model with better reasoning, instruction following, and tool-calling accuracy, plus lower latency. That combination matters for multi-step work: a support agent can look up an order, check return eligibility, and start the return inside one conversation. It keeps expressive voices in seven languages, controllable turn-taking, and a 256K context window, and pairs with Strands Bidi Agents, now generally available , to get a production voice agent going in a few lines of code. Amazon GuardDuty RDS Protection now detects data exfiltration and destruction – Amazon GuardDuty now looks past login anomalies to the queries themselves on Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL. RDS Protection for data activity builds behavioral baselines and uses ML-based anomaly detection plus threat intelligence to flag unusual data access, with no agents, extra infrastructure, or database configuration changes. This closes a real gap: once an attacker has valid credentials from phishing or a misconfiguration, their queries can look indistinguishable from your application’s. AWS Lambda supports OAuth for self-managed Apache Kafka event s",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS published its Prime Day 2026 numbers, including over 59 trillion database requests and 44,000 deliberate failure tests run ahead of the event. The same week it also released Claude Haiku 5.5 at about 75% less cost than the previous Haiku model, and a new Nova voice model for voice assistants.",
+    "tags": [
+      "cloud computing",
+      "ai models",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
@@ -3706,17 +3871,6 @@
     "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
     "published": "2026-09-30",
     "excerpt": "Today, we’re announcing a new capability for Amazon Aurora PostgreSQL that you can use to directly query operational data together with data stored in your data lake in Apache Iceberg and Apache Parquet formats, using your existing PostgreSQL applications and tools. By eliminating the need to extract, transform, and load (ETL) structured data from data lakes into your operational database, you can reduce operational complexity and simplify application development. You can also use Aurora PostgreSQL to query data from data lakes managed in Iceberg REST Catalog (IRC)-compatible catalogs, giving you access to data across a breadth of analytics systems without moving or duplicating it. Whether you’re powering real-time dashboards, enriching transactions with historical context, or building AI agents that reason over both live and archived data, you can now do it all through a single, familiar interface. Previously, if your application needed to combine recent transactional data in Aurora with historical records stored in Amazon S3, a common approach was to build reverse ETL pipelines that duplicated data, increased infrastructure costs, and required ongoing engineering effort to keep everything synchronized. This challenge only grows as you increasingly embed AI agents into your applications, where it is impractical to predict and pre-replicate every dataset an agent might need. DuckLabs, the team that maintains the DuckDB project, recently joined Amazon, and this capability is an example of how the efficiency of DuckDB is being integrated into our services. DuckDB is now embedded directly within Aurora PostgreSQL, so you can query live operational data (including uncommitted writes) alongside your data lake in a single query. Query processing stays within Aurora, with no additional network hops and no ETL pipelines that duplicate data. You can query Apache Iceberg tables managed through the AWS Glue Data Catalog, as well as Parquet and Iceberg data stored in Amazon S3 and S3 Tables. You do all of this using familiar PostgreSQL syntax and your existing applications and tools. We’re excited to bring the speed and simplicity of DuckDB directly into Aurora PostgreSQL, so you and your agents can query and combine operational and Iceberg data using the familiar PostgreSQL applications, tools, and endpoints already in use. By building this capability around DuckDB, future improvements to the open source engine can continue to bring performance and functionality gains to Aurora and other AWS services. What is new This capability is supported on two Aurora PostgreSQL major versions: 17 (starting with 17.11) and 18 (starting with 18.6). To use it, you create an Aurora PostgreSQL cluster, attach an IAM role with the AuroraAnalytics feature, and enable the aurora_analytics extension. The IAM role is what gives Aurora access to your data in Amazon S3 and the AWS Glue Data Catalog. You then create foreign tables that point to your Iceberg or Parquet data in the data lake, and query them using familiar PostgreSQL syntax. You can complete this setup through the Amazon RDS console , or with any PostgreSQL client such as psql. The process is well documented in the Aurora PostgreSQL documentation . You can query data across external IRC-compatible catalogs through AWS Glue Data Catalog federation. You register the external catalog once with Glue, and then create foreign tables for the tables you want to query, the same way you would for any Glue-native table. A single query can then join data stored in Aurora with Iceberg tables registered across multiple catalogs, so applications get a unified view without moving data or replacing your existing catalog investments. Aurora also applies optimizations such as predicate pushdown and column pruning so that only the relevant data is read. This keeps queries efficient even as the underlying data grows. Frequently accessed data is also cached in your Aurora instance, so subsequent queries against the same",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://www.figma.com/blog/london-office-expansion/",
-    "company": "Figma",
-    "title": "Figma invests in the UK with expanded London office",
-    "published": "2026-09-29",
-    "excerpt": "With our new London office, we’re getting closer to our customers and community.",
     "summary": "",
     "tags": [],
     "summarized": false,
