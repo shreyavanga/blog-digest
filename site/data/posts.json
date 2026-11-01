@@ -1,5 +1,35 @@
 [
   {
+    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
+    "company": "Google Developers",
+    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
+    "published": "2026-11-01",
+    "excerpt": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
+    "summary": "API Gateway now supports live, always-open data connections such as streaming and WebSockets, in preview, without changing your existing API setup. This lets live and AI-powered apps run through the gateway while keeping logins, usage limits, and monitoring in place.",
+    "tags": [
+      "cloud",
+      "apis",
+      "streaming"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/",
+    "company": "Google Developers",
+    "title": "Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK",
+    "published": "2026-11-01",
+    "excerpt": "The open-source Agent Development Kit (ADK) and gemini-3.8-live enable developers to build responsive voice agents by implementing non-blocking tools in Python. Developers can use streaming tools to yield progress updates or background execution patterns to keep conversations fluid during long-running backend queries. Additionally, configuring response scheduling behaviors such as WHEN_IDLE, INTERRUPT, or SILENT gives developers precise control over when and how tool results are delivered into the conversation.",
+    "summary": "Google shows how to build a voice assistant in Python using its open-source Agent Development Kit that keeps talking while slow tasks run in the background. It covers sending progress updates and controlling when tool results are spoken, so conversations feel smoother.",
+    "tags": [
+      "voice assistants",
+      "python",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
     "company": "Figma",
     "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
@@ -10,6 +40,21 @@
       "design tools",
       "ai",
       "creative work"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/lakebase-branching-cicd-lessons-100-pr-databases",
+    "company": "Databricks",
+    "title": "Lakebase branching for CI/CD: lessons from 100 PR databases",
+    "published": "2026-10-31",
+    "excerpt": "The problem: testing against production data shouldn't take over 30 minutesSnorkel...",
+    "summary": "Databricks describes how its Lakebase database feature can create a separate copy of a database for each code change under review, so tests can run against realistic data. The post reports lessons from running about 100 of these temporary databases in practice.",
+    "tags": [
+      "databases",
+      "software testing",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1733,36 +1778,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/",
-    "company": "Google Developers",
-    "title": "The Outer Loop, Insights First: An Ambient Quality Agent That Diagnoses Your Production Agent",
-    "published": "2026-10-26",
-    "excerpt": "How do you keep improving an AI agent after the first 80%, once it serves real production traffic and silent quality regressions return HTTP 200 OK? We are open-sourcing AQuA (Ambient Quality Agent), a reference implementation that runs beside your production agent in Google Cloud, sweeps and verifies failure clusters against conversation transcripts, and diagnoses root causes anchored to the exact deployed source snapshot.",
-    "summary": "Google has released AQuA, a free tool that watches a live AI assistant and finds the causes of quality problems. It checks saved conversations for patterns of failure and points to the exact code version that caused them, so teams can fix AI agents that give wrong answers without showing any error.",
-    "tags": [
-      "ai agents",
-      "open source",
-      "google cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/supercharge-your-development-with-the-google-developer-knowledge-api-ecosystem/",
-    "company": "Google Developers",
-    "title": "Supercharge your development with the Google Developer Knowledge API ecosystem",
-    "published": "2026-10-26",
-    "excerpt": "Google is launching the Developer Knowledge API and MCP Server in public preview. This new toolset provides a canonical, machine-readable way for AI assistants and agentic platforms to search and retrieve up-to-date documentation across Firebase, Google Cloud, Android, and more. By using the official MCP server, developers can connect tools directly to Google’s documentation corpus, ensuring that AI-generated code and guidance are based on authoritative, real-time context.",
-    "summary": "Google has launched a public preview of a Developer Knowledge API and a server that lets AI assistants search and pull up-to-date Google developer docs for Firebase, Google Cloud, and Android. This aims to make AI-written code and advice rely on official, current documentation.",
-    "tags": [
-      "ai tools",
-      "google",
-      "developer docs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
     "company": "NVIDIA",
     "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
@@ -2069,20 +2084,6 @@
     "tags": [
       "ai costs",
       "enterprise ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/ai-bill-coming",
-    "company": "Databricks",
-    "title": "The AI Bill is coming",
-    "published": "2026-10-22",
-    "excerpt": "In this conversation, Catherine Brown talks with Patrick about what happened when...",
-    "summary": "Databricks published a conversation between Catherine Brown and Patrick about the rising costs of AI, based on a short teaser. The full details are not shown, so the specific points made are unclear.",
-    "tags": [
-      "ai costs",
-      "cloud computing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3519,10 +3520,14 @@
     "title": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
     "published": "2026-10-12",
     "excerpt": "Meta has begun deploying Media over QUIC (MoQ), an emerging open protocol for real-time video streaming at scale. MoQ will help simplify our protocol stack for live streaming video and enhance overall user experience for live video. We’re sharing how we shipped MoQ on Instagram Live ingest, and what the future looks like from here. This work was also presented at DEMOQED 2026 . Instagram Live now uses the open standard transport protocol Media over QUIC (MoQ) for live video ingest on iOS and Android. As a transport designed for both ingest and playback, MoQ gives us the foundation to build toward an architecture that is lower-latency, more resilient on unreliable networks, and more responsive for creators and viewers. It also gives teams across Meta a common foundation for bringing those improvements to future live and interactive experiences without rebuilding them on separate protocol stacks. MoQ: A Media Protocol for Every Moment in Time The internet has accumulated a rich set of media protocols, each shaped by the problem in front of it. RTMP for ingestion. HLS and DASH for playback. WebRTC for real-time calls. RUSH for the cases that did not fit neatly into any of those. Each was a strong answer for its moment, and together they’ve carried the industry a long way. At Meta, someone who starts a live stream and then makes a voice call on the same app touches three different protocol stacks, each with its own serving infrastructure, monitoring, and operational expertise. That separation made sense when these experiences were distinct. But as live video, real-time AI, and generative AI creation tools increasingly share the same product surface, the lines between these use cases are starting to blur. A common protocol across ingest, delivery, and playback can reduce the number of custom transports and operating models that engineering teams need to maintain and improve over time. How MoQ Works MoQ is an emerging IETF standard that enables low-latency, scalable media delivery (live streaming, real-time communication) over the QUIC transport layer. It’s being developed collaboratively at the IETF, with active participation from Meta, Google, Akamai, Cisco, Cloudflare, and academia. For nearly a decade, Meta’s live streaming video has run on Reliable Ultra-low-latency Streaming over HTTP (RUSH), an in-house QUIC-based protocol built to move past RTMP. RUSH proved that QUIC could carry live media at scale and was a predecessor to MoQ. The lessons learned from running RUSH in production are part of what shaped our bet on MoQ. The core abstraction in MoQ is a Track , an addressable stream of media objects that publishers push and subscribers receive through a network of relays. Relays cache and forward objects without parsing the media payload – they only need to understand the MoQ framing and delivery metadata. A few properties matter for using MoQ as a single transport across the full latency spectrum: Built on QUIC: QUIC lets independent streams make progress without TCP-style cross-stream head-of-line blocking. It also supports faster connection setup and connection migration. Meta’s earlier QUIC rollout achieved lower request errors, tail latency, and video stalls than HTTP/2. MoQ applies the same transport foundation to live and real-time media. MoQ would also automatically benefit from any feature added to QUIC (e.g., FEC). Native Fan-out and caching: MoQ relays are built-in caching and request/stream coalescing endpoints, so media streams scale through CDN relays out of the box. Request coalescing, caching, and fan-out are not new (live streaming already does them), but MoQ makes them part of the protocol design rather than a bolt-on, and it is designed to scale via relays more efficiently than traditional HTTP streaming. Tunable Latency per use case: Two subscribers to the same track can run at different latencies at the same time — e.g., ~100 ms for an interactive participant and several seconds for an archival or buffered",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Meta has started using Media over QUIC (MoQ), a new open streaming standard, to send live video from creators' phones for Instagram Live on iOS and Android. The goal is a single protocol that can handle live video, playback, and real-time calls, with lower delay and better performance on weak networks.",
+    "tags": [
+      "live video",
+      "streaming",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/",
@@ -3530,10 +3535,14 @@
     "title": "OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks",
     "published": "2026-10-12",
     "excerpt": "At the 2026 Open Compute Project Global Summit, Meta is sharing the next generation of open networking infrastructure, including: Our first liquid-cooled network rack (IcePack), and 102.4T switch platform (IceCube). Flattened Planar Fabric (FPF), a multiplane backend scale-out fabric that fundamentally changes how GPUs connect to the network MetaRoCE, our open-source AI transport protocol. Launching the Open Switch Platform Architecture (OSPA) initiative within OCP. We’re inviting engineers, silicon vendors, system integrators, and operators to join us and the OCP community in meeting the challenges of building open, efficient, and sustainable AI infrastructure. At Meta, we believe that open networking is critical for building high-performance, scalable, and sustainable infrastructure, and we’ve acted on that conviction since co-founding the Open Compute Project (OCP) in 2011. Throughout the ongoing AI revolution, Meta has pushed the boundaries of what’s possible in data center networking and shared our advances with the industry. At OCP 2025, we introduced our latest AI scale-out fabrics and drove the creation of the Ethernet for Scale-Up Networking (ESUN) initiative. This year at OCP 2026, we’re sharing the networking innovations that directly support our latest AI workloads such as Meta’s Muse Wonder and Muse Spark models, and Muse, our personal AI agent built for everyone . Here’s some of what’s new: The 102.4T scale-out switch : Meta’s first liquid-cooled network rack (IcePack) and 102.4T switch blades (IceCube), designed to support high power density, deliver higher thermal efficiency, and enable gigawatt-scale AI clusters. The scale-out Flattened Planar Fabric (FPF) : Meta’s multiplane fabric, enabling larger, highly efficient GPU clusters with lower latency — with learnings shared with our cloud partners. Scale-across for multi-site clusters : Meta’s petabit-scale backend aggregation (BAG) super-spine and how large-scale training jobs deal with failures at this scale — with an overview of how we’ve built SRv6 regional backbones using FBOSS and SAI to handle even longer distances Ethernet for Scale-Up Networking: Meta’s MTIA 300 system uses Tahan, an Ethernet-based 51.2T scale-up switch, delivering 6.4 Tbps per accelerator — with a preview of next-gen 72-accelerator-per-rack design on 102.4T silicon and moving toward an ESUN-based implementation with future chips. Open Switch Platform Architecture (OSPA) : a new OCP initiative, co-led by Meta, Microsoft, and Alibaba, that standardizes the switch platform layer — with specification v1.0 now submitted to OCP. MetaRoCE : Meta’s RDMA transport protocol for AI networks — now with open-source implementations. The 102.4T Generation: Liquid-Cooled Networking at AI Scale As AI clusters grow to gigawatt scale, network switches must deliver dramatically more bandwidth while fitting within increasingly dense power and cooling envelopes. Our answer is the IcePack rack, Meta’s first-generation liquid-cooled network rack. IcePack is based on OCP’s ORV3-HPRv1 rack standard . IceCube switch blades — 102.4-Tbps fabric switches that deliver 128×800G non-blocking switching capacity — sit inside each rack. IceCube comes in two variants , one built on Broadcom’s Tomahawk6C switch ASIC and one on NVIDIA Spectrum-6 Switch ASIC. Both run Meta’s open-source FBOSS network operating system that leverages OCP SAI (Switch Abstraction Interface). This new generation represents a 2x bandwidth increase over our 51.2T platforms while achieving the thermal density required for next-generation AI data centers. The IcePack rack — Meta’s first liquid-cooled network rack, populated with IceCube 102T switch blades. IceCube — Meta’s 102.4 Tbps liquid-cooled switch blade, delivering 128×800G non-blocking capacity and running FBOSS. Scaling AI Fabrics From Building to Region As seen at Meta and across the industry, AI clusters now span buildings, campuses, and multiple regions . This demands fabric architectures",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "At the 2026 Open Compute Project summit, Meta shared new open networking gear for AI data centers, including its first liquid-cooled network rack and a switch with twice the bandwidth of its previous models. It also launched a new open standard for switch hardware, so the industry can build on the same design.",
+    "tags": [
+      "data centers",
+      "networking",
+      "ai infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
@@ -3541,10 +3550,14 @@
     "title": "Announcing AWS Lambda Web Functions",
     "published": "2026-10-12",
     "excerpt": "Today, we’re announcing AWS Lambda Web Functions , a new form factor that lets you run standard HTTP web applications on Lambda without rewriting your code into an event handler. You can take a standard port-listening server built with Express, Hono, Fastify, Next.js, or any Node.js framework, deploy it with a single command, and Lambda automatically handles scaling, multi-region distribution, and active CPU billing. No adapters, no infrastructure to manage, and no framework lock-in. With this launch, AWS Lambda now offers three distinct form factors, each built on the same Firecracker isolation technology and designed for a different programming model. Lambda Event Functions are what you already know as Lambda functions. They use the event-driven, single-concurrent handler model with wall-clock billing. We’re introducing the “Event Functions” name to highlight that programming model: your function receives an event, processes it, and returns a response. The event-driven programming model is ideal for event processing, queue consumers, and invocations triggered by other AWS services. Lambda Web Functions use an HTTP-native programming model with multi-concurrent execution and active CPU billing. Your code listens on a port and handles standard HTTP requests. That programming model is ideal for web applications, API backends, and interactive HTTP workloads where multiple concurrent requests and I/O-heavy processing are the norm. Lambda MicroVMs provide isolated, stateful sandbox environments with customer-managed lifecycles for running untrusted or user-generated code. The three complement each other. An application might use Event Functions for asynchronous backend processing, Web Functions for the user-facing API and server-side rendering layer, and MicroVMs for interactive code execution features, all within the same AWS account and sharing the same operational model. Why Web Functions Modern web applications need to serve global audiences with fast, consistent response times while giving developers the freedom to use standard frameworks and iterate quickly. Building this today typically requires assembling multiple infrastructure components, configuring multi-region deployments, setting up latency-based routing, and tuning billing models to avoid paying for I/O wait. Developers often find themselves adapting their application code to fit a specific compute model rather than deploying the HTTP server they already have. Lambda Web Functions removes this complexity. Each execution environment handles multiple requests simultaneously (up to 128 concurrent requests per environment), which means a burst of incoming traffic can share warm environments instead of mapping each request to a new one. Web Functions meter the CPU time your code uses, so time spent waiting on a database query or an API call consumes little CPU. Memory is metered for as long as the execution environment exists. For I/O-heavy web workloads like server-side rendering, API backends, and AI inference endpoints streaming token responses, this can reduce compute costs. Let’s try it out To get started, I wrote a simple Express.js server. This is the same code I run locally with node index.js , no Lambda-specific adapters or wrappers required. import express from 'express'; const app = express(); const [host, port] = process.env.AWS_LAMBDA_HTTP_ENDPOINT.split(':'); app.get('/', (req, res) => { res.json({ message: 'Hello from Lambda Web Functions!' }); }); app.listen(port, host, () => { console.log(`Server running on port ${port}`); }); The only difference from running locally is the AWS_LAMBDA_HTTP_ENDPOINT environment variable, which Lambda sets to the host and port your server must listen on. To run locally, set it yourself, for example AWS_LAMBDA_HTTP_ENDPOINT=127.0.0.1:3000 node index.js . With my code ready, I deployed using the AWS Command Line Interface (AWS CLI) : aws lambda-web deploy --name my-web-app --code ./my-app One command. No prior resource setup",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS launched Lambda Web Functions, which lets you run a normal web server (like Express or Next.js) on Lambda without changing your code. One command deploys it, and AWS handles scaling and spreading it across regions.",
+    "tags": [
+      "cloud computing",
+      "aws",
+      "web apps"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/4-team-rituals-that-drive-ai-adoption/",
@@ -3552,10 +3565,13 @@
     "title": "4 team rituals that drive AI adoption",
     "published": "2026-10-10",
     "excerpt": "Elevating AI’s impact from individual productivity gains to team-wide wins requires meeting people where they are. Here’s how teams at Figma, Sephora, Mercari, and Atlassian are making it easier for people to drive real value with AI.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma describes four team habits that help groups use AI together, not just alone. Teams at Figma, Sephora, Mercari, and Atlassian share how they make AI tools easier to use for shared work.",
+    "tags": [
+      "ai adoption",
+      "team habits"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/sightlines-issue-no3/",
@@ -3563,10 +3579,13 @@
     "title": "Sightlines issue no.3: Raise the bar for how teams use AI",
     "published": "2026-10-09",
     "excerpt": "How do you drive AI adoption and make better decisions about what to build?",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma's Sightlines issue no. 3 asks how teams can encourage wider use of AI and make smarter choices about what to build. The teaser gives only the question, so the full answers are not shown here.",
+    "tags": [
+      "ai adoption",
+      "product decisions"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626?source=rss----4c5a5f6279b6---4",
@@ -3574,10 +3593,14 @@
     "title": "From Activity to Intent: Generating User Journeys with LLMs",
     "published": "2026-10-09",
     "excerpt": "Lin Zhu | Sr. Staff Machine Learning Engineer; Manan Kalra | Machine Learning Engineer II; Byung Eun Jeon | Sr. Machine Learning Engineer; Ye Liu | Staff Machine Learning Engineer; Xiangyi Chen | Sr. Machine Learning Engineer; Jaewon Yang | Principal Machine Learning Engineer; Jinwen Xu | Manager II, Machine Learning Engineering; Tingting Zhu | Sr. Manager, Engineering; Sudarshan Lamkhede | Director, Machine Learning Engineering Pinterest is built to get inspired and then turn the inspiration into realization — a dinner, a renovation, a wedding, a new skill. That only works if we understand more than the Pin a user just clicked. The useful unit of personalization isn’t the thing someone just clicked, it’s what they’re trying to accomplish. Such goals unfold over weeks and months, across dozens of sessions, through hundreds of saves. We call those goals journeys : the intersection of a user’s interests, intent, and context at a point in time. A journey is a sequence of interactions, often spanning sessions, centered on one interest and a clear intent. For example, “Summer dresses” are an interest. “Figuring out what’s in style for a summer wedding I’m attending in August” is a journey. Someone might be interested in five at once: a kitchen remodel, a vegetable garden, learning sourdough and the mix changes as life does. If we can name those journeys, recommendations and notifications can help someone finish a project instead of bouncing between unrelated interests. This post is about how we infer them in production: a fine-tuned 4-billion-parameter large language model (LLM) that reads a chronological activity log and emits a ranked list of journey names, in the user’s locale. We didn’t start there. The initial user journey system clustered keywords and attached attributes with separate machine learning models. This post is the follow-up which covers how we formulate journey inference as generation, how we distill frontier-model quality into a 4B student we can actually serve, how the serving stack holds up at notification scale, and what we’re building next. The recipe is domain-agnostic: any platform with sequential user activity and structured intent targets (e-commerce, streaming, search) can adopt the same activity-to-intent formulation, collapsing classical multi-stage recommendation pipelines into a single generative model, making generative journey inference a general recipe for personalization beyond Pinterest. Why interests aren’t enough Most recommenders optimize the next item. However, journeys on Pinterest are longer-horizon. Planning a kitchen is not the same as a one-off click on a cabinet Pin, and it isn’t well described by a durable interest like “Home Decor”. The cabinet Pin, the backsplash search, and the garden-bed save might be one project, two projects, or noise. Getting that distinction right changes what we retrieve, what we write in a notification, and when we should stay quiet. So the output we want is not a taxonomy label. It’s a short, specific, ranked list of a user’s active journeys, with specific names they’d recognize. The legacy clustering system We had almost no labeled journeys when we started, so we stayed lean. We reused pretrained text embeddings, started from a few hundred human examples, and built a multi-stage pipeline: Extract keywords from search queries, annotations and interests on engaged Pins, and Pins on owned boards. Embed and cluster those keywords hierarchically. Each cluster is a journey candidate. Name the cluster by ranking its keywords and taking the top one. Rank and diversify the clusters with a pointwise model, then a similarity penalty so the top of the list isn’t five near-duplicates. Classify stage with heuristics: evergreen vs. situational (roughly, does engagement persist past a few weeks?), and for situational journeys, ongoing vs. ended (time since last engagement). That pipeline powered the first journey-aware notifications. Against interest-based notifications, ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest describes how it now infers users' ongoing projects, like planning a kitchen remodel or a summer wedding, from their activity history. It uses a fine-tuned 4-billion-parameter AI language model that reads a user's activity log and outputs a ranked list of named projects, replacing an older multi-step system.",
+    "tags": [
+      "recommendations",
+      "machine learning",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.atspotify.com/2026/10/introducing-spotify-technology-proven-at-spotify-now-yours/",
@@ -3585,10 +3608,13 @@
     "title": "Introducing: Spotify Technology. Proven at Spotify, now yours.",
     "published": "2026-10-08",
     "excerpt": "Introducing Spotify Technology. The post Introducing: Spotify Technology. Proven at Spotify, now yours. appeared first on Spotify Engineering .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Spotify has announced Spotify Technology, a new effort to offer tools it built for its own use to outside companies. The teaser gives few details beyond that.",
+    "tags": [
+      "spotify",
+      "software tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/does-better-work-always-mean-better-workers/",
@@ -3596,10 +3622,13 @@
     "title": "Does better work always mean better workers?",
     "published": "2026-10-07",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research asks whether doing work better always makes workers better. The article text is empty beyond the title, so no details are available.",
+    "tags": [
+      "workplace",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/workflow-lab-staying-in-the-flow-with-the-figma-agent/",
@@ -3607,10 +3636,14 @@
     "title": "Workflow lab: Staying in the flow with Figma’s agent",
     "published": "2026-10-06",
     "excerpt": "Knowing what work to hand to an agent is a skill of its own. This workflow shows how a designer shapes a new temporary-access feature while the Figma agent handles the library updates, crit feedback, and a first draft of a design system spec.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma shows how a designer can hand routine work to its built-in agent while staying in control of the design. The agent helps update design libraries, handle review feedback, and write a first draft of a design system spec.",
+    "tags": [
+      "design tools",
+      "ai agents",
+      "workflow"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/figma-agent-and-design-systems/",
@@ -3618,10 +3651,14 @@
     "title": "How to lighten design system upkeep with the Figma agent",
     "published": "2026-10-06",
     "excerpt": "Figma’s agent can take on repetitive work across your design system, from maintaining your library to automating how designs adhere to it. Here, we share a few ways to put the Figma agent to work.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma shares ways to use its agent to handle repetitive design system work, like keeping the component library up to date and checking that designs follow it. The post is a short teaser, so the specific steps aren't included.",
+    "tags": [
+      "design systems",
+      "figma",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/3-ways-product-designers-use-the-figma-agent/",
@@ -3629,10 +3666,14 @@
     "title": "3 ways product designers use the Figma agent for craft, speed, and creative expression",
     "published": "2026-10-06",
     "excerpt": "Here’s how teams at Uber, Granola, and Atlassian support high-quality, fast-moving work with the Figma agent, now generally available.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma has made its Figma agent generally available, and this post shares how teams at Uber, Granola, and Atlassian use it for design work. The tool helps them produce polished designs quickly.",
+    "tags": [
+      "design tools",
+      "figma",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
@@ -3640,10 +3681,14 @@
     "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
     "published": "2026-10-06",
     "excerpt": "Earth AI",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes Earth AI, a set of geospatial foundation models, and how they are being applied to global public health. The article is a short teaser, so details are limited.",
+    "tags": [
+      "ai models",
+      "public health",
+      "earth data"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756?source=rss----4c5a5f6279b6---4",
@@ -3651,10 +3696,14 @@
     "title": "Metrics Board: Building an Agent-ready Metrics Layer",
     "published": "2026-10-06",
     "excerpt": "Michele Ceccacci; Software Engineer I | Jason Coffman; Sr. Software Engineer | Colm O’Shaughnessy; Software Engineer II | Laura Palmer; Staff Product Manager | Adam Podraza; Manager, Engineering | Surya Karri; Manager, Engineering At Pinterest, reliable and trustworthy metrics are behind every decision: from measuring company-wide business performance to evaluating each feature experiment results. Hundreds of data producers — analysts, data scientists, and engineers across Pinterest — create thousands of metrics from our petabyte scale data lake. A metrics ecosystem this size can’t be ad hoc; it has to be organized, scalable, and resilient. So we built Metrics Board : an end-to-end platform that automates metric creation, enforces quality and enables agent-driven analytics. In this post we walk through the product experience, architecture, integrations and explain some of the design choices we made to make metrics work at planet scale. Why Metrics Matter at Pinterest Most organizations rely on a familiar set of metrics — revenue, growth, engagement — to steer the business. Metrics are how we understand whether Pinterest is delivering value to users and advertisers. Measures related to areas such as revenue, growth, and engagement turn the complexity of user behavior and Pinterest performance into a shared view of what is working, where we are falling short, and what matters most. These metrics drive the decisions our product, finance, and executive leaders make every day, from what to build to how we forecast and steer company strategy. Metrics also power Pinterest’s product experimentation practice, which runs at massive scale — thousands of experiments are active at any given time. Those experiments are used as gates for each new feature launch. For results to be fair, comparable, and statistically significant, metrics must be clearly defined, reliable, and reusable. Beyond common core metrics, individual experiments often need bespoke metrics scoped to a single module, feature, or device. For example, a feature to add a new form of interaction with a Pin might need its own measure to evaluate engagement with the feature — even if core product engagement metrics are flat, the experiment might be successful if it creates a new form of user-engagement that a new metric would need to measure. As much as key decision-makers need metrics, the way they get answers from data has changed too. Increasingly, the question isn’t typed as a SQL query or a dashboard filter — it’s asked in natural language to an agent. But agents are only as good as the trusted data they can access. For agentic analytics to work, metrics have to be discoverable, quality-checked and machine-readable. Before Metrics Board In the past, users were defining their metrics in bespoke data pipelines and wiring them by hand into our reporting and experimentation products. That approach had several problems: Time spent building similar data pipelines by hand was slow Inconsistent monitoring and availability were inconsistent, so breakages often only surfaced downstream Low awareness of existing metrics, leading to redundancy and trust erosion Metric metadata drifted from one place to the next with no source of truth Put together, these problems slowed teams down, held experiments back, and left us with more metrics than we could trust. We needed a solution that would: Unify metrics across the organization Give us transparent definitions and code versioning Automate pipeline creation, orchestration and operations as much as possible Require and auto-generate documentation and metadata Automatically validate and monitor metrics for accuracy, reliability, and anomalies Give every metric and dashboard a clear, shared signal of quality and trust Our goal was to make metrics easy for everyone who touches them — the people who produce them, the people who consume them, the applications that serve them, and, increasingly, the agents that reason over them. The Solution Defin",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest built Metrics Board, a platform that automates creating business metrics, checks their quality, and lets AI agents answer data questions. It aims to make metrics consistent and trustworthy across thousands of experiments.",
+    "tags": [
+      "metrics",
+      "data platforms",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb-cea7ee9b1ab2?source=rss----53c7c27702d5---4",
@@ -3662,10 +3711,14 @@
     "title": "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb",
     "published": "2026-10-06",
     "excerpt": "How we capture real production database traffic at Airbnb and replay it offline to load-test, plan capacity, and de-risk upgrades. By: Zuofei Wang , Erluo Li Introduction At Airbnb, MySQL-compatible databases are a critical backbone of our online database infrastructure: a fleet of hundreds of clusters supporting thousands of use cases at millions of queries per second (QPS). Operating databases at scale brings hard problems, including sizing clusters for future growth, keeping behavior consistent across version upgrades and migrations, and reproducing production incidents well enough to debug them. This post describes the database traffic capture and replay system we built to help us tackle them. Challenges and motivation A complex database operation such as Airbnb’s requires a number of supporting systems, and one of them is a way to capture database queries and replay them. This is needed for error recovery, governance, quality assurance testing and product improvement efforts. Previously, Airbnb’s system for database query capture and replay was fragmented. Each language binding used its own logging framework to emit query traces to Kafka, which were then processed per use case and replayed by a custom replayer. Legacy Query Capture and Replay System This system was borrowed from our observability pipeline. It worked as a fast initial solution, but over time, we found that it fell short of what we needed. Capturing queries client-side and per language carried a heavy maintenance burden whose ownership was ambiguous, and it scaled poorly across our service-oriented architecture (SOA). Most importantly, it lacked enough information to convey a complete picture of each transaction. As a result, it couldn’t accurately replay transactions, which made it impossible to verify that the same queries return the same results on the new database. To close these gaps, we set out to build a system for query capture and replay, with three goals: Load testing with real production traffic. Synthetic benchmarks such as sysbench don’t capture the full spectrum of production queries. By replaying captured traffic at production rates, or at higher multiples to model forecast growth, we can right-size clusters: upscaling those with insufficient headroom for growth and downscaling over-provisioned ones. Query compatibility across upgrades and migrations. Subtle behavior differences (such as differences between MySQL 5.7 and 8.0, or between “official” MySQL and a MySQL-compatible engine) can break applications. By replaying the same traffic against two targets and comparing results, we surface incompatibilities before production migrations. Performance debugging. MySQL provides performance_schema digests for diagnostics, but these are abstracts of actual queries and don’t contain enough information to reproduce a problem. Capturing complete SQL statements with their transactional context lets us replay problematic workloads offline, both to investigate incidents and to validate fixes before they ship. To meet these goals, we needed a single, client-agnostic capture point that needs no application changes. We built it on top of ProxySQL , an open-source proxy that understands the MySQL wire protocol and already sits between our applications and databases. System architecture overview All database traffic already flows through a ProxySQL deployment, which makes it a natural place to capture queries. The query capture and replay system has three components, all built in-house: a Log Mover that collects the query logs, a Log Processor that turns them into replayable, per-cluster datasets, and a Log Replayer that runs captured traffic against target databases. Because captured queries can contain personal data, the pipeline treats them exactly as we treat production data. Logs are encrypted in transit and at rest, access follows the principle of least privilege and is limited to the database infrastructure team, and query logging is enabled for a give",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb built a new system that records real production database queries and replays them offline. It helps them load-test databases with real traffic, check that upgrades behave the same, and debug problems. It uses a proxy that already sits between apps and databases, so apps need no changes.",
+    "tags": [
+      "databases",
+      "load testing",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
@@ -3673,10 +3726,14 @@
     "title": "Building Git infrastructure for agent-scale development",
     "published": "2026-10-06",
     "excerpt": "Every day on GitHub, millions of developers build the products their customers rely on, contribute to open source, and pursue personal projects. GitHub’s architecture has changed steadily over the years to support that work and the growing demands of the developers and organizations who depend on it. Agentic software development is driving the next architectural shift. With developers and agents working concurrently in repositories that receive millions of commits a day, these workloads demand a different Git architecture. We’re rebuilding GitHub’s Git infrastructure to support them. This post explores the demands shaping that work and the design principles behind it. Today’s highest-volume workloads show the scale we’re building for. The gap between a typical repository and the busiest ones is wider than most people expect. Here’s a rough picture of the monthly repository activity distribution on GitHub from August 2026: Repository activity climbs sharply at the far end of the distribution. The busiest repository on GitHub saw roughly a billion requests in August. Beyond these highest-volume workloads, total Git activity on GitHub is also growing rapidly: between September 2025 and August 2026, it increased to more than 2x its previous level, from 218.2 billion events per month to 473.3 billion. In September alone, developers and agents made 7.38 billion commits on GitHub, more than five times as many as a year earlier. The repositories at the top of this curve show what agentic development looks like at its leading edge: large engineering teams running busy CI pipelines alongside growing fleets of agents. Supporting these teams means building Git infrastructure for sustained, concurrent reads and writes at a scale few repositories reach today. We’re investing deeply in Git infrastructure to meet the demands of agentic software development and give teams a foundation built for their most ambitious workloads. Building for this scale means addressing several architectural challenges: Commit turnaround becomes a bottleneck per agent. An agent in a tight loop commits or checkpoints after nearly every action. Its speed is bounded by how fast a single push completes, so latency that a human would never notice becomes the limiting factor. Write throughput demand is increasing by orders of magnitude. Pushes grew 4.9x year over year, from 0.69 billion to 3.35 billion per month. Thousands of agents working on their own branches in one repository produce a sustained write rate that converges on a single point in our architecture. Merges contend on one reference. Trunk-based development, release trains, and merge queues funnel all that work onto a single ref that has to absorb every merge. Pull request merges on GitHub grew to nearly 4x their volume a year ago. Each push multiplies into thousands of reads. For example, CI and code scanning clone or fetch the same branch tip thousands of times per minute, and that fan-out has to be cheap. GitHub Actions alone ran 3.26 billion times in September, more than 4x as many as a year ago. Operations on a repository must continue to be fast. To keep them fast, we continually compact repository data and clean up objects that are no longer needed. Every new write adds to that work, and the cost compounds as volume climbs. This is why fast clones only solve part of the problem. Reads are relatively easy to scale: add caches, add replicas, and serve the same bytes to more clients. Scaling reads is essential, but these workloads require more than that. Writes are way harder. Every push has to be stored durably and made visible consistently before the next agent or CI job can build on it. Where today’s architecture meets new demands The current architecture has served developers well for years. Every repository is stored by Spokes , which keeps a full copy on the local disks of several fileservers, five by default. Those fast local disks let Git operations read native repository data with low latency, a",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub is rebuilding how its Git system stores and handles code changes, because AI agents and busy teams now make huge numbers of commits and pushes. Git activity more than doubled in a year, and pushes grew nearly fivefold, so the old setup could not keep up.",
+    "tags": [
+      "github",
+      "git",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/discord-patch-notes-october-6-2026",
@@ -3684,10 +3741,13 @@
     "title": "Discord Patch Notes: October 6, 2026",
     "published": "2026-10-06",
     "excerpt": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord posted its patch notes for October 6, 2026, listing recent technical fixes made to the app. The teaser does not say which fixes they are, so details are not available here.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
@@ -3695,10 +3755,13 @@
     "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
     "published": "2026-10-06",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has released EmbeddingGemma 2, a new open, lightweight model that turns text and images into numbers so computers can compare and search them. The post is only a title with no article body, so further details are not known.",
+    "tags": [
+      "ai models",
+      "search"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
@@ -3706,10 +3769,14 @@
     "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
     "published": "2026-10-06",
     "excerpt": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day ( 2016 , 2017 , 2019 , 2020 , 2021 , 2022 , 2023 , 2024 , and 2025 ), I want to share the services and chart-topping metrics from AWS that made your amazing shopping experience possible. Prime Day 2026 – all the numbers As always, Prime Day was powered by AWS. Here are some of the most interesting and/or mind-blowing metrics: Amazon Elastic Compute Cloud (Amazon EC2) and AWS Graviton – During Amazon Prime Day 2026, AWS Graviton powered up to 49% of the Amazon EC2 compute used by Amazon.com. Amazon Elastic Block Store (Amazon EBS) – During Prime Day 2026, Amazon EBS, our high-performance block storage service, peaked at over 24.8 trillion I/O operations, moving over an exabyte of data daily. AWS Lambda – AWS Lambda handled over 2.3 trillion invocations per day during Prime Day 2026. Amazon Elastic Container Service (ECS) and Fargate – During Prime Day 2026, Amazon ECS launched an average of 158.3 million tasks per day on AWS Fargate, representing a 47.7 percent increase from the previous year’s Prime Day average. Amazon CloudFront – Amazon CloudFront delivered over 2.1 trillion HTTP requests during the global week of Prime Day 2026, a 5 percent increase in total requests compared to Prime Day 2025. Amazon DynamoDB – Amazon DynamoDB, a serverless, fully managed, distributed NoSQL database, powers multiple high-traffic Amazon properties and systems including Alexa, the Amazon.com sites, and all Amazon fulfillment centers. Over the course of Prime Day 2026, between June 23 and June 26, 2026, DynamoDB processed over 59 trillion requests. DynamoDB maintained high availability while delivering single-digit millisecond responses and peaking at 192 million requests per second. Amazon Aurora – On Prime Day, Amazon Aurora, a relational database management system (RDBMS) built for high performance and availability at global scale for PostgreSQL, MySQL, and DSQL, processed hundreds of billions of transactions, stored 5,491 terabytes of data, and transferred 1,194 terabytes of data. Amazon ElastiCache – During Prime Day, Amazon ElastiCache peaked at serving over 2.3 quadrillion daily requests and 2.1 trillion requests in a minute. Amazon Kinesis Data Streams – Amazon Kinesis Data Streams, a fully managed serverless data streaming service, processed a peak of 988 million records per second during Prime Day 2026. Amazon Simple Notification Service (SNS) – Amazon SNS, a fully managed pub/sub messaging service for application-to-application and application-to-person communication, delivered 5 trillion messages in a single day during Prime Day 2026. Amazon Simple Queue Service (SQS) – Amazon SQS, a fully managed message queuing service for microservices, distributed systems, and serverless applications, received a peak of 213 million messages per second during Prime Day 2026 AWS CloudTrail – AWS CloudTrail processes billions of API activity events per day for governance, compliance, and operational auditing. During Prime Day 2026, that volume surged to 3.6 trillion events in just four days, a 44% increase over Prime Day 2025. Amazon CloudWatch – Amazon CloudWatch processed over 2.15 quadrillion metric observations per day during Prime Day 2026. Amazon GuardDuty – During Prime Day 2026, Amazon GuardDuty monitored an average of 14.08 trillion log events per hour, a 59% increase from last year’s Prime Day. AWS Fault Injection Service (FIS) – We ran over 44,000 AWS FIS experiments – more than six times what we conducted in 2025 – to help ensure Amazon.com remains highly available on Prime Day. Prepare to scale If you’re preparing for similar business-critical events, product launches, and migrations, I recommend that you take advantage of AWS Countdown Premium . From retail peak seasons to major sporting events, elections, and healthcare enrollment",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon's Prime Day 2026 ran June 23–26 on AWS, its cloud computing service. AWS reports huge usage numbers, such as 59 trillion database requests and up to 49% of Amazon's computing running on its own chip, Graviton.",
+    "tags": [
+      "cloud computing",
+      "amazon",
+      "prime day"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
@@ -3717,10 +3784,14 @@
     "title": "Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle",
     "published": "2026-10-05",
     "excerpt": "Generative AI",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research discusses open problems in keeping AI agents private and secure, looking at how privacy and safety depend on the context an agent works in. The article is short, so details beyond this topic are not clear.",
+    "tags": [
+      "ai agents",
+      "privacy",
+      "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/",
@@ -3728,10 +3799,14 @@
     "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
     "published": "2026-10-05",
     "excerpt": "Last week, we announced a public preview of Amazon Bedrock Managed Agents powered by OpenAI , built on a customized version of OpenAI’s Agents API engineered to be AWS-native and integrated with AWS resources. You can now build agents optimized for OpenAI models that run entirely inside AWS with the identities, permissions, and governance controls you already use. You can choose an execution environment: self-hosted compute to use an existing development machine, container, or compute environment or Amazon Bedrock AgentCore Runtime, for managed runtime sessions and configurable storage in your AWS account. To learn more, visit the Amazon Bedrock documentation . In addition, we are adding new frontier models on Amazon Bedrock to expand your model choices: OpenAI GPT-6.1 Sol : An upgrade to GPT-6 Sol, GPT-6.1 Sol delivers exceptionally strong performance on agentic coding, computer use, and professional work. According to OpenAI, it approaches GPT-6 Astra across demanding evaluations at roughly one-fifth of the cost, giving developers more room to build and run capable agents at scale. To learn more, visit the GPT-6.1 Sol model card . OpenAI GPT-6 Astra UltraFast mode : Ultrafast is a premium speed tier for GPT-6 Astra, built for workloads where speed matters most. According to OpenAI, Ultrafast delivers up to 6x faster inference in the API, with up to 300 tokens per second. The Amazon Bedrock inference engine delivers the performance, security, and reliability required for production workloads. To learn more, visit the GPT-6 Astra model card . Anthropic Claude Sonnet 5.5 : Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It’s stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. To learn more, visit the Claude Sonnet 5.5 model card . SpaceXAI Grok 4.7 : Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. To learn more, visit the Grok 4.7 model card . Last week’s launches Here are some launches that got my attention: AWS Well-Architected Agent (preview) : You can use an AI-powered agent service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications’ cost, security, performance, and resilience. The agent analyzes your infrastructure, understands your unique business goals, and delivers contextual recommendations. Amazon Aurora PostgreSQL supports direct querying of Apache Iceberg and Parquet data : You can directly query operational data together with data stored in data lakes in Apache Iceberg and Parquet formats using your existing PostgreSQL applications and tools, without extract, transform, and load (ETL) pipelines or data duplication. Amazon S3 Tables support all Apache Iceberg V3 data types : Amazon S3 Tables add support for geometry, geography, unknown, and nanosecond timestamp data types, along with column default values, as defined in the Iceberg V3 specification. You can now store geospatial coordinates and nanosecond-precision event times natively instead of encoding them in strings or integers. For a full list of AWS announcements, be sure to keep an eye on the What’s New with AWS page. AWS service availability updates When the availability of an AWS service or feature changes, we provide customers guidance in AWS Product Lifecycle Changes on available alternatives and support for migration so that disruptions to your operations are minimized. The following lifecycle changes were updated on September 29, 2026. Services moving to Maintenance (no longer accessible to new customers starting October 29, 2026): Amazon Chime SDK SIP Media Application Amazon WorkSpaces Secure Br",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS now offers a preview of Amazon Bedrock Managed Agents powered by OpenAI, letting teams build AI agents that run inside AWS using their existing security settings. Several new AI models were also added to Bedrock, including OpenAI GPT-6.1 Sol and Anthropic Claude Sonnet 5.5.",
+    "tags": [
+      "cloud ai",
+      "ai agents",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
@@ -3739,10 +3814,14 @@
     "title": "Toward provably private learning from federated data",
     "published": "2026-10-02",
     "excerpt": "Mobile Systems",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes new work on training AI models using data kept on people's phones, with formal guarantees that individual users' data stays private. The text provided is only a short teaser, so details are limited.",
+    "tags": [
+      "privacy",
+      "machine learning",
+      "mobile devices"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://www.figma.com/blog/workflow-lab-from-design-system-to-campaign-in-figma-weave/",
@@ -3750,10 +3829,14 @@
     "title": "Workflow lab: From design system to campaign in Figma Weave",
     "published": "2026-10-01",
     "excerpt": "Design systems can power more than just designs. This workflow shows you how to turn raw materials into brand campaign collateral using the Gen Effect and Figma nodes.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Figma shows how to turn a design system into brand campaign materials using its Weave tool. The post walks through a workflow with Gen Effect and Figma nodes.",
+    "tags": [
+      "design systems",
+      "figma",
+      "marketing campaigns"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/where-pricing-is-headed",
@@ -3761,10 +3844,13 @@
     "title": "Why I tried to kill token billing (and why we kept it)",
     "published": "2026-10-01",
     "excerpt": "Token billing is useful infrastructure, but usually a bad customer-facing pricing model. Your invoice should define the value your product delivers, not break down what it cost you to create it.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe's author first wanted to drop token-based billing, where customers pay per unit of AI processing. They ended up keeping it as internal plumbing, but argue it usually makes a poor price for customers to see on their bill.",
+    "tags": [
+      "billing",
+      "ai pricing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/shopgym",
@@ -3772,10 +3858,14 @@
     "title": "ShopGym: Realistic, reproducible sandboxes for shopping agents",
     "published": "2026-10-01",
     "excerpt": "ShopGym creates realistic online stores and generates shopping tasks based on each store’s products and features. Developers can then repeatedly test shopping agents under consistent conditions.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify released ShopGym, a tool that builds realistic fake online stores and shopping tasks. Developers can use it to test shopping AI assistants again and again under the same conditions.",
+    "tags": [
+      "ai agents",
+      "online shopping",
+      "testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/halloween-2026",
@@ -3783,10 +3873,14 @@
     "title": "Cauldron Bubble w/o the Trouble? It’s Discord Halloween, Witches",
     "published": "2026-10-01",
     "excerpt": "A cold wind whistles, a chill sets in. It’s Discord Halloween: Cauldron Chaos edition! We’ve got frights, we’ve got delights, and we’ve even got some spooky surprises up our sleeve…",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord has posted a Halloween-themed announcement called Cauldron Chaos, teasing spooky events and surprises. The teaser does not give details about what the events are.",
+    "tags": [
+      "discord",
+      "halloween",
+      "events"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/",
@@ -3794,10 +3888,14 @@
     "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
     "published": "2026-10-01",
     "excerpt": "Today, we’re announcing the public preview of AWS Well-Architected Agent , an AI-powered service that analyzes your AWS environment to deliver targeted, contextual recommendations for improving your applications’ cost, security, performance, and resilience. The AWS Well-Architected Agent analyzes your infrastructure, understands unique business goals, and delivers contextual recommendations with ready-to-implement fixes. It delivers context-aware optimization without relying on manual audits or generic checklists. The agent evaluates your environment as an experienced cloud architect would. It automatically correlates utilization metrics, resource configurations, and application topology, and analyzes against Well-Architected best practices across 65+ AWS services. It generates recommendations aligned to your declared business goals, delivers implementation packages with every finding, and surfaces cross-pillar trade-offs making it simpler to remediate the findings. Here are the three main features of this service: Goal-aligned intelligence : AWS Well-Architected Agent replaces flat, undifferentiated findings with context-aware, prioritized recommendations. You declare your business objectives and share your application context. The agent automatically generates and prioritizes recommendations by impact and effort against those goals. Three-level recommendations : AWS Well-Architected Agent provides individual resource findings with specific dollar impact (where applicable) and step-by-step remediation, consolidated findings across multiple resources scoped to your application, and broad architectural patterns and designs with Infrastructure as Code (IaC) code changes needed to align with Well-Architected best practices. Optionality in remediation : You can choose your path on how you want to remediate with a complete implementation steps tailored to your environment: the console walk-throughs, updated IaC changes for architecture-level recommendations, and AWS Command Line Interface (AWS CLI) commands. AWS Well-Architected Agent in action To get started, create an agent profile to define the scope of what Well-Architected Agent can access and provide recommendations on, complete the IAM role setup to access resources, conduct architecture review, and remediate recommendations. Create an agent profile In the AWS Well-Architected console , choose Get started with Well-Architected Agent . You can define an agent profile that specifies which AWS accounts and applications to monitor, which optimization pillars to focus on, and the permissions required. You can choose AWS accounts or AWS Regions to monitor and optimization pillars that matter most to your business. You can also set goals for each pillar: cost optimization, performance, resilience, and security. To give access to the agent for your AWS environment, provision customer-managed IAM roles the agent uses to read resource configurations, utilization metrics, and application topology. To learn more, visit the IAM prerequisite for AWS Well-Architected Agent . When you choose Get Started , the agent creates your agent profile. Resource and application recommendations will be generated within 24 hours after profile creation. You can conduct an architecture review on pre-deployment workloads by uploading an IaC project in Terraform , AWS CloudFormation , or AWS Cloud Development Kit (CDK) to be analyzed. Choose Conduct architecture review in the dashboard, upload a.zip file containing IaC project or repository file, and select which Well-Architected lens to use for reviewing your infrastructure. You can define your applications to add context which will enhance the relevancy and further contextualize recommendations. Choose Add application context in the dashboard, add your applications with AWS accounts, AWS Regions, AWS services, tags if you want to narrow the scope to specific resources, and the details of applications. Review prioritized recommendations and start remediati",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS has launched a public preview of the Well-Architected Agent, an AI tool that checks your cloud setup and suggests fixes for cost, security, speed, and reliability. It ranks suggestions by your business goals and gives step-by-step fixes you can apply.",
+    "tags": [
+      "cloud computing",
+      "ai tools",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/ousd-now-live-on-stripe",
@@ -3805,10 +3903,14 @@
     "title": "OUSD is now the default stablecoin on Stripe",
     "published": "2026-09-30",
     "excerpt": "Open USD (OUSD), a stablecoin built for global money movement, is now available across Stripe. Businesses can use OUSD to manage funds, make payments, and offer new financial services.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe now makes OUSD, a digital dollar coin called a stablecoin, available across its services. Businesses can use it to hold money, send payments, and offer new financial services.",
+    "tags": [
+      "stablecoins",
+      "payments",
+      "fintech"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/introducing-synthid-bio/",
@@ -3816,10 +3918,14 @@
     "title": "Introducing SynthID Bio",
     "published": "2026-09-30",
     "excerpt": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has introduced SynthID Bio, a early test showing that AI-designed proteins can be marked with a hidden signal. The mark is meant to leave the protein's biological function intact.",
+    "tags": [
+      "ai",
+      "biology",
+      "watermarking"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
@@ -3827,10 +3933,13 @@
     "title": "Gemini 4 Argon: our next era of frontier intelligence",
     "published": "2026-09-30",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 4 Argon, which it describes as the next step in its frontier AI models. The post provides few details beyond the title, so specific capabilities are not clear from the text.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/",
@@ -3838,10 +3947,14 @@
     "title": "Celebrating Our Newest AWS Heroes – September 2026",
     "published": "2026-09-30",
     "excerpt": "Today, we’re excited to introduce the newest members of the AWS Heroes program . AWS Heroes are a vibrant, worldwide group of AWS experts who go above and beyond to share knowledge, mentor others, and build thriving communities. These individuals make a real difference in helping developers and organizations succeed with AWS. This month, we welcome three exceptional community leaders from across the globe, each bringing unique expertise and a deep commitment to empowering builders everywhere. Avinash Shashikant Dalvi – Bengaluru, India Serverless Hero Avinash Shashikant Dalvi is a tech architect and co-organizer of AWS User Group Bengaluru who is focused on serverless, containers, and production-ready applications on AWS. He has delivered over 40 community talks, publishes the AWS for Product Builders newsletter, and creates technical content covering Amazon ECS, AWS Fargate, AWS Lambda, and AWS Amplify. Joanne Skiles – Orlando, USA Serverless Hero Joanne Skiles is an engineering leader and educator with over 16 years of experience building full-stack systems, including serverless architecture and AI systems on AWS. She organizes the Orlando AWS User Group and teaches cloud and AI concepts through her YouTube channel, conference talks, and her podcasts Chaotic Commits and Her Career Unplugged. Joanne is also a professor in the Computer Science department at Rollins College, where she runs the Transparent Systems lab. Xiaofei Li – Shanghai, China Community Hero Xiaofei Li is an AWS Golden Jacket holder and is an active community leader in the Greater China Region, leading the Kiro, Amazon Quick, and Tokyo Chinese AWS communities. He founded the Kiro Chinese User Community (5,000+ members) and initiated the Chinese localization of AWS Builder Cards across 15 cities and 3,000+ participants. Xiaofei also mentors underserved students and supports Women in Tech initiatives. Learn More Visit the AWS Heroes webpage if you’d like to learn more about the AWS Heroes program, or to connect with a Hero near you. To learn more about how to get involved with the AWS community, visit our AWS Builder Center . — Taylor",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS has named three new AWS Heroes, community experts from India, the US, and China who teach, mentor, and run local user groups. The announcement recognizes people who help other developers learn and use AWS.",
+    "tags": [
+      "cloud computing",
+      "community",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/",
@@ -3849,10 +3962,14 @@
     "title": "Amazon S3 Vectors now supports metadata pre-filtering for higher recall on filtered searches",
     "published": "2026-09-30",
     "excerpt": "Today, we’re announcing metadata pre-filtering for Amazon S3 Vectors , which delivers higher recall on filtered queries by evaluating your metadata filter before the similarity search. You can filter on attributes such as tenant, category, status, or time, and pre-filtering adds prefix matching with $startsWith for paths, URLs, and hierarchical keys. Each vector carries up to 2 KB of filterable metadata, and a single query supports up to 100 filter constraints. There is no additional cost, no re-ingestion, and no change to your queries. Most applications never search a whole index. They search the part of it that belongs to a particular user, account, or category, and they express that scope as a metadata filter. Semantic search, retrieval-augmented generation (RAG), and agentic applications all need the same thing from a filtered query: a similarity search that covers the vectors matching the filter, and returns the closest of them. With pre-filtering, a filtered query returns more of the relevant matches your index contains, giving you higher recall on filtered searches. Common use cases Pre-filtering applies wherever results have to be both relevant and correctly scoped: Legal and professional services : A law firm or e-discovery platform searches documents scoped to a single client, and with $startsWith narrows further by matter number, folder path, or document ID prefix. A single client is a small share of a firm-wide archive, and filters this narrow are where pre-filtering improves recall most. Financial services : An investment research platform searches analyst notes, filings, and call transcripts scoped by issuer, document type, and publication date. Media and entertainment : A streaming service filters by content rating and regional licensing before the semantic search, finding similar titles restricted to G and PG content licensed in one territory. Agentic applications : An agent working within a user’s session filters on fields such as owner, document set, and timestamp so its searches cover the material relevant to the task at hand. Higher recall means more of that material reaches the agent, which improves task reliability How pre-filtering works Each vector in an S3 Vectors index can carry application-defined metadata, and a query can filter on those fields. Every vector index has an index mode. On an index whose index mode is ENHANCED , S3 Vectors resolves your filter first, then searches only the vectors that match. On an index whose index mode is CLASSIC , S3 Vectors performs the vector search and filter evaluation in tandem, validating each candidate vector against your filter as it searches. Existing indexes use CLASSIC until you update them. Consider a support knowledge base of 8 million tickets, where an agent searches one customer’s history for a recurring error. If that customer accounts for 400 of those tickets, resolving customer_id first means the similarity search runs across all 400 of them, so the agent sees that customer’s prior occurrences. Before the index was updated, the same query drew its candidates from the full 8 million, and the result set contained fewer of that customer’s matching tickets. On highly selective filters, pre-filtering returns up to 5x more of the matching vectors than the same query returned before on CLASSIC indexes. Getting started Before you start, make sure your IAM policy grants permissions for the new actions. You can get started in three steps. The walkthrough below builds a small product-catalog index and runs a selective filter against it, the same pattern you would use for a multi-tenant RAG store or a document search scoped to one client. First, create a vector index: aws s3vectors create-index \\ --index-name product-catalog \\ --vector-bucket-name my-vector-bucket \\ --dimension 1536 \\ --distance-metric cosine The dimension must match the output size of your embedding model, and distance-metric should match how that model was trained (cosine is common for text e",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon S3 Vectors now lets you filter by details like customer, category, or date before the search runs, so searches return more of the matching results. It costs nothing extra and needs no changes to existing queries or re-uploading data.",
+    "tags": [
+      "cloud storage",
+      "search",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
@@ -3860,10 +3977,14 @@
     "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
     "published": "2026-09-30",
     "excerpt": "Amazon S3 Tables now support all data types in the Apache Iceberg V3 specification. You can create V3 tables or upgrade existing V2 tables to take advantage of V3 features like deletion vectors, row lineage, and new data types such as variant, nanosecond timestamps, unknown, geometry, and geography. Apache Iceberg has become the open standard for managing large analytics datasets. It lets you manage petabyte-scale tables with features like schema evolution, hidden partitioning, and time travel queries, while keeping your data in open Parquet files in data lakes on object storage like Amazon S3 . Amazon S3 Tables offer storage purpose-built to keep Iceberg tables performant and cost-effective as they grow, with fully managed features like automatic compaction, maintenance, replication, and Intelligent-Tiering. Teams running analytics on Apache Iceberg V2 tables often hit the same limits as their data grows. A compliance request to delete 50,000 user records from a 2-billion-row table leaves behind positional delete files that slow queries until compaction runs. Semi-structured events land as JSON strings that every query has to parse. Geospatial coordinates and nanosecond-precision timestamps get encoded as strings or integers. Each workaround adds storage cost, query latency, and pipeline code. With V3, Iceberg solves these challenges by offering native support for semi-structured and geospatial data, faster row-level operations, and built-in row lineage for data governance. Starting today, Amazon S3 Tables support all V3 data types, including variant, nanosecond timestamps, geometry, geography, and unknown, along with deletion vectors and row lineage. You can create new V3 tables or upgrade existing V2 tables in place, and S3 Tables continue to run compaction and maintenance for you. Apache Iceberg V3 V3 is the latest version of the Iceberg specification . Among its many improvements, V3 introduces capabilities that address the most common pain points in V2. This includes: Deletion vectors replace V2’s positional delete files with a compact binary format. That 50,000-row compliance delete now writes a single deletion vector file instead of thousands of small deletes, significantly reducing compaction time and delete file overhead. Row lineage adds _row_id and _last_updated_sequence_number to each record automatically. Your downstream pipelines can query these fields to find changed rows without scanning the full table. New data types let you store semi-structured, geospatial, and nanosecond-precision data natively instead of encoding it as strings or integers: Nanosecond timestamp(tz) for nanosecond-precision timestamps Geometry and geography for geospatial data Unknown for columns with no known type Variant data type stores semi-structured data in columnar format. During writes, the engine shreds variant data into hidden columns and collects statistics. At query time, those statistics enable file pruning that significantly reduces I/O compared to parsing JSON strings. The following sections walk through how to use these V3 capabilities in practice, with examples that show how to create tables, work with the new data types, and manage data at scale. Getting started A retail analytics team tracks user behavior across web and mobile apps. Each event has a different structure: page views include URLs and duration, purchases include items and amounts, and searches include query terms and result counts. With V3’s variant type, you store all event shapes in one table without predefined schemas: CREATE TABLE my_catalog.namespace.clickstream ( event_id bigint, event_time timestamp, user_id string, payload variant ) USING iceberg TBLPROPERTIES ('format-version' = '3') Insert events with different payload shapes without worrying about schema evolution: INSERT INTO my_catalog.namespace.clickstream VALUES (1, current_timestamp(), 'user-42', PARSE_JSON('{\"action\": \"purchase\", \"amount\": 99.99, \"items\": [\"laptop_stand\"]}')), (2, current_tim",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon S3 Tables now support every data type in the newest Apache Iceberg table version (V3), so teams can build new tables or upgrade old ones. This means mixed-format data like app events, map locations, and very precise timestamps can be stored directly, with fewer workarounds and faster queries.",
+    "tags": [
+      "cloud storage",
+      "data analytics",
+      "amazon web services"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/",
@@ -3871,10 +3992,14 @@
     "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
     "published": "2026-09-30",
     "excerpt": "Today, we’re announcing a new capability for Amazon Aurora PostgreSQL that you can use to directly query operational data together with data stored in your data lake in Apache Iceberg and Apache Parquet formats, using your existing PostgreSQL applications and tools. By eliminating the need to extract, transform, and load (ETL) structured data from data lakes into your operational database, you can reduce operational complexity and simplify application development. You can also use Aurora PostgreSQL to query data from data lakes managed in Iceberg REST Catalog (IRC)-compatible catalogs, giving you access to data across a breadth of analytics systems without moving or duplicating it. Whether you’re powering real-time dashboards, enriching transactions with historical context, or building AI agents that reason over both live and archived data, you can now do it all through a single, familiar interface. Previously, if your application needed to combine recent transactional data in Aurora with historical records stored in Amazon S3, a common approach was to build reverse ETL pipelines that duplicated data, increased infrastructure costs, and required ongoing engineering effort to keep everything synchronized. This challenge only grows as you increasingly embed AI agents into your applications, where it is impractical to predict and pre-replicate every dataset an agent might need. DuckLabs, the team that maintains the DuckDB project, recently joined Amazon, and this capability is an example of how the efficiency of DuckDB is being integrated into our services. DuckDB is now embedded directly within Aurora PostgreSQL, so you can query live operational data (including uncommitted writes) alongside your data lake in a single query. Query processing stays within Aurora, with no additional network hops and no ETL pipelines that duplicate data. You can query Apache Iceberg tables managed through the AWS Glue Data Catalog, as well as Parquet and Iceberg data stored in Amazon S3 and S3 Tables. You do all of this using familiar PostgreSQL syntax and your existing applications and tools. We’re excited to bring the speed and simplicity of DuckDB directly into Aurora PostgreSQL, so you and your agents can query and combine operational and Iceberg data using the familiar PostgreSQL applications, tools, and endpoints already in use. By building this capability around DuckDB, future improvements to the open source engine can continue to bring performance and functionality gains to Aurora and other AWS services. What is new This capability is supported on two Aurora PostgreSQL major versions: 17 (starting with 17.11) and 18 (starting with 18.6). To use it, you create an Aurora PostgreSQL cluster, attach an IAM role with the AuroraAnalytics feature, and enable the aurora_analytics extension. The IAM role is what gives Aurora access to your data in Amazon S3 and the AWS Glue Data Catalog. You then create foreign tables that point to your Iceberg or Parquet data in the data lake, and query them using familiar PostgreSQL syntax. You can complete this setup through the Amazon RDS console , or with any PostgreSQL client such as psql. The process is well documented in the Aurora PostgreSQL documentation . You can query data across external IRC-compatible catalogs through AWS Glue Data Catalog federation. You register the external catalog once with Glue, and then create foreign tables for the tables you want to query, the same way you would for any Glue-native table. A single query can then join data stored in Aurora with Iceberg tables registered across multiple catalogs, so applications get a unified view without moving data or replacing your existing catalog investments. Aurora also applies optimizations such as predicate pushdown and column pruning so that only the relevant data is read. This keeps queries efficient even as the underlying data grows. Frequently accessed data is also cached in your Aurora instance, so subsequent queries against the same",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon Aurora PostgreSQL can now query data stored in your data lake (Iceberg and Parquet files in S3) directly, alongside live database data, using normal PostgreSQL commands. This means teams can skip copying data between systems, which saves setup work and cost.",
+    "tags": [
+      "databases",
+      "data lakes",
+      "amazon web services"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
@@ -3882,10 +4007,14 @@
     "title": "Helping personal agents shop more intelligently and reliably with Link",
     "published": "2026-09-29",
     "excerpt": "As agents take on more purchases, agent builders have increasingly asked us to help agents navigate checkout and earn consumer trust. Today, we’re sharing three major improvements to support this broader set of needs.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe says it is adding three upgrades to its Link payment tool so personal AI agents can shop more smoothly and reliably. The changes respond to requests from agent builders who want help with checkout and with earning customers' trust.",
+    "tags": [
+      "ai agents",
+      "online payments",
+      "shopping"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
@@ -3893,10 +4022,13 @@
     "title": "How Diffusion Controller unifies and simplifies AI image generation",
     "published": "2026-09-29",
     "excerpt": "Algorithms & Theory",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research has introduced Diffusion Controller, a new method meant to bring several AI image generation approaches together into one simpler system. The teaser gives few details beyond that, so the exact changes are not yet clear.",
+    "tags": [
+      "ai image generation",
+      "google research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/personalization-without-user-identity-8e7891a1d486?source=rss----53c7c27702d5---4",
@@ -3904,10 +4036,14 @@
     "title": "Personalization without user identity",
     "published": "2026-09-29",
     "excerpt": "How Airbnb uses proximity signals to personalize without relying on individual user history. By : Wei Jiang , Bin Xu , Bharathi Thangamani , Weiwei Guo , Sundar Srinivasavaradhan , Tracy Yu , Huiji Gao , Swapnil Ghike , Michael Kinoti Great personalization starts with knowing your user. But what happens when the user is a stranger? A significant share of Airbnb users arrive without a login, without a recent search history, or without any prior booking — especially those landing from paid advertising or organic search. For these users, the ML models that power search ranking, destination recommendations, and marketing landing pages face the cold-start problem : there is little to no user signal available. In this blog post, we describe Proximity Features — a new class of ML features that addresses both the cold-start problem and evolving privacy constraints simultaneously. The core hypothesis: aggregate activity patterns within a proximity bucket can provide useful signals for cold-start personalization without relying on individual user identity. By grouping nearby users into buckets and aggregating their collective signals, we can construct rich, location-aware features available immediately for any user whose IP can be geo-located — no login, no prior history, and no persistent user identifier required. The challenge: serving users without individual signals Personalization at Airbnb has historically relied heavily on a user’s identifier to link together past searches, bookings, and browsing patterns. This works well for returning, logged-in users. But on marketing and acquisition surfaces, many users are logged out or visiting for the first time, and standard user identifiers are unavailable. In other cases, users are logged in, and standard user identifiers are available, but the features derived from them are stale or too sparse to carry meaningful signals. Privacy regulations compound the challenge. Under GDPR, non-essential tracking for marketing personalization requires an appropriate legal basis and, in many contexts, user consent. Separately, browser restrictions and the deprecation of third-party cookies reduce the availability of cross-site identifiers. Any feature system targeting this traffic must work without relying on persistent user identifiers for model inference . The result: users on these surfaces were receiving little to no personalization. The solution: proximity features The proximity key The key insight behind Proximity Features is geographic correlation. Users browsing Airbnb from the same city or neighborhood tend to search for similar destinations, prefer similar price ranges, and often share travel patterns and local context. A user in Seoul is far more likely to book Jeju Island, the largest island that’s part of South Korea, or Osaka, Japan, than is a user in New York. This pattern holds however much Airbnb does or doesn’t know about the individual user. From any user’s IP address, the system derives a coarse geographic location, groups nearby users into an adaptive proximity bucket, and aggregates their collective signals into features for model scoring, with no persistent user identifier required. We operationalize this insight through a proximity key : a compact group key representing a local geographic cluster of approximately 1,000 users. The key encodes a quantized latitude/longitude tile and, for densely populated areas, an IP hash bucket index within that tile — fine-grained for a city center, coarser for a rural location. In either case, the key identifies a neighborhood, not an individual. This proximity key functions as an aggregation key analogous to user_id : any ML model that currently conditions on a user identifier can instead condition on a proximity key to serve cold-start users (e.g., logged-out, anonymous, or first-time). Even logged-in users with meaningful historical information available can benefit from the additional information that use of the proximity key enables. How",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb built a way to personalize for new or logged-out visitors without knowing who they are. It groups nearby users by rough location and uses what those neighbors search and book to make recommendations.",
+    "tags": [
+      "personalization",
+      "privacy",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://dropbox.tech/machine-learning/evolving-calendar-assistant-reclaim-to-be-ai-native",
@@ -3915,10 +4051,14 @@
     "title": "Evolving our calendar assistant Reclaim to be AI-native without starting over",
     "published": "2026-09-29",
     "excerpt": "Calendars hold more than just blocks of time. They reflect how people plan their days, coordinate with others, and make room for what matters to them. Reclaim , the Dropbox-owned calendar assistant , helps manage that complexity by using AI to find and adjust time for tasks, habits, and meetings. That approach works well when inputs and expected outcomes are clear. But people also use Reclaim for scheduling that’s less straightforward. As AI assistants and natural-language interfaces became more capable, they opened up a new way for people to use Reclaim. We imagined situations where users could describe a scheduling goal in their own words, even when it didn’t map neatly to an existing setting or command. Words alone wouldn’t be enough to determine what should happen on a real calendar, though. Reclaim still needs the context that gives requests meaning, including what’s already scheduled, when a user is available, and which preferences and commitments impact changes. Connecting natural-language requests with the surrounding calendar context could help people spend less time figuring out which settings or actions to use. But building the experience required more than adding an AI interface to the existing product. We needed to rethink how Reclaim turned conversational requests into calendar changes while preserving the scheduling system already in place. Evolving Reclaim for AI without starting over For our engineers, the rebuild started with the way Reclaim already managed calendars. Calendar changes carry real weight because time is precious and scheduled events often involve other people. Any new AI capability needed to feel like a natural extension of Reclaim, and it needed to work with the scheduling logic already in place. Before the redesign, Reclaim handled calendar changes in two primary ways. Users could make specific changes themselves, like moving an event or updating a setting. And Reclaim’s automated scheduler also worked in the background. It considered each person’s preferences and availability when finding time for tasks, focus work, and recurring routines like lunch, then adjusted those calendar blocks as schedules changed. The emergence of AI agents introduced a potential third way for users to use Reclaim. Instead of choosing a specific setting or command, a user might prefer to describe what they want to do in their own words. An agent could then interpret that request, look at the relevant parts of their calendar, and work out how Reclaim could help. But we needed to address several challenges before introducing agents to the experience. Large language models can interpret the same request in different ways because they generate answers based on patterns in their training data. For example, an open-ended request like “make time for this tomorrow” could lead an agent to find an open block, create a new event, or move something already on the calendar. Each option would affect the user’s schedule differently, and some could affect other people’s calendars, too. That variability made AI agents different from the two paths Reclaim already supported. Although they arrive at decisions differently, all three actors needed to rely on the same scheduling logic. Creating a separate AI-only path would have duplicated functionality and made Reclaim’s behavior harder to keep consistent across interfaces. We needed a system that could connect a model to both the right calendar information and Reclaim capabilities while also controlling how it used them. The result was an agent platform designed to work within Reclaim’s existing architecture. Building the agent platform Our agent platform gives a model relevant calendar details and access to Reclaim’s features while controlling what the model can see and do. The model interprets what the user says and figures out what they want. The agent, meanwhile, manages the larger process by providing Reclaim’s instructions, relevant calendar context, and tools (which let it ask R",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Dropbox rebuilt its calendar assistant Reclaim so people can describe scheduling goals in plain words, with an AI agent. The agent reads the relevant calendar details and uses Reclaim's existing scheduling tools, so results stay consistent with the current system.",
+    "tags": [
+      "ai",
+      "calendar apps",
+      "dropbox"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/travels-ai-dilemma-at-skift-global-forum",
@@ -3926,10 +4066,14 @@
     "title": "Travel’s AI dilemma at Skift Global Forum",
     "published": "2026-09-28",
     "excerpt": "At the “great recalibration”-themed travel conference, Airbnb CEO Brian Chesky called AI “an existential risk” to his company and “literally the best thing to ever happen” to it in the same discussion. That sums up many travel leaders’ push-and-pull relationship with AI.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "At a travel industry conference, Airbnb's CEO said AI is both a serious threat and the best thing that could happen to his company. The comments show how many travel leaders feel mixed about AI.",
+    "tags": [
+      "travel",
+      "artificial intelligence",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/",
@@ -3937,10 +4081,14 @@
     "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
     "published": "2026-09-28",
     "excerpt": "If there’s one theme that defined last week, it’s choice. The frontier models keep arriving, and the interesting question is no longer just “how smart is it?” but “which model fits this step, at this cost, at this latency?” That’s exactly what landed on Amazon Bedrock over the past few days: GPT-6 Sol and GPT-6 Luna from OpenAI, giving you two new points on the intelligence-versus-efficiency curve, and Claude Opus 5.5 from Anthropic, the first of the Claude 5.5 family. GPT-6 Sol is built for the demanding, recurring work of development and operations, while GPT-6 Luna makes focused, repeatable tasks practical at high volume, and both ship at significantly lower pricing than their GPT-5.6 predecessors. Claude Opus 5.5, meanwhile, does more with fewer tokens than Opus 5 and is tuned for agentic coding and long-running tasks. What I like about all three is that they push toward the same idea: match the model to the job instead of reaching for the biggest one every time. The other thread was observability catching up to this agentic world, including a launch I had the pleasure of writing about myself. Now, let’s get into this week’s AWS news… Last week’s launches Here are some launches and updates from this past week that caught my attention: Introducing Amazon CloudWatch Omni – You can now observe your applications and AI agents together in a single, collaborative experience. Amazon CloudWatch Omni is built on OpenTelemetry, so your existing telemetry shows up with nothing to reconfigure, and your whole team reaches it through one URL with enterprise SSO — no console access required. It auto-discovers your services, maps dependencies, and brings AWS DevOps Agent into investigation sessions to correlate signals and trace root causes. There’s a companion post on the agent-observability side, a deeper dive on the AWS Cloud Operations blog on what observability for the AI era looks like, and the announcement on What’s New with the specifics. If you want the bigger picture, Matt Wood’s Wrong, not broken is a great read on why correctness now has to be measured at the level of the run. Enhanced custom event buses in Amazon EventBridge – Amazon EventBridge now offers an enhanced custom event bus purpose-built for organizations scaling event-driven applications across teams and accounts. You can now deploy a single centralized bus shared across every account in your organization through AWS RAM, with optional event ordering, a simplified Subscriber resource that bundles filtering, targets, and retries, content-based deduplication, and synchronous invocation for targets like AWS Lambda . A new ingress/egress pricing model replaces the compounding cross-account routing charges of multi-bus setups, and your existing buses keep working unchanged as “classic.” Amazon SageMaker HyperPod Inference Gateway – You can now front your LLM inference on Amazon SageMaker HyperPod with a Kubernetes-native, GPU-aware routing layer that deploys as a single Amazon EKS managed add-on with zero application changes. Instead of round-robin load balancing, it routes on real-time inference signals — KV cache utilization, queue depth, prefix cache hits, predicted latency, and more — cutting first-token latency by up to 82% in mixed-hardware and bursty scenarios. It works with any OpenAI-compatible model server, including vLLM and SGLang. AI agent skills for AWS End User Messaging and Amazon SES – You can now build and send messages by asking your AI coding agent in plain language. Amazon SES and AWS End User Messaging publish AI agent skills for the AWS MCP Server, giving your agent step-by-step, validated guidance for tasks like verifying a sending identity, sending a production email, or building a branded RCS agent with cards and buttons. The skills work with Claude Code, Codex, Cursor, and Kiro, so you can complete messaging workflows without hopping between docs and console screens. For a full list of AWS announcements, be sure to keep an eye on the What’s N",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS added new AI models to its Bedrock service, including GPT-6 Sol and Luna from OpenAI and Claude Opus 5.5 from Anthropic. The article says these models can be matched to tasks by cost and speed, and that some are cheaper than their predecessors.",
+    "tags": [
+      "ai models",
+      "cloud",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f?source=rss----4c5a5f6279b6---4",
@@ -3948,10 +4096,14 @@
     "title": "Partition Finalization in Pinterest’s Next-Generation DB Ingestion Framework",
     "published": "2026-09-25",
     "excerpt": "Qianrui Zhang | Sr Software Engineer, Logging Platform Kanchi Masalia | Software Engineer II, Stream Processing Platform Liang Mou | Sr Staff Software Engineer, Logging Platform Yi Pan | Principal Engineer, Agent Platform Introduction This is the third post in our series on Pinterest’s next-generation database ingestion framework. Part 1 introduced the DB ingestion framework built on Kafka, Flink, Spark, and Iceberg, and Part 2 covered automated schema evolution. This post tackles another challenge in migrating downstream customers to the new ingestion framework: knowing when data is complete enough to read. We’ll walk through that data completeness challenge and how we solve it: what “partition finalization” means, why it matters to downstream customers, how we built a unified mechanism to generate partition finalization markers, and how those markers are consumed. We’ll also look at how this mechanism generalizes beyond DB ingestion. Background & Motivation Before explaining partition finalization, it helps to define what a partition is and why a downstream consumer cares when one partition is “done.” What is a Partition A time partition is a subset of a table whose rows are grouped by a time column, e.g. all rows whose timestamp falls within a given hour. Grouping data this way lets a consumer read just the slice it needs, such as the 1 AM hour, instead of scanning the whole table. How that grouping is physically represented depends on the table format: Hive uses explicit, directory-based partitioning: each partition maps to a physical directory in S3. Iceberg uses hidden partitioning: the partitioning is defined in the metadata layer rather than by directory layout, so consumers don’t need to know the physical file layout to query a partition. What Finalization Means Now consider a typical consumer of these tables: a downstream batch job that processes a single hour’s partition and runs only once for that hour. The consumer faces the question: when should my job run? The answer is straightforward: Because the job runs only once, it should run only after the target partition is ‘finalized’, i.e. data in that partition is less likely to change. If it runs too early and the partition is still being updated after the run, it will miss later updates in that partition. And to know when a partition is finalized, it relies on the producer to put some signals on the data. For example, the producer can emit a lightweight marker in the table location when it thinks the partition is finalized, and the consumer will use a sensor to check that marker. Challenge: Finalization in the Stream-based DB Ingestion Framework In the previous batch-based system, finalization was trivial. The data was produced by a single batch job that read the whole source DB and wrote it in one shot, so once that job finished and there is data in a partition, we can consider that as finalized and downstream jobs could start consuming. The new framework is stream-based. A Flink job writes change events continuously, committing many small batches into a partition over time. Because a record’s event time (when the change happened in the source) can lag when we process it, a partition can keep receiving data after its wall-clock hour has passed and no single moment marks it “done”, and the presence of data in a partition no longer means the partition is complete. So finalization is no longer a byproduct of a job finishing. We have to infer it from the stream itself uniformly across the thousands of pipelines the framework supports, and a new mechanism is needed to support this. Our Solution: EventTime Based Partition Finalization We introduced a partition finalization mechanism into the streaming layer of the pipeline. The same Flink job that writes the CDC table also measures how far its event time has progressed and publishes a finalization marker into the destination Iceberg table, where downstream jobs can wait on it via a sensor before they start consuming. Ar",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest explains how its new streaming database ingestion system decides when a time slice of data is complete enough to read. Because data now arrives continuously, the system tracks event time progress and publishes a 'done' marker that downstream jobs can wait for.",
+    "tags": [
+      "data pipelines",
+      "pinterest",
+      "data engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
@@ -3959,10 +4111,14 @@
     "title": "Improving site performance by shipping more CSS",
     "published": "2026-09-25",
     "excerpt": "The Primer Design System powers many of the experiences you see on GitHub today. From buttons to banners to breadcrumbs, these foundational components are required to be accessible, flexible, and performant across a wide variety of scenarios. Back in 2023, the number of components on certain pages began to explode. This led to several performance-related challenges with our existing CSS-in-JS solution: Initial page loads took longer due to styles being initialized on the client Server-side rendering performance declined as style collection shifted from the client Updates to styles grew out of control as component count grew on a page It became clear that the Primer team needed to address the issue at the source. We needed to find an alternative that would completely avoid the client and server costs that we were seeing with our current solution. Most importantly, any alternative we pick would need to work in a way that would avoid any breakage to GitHub during the migration. Introducing CSS (Modules) The Primer team found a solution that met all of our criteria: CSS Modules . This format would allow us to do one of our favorite things: write and use native CSS features, while still allowing some amount of the colocation and encapsulation that we had come to expect from CSS-in-JS. With CSS Modules, styles would be authored in a CSS file alongside the JavaScript source for the component. It would also allow us to treat all class names as local by default, preventing some of the collisions and challenges that can come from global selectors. This format also removes the need for any client or server runtime behavior. Instead, styles would roll up into CSS stylesheets that were sent as part of the HTML for a page. However, this solution was radically different from the CSS-in-JS solution we had at the time. This change would require an update to every Primer component and every component at GitHub authored using this technique. Thankfully, design systems are a perfect vehicle to deliver this kind of change at scale. A gradual march towards CSS Modules The situation for moving towards CSS Modules was clear. The Primer team would need to deliver updates to each of its components, moving them from CSS-in-JS to CSS Modules. At the same time, updates we made to these components could not break any usage in GitHub. Finally, the underlying technique we used for CSS-in-JS also had to continue working for any components in GitHub that were currently using it. With all these constraints in place, we decided on an incremental migration strategy that would allow us to safely ship component updates without breaking the world. For each component, our plan was to: Add a new file that translated existing styles to CSS Modules Add the component to a feature flag that would toggle between the new and old styles Use existing visual regression tests to verify snapshots were identical between our CSS-in-JS solution and CSS Modules Gradually roll out the feature flag to our team, then to GitHub staff, and finally to all GitHub users to catch any issues along the way This process created a strong feedback loop where issues were flagged early in the process as Primer continuously delivered these changes to GitHub. The use of feature flags allowed us to do this migration safely while giving us clear signals on the performance benefits of CSS Modules. By December 2024, all components in Primer were migrated over to CSS Modules using this process. We saw performance wins across the board, in particular: 55% less time to server-side render a page 25% less time for components on a page to initialize With clear performance wins from doing this work in Primer, we began to wonder if we could see similar performance wins by doing these conversions in other parts of GitHub. Similarly, how long until we could ultimately drop support for CSS-in-JS across the company? Moving away from CSS-in-JS at GitHub One of the trickiest parts about removing our CSS-in-JS solution",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub moved its Primer design system, the shared building blocks for its site, from a styling method that ran in the browser to plain CSS files. The switch cut server rendering time by 55% and component setup time by 25%, making pages faster to load.",
+    "tags": [
+      "web performance",
+      "css",
+      "github"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/discord-update-september-25-2026",
@@ -3970,10 +4126,13 @@
     "title": "Discord Update: September 25, 2026",
     "published": "2026-09-25",
     "excerpt": "Here's the Discord Changelog from September 25, 2026, so you can stay informed on what’s new in recent app updates!",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord posted its changelog for September 25, 2026, listing recent app updates. The teaser itself does not name specific changes, so the details are not available here.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/coherent-long-form-video-generation/",
@@ -3981,10 +4140,13 @@
     "title": "Automating coherent long-form video generation",
     "published": "2026-09-24",
     "excerpt": "Generative AI",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes a new method for automatically making longer videos that stay consistent from start to finish. The teaser gives few details beyond the topic of generating coherent long-form video with AI.",
+    "tags": [
+      "ai video",
+      "generative ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
@@ -3992,10 +4154,13 @@
     "title": "Introducing Gemini 3.8 Live with Live Avatar",
     "published": "2026-09-24",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 3.8 Live, which comes with a Live Avatar feature. The article text provided is empty, so no further details can be confirmed.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/",
@@ -4003,10 +4168,14 @@
     "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
     "published": "2026-09-24",
     "excerpt": "Organizations building event-driven applications on Amazon EventBridge typically start with a single custom event bus in one account. This works well when a single team owns the architecture. As adoption grows across the organization, though, things get complicated. AWS best practices recommend a multi-account structure, which means each team runs in its own account. To route events between them, teams create multiple event buses connected through cross-account rules or bus-to-bus configurations. This workaround reintroduces the operational complexity that serverless architectures are meant to eliminate. Platform teams lose visibility into who is subscribing to which events, cross-account and bus-to-bus routing charges compound quickly, and teams that need capabilities like event ordering are forced to build complex workarounds or adopt entirely different technologies. Today, we are announcing an enhanced custom event bus in Amazon EventBridge, purpose-built for organizations scaling event-driven applications across teams and accounts. With the new enhanced custom event bus, you can deploy a single, centralized event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and a new pricing model that delivers improved economics at scale and cost allocation for publishers and subscribers. Let’s try it out To get started with an enhanced custom event bus, I navigated to the EventBridge console in the AWS Management Console and opened the Create custom event bus page. I selected Custom event bus, the recommended option labeled New. The page also offered Custom event bus – classic, which continues to receive events and route them with rules and targets. Below the selection, EventBridge showed how the new bus works. One shared bus serves every team in the organization. Publishers send events, subscribers consume only what they need, and EventBridge handles ordering, retention, routing, and delivery. The Create custom event bus page. Custom event bus is the recommended new option, with ordered delivery, filter patterns, event replay, and sharing across your AWS organization. Custom event bus – classic remains available for existing workloads. Next, I configured resource sharing. I turned on Enable event bus sharing and selected Allow sharing only within your organization. I chose AWS account ID as the principal type. I could also share with an organization, an organizational unit, or an AWS Identity and Access Management (IAM) role or user. Sharing uses AWS Resource Access Manager (AWS RAM) , so I did not have to set up cross-account permissions or bus-to-bus routing myself. Resource sharing on the new custom event bus. I enabled sharing within my organization through AWS RAM and selected an AWS account as the principal, which is how teams publish and subscribe on the same bus without extra routing. Organization-wide sharing With the new enhanced custom event bus, you can create a single event bus and share it across all AWS accounts in your organization. Platform teams deploy one bus and establish it as the central event backbone, eliminating the need to configure cross-account permissions or bus-to-bus routing. Application teams across your organization can publish and subscribe to events on the same bus without waiting for infrastructure provisioning. Publishers send events without needing to know which teams consume them, and subscribers create their own Subscriptions independently. Platform teams maintain visibility into all event flows and fine-grained control over who can publish and consume events. The new enhanced custom event bus has a default quota of 10,000 Subscribers per bus, and you can request a higher quota. That reduces the fragmentation that occurs when subscriber limits force you to split across multiple buses. Event ordering Event-driven architectures work best when consumers are designed around asynchronous patterns, where the order of events does not",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS launched an enhanced custom event bus for EventBridge that one team can share across all accounts in a company. It guarantees event order, removes the need for complex cross-account setup, and uses a new pricing model.",
+    "tags": [
+      "cloud",
+      "event-driven apps",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
@@ -4014,10 +4183,14 @@
     "title": "Rendering huge pull requests in the GitHub Copilot app",
     "published": "2026-09-23",
     "excerpt": "Broad refactors and migrations often have to land as one change. Stacked pull requests are a great way to split work into smaller changes, which makes reviews easier and helps teams ship with less risk. But some changes, like this one, can’t be split cleanly. That leaves you with a single pull request that can get very large, and the review conversation causes it to grow. The review experience needs to remain fast and smooth even when the diff and its conversation are enormous. In the GitHub Copilot app , we rebuilt the pull request view with that requirement in mind. To see how far that goes, we opened the biggest pull request we could find: an open source one with 2,200 files, over a million changed lines, and more than 400 inline review comments. Here’s how we made even this extreme pull request performant. The scope of the problem Rendering a large diff at speed is well-understood: virtualize the rows, keep the mounted DOM small, and lean on the fact that every row is a line of code at a known height. Comments are the hard part. A comment’s height depends on how its markdown wraps, the expandable sections, whether there’s a reply box in it, and whether its images have loaded yet. You find all of that out at render time. This forces a different architecture. Three problems: Measurement. You can’t know how tall a comment is until you render it. This breaks the design that lets big diffs stay responsive as you scroll. The data pipeline. A fast diff surface is worthless if the data pipeline feeding it stalls, or if it throws away work it already did. How we actually found the bugs. These problems surface under load, on a specific engine, at a specific scroll position. So we defined what healthy meant, instrumented the surface to answer it, and ran the whole change → measure → improve loop unattended. Part 1: Virtualization, and why comments break it The first step is to understand the geometry that makes a code-only diff fast. Once comments enter the picture, that geometry is no longer enough. What makes big diffs fast You cannot put a million DOM nodes on a page. The standard answer is virtualization : mount only the rows that are on screen, plus a small margin, and recycle those same DOM elements as the user scrolls. The list behaves as if all million rows exist. The scrollbar is the right size, scroll-to-row works. But only about 100 rows are ever real at once. For this illusion to hold, something has to supply the geometry. The scrollbar height is the sum of all row heights. The position of row N is the sum of the heights of the rows above it. Jumping to a row, drawing the scrollbar, deciding what’s on screen, it’s all arithmetic over a table of heights. You can build that table from estimates and correct it as rows get measured, and general-purpose variable-height virtualizers do exactly that. But if every row is a line of code at a known font size, you don’t have to. You can compute the whole table up front and it never changes, so there’s nothing to correct later. Call this the “all heights known before paint” contract. Our diff surface is built around it: An imperative, recycled code-row renderer (no React component per row) Typed-array geometry for the offset math Backend-owned diff documents streamed structure-first An imperative scroll API with exact “scroll to row N “ None of it scales badly, because no per-frame work grows with the total row count. On pure code this design is the right one, and we kept all of it. How comments change the contract Now put a review thread in the middle of the diff. How tall is it? You don’t know, and you can’t know without rendering it. Its height depends on things that only exist at render time, and they can keep changing after first paint: Markdown that wraps differently at different widths <details> blocks the user can expand or collapse in place A reply composer that opens inside the existing thread and grows as you type Suggested-change diffs, reactions, edit mode, resolution ba",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub rebuilt the pull request view in its Copilot app so very large code changes stay fast to scroll and review. They tested it on an open source change with 2,200 files and over 400 review comments. The main difficulty is that comment heights can't be known until they are drawn.",
+    "tags": [
+      "code review",
+      "github",
+      "web performance"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://dropbox.tech/culture/learnings-from-deploying-ai-at-company-scale",
@@ -4025,10 +4198,14 @@
     "title": "Dropbox CTO Ali Dasdan on moving from AI adoption to transformation",
     "published": "2026-09-23",
     "excerpt": "As AI becomes a starting point for more kinds of work, its usefulness depends on access to an organization’s trusted knowledge and context, including the files, research, feedback, decisions, and project history that give the work meaning. Dropbox helps people bring that context into the supported AI tools they choose while preserving the permissions and controls they expect, so they can spend less time finding, uploading, and re-explaining what already exists. When AI helps them create something new, Dropbox gives that work a trusted, durable home where it can be saved, shared, reviewed, approved, and built on over time. That focus on connected workflows also shapes how we use AI within Dropbox . Access to increasingly capable models can help teams produce more. But turning that output into sustained gains in productivity, quality, and customer impact requires examining workflows from end to end. That includes addressing new bottlenecks as output grows, adapting the platform that supports development, aligning organization-wide incentives, and measuring whether greater speed and volume lead to better outcomes. AI also increases the importance of human judgment. People still need to choose the right problems, give agents the context they need, evaluate the validity of their output, and remain in control of important decisions and actions. Problem solving, communication, and leadership become critical to turning AI-enabled output into real value. Dropbox Chief Technology Officer Ali Dasdan and Senior Director of Engineering Productivity Uma Namasivayam discuss lessons from deploying AI at company scale, how we assess productivity and ROI, how our progress compares with industry peers, and what organizations need to consider as they move from AI adoption to broader transformation. What have you learned in the last year about driving productivity with AI , not just for engineers but across the wider Dropbox organization? Ali: You have to start with the outcome you’re trying to achieve. Giving people AI tools is only the first step. As people use them, your assumptions get tested and new bottlenecks emerge. Maybe you’re coding faster, but now you have too many code reviews. Or you’re generating significantly more code, which puts additional stress on the tools and infrastructure that support development. If you want AI to have a meaningful impact, you have to look at the workflow end to end and keep adapting it until you’re producing the outcome you actually want. There’s no silver bullet. Uma: You have to approach it with a product mindset. Leadership saying, “You need to start using AI tools,” is good, but that alone won’t drive adoption. You also need ground-up awareness through initiatives like boot camps and show-and-tells that involve people more deeply. And you have to align incentives so managers understand what ROI they’re getting from it. How should companies think about measuring AI productivity and ROI? Ali: If I write 10 lines of code and push them to production, it’s almost impossible to prove those 10 lines were responsible for a certain amount of customer satisfaction or revenue improvement. I might produce a million lines a day, but if it’s the wrong product and customers have no interest in it, then it’s not going to work. The real ROI metrics are outcomes like revenue, cost, customer satisfaction, and retention. Then we look at proxy metrics that connect our output to those outcomes. Are we moving faster, producing more code, running more experiments, and pushing more features? Is the site faster and more reliable? There’s no single metric. The framework we use focuses on speed, effectiveness, quality, and impact, with multiple metrics under each. The industry hasn’t found the full solution yet. How does Dropbox’s AI-driven engineering productivity compare with companies operating at a similar level of technical scale and complexity? Ali: If we define peers as top technology companies we hire from and compete wi",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Dropbox's CTO explains that giving staff AI tools is only a first step; teams must fix new bottlenecks, such as too many code reviews, and measure real results like revenue and customer satisfaction. Human judgment remains essential for choosing problems and checking AI output.",
+    "tags": [
+      "ai adoption",
+      "engineering productivity",
+      "dropbox"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
