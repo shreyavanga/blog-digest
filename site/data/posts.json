@@ -1,5 +1,273 @@
 [
   {
+    "url": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
+    "company": "Figma",
+    "title": "How we brought Hello Kitty® and Friends to Figma",
+    "published": "2026-11-02",
+    "excerpt": "Since Hello Kitty® first stepped onto the world stage in 1974, she and her friends have connected generations of fans through the spirit of togetherness and thoughtful design. Here’s how our shared love of craft and community shaped our collaboration with Sanrio®, in FigJam and around the world.",
+    "summary": "Figma shares how it worked with Sanrio to bring Hello Kitty and her friends into Figma and FigJam. The post focuses on the teamwork and design care behind the collaboration.",
+    "tags": [
+      "figma",
+      "design",
+      "collaboration"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/figma-and-sanrio-celebrate-hello-kitty-and-friends/",
+    "company": "Figma",
+    "title": "Figma and Sanrio® celebrate Hello Kitty® and the joy of making things with friends",
+    "published": "2026-11-02",
+    "excerpt": "In honor of Hello Kitty®’s birthday, Hello Kitty® and Friends are moving into FigJam, and throwing a party in NYC.",
+    "summary": "Figma and Sanrio are bringing Hello Kitty and her friends into FigJam, Figma's whiteboard tool, to celebrate Hello Kitty's birthday. There is also a party planned in New York City.",
+    "tags": [
+      "design tools",
+      "collaboration"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/lakebase-postgres-now-generally-available-google-cloud",
+    "company": "Databricks",
+    "title": "Lakebase Postgres is now generally available on Google Cloud",
+    "published": "2026-11-02",
+    "excerpt": "We're excited to announce that Lakebase Postgres is generally available on Google Cloud...",
+    "summary": "Databricks has released its Lakebase Postgres database to everyone on Google Cloud, so customers there can now use it in full production. The text is a short teaser, so no further details are given.",
+    "tags": [
+      "databases",
+      "google cloud",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
+    "company": "Vercel",
+    "title": "Vercel Sandbox with Drives now starts up to 2.4x faster",
+    "published": "2026-11-02",
+    "excerpt": "Vercel Sandboxes that mount Drives now start faster. Median creation time dropped from 1.7s to 0.7s, and p95 dropped from 2.2s to 1.6s. The speedup applies automatically to every sandbox that uses Drives, with no SDK upgrade or configuration changes needed. Pricing stays the same. Learn more in the Vercel Drives documentation . Read more",
+    "summary": "Vercel Sandboxes that use Drives now start up faster, with the typical start time falling from 1.7 to 0.7 seconds. The speedup happens automatically, with no changes needed and no price increase.",
+    "tags": [
+      "cloud",
+      "developer tools",
+      "performance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
+    "company": "Vercel",
+    "title": "Vercel MCP now supports Client ID Metadata Documents",
+    "published": "2026-11-02",
+    "excerpt": "Any MCP client can now ask to connect to Vercel MCP . You still log in and approve each connection, but the client no longer has to be reviewed by Vercel first. Previously, Vercel reviewed and allowlisted each client and its redirect URIs by hand, and anything not on the list was rejected. To connect, a client publishes a Client ID Metadata Document (CIMD), a JSON file on its own domain that describes it, and uses that file's HTTPS URL as its OAuth client_id . This follows the MCP authorization spec, which now recommends CIMD over Dynamic Client Registration. Because Vercel hasn't reviewed these clients, the consent screen shows where each one comes from: its name, its logo, and the hostname that serves its metadata document, for example \"Claude Code by claude.ai\". CIMD clients don't get the Vercel verified badge, so the hostname is what you're trusting when you approve. Apps already registered with Vercel are unchanged. Read the Vercel MCP documentation to connect your client. Read more",
+    "summary": "Vercel's MCP service now lets any AI tool connect without Vercel reviewing it first, as long as the tool publishes a description file on its own website. You still log in and approve each connection, and the approval screen shows where the tool comes from.",
+    "tags": [
+      "vercel",
+      "ai tools",
+      "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
+    "company": "Vercel",
+    "title": "Vercel MCP now renders deployments as an interactive card",
+    "published": "2026-11-02",
+    "excerpt": "Vercel MCP can now show your deployments as an interactive card inside ChatGPT and other chat clients that support MCP Apps . The card shows live deployment status, build logs, and source and commit details, with a Visit button once the deployment URL is ready. You can send logs into the chat to debug with the model, or open the fullscreen view to read them beneath the card. For repositories linked to multiple projects, a project list lets you switch between them. The card is Vercel MCP's first MCP App, built on the MCP Apps extension. Clients without app support receive the deployment state, preview URL, and commit as text instead. The open_deployments tool looks up deployments by project, repository, or commit, with environment filtering. ChatGPT connects to Vercel MCP through its Connectors setup . Read more",
+    "summary": "Vercel's MCP tool can now show your app deployments as a live card inside chat apps like ChatGPT. The card shows status, build logs, and commit details, and clients without this support get the same info as plain text.",
+    "tags": [
+      "deployments",
+      "ai tools",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "LongCat 2.5 now available on AI Gateway",
+    "published": "2026-11-02",
+    "excerpt": "LongCat 2.5 from Meituan is now available on AI Gateway. This model combines native visual understanding with coding and multi-step tool use for agents working across complex codebases and full-project builds. Meituan highlights improvements in visual programming, creative design, and 3D tasks, alongside longer agent workflows that carry engineering work from planning through execution. The model supports text and image inputs with a 1M-token context window for code, documents, and extended task histories. Use meituan/longcat-2.5 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select meituan/longcat-2.5 in the agent. See the coding agents guide for details. Try LongCat 2.5 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "LongCat 2.5, a new AI model from Meituan, is now available through Vercel's AI Gateway. It can read images and text and help with coding tasks, such as building whole projects, and it can handle very long inputs.",
+    "tags": [
+      "ai models",
+      "coding tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing",
+    "company": "Vercel",
+    "title": "Flags Explorer redesigned for easier override sharing",
+    "published": "2026-11-02",
+    "excerpt": "Flags Explorer is a tool in the Vercel Toolbar where you can see which feature flags are active on your end, and share them with your team, either by setting them for the branch or through a URL. The Explorer surface has been redesigned to co-locate overrides, branch recommendations, and any related actions. Whenever a branch has overrides set, they will be recommended to teammates visiting the deployment through a dialog. Flags Explorer is available on all plans. Read the documentation to get started. Read more",
+    "summary": "Vercel redesigned Flags Explorer, a tool for checking and changing feature flags, so overrides, branch suggestions, and related actions sit together. Teammates visiting a deployment will now see a prompt recommending the branch's overrides, making them easier to share.",
+    "tags": [
+      "feature flags",
+      "developer tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
+    "company": "Vercel",
+    "title": "Evaluate Vercel Flags from another project without sharing SDK keys.",
+    "published": "2026-11-02",
+    "excerpt": "Project Connections let applications evaluate flags defined in another Vercel project within the same team, without managing SDK keys. Previously, sharing flags between projects required copying a server SDK key into an environment variable and managing it manually. Connected projects authenticate using their deployment’s identity. For local development, vercel env pull retrieves your project’s OIDC token. Manage access from the Connections page under your project's Flags section, or with vercel flags connections in the CLI. Connections grant read-only access across all environments. The consumer deployment determines the flag environment (production deployments evaluate production flags). In the consumer application, create an adapter with the source project’s ID. Access can be revoked without redeploying. Project Connections are available on all plans and require @flags-sdk/vercel 1.6.0 or later, or @vercel/flags-core 1.11.0 or later when using the core library directly. Managing connections from the CLI requires Vercel CLI 63.0.0 or later. Learn more in the Vercel Flags documentation Read more",
+    "summary": "Vercel now lets one app use feature flags defined in another project on the same team, without copying secret keys around by hand. Access is read-only, can be revoked without redeploying, and is available on all plans.",
+    "tags": [
+      "vercel",
+      "feature flags",
+      "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/blocking-malicious-npm-packages-before-and-during-installation",
+    "company": "Vercel",
+    "title": "Blocking malicious npm packages before and during installation",
+    "published": "2026-11-02",
+    "excerpt": "Vercel now checks for blocked npm packages before and during dependency installation in builds , helping prevent malicious install scripts from running. The checks use a blocklist of specific package versions selected for blocking because of malware or security vulnerabilities, with new rules typically reaching new builds within minutes. Before installation , Vercel checks supported lockfiles, including when dependencies are restored from the build cache. During installation , Vercel blocks affected public npm downloads. Existing checks of installed dependencies and function outputs continue before deployment. These protections apply automatically to new builds on all plans, with no configuration required. If a blocked dependency is detected, Vercel fails the deployment, identifies the package and version in the error, and attempts to invalidate the affected build cache. Update the dependency to a safe version and update the lockfile, then redeploy. Read more",
+    "summary": "Vercel now blocks known-bad npm packages during builds, both before and while dependencies install, so malicious install scripts are less likely to run. It applies automatically to all plans, and if a blocked package is found, the deployment fails and names the package so it can be updated.",
+    "tags": [
+      "security",
+      "npm packages",
+      "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/qodo-codex-plugin",
+    "company": "OpenAI",
+    "title": "Qodo builds context into AI code review with Codex",
+    "published": "2026-11-02",
+    "excerpt": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+    "summary": "Qodo has connected its code review tool to OpenAI's Codex, so company coding rules and past knowledge are used when checking code. This aims to catch serious bugs across many code projects before developers submit their changes for review.",
+    "tags": [
+      "code review",
+      "ai coding tools",
+      "software quality"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/lifeval",
+    "company": "OpenAI",
+    "title": "LifeVal",
+    "published": "2026-11-02",
+    "excerpt": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+    "summary": "OpenAI has introduced LifeVal, a new test that measures how well AI helps people with everyday tasks. These include finding childcare, managing money, and handling government paperwork.",
+    "tags": [
+      "ai benchmarks",
+      "everyday ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/grid-protectors-program",
+    "company": "OpenAI",
+    "title": "Introducing the Grid Protectors Program",
+    "published": "2026-11-02",
+    "excerpt": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+    "summary": "OpenAI announced the Grid Protectors Program, which will work with electricity utilities. The goal is to help future computing sites support a reliable power grid and keep electricity costs down for households.",
+    "tags": [
+      "electricity grid",
+      "data centers",
+      "energy costs"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
+    "company": "NVIDIA",
+    "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
+    "published": "2026-11-02",
+    "excerpt": "NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source,... NVIDIA DSX AI Factory Platform brings together technologies to help the ecosystem design, build, and operate more efficient AI factories, including open source, modular software components built to support multi-tenant operations and scaling. Operating an AI factory requires a shared understanding of distributed workloads: their components, pod templates, replica counts, and status. Source",
+    "summary": "NVIDIA describes a new platform, the DSX AI Factory, with open source software parts for building and running AI data centers. The post says these parts help teams understand and manage the many pieces of AI workloads that run across machines.",
+    "tags": [
+      "ai infrastructure",
+      "data centers",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+    "company": "NVIDIA",
+    "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+    "published": "2026-11-02",
+    "excerpt": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,... Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking, operators, and schedulers must work together, with settings tuned to the hardware and workload. Small mismatches can prevent workloads from running or limit performance. The NVIDIA AI Cluster Runtime (AICR)—part of the NVIDIA DSX AI Factory… Source",
+    "summary": "NVIDIA introduced the AI Cluster Runtime, a tool meant to set up Kubernetes for its new Vera Rubin GPU chips from day one. Setting up these systems by hand is hard, and small mismatches can stop AI workloads from running or slow them down.",
+    "tags": [
+      "gpu computing",
+      "kubernetes",
+      "ai infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-world-models-for-interactive-simulation-with-nvidia-cosmos/",
+    "company": "NVIDIA",
+    "title": "Build World Models for Interactive Simulation with NVIDIA Cosmos",
+    "published": "2026-11-02",
+    "excerpt": "Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into... Physical AI developers working with world models face two distinct challenges: adapting models to their sensors, tasks, and data, and getting those models into applications reliably. NVIDIA Cosmos addresses each. Cosmos is a platform of world foundation models and development tools for physical AI. Cosmos Framework provides agent skills and recipes for world model training… Source",
+    "summary": "NVIDIA has released Cosmos, a set of tools and pre-built world models that help developers building physical AI, such as robots. It aims to make it easier to adapt these models to specific sensors and tasks, and to run them reliably in real applications.",
+    "tags": [
+      "robotics",
+      "ai models",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+    "company": "Cloudflare",
+    "title": "How we halved DNS build delay and cut memory use by 85%",
+    "published": "2026-11-02",
+    "excerpt": "When I last wrote about our DNS propagation pipeline in 2022 , the Zone Builder received about 250 DNS record changes per second. Today it receives about 700, nearly three times as many, plus about 100 other events, such as zone setting changes. However, the number of events was never the real problem. The problem was the kind of work some of those events needed, and how that work grows with the size of a zone. Some zones now hold more than 20 million records, and we expect them to keep growing toward hundreds of millions. Each event starts a clock that measures how long it takes us to turn that change into data our authoritative DNS servers can use. We call that work a build. A build reads the current database state, converts it into the format used at the edge, and writes any changes to Quicksilver . In 2022, per-record builds were 150 times faster than full builds on average. On a test zone with one million records, per-record builds were 4,250 times faster. We ended that post with the obvious next step: do the same thing for zone settings. Why doesn't the Zone Builder just rebuild the setting that changed? It should, and that is where we ended up. However, proving when it was safe took most of the work. A record event identifies what changed. A zone event can come from many Cloudflare products, may not say why the zone changed, and can alter data shared by several zones with the same name. Choosing too much work wastes capacity. Choosing too little can leave stale or incorrect DNS data at the edge. We built a targeted build planner that chooses the smallest build we can prove is safe, and a new scheduler that combines work for the same zone. Zone setting changes no longer rebuild zones with tens of millions of records. Together, they cut peak memory by 85%, and the extra headroom let us safely shorten waits the pipeline has always needed for resilience, halving the time from a DNS change to its data being written to Quicksilver. How DNS changes reach the edge A DNS zone is the collection of records and settings for a domain. Cloudflare uses a multi-stage pipeline to turn a change to that zone into data available across our global network . A customer changes a DNS record through the DNS Records API or dashboard, or another Cloudflare service changes a zone setting. The change is stored in a database. The database change or another system produces a Kafka event. The DNS Kafka Aggregator combines events from several Kafka topics and sends them to the Zone Builder. The Zone Builder reads the required zone data and converts it into keys understood by our authoritative DNS servers. The Zone Builder compares those keys with Quicksilver , our distributed key-value store. It writes only what changed, and Quicksilver propagates those changes across Cloudflare's network. This is a simplified view. The Zone Builder does not copy database rows directly to the edge. It combines records with zone settings, applies DNS serving rules, and organizes the result so our authoritative DNS servers can read it quickly. Why full builds stopped scaling The original Zone Builder had one useful property: it did not need to know why a zone changed. It rebuilt the desired state from the current database state. Read the current zone and its settings. Read every DNS record in the zone. Convert those records into Quicksilver keys. Compare the new keys with those already stored. Remove stale keys, write changed keys, and update zone metadata. The final write contains only changed keys. However, a full build still reads, encodes, and compares every record, and holds the whole zone in memory while it does so. That is cheap for a small zone. For our largest zones, with tens of millions of records, the zone does not fit in memory at all. I explain how we handle that below. Zone settings made targeting harder. Universal SSL is one example. Enabling or disabling it updates metadata and can change Certification Authority Authorization (CAA) records at the zone a",
+    "summary": "Cloudflare changed how it updates DNS data for its largest zones. Zone setting changes now rebuild only what they need, cutting peak memory by 85% and halving the time for a DNS change to reach the edge.",
+    "tags": [
+      "dns",
+      "cloudflare",
+      "infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+    "company": "AWS",
+    "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+    "published": "2026-11-02",
+    "excerpt": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions , which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. In the same week, the AI blog published how one engagement platform exposed roughly 400 internal API operations the same way. Neither story involves rebuilding anything, only describing what exists and letting the agent find it. The other thread was cost. OpenAI’s newest Terra model reached Amazon Bedrock priced well below the model beside it, and two post-quantum launches landed for a deadline nobody can put on a calendar yet. Now, let’s get into this week’s AWS news… Headlines OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock , and what interests me is where it sits rather than what it tops. Terra is the everyday-workload line of the GPT-6 family. In OpenAI’s Agents’ Last Exam evaluation it scored 15 percentage points higher than GPT-5.6 Terra, performed on par with GPT-6 Astra, and completed tasks more than three times faster than both. Those are OpenAI’s figures, not an independent test. The price is what I would check first: input and output tokens are at least 50% lower than GPT-6.1 Sol and GPT-5.6 Terra. It takes up to 1 million input tokens with text and image input, and you can reach it from the Bedrock APIs or ChatGPT Work and Codex. AWS Step Functions workflows are now available as AI agent tools through Amazon Bedrock AgentCore Gateway, which connects agents to tools over the Model Context Protocol (MCP). The division of labor is the idea: the agent decides when to run a workflow and what input to pass; Step Functions runs each step exactly as you defined it. A support agent can trigger a refund, and the eligibility check, the manager approval, and the credit still happen in that order every time, because the ordering was never the model’s to improvise. Your existing Standard and Express workflows qualify as connector targets, and agents can also look up runs. It’s available in all Regions where AgentCore Gateway is, at standard rates. Last week’s launches Here are some launches and updates from this past week that caught my attention: AWS Key Management Service now supports ML-KEM for post-quantum key encapsulation – You can now establish a shared secret with a post-quantum algorithm using AWS KMS keys, with private keys in FIPS 140-3 Level 3 validated HSMs. All three NIST FIPS 203 parameter sets are supported through Encapsulate , which produces a random 32-byte shared secret and its ciphertext, and Decapsulate , which recovers it. The threat is harvest now, decrypt later: an adversary records today’s key exchange and recovers the secret once quantum computers are powerful enough. It’s available everywhere KMS runs except the Middle East (UAE and Bahrain) and China Regions. Amazon Aurora PostgreSQL added post-quantum TLS key exchange the same week, on versions 18 and higher. AWS IAM Identity Center now supports cross-Region trusted identity propagation – You can now carry a user’s identity with their request to AWS services in another Region. This removes a genuine architectural constraint: trusted identity propagation used to require every service accessing that identity to sit in the same Region, which left two unappealing options, broad IAM roles that cannot distinguish individual users, or consolidating all your services into a single Region. Now the identity travels with the request automatically, so you grant access by user and group membership and audit who accessed what. It’s available at no additional cost everywhere IAM Identity Center runs. Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS) – You can now run multiple Amazon ECS tasks concurrently on a single NVIDIA GPU, the practical answer to work that only ever uses a fraction of one, like small-model inference and",
+    "summary": "AWS lets AI agents trigger its existing Step Functions workflows as tools, so steps like approvals run in a fixed order. OpenAI's Terra model is now on Amazon Bedrock at least 50% cheaper than comparable models, per OpenAI's own figures.",
+    "tags": [
+      "cloud computing",
+      "ai agents",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
     "company": "Google Developers",
     "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
@@ -402,6 +670,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+    "company": "Google DeepMind",
+    "title": "Speeding up planning decisions with AI",
+    "published": "2026-10-30",
+    "excerpt": "Google DeepMind and UK government work together to reduce planning assessment times",
+    "summary": "Google DeepMind is working with the UK government on AI tools aimed at shortening how long planning decisions take. The teaser does not give details, but the goal is faster approvals for building projects.",
+    "tags": [
+      "ai",
+      "government",
+      "planning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
     "company": "Cloudflare",
     "title": "Cloudflare services for private origins is now generally available",
@@ -482,6 +765,21 @@
     "tags": [
       "construction",
       "data sharing",
+      "analytics"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-procore-powering-construction-analytics-opensharing",
+    "company": "Databricks",
+    "title": "How Procore is powering construction analytics with OpenSharing",
+    "published": "2026-10-29",
+    "excerpt": "Connecting an industry built on disconnected dataConstruction runs on data that rarely sits in one place...",
+    "summary": "Databricks describes how Procore, a construction software company, uses a sharing feature called OpenSharing to share project data more easily. The article is a short teaser, so details are limited. It focuses on helping construction data that is usually scattered across many systems work together.",
+    "tags": [
+      "data sharing",
+      "construction",
       "analytics"
     ],
     "summarized": true,
@@ -603,35 +901,6 @@
       "web hosting",
       "location data",
       "privacy"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
-    "company": "Vercel",
-    "title": "The fx adapter now runs the harness on the host",
-    "published": "2026-10-29",
-    "excerpt": "The fx adapter for the AI SDK’s HarnessAgent now uses libfx , the TypeScript library for fx. The harness and model requests run in your application’s process, while built-in filesystem and shell operations remain isolated in the sandbox. This simplifies sandbox setup: you no longer need to install fx inside the sandbox, run a sandbox bridge, or expose a sandbox port. Model credentials stay on the host, outside the environment where the agent runs commands. The rewrite also adds: Built-in tool filtering: choose which built-in tools the agent can use Mid-turn steering: send new instructions while a turn is running Structured output: generate responses that match a schema Image tool results: return images to the model through toModelOutput() Sessions can be saved and resumed in a new host process. Update @ai-sdk/harness-fx to the latest version to use the new adapter. Learn more in the fx harness documentation . Read more",
-    "summary": "Vercel's fx adapter for its AI SDK now runs the agent's core logic in your app's own process, while file and command actions stay sandboxed. Setup is simpler, since you no longer install or expose extra pieces inside the sandbox, and model keys stay outside the sandbox.",
-    "tags": [
-      "ai agents",
-      "vercel",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules",
-    "company": "Vercel",
-    "title": "Control AI crawlers and assistants separately in Vercel Firewall",
-    "published": "2026-10-29",
-    "excerpt": "You can now log or block requests from AI crawlers and AI assistants separately with the AI Bots managed ruleset in Vercel Firewall . AI crawlers: bots that collect content for indexing and model training AI assistants: bots that fetch pages in response to user actions or search queries For example, you can block AI crawlers while allowing AI assistants to retrieve your content to answer users’ questions. Vercel updates the rules as new bots are added. To configure these controls, open your project’s Security > Firewall > Rules . Under Bot Management , enable AI Bots and select the gear icon beside it. Set an action for AI crawlers and AI assistants, then review and publish your changes. You can also modify these rule settings using the Vercel CLI: type: embedded-entry-inline id: 30azXU4HVTfrsO9MbBOCLv Review the changes with vercel firewall diff , then apply them with vercel firewall publish . The AI Bots managed ruleset is available on all plans. Learn more in the documentation . Read more",
-    "summary": "Vercel's firewall now lets site owners log or block AI crawlers (bots that collect content for training) separately from AI assistants (bots that fetch pages to answer a user's question). This means you can, for example, block training bots while still letting assistants read your pages.",
-    "tags": [
-      "web security",
-      "ai bots"
     ],
     "summarized": true,
     "summary_version": 2
@@ -896,80 +1165,6 @@
     "tags": [
       "ai research",
       "science"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/virtual-models-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Virtual models now available on AI Gateway",
-    "published": "2026-10-28",
-    "excerpt": "Virtual models are now available on AI Gateway . A virtual model is a saved configuration that tells AI Gateway which model and settings to use. Your apps and agents call it with a custom model ID, such as vmc/coding-agent . You can change the model or settings centrally in AI Gateway without redeploying your apps or reconfiguring your agents. Use virtual models to: Configure coding agents: Set reasoning effort, fast mode, prompt caching, and other options even when your agent doesn’t expose them. Control routing and compliance: Choose providers, configure fallback models, and enforce requirements such as Zero Data Retention . Attribute spend: Attach custom reporting tags to every request that uses the virtual model. To create a virtual model, open the Virtual Models page and click Create Virtual Model . Enter a slug, choose the underlying model, configure the settings you want requests to use, and save. Or create one with the Vercel CLI : To use a virtual model, replace the provider model ID in your AI SDK or compatible API requests with vmc/<slug> , such as vmc/coding-agent . For coding agents , connect to AI Gateway with vercel ai-gateway setup if needed, then select your virtual model in the agent’s model picker or configuration. Virtual models work with every model type on AI Gateway. Read the launch post for examples or learn more in the virtual models documentation . Read more",
-    "summary": "Vercel's AI Gateway now lets you save a model setup under a custom name, like vmc/coding-agent. Apps and agents use that name, so you can change the model or settings in one place without redeploying or reconfiguring them.",
-    "tags": [
-      "ai tools",
-      "cloud services",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-plugin-now-available-in-opencode",
-    "company": "Vercel",
-    "title": "Vercel Plugin now available in OpenCode",
-    "published": "2026-10-28",
-    "excerpt": "The Vercel Plugin is now available in OpenCode . The plugin provides guidance on Vercel APIs and recommended patterns, with skills for AI SDK, Vercel Functions, Workflow, and more. It also includes specialist agents for deployment, performance optimization, and AI application design. Use /vercel:deploy to deploy projects and /vercel:env to manage environment variables. The plugin requires OpenCode 2. If you’re using OpenCode 1, upgrade with opencode upgrade --major . To install the plugin, run: Then run /mcps in OpenCode, select vercel , and sign in. This connects the Vercel MCP server so OpenCode can access your Vercel projects, deployments, and logs. Learn more in the Vercel Plugin documentation . Read more",
-    "summary": "Vercel's plugin for the OpenCode coding tool is now available. It gives guidance on Vercel features and includes commands to deploy projects and manage settings, and it needs OpenCode version 2.",
-    "tags": [
-      "developer tools",
-      "deployment",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers-new",
-    "company": "Vercel",
-    "title": "Vercel Container Registry now supports 2 GB compressed image layers",
-    "published": "2026-10-28",
-    "excerpt": "Vercel Container Registry now supports up to 2 GB per compressed image layer, up from 500 MB, allowing larger layers to be pushed without splitting them. The total image size limit remains 15 GB. The higher layer limit is useful for images with large toolchains or dependency sets, such as custom Vercel Sandbox environments for coding-agent evaluations. With Docker and the Vercel CLI installed, run these commands from the directory containing your Dockerfile: Read the Vercel Container Registry getting-started guide to build, push, and pull your first container image. Read more",
-    "summary": "Vercel's container registry now accepts single image layers up to 2 GB, up from 500 MB, so large layers no longer need splitting. The total image size limit stays at 15 GB.",
-    "tags": [
-      "cloud hosting",
-      "containers"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
-    "company": "Vercel",
-    "title": "Vercel CI is now in beta",
-    "published": "2026-10-28",
-    "excerpt": "You can now run CI for your Turborepo with one line of configuration. In Vercel's internal repositories, our wait time from git push to \"CI passed\" is 2-6x shorter, dramatically improving our CI's ability to keep up with our coding agents. To get started, prompt your agent in your repo: Each task marked with a ci tag runs on every push. Vercel CI automatically takes care of: Only running CI that is affected by your code changes Task caching with Vercel Remote Cache Installing dependencies once per run Caching dependencies across code updates To learn more: Check out our blog post Visit the documentation Discuss Vercel CI on the Community announcement Read more",
-    "summary": "Vercel has launched a beta of its own CI service, which checks code automatically on each change. The company says its internal tests now finish 2 to 6 times faster, and setup takes one line of configuration for Turborepo projects.",
-    "tags": [
-      "software testing",
-      "vercel",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
-    "company": "Vercel",
-    "title": "Vercel Agent can now validate alerts before paging",
-    "published": "2026-10-28",
-    "excerpt": "Vercel Agent can now investigate alerts from Vercel monitors before they reach your paging system. With validation enabled for a webhook destination, only alerts Agent classifies as Critical are sent to it. To enable validation: Open a monitor’s notification settings and create or link a webhook destination for your paging system, such as incident.io. Select Critical Only next to that destination. You can also configure notification destinations with the Vercel CLI using vercel monitors notifications . Add --critical-only when linking or updating a webhook destination. Agent checks logs and metrics to assess impact. For example, it can identify health-check errors that don’t affect customers or confirm sustained 5xx errors affecting checkout requests. You can also add context to each monitor to guide Agent’s investigation. Alert validation is available on Pro and Enterprise plans with Observability Plus. Observability Plus includes ten Agent investigations per billing cycle, with additional investigations billed separately . Custom monitors cost $0.0035 per GB of data scanned. Built-in alerts remain included with Observability Plus. Learn more in the alert webhook documentation . Read more",
-    "summary": "Vercel's monitoring tool, Agent, can now check alerts before they reach your paging system. When you choose \"Critical Only\" for a webhook, only alerts Agent marks as serious get sent to your pager.",
-    "tags": [
-      "monitoring",
-      "alerts",
-      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1658,51 +1853,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-    "company": "OpenAI",
-    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-    "published": "2026-10-26",
-    "excerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-    "summary": "CodeRabbit now uses GPT-6.1 Sol, an OpenAI model, to look for security risks in large software projects. Its security tool also helps developers review the problems it finds and suggested fixes.",
-    "tags": [
-      "software security",
-      "ai tools",
-      "coding"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/fanatics-streamline-fan-experience",
-    "company": "OpenAI",
-    "title": "How Fanatics and OpenAI streamline the fan experience",
-    "published": "2026-10-26",
-    "excerpt": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
-    "summary": "Fanatics, a sports merchandise company, now uses OpenAI to suggest matching items so fans can complete their game-day outfits. In tests across about 30,000 MLB products, people engaged 10% more with the shopping feature.",
-    "tags": [
-      "ai",
-      "online shopping",
-      "sports"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
-    "company": "OpenAI",
-    "title": "ChatGPT’s expanding world of work",
-    "published": "2026-10-26",
-    "excerpt": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
-    "summary": "OpenAI shared new data on how people use ChatGPT for work, covering 165 work activities in nearly 100 countries. It also shows how that use changes over time.",
-    "tags": [
-      "chatgpt",
-      "ai at work",
-      "usage data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4",
     "company": "Netflix",
     "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
@@ -2060,35 +2210,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/fraud-analyst-ai-coworker-detecting-telecom-fraud-real-time-one-platform",
-    "company": "Databricks",
-    "title": "The Fraud Analyst AI Coworker: Detecting Telecom Fraud in Real-Time on One Platform",
-    "published": "2026-10-22",
-    "excerpt": "BackgroundAccording to the Communications Fraud Control Association's 2025 survey...",
-    "summary": "Databricks describes an AI assistant that helps analysts spot telecom fraud as it happens, using a single data platform. The article is only a short teaser, so details are limited, but it focuses on catching fraud in real time.",
-    "tags": [
-      "fraud detection",
-      "telecom",
-      "ai tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/ai-cost-management",
-    "company": "Databricks",
-    "title": "The new economics of AI cost management",
-    "published": "2026-10-22",
-    "excerpt": "For the past two years, the story around enterprise AI adoption has mostly been about...",
-    "summary": "Databricks has written about how companies are managing the rising costs of using AI. The post is only a short teaser, so it does not give specific numbers or details.",
-    "tags": [
-      "ai costs",
-      "enterprise ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/formal-verification",
     "company": "Anthropic",
     "title": "LLMs are making formal software verification feasible at a much larger scale",
@@ -2422,51 +2543,6 @@
     "tags": [
       "ai security",
       "ai agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
-    "company": "NVIDIA",
-    "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-    "published": "2026-10-21",
-    "excerpt": "Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex... Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex tasks over long time horizons leads to compounding risk: the agents may download code, build new tools, request additional privileges, and touch more of the underlying infrastructure. The agents’ action paths are determined as they work… Source",
-    "summary": "NVIDIA describes a reference design called OpenShell for keeping AI agents safe and under control when they run for hours. The concern is that long-running agents can download code, request more access, and reach more systems as they work.",
-    "tags": [
-      "ai agents",
-      "security",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
-    "company": "NVIDIA",
-    "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
-    "published": "2026-10-21",
-    "excerpt": "Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams... Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams can inspect, revise, and prepare for simulation. Connecting these inputs into an editable workflow helps teams explore design alternatives and incorporate engineering feedback as the design evolves. The NVIDIA Omniverse DSX Blueprint… Source",
-    "summary": "NVIDIA describes a way to build a digital twin, a computer model, of an AI data center. It links site plans, equipment, and engineering needs into one editable model so teams can test design options and update the design as feedback comes in.",
-    "tags": [
-      "data centers",
-      "digital twins",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-    "company": "NVIDIA",
-    "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-    "published": "2026-10-21",
-    "excerpt": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino... Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino acids for a 100-residue protein sequence and the number of possibilities exceeds the number of atoms in the observable universe. Somewhere in that space is a protein that opens a path to a new therapy. There are too many combinations to… Source",
-    "summary": "NVIDIA describes a new way to design proteins using RFD4-Proteina, a method that searches for good designs while it runs. The search space is huge: even an 8-amino-acid protein has over 25 billion possible versions, so smarter searching helps find useful designs faster.",
-    "tags": [
-      "protein design",
-      "ai",
-      "drug discovery"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3163,21 +3239,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/deploy-with-void/",
-    "company": "Cloudflare",
-    "title": "Deploy with Void",
-    "published": "2026-10-15",
-    "excerpt": "VoidZero's tools such as Vite, Vitest, Oxc, and Rolldown — bundled in one toolchain as Vite+ — have made frontend development faster, but building full-stack applications requires more than just a tooling stack. These applications need server routes, databases, local development environments, and a fast and easy way to deploy ideas to production. We’re excited to open-source three new products that bring server routing, typed data access, and Cloudflare deployment into a unified Vite workflow. Void Platform: A shared deployment platform for teams to host Void apps on Cloudflare. Void SDK: A composable JavaScript SDK for building full-stack apps with Vite. Void CLI: A CLI for provisioning resources and deploying Vite apps to Cloudflare. The CLI deploys apps built with the SDK to the Platform. All three products are open-sourced as a single JavaScript package and Vite plugin that you can install via npm install void . With Void , you can build your server and client together, carry types from your database to the UI, and let Void automatically provision the Cloudflare resources that your app uses. We originally set out to build a single, private platform for all users to deploy apps to. After VoidZero joined Cloudflare , we adjusted our direction to open-source the platform and allow anyone to install because we saw a growing need: companies want to encourage vibe-coded internal apps, but are concerned about security and do not want to give cloud access to every employee . Void addresses this problem. Void Platform: a cloud platform for your company The Void Platform is fully open source and you can fork it and adapt it to your needs by integrating your company's systems, customize deployment workflows, build features for your customers, or make it work on other deployment platforms. Use the platform as it is, contribute improvements upstream, or fork it and build only the features you need. The open source code can be used out of the box or as a starting point. As an admin of a Void Platform, you control access, set resource limits, inspect deployments and usage through the Void CLI or admin dashboard, and provide guardrails so everyone else can ship serious and vibe coded apps to the same shared platform. By installing a Void Platform, your team or customers have a shared deployment environment in your Cloudflare account on top of Workers for Platforms . Void Platform enables: Faster prototyping . Your team can quickly build prototypes, deploy them, and share working apps for feedback, without setting up a separate Cloudflare account or provisioning resources for every project. This reduces the time to ship internal apps from days/weeks to minutes. Non-technical teams building . This workflow also lets teammates who do not normally write code work with coding agents to build and share their own apps. A designer can create an interactive prototype, or an operations teammate can build an internal dashboard, then deploy it to the same platform. All with the right security measures in place. To self-host a Void platform, you need: A Cloudflare account with Workers for Platforms and R2 enabled A PostgreSQL database An account with your chosen login provider A domain for your apps Then install Void as a cloud platform by running a single command: Once your platform is set up, approved users can connect to it via the Void CLI for deployment. void connect https://api.orange-company.dev A user builds their app using the Void SDK, which is what powers Void Platform benefits like authentication, framework detection, resource provisioning, and more. In other words, Void Platform only works because of the accompanying SDK and CLI. Void SDK: zero-config infrastructure Void turns a Vite app into a full-stack Cloudflare Workers app. You or your agents can write code and Void will automatically infer resource bindings and provision resources such as databases, queues, or AI bindings during deployment. To get started, add Void as a Vite plugin:",
-    "summary": "Cloudflare has open-sourced Void, a set of tools for building full-stack web apps with Vite and deploying them to Cloudflare. A company can host its own shared platform, so employees can quickly build and share internal apps without each needing their own cloud access.",
-    "tags": [
-      "web development",
-      "cloud hosting",
-      "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/singapore-office-opening",
     "company": "Anthropic",
     "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
@@ -3661,21 +3722,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.figma.com/blog/3-ways-product-designers-use-the-figma-agent/",
-    "company": "Figma",
-    "title": "3 ways product designers use the Figma agent for craft, speed, and creative expression",
-    "published": "2026-10-06",
-    "excerpt": "Here’s how teams at Uber, Granola, and Atlassian support high-quality, fast-moving work with the Figma agent, now generally available.",
-    "summary": "Figma has made its Figma agent generally available, and this post shares how teams at Uber, Granola, and Atlassian use it for design work. The tool helps them produce polished designs quickly.",
-    "tags": [
-      "design tools",
-      "figma",
-      "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
     "company": "Google Research",
     "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
@@ -3819,21 +3865,6 @@
       "privacy",
       "machine learning",
       "mobile devices"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/workflow-lab-from-design-system-to-campaign-in-figma-weave/",
-    "company": "Figma",
-    "title": "Workflow lab: From design system to campaign in Figma Weave",
-    "published": "2026-10-01",
-    "excerpt": "Design systems can power more than just designs. This workflow shows you how to turn raw materials into brand campaign collateral using the Gen Effect and Figma nodes.",
-    "summary": "Figma shows how to turn a design system into brand campaign materials using its Weave tool. The post walks through a workflow with Gen Effect and Figma nodes.",
-    "tags": [
-      "design systems",
-      "figma",
-      "marketing campaigns"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4213,10 +4244,13 @@
     "title": "Gemini 3.8 text-to-speech says hello",
     "published": "2026-09-23",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 3.8, a text-to-speech system that can turn written words into spoken audio. The article itself is only a short teaser, so no further details are available.",
+    "tags": [
+      "speech ai",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
@@ -4224,10 +4258,13 @@
     "title": "Advancing Private AI Compute with secure, server-side memory",
     "published": "2026-09-23",
     "excerpt": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind announced a new way for its AI to store a user's memory on the server, with privacy protections. The teaser is short, so details beyond that are not clear yet.",
+    "tags": [
+      "ai privacy",
+      "personal ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://stripe.com/blog/new-trends-in-global-card-fraud-how-3d-secure-and-regional-mandates-are-affecting-risk",
@@ -4235,10 +4272,13 @@
     "title": "New trends in global card fraud: How 3D Secure and regional mandates are affecting risk",
     "published": "2026-09-22",
     "excerpt": "We analyzed billions of transactions on Stripe from January 2022 to March 2026 to understand how card fraud patterns differ by region and country, what's driving those differences, and how businesses can respond.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Stripe looked at billions of card payments from 2022 to 2026 to see how fraud differs across countries. The post focuses on how regional rules and the 3D Secure extra-verification step affect risk for businesses.",
+    "tags": [
+      "card fraud",
+      "payments"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/safer-for-teens-same-discord-for-adults",
@@ -4246,10 +4286,14 @@
     "title": "Safer for Teens, Same Discord for Adults",
     "published": "2026-09-22",
     "excerpt": "We’re launching a revamped, privacy-focused age assurance solution including methods that won’t require an ID or selfie. Here’s how it works.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord is launching a new age-check system for its users. It includes options that do not require showing an ID or a selfie, and it is designed to protect privacy.",
+    "tags": [
+      "online safety",
+      "privacy",
+      "teens"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/",
@@ -4257,10 +4301,14 @@
     "title": "Now on Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
     "published": "2026-09-22",
     "excerpt": "Amazon CloudWatch now offers CloudWatch Omni, an AI-powered observability experience for the applications and AI agents you run together. You reach Omni through a dedicated URL for your organization and sign in with the identities you already manage, so working in Omni does not require access to the AWS Management Console. Omni is built on OpenTelemetry: the telemetry you already send to CloudWatch appears in Omni with nothing to reconfigure, and any other workload you instrument with OpenTelemetry sends its telemetry to an OpenTelemetry Protocol (OTLP) endpoint. CloudWatch Omni offers both agent observability and application observability in a single experience. In our companion post , we introduced the agent observability capabilities of Omni for generative AI and agentic workloads. In this post, we present the application observability experience. Engineering teams spend a significant portion of their observability time maintaining dashboards, tuning thresholds, and switching between tools to piece together what happened during an incident. When an issue crosses team boundaries, context gets lost in Slack threads and screenshots rather than flowing naturally to the next engineer. CloudWatch Omni changes this by organizing observability around your applications rather than individual signals, and bringing your whole team into the same workspace. What CloudWatch Omni brings CloudWatch Omni addresses three problems that engineering teams told us they face today. One collaborative experience for your whole team. Every engineer accesses CloudWatch Omni through a single URL with enterprise SSO (via IAM Identity Center , supporting Okta, EntraID, and other providers). No AWS Console access is required. SREs, developers, database engineers, and managers share the same data and investigation context. When an investigation escalates, the next person joins the same session with full context already in front of them. The system adapts as your applications evolve. CloudWatch Omni discovers your services, maps dependencies, and adjusts alarms automatically. Instead of manually curating dashboards and tuning thresholds, you declare what matters (availability targets, latency budgets, error rate thresholds) and Omni adapts as your system changes. When you deploy new services, Omni updates the application topology automatically. AI-powered investigation with Amazon DevOps Agent. Amazon DevOps Agent participates alongside your team in investigation sessions, correlating signals and suggesting next steps. The agent works from the same telemetry your engineers see, so its suggestions are grounded in the actual state of your application. It identifies correlated events across services, traces root cause paths through your dependency graph, and maintains investigation history for post-incident review. How an investigation works When something breaks, CloudWatch Omni opens an investigation session pre-loaded with context. Here is a typical incident workflow: An alarm fires on elevated error rates in your checkout service. Omni opens a session showing the service topology, correlated signals (a deployment 10 minutes earlier, increased latency from a downstream payment API), and DevOps Agent’s initial analysis. Your on-call SRE confirms the deployment correlation, pulls in the trace view to identify failing endpoints, and checks if the payment API latency correlates with a capacity limit. The SRE escalates to the payments team. The payments engineer joins the same session and sees everything found so far, plus DevOps Agent’s correlation with a configuration change in the payment provider’s API gateway. They identify the root cause and roll back. The entire investigation history is captured automatically. No separate incident report needed. Walkthrough: setting up your first Space To set up CloudWatch Omni for your team, open the CloudWatch console and click “Try CloudWatch Omni.” Figure 1. CloudWatch console — Omni setup page Next, connect your ide",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Amazon has launched CloudWatch Omni, a shared workspace where engineering teams monitor and investigate their apps together, with an AI assistant helping spot likely causes of problems. Team members sign in with their existing company logins and do not need AWS console access.",
+    "tags": [
+      "cloud monitoring",
+      "ai tools",
+      "incident response"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
@@ -4268,10 +4316,14 @@
     "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
     "published": "2026-09-22",
     "excerpt": "Today, Amazon CloudWatch introduces CloudWatch Omni, a unified observability experience for application and AI workloads that is app-centric, AI-powered, built on open standards, and delivered off-console. CloudWatch Omni is a purpose-built observability, evaluation, and experimentation solution for AI agents. It helps teams design, evaluate, and operate AI agents across any model provider, framework, or runtime, with an eval-driven workflow, support for the tools you already use, and observability delivered where you work: directly in your IDE and through a standalone web experience, separate from the AWS Management Console. Organizations deploying agentic AI systems face observability challenges that traditional monitoring can’t address. Agent behavior is non-deterministic: a prompt change can degrade response quality even when standard metrics show no errors. Teams spend hours manually reviewing logs across multiple systems, unable to pinpoint what changed or why. Existing tools force teams to choose between siloed generative AI monitoring or fragmented solutions requiring constant context-switching between their coding environment and browser-based dashboards. CloudWatch Omni captures every trace and includes built-in evaluators for correctness, coherence, retrieval quality, and tool selection, among others. You can compare prompt versions side by side in the playground, build test datasets from production traffic, run experiments across different configurations, and detect regressions automatically. Two surfaces for development and operations CloudWatch Omni delivers observability through two complementary surfaces. Developers get a native extension inside VS Code and Kiro (the currently supported IDEs), where traces appear as you run your agent with a playground and evaluators a click away. Operators get a standalone web experience, separate from the AWS Management Console to monitor the fleet, accessible through SSO with no AWS console needed. Both share the same data: the trace a developer debugs is the trace an operator investigates. The Cloud Login feature connects your local IDE environment to your AWS account, enabling you to send telemetry data to Amazon CloudWatch for persistent storage, share traces with your team, and access production dashboards. This connection is optional. You can use CloudWatch Omni entirely locally during development, then connect to the cloud when you are ready to monitor agents in production. Getting started CloudWatch Omni offers two ways to get started: through the IDE extension (for VS Code and Kiro) or directly through the cloud experience, where you can start sending telemetry data to CloudWatch without installing any IDE extension. In this walkthrough, I install the extension, create an agent, run it, and explore the traces and evaluation tools from my IDE. After installing the CloudWatch Omni extension from the VS Code Marketplace , the CloudWatch Omni icon appears in the Activity Bar. From the welcome screen, I selected Get started with Sample Project to load a pre-configured agent with sample trace data or use shortcut to Command Palette using Command + Shift + P (on macOS) or Ctrl + Shift + P (on Windows/Linux) and select Omni: Create a new Project Figure 1. CloudWatch Omni welcome screen & create new project in VS Code The sample project comes with an agent implementation and example datasets. Part of the getting-started experience is adding OpenTelemetry instrumentation, and CloudWatch Omni guides you through each step. You can also create a new agent from scratch. CloudWatch Omni walks you through the process using an interactive chat where you define the agent’s purpose, select a model provider, and configure tools. All data is stored locally by default. You can optionally connect to AWS to send data to Amazon CloudWatch. After verifying the configuration, I started the local dev server and sent a question to the agent. What makes this different from a typical chatbot inter",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS launched CloudWatch Omni, a tool that tracks and tests AI agents, so teams can see how an agent behaves and spot when a change makes it worse. It works inside VS Code and Kiro for developers and in a separate web view for operators.",
+    "tags": [
+      "ai agents",
+      "monitoring",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/helix",
@@ -4279,10 +4331,14 @@
     "title": "Helix: The internal tool powering our Shopify app's native migration",
     "published": "2026-09-21",
     "excerpt": "We built Helix to help LLMs rebuild the Shopify app in Swift and Kotlin, using small checkpoints and strict quality gates to keep the code shippable.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify built an internal tool called Helix to help AI language models rewrite its Shopify app in Swift and Kotlin, the languages used for native iPhone and Android apps. It works in small steps with strict checks so the code stays ready to ship.",
+    "tags": [
+      "mobile apps",
+      "ai tools",
+      "shopify"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://dropbox.tech/developers/new-dropbox-api-documentation",
@@ -4290,10 +4346,14 @@
     "title": "Introducing our new Dropbox API documentation",
     "published": "2026-09-21",
     "excerpt": "We're excited to announce that our modernized Dropbox API documentation is now live at https://docs.dropboxapi.com . We've rebuilt our API reference to make integrating with Dropbox faster and more intuitive. What’s new Interactive API testing Test endpoints directly in the documentation. No more switching between docs and separate testing tools. You can set parameters, issue API calls, and see real responses from the Dropbox API right in your browser. AI-powered assistance Get instant help with the embedded AI assistant. Ask questions about endpoints, troubleshoot issues, or get code examples without leaving the page. Connect your AI tools Connect compatible AI tools directly to our documentation through MCP (Model Context Protocol) using the MCP server. This gives your AI assistant access to up-to-date Dropbox API documentation right where you work, so it can answer questions, help you explore the API, and assist with integrations using information directly from our docs. To access the MCP server, use the \"Connect to Claude Code\" or \"Connect to Cursor\" actions in the API Reference pages, or connect to the MCP server at: https://docs.dropboxapi.com/_mcp/server Modern, unified, searchable experience Explore the Dropbox API through a clean, responsive interface that brings endpoints, types, schemas, and related documentation together in one place. Improved navigation and search make it easier to find the right endpoint or parameter, jump between related resources, and discover the information you need without digging through multiple pages. Complete API details Access comprehensive information including detailed error responses, type definitions, and full request/response schemas. We want your feedback This is a major update to how we serve our developer community, and we want to make sure it meets your needs. Tell us what you think: What's working well? What could be better? What features would you like to see next? Please share your feedback in the Dropbox Developer Forum . Your insights will help us build better tools for the entire developer community. Get started Visit https://docs.dropboxapi.com to explore the new documentation, try out the new features, and then let us know what you think. Thanks for building with Dropbox! The Dropbox API Platform Team",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Dropbox launched a rebuilt version of its developer documentation at docs.dropboxapi.com. Developers can now test requests right in the page, ask an built-in AI helper questions, and connect AI coding tools to the docs.",
+    "tags": [
+      "developer tools",
+      "dropbox",
+      "api documentation"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
@@ -4301,10 +4361,14 @@
     "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
     "published": "2026-09-21",
     "excerpt": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking a workshop from the AWS Builder Center mobile app while waiting for a delayed train, and it made those spare twenty minutes very useful. That is why I am glad to open this week with the Builder Center mobile app. AWS Builder Center is now available as a mobile app on iOS and Android , extending the experience beyond desktop and web. Using your AWS Builder ID, you stay signed in across sessions and can browse trending articles, access 600+ AWS Skill Builder courses, and manage hands-on workshops with free sandbox environments from your mobile device. You can follow AWS Heroes, Community Builders, and User Group Leaders, check Builder Loft event calendars on the go, and receive push notifications for subscribed topics and communities. The app also supports the Wishlist feature for submitting product feedback directly to AWS teams. It is available worldwide on the Apple App Store and Google Play Store. Builder Center also added two features this week. Polls give you a way to ask the community a question from the Home feed: write a question, add 2 to 5 answer options, set a deadline, and people vote, with results updating live and discussion happening in the comments. Votes are anonymous, and creators see aggregate counts and percentages only. Separately, the Zero to Shipped hackathon is open from September 18 to October 2. You connect your coding agent to AWS, build a real application, and ship it live on AWS for a chance to win a share of a $28,000 prize pool. Five winning projects each receive $5,000 in AWS credits and an AWS Builder swag bundle. Last week’s launches Here is what else happened this week. Amazon Connect Talent is now generally available – Amazon Connect Talent is an AI-powered hiring solution for talent acquisition teams managing hiring at scale. Informed by decades of Amazon hiring science, it uses AI agents to conduct structured voice interviews, administer evidence-based assessments, and score candidates consistently, so recruiters can focus on final decisions. Candidates interview 24/7 from any device, and recruiters review scores, transcripts, and detailed evaluations the next morning. All candidate data is anonymized during AI evaluation, each competency is scored against a rubric with every score tied to specific evidence from the interview, and recruiters keep final decision authority over every hire. General availability includes competency-based assessments, AI-led voice interviews with adaptive questioning, a brand-customizable mobile-first candidate portal, and admin onboarding tools. Amazon Corretto 27 is now generally available – Amazon Corretto 27, a Feature Release version of the no-cost, multi-platform distribution of OpenJDK, is now available for download on Linux, Windows, and macOS, with support through April 2027. Notable features include G1 as the default garbage collector across all environments (JEP 523), post-quantum hybrid key exchange for TLS 1.3 (JEP 527), compact object headers by default for a smaller memory footprint (JEP 534), and JFR in-process data redaction to remove sensitive data from Java Flight Recorder recordings before they leave the JVM (JEP 536). It also continues previews of enhanced pattern matching, structured concurrency, and lazy constants, along with the Vector API incubator. Kimi K3 by Moonshot AI is now generally available on Amazon Bedrock – Kimi K3 is now available on Amazon Bedrock for coding and knowledge work. According to Moonshot AI, Kimi K3 is its most capable model and the first open model to reach 2.8 trillion parameters. It combines native vision capabilities with a 1-million-token context window, making it well suited to long-running coding sessions acr",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "AWS Builder Center now has free mobile apps for iPhone and Android, letting developers read articles, take AWS courses, and join workshops on the go. Amazon Connect Talent, an AI tool that runs voice job interviews and scores candidates, is also now fully released.",
+    "tags": [
+      "cloud computing",
+      "developer tools",
+      "ai hiring"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/millemiglia-a-realistic-instance-generator-for-middle-mile-logistics/",
@@ -4312,10 +4376,14 @@
     "title": "MilleMiglia: A realistic instance generator for middle-mile logistics",
     "published": "2026-09-18",
     "excerpt": "Algorithms & Theory",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research has released MilleMiglia, a tool that generates realistic test problems for planning middle-mile shipping, the leg that moves goods between warehouses and hubs. The text provided is only a short teaser, so details are limited. It can help researchers test shipping planning methods on realistic data.",
+    "tags": [
+      "logistics",
+      "algorithms",
+      "research tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
@@ -4323,10 +4391,14 @@
     "title": "The future of practice: Enabling teachers to create learning interactives with generative UI",
     "published": "2026-09-17",
     "excerpt": "Education Innovation",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes a new approach that lets teachers create interactive learning activities using generative AI, which builds the interface on the fly. The teaser gives few details beyond this, so the exact features are unclear.",
+    "tags": [
+      "education",
+      "ai tools",
+      "teaching"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/beyond-two-towers-launching-the-3-tower-engagement-co-train-model-part-2-0b96167d2c14?source=rss----4c5a5f6279b6---4",
@@ -4334,10 +4406,14 @@
     "title": "Beyond Two Towers: Launching the 3-Tower Engagement Co-Train Model (Part 2)",
     "published": "2026-09-17",
     "excerpt": "Authors: Longyu Zhao (Staff Machine Learning Engineer), Gwendolyn Zhao (Staff Machine Learning Engineer), Peng Yan (Senior Machine Learning Engineer), Yuanlu Bai (Senior Machine Learning Engineer), Yuan Wang (Senior Machine Learning Engineer), Yao Cheng (Staff Machine Learning Engineer), Ang Xu (Principal Machine Learning Engineer), Zhaohong Han (Manager II, Ads Lightweight Ranking) Introduction Previously¹, we launched the next-generation serving stack for standard ads, which we call Nexus. Nexus decoupled candidate generation from scoring and moved us beyond the classic two-tower-only world, enabling richer model architectures while still meeting stringent latency and cost constraints. Building on this system, we set out to design the first ads lightweight ranking model that goes beyond two towers. It jointly predicts three probabilities for each candidate ad: pCTR, the probability of a click; pGCTR30, the probability of a good click that lasts at least 30 seconds; and pOCTR, the probability of an outbound click to the advertiser’s destination. To support these objectives efficiently, we partition the query and Pin embeddings into task-specific CTR, gCTR30, and oCTR segments. For the CTR task, the fast two-tower prediction uses the first 64 dimensions of the CTR segment, while the three-tower prediction uses the full CTR segment together with richer cross features. For gCTR30 and oCTR tasks, full embeddings are shared between two-tower and three-tower predictions. This lets each task learn dedicated representations while sharing the overall model. In principle, Nexus places very few hard constraints on the architecture we can serve: cross-attention, sequence modeling, and more expressive interaction modules are all on the table. However, in practice we quickly ran into the fundamental reality of ads lightweight ranking at Pinterest scale: for a typical request, we need to score on the order of hundreds of thousands of candidates (P99 post-targeting candidate counts can exceed 200K on some surfaces). We cannot simply keep increasing model complexity and expect to stay within our latency and cost budgets. To strike a balance between latency and performance, we landed on a 3-tower co-train model design. This design has a few key properties: We keep the query tower and Pin tower from the existing two-tower model, which lets us cache Pin embeddings offline and still obtain fast dot-product predictions for all candidates. We extend the architecture with a third cross tower that performs cross-attention between user sequences and candidate (Pin) features, plus an inter module that further mixes query, Pin, and cross embeddings. We co-train two-tower and three-tower predictions in a single model, giving us both fast but less accurate scores and slower but more accurate scores that we can deploy in different stages of the serving flow. Put simply, the same model produces a fast two-tower score for every candidate and a richer three-tower score for a selected subset, so we can spend additional compute where it has the greatest impact. Later in this blog, we will walk through the model architecture (cross tower and inter module), serving performance optimizations, and the two-stage scoring flow that leverages both two-tower and three-tower predictions. By combining these changes, we maintained two-tower prediction quality while achieving around 30% reduction in offline loss for three-tower predictions across our engagement tasks, compared to the existing production model (details see below Offline Performance section). These offline gains translated into online lifts in CTR and gCTR30, reductions in cost per click (CPC), with a modest increase in infrastructure cost. Model architecture Our starting point was the existing two-tower engagement model, with separated query and Pin towers whose dot product feeds into task-specific heads. On top of this, we introduced two major components: A new cross tower that uses reduced-query cross-atte",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest built a new ad-ranking model that predicts clicks, long clicks, and clicks to advertiser sites using three connected parts instead of two. It scores many ads quickly with a fast first pass, then uses a richer score on a smaller set, improving accuracy while keeping costs modest.",
+    "tags": [
+      "machine learning",
+      "ads",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/the-guest-journey-updated-in-real-time-extending-airbnbs-sequence-recommender-with-chronon-8f1582578553?source=rss----53c7c27702d5---4",
@@ -4345,21 +4421,14 @@
     "title": "The guest journey, updated in real time: extending Airbnb’s sequence recommender with Chronon",
     "published": "2026-09-17",
     "excerpt": "How two new Chronon capabilities, Push Mode and NRT Model Transform, allows us to provide more relevant search results instantly as a guest explores, rather than waiting for the next batch run. By : Pengyu Hou , Yuli Han , Daochen Zha , Haozhen Ding , Xin Liu , Sophie Wang , Pallavi Adusumilli , Sherry Li , Henry Saputra , Chun How Tan , Huiji Gao , Yan Zhang , Stephanie Moyerman , Yi Li , and Sanjeev Katariya A guest’s interaction with Airbnb doesn’t pause to wait for a nightly batch job. Someone might browse a dozen listings on a Tuesday afternoon, run a new search that evening, and expect the next search to reflect the recent activity; it’s also to Airbnb’s benefit for that to be the case. In our previous post, Personalizing Airbnb search by learning from the guest journey , we described how we built a Transformer-based sequence encoder that creates better, more personalized search rankings for a guest using the booking, review, and browsing data that is most relevant to them — their own. That system ran as a daily batch job: each night it processed the previous day’s activity and refreshed embeddings for guests who had something new to show for it. That design worked well, but it left a gap. Activity from earlier the same day wouldn’t show up in the embedding until the following day’s run, on top of the pipeline’s own processing lag — in practice, up to nearly two days of staleness. For a guest actively planning a trip, that meant the ranking model was often working from a slightly outdated picture of what they wanted, and the recent activities are often highly relevant to current search needs. This is a limitation that our original JourneyFormer research had already flagged as needing new serving infrastructure to solve. In this post, we describe how we closed that gap by adding two new capabilities to Chronon , Airbnb’s feature platform: Near-real-time Model Transform and Push Mode. Chronon is an open source project, and these capabilities have been contributed back to our public repo . Background To keep a multi-layer Transformer off the critical serving path, our original design split inference into two stages. Offline, the sequence encoder would run as a scheduled batch job: each night, it would process the previous day’s guest activity and write a fresh embedding to a low-latency store for any guest who had something new to show for it. Online, retrieval was already real-time: the moment a guest ran a search, the ranking model read that guest’s embedding straight out of the store and combined it with the live query to score candidate listings. This split kept serving latency low while still letting every ranking decision draw on years of guest history — but it meant an embedding was only ever as fresh as the last completed batch run. Challenges Moving from daily batch updates to near-real-time updates introduced three potential challenges that we needed to address: First, staleness had two separate sources: the batch schedule itself, which only ran once a day, and processing lag within that job, which pushed effective staleness closer to two days. Fixing only one of these wouldn’t have been enough to fully close the gap; we needed a pipeline that could react to a guest’s activity as it happened, not simply run more often. Second, our sequence encoder was built to run as a scheduled inference job over a full day’s snapshot of guest events, not as a service reacting to individual activity events one at a time. Wiring model inference into a real-time pipeline meant rethinking where and how the encoder got called, without duplicating the offline logic used for training. Third, guest activity signals — page views, searches, and other interactions — arrive as independent event streams. Reacting to any one of them in isolation risked missing the fact that these events need to be merged with a guest’s longer-term profile and routed through the encoder consistently, so the resulting embedding stays comparable to the one produ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/",
-    "company": "AWS",
-    "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
-    "published": "2026-09-17",
-    "excerpt": "Today, we’re announcing the general availability of new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 instances . These instances are designed to run a variety of low-to-moderate CPU utilization workloads such as freemium services, training and demo environments, staging and development, data processing, microservices, low-traffic websites, and login gateways. T8i instances Thousands and thousands of customers run various lightweight workloads on T3 instances that require small, cost-effective compute configurations. These include microservices architectures, low-traffic websites, development and testing environments, small databases, data processing jobs, and short-duration compute tasks. Many of these customers like T family’s burstable performance model, which provides a baseline level of CPU performance with the ability to burst above the baseline when needed using CPU credits. As customers modernize their infrastructure, migrate from on-premises environments, adopt event-driven and microservices architectures, and experiment with AI inference workloads, they have asked for newer generation cost-optimized small instances, better price performance to reduce their total cost of ownership, and a seamless migration path that leverages their existing knowledge and tooling. T8i instances address each of these requests: Up to 30% better price performance. Powered by the AWS Nitro System and custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), T8i instances enable customers to lower their total cost of ownership with up to 30% better price performance. Up to 70% higher compute performance. T8i instances deliver up to 70% higher compute performance, up to 1.25x higher network bandwidth, and up to 2.4x higher EBS bandwidth compared to T3 instances. Seamless upgrade from T3. For existing T3 customers, upgrading to T8i is straightforward. The instances offer the same CPU credit system and the same familiar lightweight compute options customers already know. Customers simply select T8i instead of T3 and immediately benefit from improved price performance. Cost-effective entry point for new customers. For customers new to AWS or migrating from on-premises, T8i instances provide one of the most cost-effective entry points to run workloads that need low-to-moderate CPU utilization or for running short-duration compute tasks such as batch processing, event-driven functions, or CI/CD pipelines. Instance specifications T8i instances offer four sizes, each with two vCPU offered as a single core. The following table summarizes the specifications. Instance size vCPUs Memory (GiB) Baseline Performance /vCPU (%) CPU credits earned / hour Network burst bandwidth (Gbps) t8i.nano 2 0.5 5 3 Up to 6.25 t8i.micro 2 1 10 6 Up to 6.25 t8i.small 2 2 20 12 Up to 6.25 t8i.medium 2 4 20 12 Up to 6.25 Like T3, T8i instances offer unique vCPU-to-memory ratios such as 1:0.25, 1:0.5, and 1:1 that are not offered by other EC2 instances. Like T3, T8i instances utilize the CPU credit system along with the Standard and Unlimited credit configuration modes. Unlimited mode is the default on T8i. For workloads that need larger instance sizes above T8i offerings ( nano , micro , small , and medium ), I recommend M8i Flex instances that offer up to 30% better price performance than equivalent previous generation T3 instances along with the flexibility to scale up to 16xlarge . Now available Amazon EC2 T8i instances are available today in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon, N. California), Asia Pacific (Hyderabad, Malaysia, Mumbai, Seoul, Singapore, Sydney, Tokyo), Canada (Central), and Europe (Frankfurt, Ireland, London, Paris). For Regional availability and upcoming Region expansion, ",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb updated its search ranking so a guest's recent activity shows up in results within minutes, instead of waiting for a nightly update that could lag nearly two days. It did this by adding two new features to its open source feature platform, Chronon.",
+    "tags": [
+      "search ranking",
+      "machine learning",
+      "real-time data"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/",
@@ -4367,10 +4436,14 @@
     "title": "AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity",
     "published": "2026-09-16",
     "excerpt": "Quality and reliability have always been a point of pride for Spotify. We run an extraordinarily complex... The post AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity appeared first on Spotify Engineering .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Spotify wrote about how using AI to help build software changed its work, and what it learned and fixed to keep quality high while moving faster. The teaser is short, so details are limited.",
+    "tags": [
+      "ai",
+      "software quality",
+      "spotify"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/adding-the-discord-updates-you-want-to-see",
@@ -4378,10 +4451,13 @@
     "title": "Adding the Discord Updates YOU Want to See",
     "published": "2026-09-16",
     "excerpt": "For Discord’s birthday, we wanted to celebrate YOU, so we asked you what you wanted to see… and we cooked up new things that you all asked for!",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord asked its users what updates they wanted and has now added several features based on their requests. The post was written to celebrate the company's birthday.",
+    "tags": [
+      "discord",
+      "product updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
@@ -4389,10 +4465,14 @@
     "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
     "published": "2026-09-15",
     "excerpt": "Algorithms & Theory",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes a new method called Retrieve-for-Train that aims to speed up complex AI search by avoiding slow processing steps during inference. The post is short, so details beyond this are not clear from the teaser.",
+    "tags": [
+      "ai search",
+      "machine learning",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261?source=rss----53c7c27702d5---4",
@@ -4400,10 +4480,14 @@
     "title": "Beyond the model: Engineering AI infra with scientific judgement",
     "published": "2026-09-15",
     "excerpt": "How Airbnb’s agent harness transforms unstructured data exploration by encoding scientific methodology into scalable, reproducible, and audit-ready infrastructure. By : Wren Dougherty Ask a coding agent to analyze 100,000 customer support conversations and within minutes you’ll have a polished taxonomy, precise prevalence numbers, and an executive-ready summary. What you can’t see is the investigation that produced them: the methods it chose, the evidence it weighed, how much to trust it, or whether a second request would agree. All that reaches you is the polish. The model is undeniably intelligent, but intelligence without methodology is not science. LLMs certainly make for confident scientists, but we need them to be responsible ones. Smarter models help, but intelligence has never been the whole of science, in people or in machines. The method is as much the product as the answer. That is the idea behind the agent harness we built for data science: the methodology itself, built as infrastructure around the model . It governs how an AI agent operates, from framing a question to selecting evidence to recording decisions, so results can be reproduced, audited, and challenged, and the method shared, inspected, and built on. The challenge of unstructured data exploration In 2025, Airbnb was preparing to launch an AI customer service assistant . Before it could ship, we needed to understand exactly what kinds of situations it would face in the real world. That included rare events that could be risky for AI to interact with, and involved examining their taxonomy and prevalence to create the datasets that would help us build a more responsible product. The investigative work to do this was rigorous, but the process was deeply artisanal. Months of high-touch iteration went into each investigation, from finding the right data, reviewing samples with experts, and generating representative datasets, and the method was manually curated across notebooks, tables, docs, and individual judgment. This was fine for one investigation — but as we carried the same investigation into new languages, new geographies, and new LLM-based products at a near-weekly cadence, the workload outgrew the process. To bring the same rigor, thought, and quality at this new pace, and involve more people, we needed to make each investigation less bespoke. In short, we needed a way to replicate the methodology itself. Insight Miner: Agent harness for unstructured text understanding Insight Miner starts with the engineering (the queries, the scaled labeling and embedding, the clustering and tracking), so that no one has to learn new infrastructure to run analysis at scale. The core method is well established: extract, embed, cluster. Around that core we assembled the methods we had come to rely on, drawn from internal investigations and industry research: prompt tuning, hard-example mining, contrastive labeling, and how to start with unsupervised exploration then mature into classification. These pieces used to live in separate notebooks, manually iterated and shared by copy and paste. Now they are in one shared package, which gets updated whenever an individual investigation teaches us a better technique. An investigation begins with a research question in a chat session, with an agent that is at once research partner, executor, and expert in the methods the harness holds. Insight Miner isn’t tied to a single dataset, domain, or question: it runs over any unstructured text source, through whatever lens the question needs, with the same rigor behind every investigation. As we expanded our community support AI assistant to new languages and countries , we used Insight Miner to carry out investigations that used to take months in just a matter of days. But its bigger impact was ensuring that rigor and speed both increased, instead of trading off. With this harness, data scientists were able to shift their focus from executing analyses to improving the techniques use",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb built an AI system called Insight Miner that handles the repetitive steps of studying large piles of text, like customer messages. It packages proven analysis methods so results can be repeated, checked, and shared, and it cut some months-long investigations down to days.",
+    "tags": [
+      "ai tools",
+      "data analysis",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
@@ -4411,10 +4495,13 @@
     "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
     "published": "2026-09-15",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has announced Gemini 3.8 Live and a version called Gemini 3.8 Live Extended Thinking. The article text is empty, so details beyond the names are not known.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01?source=rss----4c5a5f6279b6---4",
@@ -4422,10 +4509,14 @@
     "title": "Evolving Pinterest’s Embedding Retrieval Platform",
     "published": "2026-09-11",
     "excerpt": "Authors: Bowen Zhou | Staff Software Engineer; Shan Gao | Senior Software Engineer; Jingwen Hu | Software Engineer II; Wenjiang Chu | Staff Software Engineer The Billion-Embedding Challenge At Pinterest, the “signal” is our lifeblood. Whether it’s a home decor enthusiast finding the perfect rug or a fashion seeker discovering a new aesthetic, our discovery engine relies on understanding deep semantic relationships to help our users find inspirations. Over the last few years, the explosive growth of embedding-based retrieval has fundamentally transformed how we surface these signals — and at the heart of that transformation is Manas, Pinterest’s in-house distributed search platform. Embedding Retrieval is one of the core capabilities of Manas, supporting multiple approximate nearest neighbor search algorithms, hybrid queries with both token and embedding clauses, as well as real-time updates to ensure fresh contents become searchable within seconds. Deployed on over 80 clusters and serving billions of embeddings, Manas embedding retrieval powers all major product surfaces at Pinterest including Home Feed, Search, Related Pins, Ads, and Notifications. However, as our corpus scales toward tens of billions of embeddings and our models capture increasingly complex interactions, we face mounting challenges around cost efficiency, scalability, and flexibility. On the infrastructure side, traditional ANN algorithms like HNSW are notoriously memory-hungry — they require the entire index to reside in RAM to maintain low query latency, making cost grow linearly with corpus size. On the modeling side, the classic two-tower retrieval paradigm is too restrictive: it reduces each candidate to a single embedding and scores relevance through a simple dot product, leaving little room to express richer, context-dependent notions of similarity. To tackle these challenges, our team has been evolving Manas’s embedding retrieval stack across three fronts: Quantization. We reduce the memory footprint of embedding indices by compressing vectors into lower-bit representations with fewer effective dimensions. Quantization has been rolled out to all major use cases, delivering over 50% memory reduction in embedding indices and 20–30% cost savings in serving infrastructure. SSD-based Serving. Rather than holding entire indices in RAM, we serve ANN queries directly from SSD by carefully bounding the I/O per request — sustaining high throughput with low tail latencies at a fraction of the memory cost. Early experiments demonstrate a 10x reduction in memory usage and 40% CPU savings compared to in-memory serving Multi-embedding Retrieval. We move beyond the single-vector-per-candidate constraint of the two-tower model by supporting richer scoring functions that consider multiple embeddings per candidate. This unlocks more expressive ranking at the retrieval stage. We are currently partnering with a product team to launch a pilot use case. In this blog post, we will delve into the technical details and results of each initiative, and discuss what’s next for embedding retrieval in Manas. Quantization: Redefining the Footprint of High-Recall Search For a long time, serving embeddings in 16-bit or 32-bit float precision was considered the common practice. But at Pinterest’s scale, raw precision is a luxury that often provides diminishing returns. We discovered that quantization — transforming these high-dimensional float vectors into compact integer representations — is one of our most effective ways to better cost efficiency. Evaluating the Trade-offs: SQ vs. PQ In the Manas stack, we focused our implementation on two primary quantization algorithms: Scalar Quantization (SQ) and Product Quantization (PQ) . The core of these methodologies lies in partitioning the vector space into disjoint subspaces and mapping each vector into an integer representation: SQ applies uniform discretization from float to integer per dimension, while PQ performs a K-Means clustering",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest reworked its in-house search system that finds similar pins by cutting how much memory it uses. Compressing data cut memory in its search indexes by over 50% and lowered serving costs by 20–30%, while tests of reading from disk instead of memory showed a 10x memory cut.",
+    "tags": [
+      "search",
+      "cloud costs",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/shop-app-migration",
@@ -4433,10 +4524,14 @@
     "title": "Migrating Shop app from React Native to native",
     "published": "2026-09-10",
     "excerpt": "We migrated the Shop app from React Native to Swift and Kotlin. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify rebuilt its Shop app from React Native into native Swift and Kotlin code. With help from AI tools, the team went from a first test to a finished app in the app stores in 12 weeks.",
+    "tags": [
+      "mobile apps",
+      "shopify",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/back-to-native",
@@ -4444,10 +4539,14 @@
     "title": "Native is now the future of mobile at Shopify",
     "published": "2026-09-10",
     "excerpt": "Coding agents changed what it costs to build mobile apps twice. Here’s why Shopify is moving from React Native back to Swift and Kotlin.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify is moving its mobile apps away from React Native and back to native Swift and Kotlin code. The post says new AI coding tools have changed how much building mobile apps costs, which is the reason for the switch.",
+    "tags": [
+      "mobile apps",
+      "shopify",
+      "coding tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
@@ -4455,10 +4554,13 @@
     "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
     "published": "2026-09-10",
     "excerpt": "Machine Intelligence",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research introduces ToolGrad, a way to automatically create training examples that teach AI models to use tools. The article is only a short teaser, so details of how it works are not clear from this text.",
+    "tags": [
+      "ai training",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/building-pinterests-vlm-serving-stack-on-nvidia-dynamo-0dce6e93d0f3?source=rss----4c5a5f6279b6---4",
@@ -4466,10 +4568,14 @@
     "title": "Building Pinterest’s VLM Serving Stack on NVIDIA Dynamo",
     "published": "2026-09-10",
     "excerpt": "Lei Pan | Senior Software Engineer; Salina Wu | Senior Software Engineer; Cristian Lopez | Software Engineer I; Guangtong Bai | Staff Software Engineer; Soam Acharya | Principal Engineer; Saurabh Vishwas Joshi | Principal Engineer; Chia-Wei Chen | Staff Software Engineer; Ambud Sharma | Principal Engineer Why VLM Serving Matters at Pinterest Pinterest is a visual search and discovery platform, so its AI systems must reason over both language and visual content. Vision-language models (VLMs), which can interpret images, compare visual candidates, and respond naturally to user intent, are becoming the foundation for the next generation of Pinterest experiences: Pinterest Assistant, hybrid search, multimodal reranking, content understanding, signal generation, content safety, and more. This direction also reflects Pinterest’s broader strategy to customize open-source models to meet its product & scale needs. Pinterest Assistant is a standout example. This multi-turn conversational experience covers both user language and visual content. Serving it requires low-latency VLM inference over rich multimodal context as well as reworking Qwen3-VL with proprietary multimodal embeddings to cut runtime cost while improving performance. Serving VLMs, however, introduces more challenges compared to text-only LLM workloads. Requests may carry multiple images, require extra vision encoder computation, incur larger and more variable prefill cost, and create higher KV cache pressure. To support this new class of models & product experiences, we built Pinterest’s VLM serving stack on top of NVIDIA Blackwell GPUs and NVIDIA Dynamo. Blackwell GPUs incorporate many architectural innovations that are uniquely positioned for today’s most demanding AI workloads — including higher BF16/FP8 compute throughput, increased memory bandwidth, and larger HBM memory capacity — that enable dramatically higher performance for inference. Dynamo provides a distributed inference orchestration layer that gives us the flexibility to optimize multimodal workloads across the full serving path, including disaggregated encoder/prefill/decode serving, multimodal support in the Dynamo frontend and vLLM, multimodal KV-aware routing with custom payloads, and KV cache offloading. The Serving Challenge Figure 1: Architecture of Dynamo-based serving system As mentioned above, serving VLM for Pinterest use cases present several challenges: Request payloads and preprocessing : For text-only serving, the request payload is just text (or tokens), so preprocessing is mostly tokenization plus applying a standard chat template; there are no external assets to fetch and no image-specific constraints. For VLM serving, the payload includes both text and images (URLs, base64, or precomputed embeddings), so the serving stack must download or load images, run image preprocessing (resize, enforce min/max pixels, normalization), map them into the model’s multimodal input format, and build prompts that mix both text and image content while inserting any required vision tokens or projectors, otherwise images get dropped or misinterpreted. Complexity is increased as requests include more images — Pinterest use cases sometimes require sending thousands of images per request. Expensive prefill : In text-only serving, the expensive part is typically decode, with relatively modest and uniform prompt lengths, so KV cache pressure is more predictable. In VLM serving, requests often include many images or content items per query, which makes prefill dominant (encoding visual context is costly), drives much larger and more irregular KV caches, and requires our serving stack to support KV-aware routing, cache offloading, as well as careful prompt design to stay within latency and memory SLOs. Multi-turn workloads : In text-only serving, multi-turn chat mainly increases prompt length and token costs but stays within a uniform text interface, so the serving logic is mostly about truncation and history manag",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest built a new system to run its vision-language AI models, which handle both text and images, using NVIDIA Blackwell GPUs and NVIDIA Dynamo software. The system is meant to power features like Pinterest Assistant, a chat experience that works with pictures, while keeping responses fast and costs lower.",
+    "tags": [
+      "ai models",
+      "pinterest",
+      "image search"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/",
@@ -4477,10 +4583,14 @@
     "title": "Why Spotify Is Not Using Bayesian A/B Testing",
     "published": "2026-09-08",
     "excerpt": "Clearing the confusion about what Bayesian A/B testing is. The post Why Spotify Is Not Using Bayesian A/B Testing appeared first on Spotify Engineering .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Spotify's engineering team wrote a post explaining that they do not use Bayesian A/B testing, a way of comparing two versions of a feature. The post aims to clear up confusion about what that method is.",
+    "tags": [
+      "a/b testing",
+      "experiments",
+      "statistics"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/discord-patch-notes-september-8-2026",
@@ -4488,10 +4598,13 @@
     "title": "Discord Patch Notes: September 8, 2026",
     "published": "2026-09-08",
     "excerpt": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord posted its patch notes for September 8, 2026, listing recent technical fixes made to the app. The teaser does not say which specific fixes were included.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
@@ -4499,10 +4612,14 @@
     "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
     "published": "2026-09-08",
     "excerpt": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind released AlphaGenome Atlas, a map that predicts what happens when any single DNA letter changes, covering about 9 billion possible changes in the human genome. It could help researchers figure out which genetic changes might affect how genes work.",
+    "tags": [
+      "genetics",
+      "ai",
+      "dna"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
@@ -4510,10 +4627,14 @@
     "title": "Transfer learning for genomic prediction in underrepresented populations",
     "published": "2026-09-03",
     "excerpt": "General Science",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes a way to use transfer learning to help predict genetic traits in groups that are underrepresented in existing genomic data. The article's text is only a short teaser, so details beyond the title are not available.",
+    "tags": [
+      "genomics",
+      "machine learning",
+      "health research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
@@ -4521,10 +4642,14 @@
     "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
     "published": "2026-09-03",
     "excerpt": "General Science",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research and partners say they have mapped the complete brain of a male fruit fly, down to individual nerve cells and their connections. The teaser gives few other details. It is a step toward understanding how brains work.",
+    "tags": [
+      "neuroscience",
+      "brain mapping",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/",
@@ -4532,10 +4657,14 @@
     "title": "Portal by Spotify cut my Claude Code token usage by 90%",
     "published": "2026-09-03",
     "excerpt": "Most of what an AI coding agent does for me isn't thinking. It's I/O. The post Portal by Spotify cut my Claude Code token usage by 90% appeared first on Spotify Engineering .",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Spotify engineers describe Portal, a tool that reportedly cut the amount of text an AI coding assistant (Claude Code) processes by about 90%. The teaser says most of the assistant's work is reading and writing data rather than thinking, which is what the tool targets.",
+    "tags": [
+      "ai coding tools",
+      "spotify",
+      "cost savings"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
@@ -4543,10 +4672,13 @@
     "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
     "published": "2026-09-03",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has introduced WeatherNext 3, a new AI model for forecasting weather around the world. The company presents it as its most advanced and accurate weather model so far.",
+    "tags": [
+      "weather forecasting",
+      "ai models"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/river-vulnerability-remediation",
@@ -4609,17 +4741,6 @@
     "title": "Becoming an AI Team",
     "published": "2026-09-01",
     "excerpt": "John Grass | Sr. Manager, Engineering A Fundamental Transformation An AI team is fundamentally more than just a group whose members incorporate AI tools into their existing workflows. The journey to becoming an AI team necessitates a fundamental and comprehensive paradigm shift in how the team defines ownership, engages in strategic planning, and, most critically, executes on its core goals and objectives. This transformation is not merely an addition of new technology; it is a restructuring of the team’s operating model, philosophy, and individual roles. Becoming an AI team requires a holistic shift: team members transition from routine, manual execution to empowered, AI-augmented strategists and problem-solvers. In an AI-centric environment, every single member is significantly empowered, not only through access to cutting-edge AI tools and sophisticated models but through an expanded scope of responsibility and influence . These new capabilities allow individuals to automate routine tasks, accelerate data analysis, and rapidly prototype solutions, freeing up cognitive resources for higher-level, more strategic thinking. The expectation shifts from simply completing tasks to orchestrating intelligent systems and focusing on solving problems that were previously intractable. Consequently, the very nature of the work for both individual contributors and managers will be fundamentally different from anything that has come before. At Pinterest, this isn’t theoretical. Our infrastructure teams sit at the core of a product that serves billions of Pins, boards, ads, and real-time signals. That reality has forced us to treat “becoming an AI team” as an operational necessity, not a side project as we cannot keep scaling reliability, cost efficiency, and developer productivity using only traditional playbooks. AI Team Capabilities The advent of accessible Artificial Intelligence (AI) tools has fundamentally raised the performance ceiling for what development teams can accomplish. To illustrate this profound shift, consider a normally challenging project — for example, refactoring an entire legacy codebase to replace a widespread used process named “foo” with a more modern one named “bar.” This type of undertaking, which can be critical for long-term maintainability but often low on the priority list due to its sheer scale, would have previously required a dedicated team of several engineers and a timeline spanning many months, potentially a year or more. With the seamless integration of modern AI tools, projects once considered infeasible or prohibitively expensive in terms of human capital and time can now be completed with incredible speed and accuracy. The very refactoring example mentioned above, utilizing sophisticated code-generation and transformation models, can now be executed and verified in a matter of a week or less. This new capability changes far more than just project timelines; it fundamentally reshapes how organizations and teams must approach prioritization. The set of “possible projects” that are technically within reach has grown dramatically, multiplying the complexity of deciding where to focus energy. Consequently, the act of prioritization has become even more critical. Teams must internalize a new maxim: Just because something is feasible does not mean it is strategic. The ability to accomplish a task quickly with AI does not inherently align it with the core goals of the business or product. AI raises the ceiling of what teams can accomplish — yet strategic prioritization becomes even more essential amid expanded possibilities. By offloading repetitive, high-effort engineering tasks to AI, teams will fundamentally shift their focus. Engineers, product managers, and designers must dedicate more time and energy to high-level strategic thinking, in-depth problem definition, and validating genuine user needs, rather than getting caught up in execution details. Consequently, the core value of an engineering team m",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-    "company": "Google DeepMind",
-    "title": "Introducing agentic video understanding with Gemini",
-    "published": "2026-09-01",
-    "excerpt": "",
     "summary": "",
     "tags": [],
     "summarized": false,
