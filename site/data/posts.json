@@ -1,5 +1,225 @@
 [
   {
+    "url": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
+    "company": "Vercel",
+    "title": "Vercel CI no longer requires a linked Vercel project",
+    "published": "2026-11-03",
+    "excerpt": "Vercel CI can now run on a GitHub repository that has no Vercel project. Until now you had to create an empty project just to connect the repository. To enable it, you need: The Vercel GitHub App installed with access to the repository Your GitHub account connected to your Vercel account Write or admin permission on the repository Then, from a clone of the repository, run: CI is enabled for the team your CLI is set to. Pass --scope <team> to use a different one. From the next push, tasks run as configured in your repository. Private GitHub repositories only. Public repositories and other Git providers are not yet supported. Read the Vercel CI documentation to configure tasks. Read more",
+    "summary": "Vercel's automated build checks can now run on a GitHub repository without first creating an empty Vercel project. This saves setup work, but it only works for private GitHub repositories for now.",
+    "tags": [
+      "continuous integration",
+      "vercel",
+      "github"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/how-zapier-turns-ideas-into-working-software-in-hours-with-vercel",
+    "company": "Vercel",
+    "title": "How Zapier turns ideas into working software in hours with Vercel",
+    "published": "2026-11-03",
+    "excerpt": "Zapier on Vercel Interactive partner demos in under two hours with v0, replacing a process that could take weeks First versions of three internal applications, each built in one day A shared daily briefing for more than 60 marketers, replacing individual efforts to assemble the same information 3.3 million sandboxes created in one month, isolating the code execution behind Zapier’s AI workloads Before the industry had a word for agents, Zapier was building them. Today Zapier is the AI orchestration platform connecting AI to the workflows, data, and systems businesses use every day. Zapier has been a Vercel customer since they began using Vercel for web experiences several years ago. They stayed, and expanded, because every team that needed to ship quickly found the same answer: speed, with the security guardrails already in place. As they grew, so did their adoption of Vercel as more teams found new uses for the platform. Today, Vercel supports work across engineering, partnerships, and marketing, from customer-facing AI to interactive partner demos and internal applications. The needs vary by team, but the priority is getting useful work into people’s hands quickly. A backend engineer can create an interactive demo of an integration inside a partner’s product. In marketing, a former product marketer with no prior deployment experience can share tools containing sensitive information through a company-approved environment and keep improving them as colleagues use them. Zapier’s teams are moving faster and doing more than they could before. When the next launch comes around, building on Vercel is a given. From weeks of prototype work to a demo in under two hours Every partnership Zapier signs extends what its customers can automate. The Powered by Zapier team is how those partnerships become product, helping SaaS and AI companies embed Zapier’s automation capabilities directly into their own tools, so users can automate without ever leaving the partner’s app. The stakes are high, because Zapier relies on this team to make its platform the entry point to all the software in the world. The problem was speed: collaborating outside the organization took forever, with every prototype requiring screenshots, design time, and frontend resources, and weeks could pass before a partner saw anything clickable. With v0 , the team can create a fully interactive, multi-view prototype in under two hours, showing an embedded Zapier experience inside the partner’s own product. Chu’s background is in backend development, not frontend engineering or design, but v0 lets her build these experiences without coordinating a separate design and frontend effort for every partner conversation. Partners can click through the flow and share it with colleagues, using the prototype as a blueprint for implementation alongside the API documentation. Sharing sensitive internal data securely In marketing, Joe Stych set out to make the team’s scattered knowledge easier to use. He had spent years in product marketing before becoming a agentic go-to-market engineer, but had never worked out of a Git repository or deployed an application. At an internal hackathon, he built Marketing Hive, a shared source for positioning, messaging, personas, and competitive intelligence. Sharing his local prototype meant making sensitive information accessible to colleagues without exposing it to everyone else. “The Hive holds our positioning, personas, and competitive intel, so I couldn't just send people a link. On Vercel it was behind our SSO from the first deploy, so I could share it without exposing it” says Joe Stych, Senior Lead, Agentic GTM at Zapier. Zapier’s data and security teams had already endorsed Vercel. Stych deployed through the company’s approved internal tooling environment, with access gated behind Zapier’s single sign-on. He develops in Cursor and keeps code and source material in GitLab, where changes trigger Vercel builds and deployments . If an update needs t",
+    "summary": "Zapier, a company that connects software tools, uses Vercel to build things quickly. Its partnerships team now makes interactive demos in under two hours instead of weeks, and a marketer built a shared, login-protected knowledge hub for more than 60 colleagues.",
+    "tags": [
+      "software development",
+      "tools for teams",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/how-openevidence-scales-medical-search-for-doctors",
+    "company": "Vercel",
+    "title": "How OpenEvidence scales medical search for 650K doctors",
+    "published": "2026-11-03",
+    "excerpt": "OpenEvidence on Vercel Serves 650,000 doctors with medical search Completes production deployments in about five minutes Absorbs traffic spikes without additional capacity provisioning Reduced serverless spend by 90% with Fluid compute Updates doctor- and patient-facing applications independently OpenEvidence helps physicians find medical evidence during care, whether they’re checking a dosage on intensive care rounds or handling a case outside their specialty without a specialist nearby. Answers draw on peer-reviewed literature and include citations, so doctors can examine the sources behind them. OpenEvidence’s small team began using Vercel to get early experiments online and kept that workflow as the product grew, relying on the platform to handle web deployments and capacity. Building software physicians depend on The stakes are different when software helps inform medical decisions. An incorrect answer can affect how a doctor treats a patient, while an unavailable application can cut off access to evidence when it is needed. OpenEvidence supported more than 20 million clinical consultations in January 2026 . The company also reported that more than 100 million Americans were treated by doctors using OpenEvidence in 2025 . \"Honestly, life or death is not inaccurate,\" says Kush Khosla, Engineering Lead at OpenEvidence. \"We operate in situations where it's an ER and they really need to know what's going on. Uptime is very, very important to us.\" \"A lot of doctors and medical professionals are used to really outdated software,\" says Andy Yoon, Engineering Lead at OpenEvidence. A more modern experience still needs to meet physicians' expectations of speed, stability, clarity, and information they can trust. The small team needs a way to test updates to the web application before putting them into production and to roll back if something goes wrong. Keeping releases simple as the audience grows Andy recalls why Vercel suited the team he joined at OpenEvidence. \"I was pretty much the only engineer on our team coming from an actual frontend background,\" he says. \"Most of our team works in Python and machine learning.\" He adds, \"Given the makeup of our engineering team, Vercel really scaled with our needs so well.\" The team builds its physician-facing web application with the Next.js framework . When engineers push changes to a development branch, Vercel builds and deploys a preview , giving them a link they can use for live demos and share with colleagues to try new features. Pushing or merging into the production branch then triggers the production build and deployment. If a release needs reverting, the team can roll back to a previous deployment . That workflow lets the team release multiple times a day, with each change becoming available to a physician audience that Kush thinks about whenever he ships something: More doctors without more provisioning Keeping that application available means handling demand the team can’t always anticipate. Andy was scrolling through Slack when he saw the message that OpenEvidence had gone viral on TikTok, reaching around two million views in under a week. He watched traffic climb and checked the logs. Response times stayed fast and error rates remained near zero , and with no additional capacity to provision, he went back to his work. Beyond sudden spikes, the team has accommodated sustained growth without rebuilding the web application. \"Not once have I had to think, now that we have five times as many doctors, what's happening to page loads or time to first paint,\" Kush says. \"The scaling has happened so naturally that we end up focusing on other things.\" A 90% drop in serverless spend As usage grew, VP of Engineering Micah Smith was watching compute costs. The team enabled Fluid compute for its functions on Vercel, and Micah described the result alongside the wider infrastructure budget: \"We reduced our serverless spend by 90% while maintaining the same performance, and even as we've scale",
+    "summary": "OpenEvidence, a medical search tool used by about 650,000 doctors, runs its web app on Vercel, which lets its small team ship updates several times a day and handle traffic spikes without adding servers. After turning on Fluid compute, the company cut its serverless computing bill by 90% while keeping performance the same.",
+    "tags": [
+      "medical software",
+      "cloud costs",
+      "web deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/how-mercor-ships-internal-apps-and-billions-of-production-tokens-on-one-platform",
+    "company": "Vercel",
+    "title": "How Mercor ships internal apps and billions of production tokens on one platform",
+    "published": "2026-11-03",
+    "excerpt": "Mercor on Vercel Batch jobs cut from 12 hours to 2 hours 18M requests and 63B tokens routed through AI Gateway in 10 days Expert access provisioned in seconds via Vercel Passport Over 2,000 projects created by hundreds of internal builders Mercor connects hundreds of thousands of domain experts with frontier AI labs, helping those labs generate the human data they need to train and evaluate leading models. It also runs large batches of automated grading jobs to evaluate models for labs and enterprises. Demand arrives in bursts that can push model traffic to peak capacity for days, even as individual evaluation or labeling jobs carry 24-hour deadlines. With so little time to deliver, requests waiting on a provider’s rate limits can put a client’s deadline at risk. Mercor’s business teams also need applications tailored to each engagement, giving experts a way to see their tasks and progress without waiting for changes to the core platform. For Aaron Brown, Mercor’s Head of Security, enabling more people to build means making it easier to give them the access they need and keep track of how they use it. Mercor uses Vercel AI Gateway to manage model access and Vercel Passport to handle secure access to their applications. When model capacity becomes a customer deadline Mercor’s mix of direct integrations and third-party gateways could not provide enough token-per-minute capacity for its open-model workloads when demand surged. As requests hit provider limits and entered retry queues, time-sensitive batch jobs stretched beyond 12 hours, consuming more than half of a client’s 24-hour deadline. AI Gateway provided more inference capacity and failover routing between providers when requests hit rate limits, helping batch work continue instead of waiting in retry queues. Mercor reports that those jobs now finish in 2 to 3 hours, leaving more time to complete the rest of the client’s work. In its first 10 days on Gateway, the team routed 18 million requests and 63 billion tokens, without hitting rate limits. Mercor continues to use multiple gateways and vendors, valuing Vercel for its combination of model access, controls, and hands-on support when the team needs more capacity. Engineers also get one API for leading foundation model providers and a growing catalog of open models, so they can try a new model without building another provider integration. Giving engineers room to experiment within limits As model use grew, Mercor needed to understand where token spend was going, but its previous setup offered little visibility into usage by team and project. A single loop error in a script could exhaust the available budget. Hundreds of Mercor engineers now use open models through AI Gateway with per-user keys that carry expiration dates, token limits, and spend limits. Security can give experimentation a budget and an end date, then use the usage records to see which user, project, and workload is driving consumption. Engineers can try different models through the same gateway under those controls, without managing another set of provider credentials each time. Managing access as business teams build A few hundred people across Mercor’s business teams now build applications on Vercel, where the company’s project count has grown from fewer than a dozen to roughly 2,000. Many of those projects are temporary environments for a specific client engagement. One production use case gives experts detailed views of their project tasks and progress. Rather than ask engineering to add every engagement’s interface to the core platform, business teams build the interfaces themselves and share them with the experts doing the work. To share those applications, teams need to control who can sign in without taking on a separate authentication setup for every project. Passport provides that common authentication layer, handling sign-in to Vercel deployments through an existing identity provider. Mercor’s identity team built a product called Audiences, in",
+    "summary": "Mercor, which connects domain experts with AI labs, moved its model traffic to Vercel's AI Gateway. Its time-sensitive batch jobs dropped from over 12 hours to 2-3 hours, and the team routed 18 million requests without hitting rate limits.",
+    "tags": [
+      "ai infrastructure",
+      "batch processing",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/heimstaden",
+    "company": "OpenAI",
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "published": "2026-11-03",
+    "excerpt": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
+    "summary": "Heimstaden, a European property company, is using OpenAI's ChatGPT Enterprise and Codex tools to change how it manages residential buildings. The company says the tools help it cut costs and give employees more capability.",
+    "tags": [
+      "ai tools",
+      "real estate",
+      "property management"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+    "company": "OpenAI",
+    "title": "Accelerating engineering for the physical world",
+    "published": "2026-11-03",
+    "excerpt": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+    "summary": "OpenAI published a post about how its ChatGPT and Codex tools are helping engineers work faster on designing physical products. The work covers areas like CAD drawings, circuit board design, and computer simulations.",
+    "tags": [
+      "engineering",
+      "ai tools",
+      "product design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/transformers-mic",
+    "company": "Hugging Face",
+    "title": "Transformers Model Integration Contracts",
+    "published": "2026-11-03",
+    "excerpt": "",
+    "summary": "Hugging Face has published a post about the rules that new AI models must follow to be added to its Transformers library. The article text itself was not included, so details are limited to the title.",
+    "tags": [
+      "ai models",
+      "open source software"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+    "company": "Hugging Face",
+    "title": "Palette: teaching a small model to build decks in your design language",
+    "published": "2026-11-03",
+    "excerpt": "",
+    "summary": "Hugging Face describes Palette, a project that trains a small AI model to create slide decks that match a company's design style. The article text provided is only a title, so details beyond that are not known.",
+    "tags": [
+      "ai models",
+      "presentation design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/cwe-bench",
+    "company": "Hugging Face",
+    "title": "CWE-bench v2: More coverage, quality, and transparency",
+    "published": "2026-11-03",
+    "excerpt": "",
+    "summary": "Hugging Face has released CWE-bench v2, an updated version of a test for checking how well AI tools find security weaknesses in code. The new version adds more coverage and aims for better quality and openness about results.",
+    "tags": [
+      "ai security",
+      "software testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/statebench",
+    "company": "Hugging Face",
+    "title": "StateBench: Testing how language models track state changes over long documents",
+    "published": "2026-11-03",
+    "excerpt": "",
+    "summary": "Hugging Face introduced StateBench, a test that checks whether AI language models can keep track of changes to things over a long document. The article text is empty beyond the title, so details are limited.",
+    "tags": [
+      "ai models",
+      "ai testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/",
+    "company": "Meta Engineering",
+    "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+    "published": "2026-11-03",
+    "excerpt": "Facebook Feature Framework (F3) is Meta’s framework for authoring, compiling, and serving the machine learning features underlying ads ranking models, where a single request can require more than 20,000 features. We first presented F3 at AI @ Scale 2020 . F3 reduced execution computational costs by compiling all features into a single merged graph, but that graph also served as the release unit, so a single failure or invalid definition blocked the entire release pipeline. This post introduces F3 Lightning , an infrastructure layer built on top of F3 to resolve this challenge by decoupling feature releases from shared execution, so each feature is compiled, validated, deployed, and rolled back independently. The hardest part to solve was preserving F3’s efficiency improvements. Early per-feature release prototypes increased CPU usage because independent features no longer shared computation. We aimed to close this gap through four optimizations: stable computation identifiers, a single shared execution plan, one shared memory buffer across all features, and dense index mapping for direct array access. With F3 Lightning, comparable extraction features now reach production ~3.6x faster than the prior F3, with no increase in infrastructure compute cost. This shorter release cycle also enables more model iterations in the same period. A Primer on F3’s Shared Execution Architecture Production machine learning systems rarely consume raw data directly. Before a model can make a prediction, its feature-serving system may need to read stored signals, filter events to a time window, count or sum values, normalize them, and combine intermediate results. The simplest design to complete this work treats every feature as an independent function. That is easy to understand, but it becomes wasteful at scale, because features are not computationally independent. A seven-day click count and a seven-day impression count may read the same event source and apply the same time-window filter. A click-through rate feature may then reuse both results. Running each feature separately would repeat that filter, and every other shared step, on every request. F3 approached this differently, by representing feature extraction as a directed acyclic graph (DAG). Each node performs one unit of work, such as reading an input, applying a filter, or calculating an aggregation. An edge means one computation depends on the result of another. The graph’s outputs are the feature values a model consumes. Engineers author each feature independently in a high-level language. The F3 compiler turns each definition into a small graph, then merges the graphs for every feature a service uses into one merged graph (Figure 1). Where features share an operation, such as the seven-day filter above, the compiler collapses the duplicates into a single node. That shared work then runs once per request, not once for every feature that needs it. At runtime, feature extraction is a traversal of this merged graph. Figure 1: F3 consolidates all features into one merged graph. The Shared Graph Made Every Release All-or-Nothing F3’s merged graph shared computation efficiently, but it came with a major catch: The graph was also the release, and one malformed definition could hold back every other feature in the merged graph. Figure 2 illustrates this challenge. It shows seven independently authored features, A through G, where five definitions are valid, but D and G contain unrelated errors. The “Attempt 1” build fails on D, so none of the seven features ships. After D is corrected, the “Attempt 2” build reaches G and fails again. Only after both definitions are fixed in “Attempt 3” does the complete merged graph make it successfully to production. Figure 2: One failing feature blocks the entire release. Failures became more frequent as F3 scaled. F3 originally served a few hundred features, and at that size merges succeeded and releases were largely smooth. Today that number is more than ",
+    "summary": "Meta built F3 Lightning, a new layer for its ads machine learning system that lets each feature be released on its own instead of all together. Comparable features now reach production about 3.6 times faster, with no extra computing cost.",
+    "tags": [
+      "machine learning",
+      "ads",
+      "software releases"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/discord-gift-cards-the-easiest-holiday-gift-on-your-list",
+    "company": "Discord",
+    "title": "Discord Gift Cards: The Easiest Holiday Gift on Your List",
+    "published": "2026-11-03",
+    "excerpt": "Discord gift cards are now available in stores and online at select retailers, making it easy to buy things on Discord like Nitro, new looks in the Shop, and more.",
+    "summary": "Discord now sells gift cards in stores and online at some retailers. They can be used to buy things on Discord, such as Nitro and new items in the Shop.",
+    "tags": [
+      "gift cards",
+      "discord"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
+    "company": "Google Developers",
+    "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
+    "published": "2026-11-03",
+    "excerpt": "Per-token API prices keep falling, yet engineering bills for autonomous coding agents keep climbing....",
+    "summary": "Google Developers describes using small, cheap classifiers to decide which Gemini model and how much 'thinking' effort each task gets. The goal is to lower the total cost of running coding agents, even though per-token prices keep dropping.",
+    "tags": [
+      "ai costs",
+      "gemini",
+      "coding agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+    "company": "Google DeepMind",
+    "title": "Agentic cheminformatics with Google Antigravity",
+    "published": "2026-11-03",
+    "excerpt": "Learn how Google Antigravity and our Cheminformatics Skills accelerate drug discovery workflows, search compounds, and propose novel rigidified macrocycles.",
+    "summary": "Google DeepMind shows how its Antigravity tool, together with new chemistry skills, can help scientists search for chemical compounds and suggest new ring-shaped molecules for drug discovery. The teaser gives few details beyond this.",
+    "tags": [
+      "drug discovery",
+      "ai tools",
+      "chemistry"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/zero-wire/",
+    "company": "Cloudflare",
+    "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+    "published": "2026-11-03",
+    "excerpt": "You run security at your organization. It’s 7:00 am, and you’re having breakfast. You receive a ping: a new critical vulnerability has been disclosed. Your team scrambles to compare vendor advisories, read technical research, check which systems run the affected software, and answer familiar questions from the business: are we affected, and what are we doing about it? Another disclosure arrives before that work is finished. AI is changing both the volume and speed of critical vulnerability discovery. It can analyze large codebases at scale and surface deeply nested flaws that may have existed for years without being found through human review. That discovery momentum will put more pressure on security teams to understand the impact of each disclosure on their infrastructure. To help security teams prepare, today we’re introducing Zero Wire : a public vulnerability intelligence feed on Cloudflare Radar, bringing the clarity of a news wire service to critical security developments. It helps security leaders and practitioners understand significant vulnerabilities and decide what to do next. How it works Zero Wire lives inside Cloudflare Radar under the security section. Each briefing brings together a plain-language explanation of the vulnerability, who should investigate it, recommended actions, and links to the evidence and vendor guidance. The format is deliberately simple: an index card with what you need to know, without the drama. A CISO should be able to understand the issue quickly and ask the right questions. An engineer should be able to follow the same briefing to the technical guidance needed to investigate and remediate it. We also offer a pre-compiled prompt you can use with your agent to assess the impact on your infrastructure. Cloudflare contributes security research, observations from our network, and practical knowledge of the controls that can help reduce exposure. The information is useful whether or not you are a Cloudflare customer. Zero Wire brings that context together with authoritative external sources, giving readers a starting point for assessment and a place to return as an issue develops. Our focus Rather than a catalog of every CVE, Zero Wire complements vendor advisories and vulnerability databases, linking readers to the evidence and technical guidance needed to act. Zero Wire focuses on critical CVEs in Internet-facing software, such as vulnerabilities in web applications, the runtimes and libraries they depend on, and services exposed to the Internet, where a proxy can help mitigate exploitation. We select significant issues that security teams need to understand and assess. Each briefing explains the potential impact, which deployments should be investigated, what is known about exploitation, and the available mitigation and patching guidance. A vulnerability’s severity and evidence of active exploitation are distinct: readers need both to make informed decisions. A dedicated Cloudflare protection, such as Web Application Firewall (WAF) rules, is not a prerequisite for inclusion. Some issues require vendor updates or changes beyond the traffic Cloudflare can inspect. Where Cloudflare controls can help, we explain their scope and configuration requirements. A walk through Zero Wire Start on the Zero Wire homepage . Each card introduces an issue, identifies associated CVEs where applicable, and summarizes why it matters and what to do. You can search for a published briefing using a CVE or issue name, and follow technology tags to related entries. One briefing can cover several related CVEs when understanding them together makes the response clearer. Find what needs attention The homepage separates briefings into two categories. “Needs attention” brings together issues requiring active assessment or action, including those with known exploitation or developing guidance. “Reference” keeps briefings available when guidance has stabilized. Moving to “Reference” does not mean every affected system ",
+    "summary": "Cloudflare has launched Zero Wire, a public feed on its Radar site that explains serious internet security flaws in plain language. Each short briefing says who should look into an issue, what to do next, and links to the evidence and vendor guidance.",
+    "tags": [
+      "security",
+      "vulnerabilities",
+      "cloudflare"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.figma.com/blog/hello-kitty-and-friends-in-figma/",
     "company": "Figma",
     "title": "How we brought Hello Kitty® and Friends to Figma",
@@ -44,6 +264,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.anthropic.com/research/provable-inference",
+    "company": "Anthropic",
+    "title": "Progress on provable inference for large language models",
+    "published": "2026-11-02",
+    "excerpt": "We have made progress on a type of cryptographic proof known as a “zkSNARK.” In this post, we share some of that progress, primarily through a system we call FlashProve.",
+    "summary": "Anthropic reports progress on a kind of cryptographic proof called a zkSNARK, which lets someone prove a computation was done correctly without showing the details. The work centers on a system called FlashProve, aimed at proving how large AI language models produce their answers.",
+    "tags": [
+      "ai",
+      "cryptography",
+      "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
     "company": "Vercel",
     "title": "Vercel Sandbox with Drives now starts up to 2.4x faster",
@@ -69,6 +304,20 @@
       "vercel",
       "ai tools",
       "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
+    "company": "Vercel",
+    "title": "Projects can now be configured with vercel.toml",
+    "published": "2026-11-02",
+    "excerpt": "Vercel now supports vercel.toml , which allows you to to configure your project using the TOML configuration format . All of the same configuration properties are supported as in vercel.json , but it supports comments and has a flatter structure. All projects can now use vercel.toml . Use only one project configuration file: vercel.toml, vercel.json, or vercel.ts. For example, configuring Services : Read the documentation . Read more",
+    "summary": "Vercel now lets projects be set up with a vercel.toml file, a configuration format that supports comments and a flatter layout. It supports the same settings as the existing vercel.json, and a project should use only one config file.",
+    "tags": [
+      "web hosting",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -149,6 +398,36 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/scaling-git-at-openai",
+    "company": "OpenAI",
+    "title": "Scaling Git at OpenAI",
+    "published": "2026-11-02",
+    "excerpt": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+    "summary": "OpenAI built a new storage system called Pando to handle its code repositories at a very large scale, driven by the heavy coding work that its Codex tool makes possible. It still works with Git, the tool developers already use to track code changes.",
+    "tags": [
+      "version control",
+      "developer tools",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+    "company": "OpenAI",
+    "title": "Rewarding defenders with bigger bug bounties",
+    "published": "2026-11-02",
+    "excerpt": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+    "summary": "OpenAI is paying security researchers more money for the bugs they find. It is also adding bonus rewards for high-quality reports, long-time reporters, and special focus campaigns.",
+    "tags": [
+      "bug bounty",
+      "security",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/qodo-codex-plugin",
     "company": "OpenAI",
     "title": "Qodo builds context into AI code review with Codex",
@@ -159,6 +438,20 @@
       "code review",
       "ai coding tools",
       "software quality"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "company": "OpenAI",
+    "title": "Preparing our next security sprint to harden OpenAI",
+    "published": "2026-11-02",
+    "excerpt": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+    "summary": "OpenAI is getting ready for a new internal security sprint with Cathedral Systems. The goal is to test and strengthen its defenses using AI.",
+    "tags": [
+      "security",
+      "ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -193,6 +486,36 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/dan-driscoll-joins-openai",
+    "company": "OpenAI",
+    "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+    "published": "2026-11-02",
+    "excerpt": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+    "summary": "OpenAI has named Dan Driscoll as a Senior Counselor. He will advise on using AI responsibly for national security, protecting against cyberattacks, and working with U.S. allies.",
+    "tags": [
+      "ai policy",
+      "national security",
+      "cybersecurity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/modernizing-the-video-playback-experience-at-discord",
+    "company": "Discord",
+    "title": "Modernizing the Video Playback Experience at Discord",
+    "published": "2026-11-02",
+    "excerpt": "This is the story of how we assessed and refactored two video players into one, cut the player code each product maintained by up to 94%, and swapped to the new player without disruption to any users.",
+    "summary": "Discord merged two separate video players into one, cutting the player code each product had to maintain by up to 94%. The switch to the new player was made without disrupting any users.",
+    "tags": [
+      "video playback",
+      "engineering",
+      "discord"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
     "company": "NVIDIA",
     "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
@@ -218,6 +541,35 @@
       "gpu computing",
       "kubernetes",
       "ai infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+    "company": "NVIDIA",
+    "title": "Keep Distributed Training Running with Automated Workload Recovery",
+    "published": "2026-11-02",
+    "excerpt": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery... As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery essential. A stalled training rank can trigger an NVIDIA Collective Communications Library (NCCL) timeout, a GPU node can stop responding to the scheduler, or a straggler can slow the entire job. Each disruption is manageable on its own… Source",
+    "summary": "NVIDIA describes ways to keep large AI training jobs running when parts fail, such as a stalled worker, an unresponsive GPU machine, or a slow machine that drags the whole job down. Automatic recovery can get these jobs back on track faster without someone stepping in by hand.",
+    "tags": [
+      "ai training",
+      "reliability"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+    "company": "NVIDIA",
+    "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+    "published": "2026-11-02",
+    "excerpt": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state... In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state changes, and thousands of downstream messages. The reported exception shows where the workload stopped, not where the failure began. In this post, you’ll learn how to run NVIDIA Attribution on sample workload evidence… Source",
+    "summary": "NVIDIA describes a tool called Attribution that helps find the real cause of failures in large AI jobs spread across many machines. The error shown on screen is often a downstream symptom, so the tool traces back to where the problem actually began.",
+    "tags": [
+      "ai infrastructure",
+      "debugging",
+      "gpus"
     ],
     "summarized": true,
     "summary_version": 2
@@ -831,81 +1183,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-connect-adds-webhook-triggers-for-more-providers",
-    "company": "Vercel",
-    "title": "Vercel Connect adds webhook triggers for more providers",
-    "published": "2026-10-29",
-    "excerpt": "Vercel Connect now supports webhook triggers for Resend , X , Twilio , Notion , and Telegram . Connect receives webhook events, such as Telegram bot messages or emails received by your Resend domain, and forwards them to an endpoint in your Vercel project. It verifies incoming requests and handles provider heartbeats and verification challenges for you. To get started: Open Vercel Connect in the dashboard. Enable triggers when creating a connector for your provider or in an existing connector’s settings. Connect registers webhooks automatically for Resend and Telegram. For Twilio, Notion, and X, use the webhook URL from Connect and follow its instructions to complete setup in the provider’s settings. Add a trigger destination to choose the project and endpoint that should receive events. You can turn triggers on or off later in the connector’s settings. In the connector’s Observability tab, select Live to watch incoming trigger events. These connectors join existing trigger support for Slack, Discord, Microsoft Teams, GitHub, and Linear. Learn more in the Connect triggers documentation . Read more",
-    "summary": "Vercel Connect can now receive webhook events from Resend, X, Twilio, Notion, and Telegram and pass them to your Vercel project. It checks incoming requests and handles setup steps for you, so your app gets these messages without extra work.",
-    "tags": [
-      "vercel",
-      "webhooks",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
-    "company": "Vercel",
-    "title": "Strix now supports Vercel AI Gateway",
-    "published": "2026-10-29",
-    "excerpt": "Strix , the open-source AI penetration testing tool, can now run on any of the 400+ models on Vercel AI Gateway . Strix can reach models from Anthropic, OpenAI, Kimi, GLM, Deepseek, and others through a single API with no markup, removing the need to sign up for multiple providers. Usage and cost are tracked across all models in AI Gateway. Strix selects the Gateway through STRIX_LLM , where the model is the standard AI Gateway <provider>/<model> ID behind a vercel_ai_gateway/ prefix: See Strix's AI Gateway setup guide to configure it and get started today. Read more",
-    "summary": "Strix, an open-source tool that tests computer systems for security weaknesses using AI, can now use over 400 AI models through Vercel's AI Gateway. Users can reach models from several providers with one connection and no extra fees, and see usage and costs in one place.",
-    "tags": [
-      "ai tools",
-      "security testing",
-      "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
-    "company": "Vercel",
-    "title": "Node.js 26 LTS is now Generally Available on Vercel",
-    "published": "2026-10-29",
-    "excerpt": "Node.js 26 LTS is now Generally Available for builds and Vercel Functions . This release includes: HTTP/2 by default for built-in fetch ( Undici 8 ) lets multiple requests share a connection with servers that support it. This can reduce latency when your functions call APIs or databases over HTTP. Temporal API offers an alternative to Date with immutable values and built-in time zone and calendar support. V8 version 14.6 , the updated JavaScript engine, adds features such as Map.prototype.getOrInsert() to retrieve an existing value or insert a default when a key is missing. Using Node.js 26 Node.js 26 is the default for all new projects. Automatic upgrades: If engines.node in your existing project’s package.json allows 26, such as >=20 , your Node.js builds on Vercel will use 26 on the next deployment. Manual upgrades: Set engines.node to 26.x in your project's package.json and redeploy. Prebuilt deployments: Use Vercel CLI version 65.8.0 or later to deploy Node.js 26 Functions. HTTP/1.1 in Functions: To keep HTTP/1.1, set the VERCEL_FETCH_DISABLE_H2 environment variable to 1 and redeploy. Minor and patch updates to Node.js 26 roll out automatically for builds and Vercel Functions. Read the Node.js version documentation to learn more. Read more",
-    "summary": "Node.js 26, a long-term-support version of the tool that runs JavaScript on servers, is now available on Vercel and is the default for new projects. It can reduce wait times when apps call other services, and existing projects upgrade automatically if their settings allow it.",
-    "tags": [
-      "nodejs",
-      "vercel",
-      "web development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
-    "published": "2026-10-29",
-    "excerpt": "Mistral Large 4 from Mistral now uses updated weights on AI Gateway , with lower pricing for input, cached input, and output tokens. According to Mistral’s release announcement , the updated weights improve agentic coding and defensive cybersecurity, with greater token efficiency on coding tasks. The release also improves spreadsheet creation and editing, web research, and resistance to prompt injection. If you were already using mistral/mistral-large-4 via AI Gateway, there is no need to change your model to start using the updated version. The existing model ID string uses the new model with updated weights and pricing. To use Mistral Large 4 in fx, Pi, Claude Code, Codex, Cursor, or other harnesses, install the latest Vercel CLI and run setup: Then select mistral/mistral-large-4 in the agent. See the coding agents guide for details. You can also try Mistral Large 4 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Mistral Large 4 on Vercel's AI Gateway now uses updated model weights and costs less to use. The update reportedly improves coding help, spreadsheet work, and resistance to prompt injection, and existing users need to change nothing.",
-    "tags": [
-      "ai models",
-      "cloud pricing",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/improved-ip-geolocation-data",
-    "company": "Vercel",
-    "title": "IP geolocation now covers more visitors at higher resolution",
-    "published": "2026-10-29",
-    "excerpt": "IP geolocation on Vercel now resolves visitor locations with finer network granularity, delivering city-level data for nearly all requests and postal-code data for 90% of traffic. Geolocation data is now refreshed more often, so locations keep up as IP ranges are reassigned and routing changes. This is enabled for all projects with no code or configuration changes required. Existing geolocation headers along with the geolocation() helper in @vercel/functions , return the same fields for Vercel Functions and Routing Middleware . If you use geolocation for access controls, localization, or compliance, some visitors will now resolve to a different city or country, most often traffic from VPNs, hosting providers, and leased IP ranges: Physical termination location: Subnets announced from a hosting provider in a different country than their regional internet registry (RIR) record now resolve to the data center where the traffic actually terminates. Testing geo-dependent routes: Verify access rules against an IP's active network location rather than its static registry allocation. Read the request headers documentation for all available geolocation headers and fields. Read more",
-    "summary": "Vercel now shows visitor locations with more detail, mostly city-level and postal-code data, and refreshes them more often. It turns on automatically, but some VPN and hosting-provider visitors may now appear in a different country or city than before.",
-    "tags": [
-      "web hosting",
-      "location data",
-      "privacy"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/updated-model-spec",
     "company": "OpenAI",
     "title": "An updated Model Spec for more capable and beneficial AI",
@@ -1468,51 +1745,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://openai.com/index/retell-ai",
-    "company": "OpenAI",
-    "title": "Retell uses OpenAI models to help power 100M monthly calls",
-    "published": "2026-10-27",
-    "excerpt": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-    "summary": "Retell, a company that builds phone voice agents, now uses OpenAI models to power about 100 million calls a month. The article says its GPT-6 Astra model scored best on Retell's own voice agent test, and its coding tool Codex helped the team earn about $1.6 million in yearly revenue per employee.",
-    "tags": [
-      "ai voice agents",
-      "openai",
-      "phone calls"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-    "company": "OpenAI",
-    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-    "published": "2026-10-27",
-    "excerpt": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
-    "summary": "OpenAI and Oracle are expanding their partnership. Oracle's business apps and AI agents will be brought into ChatGPT, so companies can use them from that one place.",
-    "tags": [
-      "ai",
-      "enterprise software",
-      "partnerships"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/check-point-daybreak",
-    "company": "OpenAI",
-    "title": "How Check Point accelerates vulnerability research with Daybreak",
-    "published": "2026-10-27",
-    "excerpt": "With OpenAI Daybreak, Check Point speeds up the research behind new security protections, enabling its analysts to turn vulnerability intelligence into customer defenses faster.",
-    "summary": "Check Point, a cybersecurity company, is using OpenAI's Daybreak tool to speed up its research into software security flaws. The goal is to turn that research into protections for customers more quickly.",
-    "tags": [
-      "cybersecurity",
-      "ai tools",
-      "security research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://huggingface.co/blog/allenai/novelty-bench",
     "company": "Hugging Face",
     "title": "Can we trust LLMs to judge whether a research idea is novel?",
@@ -1809,50 +2041,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://openai.com/index/openai-cut-incident-investigation",
-    "company": "OpenAI",
-    "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-    "published": "2026-10-26",
-    "excerpt": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
-    "summary": "OpenAI says its engineers now use a tool called Codex Ultrafast to look into system incidents in minutes instead of hours. The post also mentions faster security checks and code cleanup.",
-    "tags": [
-      "incident response",
-      "ai tools",
-      "software engineering"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-    "company": "OpenAI",
-    "title": "Introducing GPT-6.1 Terra",
-    "published": "2026-10-26",
-    "excerpt": "Bringing fast and capable computer use to everyone",
-    "summary": "OpenAI has announced GPT-6.1 Terra, a new AI model. The short teaser says it is meant to bring fast, capable computer use to everyone, meaning the AI can operate computers on people's behalf.",
-    "tags": [
-      "ai models",
-      "computer use"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/greptile-code-review-codex-astra",
-    "company": "OpenAI",
-    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-    "published": "2026-10-26",
-    "excerpt": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
-    "summary": "Greptile, a code-review company, now uses OpenAI's GPT-6 Astra to find bugs beyond just reading code, such as testing how users actually work through software. The post also mentions using Daybreak to improve security and Codex to cut down on repeated fixes.",
-    "tags": [
-      "ai tools",
-      "software bugs",
-      "code review"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4",
     "company": "Netflix",
     "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
@@ -1908,21 +2096,6 @@
       "edge ai",
       "chips",
       "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/",
-    "company": "Google Developers",
-    "title": "Three layers, one repo: a tour of google/adk-recipes",
-    "published": "2026-10-26",
-    "excerpt": "The google/adk-recipes repository unifies Agent Development Kit (ADK) resources into three structured layers—core/, plugins/, and contrib/—serving as a single source of truth for building AI agents. Developers can leverage reference patterns, install modular vertical skills (such as retail product search and virtual try-on) directly into their coding assistants, and deploy production-ready services across multiple languages. This cohesive structure streamlines the entire workflow from initial scaffolding to full deployment on Google Cloud infrastructure.",
-    "summary": "Google released a repository called adk-recipes that organizes resources for building AI agents into three folders: core, plugins, and contrib. It includes reusable examples and ready-made skills that developers can add to their coding tools and deploy to Google Cloud.",
-    "tags": [
-      "ai agents",
-      "google cloud",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2356,21 +2529,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/how-to-read-data-into-gpu-memory-in-python-with-nvidia-gpudirect-storage/",
-    "company": "NVIDIA",
-    "title": "How to Read Data into GPU Memory in Python with NVIDIA GPUDirect Storage",
-    "published": "2026-10-22",
-    "excerpt": "GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI... GPU applications are processing ever-growing datasets with increasingly powerful accelerators. According to the 2025 Stanford AI Index, compute for notable AI models has been doubling approximately every five months, while the size of datasets used to train LLMs has been doubling approximately every eight months. As computation and data scale together, moving data efficiently from storage becomes… Source",
-    "summary": "NVIDIA explains how to load data from storage straight into a GPU's memory using Python, using its GPUDirect Storage tool. This matters because AI datasets are growing fast, so moving data quickly from storage to the GPU is increasingly important.",
-    "tags": [
-      "gpu computing",
-      "data storage",
-      "python"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
     "company": "Google DeepMind",
     "title": "Beyond tree cover: mapping the world’s forest types",
@@ -2534,20 +2692,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-    "company": "NVIDIA",
-    "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-    "published": "2026-10-21",
-    "excerpt": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using... An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using tools, credentials, and services to pursue their assigned goals. Monitoring and enforcement need to operate outside the agent’s reach so that it can’t alter or disable them. NVIDIA Sentry is a security software framework that monitors AI… Source",
-    "summary": "NVIDIA has released Sentry, a security tool that watches AI agents while they run. It checks their actions from outside, so an agent cannot switch off or change the checks, even when it misuses tools or access to finish a task.",
-    "tags": [
-      "ai security",
-      "ai agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/webmcp-commerce/",
     "company": "Cloudflare",
     "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
@@ -2630,50 +2774,6 @@
     "tags": [
       "ecommerce",
       "data matching"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/mps-pytorch-2-15",
-    "company": "Hugging Face",
-    "title": "MPS in PyTorch 2.15",
-    "published": "2026-10-20",
-    "excerpt": "",
-    "summary": "Hugging Face has shared news about MPS support in PyTorch 2.15. MPS is Apple's graphics chip technology, so this likely makes it easier to run AI models on Apple devices.",
-    "tags": [
-      "pytorch",
-      "apple chips",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/hf-torchtpu",
-    "company": "Hugging Face",
-    "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-    "published": "2026-10-20",
-    "excerpt": "",
-    "summary": "Hugging Face announced support for running its AI model tools directly on Google's TPU chips, a type of processor built for AI work. The article is a short teaser, so the details of how it works are not included.",
-    "tags": [
-      "ai tools",
-      "machine learning hardware"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
-    "company": "Hugging Face",
-    "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-    "published": "2026-10-20",
-    "excerpt": "",
-    "summary": "Hugging Face marks one year of AnyLanguageModel, a tool that lets Apple developers run AI language models directly on their own devices. The 1.0 release looks back on that first year of local model use on Apple platforms.",
-    "tags": [
-      "apple devices",
-      "ai models",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2763,20 +2863,6 @@
       "machine learning",
       "developer tools",
       "debugging"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/hf-torchneuron",
-    "company": "Hugging Face",
-    "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-    "published": "2026-10-19",
-    "excerpt": "",
-    "summary": "Hugging Face announced TorchNeuron, a tool that makes it easier to run its AI models on Amazon's Trainium chips. The post is a short teaser, so details are limited.",
-    "tags": [
-      "ai models",
-      "cloud chips"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3224,21 +3310,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-    "company": "Cloudflare",
-    "title": "A fully programmable secure web gateway",
-    "published": "2026-10-15",
-    "excerpt": "Every secure web gateway on the market works the same way: traffic matches a condition. A terminal action fires. Allow, Block, Isolate, Log. This model has been the foundation of network security for nearly 30 years, and it handles the common case well. But it has a ceiling, and customers with complex environments hit that ceiling regularly. Earlier this year, we shared our vision to build a truly programmable SASE platform . We also outlined how the term programmability has become diluted by the security industry. Most vendors claim programmability because they have public APIs, Terraform providers, webhooks, and alerting. Cloudflare offers all of those things too, but that’s not enough. True programmability means running your own code — arbitrary logic that you wrote for your specific environment — inline in the policy evaluation path, at the moment a security decision is made. Today, we’re excited to announce Cloudflare is bringing true programmability to Cloudflare Gateway and DLP (Data Loss Prevention) by integrating it with the entirety of our edge computing platform. We are releasing a new type of Gateway action, Forward , and custom validation functions, available to all Zero Trust plans. These capabilities allow you to use a Cloudflare Worker to transform and manipulate traffic, or to bring your own data to policy evaluation. The trade-off that every security team faces For as long as firewalls have existed, businesses have faced a binary choice. You can maintain your own security detection engine — your own firewall, your own proxy infrastructure — with high maintenance overhead and low portability, in exchange for maximum customization. Or, you can accept the constraints of a vendor, offloading the considerable maintenance cost, at the expense of flexibility to solve problems specific to your environment. In six years of building Cloudflare Gateway, we have heard from thousands of customers struggling with this trade-off. A security team migrating access controls for a critical internal application needs to inject HTTP headers based on JSON Web Token (JWT) claims from their identity provider. The data exists in the request context, but Gateway cannot read the JWT and write the header. So the team stands up a pool of NGINX proxies solely to perform this transformation. That infrastructure now must be patched, monitored, and secured... indefinitely. Another team wants a Slack notification the moment an employee signs up for a new SaaS service. The policy engine can detect the sign-up event, but it can only Allow or Block. So the team builds a Logpush-to-SIEM-to-Slack pipeline with a 5 to 15 minute delay and no guarantee of delivery. And piles on yet another piece of infrastructure. Dozens of enterprise customers have asked for warning pages that prompt users for justification before allowing access to sensitive destinations. Most then want to customize the ensuing behavior based on additional context about who the user is and the level of access requested. But serving customized, dynamic responses from a policy engine is exceedingly difficult. We have offered customers many extension points over the years. But along with every other firewall vendor, it is impossible to build features to cover threat vectors as quickly as they can appear. However, we also recognize that the best solutions are those which are infinitely extensible to your environment. Why only Cloudflare can solve this problem Cloudflare is not just a firewall, or a secure web gateway, a content delivery network, or an edge service. Cloudflare is a composable compute platform. Cloudflare Workers already allows customers to run complex logic on our network edge from any of our 330+ locations worldwide. Cloudflare Gateway already evaluates and enforces security policy on user traffic at those same locations, on the same machines, in the same data centers. Only Cloudflare runs both distributed customer compute and a full-featured secure web gateway and fir",
-    "summary": "Cloudflare is letting customers run their own code inside its web security filter, so security rules can do custom work like adding login details to traffic or asking users for a reason before opening sensitive sites. Previously, teams had to build separate tools for these jobs, which added cost and delay.",
-    "tags": [
-      "network security",
-      "cloud security",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/singapore-office-opening",
     "company": "Anthropic",
     "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
@@ -3249,20 +3320,6 @@
       "ai",
       "singapore",
       "government"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/news/2026-us-midterms",
-    "company": "Anthropic",
-    "title": "Preparing for the 2026 US midterms",
-    "published": "2026-10-14",
-    "excerpt": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
-    "summary": "Anthropic says it has kept strengthening its election safeguards ahead of the 2026 US midterm elections. The post is a short teaser, so details of the new measures are not given here.",
-    "tags": [
-      "elections",
-      "ai safety"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4686,10 +4743,14 @@
     "title": "How River takes security work from a fix to merge",
     "published": "2026-09-02",
     "excerpt": "River, Shopify’s AI agent in Slack, enables autonomous vulnerability remediation, not just detection.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify describes River, its AI assistant inside Slack, which can now fix security weaknesses on its own, not just find them. The teaser suggests this takes a security issue all the way from a fix to a merged code change.",
+    "tags": [
+      "security",
+      "ai agents",
+      "shopify"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
@@ -4697,10 +4758,14 @@
     "title": "How we make AI coding more cost efficient without sacrificing task quality",
     "published": "2026-09-02",
     "excerpt": "Output quality is important when working with AI coding agents, but true efficiency comes from getting work done quickly, efficiently, and with the right context. That’s why token count of individual interactions alone isn’t a meaningful measure of efficiency. The goal shouldn’t be to use fewer tokens, but to tap into the right amount of context to move a task forward. A concise tool response can sometimes require additional calls or work if it leaves out information the agent needs, ultimately making the task slower and more expensive. That’s why we want to optimize for the outcome rather than the tool call. This post examines four changes in GitHub Copilot that put that principle into practice: Preserve useful context while reducing repetitive output. Remove formatting that adds no value to the task. Shorten instructions without changing useful behavior. Deliver completed background work without an extra retrieval step. Possible changes were evaluated offline using agentic coding benchmarks. The most promising changes were then validated through controlled online experiments before shipping. The examples in this post come from GitHub Copilot CLI. Multiple other Copilot products, such as the GitHub Copilot app and Copilot code review, use the same underlying harness and also become more efficient through these improvements. Figure 1: Four independent A/B experiments using the same AI-credit metric. The segments are shown together for comparison; their effects are not necessarily strictly additive. The local metric trap It’s common to shorten the output from each tool call as a way to reduce agent costs. RTK (Rust Token Killer) is a utility that shortens shell output before an agent reads it. We evaluated its effect on GitHub Copilot using our agentic coding benchmarks. In our harness and benchmark configuration, RTK shortened some responses, but when the omitted text mattered, the model sometimes reopened the original output or reran the command to recover what it needed. Those recovery steps added turns and carried more context forward. The individual tool response was shorter, but on average, the task used more tokens and took longer. We saved tokens locally and spent more globally. Figure 2: A shorter tool response can make the completed task more expensive when missing details force the agent to reread output, rerun commands, and carry more context forward. This result applies to the integration and workloads we tested, not to every RTK configuration or to output compression in general. This meant that tokens per tool call is the wrong objective. An efficiency change has to be evaluated across the complete task, from the user’s request through the final result. More useful was to look at what can we remove without making the model repeat work. Compress noise, preserve useful information The goal was to shorten repetitive output while preserving the context an agent needs to complete its task without retracing steps. Analysis of benchmark runs showed that install, build, test, and lint output often contains repetitive noise, while source-like output and arbitrary command results are more likely to contain the information an agent needs. That analysis informed a selective output compressor, informed in part by RTK and similar approaches. The prototype was evaluated on agentic coding benchmarks and a range of open source repositories, exercising their build, test, and lint systems. Early versions were too aggressive. They made the model repeat work or read the full saved output, increasing end-to-end cost and reducing task success. For example, we initially compressed git diff but removed that filter after benchmark tasks showed agents reopening the original output to recover missing information. Those early failures led to a three-part policy: Preserve source-like and arbitrary output. Commands such as cat , git diff , git show , and arbitrary scripts are returned unchanged. Reorganize search results without dropping conten",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub explains how it made its Copilot AI coding tool cheaper to run without hurting results. Shrinking each tool's output alone backfired, because agents often had to redo steps, so GitHub now trims only repetitive noise and keeps useful details.",
+    "tags": [
+      "ai coding",
+      "cloud costs",
+      "github copilot"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
@@ -4708,21 +4773,13 @@
     "title": "Proactive cyber defense for governments and enterprises",
     "published": "2026-09-02",
     "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
-    "company": "Google DeepMind",
-    "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-    "published": "2026-09-02",
-    "excerpt": "",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google DeepMind has shared work on helping governments and businesses defend against cyber attacks before they happen. The article's teaser gives few details beyond that focus.",
+    "tags": [
+      "cyber security",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
@@ -4730,10 +4787,14 @@
     "title": "Mapping global methane emissions from space with deep learning",
     "published": "2026-09-01",
     "excerpt": "Climate & Sustainability",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Google Research describes using deep learning on satellite images to map where methane gas is released around the world. Methane is a strong greenhouse gas, so finding its sources helps target cuts.",
+    "tags": [
+      "climate",
+      "satellite imagery",
+      "methane"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803?source=rss----4c5a5f6279b6---4",
@@ -4741,10 +4802,14 @@
     "title": "Becoming an AI Team",
     "published": "2026-09-01",
     "excerpt": "John Grass | Sr. Manager, Engineering A Fundamental Transformation An AI team is fundamentally more than just a group whose members incorporate AI tools into their existing workflows. The journey to becoming an AI team necessitates a fundamental and comprehensive paradigm shift in how the team defines ownership, engages in strategic planning, and, most critically, executes on its core goals and objectives. This transformation is not merely an addition of new technology; it is a restructuring of the team’s operating model, philosophy, and individual roles. Becoming an AI team requires a holistic shift: team members transition from routine, manual execution to empowered, AI-augmented strategists and problem-solvers. In an AI-centric environment, every single member is significantly empowered, not only through access to cutting-edge AI tools and sophisticated models but through an expanded scope of responsibility and influence . These new capabilities allow individuals to automate routine tasks, accelerate data analysis, and rapidly prototype solutions, freeing up cognitive resources for higher-level, more strategic thinking. The expectation shifts from simply completing tasks to orchestrating intelligent systems and focusing on solving problems that were previously intractable. Consequently, the very nature of the work for both individual contributors and managers will be fundamentally different from anything that has come before. At Pinterest, this isn’t theoretical. Our infrastructure teams sit at the core of a product that serves billions of Pins, boards, ads, and real-time signals. That reality has forced us to treat “becoming an AI team” as an operational necessity, not a side project as we cannot keep scaling reliability, cost efficiency, and developer productivity using only traditional playbooks. AI Team Capabilities The advent of accessible Artificial Intelligence (AI) tools has fundamentally raised the performance ceiling for what development teams can accomplish. To illustrate this profound shift, consider a normally challenging project — for example, refactoring an entire legacy codebase to replace a widespread used process named “foo” with a more modern one named “bar.” This type of undertaking, which can be critical for long-term maintainability but often low on the priority list due to its sheer scale, would have previously required a dedicated team of several engineers and a timeline spanning many months, potentially a year or more. With the seamless integration of modern AI tools, projects once considered infeasible or prohibitively expensive in terms of human capital and time can now be completed with incredible speed and accuracy. The very refactoring example mentioned above, utilizing sophisticated code-generation and transformation models, can now be executed and verified in a matter of a week or less. This new capability changes far more than just project timelines; it fundamentally reshapes how organizations and teams must approach prioritization. The set of “possible projects” that are technically within reach has grown dramatically, multiplying the complexity of deciding where to focus energy. Consequently, the act of prioritization has become even more critical. Teams must internalize a new maxim: Just because something is feasible does not mean it is strategic. The ability to accomplish a task quickly with AI does not inherently align it with the core goals of the business or product. AI raises the ceiling of what teams can accomplish — yet strategic prioritization becomes even more essential amid expanded possibilities. By offloading repetitive, high-effort engineering tasks to AI, teams will fundamentally shift their focus. Engineers, product managers, and designers must dedicate more time and energy to high-level strategic thinking, in-depth problem definition, and validating genuine user needs, rather than getting caught up in execution details. Consequently, the core value of an engineering team m",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest's infrastructure lead argues that becoming an AI team means changing how people work, not just adding AI tools. AI can now finish big jobs, like rewriting a huge codebase, in days instead of months, so teams must choose carefully what is worth doing.",
+    "tags": [
+      "ai",
+      "engineering teams",
+      "productivity"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://dropbox.tech/security/how-our-inhouse-auditor-tests-cookie-behavior-across-hundreds-of-web-surfaces",
@@ -4752,10 +4817,14 @@
     "title": "Testing cookie behavior across hundreds of web surfaces with our in-house auditor",
     "published": "2026-08-31",
     "excerpt": "As AI and automation become a bigger part of digital experiences, it’s increasingly important that people stay in control of the choices they make. They should be able to benefit from new technology without losing the preferences they’ve already expressed. Cookie banners are one of the most familiar places where people express those preferences online. They’re also one of the most visible parts of a company’s privacy program. And for companies that operate a large, dynamic collection of websites, keeping them working as intended can be challenging. A banner might work correctly when a page launches, but changes made later can affect how someone’s cookie preferences are saved or applied. When someone accepts, declines, or customizes cookies, the website needs to remember that choice and behave accordingly. New integrations, experiments, or even changes to a page’s settings can unintentionally affect that behavior. Manually checking that cookie banners continue to work as expected across all of our websites requires hours of quality assurance. To make those checks more manageable, we built a cookie auditor that acts like a privacy-conscious user. It visits Dropbox web pages and checks that they only load cookies consistent with that user’s privacy preferences. This gives us a scalable way to put our privacy commitments into practice as our web presence continues to evolve. Challenges in cookie banner compliance Most of us are familiar with cookies, but we don’t always think about what they mean for the choices we make online. Cookies are small pieces of data sent to a browser when someone visits a website. Some are strictly necessary , meaning they serve an essential purpose like keeping a user logged in or remembering language settings. Others are non-essential and support things like analytics, marketing, performance, or advertising. Strictly necessary cookies load automatically, but privacy laws in some places require companies to get consent before loading non-essential ones. On the surface, cookie compliance can seem pretty straightforward. Websites show a banner, provide buttons to accept or decline, record the choice, and load cookies accordingly. But at scale, things can get a bit more complicated. Dropbox operates over 200 web surfaces across different products and teams, and the cookies on each page can vary depending on that surface’s purpose. URLs also change all the time as pages are launched, retired, redirected, localized, or included in experiments. Plus, cookie banners aren’t the only way people can communicate their privacy preferences. Global Privacy Control (GPC), for example, is a technical standard that lets people set a privacy preference in their browser that can be communicated automatically to the websites they visit. Our system needed to recognize GPC signals and respect those preferences, too. It’s also important to look beyond cookie banners themselves. Even when a banner appears to work correctly, we still need to verify that someone’s choice is actually being applied. That means checking which cookies load before and after someone makes a selection, and that their preference continues to apply after the page reloads. That’s where our cookie auditor comes in. Turning privacy requirements into testable rules Before we began building a cookie auditor, our Privacy and Engineering teams first needed to agree on what the system should consider correct behavior. That meant deciding which websites should be audited, what kind of banner behavior would constitute a violation, and which third-party cookies and other artifacts should be tracked separately. We also defined when a missing banner should be considered a problem and when it was expected, such as on a web page that was no longer in use. Privacy programs often depend on legal concepts that require human interpretation, such as opt-in or opt-out, strictly necessary, and affirmative consent. But a machine needs much more concrete instructions about wha",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Dropbox built an automated tool that visits its websites like a privacy-minded visitor and checks that cookie choices are saved and applied correctly. It replaces hours of manual checking across more than 200 web pages, helping ensure people's cookie preferences are actually respected.",
+    "tags": [
+      "privacy",
+      "cookies",
+      "web testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/pinterest-engineering/scaling-conditional-learned-retrieval-for-pinterest-home-feed-ecfba7e5a426?source=rss----4c5a5f6279b6---4",
@@ -4763,10 +4832,14 @@
     "title": "Scaling Conditional Learned Retrieval for Pinterest Home Feed",
     "published": "2026-08-26",
     "excerpt": "Devin Kreuzer | Sr. Machine Learning Engineer; Yichi Wang | Machine Learning Engineer I; Sujan Reddy Ale | Machine Learning Engineer I; Zelun Wang | Sr. Machine Learning Engineer; Hongtao Lin | Sr. Machine Learning Engineer; Piyush Maheshwari | Staff Machine Learning Engineer Pinterest home feed candidate generation is a large-scale User-to-Pin retrieval problem. A common approach is a two-tower model: a user tower encodes the user, an item tower encodes candidate Pins, and approximate nearest neighbor search retrieves Pins close to the user embedding. But Pinterest users often have multiple intentions at once — planning a renovation, saving recipes, exploring fashion, or organizing travel ideas. A single retrieval embedding can struggle to capture this diversity. Conditional Learned Retrieval, or CLR, extends the two-tower setup by conditioning the user tower on an explicit retrieval context. Instead of producing only one user embedding, CLR can generate condition-aware embeddings that reflect different aspects of a user’s interests while still grounding retrieval in the user’s overall behavior. Prior Pinterest work studied this formulation in two settings. The RecSys’24 paper: Bootstrapping Conditional Retrieval for User-to-Item Recommendations described how to bootstrap conditional retrieval by constructing training data for (user, condition) -> item retrieval from existing user-item and condition signals, and applied it to interest-based notifications. The KDD’25 paper: Synergizing Implicit and Explicit User Interests: A Multi-Embedding Retrieval Framework at Pinterest placed Conditional Retrieval within a broader multi-embedding retrieval framework for home feed, where explicit interest conditions complement implicit interests extracted from user behavior. In this blog, we describe how CLR evolved from early interest-conditioned retrieval into a broader retrieval system for Pinterest home feed. We focus on three areas: expanding CLR to support more retrieval use cases, scaling the model foundations through sequence modeling and more general condition representations, and redesigning the serving infrastructure to make multi-condition retrieval efficient at production scale. Figure 1. Conditional Learned Retrieval launch timeline Expanding CLR Across Use Cases Increasing diversity of the retrieval candidates is a reliable source to drive engagement impact, because they provide a broad range of content for ranking and blending to work with. With CLR, this becomes scalable by either expanding to new types of conditions or providing new sources of conditions given a user. To support each condition type, we need to train CLR models using (user, condition, engaged Pin) triplets. Fortunately we already have a few heuristic-based candidate generators in home feed that can help bootstrap these use cases. Interest Conditions At Pinterest, we have a predefined interest taxonomy to categorize Pins. We initially launched CLR in home feed by sampling a few interests from user-to-interest signals. Later we leveraged a new user interest signal generated from LLMs as conditions. Pin Conditions We later introduced Pins as conditions, by clustering users’ recently engaged Pins, selecting medoids of those clusters and leveraging pre-training embeddings to represent them in the model. In doing so, we were able to deprecate legacy heuristic CGs in favour of CLR; yielding impressive metric wins while simplifying our serving stack. Board Conditions At Pinterest, users interact with Pins which are distributed across various Boards on the platform. We can think of Pins and Boards as forming a bipartite graph with Pins on one side, linked to Boards on another. By leveraging random walks, we can traverse this graph to recommend not only Pins, but also Boards to users. Similarly to the above, we then constructed Board conditions using pre-training embeddings in the same space as Pins to represent them, yielding large metric wins and simplified serving",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Pinterest expanded its Conditional Learned Retrieval system, which picks home feed Pins based on what a user is currently interested in. It now uses interests, recent Pins, and boards as conditions, helping users see a wider mix of content.",
+    "tags": [
+      "recommendations",
+      "machine learning",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/project-lighthouse-part-3-introducing-project-lighthouse-anonymize-74f8b26653fb?source=rss----53c7c27702d5---4",
@@ -4774,10 +4847,14 @@
     "title": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize",
     "published": "2026-08-25",
     "excerpt": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize The data in Project Lighthouse is powered by privacy-preserving anonymization code. We’ve put this code into open source, and published two new technical papers detailing the scalable algorithms and data quality frameworks behind it. By: Adam Bloomston Introduction In 2020, we launched Project Lighthouse, which we developed in partnership with leading civil rights and privacy organizations. As our 2020 announcement details, Project Lighthouse enables us to measure potential disparities in user experiences. This work uses perceived race data that is never linked to individual accounts; we only use this data for measuring potential disparities, and users who want to opt-out can do so by turning off the data use settings in their account’s Privacy page. Our results , shared in 2024, demonstrate how we use these analyses to measure our progress in mitigating those disparities. Earlier this year, we open-sourced project-lighthouse-anonymize , the Python library that powers Project Lighthouse’s anonymization process. To provide the full technical foundation for this work, we also published two new papers on arXiv alongside the code release. Together with our original 2020 paper, these three papers form a complete story: the foundational methodology, the scalable implementation, and the quality validation framework. The foundational methodology (2020) Our original 2020 paper established the privacy-by-design approach for Project Lighthouse and provides the rationale for choosing k-anonymity as the technical privacy model to prevent sensitive attribute disclosure at scale. For an introduction to this paper, see our first blog post on p-sensitive k-anonymity and our second blog post on measurement with anonymized data. Core Mondrian: Scalable partition-based anonymization (2025) The first of our new papers, Core Mondrian: Basic Mondrian beyond k-anonymity , presents the k-anonymity algorithm at the heart of the open source library. Core Mondrian extends the classic Mondrian algorithm with: Extensible architecture , using the Strategy Pattern to support k-anonymity and future privacy model extensions Parallel processing , with a hybrid recursive-queue execution model (combining immediate recursive processing for small partitions with queue-based parallel processing for large partitions) Other enhancements , including NaN-pattern pre-partitioning (accommodating missing values) and dynamic suppression budget management This algorithm enables scalable anonymization of large datasets while preserving the ability to use the underlying data for statistical analyses. Measuring Data Quality for Project Lighthouse (2025) The second of the new papers, Measuring Data Quality for Project Lighthouse , addresses a critical question: how do you know if your anonymized data are “good enough” for your analysis? The paper introduces a comprehensive framework for measuring data quality under anonymization, including: Three primary metrics : Pearson correlation (preserving linear relationships between original and anonymized values) Revised Information Loss Metric or RILM (measuring how well the “shape” or geometric size of data is preserved — higher scores mean less distortion) Normalized Mutual Information v1 or NMIv1 (measuring entropy preservation, essentially how much information content is retained) Empirical validation methodology : We reframe data quality assessment as a machine learning classification problem, using synthetic datasets to validate that our metrics and thresholds successfully predict when anonymized data will produce statistically valid results Default thresholds : The paper and library include the specific threshold values we use for Project Lighthouse, which may serve as useful starting points for others implementing similar systems This framework enables analysts without deep anonymization expertise to confidently assess whether their anonymized data supports v",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb open-sourced the Python tool that anonymizes data for its Project Lighthouse, which measures possible unfair differences in user experience. It also published two papers explaining how the tool scales to large datasets and how to check that the anonymized data is still useful.",
+    "tags": [
+      "privacy",
+      "open source",
+      "data quality"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
@@ -4785,10 +4862,14 @@
     "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
     "published": "2026-08-24",
     "excerpt": "More than one in four images on the web’s most popular home pages have alt text that’s missing, vague, or copied from adjacent images. That’s from WebAIM’s 2026 WebAIM Million report, which found that alt text,an HTML attribute containing text describing the content of an image, was missing on 16.2% of images across the top million home pages. Among the images that did have alt text, another 10.8% provided an undescriptive attribute, such as alt=\"image\" , a raw filename, or a description duplicated from a neighbor. While automated tooling reliably flags missing alt text, it isn’t as good at fixing poorly written alt text. Most alt text checkers test whether an accessible name for an image exists, not whether the provided alt text says anything useful about the associated image, and that’s a deliberate design choice: a quality-oriented rule with false positives is a rule teams switch off. So alt=\"IMG_2847.png\" passes. So does the same alt=\"3/5 stars\" on five different star-shaped icons. We built an alt text plugin for the GitHub Accessibility Scanner to help improve your alt text. This post covers where we drew the line between what a checker can prove and what it can only suspect, why our worst bug turned out to be a layout problem rather than a parsing one, and what changed once we let a model into the loop. If you’re building automated checks of your own, for accessibility or otherwise, the tradeoffs should transfer. Proving a string is wrong without seeing the picture Presence of alt text is an objective fact; the attribute is there or it isn’t. Quality is often a judgment call. A machine can’t prove whether a sentence adequately describes a picture in context from markup. However, not all quality is subjective. There’s several checks you can perform based on the alt text alone, with no need to consult the image content: The attribute is absent (not empty) or whitespace-only. The alt is a filename, such as hero.png , IMG_2847.jpg . The alt is a placeholder somebody meant to replace, such as TODO , tbd . The alt is one generic word naming the medium instead of the content, such as image , logo , chart . The same alt repeats across adjacent images. Every one of those is a claim about a string, and that became our dividing line. Five deterministic rules run by default which need no credentials for running AI models or network calls. One opt-in rule calls a model with provided image content and surrounding context, for judgments an alt text string can’t support on its own. First, we had to determine which images to judge on a scanned webpage. We use Playwright’s role-based locator rather than querySelectorAll('img') , so anything not included in the browser’s accessibility tree drops out, including anything carrying alt=\"\" . That last exclusion matters most. An empty alt is the author explicitly saying the image is decorative, and flagging it would punish exactly the behavior you want to encourage. So, how strict should it be? A quality checker lives or dies on false positives, so we chose closed sets over clever heuristics. The vague-alt rule normalizes a string, then checks it against a curated list of words that carry no information on their own. It fires only on an exact match: alt=\"image\" gets flagged. alt=\"image of the login screen with the SSO button highlighted\" doesn’t. Rules this literal miss plenty of bad alt text. We took the miss over the false positive, because a reliable checker that developers enable beats one that gets switched off. Repetition is a layout problem, not a DOM problem Repeated alt text presented an interesting problem. Picture a row of five star-shaped icons that each say \"3/5 stars\" . A screen reader user hears the same thing five times and learns nothing new from four of them. Our first version walked the images in document order and flagged any run sharing the same normalized alt. It caught things it shouldn’t have. For example, a footer “GitHub” logo and a header “GitHub” logo might sit next t",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub wrote about a new plugin that checks image descriptions (alt text) for quality, not just presence. Its checks flag things like filenames, vague words such as \"image,\" and the same text repeated across images, since screen reader users hear these and learn little.",
+    "tags": [
+      "accessibility",
+      "alt text",
+      "web development"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/gisting",
@@ -4796,10 +4877,14 @@
     "title": "Gisting: Compressing LLM Agent context to ↑ throughput and ↓ cost",
     "published": "2026-08-19",
     "excerpt": "Gisting compresses context into a set of learned tokens, preserving its quality while making the model faster and cheaper.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify describes a method called gisting that squeezes long AI agent context into a smaller set of learned tokens. The goal is to make the AI model run faster and cost less while keeping the quality of its answers.",
+    "tags": [
+      "ai agents",
+      "cost savings",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4",
@@ -4807,10 +4892,14 @@
     "title": "How we knew COVID was over (and what our models had to unlearn)",
     "published": "2026-08-19",
     "excerpt": "When we retrain, when we rebuild, and when we leave a model alone. By: Harrison Katz A forecast that carries weight The Forecasting Data Science team at Airbnb produces many of the forecasts the rest of the company plans around: demand, bookings, cancellations, and a range of finer cuts by market and segment, refreshed continuously across thousands of markets. The targets differ, and the models differ, but they have one thing in common: Other teams build on top of them. This means a forecast that is casually wrong is not a clean miss, as it might be in an academic setting. That’s because a small bias does not stay small once a lot of decisions are riding on it. So when one of those forecasts starts to drift, what to do about it is not really a methods question. It is a risk question, and an easy one to get wrong, which we have from time to time. One of these forecasts had been missing, compared to what actually happened after the forecast was released, in the same direction for a couple of quarters. This bias persisted after several routine refreshes. The usual solution would be to fully retrain the model: pull in the recent data, refit the model again, and ship. But we wanted to understand the source of the bias, rather than simply hoping an update would eliminate it. If you’re interested in other posts on this topic, you can learn more about how COVID impacted Airbnb’s financial models or how we dealt with disruption to our models during the pandemic . This post is about the discipline that came out of both: how we now decide whether a struggling forecast needs new data, a new model, or no changes at all. One word, three decisions The easy mistake is treating the choice to “retrain” a model as a single action. It is three separate actions — refitting, respecifying, or holding — and none of them is particularly similar to the others. Refitting is the cheaper option. Same model, same structure, same features, updated with newer data. This is what most people mean by “retrain.” For the ordinary drift that builds up in a model as the world moves on, it’s usually the right choice. Saying that this is the cheaper option is not the same as saying that it’s cheap. A refit still has to be validated and shipped. The refitting process can degrade a model that was actually fine if the recent data happens to be unusual. And, given the importance of the production forecast, every refresh is a small risk you are choosing to take. It is the least expensive of the three options, but not a free one. None of this is an argument against refitting. On most cycles it is the right move, and if we had to run one of the three blind, it would be this one. The claim is narrower. A refit is a decision with a price, and pricing it is what lets you notice the cycles where a different option was worth more. Respecifying is a different animal. You change the model itself: add a feature, drop one, change the structure, the priors, the likelihood. On the production forecast, which so many of our teams plan around, this is a real commitment; you are replacing something you understand, and have watched the behavior of for years, with something partly new that you have not. It is also where almost all the actual improvement lives. Refitting keeps a good model current. Respecifying is how a model that is in some way wrong in its operations is made right. Holding is the one nobody likes. You look at the miss, decide it does not warrant action, and leave the model alone. This takes the most nerve, because to anyone watching the forecast it looks like you are ignoring a problem. On a forecast that people are relying on, “We decided to do nothing” is a hard sentence to say out loud. It is also, more often than you would think, the correct call. What we have learned from years of running these models is that the trouble comes from filing all three under one verb. “We should retrain” gets said when any of the three is the actual answer, and the word drags everyone tow",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb's forecasting team found a demand forecast had been consistently off in one direction for two quarters, even after routine updates. Instead of simply retraining it, they worked out whether the model needed fresh data, a changed structure, or no change at all, since its forecasts guide many company plans.",
+    "tags": [
+      "forecasting",
+      "machine learning",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://dropbox.tech/infrastructure/improving-infrastructure-efficiency-for-growing-demand-in-the-age-of-ai",
@@ -4818,10 +4907,14 @@
     "title": "Improving infrastructure efficiency for growing demand in the age of AI",
     "published": "2026-08-18",
     "excerpt": "As demand for AI continues to grow, so does the infrastructure needed to support it. Much of the industry's attention has focused on building more: more data centers, more servers, and more power. But building new infrastructure is only part of the challenge. Engineering teams are also working within constraints on energy, cooling, hardware availability, and physical space, making it increasingly important to get more from the infrastructure that's already in place. For over a decade, Dropbox’s Infrastructure and Datacenter Engineering teams have continually improved how we plan, operate, and optimize infrastructure. That work spans far more than storage systems. Engineers across Dropbox work together on capacity planning, fleet optimization, hardware lifecycle management, power delivery, cooling, rack design, and facility planning. Rather than treating these as independent problems, we optimize them as parts of a single system, where decisions in one layer influence what's possible in another. The result is an engineering discipline that extends beyond any single system or optimization. A change in one part of the infrastructure can create opportunities or constraints elsewhere. Increasing storage density, for example, can reduce the amount of hardware needed, while more powerful servers can introduce new energy and cooling requirements. Understanding those tradeoffs allows us to make infrastructure decisions with the entire system in mind. As infrastructure demand grows, that system-level approach helps us prioritize efficiency and create room for growth before expanding our data center footprint. Planning for efficient infrastructure Many of the decisions that shape infrastructure efficiency happen months or sometimes years before new capacity goes into production. Whether someone is uploading a file to Dropbox or asking Dash a question, they expect the product to respond without delay. Delivering that experience requires engineers to forecast how customer demand and workloads will change, determine when additional resources will be needed, and understand whether our existing environments can support them. Dropbox has operated large-scale infrastructure for over a decade. Our hybrid model combines Magic Pocket , the core Dropbox storage system, with colocated data centers, where we manage our own servers and networking equipment in facilities operated by specialized providers. This gives our engineers visibility across software, hardware, and the physical data center environment. As customer demand grows and workloads change, particularly with the growth of AI-powered products and features , engineers have to plan not only for how much additional capacity is needed, but where and how it can be deployed. New hardware has to fit within a facility's infrastructure constraints while accounting for hardware availability and future product needs. A server that provides more compute or storage, for example, may also require more energy or cooling, changing how much hardware a rack or facility can support. The goal is to understand those tradeoffs early, add capacity deliberately, and preserve enough headroom for growth, maintenance, failures, and changing workloads. Once additional compute and storage capacity is deployed, the focus shifts to making the most of the systems already in production. Continuously optimizing the active fleet Planning helps ensure infrastructure is ready for anticipated demand, but workloads rarely behave exactly as they did when that infrastructure was first deployed. Customer behavior changes, products evolve, and new capabilities introduce different demands on the underlying systems. AI is a prime example because AI-powered features can change both the scale and shape of infrastructure demand, placing new demands on compute, storage, memory, and networking. That makes efficiency an ongoing engineering problem. Rather than treating deployed infrastructure as fixed, Dropbox continually adapts how the ac",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Dropbox says that as AI demand grows, the real challenge is not only building more data centers but also getting more out of the ones it already has. Its teams plan capacity, power, cooling, and hardware together, since a change in one area affects the others.",
+    "tags": [
+      "data centers",
+      "infrastructure",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/a-letter-to-the-discord-community-in-brazil",
@@ -4829,10 +4922,14 @@
     "title": "A letter to the Discord community in Brazil",
     "published": "2026-08-17",
     "excerpt": "On the order from Brazil's ANPD to suspend screensharing and video features in the country, how we're complying, and our commitment to our community in Brazil.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord wrote to its Brazilian users after a Brazilian data regulator ordered it to turn off screen sharing and video features in the country. The letter explains how Discord is complying and reaffirms its commitment to users there.",
+    "tags": [
+      "discord",
+      "brazil",
+      "regulation"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/mobile-e2e-testing",
@@ -4840,10 +4937,13 @@
     "title": "How we raised mobile end-to-end test stability to 98%",
     "published": "2026-08-12",
     "excerpt": "We rebuilt our mobile end-to-end testing framework with a strict API and computer vision, raising test stability drastically.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify rebuilt its framework for automated mobile app tests, making them much more reliable. Test pass stability rose to 98%, meaning far fewer false failures.",
+    "tags": [
+      "mobile apps",
+      "software testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://medium.com/airbnb-engineering/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb-3a8a4c917137?source=rss----53c7c27702d5---4",
@@ -4851,10 +4951,14 @@
     "title": "Flexible Authentication: Reimagining authentication for millions of users at Airbnb",
     "published": "2026-08-12",
     "excerpt": "Rebuilding login and signup surfaced product insights, not just technical challenges. Here’s how we designed Flexible Authentication at the intersection of product intuition and technical architecture. By : Jose Santos , Mike Barry For Airbnb, logins at irregular intervals are normal. A guest books a trip in January and may not open the app again until summer. A host checks back only when a reservation comes in, and may be busy with other activities when it does. For a two-sided marketplace where a failed login means a lost booking, and lost revenue for both the guest and the host, long gaps between sessions are a structural challenge, not an edge case. Our authentication system had grown organically over a decade, adding new login methods like Social Login, Email OTP, and Phone over time. We recognized that our users have diverse needs: many, such as hosts, use Airbnb daily, while others visit less frequently, when they are planning trips or traveling. To provide a seamless experience, we needed to ensure we were doing a great job supporting all of these usage patterns, helping users pick up exactly where they left off, regardless of how much time had passed or which device they were using. In this blog post, we’ll walk through how we rebuilt Airbnb’s authentication flows using a new paradigm we call Flexible Authentication , and how each architectural decision was guided by insights into the user’s experience. Identify first then Challenge The ‘Identify first then Challenge’ model was the product insight that reframed the project. Our old system treated authentication as a single question: can this person prove who they are? The real question is more nuanced: given the multiple aspects of the user session, what’s the easiest way for them to verify it? A traveler in Brazil who registered with a phone number is better served by a WhatsApp one-time password (OTP) than by SMS, since WhatsApp penetration far exceeds SMS in this market. A returning host in South Korea is better served by their Naver login, the leading South Korean identity provider, than by their Google ID. The right challenge depends on the person and context. Based on this insight, we adopted an Identify first then Challenge model that splits the flow into two distinct stages. First, the person tells us who they are, using whatever method they want. This may be an email address, phone number, or social login. Once we know which account they are trying to log in to, a configurable policy engine picks the challenge that is most likely to succeed. We lead with that challenge and offer all other options as fallbacks. “Identify first then Challenge” model diagram. The policy engine can use all available aspects of the user session and the account they are logging into, including historical information, to pick the challenge most likely to succeed. We have only started to scratch the surface of optimizing this policy engine. The key architectural decision is that the client never decides which challenge to present . The server makes that call, and the client renders whatever screen it receives. This separation lets us tune authentication strategy per-region without shipping new client code across the many devices Airbnb guests and hosts use. This has made experimentation much easier. Try another way Our old system had a frustrating failure mode: if you couldn’t complete the challenge presented to you, you were stuck. Forgot your password? You could reset it, but the reset flow was its own journey with its own drop-off points. Couldn’t receive an SMS? Tough luck, go back and enter your email so you can try password login instead. The product team articulated a principle that became a hard engineering requirement: every authentication screen must offer an escape . No dead ends. If someone can’t complete the primary challenge, they should always see a “try another way” option with all other options they can use to log in. Every challenge screen has a “Try another way” bu",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Airbnb rebuilt its login system so the server picks the sign-in method most likely to work for each person, such as WhatsApp codes in Brazil or Naver in South Korea. Every login screen now also offers a 'try another way' option so people are never stuck.",
+    "tags": [
+      "login",
+      "airbnb",
+      "user experience"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/link-world-of-warcraft-with-discord",
@@ -4862,10 +4966,14 @@
     "title": "Link Discord and WoW to Keep the Guild Chatting Wherever You Are",
     "published": "2026-08-11",
     "excerpt": "Gather your guildmates! Link your Discord and Battle.net accounts to unlock synced guild chat across Discord and World of Warcraft.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord now lets you link your Discord and Battle.net accounts. Once linked, your guild chat syncs between Discord and World of Warcraft, so you can talk with guildmates on either app.",
+    "tags": [
+      "discord",
+      "gaming",
+      "world of warcraft"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/discord-update-august-11-2026-changelog",
@@ -4873,10 +4981,13 @@
     "title": "Discord Update: August 11, 2026 Changelog",
     "published": "2026-08-11",
     "excerpt": "Here's the Discord Changelog from August 11, 2026, so you can stay informed on what’s new in recent app updates!",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord posted its changelog for August 11, 2026, listing recent app updates. The teaser does not name the specific changes, so details are not available here.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
@@ -4884,10 +4995,14 @@
     "title": "Using the GitHub Copilot SDK for Java",
     "published": "2026-08-10",
     "excerpt": "Java developers no longer have to rely on Java framework-specific approaches to drive AI from their enterprise apps. While it is true that Langchain4j empowered developers by disintermediating specific AI vendors, you still had a dependency on Langchain4j. And with Spring AI, well, of course you had a dependency on design choices made by Spring, if not on Spring itself. Now, GitHub Copilot SDK for Java is the first truly framework agnostic way to drive AI from Java. And with its BYOK support, GitHub Copilot SDK for Java is also AI vendor neutral. 💡 Even though it’s called GitHub Copilot SDK, you can use it with any direct model provider, such as OpenAI, Azure, Anthropic, or OpenAI-compatible endpoints, by passing a provider / ProviderConfig with your own baseUrl + apiKey (or bearer token). No Copilot subscription required. The GitHub Copilot SDK for Java is a client library that empowers your server-side Java code to create Copilot agent sessions, register tools, send prompts, and receive structured responses—all programmatically. It works in server environments, including Jakarta EE and Spring. If you’ve been building enterprise Java for any length of time, this SDK will feel like home: CompletableFuture , annotations, lambdas, virtual threads, it’s all here. This post shows you how to use the SDK, walks through a complete Jakarta EE 11 sample application, and leaves you with concrete next steps to try it yourself. I chose Jakarta EE 11 for my demo because I was the lead release coordinator for that release. I believe in open standards as the best way to empower developers. For more on Jakarta EE 11 see this InfoQ article . This sample app is an agent harness using Jakarta EE 11. But, of course, developers can build their own agent harness using the well-known Java frameworks and libraries of their choice. Clone the sample app and try it yourself > Where to get it The SDK is available as a Maven dependency: <dependency> <groupId>com.github</groupId> <artifactId>copilot-sdk-java</artifactId> <version>1.0.7-preview.1</version> </dependency> Prerequisites: JDK 17 or 25 (25 recommended — unlocks virtual threads and other modern features) Maven 3.9+ A GitHub account with an active Copilot subscription The Copilot CLI installed locally at version 1.0.71 or later. Walk through the sample app The best way to see the SDK in action is to run this sample application . Get the code git clone https://github.com/microsoft/Build26-BRK206-your-agent-anywhere-multiclient-multidevice-with-github-copilot-sdk.git cd Build26-BRK206-your-agent-anywhere-multiclient-multidevice-with-github-copilot-sdk/src/java-agent-orchestrator mvn clean package liberty:run # Open http://localhost:9080/index.xhtml The Java demo is built on: Concern Technology Runtime Open Liberty 26.0.0.5 Platform Jakarta EE 11 (Faces 4.1, CDI 4.1, WebSocket 2.2, Data 1.0, Persistence 3.2) UI PrimeFaces 15.0.16 AI orchestration Copilot SDK for Java 1.0.7-preview.1 Database H2 in-memory (10 seed property listings) What the app does The application is a real-estate lead-management agent pipeline. A customer submits an enquiry (“I’m looking for a 3-bedroom house in London under £800,000”), and the system spins up an isolated Copilot Agent on a virtual thread to process it through a pipeline: The architecture uses Jakarta WebSocket to push real-time status updates from the server to the browser, so you can watch agents progress through phases as the model calls tools: Submit multiple inquiries simultaneously to see concurrent virtual-thread agents in action. Each one processes independently with its own Copilot session. SDK features in action Let’s walk through the key SDK features as they appear in the sample code. Defining tools with @CopilotTool This is the headline API. If you’ve ever written a @GET endpoint in JAX-RS or an @MessageDriven bean, this will feel instantly familiar: @CopilotTool(value = \"Sets the current phase of the agent. Use this to report progress.\", name = \"set_cu",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "GitHub released a Java library that lets server-side Java apps run AI agents that can use tools. It works with any AI provider, not just GitHub Copilot, and does not need a Copilot subscription. A sample Jakarta EE app shows how to use it.",
+    "tags": [
+      "ai agents",
+      "java",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/mobile-platform-support-arrives-in-discord-social-sdk",
@@ -4895,10 +5010,14 @@
     "title": "General Availability of Mobile Platform Support Arrives in Discord Social SDK Version 1.10",
     "published": "2026-08-06",
     "excerpt": "Mobile support is now generally available in the Discord Social SDK, allowing developers to extend Discord's social experiences to iOS and Android.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord's Social SDK version 1.10 now officially supports phones, so app makers can add Discord social features to iOS and Android apps. This lets developers bring Discord's friend and chat features into their own mobile games and apps.",
+    "tags": [
+      "mobile apps",
+      "discord",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://discord.com/blog/discord-patch-notes-august-4-2026",
@@ -4906,10 +5025,13 @@
     "title": "Discord Patch Notes: August 4, 2026",
     "published": "2026-08-06",
     "excerpt": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Discord published its patch notes for August 4, 2026, listing recent fixes made to the app. The teaser does not say which fixes they are, so the details are not clear from this text.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
   },
   {
     "url": "https://shopify.engineering/sidekicks-continual-learning-loop",
@@ -4917,31 +5039,13 @@
     "title": "Sidekick's continual learning loop",
     "published": "2026-08-05",
     "excerpt": "How we compress production failures into model weights every day, beat frontier-model quality, and cut serving costs 96%.",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
-    "company": "GitHub",
-    "title": "Turn one giant AI-generated pull request to a reviewable stack",
-    "published": "2026-08-04",
-    "excerpt": "Think about the last big feature you shipped. Be honest. Did you cram it into one giant pull request, or did you split it into smaller scoped pull requests? For years, you have silently had to decide between watching a pull request grow so large that reviewing it becomes a nightmare or breaking it into a chain of smaller pull requests that you have to babysit, sync by hand, and untangle conflicts every time a change is introduced below. Both options have trade-offs. One is hard to review , while the other is hard to maintain. Your decision that day leans towards the less painful option. Now add coding agents. They are incredibly productive and are projected to drive a 50% productivity gain across every SDLC stage by 2028, according to Gartner . But, they can’t take away the choice of how you structure your pull requests. They amplify the need to make it. In this post, follow along with an example of how you can use stacked pull requests to simplify reviews. A closer look: Adding product search to a shopping assistant Let’s say you issue a prompt to add product search to a shopping assistant, walk away and minutes later, literally, you come back to review, steer, and approve. But look closely at what tends to land in that single pull request: A new data model and its seed data An API route and its validation The client wiring and the UI and the empty/fallback/error states …all of this and more in one ginormous 1,000+ line diff. For agents largely trained on how code has traditionally been written over the years, this pattern is their default way of shipping. Let’s play this out. You want to add product search on as existing web application and your starting state is: A mock AI Assistant showing responses from a random-line generator Inconsistent product data hardcoded and scattered across components No catalog module, no API, no data layer—no nothing An issue is opened to implement the feature, and a typical flow would be to create a feature branch, assign it to a coding agent (or multiple custom agents), get a first draft of the whole implementation code and updated tests… …you read the code (well, you maybe read the code). Then, you still need to manually verify feature behavior and make any necessary updates, push and open a pull request with its long-yet-shallow AI generated description, ensure CI checks are green, and self-review diff then request reviewers. You get started… <reviewer’s hat> Reviewer: 1,721 lines changed!! This description isn’t very helpful. I’ll review this later. </reviewer’s hat> And what follows is familiar: The large pull request becomes hard to review—so it just…sits there. Reviewers lose context and the feedback quality drops. It becomes even slower to merge. This kicks off a manual, messy, time-consuming process that’s prone to conflicts before the feature lands, and it eventually lands under-reviewed. GitHub stacked pull requests Stacked pull requests introduce a different and better structure of delivery. The principle is simple: decomposition. Instead of shooting for a single pull request that addresses the issue in its entirety, you break down the feature into logical layers and identify the dependency chain to arrive at your desired goal. This gives you, and your agents, a native way to decompose work that otherwise lands in a giant pull request into a chain of small, focused and independently reviewable layers. That large pull request that’s hard to review becomes a stack of smaller, logically ordered pull requests, each scoped to a single concern, small enough to hold in a reviewer’s head and with just enough context naturally flowing from the previously reviewed pull request. Let’s make it happen. The stack structure Let’s look at the steps involved when decomposing the problem and arranging the layered stack. First, and importantly, set the stack base . This matters because CI checks and merge rules throughout the stack management lifecycle get evaluated against the stack base. Then, iden",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
-  },
-  {
-    "url": "https://discord.com/blog/improving-mobile-with-squircles-styles-and-spacing",
-    "company": "Discord",
-    "title": "Squircles, Styles, and Spacing: How Your Feedback is Helping Improve Mobile",
-    "published": "2026-08-04",
-    "excerpt": "We're working to more closely match your mobile and desktop experiences, including changes to server icons and the chat bar. (Did we mention Ash, the OG dark theme, is back?)",
-    "summary": "",
-    "tags": [],
-    "summarized": false,
-    "summary_version": 0
+    "summary": "Shopify describes how its Sidekick assistant learns from real production failures and folds those fixes into the model every day. The team says this beat top outside models on quality and cut serving costs by 96%.",
+    "tags": [
+      "machine learning",
+      "ai assistants",
+      "cloud costs"
+    ],
+    "summarized": true,
+    "summary_version": 2
   }
 ]
