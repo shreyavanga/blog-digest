@@ -1,5 +1,271 @@
 [
   {
+    "url": "https://www.figma.com/blog/how-figma-manages-sandboxes-at-scale/",
+    "company": "Figma",
+    "title": "How Figma manages sandboxes at scale",
+    "published": "2026-11-04",
+    "excerpt": "Figma’s AI products require tens of thousands of sandboxes to run untrusted code safely. That’s why we built Nimbus: a platform that makes sandboxes fast, reliable, and easy for Figma product teams and operators to manage.",
+    "summary": "Figma built a system called Nimbus to manage tens of thousands of sandboxes, which are isolated spaces where its AI products run code they don't fully trust. Nimbus aims to keep these fast, reliable, and easy for teams to run.",
+    "tags": [
+      "sandboxes",
+      "ai products",
+      "figma"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/enterprise-case-open-weight-models-databricks",
+    "company": "Databricks",
+    "title": "The Enterprise Case for Open-Weight Models on Databricks",
+    "published": "2026-11-04",
+    "excerpt": "As field engineers at Databricks, we spend our days inside enterprise AI deployments,...",
+    "summary": "Databricks engineers write about why companies may choose open-weight AI models, meaning models whose trained parameters are public, for their own systems. The post is based on their work with enterprise customers, though only a short teaser was provided.",
+    "tags": [
+      "ai models",
+      "enterprise software"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
+    "published": "2026-11-04",
+    "excerpt": "Kimi K3.1 Pro and its higher-speed version, Kimi K3.1 Pro Highspeed , are now available on AI Gateway from more Zero Data Retention (ZDR) providers. Until today, Moonshot AI was the only provider serving either model. K3.1 Pro improves on earlier Kimi models in coding, 3D modeling, and financial analysis, and can carry long agent runs from a small fix to a full project. Both models have a 1M-token context window and accept image input, and Highspeed suits interactive work like coding agents, where response time matters. Call either model through the AI SDK , the Chat Completions , Responses , and Anthropic Messages APIs, or a coding agent connected to AI Gateway. For Highspeed, use moonshotai/kimi-k3.1-pro-highspeed in place of the model name below. Use moonshotai/kimi-k3.1-pro as the model name: Setting zeroDataRetention in the gateway provider options requires ZDR for that request. To require it for every request your team sends, including requests from coding agents, turn on ZDR in the AI Gateway dashboard settings . With either one on, AI Gateway routes only to providers with a ZDR agreement. If none is available for the model, the request fails instead of going to a provider without one. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select moonshotai/kimi-k3.1-pro or moonshotai/kimi-k3.1-pro-highspeed in the agent. See the coding agents guide for details. Try Kimi K3.1 Pro in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Kimi K3.1 Pro and its faster Highspeed version are now available on Vercel's AI Gateway from more providers that promise not to keep your data. Before this, only Moonshot AI served these models there.",
+    "tags": [
+      "ai models",
+      "data privacy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+    "company": "Vercel",
+    "title": "Workflow SDK adds idempotent starts",
+    "published": "2026-11-04",
+    "excerpt": "The Workflow SDK 's start() function can now admit a run and claim a hook in one atomic step. Duplicate workflow starts fail safely. The atomic start replaces the previous getHookByToken() -then- start() pattern, whose gap between the lookup and the start left a documented duplicate-start race. Subscribe to messages inside the run The claimed Hook exists from the moment the run is admitted, so resumeHook works even before the run begins executing, and early payloads are buffered and delivered in order. Inside the workflow, createHook({ token }) with the same token binds to the already-claimed hook: guaranteed, registering nothing new, adding no step, and resolving getConflict() to null . Idempotency with no extra code The token is the idempotency key, and it comes from your own domain: an order ID, an invoice ID, an import ID, or a request ID. The token alone guarantees idempotency. Exactly one run owns it, and a duplicate start() throws HookConflictError carrying the owner's conflictingRunId and never becomes a run. The workflow doesn't have to open the hook at all, and if it never does, the token was only an idempotency key and the run completes normally. Setting experimental_minRetention keeps the token unavailable after the run ends, counted from start() , so late duplicates are still refused. Upgrade to workflow 5.3.1 and read the idempotency documentation to get started. Read more",
+    "summary": "Vercel's Workflow SDK now lets a job start and claim its ID in one safe step, so duplicate starts are refused instead of running twice. This fixes a known race where two near-simultaneous starts could both succeed.",
+    "tags": [
+      "software development",
+      "workflows",
+      "reliability"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
+    "company": "Google Research",
+    "title": "Agile Deliberation: How AI helps humans define the gray areas",
+    "published": "2026-11-04",
+    "excerpt": "Data Mining & Modeling",
+    "summary": "Google Research describes a method called Agile Deliberation, which uses AI to help people work out where the rules are unclear or disputed. The post suggests this could help groups agree on how AI should handle gray-area cases, but the text provided is only a short teaser.",
+    "tags": [
+      "ai",
+      "google research",
+      "decision making"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/openai-to-acquire-pierre",
+    "company": "OpenAI",
+    "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+    "published": "2026-11-04",
+    "excerpt": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+    "summary": "OpenAI says it will buy Pierre Computer Company. The deal is meant to add tools to Codex, OpenAI's coding assistant, to help people build, understand, and review code.",
+    "tags": [
+      "openai",
+      "acquisitions",
+      "coding tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+    "company": "OpenAI",
+    "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+    "published": "2026-11-04",
+    "excerpt": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+    "summary": "OpenAI's Daybreak Red, which offers its GPT-5.6 Cyber model, is now available to approved customers in AWS GovCloud (US-East) through Amazon Bedrock. It is meant for authorized cybersecurity work.",
+    "tags": [
+      "ai",
+      "cybersecurity",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://medium.com/pinterest-engineering/scaling-model-evaluation-at-pinterest-with-ray-part-4-4a96cd12cc11?source=rss----4c5a5f6279b6---4",
+    "company": "Pinterest",
+    "title": "Scaling Model Evaluation at Pinterest with Ray (Part 4)",
+    "published": "2026-11-04",
+    "excerpt": "Vishnu Arun | Tech Lead, Feature Importance Platform; Anderson Lam | Sr Software Engineer; Andrew Qiu | Machine Learning Engineer I; Helena Xu | Data Scientist I; Tianyou Wang | Data Scientist II Introduction In our multi-part blog series, we have discussed why we chose Ray as a last mile data processing framework, how we integrated Ray into our existing ML Training Infrastructure, and how we enabled efficient Batch Inference at scale. In this blog post, we will discuss how we were able to apply Ray to another critical part of our ML Infrastructure stack: Model Evaluation . In the Ray Batch Inference Blog Post , we ended on a section on accumulators (counters that would allow us to calculate metrics like ROC-AUC and cross entropy). This post is where those accumulators pay off: a model evaluation platform that combines the strengths of Ray and Apache Spark to compute metrics efficiently at scale. Model evaluation may appear to be a relatively straightforward step after inference or training. But as ML workflows scale, evaluation quickly becomes an infrastructure challenge. Systems that run many experiments in parallel, such as feature importance, must efficiently compute and aggregate metrics over large volumes of inference data, as shown in Diagram 1. Later in this post, we’ll show how we amortize the metrics compute step, overlapping it with inference for minimal added runtime cost, cutting end-to-end evaluation time by up to 32% while scaling linearly as we run more experiments. Diagram 1 : Depicts a feature importance system’s architecture. We illustrate a multi-head model with h heads and metrics calculated per head. In this type of workflow, metrics are calculated for each experiment and model head. Note: We omit a batched view of this data found in large scale production ML systems for simplicity. Terminology Feature Importance (FI): A technique for quantifying how much each input feature contributes to a model’s predictions. In this post, we will reference a perturbation-based method where we perturb one or more columns, run inference, and compare the results against an unperturbed dataset. Experiment / baseline: One perturbed run vs. the unperturbed run. Model head: One output of a multi-task model. Batch: an arbitrary, compute-sized group of rows. This is the unit of data that one Ray task processes. Bucket: a batch that is group-preserving. It contains one or more complete segments, and no segment may span buckets. Segment: The semantic unit over which a group-wise metric is defined, such as a request. Serde [serialization/ deserialization]: The process and cost of writing data out and reading it back. Background Traditionally, evaluation and inference are two separate stacks stitched together. Diagram 2 below contrasts that unfused pipeline against the fused pipeline we’ll build up over the rest of this post. Diagram 2 : Unfused (top) vs. fused (bottom) inference-and-metrics compute. In the unfused lane, inference and metrics run as separate jobs connected by a serialize/persist/deserialize handoff; in the fused lane, metrics are computed per batch inside the Ray inference job via the shared object store. Red denotes the cross-stack handoff removed by fusion. Concretely, this evaluation step is typically implemented as a Apache Spark job that computes metrics across one or more inference experiments. As shown in the diagram above, we previously used Ray inference to write predictions to S3, then have a follow-up compute job to reread all this data and compute the metrics. For a FI run, this approach introduces two sources of overhead: Cluster startup : Acquiring and warming up a cluster for the metric job. Data movement: Writing predictions to S3 and reading them back to compute metrics. Because inference is done in batches, and metrics typically depend on all of the inference results, the unfused approach can be used to calculate any metric. To save the overheads, we need to fuse the stages, but this also implies ",
+    "summary": "Pinterest describes how it now computes model evaluation metrics during the same Ray job that runs model predictions, instead of in a separate Spark job that rereads saved results. They report this cuts end-to-end evaluation time by up to 32% and scales as more experiments run.",
+    "tags": [
+      "machine learning",
+      "data processing",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+    "company": "Hugging Face",
+    "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+    "published": "2026-11-04",
+    "excerpt": "",
+    "summary": "Hugging Face has released Dharma Field Extractor, a tool that takes any document and pulls out its key details as structured data in JSON format. The article text provided is empty, so this summary relies only on the title.",
+    "tags": [
+      "document processing",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/",
+    "company": "Google Developers",
+    "title": "Three layers, one repo: a tour of google/adk-recipes",
+    "published": "2026-11-04",
+    "excerpt": "The google/adk-recipes repository unifies Agent Development Kit (ADK) resources into three structured layers—core/, plugins/, and contrib/—serving as a single source of truth for building AI agents. Developers can leverage reference patterns, install modular vertical skills (such as retail product search and virtual try-on) directly into their coding assistants, and deploy production-ready services across multiple languages. This cohesive structure streamlines the entire workflow from initial scaffolding to full deployment on Google Cloud infrastructure.",
+    "summary": "Google released a single code repository called adk-recipes that gathers tools and examples for building AI agents in three groups: core, plugins, and community contributions. It includes ready-made examples like product search and deploying services on Google Cloud, which can help developers get started faster.",
+    "tags": [
+      "ai agents",
+      "google cloud",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
+    "company": "NVIDIA",
+    "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
+    "published": "2026-11-04",
+    "excerpt": "Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you... Turn production evidence into prioritized issues and custom evaluations that help you improve prompts, tools, models, memory, skills, and harness code. When you build an agent for your domain, generic benchmark scores may not explain its failures. An agent might choose the wrong tool, follow the wrong workflow branch, miss relevant context, use an unnecessarily expensive model… Source",
+    "summary": "NVIDIA describes using its NeMo tools to turn real-world failures of AI agents into specific tests and fixes. Generic benchmark scores often miss problems like picking the wrong tool or using an overly costly model.",
+    "tags": [
+      "ai agents",
+      "software testing",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+    "company": "NVIDIA",
+    "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+    "published": "2026-11-04",
+    "excerpt": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock... As artificial intelligence and accelerated computing continue to push the boundaries of what’s possible, the latest NVIDIA CUDA release arrives to unlock unprecedented performance and scale. NVIDIA CUDA 13.5 delivers general availability (GA) across major new platforms. NVIDIA Vera Rubin support moves from early developer access to general availability (GA), ready for enterprise production. Source",
+    "summary": "NVIDIA released CUDA 13.5, its software for running fast computing tasks on its chips. It now fully supports the new Vera Rubin platform, which moves from early developer access to ready for businesses to use in production.",
+    "tags": [
+      "nvidia",
+      "ai chips",
+      "software release"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
+    "company": "NVIDIA",
+    "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
+    "published": "2026-11-04",
+    "excerpt": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed... A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed circuit board or responding to a rush order, factory teams must gather evidence across systems, consult specialists, and coordinate the next step. The data may be available, but turning it into a response takes substantial time and effort. Source",
+    "summary": "NVIDIA describes a new factory operations blueprint that uses AI agents to help teams investigate production problems. The article notes unplanned downtime can cost a large plant about $253 million a year, and that gathering evidence across systems is slow.",
+    "tags": [
+      "factories",
+      "ai agents",
+      "manufacturing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+    "company": "Cloudflare",
+    "title": "See the agents, set the terms: new visibility and control for personal agents",
+    "published": "2026-11-04",
+    "excerpt": "Personal agents are the intermediary between humans and the Internet, turning a person’s instructions into requests and actions on websites. A customer might ask a personal agent to compare products across your site, find support articles, or complete a purchase. To a site owner, all three interactions show up as automated traffic — and without a clear view of which agents are visiting and what they are doing, it can be difficult to know whether that traffic is helping your business or creating risk. Blocking agents altogether can feel like the safest choice, but it can mean losing customers. Better visibility into agent activity allows you to decide what access makes sense for your site. Today, we’re launching new analytics to help you understand how personal agents access your site on behalf of humans, along with more granular access policies to put those decisions into practice. Together, they let you welcome agents on your own terms, and in ways that support your business. See how agents access your site Knowing which agent is behind a request turns unexplained automated traffic into traffic you can act on with confidence. Cloudflare maintains the largest verified bot directory in the world, and we are now bringing that intelligence into your traffic details. In Security Analytics, the Bot Analysis chart now shows Personal Assistants as a new category, next to Verified Bot, Likely Human, Likely Automated, and Automated. Security teams can select it to see only personal agent traffic over time. In Top statistics, a new Personal Assistants widget lists which agents are visiting your site and how many requests each one sends. Filter on one agent and every other widget updates to show only its traffic details: the paths it requests, the status codes it receives, and the networks it comes from. At a glance, you can see whether an agent is logging in, reading your product pages, reaching your checkout, or hitting errors on pages it cannot use. For sites that protect user accounts with Account Abuse Protection (currently in early access), site owners and fraud teams are able to see which user each agent represents. The population overview page shows which personal agents are active across your users and how many accounts use them, so you can determine whether agent traffic is a meaningful part of your business. Every login and sign-up event now shows whether a personal agent made the request, and which one. Fraud teams can filter accounts by AI assistant events or number of AI assistants. Additionally, each user's account overview shows the agents acting for that account. A fraud analyst investigating an unusual login can tell whether it came from an agent the customer has relied on for weeks, or from an agent that appeared for the first time today and needs a closer look. If it looks like an attacker is using an agent on an account, fraud analysts can mitigate that account directly, with a WAF rule on its Hashed User ID, without blocking the agent for everyone else who relies on it. Together, these views give you a clearer basis for deciding which personal agents to welcome, limit, or block. Set access policies that reflect your preferences We introduced AI bot policies this summer so site owners could make separate access control choices for AI bots used for Search, Training, and Agent behaviors. Now we’re expanding the existing Agents policy to include granular control options for supported personal agents. To reflect this broader scope, we’re renaming the setting AI Crawler and Agent access policies . In Security Settings , you can set an overall Agents policy, then choose a different policy for each supported personal agent: Allow (do not block) , Block on pages with ads , or Block . For example, you can set the overall Agents policy to Block on pages with ads , then choose Allow (do not block) for a supported personal agent you want to welcome. Your existing Search and Training policies stay as they are. You can also make t",
+    "summary": "Cloudflare launched new tools that show which personal AI agents visit a website and what they do there, plus settings to allow or block each agent. Site owners can use this to decide which agents help their business and which pose risk.",
+    "tags": [
+      "ai agents",
+      "website security",
+      "bot traffic"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/declare-and-optimize-unique-constraints-databricks",
+    "company": "Databricks",
+    "title": "Declare and optimize with UNIQUE constraints on Databricks",
+    "published": "2026-11-03",
+    "excerpt": "Data teams often maintain uniqueness guarantees in their pipelines, but without a...",
+    "summary": "Databricks now lets teams declare UNIQUE constraints on tables, which tell the system that certain values must not repeat. The article says this helps keep data clean and can also help the system run queries faster.",
+    "tags": [
+      "databases",
+      "data pipelines"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
+    "company": "Databricks",
+    "title": "Claude Platform now supports native OpenTelemetry observability in Databricks MLflow",
+    "published": "2026-11-03",
+    "excerpt": "An agent can return a plausible answer while missing an important finding or reading the same source repeatedly...",
+    "summary": "Databricks says its MLflow tool now works directly with Claude's platform to record how AI agents run, using OpenTelemetry, a common standard for tracking software activity. This helps teams see when an agent gives a plausible answer but misses key facts or repeats work.",
+    "tags": [
+      "ai agents",
+      "monitoring",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-security-review-public-beta",
+    "company": "Vercel",
+    "title": "Vercel Security Review now in public beta",
+    "published": "2026-11-03",
+    "excerpt": "Vercel Security Review is now in public beta for Pro and Enterprise teams. Once enabled, every push to a connected GitHub repository is automatically reviewed for vulnerabilities, and findings are reported in the Vulnerabilities dashboard . What triggers a review Security Review runs automatically when code is pushed to a connected GitHub repository. Because reviews start from push events rather than pull requests, direct and force pushes to your production branch are reviewed as well. Every project affected by a single push is reviewed together. What a finding includes Each finding records the project, environment, branch, and commit, with a summary, a suggested fix, and an AI-generated severity rating. Security Review adds its own GitHub check to each commit it reviews. When there's a pull request, it also posts findings as review comments that link back to each finding. On public repositories, finding details stay in the dashboard. Fixes and resolution Clicking Fix with Vercel Agent on a vulnerability report hands the finding to Vercel Agent, which proposes a fix and opens a pull request for you to review. Nothing merges until you approve it. To fix findings with your coding agent instead, use vercel security vulnerabilities in the Vercel CLI, or copy any finding as Markdown or JSON. Security policies Teams can write security policies in plain language, for all projects or specific ones, to give Security Review more context about how they build. Set a team policy in Agent settings and a project policy in the project's Security settings. Limitations Security Review analyzes source code. It isn't a security audit, and it doesn't perform runtime or penetration testing. It helps you find vulnerabilities but doesn't guarantee your application is free of them. Pricing Security Review is billed at the Vercel Agent rate : provider inference at the underlying token rate with no markup, plus the Vercel Token Rate of $0.25 per million tokens (input, cached, output). Reviews run on each push to GitHub, so cost scales with how often you push and how much code changes. Security reviews are free until November 10, 2026, and fixes made with Vercel Agent are billed at the Vercel Agent rate. Enable Security Review in your team’s Agent settings , or read the documentation and the announcement to learn more. The CLI command needs Vercel CLI 65.10.0 or later. Read more",
+    "summary": "Vercel now offers Security Review in public beta for Pro and Enterprise teams. It automatically scans each code push to connected GitHub repositories for security problems, and it is free until November 10, 2026.",
+    "tags": [
+      "security",
+      "software development",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
+    "company": "Vercel",
+    "title": "Diagnose Vercel CLI setup problems with vercel doctor",
+    "published": "2026-11-03",
+    "excerpt": "Vercel CLI now includes vercel doctor , which checks your setup and shows the command that fixes each problem it finds. It checks the CLI version and install, your login and current team, the project link, and your project configuration in vercel.json . It also reports active incidents from the Vercel status page. Each check reports OK, Warning, Failed, or Skipped. When vercel upgrade can't update the installed CLI, the install check shows where the CLI runs from and how to reinstall it. Doctor runs without a login or a linked project, and it never prompts, logs in, or links a project, so coding agents can run it before guessing at a fix. Add --json to get each check's status and suggested commands as structured output. Update to the latest CLI version and run vercel doctor to check your setup, or read the doctor command reference. Read more",
+    "summary": "Vercel's command-line tool now has a \"vercel doctor\" command that checks your setup and suggests a fix for each problem it finds. It also reports active Vercel outages, and it runs safely without changing anything, so it's useful for both people and coding tools.",
+    "tags": [
+      "vercel",
+      "developer tools",
+      "troubleshooting"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
     "company": "Vercel",
     "title": "Vercel CI no longer requires a linked Vercel project",
@@ -10,6 +276,20 @@
       "continuous integration",
       "vercel",
       "github"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Tencent Hy4 now available on AI Gateway",
+    "published": "2026-11-03",
+    "excerpt": "Hy4 from Tencent is now available on AI Gateway , at 50% off through December 31, 2026. Hy4 supports reasoning , tool calling , structured outputs , and image input, and has a 1M-token context window for work across a codebase or many documents. Hy4 is the first Hy model with vision. It can pick out fine detail in an image and read complex charts. It also supports computer use in both command-line and graphical interfaces. Compared with Hy4 Preview , it follows instructions more closely and does better with long context, long-running tasks, and deep research. Use tencent/hy4 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select tencent/hy4 in the agent. See the coding agents guide for details. Try Hy4 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Tencent's new AI model Hy4 is now available on Vercel's AI Gateway, at half price through the end of 2026. It can read images and charts, work with very long documents, and use tools.",
+    "tags": [
+      "ai models",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -60,6 +340,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+    "company": "OpenAI",
+    "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+    "published": "2026-11-03",
+    "excerpt": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+    "summary": "OpenAI has named Jill Hazelbaker as its new Chief Corporate Affairs Officer. She will lead the company's communications and public image worldwide.",
+    "tags": [
+      "openai",
+      "company news",
+      "leadership"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/heimstaden",
     "company": "OpenAI",
     "title": "Heimstaden is changing residential real estate management with AI",
@@ -70,6 +365,21 @@
       "ai tools",
       "real estate",
       "property management"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/cisco-cyber",
+    "company": "OpenAI",
+    "title": "How Cisco defends at machine speed with OpenAI",
+    "published": "2026-11-03",
+    "excerpt": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+    "summary": "Cisco is using OpenAI's AI models together with its network data to help businesses defend against attacks faster. The goal is security systems that can adjust to threats as they happen.",
+    "tags": [
+      "cybersecurity",
+      "ai",
+      "networking"
     ],
     "summarized": true,
     "summary_version": 2
@@ -393,6 +703,21 @@
       "security",
       "npm packages",
       "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/vercel-security-review",
+    "company": "Vercel",
+    "title": "Introducing Vercel Security Review",
+    "published": "2026-11-02",
+    "excerpt": "Today, we are launching Vercel Security Review in public beta. Security Review is a new capability in Vercel Agent , alongside Code Review and Investigation. Once enabled, it scans for vulnerabilities on every push to a team's connected GitHub repositories. Findings appear as comments on pull requests, are listed in the Security dashboard, and are available via CLI. With your permission, Vercel Agent can also validate and push fixes for findings. How it works Security reviews are triggered by GitHub push events, including direct pushes to your production branch. In monorepos, reviews are scoped to the project's root directory. Here is how it works: You push code to a GitHub repository connected to a Vercel project. As soon as the push lands, Security Review scans the changed code for vulnerabilities like missing authorization checks or exposed secrets. Findings are posted to the Security dashboard. On private and internal repositories, Security Review also adds a GitHub check to the commit and comments on the pull request. You can fix findings by clicking Fix with Vercel Agent in the dashboard, or use the CLI to pull findings and have your own coding agent implement changes. When subsequent security reviews no longer detect a finding, it is marked as no longer detected in the dashboard, and the GitHub comment is closed. Each review compares the push against a base and covers only what changed. For deployments, the base is the branch’s previous deployment, so the agent reviews the change against what’s already running. Because it only scans the diff, Security Review finishes in seconds and can run on every preview and production deployment. What the agent checks The agent reads the diff along with the surrounding code, traces how the changed code can be reached, checks for existing protections, and rechecks each finding before reporting it. That process is how it catches logic flaws like missing authorization checks, which pattern-matching scanners miss. Each review also applies your team’s security policies , which you can write in plain language and apply to specific projects or across your team. For example, a policy can require any endpoint that returns customer data to check that the requester owns it. You can also manage policies with the Vercel CLI, using vercel security policy . How findings are tracked Each new finding is checked against ones that have already been reported, so the same issue isn’t flagged twice. Every finding is tied to the deployment where it first appeared and changes are followed from there. That means that when a vulnerable change from a pull request is merged into your production branch, the finding is flagged in production as well. When a later review no longer detects the issue in an environment, the agent marks the finding as no longer detected there. Acting on findings Every finding explains the vulnerability and how to fix it, with links to the commit and deployment where it first appeared. Findings are listed in the Vulnerability view in the Security dashboard, where you can ask Vercel Agent to validate and commit fixes. Findings are also available via CLI , so you can fix vulnerabilities with your own coding agent. Each new finding generates an audit log event, which Enterprise teams can send to their SIEM through Audit Log Drains . Here is a demo of sample findings in the dashboard: Fixing vulnerabilities with Vercel Agent When Vercel Agent can fix a finding, you will see the option to click Fix with Vercel Agent on the finding page in the dashboard. After you click, the agent confirms the vulnerability still exists, then makes the smallest change that fixes it and updates the tests. Say a developer pushes a change to an invoice download endpoint, and the lookup doesn't check which organization the invoice belongs to. Within seconds, Security Review flags that any signed-in user could download another organization's invoice by changing its ID. Vercel Agent's fix scopes the lookup to the u",
+    "summary": "Vercel has launched Security Review in public beta. It automatically scans every code push to connected GitHub repositories for security problems, such as missing permission checks or exposed secrets, and can also help fix them.",
+    "tags": [
+      "security",
+      "software development",
+      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -784,66 +1109,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/data-cache-is-moving-to-runtime-cache",
-    "company": "Vercel",
-    "title": "Data Cache is moving to Runtime Cache",
-    "published": "2026-10-30",
-    "excerpt": "Data Cache is exiting beta and moving to Runtime Cache . Next.js fetch caching and unstable_cache will switch over on every version without code changes. On Pro, each project and environment gets its own Runtime Cache storage allocation, with 8x the space of Data Cache’s previous team-wide pool. Enterprise projects get 10x their previous Data Cache storage. Once your team migrates, Data Cache reads and writes that were previously unbilled are charged at Runtime Cache pricing . Rates start at $0.40 per million read units and $4.00 per million write units, and vary by region. Hobby teams get 1 million read units and 200,000 write units free each month across all projects. On Pro, usage draws from your $20 infrastructure credit each month, and anything beyond it is billed at regional rates. For Enterprise pricing, contact your account team. Migration Teams created on or after October 30, 2026 use Runtime Cache by default. If your team already uses Data Cache: Hobby: We’ll migrate your team on November 29, 2026. Pro: We’ll notify you of your migration date and when billing changes take effect. Enterprise: Your account team will contact you with migration details. Before you migrate, review your project's Data Cache usage in Observability . To cut unnecessary reads and writes, follow the optimization guide or copy the agent prompt into your coding agent. In the Runtime Cache dashboard, you can also select Optimize with Vercel Agent. Starting October 30, existing Hobby and Pro teams can opt in early from your team's CDN settings . Runtime Cache pricing applies as soon as you opt in. You can also disable fetch and unstable_cache caching in CDN settings, which sends more requests to your data sources but doesn’t stop your migration. Read about the architecture and recent improvements in the blog post . Read more",
-    "summary": "Vercel's Data Cache is becoming Runtime Cache, and Hobby teams move over automatically on November 29, 2026. Once moved, cache use that was free before will be billed at per-use rates, with Hobby getting a free monthly allowance.",
-    "tags": [
-      "cloud costs",
-      "caching",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/add-liveness-checks-to-your-daemons",
-    "company": "Vercel",
-    "title": "Add liveness checks to your Daemons",
-    "published": "2026-10-30",
-    "excerpt": "Vercel Daemons now support configuring HTTP liveness checks. Start with an HTTP endpoint in your daemon that reports its health. Keep it lightweight so it responds quickly, and have it return an error status when the daemon is no longer healthy: The daemon configuration now accepts a livenessProbe value pointing at that endpoint: Vercel periodically requests the endpoint and restarts the daemon's container when the check fails, catching a daemon that is still running but no longer healthy. Read the Daemon documentation for more information about liveness checks, including default values and the optional tuning fields. Read more",
-    "summary": "Vercel Daemons can now run a health check on your background service. Vercel regularly visits a health endpoint you set up and restarts the service if it fails, which catches services that are still running but have stopped working properly.",
-    "tags": [
-      "vercel",
-      "cloud hosting",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/simplifying-runtime-caching-on-vercel",
-    "company": "Vercel",
-    "title": "Simplifying runtime caching on Vercel",
-    "published": "2026-10-30",
-    "excerpt": "Today, we’re bringing Data Cache into Runtime Cache, giving developers one product for data caching across frameworks and APIs. If you use Next.js fetch caching or unstable_cache , you won’t need to change your code. Pro and Enterprise projects will get larger storage allocations. Runtime Cache lets your code reuse fetched or computed data across requests without operating a separate caching service. Over the past year, we’ve improved read performance during traffic bursts, increased storage budgets, and made cache usage easier to investigate. Why we built Runtime Cache Data Cache was originally launched as Vercel’s data caching service for the Next.js App Router, used by fetch caching and unstable_cache . Unlike CDN caching , which stores complete HTTP responses, it caches the data used to produce them. A product page, for example, can reuse cached catalog data while rendering a personalized response for each visitor. We wanted developers to have access to that service without depending on Next.js. Last year, we introduced Runtime Cache with a direct API: getCache from @vercel/functions . Applications can use it for feature flag lookups in Routing Middleware, caching CMS content during builds, and data caching in SvelteKit and Nuxt apps. Frameworks can expose this service through their own APIs, too. On Vercel, Next.js itself uses the Runtime Cache API for 'use cache: remote' , which caches function and component outputs. How Runtime Cache works The infrastructure behind Runtime Cache is a distributed caching service shared by many teams. A Go API handles requests, backed by Redis fleets in every Vercel region. Every hour, the service handles more than 440 million reads and moves more than 18 TB of data. Each region has its own cache. A cache hit takes one round trip to the cache service in the region where your code runs. Vercel handles authentication with short-lived credentials, so you don’t need to manage API keys. On a miss, your app or framework fetches or computes the value and writes it to that region’s cache. The service doesn’t check other regions for a cached copy. Each cached entry stores its tags and write time. When the service reads an entry, it checks a separate tag store in the same region for those tags’ invalidation timestamps. If any tag was invalidated after the entry was written, the entry is stale. For example, an application can tag cached product data with catalog . When the catalog changes, invalidating catalog records one timestamp, whether the tag covers one entry or a million. The service doesn’t need to find and delete every matching entry. The invalidation immediately updates the tag store in the region receiving the request. Vercel’s shared tag infrastructure, also used by the CDN , distributes the timestamp through the global push pipeline, typically reaching other regions within a few hundred milliseconds. Your app or framework chooses what to cache and handles misses. Runtime Cache handles regional storage, authentication, and distributing tag invalidations across regions. What we’ve shipped Faster reads during traffic bursts Checking whether an entry is still fresh adds a dependency to every cache hit. During traffic bursts, a slow shard in the tag store could delay reads even when the cached value was already available. We added circuit breakers that let reads temporarily check freshness using tag timestamps cached in memory, so they can proceed without waiting for the slow shard to respond. During this fallback, a read can briefly treat recently invalidated data as fresh. We enabled the breakers in every region in August. During the heaviest bursts in our largest region, p99 cache-service read latency fell to about one fifth of its previous level at comparable traffic. On-call alerts for this failure mode stopped. More storage and fewer evictions When a cache exceeds its storage budget, Runtime Cache evicts its least recently used entries, even if they haven’t reached their expiration tim",
-    "summary": "Vercel is merging its Data Cache into Runtime Cache, so one product now handles data caching. Existing Next.js caching code keeps working without changes, and Pro and Enterprise projects get more storage.",
-    "tags": [
-      "caching",
-      "web hosting",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/introducing-geist-serif",
-    "company": "Vercel",
-    "title": "Introducing Geist Serif",
-    "published": "2026-10-30",
-    "excerpt": "Geist started as a monospace typeface for developers, built for the editors and terminals where they spend their day doing their work. From there it grew into Geist Sans for product interfaces, and then into Geist Pixel, which was inspired by the grids of early computer screens. Today, we're adding a new member to the family: Geist Serif . Geist Serif is a high-contrast display serif built on the same foundations as Geist Sans, Geist Mono, and Geist Pixel. It has fine, saw-toothed serifs and sharp hairlines, and it was drawn to communicate messages powerfully both in the physical world and on the high-density screens on modern devices. Same system, new voice At Vercel, Geist Sans runs the product. For headlines, though, we wanted a second voice, one that belongs to the same system, instead of a stranger picked from a drop-down menu. A lot of tech brands have moved away from clean sans-serifs to get some personality back, and many of them borrow from vintage computer ads. Geist Serif takes a different path: toward fashion, editorial design, and magazine headlines. It's our homage to the artists behind Rolling Stone and Harper's Bazaar . From the beginning, each Geist family has read from a chapter of type history: the Swiss design movement, early terminal and DOS computing, and now editorial print. Display first Geist Serif began as a set of sketches by Evil Rabbit , which Andrés Briganti then expanded. The first letters already showed an expressive serif, in the spirit of typefaces like Victor Serif and Stanley. When Mark Davis took over the drawings, we made the first release a display face for headlines, posters, and other large sizes, while work on the full family continued. Print has always struggled to hold fine hairlines and sharp serifs, but today's displays can handle a high level of detail. We wanted the new face to take full advantage of modern screens, so we thinned every downstroke by 50% and tightened the sidebearings to push the contrast as far as it would go. Each serif has a wedge on one side and a curve on the other, so the proportions are classical and look beautiful in print, but the construction is new and optimized for digital devices. From the first prototype to today The first prototype of Geist Serif was shared on April 1, 2026. Here's the same word, Geist, in that prototype, compared with the display drawing shipping today. Geist grew teeth The goal was to honor our original intent and keep the serif closely tied to the sans, even when the letters sit on top of each other. Geist Serif’s stems match Geist Sans, and the two share widths and postures. The saw-toothed serifs and high contrast give Geist an editorial voice. One phrase kept coming up as each character was drawn: “Geist grew teeth.” Four families, one x-height Geist Serif uses the same cap height and x-height as Geist Sans, so you can drop it into any Geist layout without moving a line. Mix Sans, Mono, Pixel, and Serif in the same sentence and every word looks the same size. Metric Geist Sans Geist Serif UPM 1000 1000 Cap height 710 710 x-height 530 530 Ascender 710 750 Descender -150 -200 Four variants, one axis Like Geist Pixel, Geist Serif has a variable axis that swaps the shape of every dot in the font, including those on i and j and in punctuation. The axis is called Element Shape ( ELSH ), and it gives you four variants: Regular with round dots (the default), Square, Triangle (a nod to the Vercel logo), and Heart. Each variant also ships as its own static file. If you use the variable font, pick a variant with font-variation-settings : Crafted by hand In July the font had 227 glyphs . It now has 894 and covers 352 Latin-script languages, and we worked through more than 52,000 kerning pairs to get the spacing right. Some of the details are tiny. The eye of the g , for example, is tilted exactly 7°. Specs at a glance Geist Serif ships with: 1 weight (Regular) 4 variants (Regular, Square, Triangle, Heart) 894 glyphs 5 stylistic sets ( ss0",
-    "summary": "Vercel has released Geist Serif, a new headline typeface that joins its Geist family of fonts. It is built to look sharp on modern screens and suits magazine-style and editorial designs.",
-    "tags": [
-      "fonts",
-      "design",
-      "web tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
     "company": "Stripe",
     "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
@@ -1108,6 +1373,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.databricks.com/blog/postgres-managed-service",
+    "company": "Databricks",
+    "title": "What to Look for in a Postgres Managed Service: A Technical Buyer's Checklist",
+    "published": "2026-10-29",
+    "excerpt": "Managed is a label, not a specification. Evaluate a cloud database managed service...",
+    "summary": "Databricks has published a checklist to help technical buyers judge what a good managed Postgres database service should include. The article points out that the word \"managed\" alone does not tell you what you are actually getting.",
+    "tags": [
+      "databases",
+      "postgres",
+      "cloud services"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/how-procore-powering-construction-analytics-opensharing-0",
     "company": "Databricks",
     "title": "How Procore is powering construction analytics with OpenSharing",
@@ -1148,36 +1428,6 @@
       "data pipelines",
       "real-time data",
       "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-plugin-is-now-available-in-antigravity",
-    "company": "Vercel",
-    "title": "Vercel Plugin is now available in Antigravity",
-    "published": "2026-10-29",
-    "excerpt": "The Vercel Plugin is now available in the Google Antigravity marketplace. Use the Vercel Plugin to give your Antigravity agent guidance on Vercel APIs and recommended patterns, with skills for products such as AI SDK , Vercel Functions , and Workflow . This demo shows an Antigravity agent using the Vercel Plugin to build and deploy a Python backend with Vercel Sandbox : Install the Vercel Plugin by opening Customizations → Marketplace in the Antigravity App and searching for Vercel , then see the Vercel Plugin documentation for available skills and guidance. Read more",
-    "summary": "Vercel's plugin for building apps can now be installed in Google's Antigravity tool. It gives the AI coding assistant tips and guidance on Vercel's tools, and a demo shows it building and deploying a Python backend.",
-    "tags": [
-      "developer tools",
-      "cloud hosting",
-      "ai coding"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
-    "company": "Vercel",
-    "title": "Vercel Flags starts 7x faster and no longer extends function duration",
-    "published": "2026-10-29",
-    "excerpt": "On Vercel, the Vercel Flags SDK now initializes faster on cold starts, and usage reporting no longer keeps functions running after the response. Faster cold starts Two changes speed up SDK initialization on cold starts: The SDK loads and parses the flags datafile bundled with your deployment as soon as the client is created, so it’s ready before your code evaluates its first flag. Every function invocation now includes the current datafile revision, so the SDK can check whether the bundled datafile is up to date without a network request. In internal testing, eliminating the network wait reduced p75 cold-start SDK initialization time from over 70 ms to 10 ms, roughly 7x faster. After initialization, flag reads are effectively instant. Across cold and warm invocations, p99 flag-read latency is under 1 ms. Usage reporting no longer extends function duration The SDK previously used waitUntil for usage reporting, keeping functions running after the response was sent. It now passes usage events to the Vercel runtime, so reporting no longer adds to function duration. Update @flags-sdk/vercel to version 1.5.3 or later and redeploy your application: Learn more in the Flags SDK documentation . Read more",
-    "summary": "Vercel's flags tool now starts up about 7 times faster when a server wakes up, cutting wait time from over 70 ms to 10 ms in internal tests. It also no longer makes functions run longer after sending a reply, which can lower usage costs.",
-    "tags": [
-      "vercel",
-      "web hosting",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1442,65 +1692,6 @@
     "tags": [
       "ai research",
       "science"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/the-future-of-the-firm",
-    "company": "OpenAI",
-    "title": "The future of the firm",
-    "published": "2026-10-28",
-    "excerpt": "How AI might enter the org chart—beneath, beside, and between us.",
-    "summary": "OpenAI's post asks how AI could fit into company structures, working under people, alongside them, and between them. The text is only a short teaser, so it does not say what specific changes it proposes.",
-    "tags": [
-      "ai at work",
-      "company structure"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-    "company": "OpenAI",
-    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-    "published": "2026-10-28",
-    "excerpt": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-    "summary": "OpenAI and ServiceNow are expanding their partnership. OpenAI's AI models and agents will work inside ServiceNow, and ServiceNow's work tools will connect to ChatGPT and Codex.",
-    "tags": [
-      "ai partnerships",
-      "enterprise software",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
-    "company": "OpenAI",
-    "title": "Legora is building the agentic operating system for legal work",
-    "published": "2026-10-28",
-    "excerpt": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-    "summary": "Legora, a legal tech company, is using OpenAI's models, ChatGPT, and Codex to speed up legal work and handle more contract analysis. The goal is to let lawyers spend more time on higher-value tasks.",
-    "tags": [
-      "legal tech",
-      "ai tools",
-      "contracts"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/legora",
-    "company": "OpenAI",
-    "title": "Legora is building the agentic operating system for legal work",
-    "published": "2026-10-28",
-    "excerpt": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
-    "summary": "Legora, a legal software company, uses OpenAI models, ChatGPT, and Codex to speed up legal work and help with contract review. The goal is to free lawyers from routine tasks so they can spend more time on higher-value work.",
-    "tags": [
-      "legal tech",
-      "ai tools",
-      "contracts"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1996,36 +2187,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/how-teach-databricks-free-edition",
-    "company": "Databricks",
-    "title": "How to teach with Databricks Free Edition",
-    "published": "2026-10-26",
-    "excerpt": "You can run a full data or AI course on the same platform enterprises use in production - for free...",
-    "summary": "Databricks describes how teachers can run a full data or AI course on its platform using a free edition. The teaser says the same tools businesses use are available at no cost for classes.",
-    "tags": [
-      "data science",
-      "teaching",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/building-live-intelligence-databricks-ai-search-supports-streaming-tables-materialized-views",
-    "company": "Databricks",
-    "title": "Building live intelligence: Databricks AI Search supports Streaming Tables, Materialized Views, and Managed tables using Iceberg",
-    "published": "2026-10-26",
-    "excerpt": "AI Search now natively supports Streaming Tables, Materialized Views, and Managed...",
-    "summary": "Databricks AI Search can now work directly with three kinds of data tables: streaming tables, materialized views, and managed Iceberg tables. This means search results can stay up to date with changing data, without a separate copy step.",
-    "tags": [
-      "data",
-      "search",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/s1-sec",
     "company": "Anthropic",
     "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -2080,21 +2241,6 @@
     "tags": [
       "ai infrastructure",
       "data center networking",
-      "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
-    "company": "Google Developers",
-    "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
-    "published": "2026-10-26",
-    "excerpt": "Google Research has completed the 32-bit open-source Coral NPU RISC-V architecture with the introduction of its Matrix Execution Unit, which delivers up to 1 TOPS while targeting 10 mW average power for edge inference. Alongside this architecture, the release of the v1.0 open-source IREE/MLIR compiler allows developers to take models from JAX, PyTorch, and TensorFlow straight to Coral NPU hardware without writing custom assembly. Developers can now prototype and deploy these multimodal edge applications using new hardware options like the Synaptics Astra SR200 MCU series and globally available Coralboard devkits.12",
-    "summary": "Google released an open-source chip design for small devices like wearables, able to run AI tasks on very little battery power. Developers can now take AI models built with common tools and run them on this chip without writing low-level code.",
-    "tags": [
-      "edge ai",
-      "chips",
       "open source"
     ],
     "summarized": true,
@@ -2189,36 +2335,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/real-time-energy-trading-and-analytics-databricks",
-    "company": "Databricks",
-    "title": "Real-time energy trading and analytics on Databricks",
-    "published": "2026-10-23",
-    "excerpt": "Why does real-time energy trading need more than faster data?Energy trading desks...",
-    "summary": "Databricks describes how energy trading firms can use its data platform to analyze market information in real time. The post asks why fast trading needs more than just quicker data, but the teaser does not give the full answer.",
-    "tags": [
-      "energy trading",
-      "real-time data",
-      "data analytics"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/built-agents-case-spark-declarative-pipelines",
-    "company": "Databricks",
-    "title": "Built for Agents: The Case for Spark Declarative Pipelines",
-    "published": "2026-10-23",
-    "excerpt": "AI agents now write a growing share of production data pipelines (over 70% of SDP...",
-    "summary": "Databricks says AI agents now write many of the data pipelines companies run in production, and it argues its Spark Declarative Pipelines tool suits that work. The article is only a short teaser, so details beyond that are unclear.",
-    "tags": [
-      "data pipelines",
-      "ai agents",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
     "company": "Anthropic",
     "title": "An alignment assessment of the UK AISI cybertesting incident",
@@ -2303,36 +2419,6 @@
       "robotics",
       "ai training",
       "simulation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
-    "company": "NVIDIA",
-    "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
-    "published": "2026-10-23",
-    "excerpt": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and... The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and end-to-end performance tuning within TensorRT by customizing different optimizations for different models. For more details, see Part 1 of this series, which introduces the challenges associated with scheduling (a critical stage in deep learning… Source",
-    "summary": "NVIDIA released a feature called the Global Performance Tuner in TensorRT 11.1. It automatically picks the best speed settings for each AI model while keeping accuracy in check. This is part 2 of a series; the article is only a short teaser.",
-    "tags": [
-      "ai models",
-      "performance tuning",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
-    "company": "NVIDIA",
-    "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
-    "published": "2026-10-23",
-    "excerpt": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For... Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For example, when NVIDIA TensorRT builds an engine, it makes interdependent decisions about graph-IR transformations, fusion, implementation selection, memory placement, and quantization. This process is called scheduling. Source",
-    "summary": "NVIDIA describes a new tool, the Global Performance Tuner for TensorRT, that looks at many possible ways to build a neural network engine instead of just one. Choosing among these build options can make AI models run faster on GPUs.",
-    "tags": [
-      "ai",
-      "gpu computing",
-      "performance"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2514,21 +2600,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
-    "company": "NVIDIA",
-    "title": "Running Frontier-Class AI Models Across 8 NVIDIA DGX Spark Nodes",
-    "published": "2026-10-22",
-    "excerpt": "AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting... AI developers aren’t just running a single model anymore—they’re orchestrating multiple models in parallel, chaining inference calls, and experimenting with frontier-class architectures that demand hundreds of gigabytes of memory. NVIDIA DGX Spark was built to bring AI development to the desk, and now you’ll be able to link even more Spark nodes together. At GTC Berlin… Source",
-    "summary": "NVIDIA shows how to link eight DGX Spark desktop AI machines together to run very large AI models that need hundreds of gigabytes of memory. This lets developers run several models at once on a desk-sized setup.",
-    "tags": [
-      "ai models",
-      "nvidia",
-      "computing hardware"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
     "company": "Google DeepMind",
     "title": "Beyond tree cover: mapping the world’s forest types",
@@ -2658,20 +2729,6 @@
       "ai chips",
       "machine learning",
       "performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-    "company": "Hugging Face",
-    "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
-    "published": "2026-10-21",
-    "excerpt": "",
-    "summary": "Hugging Face describes how tailoring a small language model's vocabulary to a specific application can cut the cost of running it by about 77%. The approach aims to make small AI models cheaper to use in real products.",
-    "tags": [
-      "ai models",
-      "cloud costs"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3114,21 +3171,6 @@
       "spotify",
       "recommendations",
       "ai inference"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://blog.cloudflare.com/verified-bots-accountability/",
-    "company": "Cloudflare",
-    "title": "Continuous accountability for Verified bots",
-    "published": "2026-10-16",
-    "excerpt": "A driver’s license tells you who someone is and that they passed a driving test, not whether they’ll drive responsibly in the future. The same is true for bots: verifying who operates it creates accountability, but trust depends on what it does next. A known bot can still ignore website preferences, overwhelm origins, or evade controls. It’s not always malicious — often it’s just a misconfiguration or a bug. As we described in a previous blog post on bot behavior, we strive to verify two questions: “Are you who you say you are?” and “Can we trust you?” To be a Cloudflare Verified Bot, you broadly need to meet three criteria: Identify yourself accurately and securely Do only what you say you will do Don’t engage in abusive behavior Bots use Web Bot Auth to sign requests that establish their identity, which BotBase then catalogues in an open format. With identification addressed, our focus shifts to the second cardinal rule of Verified bots: thou shalt do no harm . Today we introduce a system to evaluate and report when Verified bot behavior starts to deviate from this rule, ensuring that the answer to “Can we trust you?” remains “Yes.” This is where the distinction between risk and trust becomes important: Risk describes the likelihood that a particular request or point-in-time action may be harmful, and it can change from one moment to the next. Trust is built over time through repeated and consistent behavior. For example, we de-listed Perplexity’s bot from our Verified bot list in 2025 when it sought to access resources on websites that opted out of scraping and subsequently attempted to circumvent controls when those requests were blocked. Do not engage in abusive behavior This simple requirement sounds like a freebie, but there is a lot of nuance in that statement. When crawlers don’t respect site preferences , that undermines trust. When sites request a crawler to not crawl or to slow down, and the crawler ignores these requests, that undermines trust. We developed a system to measure how often a crawler respects site preferences. These observations will translate to an explainable trust band: a range showing how consistently a bot respects site preferences and which observed behaviors informed that assessment, rather than a permanent judgment about a bot or its operator. The initial signals we evaluate are: Does the bot respect instructions? Did it respond to direct feedback? We consider these to be “common sense” rules, a courtesy to the operators who provide the information bots seek. In the future, we will be sharing these scores publicly on Radar , as well as expanding the ways we measure. This score gives responsible bot operators a way to demonstrate that trust is being upheld over time. Verify, but continuously re-verify. When in Rome, do as the Romans do A robots.txt file is the primary way to communicate site owner preferences. Our system considers whether a bot’s observed traffic is consistent with those published preferences over time. Robots.txt tells all (or specific) bots to only crawl specific parts of a website. Isolated violations and other types of one-offs may not be significant. What we look for instead are repeated patterns of behavior that disregards site preferences. The expectation is simply for responsible bots to consult and honor the preferences that websites publish, in line with RFC 9309 . And just to be clear, a robots.txt sets the minimum rules for what bots and agents should not do. But there is no implication that anything not stated is allowed. For example, a robots.txt does not need to say that a bot must stop when the site can communicate that continued access is unwelcome through other signals. What you do not wish for yourself, do not impose on others Bots can remain entirely within allowed paths while still placing substantial load on the websites they visit. One of the clearest ways a website can push back is with an HTTP 429 (“Too Many Requests”) response. A 429 is a directive for",
-    "summary": "Cloudflare is adding a system that scores how well its approved 'verified' bots respect website owners' rules, such as robots.txt and requests to slow down. Scores will be shown publicly on Cloudflare Radar, so bots that ignore site rules lose trust over time.",
-    "tags": [
-      "web bots",
-      "cloudflare",
-      "web crawling"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3759,21 +3801,6 @@
       "design tools",
       "ai agents",
       "workflow"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/figma-agent-and-design-systems/",
-    "company": "Figma",
-    "title": "How to lighten design system upkeep with the Figma agent",
-    "published": "2026-10-06",
-    "excerpt": "Figma’s agent can take on repetitive work across your design system, from maintaining your library to automating how designs adhere to it. Here, we share a few ways to put the Figma agent to work.",
-    "summary": "Figma shares ways to use its agent to handle repetitive design system work, like keeping the component library up to date and checking that designs follow it. The post is a short teaser, so the specific steps aren't included.",
-    "tags": [
-      "design systems",
-      "figma",
-      "ai agents"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4782,21 +4809,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
-    "company": "Google Research",
-    "title": "Mapping global methane emissions from space with deep learning",
-    "published": "2026-09-01",
-    "excerpt": "Climate & Sustainability",
-    "summary": "Google Research describes using deep learning on satellite images to map where methane gas is released around the world. Methane is a strong greenhouse gas, so finding its sources helps target cuts.",
-    "tags": [
-      "climate",
-      "satellite imagery",
-      "methane"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803?source=rss----4c5a5f6279b6---4",
     "company": "Pinterest",
     "title": "Becoming an AI Team",
@@ -5029,21 +5041,6 @@
     "tags": [
       "discord",
       "app updates"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://shopify.engineering/sidekicks-continual-learning-loop",
-    "company": "Shopify",
-    "title": "Sidekick's continual learning loop",
-    "published": "2026-08-05",
-    "excerpt": "How we compress production failures into model weights every day, beat frontier-model quality, and cut serving costs 96%.",
-    "summary": "Shopify describes how its Sidekick assistant learns from real production failures and folds those fixes into the model every day. The team says this beat top outside models on quality and cut serving costs by 96%.",
-    "tags": [
-      "machine learning",
-      "ai assistants",
-      "cloud costs"
     ],
     "summarized": true,
     "summary_version": 2
