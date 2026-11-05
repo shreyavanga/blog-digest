@@ -1,5 +1,358 @@
 [
   {
+    "url": "https://www.databricks.com/blog/which-data-collaboration-tool-opensharing-clean-rooms-marketplace",
+    "company": "Databricks",
+    "title": "Which Data Collaboration Tool: OpenSharing, Clean Rooms, Marketplace",
+    "published": "2026-11-05",
+    "excerpt": "The world of sharing has extended far past tables. We can now securely share all...",
+    "summary": "Databricks has written about its three ways to share data with other companies: open sharing, clean rooms, and a marketplace. The post helps readers pick which one fits their needs. The text provided is only a short teaser, so details are limited.",
+    "tags": [
+      "data sharing",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/push-based-cdc-unity-catalog-zerobus-ingest-and-debezium",
+    "company": "Databricks",
+    "title": "Push-based CDC into Unity Catalog with Zerobus Ingest and Debezium",
+    "published": "2026-11-05",
+    "excerpt": "Data in operational databases drives business decisions, and much of that analysis...",
+    "summary": "Databricks describes a way to send database change records into its Unity Catalog data system using a tool called Zerobus Ingest together with Debezium, which picks up changes as they happen. The teaser suggests this helps keep analysis of operational data current.",
+    "tags": [
+      "databases",
+      "data pipelines",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/introducing-apache-spark-43-now-available-databricks-runtime-19",
+    "company": "Databricks",
+    "title": "Introducing Apache Spark® 4.3 - Now available in Databricks Runtime 19",
+    "published": "2026-11-05",
+    "excerpt": "IntroductionApache Spark 4.3 brings stateful processing to Real-Time Mode, achieving...",
+    "summary": "Databricks has released Apache Spark 4.3 in its Databricks Runtime 19. The new version adds support for remembering information across steps in Real-Time Mode, which is useful for processing live data streams.",
+    "tags": [
+      "data processing",
+      "apache spark",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/delta-sharing-opensharing-what-changed-whats-next",
+    "company": "Databricks",
+    "title": "From Delta Sharing to OpenSharing: what changed, what's next",
+    "published": "2026-11-05",
+    "excerpt": "Delta Sharing has been the way thousands of organizations exchange live data across...",
+    "summary": "Databricks describes how its data-sharing tool Delta Sharing has grown into a broader effort called OpenSharing, which aims to let organizations exchange live data across different platforms. The post covers what changed and what comes next.",
+    "tags": [
+      "data sharing",
+      "databricks",
+      "open standards"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/builders-guide-scaling-databricks-apps",
+    "company": "Databricks",
+    "title": "A builder’s guide to scaling Databricks Apps",
+    "published": "2026-11-05",
+    "excerpt": "Congratulations, you've built an app on Databricks Apps, and it's gone from a couple...",
+    "summary": "Databricks published a guide for teams whose app built on Databricks Apps has grown from a few users to many. It explains how to make such an app handle more traffic. The article text is only a short teaser, so details are limited.",
+    "tags": [
+      "databricks",
+      "scaling apps"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+    "company": "Anthropic",
+    "title": "AI for scientific discovery: How researchers use Claude",
+    "published": "2026-11-05",
+    "excerpt": "In this report, we use privacy-preserving infrastructure to study the scientific use of Claude, Claude Code, and Claude Science. We document how usage varies across scientific fields and research tasks, identify what explains these usage patterns, and outline scenarios for how AI could accelerate research.",
+    "summary": "Anthropic studied how scientists use its Claude AI tools, looking at which research tasks and fields use them most. It also describes ways AI could speed up scientific work.",
+    "tags": [
+      "ai",
+      "science research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+    "company": "Vercel",
+    "title": "Vercel Schedules is now in public beta",
+    "published": "2026-11-05",
+    "excerpt": "Vercel Schedules is now in public beta on all plans. Run tasks on a recurring cadence or at a single point in time, in production, preview, or custom environments. Schedules in vercel.json can target a private Vercel Function, an HTTP path, or a Vercel Queue topic, and schedules created at runtime target a Queue topic. Any schedule can be enabled, disabled, or run on demand without redeploying. Define a static schedule: Adding a schedule/v1beta trigger makes the function private. It has no public URL and only the Vercel schedule infrastructure can invoke it. Handle the dispatch: Create a schedule at runtime: Schedules is the successor to Cron Jobs . Existing Cron Jobs continue to work, and the migration guide covers moving them to Schedules. Schedules also power dynamic schedules in Eve and experimental scheduled tasks in Nitro projects . Vercel Schedules is billed starting at $5 per 1M runs and $10 per 1M creations on Pro and Enterprise. Hobby includes 500 schedule creations and 5,000 runs per month. Read the blog post for more on how Schedules works, then get started with the Schedules documentation . Read more",
+    "summary": "Vercel has released Schedules in public beta on all plans, letting users run tasks on a repeating timetable or at one set time. It replaces the older Cron Jobs feature, which still works, and pricing starts at $5 per million runs on paid plans.",
+    "tags": [
+      "vercel",
+      "scheduled tasks",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
+    "company": "Stripe",
+    "title": "Analyze your Stripe data directly with your agent",
+    "published": "2026-11-05",
+    "excerpt": "You can now use natural language to create an investor slide deck highlighting where your business outperformed in the previous quarter, or build a custom dashboard to understand why your Stripe revenue changed.",
+    "summary": "Stripe now lets you ask questions about your own Stripe data in plain language, through an AI agent. You can ask it to build an investor slide deck about last quarter's wins or a dashboard that explains changes in your revenue.",
+    "tags": [
+      "payments",
+      "ai tools",
+      "business data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://shopify.engineering/reflex",
+    "company": "Shopify",
+    "title": "Reflex: an architecture for building mobile apps with agents",
+    "published": "2026-11-05",
+    "excerpt": "Our architecture lets agents test mobile app behavior without an emulator and use one test suite to keep iOS and Android in sync.",
+    "summary": "Shopify describes Reflex, a new setup that lets AI agents check how mobile apps behave without using an emulator. One test suite is used to keep the iOS and Android versions matching.",
+    "tags": [
+      "mobile apps",
+      "ai agents",
+      "testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/",
+    "company": "Google Research",
+    "title": "Detecting signs of hypertension using wearable sensors",
+    "published": "2026-11-05",
+    "excerpt": "Health & Bioscience",
+    "summary": "Google Research describes using wearable sensors to look for signs of high blood pressure. The article is only a short teaser, so details of the method and results are not available here.",
+    "tags": [
+      "health tech",
+      "wearables"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+    "company": "OpenAI",
+    "title": "Setting a new standard for responsible AI infrastructure",
+    "published": "2026-11-05",
+    "excerpt": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+    "summary": "OpenAI announced a new plan, called a National Community Compact and Compute Campus Policy Blueprint, for building AI data centers. It aims to protect local resources, create jobs, and guide how this infrastructure is built.",
+    "tags": [
+      "ai",
+      "data centers",
+      "policy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-6-cyber",
+    "company": "OpenAI",
+    "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+    "published": "2026-11-05",
+    "excerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
+    "summary": "OpenAI has introduced GPT-6 Cyber, a new AI model built to find security weaknesses in software that attackers could exploit, and to help develop fixes. It is designed to stay within the scope it is authorized to work in.",
+    "tags": [
+      "cybersecurity",
+      "ai models",
+      "software security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/phonon-tts",
+    "company": "Hugging Face",
+    "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+    "published": "2026-11-05",
+    "excerpt": "",
+    "summary": "Hugging Face has launched Phonon TTS, a speech model that turns text into spoken audio and runs directly on a device. The company says it performs at the top of standard speech benchmarks.",
+    "tags": [
+      "speech ai",
+      "on-device ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "company": "Hugging Face",
+    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+    "published": "2026-11-05",
+    "excerpt": "",
+    "summary": "Hugging Face has announced new NVIDIA Cosmos 3 open models that are meant for simulating interactive worlds. The title is the only detail provided, so the full scope of what the models do is not clear from this text.",
+    "tags": [
+      "ai models",
+      "world simulation"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "company": "GitHub",
+    "title": "Inside GitHub’s new Git storage architecture",
+    "published": "2026-11-05",
+    "excerpt": "Last week at GitHub Universe, we announced our new Git storage architecture, capable of handling thousands of writes per second with reads that scale on demand. Through internal testing, we’ve demonstrated the ability to support 5,000 concurrent agents working on a repository, sending 7,200 pushes per second to a repo, all while serving read traffic with consistently low latency. This new architecture is the foundation for GitHub to support agentic development for hundreds of millions of developers, and we’ve been building it underneath GitHub while it keeps running. Over the past year, agents changed what a busy repository looks like on GitHub. In our first post in this series, we laid out the two principles behind our next-generation Git storage architecture: minimize coordination, and decouple storage from compute. In our last post , we covered the bridge: moving 99.99999% of repositories into Azure, scoping the write quorum to individual references, and standing up virtual replicas backed by Azure Blob Storage. We also left off with an observation: very little of a write needs to be ordered. Git objects are immutable and named by their contents, meaning two writers can store them at the same time without agreeing on anything. The part of a push that needs agreement is the reference update, and a reference update is tiny in comparison. Virtual replicas were the first step toward building around that, and the means by which we onboard repositories to the new architecture. The rest of the architecture builds on that observation. Only reference updates need agreement. That lets the parts of Git infrastructure that used to be tightly coupled (storing data, serving requests, and maintaining repositories) scale independently. For developers, Git stays Git: they push, fetch, and branch the same way, with the same protections in place. Below, we walk through the requirements behind the design, follow a request through the system, and dive deep into two of its components. Building for agent scale We think about the scale of the GitHub platform along two axes: Horizontal scale is how many developers and agents can work across many repositories. Many of GitHub’s current approaches on this axis have been battle-tested over the years and are carried forward to the new architecture: partitioning of tenants across infrastructure, isolation and/or fairness enforcement of tenant traffic, and load-aware routing, to name a few. Vertical scale is how many developers and agents can work on one repository. As agents write more code, we expect individual repositories to get larger and busier, so most of our requirements came from the vertical axis. Today, the busiest repositories on GitHub.com receive at most dozens of writes in a single second, typically in short bursts. As more of that work shifts to agents running in parallel and around the clock, we expect those bursts to become a sustained rate within the next year. Each push leads to more reads: CI runs, deployment systems pull the new commit, and other agents fetch it for context. This read fan-out results in a large amplification effect on overall traffic that scales with writes. We’re already seeing this trend play out on repositories at the top of the curve. The chart below shows daily requests to one repository on GitHub from March to May, when its traffic grew about 4x. Its growth has continued on an exponential trajectory since then. We have to plan for a world where agent-driven development keeps accelerating at this speed. Instead of planning for the next increment, we set a target of at least two orders of magnitude more scale. For a single repository, that meant the new architecture needed to: Accept thousands of writes per second. Support multiple writer nodes. There are two reasons for this: Experience has taught us that indexing incoming packs and checking object connectivity are the most CPU-expensive parts of a write, and that cost scales with the size of the write, so a sin",
+    "summary": "GitHub announced a new way of storing Git code that can handle thousands of changes per second on one repository. In internal tests it handled 5,000 agents working at once, which matters as AI agents make busy repositories far more common.",
+    "tags": [
+      "github",
+      "git",
+      "infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://dropbox.tech/machine-learning/how-two-engineer-side-projects-became-the-agent-taking-action-inside-dropbox",
+    "company": "Dropbox",
+    "title": "How two engineer side projects became the agent taking action inside Dropbox",
+    "published": "2026-11-05",
+    "excerpt": "AI can help people turn an idea into a first draft, but getting to something usable depends on more than a prompt. It needs the files and context behind the request, software to carry out the work, and a way for people to review and refine the result. With the new Dropbox experience , we’re bringing those pieces together where people already keep their work, so they can ask questions about their content and request tasks such as organizing folders, renaming files, and preparing materials to share. Letting an agent change those files meant giving it a controlled place to work, enforcing permissions, and recording its changes so people could review and undo them. The agent behind those tasks started as two experiments, each approaching the same problem from a different angle. Daniel Reiter Horn and Rich Chan, engineers at Dropbox, were using coding agents for tasks beyond writing software, including designing 3D-printed models and filing expense reports. Both encountered the same challenge: giving an agent access to their Dropbox files while retaining control over what it changed and a way to recover things when something went wrong. Melding those experiments meant connecting the agent to both the files in Dropbox and the safeguards already built around them. Access to the filesystem let the agent work directly with files, while version history provided a record of changes that could support rollback. An isolated workspace gave it somewhere to run installed software, with permission checks outside that workspace controlling what it could access and change. The overall system brought those pieces together for customers , letting them follow the work, approve access, and review the results. Connecting an agent to the work already in Dropbox The early projects of both engineers exposed different parts of the challenge, starting with the software an agent needed in order to get the work done. For Daniel, the need for the right software became clear when he wanted to build a futuristic cityscape model that his son could turn into a diorama. The family laptop had no 3D modeling software, so he put together a sandbox, an isolated computing environment, with a coding agent and specialized software. He connected it to Dropbox using rclone, a tool that let the agent work with his online files as if they were stored inside the sandbox. Through an experimental command-line interface, Daniel could describe changes, preview the model on dropbox.com , and refine the design until it was ready to print overnight. The prototype ran outside the Dropbox web experience and didn’t yet have agent permission controls or conversation-specific undo, but it showed that an agent could produce something useful directly in Dropbox without relying on software installed on someone’s laptop. --> Rich, meanwhile, had been approaching the same problem through the desktop app. Each week, he used a coding agent to turn receipt images into expense reports, but every run meant copying the receipts out of Dropbox to a location the agent could access. He spent a week building a graphical interface directly into the Dropbox desktop app so he could run an agent with access to his Dropbox files. The prototype combined usability, safety, and permission controls, giving Rich confidence to use it on his own data. He could then process his receipts and handle routine tasks directly from the app, without copying files elsewhere. The interface also connected to the Dropbox folder pickers, live previews, and revision history, letting Rich open the files being changed and trace a revision back to its conversation. Those connections made it possible to follow the agent’s work through the files themselves, providing a foundation for reviewing and undoing changes later. The experiments complemented each other. Daniel’s sandbox gave the agent a place to run installed software, while Rich’s graphical interface and permission controls gave people a way to work with the agent and see wh",
+    "summary": "Dropbox is adding an AI agent that can work with files stored in Dropbox, such as organizing folders, renaming files, and preparing materials. It grew from two engineers' side projects, and people can review its changes and undo them.",
+    "tags": [
+      "ai agents",
+      "dropbox",
+      "file management"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://dropbox.tech/machine-learning/how-aiassisted-development-helped-us-build-the-new-dropbox-experience",
+    "company": "Dropbox",
+    "title": "How AI-assisted development helped us build the new Dropbox experience",
+    "published": "2026-11-05",
+    "excerpt": "For three years, we’ve been working toward a new Dropbox experience that helps people do more with their files, from finding a project decision to getting a folder ready to share. Today, we’re beginning to roll that experience out to customers. But getting here meant changing how we build software. We had complex integrations to tackle and a deadline to meet, and AI-assisted development helped us take on work that would've previously been difficult to complete in time for launch. The new Dropbox experience puts that investment into practice by helping customers understand what’s in their files and get work done with them. Ask Dropbox what changed in a project folder, and it answers with sources you can open and check. Ask it to organize a folder, rename files based on their contents, or combine documents into a PDF, and it shows a plan you can review and edit before approving. Dropbox only reads and acts on content you already have permission to access, and supported file changes can be undone. And the results stay in Dropbox, where teams can review, share, and keep working with them. Delivering that experience meant building new capabilities on web and bringing them into desktop, with shared code that let us develop features for both applications. Engineers took broader ownership of product decisions and brought quality checks into development from the start. As the work progressed, we moved from using AI to help with individual coding steps to delegating defined tasks—including implementation and testing—for engineers to review. Together, those changes helped us deliver a product years in the making within an ambitious launch timeline. Bringing more of Dropbox into desktop We began with a broad product direction and a lot of details to work out. We needed to turn that direction into specific experiences people could use, including a fuller desktop app. Desktop had primarily focused on keeping files in sync, while web already supported richer ways to browse and work with content. We wanted to build on that foundation and bring both existing features and new capabilities developed on web into desktop without rebuilding everything separately for each platform. The difficulty was that web and desktop had grown around different needs. They used different tools to build and release software and handled tasks such as signing in, navigating between pages, and retrieving data differently. A web feature could depend on services that desktop didn’t provide in the same way. Before we could reuse it, engineers needed to identify those dependencies and work out how to support them—a substantial integration effort to complete before our November launch deadline. During our Hackathon in May, engineers built a working prototype that explored two possible approaches to tackling this problem, and AI helped them trace dependencies, identify platform-specific assumptions, and test the integration. One approach displayed the existing All Files page inside a desktop-specific window using Electron, the framework behind desktop’s interface. An embedded web view—a browser surface inside the app—let us bring the existing web browsing experience into desktop quickly. The second approach imported selected web components directly into desktop’s user interface. These individual building blocks required more integration work but gave us greater control over how they fit into the desktop app. The working prototype gave Product and Design something concrete to try before we committed to a larger architectural change. Engineers turned directional designs into usable flows, surfaced missing states, and proposed options as platform constraints became clear. Product and Design worked through those choices as engineers built the features, allowing us to refine the experience as we learned. We found that both approaches had a place: complete web pages where we wanted close parity, and individual components where we needed more control. AI reduced the effort of tes",
+    "summary": "Dropbox is starting to roll out a new experience that lets people ask questions about their files, organize folders, and combine documents, with changes shown for review first. The company says AI tools helped its engineers build it and bring more of the web features into the desktop app before a tight launch deadline.",
+    "tags": [
+      "ai tools",
+      "software development",
+      "dropbox"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/nitros-biggest-year-yet-a-look-back-at-2026",
+    "company": "Discord",
+    "title": "Nitro’s Biggest Year Yet: A Look Back at 2026",
+    "published": "2026-11-05",
+    "excerpt": "Nitro had a big year. Catch up on everything Nitro added in 2026, from new in-app perks like 1GB file uploads and Display Name Styles, to partner rewards like access to 50 games with XBOX Game Pass.",
+    "summary": "Discord's paid Nitro plan had a big year in 2026. It added perks like 1GB file uploads, custom display name styles, and access to 50 games through Xbox Game Pass.",
+    "tags": [
+      "discord",
+      "subscriptions"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
+    "company": "Google Developers",
+    "title": "Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon",
+    "published": "2026-11-05",
+    "excerpt": "Google Research has completed the 32-bit open-source Coral NPU RISC-V architecture with the introduction of its Matrix Execution Unit, which delivers up to 1 TOPS while targeting 10 mW average power for edge inference. Alongside this architecture, the release of the v1.0 open-source IREE/MLIR compiler allows developers to take models from JAX, PyTorch, and TensorFlow straight to Coral NPU hardware without writing custom assembly. Developers can now prototype and deploy these multimodal edge applications using new hardware options like the Synaptics Astra SR200 MCU series and globally available Coralboard devkits.12",
+    "summary": "Google has finished an open-source chip design, Coral NPU, for running AI on small devices using very little power. A free compiler lets developers take models from common AI tools and run them on this hardware without writing low-level code.",
+    "tags": [
+      "edge ai",
+      "chips",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+    "company": "NVIDIA",
+    "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+    "published": "2026-11-05",
+    "excerpt": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an... In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an idle session’s KV cache, or a recomputed prefix is a byte that is not being used to produce tokens. The question is no longer how much memory a GPU has, but how much useful work each byte delivers. The generational data in Figure 1 below… Source",
+    "summary": "NVIDIA explains that fast GPU memory in AI data centers is costly and limited, so every byte should produce useful work. It argues the key question is how much work each byte delivers, not how much memory a chip has.",
+    "tags": [
+      "ai infrastructure",
+      "gpu memory",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+    "company": "NVIDIA",
+    "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+    "published": "2026-11-05",
+    "excerpt": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to... One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to discover the problem only after the workload is running. These issues can appear at any point in a cluster’s lifecycle. A GPU cluster that passes readiness checks at handover changes as nodes are replaced, drivers are patched… Source",
+    "summary": "NVIDIA describes a new way to set up, check, and run GPU computer clusters on Kubernetes using its DSX OS software. It targets a common problem: one slow GPU can drag down a big training job even when the machine looks healthy.",
+    "tags": [
+      "gpu clusters",
+      "kubernetes",
+      "ai infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+    "company": "Google DeepMind",
+    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "published": "2026-11-05",
+    "excerpt": "",
+    "summary": "Google DeepMind has released Gemini Omni 1.2 Flash, a faster and cheaper version of its model that can handle longer video clips. The main news is that it aims to be quick and low-cost while working with longer clips.",
+    "tags": [
+      "ai models",
+      "video",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+    "company": "Cloudflare",
+    "title": "Agents aren’t humans (but they kinda are)",
+    "published": "2026-11-05",
+    "excerpt": "AI Agents now act on the web for millions of people. To a Site, an Agent can take many forms. It may be indistinguishable from a human user carrying out a task, or it might look like one visitor carrying many Users. This removes the ability for the Site to recognize, serve, and hold accountable the user or users behind the Agent, and causes the Site to face the costs when something goes wrong. This post argues that in order for Sites to maximize the access they provide to Agents, the ecosystem must develop new mechanisms to preserve the relationship between Sites and Users. Traditionally, in Security and Fraud Prevention, that requires three things: Identity, Reputation, and Accountability, allowing Sites to answer: Is the person acting being truthful about who they are? Is that person trustworthy? And who answers for the action? “Personal AI Agents” (“Agents” for short) are automations that take instructions from a human (“User”) and pursue a goal by controlling a cloud computer or browser. They are usually hosted and maintained by an “Operator” as part of a managed service or consumer offering. Examples include Muse from Meta and dots from OpenAI, and more are launching all the time. Agents can potentially take any action online that their User could, without the limits that hold humans back. They don't tire, they run around the clock, they act in parallel, and they put up with friction no person would. Much of the web, from how Sites plan capacity to how they make money, assumes those limits. Fundamentally, remotely hosted Agents are intermediaries . An intermediary is anything that sits between a User and a Site, so the Site sees it instead of the User. Agents are the newest kind of intermediary, but intermediaries have existed for a long time. Cloud browsers (hosted browsers that software controls on a User's behalf) and Proxies (services that relay a User's traffic, including VPNs) are intermediaries too. What has changed is the trajectory. Agentic traffic is growing rapidly and may eclipse traditional human browsing on the Internet in the near future. This forces a reckoning for anyone operating a Site today. Historically, a Site could simply block intermediary traffic and require Users to disable the intermediary service. That stops working when the majority of traffic is agentic. Once blocking is no longer viable, Site Operators are left with the problem that intermediaries have always created. The Site loses direct information about the User and must decide whether to trust the intermediary without it. This post covers Agents hosted somewhere other than the User's device. Local agents (e.g. OpenClaw) or Agents running in the User's own browser, on their own device, are out of scope of the primary topic addressed by this post (see below, \"On open source and local Agents\"). This post rests on one principle: The Intermediation Principle : The business relationship between Users and Sites, and each participant’s security responsibilities, must be upheld regardless of intermediation. A Site needs new tools to recognize, serve, and hold accountable a User acting through an Agent just as it could if that User had visited directly. The Agent, and the Operator behind it, must be recognizable and accountable too, because an Agent can do what no User could. Agents are able to scale human access almost without limit, so they create new risks, even for behavior that was previously benign. The intermediary problem Meet Ezra. Ezra works as a personal assistant for people in her city. Her best client is Amy, a local CEO, but she also works for Bob, Charlie, and Debra. She runs their errands: groceries, appointments, paperwork, and flights. Ezra blends into the crowd. The corner grocer used to know Amy. He knew what she bought and set aside what he thought she'd like. Now only Ezra comes in, carrying orders for four people, and the grocer can't tell whose preferences are whose. He doesn't want to turn Ezra away, because she brings hi",
+    "summary": "AI agents now act on websites for people, but sites can't easily tell who is really behind them or hold anyone responsible. The post argues that new ways to verify identity, build trust, and assign accountability are needed so sites can serve these agents safely.",
+    "tags": [
+      "ai agents",
+      "online security",
+      "web traffic"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/workflow-lab-build-with-code-on-the-canvas-using-the-figma-agent-and-code-layers/",
+    "company": "Figma",
+    "title": "Workflow lab: Test ideas with code layers and the Figma agent",
+    "published": "2026-11-04",
+    "excerpt": "Bringing code onto the canvas gives teams a shared space to compare working prototypes side by side, refine a direction, and collaborate on ideas with teammates. This workflow shows how a designer uses code layers and the Figma agent to explore a new feature.",
+    "summary": "Figma shows how a designer can add working code to its design canvas and use its agent to try out a new feature idea. Teams can put working prototypes side by side and refine them together.",
+    "tags": [
+      "design tools",
+      "prototyping",
+      "collaboration"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.figma.com/blog/how-figma-manages-sandboxes-at-scale/",
     "company": "Figma",
     "title": "How Figma manages sandboxes at scale",
@@ -29,6 +382,20 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+    "company": "Anthropic",
+    "title": "Investigating vault particles with Claude",
+    "published": "2026-11-04",
+    "excerpt": "We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells. Here, we describe how Claude helped at each step of this research.",
+    "summary": "Anthropic's biology lab reports the first 3D structure of a vault particle, a cell component, found in simple single-celled organisms. The post also describes how the AI assistant Claude helped at each step of the research.",
+    "tags": [
+      "ai research",
+      "biology"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
     "company": "Vercel",
     "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
@@ -53,6 +420,21 @@
       "software development",
       "workflows",
       "reliability"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/introducing-vercel-schedules",
+    "company": "Vercel",
+    "title": "Introducing Vercel Schedules",
+    "published": "2026-11-04",
+    "excerpt": "Cron jobs are useful for work that needs to happen regularly. You can use them to do things such as back up your database on a schedule, or keep data in sync between two systems. You define them once in code and then can update them by editing their config and redeploying. But today, agents interact with users as work evolves, and schedules need to be updated in real time. We built Vercel Schedules to allow agents and applications to create, change, or cancel one-time and recurring schedules through code, without redeploying. What are Vercel Schedules? Schedules builds on the static approach used by Vercel Cron Jobs , but are designed to let users and agents decide when work should happen while your application is still running. A schedule tells Vercel when to trigger a task and where to send it. Your application provides the code that carries out the work. You can use schedules for both static and dynamic jobs: Static schedules keep the timing in vercel.json or Build Output API configuration and sync when you deploy. You can use them to call private functions or HTTP paths, or send messages to Queue topics . Dynamic schedules let your app create and manage schedules through the JS SDK , CLI , or API as it runs. They support one-time and recurring work through Queue topics. You can also test scheduled work on Preview deployments and in custom environments before running it in Production. How Schedules works Take this example: A user could ask an agent with web access, “Tomorrow morning, summarize the top five stories on Hacker News.” The traditional solution would be storing the request and its schedule time in a database, then using a cron job to check for work that is due. With Schedules, an agent can create a schedule that records the request and when to run it, without a separate database and polling job. The example below defines an AI SDK tool that gives an agent this capability. When the task is due, Vercel uses Queues to deliver the saved request to your app. Your app provides code to read that request , check the user’s current permissions, and start the agent. The agent fetches the top five Hacker News posts with a web tool, then returns a summary for your app to save for the user. If you already build agents with fx’s JavaScript library, libfx or Pi’s agent library , you can add a similar scheduling tool. The eve agent framework uses Vercel Schedules to provide dynamic scheduling tools for production agents hosted on Vercel. Run recurring application jobs You can schedule recurring work with Vercel Schedules. Schedules can be created dynamically via the JS SDK , API , and CLI , or set up in your project’s configuration. For example, to create a job that cleans up expired records every day, you could define a schedule that invokes a private function in your chosen time zone: Vercel calls this cleanup code directly, without exposing it at a public URL. It checks that each call comes from the scheduling service, so you don’t have to add that check yourself. If your app already uses the Nitro 3 server framework, its experimental integration lets you run the recurring jobs in your existing scheduledTasks configuration as private functions. You can also try the agent task and cleanup locally with vercel dev , then test them on a Preview branch or in a custom environment before production. Use Run Schedule in your project’s Schedules tab to try either task without waiting, and see when past runs happened. Get started Vercel Schedules is now in Public Beta , and you can use it for the recurring tasks your application already runs. When a user or agent chooses when work should happen, your code can create and manage a schedule for that task. To get started, check out the Vercel Schedules skill and read the documentation . Read more",
+    "summary": "Vercel released Schedules, a tool that lets apps and AI agents create, change, or cancel one-time and recurring jobs while the app is running, without redeploying. It is now in public beta.",
+    "tags": [
+      "cloud hosting",
+      "scheduled jobs",
+      "ai agents"
     ],
     "summarized": true,
     "summary_version": 2
@@ -88,6 +470,36 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/introducing-images-2-6",
+    "company": "OpenAI",
+    "title": "Introducing Images 2.6",
+    "published": "2026-11-04",
+    "excerpt": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+    "summary": "OpenAI released Images 2.6, a new version of its image tool. It generates images faster, can make GIFs, edits more precisely, and adds new controls in ChatGPT, Codex, and the API.",
+    "tags": [
+      "ai images",
+      "openai",
+      "image editing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/devrev-enterprise-self-service",
+    "company": "OpenAI",
+    "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+    "published": "2026-11-04",
+    "excerpt": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+    "summary": "DevRev now uses OpenAI's GPT-6.1 Sol model to run its Computer and Operator tools, which handle customer service tasks on their own. The company says the model balances good reasoning, quick responses, and lower cost for businesses.",
+    "tags": [
+      "ai",
+      "customer service",
+      "enterprise software"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/daybreak-red-aws-govcloud",
     "company": "OpenAI",
     "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
@@ -98,6 +510,21 @@
       "ai",
       "cybersecurity",
       "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+    "company": "OpenAI",
+    "title": "A thousand fewer paths to root",
+    "published": "2026-11-04",
+    "excerpt": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+    "summary": "OpenAI built an automated system that found, checked, and wrote fixes for 948 Linux kernel bugs that let attackers gain higher control of a computer. This matters because it shows AI can help clean up serious security flaws in widely used operating system software.",
+    "tags": [
+      "security",
+      "linux",
+      "ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -177,6 +604,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+    "company": "NVIDIA",
+    "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+    "published": "2026-11-04",
+    "excerpt": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards... As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards to identify the cause of training performance drops. What if a team of AI agents could perform that correlation through one interface? NVIDIA developed the AI Factory Operations Agent to streamline its own internal NVIDIA DGX SuperPOD… Source",
+    "summary": "NVIDIA built AI agents that help run its own large GPU computer clusters. Instead of engineers checking many dashboards to find why training slowed down, the agents connect the clues through one interface.",
+    "tags": [
+      "ai agents",
+      "data centers",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
     "company": "NVIDIA",
     "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
@@ -202,6 +644,21 @@
       "ai agents",
       "website security",
       "bot traffic"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/",
+    "company": "AWS",
+    "title": "Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg",
+    "published": "2026-11-04",
+    "excerpt": "Today, we’re announcing a simple, cost-effective path for data lake modernization. Amazon S3 Tables now support managed migration of your Apache Hive tables to Apache Iceberg . Migration works with Parquet tables in Amazon S3 that are registered in the AWS Glue Data Catalog and allows you to upgrade your data lake with no pipelines to build or compute to provision, while production workloads keep running. Apache Iceberg has become the open standard for large analytics datasets. It lets you manage petabyte-scale tables with features like schema evolution, hidden partitioning, and time travel queries, while keeping your data open and queryable with any Iceberg-compatible engine. Amazon S3 Tables offer fully managed storage purpose-built to keep Iceberg tables performant and cost-effective as they grow, with features like automatic maintenance, optimization, replication, and S3 Intelligent-Tiering built-in. What is new Previously, migrating Apache Hive tables to Apache Iceberg could take weeks of engineering work to build and manage the required infrastructure. Converting data types and building rollback capabilities added operational complexity. Now, this is available as a managed, API-driven operation. S3 Tables handle the entire migration workflow, including data validation, compatibility checks, type conversions, file recompression, and compaction. Before copying any data, S3 Tables identify every source object in scope and generate a compatibility report. You can sync as many times as you need without stopping writes to your source table, except for a few minutes during cutover. Once you are ready, you can complete the migration, minimizing time that tables are offline. Compared to self-managed approaches, S3 Tables managed migrations are cost-effective because you pay only for the data copied, with no charge for the Hive-to-Iceberg conversion, and source objects in S3 Intelligent-Tiering stay in their current access tier. A first look at the migration To migrate an AWS Glue Hive table, choose your destination table bucket in the S3 console , then choose Create table from migration . Create a namespace and table name for your destination Iceberg table. The destination table is created using recommended default settings tuned for query performance and storage efficiency. When you start the migration, S3 Tables validate the source table, generate a compatibility report, and begin copying data. The destination table is read-only during the migration. Once you complete migration, the destination table is promoted to read-write. You can begin working with your data right away using a direct integration with Amazon Athena and Amazon SageMaker Unified Studio in the AWS console, or use any tool compatible with the Apache Iceberg REST API to directly query the tables. To learn more, visit the S3 Tables migration documentation . You can also use AWS Command Line Interface (AWS CLI) , AWS SDKs , or the Agent Toolkit for AWS . For example, set up migration jobs and call the start-table-migration command. cat > /tmp/start-migration.json <<'EOF' { \"roleARN\": \"arn:aws:iam::123456789012:role/S3TablesMigrationRole\", \"destinationTable\": { \"tableBucketARN\": \"arn:aws:s3tables:us-east-1:123456789012:bucket/my-destination-bucket\", \"namespace\": \"mynamespace\", \"name\": \"my_destination_table\", \"encryptionConfiguration\": { \"sseAlgorithm\": \"aws:kms\", \"kmsKeyArn\": \"arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab\" }, \"storageClassConfiguration\": { \"storageClass\": \"INTELLIGENT_TIERING\" }, \"tags\": { \"team\": \"s3tables\", \"purpose\": \"migration\" }, \"properties\": { \"writeFormat\": \"parquet\", \"icebergFormatVersion\": 2, \"compressionCodec\": \"zstd\", \"dictionaryEncoding\": true }, \"schema\": { \"type\": \"struct\", \"schemaId\": 0, \"identifierFieldIds\": [1], \"fields\": [ { \"id\": 1, \"name\": \"id\", \"type\": \"long\", \"required\": true, \"doc\": \"primary key\" }, { \"id\": 2, \"name\": \"payload\", \"type\": \"string\", \"required\": false } ] }, \"icebergSortOrder\": { \"o",
+    "summary": "Amazon S3 Tables now offers a managed way to move old Hive-style data tables to the newer Apache Iceberg format, without building custom pipelines. The tool checks compatibility, copies data, and lets the old table keep running until a short cutover, so teams can modernize their data storage faster and pay only for data copied.",
+    "tags": [
+      "cloud storage",
+      "data lakes",
+      "aws"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1079,36 +1536,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-daemons-can-now-call-services-with-bindings",
-    "company": "Vercel",
-    "title": "Vercel Daemons can now call services with bindings",
-    "published": "2026-10-30",
-    "excerpt": "Vercel Daemons can now call the services in their deployment through service bindings . Declare the binding on the daemon. It names the target service and the environment variable that receives the service's URL: The daemon calls that URL like any other HTTP endpoint. Vercel handles the internal routing, authentication, and TLS, and the service stays private: Bindings point one way: services can't bind to daemons. Each instance keeps calling the deployment that started it, even after a promotion or rollback. Learn more about daemon service bindings in the docs . Read more",
-    "summary": "Vercel Daemons can now call other services in their own deployment through a simple setup called a service binding. Vercel handles the internal connection and security, and the service stays private.",
-    "tags": [
-      "vercel",
-      "daemons",
-      "cloud services"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/ling-3-1-flash-1019-now-available-on-ai-gateway-for-free",
-    "company": "Vercel",
-    "title": "Ling 3.1 Flash 1019 now available on AI Gateway for free",
-    "published": "2026-10-30",
-    "excerpt": "Ling 3.1 Flash 1019 from InclusionAI is now available on AI Gateway , free until November 3, 2026. The updated model is designed for coding, multi-step reasoning, and agents that use tools. Its 1M-token context window supports workflows involving long documents, code, and extended task histories. Use inclusionai/ling-3.1-flash-1019 as the model name: Free requests still appear in your spend dashboard with a full request trace, they just cost nothing. On November 3, requests will begin charging at the published rate. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select inclusionai/ling-3.1-flash-1019 in the agent. See the coding agents guide for details. You can also try Ling 3.1 Flash 1019 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Vercel's AI Gateway now offers the Ling 3.1 Flash 1019 model for free until November 3, 2026. It is aimed at coding, step-by-step reasoning, and AI helper tools, and can handle very long inputs.",
-    "tags": [
-      "ai models",
-      "coding tools",
-      "cloud services"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
     "company": "Stripe",
     "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
@@ -1148,21 +1575,6 @@
       "ai training",
       "copyright",
       "legal"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-    "company": "OpenAI",
-    "title": "Community safety report and new protections for teens",
-    "published": "2026-10-30",
-    "excerpt": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
-    "summary": "OpenAI announced new safety steps for ChatGPT to help prevent violence, including added protections, earlier action, and a plan to publish public safety reports. The post is a short teaser, so details are limited.",
-    "tags": [
-      "ai safety",
-      "chatgpt",
-      "online safety"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1428,65 +1840,6 @@
       "data pipelines",
       "real-time data",
       "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/updated-model-spec",
-    "company": "OpenAI",
-    "title": "An updated Model Spec for more capable and beneficial AI",
-    "published": "2026-10-29",
-    "excerpt": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
-    "summary": "OpenAI has released an updated Model Spec, a document laying out five core values to guide its AI. The goal is for the AI to use sound judgment, respect people's own choices, and follow what people actually intend.",
-    "tags": [
-      "ai safety",
-      "openai",
-      "ai guidelines"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/ropes-gray-ai-diligence",
-    "company": "OpenAI",
-    "title": "How Ropes & Gray is developing AI for transactional diligence",
-    "published": "2026-10-29",
-    "excerpt": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
-    "summary": "Law firm Ropes & Gray is building AI tools with OpenAI to help lawyers check large sets of company documents during deals. Lawyers still review the grouped documents, summaries, and reports before advising clients.",
-    "tags": [
-      "ai",
-      "law",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-    "company": "OpenAI",
-    "title": "How we detect frontier model misalignment",
-    "published": "2026-10-29",
-    "excerpt": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
-    "summary": "OpenAI describes how it uses several layers of monitoring to spot when its advanced AI models act in ways not intended or act without permission. The goal is to let teams step in before problems grow.",
-    "tags": [
-      "ai safety",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/credit-saison",
-    "company": "OpenAI",
-    "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
-    "published": "2026-10-29",
-    "excerpt": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
-    "summary": "Credit Saison ran a pilot of ChatGPT Enterprise, an AI tool for businesses, and the company reports a 954% return on investment. The teaser says leaders and staff used the results to bring the tool to the whole company.",
-    "tags": [
-      "ai tools",
-      "workplace software",
-      "company case study"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1816,51 +2169,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/unlocking-investment-insights-without-migrating-your-data-lakehouse-federation",
-    "company": "Databricks",
-    "title": "Unlocking Investment Insights Without Migrating Your Data: Lakehouse Federation",
-    "published": "2026-10-27",
-    "excerpt": "Lakehouse Federation: Query Anywhere, Move NothingIn today's enterprise landscape,...",
-    "summary": "Databricks describes Lakehouse Federation, a way to run queries on data that stays in other systems without copying or moving it first. The article suggests this can give investment insights while keeping your data where it already is.",
-    "tags": [
-      "data analysis",
-      "databases",
-      "cloud data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/spot-fixes-measured-gains-improving-document-extraction-accuracy-aiextract-and-mlflow-prompt",
-    "company": "Databricks",
-    "title": "From spot fixes to measured gains: improving document extraction accuracy with ai_extract and MLflow Prompt Registry",
-    "published": "2026-10-27",
-    "excerpt": "Document extraction often starts with a simple loop: spot an incorrect field, adjust...",
-    "summary": "Databricks describes a way to improve document data extraction by moving from quick manual fixes to measured results. It uses its ai_extract tool together with MLflow Prompt Registry to track changes and check whether accuracy actually gets better.",
-    "tags": [
-      "document extraction",
-      "ai tools",
-      "data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/bigquery-databricks-strategic-framework",
-    "company": "Databricks",
-    "title": "BigQuery to Databricks: A Strategic Framework",
-    "published": "2026-10-27",
-    "excerpt": "Migration as a strategic evolutionMany organizations support a range of data and analytics workloads on BigQuery today...",
-    "summary": "Databricks published a guide for companies moving their data work from Google's BigQuery to Databricks. It treats the switch as a planned, strategic change rather than just a technical copy job.",
-    "tags": [
-      "data migration",
-      "cloud data",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/early-progress-drug-development",
     "company": "Anthropic",
     "title": "Early progress on accelerating drug development with Claude",
@@ -2038,21 +2346,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/announcing-dpop-support-for-google-oauth-securing-refresh-tokens/",
-    "company": "Google Developers",
-    "title": "Announcing DPoP Support for Google OAuth: Securing Refresh Tokens",
-    "published": "2026-10-27",
-    "excerpt": "Google OAuth Platform now supports DPoP (Demonstrating Proof-of-Possession) to sender-constrain refresh tokens, neutralizing Infostealer malware and adversary-in-the-middle attacks. By cryptographically binding long-lived refresh tokens while maintaining short-lived access tokens as standard Bearer tokens, developers achieve robust credential security without incurring high-QPS API performance overhead. Additionally, developers integrating multi-agent or Model Context Protocol (MCP) workloads can use Google Cloud Secure Token Service (STS) to handle secure token delegation across agent chains.",
-    "summary": "Google's login system now supports a new security method called DPoP for long-lived login tokens. It ties each token to the app that owns it, so stolen tokens are much harder to misuse, without slowing down everyday requests.",
-    "tags": [
-      "security",
-      "login",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
     "company": "NVIDIA",
     "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
@@ -2157,36 +2450,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/unify-your-productivity-and-ai-data-lakeflow-connect",
-    "company": "Databricks",
-    "title": "Unify your productivity and AI data with Lakeflow Connect",
-    "published": "2026-10-26",
-    "excerpt": "This is the second post in our series on how Lakeflow Connect brings fully managed...",
-    "summary": "Databricks describes Lakeflow Connect, a tool that automatically copies data from everyday work apps into its data platform without needing hand-built pipelines. This post is the second in a series on the tool. It may help teams use business data for AI projects more easily.",
-    "tags": [
-      "data pipelines",
-      "databricks",
-      "ai data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/media-industry-becoming-prediction-economy",
-    "company": "Databricks",
-    "title": "The media industry is becoming a prediction economy",
-    "published": "2026-10-26",
-    "excerpt": "For two decades, media and advertising ran on attention. Impressions, reach and clicks...",
-    "summary": "Databricks argues that media and advertising are shifting from competing for attention to relying on predictions about what audiences will do. The teaser is short, so details of how this works are not covered here.",
-    "tags": [
-      "media",
-      "advertising",
-      "data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/s1-sec",
     "company": "Anthropic",
     "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -2242,36 +2505,6 @@
       "ai infrastructure",
       "data center networking",
       "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-    "company": "NVIDIA",
-    "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-    "published": "2026-10-26",
-    "excerpt": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency... Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency and uptime at scale. This concept isn’t new to data center operators who have measured mean-time-to-repair (MTTR) and mean-time-between-failure (MTBF) long before AI factories existed. Now the stakes are higher. Modern AI factories run… Source",
-    "summary": "NVIDIA's Mission Control 2.5 adds automatic recovery for huge AI training runs on Kubernetes, a system that manages groups of computers. It matters because training AI across thousands of GPUs (graphics chips) can fail, and automated fixes help keep the work running.",
-    "tags": [
-      "ai training",
-      "cloud computing",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-    "company": "NVIDIA",
-    "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
-    "published": "2026-10-26",
-    "excerpt": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet... AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet scale-out, scale-across and scale-in fabrics, NVIDIA NVLink scale-up fabrics, distributed schedulers, and multi-week training runs operate in continuous lockstep.These layers function as one production system even when different teams own their… Source",
-    "summary": "NVIDIA describes its AI Factories, huge data centers with hundreds of thousands of GPUs linked by fast networks, which run as one system for weeks of training. The post introduces Minerva, a tool meant to make sense of the flood of monitoring data so these machines run at their best.",
-    "tags": [
-      "ai infrastructure",
-      "data centers",
-      "nvidia"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2404,21 +2637,6 @@
       "research tools",
       "scientific papers",
       "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
-    "company": "NVIDIA",
-    "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
-    "published": "2026-10-23",
-    "excerpt": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions... Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions when obstacles block the path ahead. Developing these capabilities connects several stages: creating assets and an environment, using physics simulation to model how the robot interacts with its environment, and training and evaluating… Source",
-    "summary": "NVIDIA shows how AI agents can help teach small robots, like Microduck, to walk and get around obstacles inside a computer simulation. The robot must sense its surroundings, keep its balance, and adjust its steps, which the work does in stages from building the environment to training and testing.",
-    "tags": [
-      "robotics",
-      "ai training",
-      "simulation"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2705,35 +2923,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-    "company": "Hugging Face",
-    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
-    "published": "2026-10-21",
-    "excerpt": "",
-    "summary": "Hugging Face has released Granite Speech 5.0, a speech model that turns spoken audio into text, translates it, and says who is speaking. The new version is described as more accurate and faster than before.",
-    "tags": [
-      "speech recognition",
-      "ai models"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-    "company": "Hugging Face",
-    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-    "published": "2026-10-21",
-    "excerpt": "",
-    "summary": "Hugging Face wrote about a new way to measure how well AI training runs on AWS Trainium, Amazon's custom chip. This is the first part of a series on profiling, which means checking where a system spends its time so it can be made faster.",
-    "tags": [
-      "ai chips",
-      "machine learning",
-      "performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
     "company": "GitHub",
     "title": "The bridge to agent-scale Git infrastructure",
@@ -3000,20 +3189,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/clairic-extraction-model/",
-    "company": "Cloudflare",
-    "title": "Introducing Clairic, a new System One class of extraction models",
-    "published": "2026-10-19",
-    "excerpt": "Today, we're announcing a preview of a new class of System One-style models: extraction models. Our first one, Clairic, is available hosted on Workers AI as @cf/cloudflare/clairic. We intend to release the model open-weights soon. Clairic is an extraction model that is able to extract, compute, estimate, and forecast values from unstructured inputs — all at a significantly higher accuracy, faster latency, and cheaper cost than traditional LLMs. Context When System One models were announced by TypeSafe a month ago, it took the industry by storm. As referenced by TypeSafe in their blog and defined by Daniel Kahneman’s book Thinking, Fast and Slow , a System One model should be fast and precise, which contrasts a System Two model that is capable of deliberate reasoning (like LLMs). With this, TypeSafe introduced Jev — a model that is purpose-fit for a specific use case, and priced accessibly given its niche domain. It excelled where LLMs failed, helping users make decisions based on probabilities and well-typed outputs. The introduction of Jev prompted people to start thinking about a new class of models that were not LLMs and how to integrate them into their workflows. We were inspired by the concept of System One models and started thinking about other tasks where LLMs are inefficient. There are many structured-output calls going to frontier LLMs today with the same shapes again and again: What's the invoice total? When was this delivered? How many days late is it? What will this repair cost? What will traffic look like over the next 24 hours? None of these have answers you can list out in advance, which is needed for a decision model to give probabilities against. That led us to the class of models we're introducing today: System One extraction models. Introducing System One extraction models Until now, every System One model has been a decision model: Jev and Clef take an input state and a list of questions and give probabilities against the inputs and your listed questions. Clairic is the first model in a new class: System One extraction models. It is still fast, typed, and cheap, but it answers with values directly extracted from the input, computed from it, or predicted beyond it. Most model tasks ask for one of three kinds of output: a number, a choice from a fixed set, or open-ended text. Clairic handles the first, returning numbers with an 80% range, and also pulls typed values like names, dates and lists out of the input. Clef handles the second: it picks among options and returns a probability for each. LLMs handle the third. We call Clairic and Clef System One models because they answer in a single pass, without reasoning or generating tokens. They charge only for input and typically respond in under a second, while an LLM that reasons through the same step takes several seconds. An extraction model can return: Extracted values: Text copied from the input, such as a name, an order ID or a description. Each one comes back as a span with its character offsets and a confidence score. Including, computed values: Numbers, dates, times, datetimes, durations and lists, read from the input or worked out from it. They follow the rules of their type (for example, two decimals for cents) and come with a confidence score. Estimated values: Values the input doesn't state but gives evidence for. Each one comes back as a distribution inside the bounds you declare, on the grid you specify, with a median and an 80% interval. Forecasted values: Future values of a series, one estimate per step ahead, each with its own 80% interval. And because it generates no tokens, it can't produce a mistyped answer or “hallucinate” in the same way as an LLM (though it can, of course, make mistakes). Outputs are a value of the type you asked for, or null when the model fails to find an answer in the input. It also comes with confidence scores against the outputs to help you evaluate if it is appropriate to trust the model or to take a second look. He",
-    "summary": "Cloudflare announced a preview of Clairic, a fast, cheap AI model that pulls names, dates, and numbers out of messy text and makes estimates, without writing out long answers. It is available now on their platform, and they plan to release it openly soon.",
-    "tags": [
-      "ai models",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
     "company": "AWS",
     "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
@@ -3248,21 +3423,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-    "company": "Anthropic",
-    "title": "An update on independent evaluators",
-    "published": "2026-10-15",
-    "excerpt": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.",
-    "summary": "Anthropic is letting outside evaluators from METR, a nonprofit, get employee-like access to its AI systems to check their safety. The company is also in early talks with other groups, including Hugging Face.",
-    "tags": [
-      "ai safety",
-      "anthropic",
-      "independent testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/real-time-stripe-data-postgres",
     "company": "Stripe",
     "title": "Sync real-time Stripe data to Postgres with Stripe Data Pipeline",
@@ -3347,21 +3507,6 @@
       "ai",
       "medicine",
       "drug discovery"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/news/singapore-office-opening",
-    "company": "Anthropic",
-    "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-    "published": "2026-10-14",
-    "excerpt": "Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.",
-    "summary": "Anthropic has opened a new office in Singapore. It also signed an agreement with the Singapore government to help people use AI safely and responsibly.",
-    "tags": [
-      "ai",
-      "singapore",
-      "government"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3786,21 +3931,6 @@
     "tags": [
       "workplace",
       "research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/workflow-lab-staying-in-the-flow-with-the-figma-agent/",
-    "company": "Figma",
-    "title": "Workflow lab: Staying in the flow with Figma’s agent",
-    "published": "2026-10-06",
-    "excerpt": "Knowing what work to hand to an agent is a skill of its own. This workflow shows how a designer shapes a new temporary-access feature while the Figma agent handles the library updates, crit feedback, and a first draft of a design system spec.",
-    "summary": "Figma shows how a designer can hand routine work to its built-in agent while staying in control of the design. The agent helps update design libraries, handle review feedback, and write a first draft of a design system spec.",
-    "tags": [
-      "design tools",
-      "ai agents",
-      "workflow"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4440,21 +4570,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
-    "company": "AWS",
-    "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
-    "published": "2026-09-21",
-    "excerpt": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking a workshop from the AWS Builder Center mobile app while waiting for a delayed train, and it made those spare twenty minutes very useful. That is why I am glad to open this week with the Builder Center mobile app. AWS Builder Center is now available as a mobile app on iOS and Android , extending the experience beyond desktop and web. Using your AWS Builder ID, you stay signed in across sessions and can browse trending articles, access 600+ AWS Skill Builder courses, and manage hands-on workshops with free sandbox environments from your mobile device. You can follow AWS Heroes, Community Builders, and User Group Leaders, check Builder Loft event calendars on the go, and receive push notifications for subscribed topics and communities. The app also supports the Wishlist feature for submitting product feedback directly to AWS teams. It is available worldwide on the Apple App Store and Google Play Store. Builder Center also added two features this week. Polls give you a way to ask the community a question from the Home feed: write a question, add 2 to 5 answer options, set a deadline, and people vote, with results updating live and discussion happening in the comments. Votes are anonymous, and creators see aggregate counts and percentages only. Separately, the Zero to Shipped hackathon is open from September 18 to October 2. You connect your coding agent to AWS, build a real application, and ship it live on AWS for a chance to win a share of a $28,000 prize pool. Five winning projects each receive $5,000 in AWS credits and an AWS Builder swag bundle. Last week’s launches Here is what else happened this week. Amazon Connect Talent is now generally available – Amazon Connect Talent is an AI-powered hiring solution for talent acquisition teams managing hiring at scale. Informed by decades of Amazon hiring science, it uses AI agents to conduct structured voice interviews, administer evidence-based assessments, and score candidates consistently, so recruiters can focus on final decisions. Candidates interview 24/7 from any device, and recruiters review scores, transcripts, and detailed evaluations the next morning. All candidate data is anonymized during AI evaluation, each competency is scored against a rubric with every score tied to specific evidence from the interview, and recruiters keep final decision authority over every hire. General availability includes competency-based assessments, AI-led voice interviews with adaptive questioning, a brand-customizable mobile-first candidate portal, and admin onboarding tools. Amazon Corretto 27 is now generally available – Amazon Corretto 27, a Feature Release version of the no-cost, multi-platform distribution of OpenJDK, is now available for download on Linux, Windows, and macOS, with support through April 2027. Notable features include G1 as the default garbage collector across all environments (JEP 523), post-quantum hybrid key exchange for TLS 1.3 (JEP 527), compact object headers by default for a smaller memory footprint (JEP 534), and JFR in-process data redaction to remove sensitive data from Java Flight Recorder recordings before they leave the JVM (JEP 536). It also continues previews of enhanced pattern matching, structured concurrency, and lazy constants, along with the Vector API incubator. Kimi K3 by Moonshot AI is now generally available on Amazon Bedrock – Kimi K3 is now available on Amazon Bedrock for coding and knowledge work. According to Moonshot AI, Kimi K3 is its most capable model and the first open model to reach 2.8 trillion parameters. It combines native vision capabilities with a 1-million-token context window, making it well suited to long-running coding sessions acr",
-    "summary": "AWS Builder Center now has free mobile apps for iPhone and Android, letting developers read articles, take AWS courses, and join workshops on the go. Amazon Connect Talent, an AI tool that runs voice job interviews and scores candidates, is also now fully released.",
-    "tags": [
-      "cloud computing",
-      "developer tools",
-      "ai hiring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/millemiglia-a-realistic-instance-generator-for-middle-mile-logistics/",
     "company": "Google Research",
     "title": "MilleMiglia: A realistic instance generator for middle-mile logistics",
@@ -4721,21 +4836,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
-    "company": "Google Research",
-    "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
-    "published": "2026-09-03",
-    "excerpt": "General Science",
-    "summary": "Google Research and partners say they have mapped the complete brain of a male fruit fly, down to individual nerve cells and their connections. The teaser gives few other details. It is a step toward understanding how brains work.",
-    "tags": [
-      "neuroscience",
-      "brain mapping",
-      "research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/",
     "company": "Spotify",
     "title": "Portal by Spotify cut my Claude Code token usage by 90%",
@@ -4790,20 +4890,6 @@
       "ai coding",
       "cloud costs",
       "github copilot"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
-    "company": "Google DeepMind",
-    "title": "Proactive cyber defense for governments and enterprises",
-    "published": "2026-09-02",
-    "excerpt": "",
-    "summary": "Google DeepMind has shared work on helping governments and businesses defend against cyber attacks before they happen. The article's teaser gives few details beyond that focus.",
-    "tags": [
-      "cyber security",
-      "ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -5012,35 +5098,6 @@
       "ai agents",
       "java",
       "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://discord.com/blog/mobile-platform-support-arrives-in-discord-social-sdk",
-    "company": "Discord",
-    "title": "General Availability of Mobile Platform Support Arrives in Discord Social SDK Version 1.10",
-    "published": "2026-08-06",
-    "excerpt": "Mobile support is now generally available in the Discord Social SDK, allowing developers to extend Discord's social experiences to iOS and Android.",
-    "summary": "Discord's Social SDK version 1.10 now officially supports phones, so app makers can add Discord social features to iOS and Android apps. This lets developers bring Discord's friend and chat features into their own mobile games and apps.",
-    "tags": [
-      "mobile apps",
-      "discord",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://discord.com/blog/discord-patch-notes-august-4-2026",
-    "company": "Discord",
-    "title": "Discord Patch Notes: August 4, 2026",
-    "published": "2026-08-06",
-    "excerpt": "Check out the finer details of the more technical fixes implemented into Discord recently.",
-    "summary": "Discord published its patch notes for August 4, 2026, listing recent fixes made to the app. The teaser does not say which fixes they are, so the details are not clear from this text.",
-    "tags": [
-      "discord",
-      "app updates"
     ],
     "summarized": true,
     "summary_version": 2
