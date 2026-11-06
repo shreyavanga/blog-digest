@@ -1,5 +1,211 @@
 [
   {
+    "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/",
+    "company": "Figma",
+    "title": "In conversation: Dylan Field and David Friedberg on the human role in creating with AI",
+    "published": "2026-11-06",
+    "excerpt": "On why design is the new code, shaping AI’s creative output, and the human vision and judgment behind what we make.",
+    "summary": "Figma's CEO Dylan Field talks with David Friedberg about the role people still play in creating things with AI. The teaser says they cover design becoming the new code and the human judgment behind AI-made work.",
+    "tags": [
+      "ai",
+      "design",
+      "creativity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-public-sector-organizations-can-govern-ai-scale",
+    "company": "Databricks",
+    "title": "How public sector organizations can govern AI at scale",
+    "published": "2026-11-06",
+    "excerpt": "Every government CIO has the same mandate right now: adopt AI, move faster, do more...",
+    "summary": "Databricks argues that government agencies need clear rules for governing AI as they use it more widely. The article is a short teaser, so it does not give specific steps or examples.",
+    "tags": [
+      "ai governance",
+      "public sector",
+      "government technology"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+    "company": "Anthropic",
+    "title": "Teaching AI to build scientific models",
+    "published": "2026-11-06",
+    "excerpt": "In this guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl discuss how AI is starting to change the scientific modeling process, from construction to interpretation.",
+    "summary": "Researchers Jakob Macke, Daniel Gedon, and Stefan Wahl write about how AI is beginning to change the way scientists build models, from making them to understanding what they mean. The post is a short teaser, so details are limited.",
+    "tags": [
+      "ai",
+      "science",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+    "company": "Vercel",
+    "title": "Vercel Tracing is now generally available",
+    "published": "2026-11-06",
+    "excerpt": "Vercel Tracing is now generally available on all plans. You can now search and inspect traces from the dashboard or the Vercel CLI , and new Next.js projects get tracing by default. Pricing is unchanged from the beta. Browse and search traces in the dashboard In beta, you could only open a trace per request from the Logs page. The new Traces page shows every trace and span in one place, for a project or your whole team. Switch between a Spans list and a Traces list, filter each, and search with Kibana Query Language (KQL). A Live mode streams new traces as they arrive. A query like span.name:db* AND span.duration > 500 narrows to slow database spans by name and duration. Search traces from the CLI The Traces page uses the same KQL as vercel traces search --query , so a query built in the dashboard runs in the CLI unchanged. Search covers every project in your team, or one project with the --project flag. Inspect a single trace with vercel traces inspect <request-id> , and manage a project's sampling rules with vercel traces config . Automatic tracing for new Next.js projects In beta, nothing was collected until you added a sampling rule. Starting with Next.js 16.5, new projects created on Vercel that include at least one Node.js function get tracing turned on after their first successful build. Vercel adds one sampling rule tracing 100% of requests in all environments and injects instrumentation at build time, so traces include Next.js framework spans with no setup. To opt out, remove all sampling rules in Settings → Tracing. Longer retention In beta, traces followed your runtime log retention. Hobby now keeps traces for 3 days instead of 1 hour, Pro for 14 days instead of 1 day, and Enterprise for 14 days instead of 3 days. Read the Tracing documentation to learn more. Read more",
+    "summary": "Vercel's tracing tool, which shows how a web request moves through an app and where it slows down, is now available to everyone. You can search traces in the dashboard or the command line, and new Next.js projects turn it on automatically; traces are also kept longer.",
+    "tags": [
+      "web hosting",
+      "monitoring",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
+    "company": "Vercel",
+    "title": "Vercel CLI can now set new projects to expire",
+    "published": "2026-11-06",
+    "excerpt": "You can now set a new project to expire when you deploy it with Vercel CLI . Expired projects are deleted automatically, so prototypes, demos, and test apps don't need cleaning up by hand. Run vercel deploy with --delete-project-after and a duration: Supported durations are 1h , 1d , 1w , 2w , and 30d , and the CLI prints the date and time when the project expires. The flag only applies when vercel deploy creates the project. If you deploy to an existing project with the flag, its expiration doesn't change and the CLI prints a warning. To remove a project's expiration, run vercel project keep : Update Vercel CLI to v65.12.0 or later to get started. Learn more in the vercel deploy documentation . Read more",
+    "summary": "Vercel's command-line tool can now mark a brand-new project to delete itself automatically after 1 hour, 1 day, 1 week, 2 weeks, or 30 days. This helps with short-lived demos and test apps, so they don't need to be cleaned up by hand.",
+    "tags": [
+      "cloud hosting",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
+    "company": "Vercel",
+    "title": "Token Pass credit now applies automatically across AI Gateway",
+    "published": "2026-11-06",
+    "excerpt": "Token Pass credit now applies automatically to included model usage through AI Gateway , whether a request authenticates with an API key, OIDC token, or fx login. No dedicated Token Pass API key is required, though you can still create one from the dashboard or the CLI for keys scoped only to featured models and providers. When Token Pass credit runs out for the billing period, requests from a standard key or OIDC token fall back to your team's AI Gateway credits. Token Pass keys still stop until the next billing period. Requests served through the Token Pass provider remain Zero Data Retention (ZDR). Fallback requests follow your team's setting. With team-wide ZDR enabled, they route only to ZDR providers. Available now for Token Pass subscribers on Pro teams. If you created a Token Pass key during setup, switch to a standard API key or OIDC token to get fallback. Learn more in the Token Pass documentation . Read more",
+    "summary": "Vercel's AI Gateway now automatically applies Token Pass credit to included AI model usage, with no special key needed. When that credit runs out, standard keys fall back to the team's regular credits, while Token Pass keys stop until the next billing period.",
+    "tags": [
+      "ai",
+      "cloud pricing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "company": "OpenAI",
+    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "published": "2026-11-06",
+    "excerpt": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+    "summary": "OpenAI is working with a company called Hacktron to look for security weaknesses in its systems. The partnership also covers checking how OpenAI connects to outside services and making its defenses stronger.",
+    "tags": [
+      "cybersecurity",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "company": "OpenAI",
+    "title": "Measuring how AI agents handle everyday wet-lab science",
+    "published": "2026-11-06",
+    "excerpt": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+    "summary": "OpenAI released BioBasicsBench, a set of 100 tasks for testing how well AI agents handle everyday lab biology work. It checks whether the AI can read raw experiment data correctly.",
+    "tags": [
+      "ai agents",
+      "lab science",
+      "benchmarks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://medium.com/pinterest-engineering/safe-and-efficient-multi-epoch-embedding-training-103bec2abc83?source=rss----4c5a5f6279b6---4",
+    "company": "Pinterest",
+    "title": "Safe and Efficient Multi-Epoch Embedding Training",
+    "published": "2026-11-06",
+    "excerpt": "Authors: Shruthi Hariharan | Machine Learning Engineer II; Konish Dutta | Machine Learning Engineer II; Abhinav Naikawadi | Sr. Machine Learning Engineer; Zhihua Zhang | Machine Learning Engineer II; Rakshita Nagalla | Sr. Machine Learning Engineer; Kousik Rajesh* | Machine Learning Engineer II; Matt Lawhon | Staff Machine Learning Engineer Tags: Machine Learning, Infrastructure, Recommendation Systems Content Track: Technical Discussion / Architecture of big components * == work done while at Pinterest Introduction Large ID embedding tables underpin some of the largest modeling advances at Pinterest, including teacher-model scaling and cross-domain pretraining for ranking and retrieval. These tables are first pre-trained to learn broadly useful Pin representations and then fine-tuned as part of the downstream surface-specific ranking model. Here, we’ll focus on the Homefeed ranking model. The strength of the embedding tables comes from their enormous capacity to absorb information about billions of Pins and learn rich representations. That power, however, is coupled with fragile training dynamics that have historically constrained fine-tuning to one epoch. That compromise has become increasingly dissatisfactory; single-epoch fine-tuning prevents us from effectively optimizing our models over small, fresh datasets in retraining, and disproportionately harms effective representation learning of certain components of our ranking model which benefit from longer training, like Vision Language Models (VLMs). A one-epoch ceiling forces every component of our model to learn on the schedule of its most training-sensitive component. When trained longer, two problems appear: Model quality degrades sharply. In Homefeed ranking, we saw nearly a 6% decline in our offline save metric when extending training from one epoch to two epochs. GPU waste from communication-bound training accumulates. Distributed embedding lookup and synchronization overhead created large idle periods in the training loop, leaving GPUs waiting on communication rather than performing useful computation. Background The “one-epoch” phenomenon of large ID embedding tables is well documented in recommendation systems literature. Their enormous capacity, combined with sparse and long-tailed updates, makes it easy for the model to “memorize” individual IDs associated with repeated examples rather than learn representations that generalize. Prior work at Pinterest had already shown that multi-epoch ID embedding training does not fail in every setting. Taming the One-Epoch Phenomenon in Online Recommendation System by Two-stage Contrastive ID Pre-training demonstrated that embeddings themselves could be pretrained for multiple epochs using a contrastive-only pretraining objective before being transferred to downstream models for finetuning. We were interested in multi-epoch post-training : once the pretrained embeddings are part of the Homefeed ranking model, could we fine-tune them for multiple epochs without catastrophic overfitting? Related work from Pinterest Ads explored strategies to train longer in post-training, including frequency-adaptive updates and larger learning rates; however, the ID embedding tables in this setting did not exhibit the same catastrophic multi-epoch degradation we observed in Homefeed. Making multi-epoch training safe Freezing as a method to identify the problem To answer why we saw a nearly 6% decline in the offline save metric when extending training to two epochs, we isolated each component to determine whether the whole model was overfitting or whether the regression was concentrated in a particular module. The embedding table emerged as the dominant source of the regression: when we froze the table, the multi-epoch regression disappeared and the result beat the single-epoch trained model. Over three epochs, we saw a +1.25% gain over the one-epoch model. Although freezing the embedding table immediately unlocked multi-epoch training, it pre",
+    "summary": "Pinterest found that its large ID embedding tables in the Homefeed ranking model get worse when trained for two epochs, with an offline save metric dropping nearly 6%. Freezing those tables during extra training removed the drop and gave a small gain over one epoch.",
+    "tags": [
+      "machine learning",
+      "recommendation systems",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+    "company": "Hugging Face",
+    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+    "published": "2026-11-06",
+    "excerpt": "",
+    "summary": "Hugging Face has added Egyptian and Nigerian English accents to its Open ASR Leaderboard, which ranks speech-to-text tools. This lets people compare how well those tools understand these accents.",
+    "tags": [
+      "speech recognition",
+      "accents",
+      "ai benchmarks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/toyblocks",
+    "company": "Hugging Face",
+    "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+    "published": "2026-11-06",
+    "excerpt": "",
+    "summary": "Hugging Face has released ToyBlocks, a simple, controlled virtual world for teaching and testing robots. The post, based on its title alone, appears to introduce it as a fixed setup where researchers can compare how well robots learn.",
+    "tags": [
+      "robotics",
+      "machine learning",
+      "simulation"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/agent-distraction/",
+    "company": "Google Developers",
+    "title": "Agent Distraction",
+    "published": "2026-11-06",
+    "excerpt": "Analysis of over 913,000 coding agent sessions reveals that 13% expose agents to inline TODO(b/...) comments. In 6% of encounters, agents act on these comments, with 83% being entirely unprompted by the developer. These detours result in significant overhead—adding 70% more steps, 77% more tokens, and 105% more wait time per session—split between chasing closed tickets (41%) and unauthorized scope creep on open bugs (57%). Higher-capability models show higher distraction rates, highlighting the need for automated cleanup and linters to maintain agent-friendly codebases",
+    "summary": "An analysis of over 913,000 AI coding sessions found that agents often get sidetracked by old TODO notes left in code. In 6% of cases they acted on them, usually without being asked, making tasks take about 70% more steps and time.",
+    "tags": [
+      "ai coding agents",
+      "software development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+    "company": "NVIDIA",
+    "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+    "published": "2026-11-06",
+    "excerpt": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For... During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For training efficiency, it is common to run inference and training in parallel on separate GPU resources in a disaggregated setup. Although the policy model is updated only on the training GPUs, the system must periodically refresh the weights on the… Source",
+    "summary": "NVIDIA describes a faster way to copy updated model weights from training GPUs to inference GPUs during reinforcement learning. Training and inference run on separate hardware, so the weights must be refreshed regularly to keep generated examples current.",
+    "tags": [
+      "machine learning",
+      "gpu computing",
+      "reinforcement learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/vole-mole/",
+    "company": "Cloudflare",
+    "title": "The post-quantum future of web privacy",
+    "published": "2026-11-06",
+    "excerpt": "The highest priorities for the transition to post-quantum cryptography are the basic building blocks of authenticated key-agreement protocols such as TLS. Without these building blocks in place, secure communication on the Internet will not be possible once cryptographically relevant quantum computers come online. However, today we rely on quantum-vulnerable cryptography for much more than TLS. Privacy Pass is a protocol used by site operators like Cloudflare to help protect applications from abuse. One way we do this is by rate limiting individual clients so that no one client consumes too many of the site's resources. Normally this involves some combination of friction or loss of privacy for users: CAPTCHAs or other challenges to moderate traffic, along with accounts and fingerprinting to identify traffic.Privacy Pass was designed to avoid this tradeoff between friction and privacy. The basic idea is that a client gets issued a number of tokens , which they can redeem in exchange for access to the site. Crucially, each token is unlinkable to the client it was issued to, ensuring the client can use the site as they always had without sacrificing privacy. With 10 years of deployment experience under our belts — using Privacy Pass for applications such as privacy proxies (like iCloud Private Relay) and relays (like Privacy Gateway) — we, along with others , are collaborating to bring the next generation of this technology to the web. One of our goals is to develop more sophisticated tools for managing agentic traffic that would otherwise consume too many resources and degrade performance for human visitors. Another goal is to foster a more open ecosystem by making it easier for more types of clients to participate. Achieving these goals requires developing new capabilities beyond what Privacy Pass offers today. Given the trajectory, in this post we look at the prospects for post-quantum. In fact, we're in better shape than one might think. Privacy Pass still relies on classical cryptography, like RSA and elliptic curves. This means that a quantum attacker will be able to forge tokens at will and use them to bypass whatever security mechanism the site operator wants to implement (such as rate limiting). On the other hand, Privacy Pass is unconditionally private, meaning no attacker, quantum or not, can link the redemption of a token to its issuance. What's more, the new capabilities we're developing for this new generation of private authentication technology can and will be instantiated in a way that upholds the same guarantee: your interaction remains private even after Q-day. This gives us a little breathing room, but we will need an alternative soon. This is an active area of research that has made significant strides in recent years. Still, just as is the case with other aspects of the transition, the primary challenge is the sheer size of post-quantum alternatives: ML-DSA-44 signatures are a whopping 2,420 bytes, while ECDSA-P256 signatures are just 64 bytes. And there's not much hope for drop-in replacements any time soon. Just as for TLS, we'll have to settle for primitives with higher cost and re-engineer our systems to bear this cost . But what will those primitives be? In this post, we'll explore one potential future for post-quantum privacy on the web, made possible by a recent breakthrough in the design of blind signatures. What we need to build: a brief look at MOLE Let's start with an overview of this new technology, which is presently called MOLE (\"Moderation Of unLinkable Endorsements\"). We'll have much more to say about MOLE later on, but for now we'll highlight the details that are most relevant to cryptography. One of the core components of Privacy Pass is a blind signature scheme, which allows a client to obtain a signature under an issuer's secret key without revealing to the issuer the message that it signed. The client can then reveal the message and blind signature later on without linking the signature ",
+    "summary": "Cloudflare describes how Privacy Pass, a tool that lets sites limit heavy users without tracking them, could be made safe against future quantum computers. A new design called MOLE may keep user privacy intact even after such computers exist, though the post notes the new versions are much larger and costlier to run.",
+    "tags": [
+      "online privacy",
+      "quantum computing",
+      "web security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/which-data-collaboration-tool-opensharing-clean-rooms-marketplace",
     "company": "Databricks",
     "title": "Which Data Collaboration Tool: OpenSharing, Clean Rooms, Marketplace",
@@ -9,6 +215,20 @@
     "tags": [
       "data sharing",
       "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/real-time-fraud-detection-feature-views",
+    "company": "Databricks",
+    "title": "Real-time fraud detection with Feature Views",
+    "published": "2026-11-05",
+    "excerpt": "Real-time fraud detection depends on three kinds of features: what a customer did...",
+    "summary": "Databricks describes how to spot fraud as it happens, using features built from recent customer activity. The post only briefly introduces the idea, so details are limited.",
+    "tags": [
+      "fraud detection",
+      "real-time data"
     ],
     "summarized": true,
     "summary_version": 2
@@ -102,6 +322,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Gemini Omni 1.2 Flash now available on AI Gateway",
+    "published": "2026-11-05",
+    "excerpt": "Gemini Omni 1.2 Flash from Google is now available on AI Gateway. Generate videos from text prompts with one API key and no separate Google account. Gemini Omni 1.2 Flash generates 3–15 second videos with native audio and edits 3–15 second source clips with up to six reference images. Extend videos by 3–10 seconds per call, up to 30 seconds total, or refine generated clips in follow-up calls using previousInteractionId . Output supports 360p, 720p, 1080p, and 4K in 16:9 or 9:16. Use generateText or streamText in AI SDK to receive the generated video as a file. Generate a video Use google/gemini-omni-1.2-flash as the model name. This example generates a three-second, 360p clip and saves it as video.mp4 : Receive video in a streaming response With streamText , read fullStream to handle generated files as they arrive. The video is delivered as a completed file: AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. Explore more models in the AI Gateway model catalog . Read more",
+    "summary": "Vercel now lets developers use Google's Gemini Omni 1.2 Flash to make short videos from text, through one API key. The model creates 3 to 15 second clips with sound and can edit or extend them.",
+    "tags": [
+      "ai video",
+      "google gemini",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
     "company": "Stripe",
     "title": "Analyze your Stripe data directly with your agent",
@@ -161,6 +396,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/merge-builds-with-openai",
+    "company": "OpenAI",
+    "title": "Merge builds product and business tools with OpenAI technology",
+    "published": "2026-11-05",
+    "excerpt": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+    "summary": "Merge, a company, now uses OpenAI tools like GPT-6 Astra, ChatGPT, and Codex. The tools help review product code, support marketing, plan executive dinners, and prepare sales updates.",
+    "tags": [
+      "ai tools",
+      "workplace",
+      "software development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/introducing-gpt-6-cyber",
     "company": "OpenAI",
     "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
@@ -171,6 +421,66 @@
       "cybersecurity",
       "ai models",
       "software security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/franklin-templeton",
+    "company": "OpenAI",
+    "title": "Franklin Templeton uses OpenAI to support investment research",
+    "published": "2026-11-05",
+    "excerpt": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+    "summary": "Franklin Templeton, an investment firm, is building AI tools with OpenAI to help with investment research. The first focus is equity research, where the tools aim to help portfolio managers compare views and check investment risks.",
+    "tags": [
+      "ai tools",
+      "investing",
+      "finance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/cultfit-builds-with-codex",
+    "company": "OpenAI",
+    "title": "Cult.fit builds operational muscle with Codex",
+    "published": "2026-11-05",
+    "excerpt": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+    "summary": "Cult.fit, a fitness company, is using OpenAI's Codex tool to help teams in different departments build their own tools and work faster. The teaser suggests this is changing how day-to-day work gets done.",
+    "tags": [
+      "ai tools",
+      "fitness",
+      "workplace productivity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+    "company": "OpenAI",
+    "title": "Australian universities are creating AI-native graduates",
+    "published": "2026-11-05",
+    "excerpt": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+    "summary": "Australian universities are giving students wider access to ChatGPT and bringing AI into classes. The goal is to prepare graduates for jobs where AI is common.",
+    "tags": [
+      "ai in education",
+      "universities",
+      "australia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/ads/customers/flipsnack",
+    "company": "OpenAI",
+    "title": "Flipsnack grows product signups with conversion optimization",
+    "published": "2026-11-05",
+    "excerpt": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+    "summary": "Flipsnack ran ChatGPT ads focused on getting people to sign up for its product. The campaign grew sign-ups while lowering the cost of each new sign-up.",
+    "tags": [
+      "advertising",
+      "marketing",
+      "chatgpt"
     ],
     "summarized": true,
     "summary_version": 2
@@ -391,6 +701,21 @@
     "tags": [
       "ai research",
       "biology"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-token-scanning-expands-to-more-public-sources",
+    "company": "Vercel",
+    "title": "Vercel token scanning expands to more public sources",
+    "published": "2026-11-04",
+    "excerpt": "Vercel has partnered with Truffle Security to expand automated detection and revocation of publicly exposed Vercel tokens. Revoking exposed credentials helps prevent unauthorized access to your projects and unexpected costs from unauthorized use of services such as Vercel Sandbox and Vercel AI Gateway . If your token is revoked, you’ll receive an email from us explaining why. Truffle Security reports tokens exposed in public sources including GitHub, GitLab, Docker, npm, PyPI, Hugging Face, Android APKs, and Firefox Add-ons. Vercel has revoked hundreds of tokens reported by Truffle Security. A separate Vercel scanner now checks each new monthly Common Crawl dataset of public web pages and automatically revokes any exposed Vercel tokens it finds. Learn more about creating tokens, setting their scopes, and managing them in the access token documentation . Read more",
+    "summary": "Vercel now works with Truffle Security to find and shut off Vercel access keys that people accidentally left in public places like GitHub and npm. Vercel has already shut off hundreds of these keys, and anyone whose key is shut off gets an email explaining why. This helps stop strangers from using your projects and running up charges.",
+    "tags": [
+      "security",
+      "cloud services",
+      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1105,81 +1430,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/longcat-2-5-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "LongCat 2.5 now available on AI Gateway",
-    "published": "2026-11-02",
-    "excerpt": "LongCat 2.5 from Meituan is now available on AI Gateway. This model combines native visual understanding with coding and multi-step tool use for agents working across complex codebases and full-project builds. Meituan highlights improvements in visual programming, creative design, and 3D tasks, alongside longer agent workflows that carry engineering work from planning through execution. The model supports text and image inputs with a 1M-token context window for code, documents, and extended task histories. Use meituan/longcat-2.5 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select meituan/longcat-2.5 in the agent. See the coding agents guide for details. Try LongCat 2.5 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "LongCat 2.5, a new AI model from Meituan, is now available through Vercel's AI Gateway. It can read images and text and help with coding tasks, such as building whole projects, and it can handle very long inputs.",
-    "tags": [
-      "ai models",
-      "coding tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/flags-explorer-redesigned-for-easier-override-sharing",
-    "company": "Vercel",
-    "title": "Flags Explorer redesigned for easier override sharing",
-    "published": "2026-11-02",
-    "excerpt": "Flags Explorer is a tool in the Vercel Toolbar where you can see which feature flags are active on your end, and share them with your team, either by setting them for the branch or through a URL. The Explorer surface has been redesigned to co-locate overrides, branch recommendations, and any related actions. Whenever a branch has overrides set, they will be recommended to teammates visiting the deployment through a dialog. Flags Explorer is available on all plans. Read the documentation to get started. Read more",
-    "summary": "Vercel redesigned Flags Explorer, a tool for checking and changing feature flags, so overrides, branch suggestions, and related actions sit together. Teammates visiting a deployment will now see a prompt recommending the branch's overrides, making them easier to share.",
-    "tags": [
-      "feature flags",
-      "developer tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/evaluate-vercel-flags-from-another-project-without-sharing-sdk-keys",
-    "company": "Vercel",
-    "title": "Evaluate Vercel Flags from another project without sharing SDK keys.",
-    "published": "2026-11-02",
-    "excerpt": "Project Connections let applications evaluate flags defined in another Vercel project within the same team, without managing SDK keys. Previously, sharing flags between projects required copying a server SDK key into an environment variable and managing it manually. Connected projects authenticate using their deployment’s identity. For local development, vercel env pull retrieves your project’s OIDC token. Manage access from the Connections page under your project's Flags section, or with vercel flags connections in the CLI. Connections grant read-only access across all environments. The consumer deployment determines the flag environment (production deployments evaluate production flags). In the consumer application, create an adapter with the source project’s ID. Access can be revoked without redeploying. Project Connections are available on all plans and require @flags-sdk/vercel 1.6.0 or later, or @vercel/flags-core 1.11.0 or later when using the core library directly. Managing connections from the CLI requires Vercel CLI 63.0.0 or later. Learn more in the Vercel Flags documentation Read more",
-    "summary": "Vercel now lets one app use feature flags defined in another project on the same team, without copying secret keys around by hand. Access is read-only, can be revoked without redeploying, and is available on all plans.",
-    "tags": [
-      "vercel",
-      "feature flags",
-      "security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/blocking-malicious-npm-packages-before-and-during-installation",
-    "company": "Vercel",
-    "title": "Blocking malicious npm packages before and during installation",
-    "published": "2026-11-02",
-    "excerpt": "Vercel now checks for blocked npm packages before and during dependency installation in builds , helping prevent malicious install scripts from running. The checks use a blocklist of specific package versions selected for blocking because of malware or security vulnerabilities, with new rules typically reaching new builds within minutes. Before installation , Vercel checks supported lockfiles, including when dependencies are restored from the build cache. During installation , Vercel blocks affected public npm downloads. Existing checks of installed dependencies and function outputs continue before deployment. These protections apply automatically to new builds on all plans, with no configuration required. If a blocked dependency is detected, Vercel fails the deployment, identifies the package and version in the error, and attempts to invalidate the affected build cache. Update the dependency to a safe version and update the lockfile, then redeploy. Read more",
-    "summary": "Vercel now blocks known-bad npm packages during builds, both before and while dependencies install, so malicious install scripts are less likely to run. It applies automatically to all plans, and if a blocked package is found, the deployment fails and names the package so it can be updated.",
-    "tags": [
-      "security",
-      "npm packages",
-      "deployment"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/vercel-security-review",
-    "company": "Vercel",
-    "title": "Introducing Vercel Security Review",
-    "published": "2026-11-02",
-    "excerpt": "Today, we are launching Vercel Security Review in public beta. Security Review is a new capability in Vercel Agent , alongside Code Review and Investigation. Once enabled, it scans for vulnerabilities on every push to a team's connected GitHub repositories. Findings appear as comments on pull requests, are listed in the Security dashboard, and are available via CLI. With your permission, Vercel Agent can also validate and push fixes for findings. How it works Security reviews are triggered by GitHub push events, including direct pushes to your production branch. In monorepos, reviews are scoped to the project's root directory. Here is how it works: You push code to a GitHub repository connected to a Vercel project. As soon as the push lands, Security Review scans the changed code for vulnerabilities like missing authorization checks or exposed secrets. Findings are posted to the Security dashboard. On private and internal repositories, Security Review also adds a GitHub check to the commit and comments on the pull request. You can fix findings by clicking Fix with Vercel Agent in the dashboard, or use the CLI to pull findings and have your own coding agent implement changes. When subsequent security reviews no longer detect a finding, it is marked as no longer detected in the dashboard, and the GitHub comment is closed. Each review compares the push against a base and covers only what changed. For deployments, the base is the branch’s previous deployment, so the agent reviews the change against what’s already running. Because it only scans the diff, Security Review finishes in seconds and can run on every preview and production deployment. What the agent checks The agent reads the diff along with the surrounding code, traces how the changed code can be reached, checks for existing protections, and rechecks each finding before reporting it. That process is how it catches logic flaws like missing authorization checks, which pattern-matching scanners miss. Each review also applies your team’s security policies , which you can write in plain language and apply to specific projects or across your team. For example, a policy can require any endpoint that returns customer data to check that the requester owns it. You can also manage policies with the Vercel CLI, using vercel security policy . How findings are tracked Each new finding is checked against ones that have already been reported, so the same issue isn’t flagged twice. Every finding is tied to the deployment where it first appeared and changes are followed from there. That means that when a vulnerable change from a pull request is merged into your production branch, the finding is flagged in production as well. When a later review no longer detects the issue in an environment, the agent marks the finding as no longer detected there. Acting on findings Every finding explains the vulnerability and how to fix it, with links to the commit and deployment where it first appeared. Findings are listed in the Vulnerability view in the Security dashboard, where you can ask Vercel Agent to validate and commit fixes. Findings are also available via CLI , so you can fix vulnerabilities with your own coding agent. Each new finding generates an audit log event, which Enterprise teams can send to their SIEM through Audit Log Drains . Here is a demo of sample findings in the dashboard: Fixing vulnerabilities with Vercel Agent When Vercel Agent can fix a finding, you will see the option to click Fix with Vercel Agent on the finding page in the dashboard. After you click, the agent confirms the vulnerability still exists, then makes the smallest change that fixes it and updates the tests. Say a developer pushes a change to an invoice download endpoint, and the lookup doesn't check which organization the invoice belongs to. Within seconds, Security Review flags that any signed-in user could download another organization's invoice by changing its ID. Vercel Agent's fix scopes the lookup to the u",
-    "summary": "Vercel has launched Security Review in public beta. It automatically scans every code push to connected GitHub repositories for security problems, such as missing permission checks or exposed secrets, and can also help fix them.",
-    "tags": [
-      "security",
-      "software development",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/scaling-git-at-openai",
     "company": "OpenAI",
     "title": "Scaling Git at OpenAI",
@@ -1205,79 +1455,6 @@
       "bug bounty",
       "security",
       "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/qodo-codex-plugin",
-    "company": "OpenAI",
-    "title": "Qodo builds context into AI code review with Codex",
-    "published": "2026-11-02",
-    "excerpt": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-    "summary": "Qodo has connected its code review tool to OpenAI's Codex, so company coding rules and past knowledge are used when checking code. This aims to catch serious bugs across many code projects before developers submit their changes for review.",
-    "tags": [
-      "code review",
-      "ai coding tools",
-      "software quality"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-    "company": "OpenAI",
-    "title": "Preparing our next security sprint to harden OpenAI",
-    "published": "2026-11-02",
-    "excerpt": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-    "summary": "OpenAI is getting ready for a new internal security sprint with Cathedral Systems. The goal is to test and strengthen its defenses using AI.",
-    "tags": [
-      "security",
-      "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/lifeval",
-    "company": "OpenAI",
-    "title": "LifeVal",
-    "published": "2026-11-02",
-    "excerpt": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
-    "summary": "OpenAI has introduced LifeVal, a new test that measures how well AI helps people with everyday tasks. These include finding childcare, managing money, and handling government paperwork.",
-    "tags": [
-      "ai benchmarks",
-      "everyday ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/grid-protectors-program",
-    "company": "OpenAI",
-    "title": "Introducing the Grid Protectors Program",
-    "published": "2026-11-02",
-    "excerpt": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-    "summary": "OpenAI announced the Grid Protectors Program, which will work with electricity utilities. The goal is to help future computing sites support a reliable power grid and keep electricity costs down for households.",
-    "tags": [
-      "electricity grid",
-      "data centers",
-      "energy costs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/dan-driscoll-joins-openai",
-    "company": "OpenAI",
-    "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-    "published": "2026-11-02",
-    "excerpt": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-    "summary": "OpenAI has named Dan Driscoll as a Senior Counselor. He will advise on using AI responsibly for national security, protecting against cyberattacks, and working with U.S. allies.",
-    "tags": [
-      "ai policy",
-      "national security",
-      "cybersecurity"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1545,36 +1722,6 @@
     "tags": [
       "payments",
       "stripe"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-    "company": "OpenAI",
-    "title": "Making it easier for websites to express AI training preferences",
-    "published": "2026-10-30",
-    "excerpt": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
-    "summary": "OpenAI says it will respect a shared robots.txt signal that lets website owners state whether they allow their content to be used for AI training. This gives site operators a simpler, common way to set their training preferences.",
-    "tags": [
-      "ai training",
-      "web privacy",
-      "robots.txt"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/fair-use-benefits-everyone",
-    "company": "OpenAI",
-    "title": "Fair use benefits everyone",
-    "published": "2026-10-30",
-    "excerpt": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-    "summary": "OpenAI shared excerpts from court filings by creators, academics, accessibility advocates, and legal experts. The filings argue that fair use, a legal rule that allows limited use of copyrighted material, supports training AI and encourages new technology.",
-    "tags": [
-      "ai training",
-      "copyright",
-      "legal"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2021,21 +2168,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/voice-agents-are-here-context-turns-them-real-customer-value",
-    "company": "Databricks",
-    "title": "Voice Agents are here. Context turns them into real customer value.",
-    "published": "2026-10-28",
-    "excerpt": "Before you read further: watch this short demo. In this short demo, the voice agent...",
-    "summary": "Databricks says voice AI agents, which talk with customers, are now practical. The post argues they only add real value when they can use a company's own data about each customer. The article itself is only a short teaser, so details are limited.",
-    "tags": [
-      "voice ai",
-      "ai agents",
-      "customer data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "company": "Anthropic",
     "title": "AI for Science expands to foundations and research institutions",
@@ -2149,21 +2281,6 @@
     "tags": [
       "ai models",
       "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/vital-skills-upskilling-genie-code-healthcare-and-life-sciences-skills",
-    "company": "Databricks",
-    "title": "Vital Skills: Upskilling Genie Code with Healthcare and Life Sciences skills",
-    "published": "2026-10-27",
-    "excerpt": "Code with AI on a unified, governed platformGenie Code, our coding agent optimized...",
-    "summary": "Databricks has added healthcare and life sciences skills to Genie Code, its AI coding assistant. The skills aim to help the tool work better on health and science data tasks.",
-    "tags": [
-      "ai coding",
-      "healthcare data",
-      "databricks"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2331,21 +2448,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
-    "company": "Google Developers",
-    "title": "Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype",
-    "published": "2026-10-27",
-    "excerpt": "This document provides a publication template and metadata structure for a technical blog post focused on building Conversational User Interfaces (CUIs) using AI. It outlines key developer focus areas, product stacks, and approval workflows required for publishing technical content through Google Developer Studio. The framework helps engineers organize their guides and solutions to effectively share AI-driven conversational interface designs with the developer community.",
-    "summary": "Google Developers has shared a template for writing technical blog posts about building chatbot-style interfaces with AI. It explains how to organize the topics, tools, and approval steps for publishing such guides.",
-    "tags": [
-      "ai",
-      "developer tools",
-      "google cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
     "company": "NVIDIA",
     "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
@@ -2385,21 +2487,6 @@
     "tags": [
       "ai models",
       "local language ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
-    "company": "NVIDIA",
-    "title": "3 Ways to Boost MoE Inference on NVIDIA DGX Spark",
-    "published": "2026-10-27",
-    "excerpt": "Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA... Generating tokens faster starts with identifying what limits inference performance. In the batch-size-1 evaluation of Ling-3.0-flash from Inclusion AI on NVIDIA DGX Spark, profiling showed that decoding was memory-bound: reading model weights drove execution time. Two operations stood out—the mixture-of-experts (MoE) computation and the output-layer projection that produces scores across the model’… Source",
-    "summary": "Engineers found that running the Ling-3.0-flash AI model on an NVIDIA DGX Spark computer was slowed mainly by reading model data from memory. They focused on two operations that cost the most time to speed up output.",
-    "tags": [
-      "ai models",
-      "nvidia",
-      "speed"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2790,20 +2877,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-    "company": "Hugging Face",
-    "title": "Ensemble forecasting with IBM Granite time-series models",
-    "published": "2026-10-22",
-    "excerpt": "",
-    "summary": "Hugging Face describes using IBM's Granite time-series models to make ensemble forecasts, which combine several predictions to estimate future values. The article is only a title with no body text, so details are limited.",
-    "tags": [
-      "forecasting",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://discord.com/blog/discord-update-october-22-2026",
     "company": "Discord",
     "title": "Discord Update: October 22, 2026",
@@ -2903,21 +2976,6 @@
       "health",
       "ai",
       "maternal care"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/nvidia/kumo-relational",
-    "company": "Hugging Face",
-    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-    "published": "2026-10-21",
-    "excerpt": "",
-    "summary": "Hugging Face shares news about NVIDIA's Kumo model, which works with relational data (linked tables, like customers and orders). The title says it beats standard supervised machine learning without needing any training.",
-    "tags": [
-      "machine learning",
-      "nvidia",
-      "data"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3174,21 +3232,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
-    "company": "Cloudflare",
-    "title": "Cutting our inference bill by 68% by being obsessive about optimization",
-    "published": "2026-10-19",
-    "excerpt": "When we previously blogged about our AI code reviewer in April , an average review cost a palatable $1.19. By the end of August, that figure had shot up to about $2.46. We hadn't made any significant architectural changes: the coordinator was still handing work to the same set of specialist reviewers, and the same risk tiers decided how intensive of a review we gave. Around mid-September we tasked our agents with working out where those tokens were going and cutting them — aggressively. With code quality at high effort, the average review now costs just $0.77, down 68% from the $2.43 it averaged over our two most expensive weeks before we started. Our main goal was to cut costs, but as part of this work we also managed to optimize the reviewer, so that the median review now takes just 1m 32s instead of the 4m 09s it took before. About 40% of the savings came from changes and optimizations to the reviewer's code, and the rest from experimenting with which models we use and how much effort they put in. How a review doubled in cost The chart below shows the cost of an average review on each weekday since March. It holds the mix of review tiers fixed, so a day with more large reviews doesn't skew the data. The cost per review steadily rose from $1.22 (March) → $1.44 (June) → $1.74 (July) and finally, to $2.32 (August). A small part of that is that more reviews landed in the most expensive tier (59% of reviews in March and then 65% in August). We believe there’s a simple answer for why: models are getting much better, and much more capable. Naturally, engineers are producing bigger, more complex changes which means more of them fall into our “full review” tier. We found that most of the cost increase actually came from model changes over those months, though. At the start of August we moved every reviewer onto Anthropic models, which raised the cost per job from $1.38 to $2.03. We made this choice because we found that during our evals, Anthropic models performed better on this specific workload than other models. Our internal standards reviewer, Codex , ended up on Claude Opus 4.7 due to a mix of performance and reliability. That took it from about $0.25 per review to $0.88 in August, which made it more expensive than the coordinator agent itself. The cache hit rate also increased, going from 85.7% in April to 97% by September, while the number of tokens per review more than tripled, from 0.91 million to 2.99 million. A high hit rate on three times as many tokens still costs a lot more, even with the low cache read cost. What else has changed since our last post? One of the biggest changes is that the reviewer now runs on OpenCode v2, which is a ground-up rewrite from v1. Before switching all reviews over from v1 to v2, we ran every review in every canary repo on both v1 and v2 in a comparative shadow mode. The two agreed on the approval decision in 98% of the merge requests we tested, so we moved everyone over in one go in early October and removed the v1 code. Comparing two days with the same models, full-tier reviews on v2 finish about 13% faster. We’re also currently experimenting with other ways to run our internal AI reviewer, including solely on Durable Objects using pi-durable . We’re hopefully going to have more on this coming soon, so keep an eye out! So, where were the tokens going? Right before we started focusing on cost optimization, our AI review spend was split by: output tokens making up about 23%, cache writes cost 43%, and cache reads cost 34%. This means that most of the money was going on context the model had already seen or was about to see again. That makes complete sense when you look into a single session. The code quality reviewer made 16.6 large language model (LLM) calls per review on average and over those calls it wrote 72k tokens to the cache and read back 1.08m, because each call sends the whole conversation as context. A session's cost grows with both the number of calls and the size of the contex",
-    "summary": "Cloudflare's AI code reviewer cost rose to about $2.46 per review by August, so they worked to cut it. Through tuning the reviewer's code and switching which AI models it uses, they lowered the average cost to $0.77 and made reviews faster.",
-    "tags": [
-      "cloud costs",
-      "ai tools",
-      "software engineering"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
     "company": "AWS",
     "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
@@ -3271,21 +3314,6 @@
       "quantum computing",
       "ai",
       "anthropic"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/ai-expectations-gap",
-    "company": "Anthropic",
-    "title": "The AI expectations gap",
-    "published": "2026-10-16",
-    "excerpt": "How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.",
-    "summary": "Anthropic shares new survey results on how people expect AI to change the economy in the coming years. The teaser says the main disagreement is about what AI's future economic impact will be.",
-    "tags": [
-      "ai",
-      "economy",
-      "surveys"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3874,20 +3902,6 @@
     "tags": [
       "ai adoption",
       "team habits"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/sightlines-issue-no3/",
-    "company": "Figma",
-    "title": "Sightlines issue no.3: Raise the bar for how teams use AI",
-    "published": "2026-10-09",
-    "excerpt": "How do you drive AI adoption and make better decisions about what to build?",
-    "summary": "Figma's Sightlines issue no. 3 asks how teams can encourage wider use of AI and make smarter choices about what to build. The teaser gives only the question, so the full answers are not shown here.",
-    "tags": [
-      "ai adoption",
-      "product decisions"
     ],
     "summarized": true,
     "summary_version": 2
