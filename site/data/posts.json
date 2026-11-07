@@ -1,5 +1,34 @@
 [
   {
+    "url": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "DeepSeek V4.1 Flash 1017 Ultrafast now available on AI Gateway",
+    "published": "2026-11-07",
+    "excerpt": "DeepSeek V4.1 Flash 1017 Ultrafast is now available on AI Gateway through Fireworks. This model can generate upwards of 1,000 tokens per second . Ultrafast serves the October 17 update of DeepSeek V4.1 Flash through Fireworks' accelerated serverless endpoint. It is suited to interactive coding, reasoning, and agentic workflows where applications need to generate output and move to the next step quickly. The model has a 1M-token context window for working with large codebases and long inputs. It is available in public preview without a waitroom or session time limit. Use it by setting deepseek/deepseek-v4.1-flash-1017-ultrafast as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select deepseek/deepseek-v4.1-flash-1017-ultrafast in the agent. See the coding agents guide for details. Try DeepSeek V4.1 Flash 1017 Ultrafast in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Vercel's AI Gateway now offers DeepSeek V4.1 Flash 1017 Ultrafast, an AI model that can produce over 1,000 words-worth of output per second, in free public preview. It suits fast coding and multi-step AI tasks.",
+    "tags": [
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
+    "company": "Google Developers",
+    "title": "Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype",
+    "published": "2026-11-07",
+    "excerpt": "This document provides a publication template and metadata structure for a technical blog post focused on building Conversational User Interfaces (CUIs) using AI. It outlines key developer focus areas, product stacks, and approval workflows required for publishing technical content through Google Developer Studio. The framework helps engineers organize their guides and solutions to effectively share AI-driven conversational interface designs with the developer community.",
+    "summary": "Google Developers shares a template for writing technical blog posts about building chatbot-style AI interfaces. It lists the topics, tools, and approval steps for publishing such guides.",
+    "tags": [
+      "ai chatbots",
+      "developer blogs",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.figma.com/blog/in-conversation-dylan-field-and-david-friedberg/",
     "company": "Figma",
     "title": "In conversation: Dylan Field and David Friedberg on the human role in creating with AI",
@@ -10,6 +39,36 @@
       "ai",
       "design",
       "creativity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-feeds-opensharing-part-2-how-implement",
+    "company": "Databricks",
+    "title": "Read, don't copy: replacing file feeds with OpenSharing - Part 2 (How to Implement)",
+    "published": "2026-11-06",
+    "excerpt": "Many data-sharing architectures begin with a familiar pattern: A provider exports...",
+    "summary": "Databricks describes how to set up OpenSharing, a way for a company to let partners read its data directly instead of receiving copied file exports. This is part two of a series, focusing on the practical steps to put it in place.",
+    "tags": [
+      "data sharing",
+      "databricks",
+      "data engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-and-api-feeds-opensharing-part-1-why",
+    "company": "Databricks",
+    "title": "Read, don't copy: replacing file and API feeds with OpenSharing - Part 1 (The Why)",
+    "published": "2026-11-06",
+    "excerpt": "If you ingest data from your customers over SFTP or APIs, you have probably asked...",
+    "summary": "Databricks describes a new approach called OpenSharing that lets companies read shared data directly instead of receiving copied files or API feeds. This first part explains the reasons behind the change; the article itself is only a short teaser here.",
+    "tags": [
+      "data sharing",
+      "databricks",
+      "data pipelines"
     ],
     "summarized": true,
     "summary_version": 2
@@ -40,6 +99,21 @@
       "ai",
       "science",
       "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "company": "Anthropic",
+    "title": "The components of agent memory",
+    "published": "2026-11-06",
+    "excerpt": "For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.",
+    "summary": "Anthropic describes how its Claude AI decides what to remember from past experience before knowing what comes next. It also explains a process it calls \"dreaming\", which helps Claude organize its memory and fix mistakes.",
+    "tags": [
+      "ai",
+      "memory",
+      "claude"
     ],
     "summarized": true,
     "summary_version": 2
@@ -83,6 +157,51 @@
     "tags": [
       "ai",
       "cloud pricing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/json-render-and-chat-sdk-agents",
+    "company": "Vercel",
+    "title": "Chat SDK agents can now stream generative UI with json-render",
+    "published": "2026-11-06",
+    "excerpt": "You can now stream generative UI from your Chat SDK agent with json-render . With a typed catalog of components, the agent writes a JSON spec that json-render converts into a Chat SDK card. Each adapter then posts the card in its platform’s native format, such as Block Kit on Slack and Adaptive Cards on Teams. The catalog covers tables, charts, buttons, and more, so there’s no separate tool to build and maintain for each message shape. Stream cards as the model writes streamCard posts the card once its root element has content and updates the message as new elements stream in. Edits go out at most once every 500 ms by default, which matches Chat SDK’s streaming interval. Once the stream ends, the message shows the final, validated card. Validate specs and enforce platform limits toCard checks every element’s props against its component schema and throws CardSpecError for an invalid spec. Each problem gets its own readable issue, so you can send the list back to the model for a corrected spec. Platforms cap what a single message can hold, and Chat SDK adapters degrade content past those caps. The Slack adapter, for example, turns a second table into a code block. Pass limits to reject those specs instead. Read the documentation to get started, or try the playground . Read more",
+    "summary": "Chat SDK agents can now stream rich messages like tables, charts, and buttons as they are written, using a shared set of building blocks. The same message is shown in each chat app's own style, and invalid messages can be caught and fixed before they are sent.",
+    "tags": [
+      "chat bots",
+      "ai agents",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Ampersand from Humans& now available on AI Gateway",
+    "published": "2026-11-06",
+    "excerpt": "Ampersand from Humans& is now available on AI Gateway for free through November 13, 2026. Ampersand is a language model built to take part in group conversations, such as a team chat, and to decide on each turn whether to speak or stay quiet. It is designed to understand individual and shared goals, help people work through disagreements, and recognize when a contribution would be useful. That can mean asking a clarifying question, sharing relevant context, or waiting while people respond to one another. Your application exposes these actions as caller-defined function tools . send_message delivers a contribution, while pass leaves the conversation quiet until the next human message. Your application executes both tools and records their results. Leave tool choice at its default, since Ampersand accepts auto and none but rejects required and named tool choices. Call it through the AI SDK , the OpenAI-compatible Chat Completions API , or a coding agent. Use humansand/ampersand-v0.1 as the model name: The first human message invites a contribution; the second asks Ampersand to wait. In a chat application, call the handler when a new human message arrives. Handling pass records the waiting action without posting a message or starting another model turn. For a deployed chat application, persist the response, history, and delivery receipts in durable storage. Retry uncertain delivery with the saved action and the same receipt, process messages sequentially per conversation, and check conversation access before posting. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select humansand/ampersand-v0.1 in the agent. See the coding agents guide for details. Try Ampersand in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Ampersand, a new AI model from Humans&, is now free on Vercel's AI Gateway through November 13, 2026. It joins group chats and decides each turn whether to speak or stay quiet, helping people work through disagreements.",
+    "tags": [
+      "ai models",
+      "chat",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+    "company": "Vercel",
+    "title": "AI Gateway adds DeepSeek Search and Fetch tools",
+    "published": "2026-11-06",
+    "excerpt": "DeepSeek Search and DeepSeek Fetch are now available through AI Gateway . Search finds relevant pages with titles, URLs, and summaries. Fetch retrieves page content as Markdown for your model to read. Use both tools with any model that supports tool calling, using one AI Gateway API key. No separate DeepSeek account is required, and you can keep the same tools when switching model providers. These helpers are available in AI SDK 6.0.321 and later on v6, or 7.0.160 and later on v7. Update with pnpm add ai@latest and set your AI_GATEWAY_API_KEY . To combine search and page retrieval, pass both helpers in tools : You can also use alternative search tools with DeepSeek Fetch if DeepSeek Search fails: Search fallback is model-directed, so provider order and retry limits are best effort. DeepSeek Fetch can retrieve a result URL from any of these search tools. Search and Fetch each cost $0.75 per 1,000 billable requests. Failed requests, timeouts, and empty results have no tool charge. Model tokens are billed separately. See the DeepSeek Search documentation and DeepSeek Fetch documentation for configuration options and pricing details. AI Gateway provides one API for calling models, tracking usage and cost, and configuring routing, retries, and failover. You can use an AI Gateway API key or bring your own provider key . Read more",
+    "summary": "Vercel's AI Gateway now offers DeepSeek Search and DeepSeek Fetch tools. Search finds relevant web pages, and Fetch pulls a page's content so an AI model can read it, all using one Gateway API key.",
+    "tags": [
+      "ai tools",
+      "web search",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -171,6 +290,21 @@
     "tags": [
       "ai coding agents",
       "software development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+    "company": "NVIDIA",
+    "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+    "published": "2026-11-06",
+    "excerpt": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an... When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an image requires multiple sequential passes through a model with billions of parameters, and higher resolutions increase attention costs. FLUX 3 Image Klein is an image editing and generation model from Black Forest Labs (BFL) trained on… Source",
+    "summary": "NVIDIA shows how to make FLUX Image Klein, an image generation model from Black Forest Labs, run faster on its Blackwell graphics chips. Image generators need many slow steps, and bigger images make it slower, so speed matters for design tools.",
+    "tags": [
+      "ai images",
+      "nvidia",
+      "speed"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1371,65 +1505,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-sandbox-with-drives-now-starts-up-to-2-4x-faster",
-    "company": "Vercel",
-    "title": "Vercel Sandbox with Drives now starts up to 2.4x faster",
-    "published": "2026-11-02",
-    "excerpt": "Vercel Sandboxes that mount Drives now start faster. Median creation time dropped from 1.7s to 0.7s, and p95 dropped from 2.2s to 1.6s. The speedup applies automatically to every sandbox that uses Drives, with no SDK upgrade or configuration changes needed. Pricing stays the same. Learn more in the Vercel Drives documentation . Read more",
-    "summary": "Vercel Sandboxes that use Drives now start up faster, with the typical start time falling from 1.7 to 0.7 seconds. The speedup happens automatically, with no changes needed and no price increase.",
-    "tags": [
-      "cloud",
-      "developer tools",
-      "performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-mcp-now-supports-client-id-metadata-documents",
-    "company": "Vercel",
-    "title": "Vercel MCP now supports Client ID Metadata Documents",
-    "published": "2026-11-02",
-    "excerpt": "Any MCP client can now ask to connect to Vercel MCP . You still log in and approve each connection, but the client no longer has to be reviewed by Vercel first. Previously, Vercel reviewed and allowlisted each client and its redirect URIs by hand, and anything not on the list was rejected. To connect, a client publishes a Client ID Metadata Document (CIMD), a JSON file on its own domain that describes it, and uses that file's HTTPS URL as its OAuth client_id . This follows the MCP authorization spec, which now recommends CIMD over Dynamic Client Registration. Because Vercel hasn't reviewed these clients, the consent screen shows where each one comes from: its name, its logo, and the hostname that serves its metadata document, for example \"Claude Code by claude.ai\". CIMD clients don't get the Vercel verified badge, so the hostname is what you're trusting when you approve. Apps already registered with Vercel are unchanged. Read the Vercel MCP documentation to connect your client. Read more",
-    "summary": "Vercel's MCP service now lets any AI tool connect without Vercel reviewing it first, as long as the tool publishes a description file on its own website. You still log in and approve each connection, and the approval screen shows where the tool comes from.",
-    "tags": [
-      "vercel",
-      "ai tools",
-      "security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/projects-can-now-be-configured-with-vercel-toml",
-    "company": "Vercel",
-    "title": "Projects can now be configured with vercel.toml",
-    "published": "2026-11-02",
-    "excerpt": "Vercel now supports vercel.toml , which allows you to to configure your project using the TOML configuration format . All of the same configuration properties are supported as in vercel.json , but it supports comments and has a flatter structure. All projects can now use vercel.toml . Use only one project configuration file: vercel.toml, vercel.json, or vercel.ts. For example, configuring Services : Read the documentation . Read more",
-    "summary": "Vercel now lets projects be set up with a vercel.toml file, a configuration format that supports comments and a flatter layout. It supports the same settings as the existing vercel.json, and a project should use only one config file.",
-    "tags": [
-      "web hosting",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/monitor-vercel-deployments-in-chatgpt",
-    "company": "Vercel",
-    "title": "Vercel MCP now renders deployments as an interactive card",
-    "published": "2026-11-02",
-    "excerpt": "Vercel MCP can now show your deployments as an interactive card inside ChatGPT and other chat clients that support MCP Apps . The card shows live deployment status, build logs, and source and commit details, with a Visit button once the deployment URL is ready. You can send logs into the chat to debug with the model, or open the fullscreen view to read them beneath the card. For repositories linked to multiple projects, a project list lets you switch between them. The card is Vercel MCP's first MCP App, built on the MCP Apps extension. Clients without app support receive the deployment state, preview URL, and commit as text instead. The open_deployments tool looks up deployments by project, repository, or commit, with environment filtering. ChatGPT connects to Vercel MCP through its Connectors setup . Read more",
-    "summary": "Vercel's MCP tool can now show your app deployments as a live card inside chat apps like ChatGPT. The card shows status, build logs, and commit details, and clients without this support get the same info as plain text.",
-    "tags": [
-      "deployments",
-      "ai tools",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/scaling-git-at-openai",
     "company": "OpenAI",
     "title": "Scaling Git at OpenAI",
@@ -1962,36 +2037,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/how-procore-powering-construction-analytics-opensharing",
-    "company": "Databricks",
-    "title": "How Procore is powering construction analytics with OpenSharing",
-    "published": "2026-10-29",
-    "excerpt": "Connecting an industry built on disconnected dataConstruction runs on data that rarely sits in one place...",
-    "summary": "Databricks describes how Procore, a construction software company, uses a sharing feature called OpenSharing to share project data more easily. The article is a short teaser, so details are limited. It focuses on helping construction data that is usually scattered across many systems work together.",
-    "tags": [
-      "data sharing",
-      "construction",
-      "analytics"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/announcing-general-availability-real-time-mode-spark-declarative-pipelines-databricks",
-    "company": "Databricks",
-    "title": "Announcing General Availability of Real-Time Mode for Spark Declarative Pipelines on Databricks",
-    "published": "2026-10-29",
-    "excerpt": "We introduced Real-Time Mode (RTM) last year which enabled customers to build low-latency, operational use cases...",
-    "summary": "Databricks has made Real-Time Mode for Spark Declarative Pipelines generally available, so customers can now use it in production. It is meant for data tasks that need very fast results.",
-    "tags": [
-      "data pipelines",
-      "real-time data",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://huggingface.co/blog/mistral-large4",
     "company": "Hugging Face",
     "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
@@ -2434,20 +2479,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
-    "company": "Google Developers",
-    "title": "Fast, reliable A2UI, with swappable inference formats",
-    "published": "2026-10-27",
-    "excerpt": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
-    "summary": "A2UI, a tool for building screens that AI generates, now has a faster option called A2UI Express that uses up to 3 times fewer tokens and responds quicker. It works without changing the screen display parts, so developers can pick a speed setting that suits them.",
-    "tags": [
-      "ai tools",
-      "app development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
     "company": "NVIDIA",
     "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
@@ -2473,20 +2504,6 @@
       "gpu sharing",
       "kubernetes",
       "ai infrastructure"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
-    "company": "NVIDIA",
-    "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
-    "published": "2026-10-27",
-    "excerpt": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve... As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve as a powerful foundation, but they sometimes lack the local knowledge, cultural nuance, and precision a particular application needs. Post-training can adapt an open model to these needs. With suitable data and evaluation… Source",
-    "summary": "NVIDIA describes how to adapt its open Nemotron AI model with extra training so it understands local rules and culture, not just local languages. The teaser suggests this helps general AI tools fit specific regions and uses better.",
-    "tags": [
-      "ai models",
-      "local language ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3299,21 +3316,6 @@
     "tags": [
       "encryption",
       "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-    "company": "Anthropic",
-    "title": "Designing more efficient quantum circuits with Claude",
-    "published": "2026-10-16",
-    "excerpt": "We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.",
-    "summary": "Anthropic gave its AI model Claude descriptions of eight quantum circuits and a tool to score its designs. Working mostly on its own, Claude beat the best published versions, sometimes by a large margin, which could help useful quantum computers arrive sooner.",
-    "tags": [
-      "quantum computing",
-      "ai",
-      "anthropic"
     ],
     "summarized": true,
     "summary_version": 2
