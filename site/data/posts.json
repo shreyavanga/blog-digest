@@ -1,5 +1,20 @@
 [
   {
+    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
+    "company": "Google Developers",
+    "title": "Fast, reliable A2UI, with swappable inference formats",
+    "published": "2026-11-08",
+    "excerpt": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
+    "summary": "A2UI, a tool for building screens that AI generates, now lets developers pick different ways the AI writes its output. A new compact option uses up to 3 times fewer tokens, the small chunks of text AI processes, so screens can appear faster, and no frontend changes are needed.",
+    "tags": [
+      "ai",
+      "user interface",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway",
     "company": "Vercel",
     "title": "DeepSeek V4.1 Flash 1017 Ultrafast now available on AI Gateway",
@@ -2297,21 +2312,6 @@
       "ai inference",
       "google cloud",
       "chips"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/",
-    "company": "Google Developers",
-    "title": "Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster",
-    "published": "2026-10-28",
-    "excerpt": "Apigee hybrid 1.17.0 introduces native Model Context Protocol (MCP) support, enabling the MCP data plane to run directly within your own Kubernetes cluster. This architecture ensures that AI agent request traffic and tool execution remain entirely inside your infrastructure while pulling configuration updates from the control plane. Developers can expose OpenAPI 3.0.x specifications as discoverable MCP tools, leverage existing security policies and API products, and trace end-to-end requests using W3C trace context headers.",
-    "summary": "Google's Apigee hybrid 1.17.0 now lets companies run tools for AI agents (MCP) inside their own Kubernetes cluster. Agent traffic stays on the company's own servers, while existing API security rules still apply.",
-    "tags": [
-      "ai agents",
-      "apis",
-      "cloud infrastructure"
     ],
     "summarized": true,
     "summary_version": 2
