@@ -1,5 +1,464 @@
 [
   {
+    "url": "https://www.databricks.com/blog/turn-buying-signals-pipeline-sendoso-gifts-genie-one",
+    "company": "Databricks",
+    "title": "Turn buying signals into pipeline with Sendoso gifts in Genie One",
+    "published": "2026-11-09",
+    "excerpt": "From insight to action in Genie OneAI agents are only as useful as the actions they can take...",
+    "summary": "Databricks announced that Sendoso gift sending is now available inside Genie One. The idea is that sales teams can act on buying signals, like a prospect showing interest, by sending a gift right from the same tool.",
+    "tags": [
+      "sales tools",
+      "ai agents",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-commitment-european-sovereignty",
+    "company": "Databricks",
+    "title": "Databricks' Commitment to European Sovereignty",
+    "published": "2026-11-09",
+    "excerpt": "Over a Decade of Investment in EuropeDatabricks has been building in Europe since...",
+    "summary": "Databricks, a data software company, says it has been investing in Europe for over ten years and is now committing to European digital sovereignty, meaning keeping control of data within Europe. The teaser gives few details beyond that.",
+    "tags": [
+      "data platforms",
+      "europe",
+      "digital sovereignty"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/accelerate-gpu-training-unity-catalog-tables-ucdataset",
+    "company": "Databricks",
+    "title": "Accelerate GPU training on Unity Catalog tables with UCDataset",
+    "published": "2026-11-09",
+    "excerpt": "GPUs are usually the most expensive part of any training run, and most teams can't...",
+    "summary": "Databricks released UCDataset, a tool that lets training jobs read data straight from Unity Catalog tables. The article's teaser says GPUs are the costliest part of training, so keeping them busy matters.",
+    "tags": [
+      "machine learning",
+      "data platforms",
+      "gpu training"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/research/claude-electronics-design",
+    "company": "Anthropic",
+    "title": "Testing Claude on real-world electronics design",
+    "published": "2026-11-09",
+    "excerpt": "We asked Claude Fable 5.2 to design three electronic devices from short prompts: a speakerphone, a voice-assistant hub, and a handheld virtual pet. Diode Computers built working prototypes from its files.",
+    "summary": "Anthropic asked its Claude model to design three small electronic devices from short written prompts, and a company called Diode Computers built working prototypes from those designs. It shows AI can help with real hardware design, not just software.",
+    "tags": [
+      "ai",
+      "electronics",
+      "hardware design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "company": "Anthropic",
+    "title": "Introducing Claude Fable 5.2 and Claude Mythos 5.2",
+    "published": "2026-11-09",
+    "excerpt": "Our most capable models for daunting technical work, Claude Fable 5.2 and Claude Mythos 5.2 set a new bar in coding, finance, and the sciences.",
+    "summary": "Anthropic has released two new AI models, Claude Fable 5.2 and Claude Mythos 5.2. The company says they are its most capable models yet for hard technical work like coding, finance, and science.",
+    "tags": [
+      "ai models",
+      "anthropic",
+      "coding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/workflow-writes-now-use-websockets-on-vercel",
+    "company": "Vercel",
+    "title": "Workflow SDK now writes over WebSockets on Vercel",
+    "published": "2026-11-09",
+    "excerpt": "The Workflow SDK now sends event writes and stream writes to Vercel Workflows over a WebSocket by default, replacing one HTTP request per write, or per write group for streams. No code change is needed beyond upgrading to workflow@5.2.0 or later. Once you deploy the upgrade, new runs use it. In-flight runs finish on the deployment they started on. Existing streaming code works as is. A step that writes a burst of chunks, like AI tokens, sends them over the WebSocket once it opens: Streams keep pace with AI output In a benchmark replaying an AI agent's token stream, v5.2.0, which writes streams over a WebSocket by default, delivered the full response 4.2× faster than v4.8.12, with no chunk delayed over a second. Fewer HTTP requests for event writes Every step start and completion is an event write, now sent over the WebSocket, so workflows with many steps make fewer HTTP requests. The added efficiency also improves performance and reduces costs. The queue handler opens the connection for every delivery. Get started Read the Vercel World documentation to get started. If you're on 4.x, start with the upgrade guide , since v5 is a major release. Read more",
+    "summary": "The Workflow SDK now sends its writes to Vercel over a WebSocket connection by default instead of many separate web requests. A test replaying AI text output delivered the full response 4.2 times faster, and no piece was delayed over a second.",
+    "tags": [
+      "vercel",
+      "web development",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-sandbox-snapshot-creation-is-now-up-to-10x-faster",
+    "company": "Vercel",
+    "title": "Vercel Sandbox snapshot creation is now up to 10x faster",
+    "published": "2026-11-09",
+    "excerpt": "Vercel Sandbox now creates snapshots up to 10x faster. Median time to snapshot is under 0.4 seconds, down from 4.4 seconds. Snapshot restore speed has also improved by 50% from 500ms to 250ms at p50. Snapshots are now able to write and restore by re-using frames within the Vercel Hive Snapshot (VHS) format. VHS now indexes data in a more efficient way which means that more read and write operations can be done in parallel. Snapshots can now restore more of your Sandbox base image in parallel with user data, leading to overall faster operations. Persistent sandboxes, the default, snapshot automatically when a session stops and resume from the latest snapshot. This applies to all new snapshots, with nothing to configure. Existing snapshots keep the previous format. Learn more in the snapshots documentation . Read more",
+    "summary": "Vercel Sandbox now saves snapshots (saved copies of a sandbox's state) about 10 times faster, taking under 0.4 seconds instead of 4.4. Restoring them is also twice as fast, so sandboxes resume more quickly. The change applies automatically to new snapshots.",
+    "tags": [
+      "cloud computing",
+      "vercel",
+      "performance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers",
+    "company": "Vercel",
+    "title": "Vercel Container Registry now supports 2 GB compressed image layers",
+    "published": "2026-11-09",
+    "excerpt": "Vercel Container Registry now supports compressed image layers of up to 2 GB each, up from 500 MB, the total image size limit stays 15 GB. The registry works with standard workflows like docker push , docker pull , and docker tag , and pushing an image creates the repository on the fly. Repositories can be made public for read-only pull access by any Vercel team, or shared with specific teams up to 100 from the dashboard or with vercel vcr permissions . The Vercel Managed Images that Vercel Sandbox runs on are served from ordinary public repositories, built with the same public-repository feature any team can use for its own images. Manage repositories, images, and tags with the vercel vcr CLI commands in Vercel CLI v58.3.0 or later, and log CI workflows in from GitHub Actions with the vercel/vcr-action/login action using GitHub OIDC, which removes the need for long-lived registry credentials. If background optimization of a pushed image fails, the image shows an error status in the dashboard, and pushing the same image again retries the conversion. See the documentation for the full setup. Read more",
+    "summary": "Vercel's container image storage now accepts single image layers up to 2 GB, up from 500 MB, while the total image size limit stays at 15 GB. Teams can share images publicly or with up to 100 specific teams, and CI tools can log in without stored passwords.",
+    "tags": [
+      "cloud hosting",
+      "container images",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/muse-ember-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Muse Ember now available on AI Gateway",
+    "published": "2026-11-09",
+    "excerpt": "Muse Ember from Meta is now available on AI Gateway . It is a lightweight reasoning model for the high-volume parts of an agent run, such as coding sub-tasks, tool calls, and document analysis. Muse Ember handles the bounded tasks agents repeat many times in a single run, like implementing a helper function, calling a tool, or summarizing a document. The model accepts text, image, and video input with a 1M-token context window, so an agent can pass it code, screenshots, documents, and clips in the same run. Tool calling lets your application feed each result into the next step. Reasoning effort is adjustable from minimal to max . Call it through the AI SDK , the Chat Completions , Responses , and Anthropic Messages APIs, or a coding agent connected to AI Gateway. Use meta/muse-ember as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select meta/muse-ember in the agent. See the coding agents guide for details. Try Muse Ember in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Meta's new lightweight AI model, Muse Ember, is now available through Vercel's AI Gateway. It is built for the many small, repeated steps AI agents take, like writing helper code and calling tools.",
+    "tags": [
+      "ai models",
+      "ai agents",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/glm-5-3-flash-is-now-available-in-token-pass",
+    "company": "Vercel",
+    "title": "GLM 5.3 Flash is now available in Token Pass",
+    "published": "2026-11-09",
+    "excerpt": "Token Pass now includes GLM 5.3 Flash , alongside Kimi K3, GLM 5.3, and DeepSeek V4.1 Flash (with more models to come). GLM 5.3 Flash is Z.ai's native multimodal coding model with a 1M-token context window. Token Pass is a $30/month subscription on Pro teams that grants $80 in monthly credit and runs through AI Gateway . Use it with any coding agent such as fx , Pi , Cline , Command Code etc. or build your own with the AI SDK, with Zero Data Retention enabled by default. Add GLM 5.3 Flash from the Token Pass page in your team's AI Gateway dashboard, or read the Token Pass documentation for setup. Read more",
+    "summary": "Vercel added a new AI coding model, GLM 5.3 Flash, to its Token Pass subscription. Pro teams can use it through Vercel's AI Gateway for $30 a month, with $80 in monthly credit.",
+    "tags": [
+      "ai models",
+      "coding tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/claude-fable-5-2-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Claude Fable 5.2 now available on AI Gateway",
+    "published": "2026-11-09",
+    "excerpt": "Claude Fable 5.2 from Anthropic is now available on AI Gateway . Fable 5.2 is built for open-ended technical work and improves on earlier Fable models in coding, reasoning, and vision. It can run long, ambiguous tasks unattended, and works as an orchestrator that hands simpler tasks to smaller models, or as an advisor that other Claude models consult on harder problems. It also communicates more clearly and generates output faster than earlier Fable models. Effort runs from low to max , with high as the API default. Fable 5.2 has cybersecurity and biology safety classifiers enabled. Access to Claude Fable 5.2 requires data retention. Anthropic does not support Zero Data Retention for the model. Prompts and completions are retained for 30 days and are not used to train Claude. If your team has ZDR turned on, AI Gateway returns an error instead of sending the request to Fable 5.2. To keep requests served when a classifier is triggered, use model fallbacks . Add a models array to providerOptions.gateway , and AI Gateway tries each model in order when the cybersecurity classifier declines a request. Call it through the AI SDK , the Chat Completions , Responses , and Anthropic Messages APIs, or a coding agent connected to AI Gateway. Use anthropic/claude-fable-5.2 as the model name: This request falls back to Opus 5.5, then Sonnet 5.5, if the cybersecurity classifier declines it. The models option works the same way on every AI Gateway API format. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Try Claude Fable 5.2 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Vercel's AI Gateway now offers Claude Fable 5.2, an Anthropic model better at coding, reasoning, and vision, and able to run long tasks on its own. Teams with zero data retention turned on will get an error, since this model keeps prompts for 30 days.",
+    "tags": [
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/build-disk-space-on-vercel-increased-to-64-gb",
+    "company": "Vercel",
+    "title": "Build disk space on Vercel increased to 64 GB",
+    "published": "2026-11-09",
+    "excerpt": "Disk space for Vercel builds has increased from 32 GB to 64 GB on Basic and Standard machines, matching the capacity already available on Enhanced and Turbo. The additional space provides more room for the packages your project uses and the files generated during a build, reducing the risk of running out of disk space. The change applies automatically across all plans and build machine types at no additional charge, with no configuration changes required. Learn more in the build machine documentation . Read more",
+    "summary": "Vercel doubled the disk space available for builds from 32 GB to 64 GB on its smaller build machines, matching its larger ones. It happens automatically at no extra cost, so builds are less likely to run out of room.",
+    "tags": [
+      "vercel",
+      "build tools",
+      "cloud hosting"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/ai-gateway-production-index-november-2026",
+    "company": "Vercel",
+    "title": "Decision models take 26% of requests; Anthropic now wins new teams 2:1",
+    "published": "2026-11-09",
+    "excerpt": "AI Gateway Production Index — November 2026 Every month, AI Gateway routes more than 100 trillion tokens between production applications and AI labs. That traffic gives us a view of what AI usage looks like in today’s enterprise and startup landscape across language, decision, voice, image, and video models. We publish it here monthly. See the Production Index reports from August , September , and October . November 2026 Summary In six weeks, decision models grew to one in four gateway requests, while accounting for half a cent of every dollar spent. Close to a third of all paid teams used one in October. Among teams processing over 10 billion tokens a month, seven in ten used a decision model. About 11% of paid teams used a voice model in October, up from 4% in July. OpenAI and Anthropic now reach about the same share of paid teams, and new teams in October picked Anthropic nearly two to one . OpenAI’s share of gateway spend, meanwhile, is up by two-thirds since December. More than half of language-model requests went to models less than two months old, up from less than three in ten. Within one month of a typical model’s peak usage, three in four of the teams using it have moved on. Decision models account for 26% of all requests Production AI is splitting into two jobs: generation and judgment. Until recently, when software needed to make a quick call, a team could use either a fixed rule that was cheap but rigid, or a language model that was smart but slow and expensive. Decision models are now a third option. They classify, score, or pick between choices instead of generating text, and cost about a seventieth as much per request as a language model. They arrived on AI Gateway in mid-September, and there are now 15 decision models available from eight different vendors. In October, nearly a third of paid teams on AI Gateway used a decision model. About 11% of paid teams used a decision model without sending a single request to a text-generating model. Decision models cost far less per token and give very short answers, so even though they received about one in four gateway requests in October, they accounted for just 0.53% of total spend. Almost all of that request volume went to Jev from TypeSafe AI, which alone received nearly four times Anthropic’s total requests. For every $1 teams spent on Jev, they spent $64 on Anthropic models. Decision models are most common among the teams that run the most AI. Just over one in five teams running fewer than 10 million tokens used a decision model in October. At 100 million to 1 billion tokens, nearly half used one. Above 10 billion, seven in ten did. This is partly because big teams use more of everything. The top 1% of teams by spend use a median of 29 different models, and the bottom tenth use only one. It’s also volume. The more requests a team sends, the more it has to gain from a model that makes simple decisions faster and far more cost-effectively. Voice adoption is up 2.6x since July About one in nine paid teams used a voice model in October, up from one in 24 in July, an increase of 161%. New teams are using voice, and existing teams are adding it. Among teams that paid in both July and October, the share using voice went from 5% to 14%. Teams that use voice are also using more of it. The share of teams sending at least 100 voice requests a month grew fivefold, and six in ten of September’s voice teams returned in October, up from fewer than half in July. A spoken conversation with an AI app takes three steps: A voice model turns the user’s speech into text A language model writes the reply Another voice model reads the reply back to the user Most voice teams use just one or two of these pieces. Use of speech-to-text models has nearly tripled since July, and text-to-speech has more than tripled. Some models do all three steps on their own. In July, about a quarter of voice teams used one of these all-in-one models, and one in six assembled the pieces themselves. By Octobe",
+    "summary": "AI Gateway's monthly report says decision models, which pick or score options instead of writing text, now handle about one in four requests and cost very little overall. Voice AI use also rose sharply, with about one in nine paid teams using it in October.",
+    "tags": [
+      "ai models",
+      "ai costs",
+      "voice ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/",
+    "company": "Google Research",
+    "title": "Exploring the world's languages with Language Explorer",
+    "published": "2026-11-09",
+    "excerpt": "Natural Language Processing",
+    "summary": "Google Research has released Language Explorer, a new tool for looking into the world's languages. The teaser is brief, so details about how it works are not clear from this text.",
+    "tags": [
+      "languages",
+      "google research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/kuken",
+    "company": "OpenAI",
+    "title": "Kuken Industries searches 70 years of drawings in minutes",
+    "published": "2026-11-09",
+    "excerpt": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
+    "summary": "Kuken Industries used the OpenAI API to build a search over 70 years of cooling tower drawings. Engineers can now find the right drawing for a repair in about 4.5 minutes, instead of nearly an hour.",
+    "tags": [
+      "ai search",
+      "engineering",
+      "manufacturing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/control-room",
+    "company": "OpenAI",
+    "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+    "published": "2026-11-09",
+    "excerpt": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
+    "summary": "OpenAI describes a new central tool called Control Room that keeps track of model workloads running across its research systems. It can quickly stop those workloads if safety or security problems come up.",
+    "tags": [
+      "ai safety",
+      "openai",
+      "computing infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/coderabbit-codex-daybreak",
+    "company": "OpenAI",
+    "title": "CodeRabbit scales agentic software development and ships 20x more",
+    "published": "2026-11-09",
+    "excerpt": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+    "summary": "CodeRabbit, a company that reviews code, uses OpenAI models and Codex to help check AI-written code. The article says this lets its team ship about 20 times more software without adding engineers.",
+    "tags": [
+      "ai coding",
+      "software teams",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "company": "OpenAI",
+    "title": "ChatGPT Enterprise now available in AWS Marketplace",
+    "published": "2026-11-09",
+    "excerpt": "ChatGPT Enterprise is now available through AWS Marketplace, helping organizations simplify procurement through existing AWS purchasing and billing relationships.",
+    "summary": "ChatGPT Enterprise can now be bought through AWS Marketplace, Amazon's online store for software. Companies can pay for it using their existing Amazon Web Services accounts and billing, which can make buying it simpler.",
+    "tags": [
+      "ai tools",
+      "cloud purchasing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4",
+    "company": "Netflix",
+    "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+    "published": "2026-11-09",
+    "excerpt": "By Shreya S Ramanujam , Yongce Li , Afshine Amidi , Sina Ghiassian , Benjamin Klein . Introduction Picture this — you’re home after a long day at work and can’t wait to catch up on Bridgerton. You log on to Netflix, search for “Bridgerton” and land on this screen: If this sounds familiar, you already know what a synopsis is — it’s a short glimpse into what a viewer can expect to see in a show. We see two types of synopses here: a series-level synopsis describing the overarching plot, and multiple episode-level synopses describing each episode. A synopsis plays a very important role for us — it helps viewers decide whether a title is worth watching or not. Every synopsis needs to strike a balance: sharing just enough to give viewers a sense of what to expect, while leaving enough intrigue to draw them in. But of course, we can’t just write anything . “In the fog-drenched streets of Victorian London, Detective Daphne Bridgerton races to unmask a serial killer known only as the elusive Lady Whistledown.” Intriguing? Definitely. But it is most certainly not the premise of Bridgerton. Which leads us to the first (and most important) rule of writing a good synopsis: it must be factual . At Netflix’s scale, with thousands of titles, multiple episodes per season and multiple languages, fact-checking all of these by hand simply doesn’t scale. This is where our factuality service comes in: an automated way to judge whether a synopsis is factual or not. Our current factuality checker feeds a reasoning model everything we know about a title (like metadata and text assets) and asks it to judge synopsis factuality according to a rigorous rubric. There are two main limitations of this approach that we want to optimize: High cost of long-context reasoning calls: Each decision requires expensive, long-context model calls to reasoning models, which doesn’t scale well when we want to check multiple titles, episodes, languages, and style variants. Misaligned rationales: The model’s explanations often diverge from our annotators’ reasoning, which makes its factuality verdicts less reliable. We want these rationales to be better aligned so that (1) the model can consistently flag nuanced errors, and (2) its explanations can be used downstream to automatically correct issues in the synopsis. Our new approach tackles both problems at once. On the cost side, it delivers a 52.4% reduction per synopsis. On the quality side, it significantly improves both verdict accuracy and reasoning alignment: Recall–Fail ( “Of all truly non-factual synopses, how many does the system correctly reject?” ) rises from 0.77 to 0.86 , and the new factuality service’s explanations now show ~ 82% overlap with human rationales (up from ~ 69% ). In other words, it’s not just cheaper and more accurate — it’s also much better aligned with how our expert annotators actually judge synopses. So, what exactly does factuality mean? Let’s go back to the Bridgerton example. Say you see this synopsis about Bridgerton Season 1: Synopsis A: “Bridgerton follows Daphne Bridgerton, the eldest daughter of the powerful Bridgerton family as she makes her debut onto Regency London’s competitive marriage market.” It’s easy to judge that this synopsis is factually correct — no wrong facts, and it gives the reader a clear, accurate glimpse of what to expect from the show. Let’s take another example: Synopsis B: “Set in modern-day London, this gritty crime drama follows Detective Daphne Bridgerton as she hunts a serial killer while hiding her own criminal past.” Another easy one — the plot is so blatantly off the mark that it is definitely not factual. But what about this? Synopsis C: “Bridgerton follows the mysterious, sharp-tongued Lady Whistledown as she exposes the secrets of London’s high society through her scandalous gossip sheet.” Technically, every statement here is true — Lady Whistledown does indeed publish a gossip sheet, and if there’s one thing she is known for, it’s her scathing expos",
+    "summary": "Netflix built a new automated system that checks whether show synopses are factually accurate, since checking thousands of titles by hand isn't practical. The new version costs about half as much per synopsis and catches more errors while matching expert reviewers' reasoning more closely.",
+    "tags": [
+      "netflix",
+      "fact checking",
+      "ai systems"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+    "company": "Hugging Face",
+    "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
+    "published": "2026-11-09",
+    "excerpt": "",
+    "summary": "Hugging Face has released a new synthetic dataset of made-up personas that reflect Japan's population and financial life. It can be used to train or test AI tools for money-related tasks in Japan without using real people's private data.",
+    "tags": [
+      "ai datasets",
+      "japan",
+      "finance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+    "company": "Hugging Face",
+    "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+    "published": "2026-11-09",
+    "excerpt": "",
+    "summary": "Hugging Face has shared a new idea called HOPE, aimed at keeping parts of an AI model that work together connected. The article text was empty, so details are limited to the title.",
+    "tags": [
+      "ai models",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+    "company": "Meta Engineering",
+    "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+    "published": "2026-11-09",
+    "excerpt": "We built a vendor-neutral accelerator plugin architecture in lldb-server for debugging applications that span CPUs and GPUs. It separates shared debugger infrastructure from hardware-specific device control. The design represents the CPU and GPU as separate debugger processes while presenting them in one debugging session. Modern AI applications rarely execute in one place. A workload can begin in a high-level framework and move back and forth between native CPU code and kernels running on a GPU. When a bug crosses those boundaries, developers need to understand the host application and the device together. That is harder than attaching a conventional debugger to another process. The CPU and GPU may use different instruction sets, registers, memory spaces, and execution models. The GPU is also controlled through a runtime and driver inside the host process, so debugging the device often requires careful coordination with the CPU. Historically, GPU vendors built device-specific debuggers, including AMD’s ROCgdb and NVIDIA’s CUDA-GDB. These tools provide deep support for their respective platforms, but common debugger capabilities must often be implemented and maintained separately. At Meta, we have been developing a different approach for LLDB: a common accelerator plugin architecture in lldb-server . In this post, “GPU” refers to the concrete devices and examples, while “accelerator” refers to LLDB’s broader, vendor-neutral plugin abstraction. The architecture has evolved through contributions from engineers at Meta and across the accelerator ecosystem. It keeps the shared debugger independent of any one GPU while giving hardware vendors a focused place to implement device-specific behavior. Why GPU Debugging Challenges Traditional Debugger Models A traditional debugger generally assumes that one process has one architecture and a consistent view of threads, registers, and memory. GPU programs challenge each of those assumptions. A host process might run on x86-64 while its kernels use a completely different instruction set. A CPU thread has a familiar register context, while a GPU may execute groups of lanes in lockstep. Host and device pointers can refer to different address spaces. A GPU can expose thousands of execution lanes, which do not map cleanly onto the thread model that most command-line and graphical debuggers present. Combining all of this state into one artificial process model makes the debugger more complicated. Every operation must first determine whether it applies to the CPU or the GPU. Register handling, memory reads, breakpoints, stepping, and stop events all become conditional on the selected hardware. A single process model also forces the CPU and GPU into one unified memory map, even though their address spaces can be independent: The same address, such as 0x1000, can refer to different locations in the CPU and GPU processes. Instead of hiding those differences, the LLDB accelerator architecture gives them a clear boundary. Plugin Support in lldb-server for GPU Debugging LLDB uses a companion process called lldb-server to launch or attach to a program and perform low-level debugging operations. The LLDB client communicates with the server through the GDB remote protocol, a command protocol for operations such as reading memory, inspecting registers, controlling execution, and setting breakpoints. Because lldb-server already controls the native process, it is also the right place to coordinate with an accelerator runtime. The new plugin interface lets a hardware-specific backend work alongside the normal CPU debugger. The backend translates a vendor’s device debugging API into concepts LLDB already understands, such as processes, threads, registers, memory, modules, and stop reasons. This separation keeps the LLDB client vendor-neutral. Common improvements to the command line, remote protocol, symbol handling, and IDE integration can benefit every accelerator. At the same time, each vendor remains respo",
+    "summary": "Meta built a shared plugin system for LLDB, a standard debugger, so developers can debug programs that run on both CPUs and GPUs in one session. Each GPU vendor can add support for its own hardware without rebuilding the whole debugger.",
+    "tags": [
+      "debugging",
+      "gpu",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles/",
+    "company": "Spotify",
+    "title": "AI Product Management at Spotify: A View From Three Angles",
+    "published": "2026-11-09",
+    "excerpt": "Almost every article or podcast about product management and AI refers to \"the AI PM\" as one job. But what... The post AI Product Management at Spotify: A View From Three Angles appeared first on Spotify Engineering .",
+    "summary": "Spotify shares a post looking at product management for AI from three different viewpoints. It argues that many articles treat \"the AI PM\" as one single job, when the role may vary.",
+    "tags": [
+      "product management",
+      "ai careers"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/unlock-level-up-flex-discord-profile-badges-got-an-upgrade",
+    "company": "Discord",
+    "title": "Unlock, Level Up, Flex: Discord Profile Badges Got an Upgrade",
+    "published": "2026-11-09",
+    "excerpt": "Meet the new badge directory: one spot to browse every badge on Discord, including 4 shiny new ones to unlock, level up, and flex.",
+    "summary": "Discord added a new badge directory, a single place to browse every profile badge on the app. It also introduces four new badges that users can unlock and level up to show off on their profiles.",
+    "tags": [
+      "discord",
+      "app features",
+      "profile badges"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/discord-patch-notes-november-9-2026",
+    "company": "Discord",
+    "title": "Discord Patch Notes: November 9, 2026",
+    "published": "2026-11-09",
+    "excerpt": "Check out the finer details of the more technical fixes implemented into Discord recently.",
+    "summary": "Discord posted patch notes for November 9, 2026, describing recent technical fixes made to the app. The teaser does not list the specific fixes, so details are not available here.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+    "company": "Google Developers",
+    "title": "What is Pathways? Single-controller training for large models",
+    "published": "2026-11-09",
+    "excerpt": "Pathways is a single-controller distributed training system designed to coordinate large-scale model training across multiple accelerator groups by representing computations as a global dataflow graph. Unlike traditional SPMD models like DDP and FSDP that rely on synchronous collectives, Pathways uses asynchronous dispatch and a central scheduler to maximize hardware utilization and prevent deadlocks in complex workloads. By decoupling model definition from physical hardware via virtual devices, developers can efficiently scale complex training architectures and seamlessly handle dynamic workloads like reinforcement learning post-training.",
+    "summary": "Google describes Pathways, a system that runs very large AI model training across many groups of chips from one central controller. It keeps the chips busy and avoids stalls, which helps when training gets complex.",
+    "tags": [
+      "ai training",
+      "machine learning",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/",
+    "company": "Google Developers",
+    "title": "From prompt to app: Build with Google Maps in AI Studio",
+    "published": "2026-11-09",
+    "excerpt": "Developers can now build applications powered by Google Maps Platform directly within Google AI Studio by prompting Gemini with real-world geospatial concepts. The integration eliminates traditional configuration hurdles by providing one-click demo keys that generate instantly without requiring Cloud Console redirects or credit cards. This setup grants developers immediate access to core APIs—including Maps, Places, and Routes—supported by daily sandbox quotas for seamless prototyping.",
+    "summary": "Developers can now build apps using Google Maps inside Google AI Studio just by describing what they want to Gemini. A one-click demo key lets them start right away, with no credit card or extra setup needed.",
+    "tags": [
+      "google maps",
+      "ai tools",
+      "app development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/",
+    "company": "Google Developers",
+    "title": "Announcing Long-Context Training on TPUs with MaxText Context Parallelism",
+    "published": "2026-11-09",
+    "excerpt": "Google Cloud's MaxText framework now supports long-context training up to 14 million tokens on Cloud TPUs by implementing four context-parallel strategies: All-gather, A2A, P2P, and USP. Powered by the Tokamax Splash Attention kernel, these strategies effectively manage attention compute and memory bottlenecks without materializing full key-value sequences in high-bandwidth memory. Developers can adopt these capabilities in MaxText v0.2.4 to achieve high Model FLOPs Utilization (MFU) across large-scale model training workflows.",
+    "summary": "Google's MaxText tool can now train AI models on very long inputs, up to 14 million tokens, using Google's TPU chips. It adds four new ways to split the work across chips, so training stays efficient even with huge inputs.",
+    "tags": [
+      "ai training",
+      "google cloud",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
+    "company": "NVIDIA",
+    "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
+    "published": "2026-11-09",
+    "excerpt": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a... Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a useful starting point for robots that learn by demonstration, manipulate objects, or work alongside people, depends on a gravity-compensation loop. Building such a loop is only possible by continuously calculating the inverse dynamics of… Source",
+    "summary": "A new NVIDIA post shows how to make a robot arm feel weightless when guided by hand. The arm's motors supply just enough force to hold up its own weight, which helps robots learn from human demonstrations and work safely near people.",
+    "tags": [
+      "robotics",
+      "nvidia",
+      "robot arms"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+    "company": "Cloudflare",
+    "title": "Launching the Vite Ecosystem Fund",
+    "published": "2026-11-09",
+    "excerpt": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to 44 projects and maintainers across the Vite ecosystem. When VoidZero joined Cloudflare, we committed $1 million to strengthen the open source ecosystem around Vite. This round is just the start. Sponsoring open source has always mattered, but now AI has made funding urgent. AI is changing open source AI has made open source more valuable while triggering more maintainer burnout. Previously, contributing to a project through either an issue or pull request meant you cared about it. In return, maintainers would review and provide feedback. AI changed the social contract of open source. Anyone can now create and submit AI-authored pull requests. The most visible result is the influx of pull requests. As the number of PRs has gone up, the number of maintainers reviewing them has stayed constant. So each maintainer’s workload has grown. During reviews, maintainers often find themselves speaking with an agent and not a person like they used to. If that’s the case, then why not cut out the middleman? Maintainers now have their own agents they can prompt to produce better results since they have more knowledge of the codebase. AI has raised the pressure to produce . It’s made it easier for maintainers to ship features, performance improvements, and bug fixes that would not have been done otherwise. But it’s also made it easy for other projects to do the same. When another project adds overlapping features using AI, maintainers feel a need to keep up using AI. It can become a grinding cycle, where each project pushes the other to move faster. Along the way, some projects have grown in scope and lost sight of their original goals. Maintainer burnout and sustainability have always been a problem — and now AI has accelerated those issues. That’s why sponsoring open source projects and supporting maintainers is so important in this moment. One of the Vite Ecosystem Fund’s first recipients is e18e , a community focused on improving performance across the JavaScript ecosystem. Its lead, James Garbutt, has a long history in open source, and his work at e18e has helped make popular tools like Svelte, Storybook, and Nx faster. \"Sponsorships make a huge difference and allow maintainers to dedicate more of their time to the things we all rely on,\" Garbutt says. Fund distribution The recipients of the Vite Ecosystem Fund were selected by a panel of core team members from Vite stack projects (Vite, Vitest, Rolldown, Oxc, Vite+), including maintainers not employed by Cloudflare. The funding is allocated through Cloudflare's Open Collective as a combination of: Contributions to ecosystem recipients Stipends to core maintainers We’re proud that Cloudflare has committed to making the open source ecosystem we rely on stronger and more sustainable. No project thrives in isolation. We'll continue to distribute and draw down the committed amount every quarter. Contributions to ecosystem recipients This first round of sponsorships prioritized dependencies, ecosystem critical plugins, significant contributors, and projects that moved the ecosystem forward. Andrew Gallant Andrey Sitnik Anthony Fu Fund Ari Perkkiö Artem Zakharchenko Babel Bart Waardenburg Benjamin E. Coe Brandon Roberts Chai David Ortner David Tolnay Denis Bardadym Devon Govett Divyansh Singh e18e ESlint Giorgio Boa Guy Bedford Jessica Sachs Jonas Kruckenberg Luigi Pinca Máximo Mussini Michael Cousins Mickael Jeanroy Misha Kaletsky Mock Service Worker Mohammad Bagher Abiyat Nicholas Rayburn Paul Miller Pig Fang pnpm Polka PostCSS Prettier Ralf Jung Rollup Sindre Sorhus Terser typescript-eslint Verite universal-deploy (Vike) Younes Jaaidi Yuki Okushi Stipends to core maintainers The core maintainers of the Vite stack are eligible for a stipend of up to $4,000 per calendar month. Each maintainer can invoice at a rate of $50 per hour contributed that month. Any time spent improving or supporting the project in some way co",
+    "summary": "Cloudflare has handed out the first $301,300 of its Vite Ecosystem Fund to 44 projects and maintainers who build tools around Vite, a popular web development tool. The company says AI has piled more work onto volunteer maintainers, so paying them helps prevent burnout.",
+    "tags": [
+      "open source",
+      "funding",
+      "web tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/",
+    "company": "AWS",
+    "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
+    "published": "2026-11-09",
+    "excerpt": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source stays writable except for a few minutes at cutover. The same week, Amazon DynamoDB started loading data from S3 into tables that already exist. The pattern I like is that neither one asks you to stop what’s running. That’s also the way to read the agent news this week. The new Amazon Bedrock AgentCore Runtime is a single field on the runtime you already have, and Web Answer is a tool you attach to a gateway you already run. Now, let’s get into this week’s AWS news… Headlines The new AgentCore Runtime: elastic, optimized, and consistently fast starts – If you run agents on AgentCore and haven’t tried the new runtime since it became generally available, it’s worth a look. It changes two things. First, memory: sessions start small, page in more on demand, and give memory back when it goes cold instead of holding the peak, so you pay for what your agent uses. Second, cold starts: AgentCore prepares your environment once, snapshots it, and restores the snapshot for every new instance. In the team’s tests, that kept P75 cold starts at about 2 seconds for images from 200 MB up to 2 GB, while the original runtime rose from roughly 5.4 seconds to nearly 30 seconds as images grew. The per-unit rate is higher, but you use far fewer GB-hours, so the team expects most agents to see a lower bill, though that isn’t guaranteed. To opt in, you set platformVersion to V2 when you create or update a runtime. Create and update take several minutes while the snapshot is prepared, and your container must report healthy on /ping within 120 seconds, so report health only after initialization finishes. The docs cover how to optimize your agent for V2 . V2 is available in 10 Regions , and committed baseline pricing is coming soon. Amazon S3 Tables now offer managed migration of Apache Hive tables to Apache Iceberg – You can now migrate Parquet tables registered in the AWS Glue Data Catalog into S3 Tables without building a pipeline or provisioning compute. S3 Tables validates the source and produces a compatibility report covering every object in scope. Each sync copies only what changed, so production keeps writing until cutover. Afterward you can query the table with Amazon Athena , Amazon SageMaker Unified Studio , or any engine that speaks the Iceberg REST API. You pay only for the data copied, with no charge for the conversion, and objects in S3 Intelligent-Tiering keep their tier. At launch it works within the same account and Region, in 10 Regions. Last week’s launches Here are some launches and updates from this past week that caught my attention: Amazon DynamoDB now supports bulk put items – You can now load line-delimited DynamoDB JSON or Amazon Ion files from Amazon S3 into existing tables as a managed, asynchronous job. Each record can carry its own condition expression, so one file can mix plain, insert-only, and version-guarded writes. Writes use dedicated system capacity and cost less than the equivalent per-request writes. An Accelerated tier handles deadline-bound jobs. The Database blog post gives illustrative Accelerated times of less than 1 hour for 100 million 1 KB items. One thing to know before you start: canceling doesn’t roll back items already written. Announcing Web Answer on Amazon Bedrock AgentCore – You can now give an agent a single tool call that returns a synthesized, cited answer to a natural-language question, instead of building your own search, retrieval, and citation pipeline. Web Answer plans its own searches, runs several in parallel, and decides when it has enough evidence. You attach it as a target on AgentCore Gateway and call it over MCP, and you can limit it with domain include and deny lists and publish-date filters. It’s available in U",
+    "summary": "AWS's weekly roundup covers a new version of its agent runtime that starts faster and uses less memory, so agents often cost less to run. It also covers tools that move data into newer table formats and load bulk data into DynamoDB without stopping existing work.",
+    "tags": [
+      "cloud computing",
+      "ai agents",
+      "aws"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
     "company": "Google Developers",
     "title": "Fast, reliable A2UI, with swappable inference formats",
@@ -899,21 +1358,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/blog/introducing-vercel-schedules",
-    "company": "Vercel",
-    "title": "Introducing Vercel Schedules",
-    "published": "2026-11-04",
-    "excerpt": "Cron jobs are useful for work that needs to happen regularly. You can use them to do things such as back up your database on a schedule, or keep data in sync between two systems. You define them once in code and then can update them by editing their config and redeploying. But today, agents interact with users as work evolves, and schedules need to be updated in real time. We built Vercel Schedules to allow agents and applications to create, change, or cancel one-time and recurring schedules through code, without redeploying. What are Vercel Schedules? Schedules builds on the static approach used by Vercel Cron Jobs , but are designed to let users and agents decide when work should happen while your application is still running. A schedule tells Vercel when to trigger a task and where to send it. Your application provides the code that carries out the work. You can use schedules for both static and dynamic jobs: Static schedules keep the timing in vercel.json or Build Output API configuration and sync when you deploy. You can use them to call private functions or HTTP paths, or send messages to Queue topics . Dynamic schedules let your app create and manage schedules through the JS SDK , CLI , or API as it runs. They support one-time and recurring work through Queue topics. You can also test scheduled work on Preview deployments and in custom environments before running it in Production. How Schedules works Take this example: A user could ask an agent with web access, “Tomorrow morning, summarize the top five stories on Hacker News.” The traditional solution would be storing the request and its schedule time in a database, then using a cron job to check for work that is due. With Schedules, an agent can create a schedule that records the request and when to run it, without a separate database and polling job. The example below defines an AI SDK tool that gives an agent this capability. When the task is due, Vercel uses Queues to deliver the saved request to your app. Your app provides code to read that request , check the user’s current permissions, and start the agent. The agent fetches the top five Hacker News posts with a web tool, then returns a summary for your app to save for the user. If you already build agents with fx’s JavaScript library, libfx or Pi’s agent library , you can add a similar scheduling tool. The eve agent framework uses Vercel Schedules to provide dynamic scheduling tools for production agents hosted on Vercel. Run recurring application jobs You can schedule recurring work with Vercel Schedules. Schedules can be created dynamically via the JS SDK , API , and CLI , or set up in your project’s configuration. For example, to create a job that cleans up expired records every day, you could define a schedule that invokes a private function in your chosen time zone: Vercel calls this cleanup code directly, without exposing it at a public URL. It checks that each call comes from the scheduling service, so you don’t have to add that check yourself. If your app already uses the Nitro 3 server framework, its experimental integration lets you run the recurring jobs in your existing scheduledTasks configuration as private functions. You can also try the agent task and cleanup locally with vercel dev , then test them on a Preview branch or in a custom environment before production. Use Run Schedule in your project’s Schedules tab to try either task without waiting, and see when past runs happened. Get started Vercel Schedules is now in Public Beta , and you can use it for the recurring tasks your application already runs. When a user or agent chooses when work should happen, your code can create and manage a schedule for that task. To get started, check out the Vercel Schedules skill and read the documentation . Read more",
-    "summary": "Vercel released Schedules, a tool that lets apps and AI agents create, change, or cancel one-time and recurring jobs while the app is running, without redeploying. It is now in public beta.",
-    "tags": [
-      "cloud hosting",
-      "scheduled jobs",
-      "ai agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
     "company": "Google Research",
     "title": "Agile Deliberation: How AI helps humans define the gray areas",
@@ -1167,110 +1611,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-security-review-public-beta",
-    "company": "Vercel",
-    "title": "Vercel Security Review now in public beta",
-    "published": "2026-11-03",
-    "excerpt": "Vercel Security Review is now in public beta for Pro and Enterprise teams. Once enabled, every push to a connected GitHub repository is automatically reviewed for vulnerabilities, and findings are reported in the Vulnerabilities dashboard . What triggers a review Security Review runs automatically when code is pushed to a connected GitHub repository. Because reviews start from push events rather than pull requests, direct and force pushes to your production branch are reviewed as well. Every project affected by a single push is reviewed together. What a finding includes Each finding records the project, environment, branch, and commit, with a summary, a suggested fix, and an AI-generated severity rating. Security Review adds its own GitHub check to each commit it reviews. When there's a pull request, it also posts findings as review comments that link back to each finding. On public repositories, finding details stay in the dashboard. Fixes and resolution Clicking Fix with Vercel Agent on a vulnerability report hands the finding to Vercel Agent, which proposes a fix and opens a pull request for you to review. Nothing merges until you approve it. To fix findings with your coding agent instead, use vercel security vulnerabilities in the Vercel CLI, or copy any finding as Markdown or JSON. Security policies Teams can write security policies in plain language, for all projects or specific ones, to give Security Review more context about how they build. Set a team policy in Agent settings and a project policy in the project's Security settings. Limitations Security Review analyzes source code. It isn't a security audit, and it doesn't perform runtime or penetration testing. It helps you find vulnerabilities but doesn't guarantee your application is free of them. Pricing Security Review is billed at the Vercel Agent rate : provider inference at the underlying token rate with no markup, plus the Vercel Token Rate of $0.25 per million tokens (input, cached, output). Reviews run on each push to GitHub, so cost scales with how often you push and how much code changes. Security reviews are free until November 10, 2026, and fixes made with Vercel Agent are billed at the Vercel Agent rate. Enable Security Review in your team’s Agent settings , or read the documentation and the announcement to learn more. The CLI command needs Vercel CLI 65.10.0 or later. Read more",
-    "summary": "Vercel now offers Security Review in public beta for Pro and Enterprise teams. It automatically scans each code push to connected GitHub repositories for security problems, and it is free until November 10, 2026.",
-    "tags": [
-      "security",
-      "software development",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-cli-now-diagnoses-setup-problems-with-vercel-doctor",
-    "company": "Vercel",
-    "title": "Diagnose Vercel CLI setup problems with vercel doctor",
-    "published": "2026-11-03",
-    "excerpt": "Vercel CLI now includes vercel doctor , which checks your setup and shows the command that fixes each problem it finds. It checks the CLI version and install, your login and current team, the project link, and your project configuration in vercel.json . It also reports active incidents from the Vercel status page. Each check reports OK, Warning, Failed, or Skipped. When vercel upgrade can't update the installed CLI, the install check shows where the CLI runs from and how to reinstall it. Doctor runs without a login or a linked project, and it never prompts, logs in, or links a project, so coding agents can run it before guessing at a fix. Add --json to get each check's status and suggested commands as structured output. Update to the latest CLI version and run vercel doctor to check your setup, or read the doctor command reference. Read more",
-    "summary": "Vercel's command-line tool now has a \"vercel doctor\" command that checks your setup and suggests a fix for each problem it finds. It also reports active Vercel outages, and it runs safely without changing anything, so it's useful for both people and coding tools.",
-    "tags": [
-      "vercel",
-      "developer tools",
-      "troubleshooting"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
-    "company": "Vercel",
-    "title": "Vercel CI no longer requires a linked Vercel project",
-    "published": "2026-11-03",
-    "excerpt": "Vercel CI can now run on a GitHub repository that has no Vercel project. Until now you had to create an empty project just to connect the repository. To enable it, you need: The Vercel GitHub App installed with access to the repository Your GitHub account connected to your Vercel account Write or admin permission on the repository Then, from a clone of the repository, run: CI is enabled for the team your CLI is set to. Pass --scope <team> to use a different one. From the next push, tasks run as configured in your repository. Private GitHub repositories only. Public repositories and other Git providers are not yet supported. Read the Vercel CI documentation to configure tasks. Read more",
-    "summary": "Vercel's automated build checks can now run on a GitHub repository without first creating an empty Vercel project. This saves setup work, but it only works for private GitHub repositories for now.",
-    "tags": [
-      "continuous integration",
-      "vercel",
-      "github"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/tencent-hy4-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Tencent Hy4 now available on AI Gateway",
-    "published": "2026-11-03",
-    "excerpt": "Hy4 from Tencent is now available on AI Gateway , at 50% off through December 31, 2026. Hy4 supports reasoning , tool calling , structured outputs , and image input, and has a 1M-token context window for work across a codebase or many documents. Hy4 is the first Hy model with vision. It can pick out fine detail in an image and read complex charts. It also supports computer use in both command-line and graphical interfaces. Compared with Hy4 Preview , it follows instructions more closely and does better with long context, long-running tasks, and deep research. Use tencent/hy4 as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select tencent/hy4 in the agent. See the coding agents guide for details. Try Hy4 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Tencent's new AI model Hy4 is now available on Vercel's AI Gateway, at half price through the end of 2026. It can read images and charts, work with very long documents, and use tools.",
-    "tags": [
-      "ai models",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/how-zapier-turns-ideas-into-working-software-in-hours-with-vercel",
-    "company": "Vercel",
-    "title": "How Zapier turns ideas into working software in hours with Vercel",
-    "published": "2026-11-03",
-    "excerpt": "Zapier on Vercel Interactive partner demos in under two hours with v0, replacing a process that could take weeks First versions of three internal applications, each built in one day A shared daily briefing for more than 60 marketers, replacing individual efforts to assemble the same information 3.3 million sandboxes created in one month, isolating the code execution behind Zapier’s AI workloads Before the industry had a word for agents, Zapier was building them. Today Zapier is the AI orchestration platform connecting AI to the workflows, data, and systems businesses use every day. Zapier has been a Vercel customer since they began using Vercel for web experiences several years ago. They stayed, and expanded, because every team that needed to ship quickly found the same answer: speed, with the security guardrails already in place. As they grew, so did their adoption of Vercel as more teams found new uses for the platform. Today, Vercel supports work across engineering, partnerships, and marketing, from customer-facing AI to interactive partner demos and internal applications. The needs vary by team, but the priority is getting useful work into people’s hands quickly. A backend engineer can create an interactive demo of an integration inside a partner’s product. In marketing, a former product marketer with no prior deployment experience can share tools containing sensitive information through a company-approved environment and keep improving them as colleagues use them. Zapier’s teams are moving faster and doing more than they could before. When the next launch comes around, building on Vercel is a given. From weeks of prototype work to a demo in under two hours Every partnership Zapier signs extends what its customers can automate. The Powered by Zapier team is how those partnerships become product, helping SaaS and AI companies embed Zapier’s automation capabilities directly into their own tools, so users can automate without ever leaving the partner’s app. The stakes are high, because Zapier relies on this team to make its platform the entry point to all the software in the world. The problem was speed: collaborating outside the organization took forever, with every prototype requiring screenshots, design time, and frontend resources, and weeks could pass before a partner saw anything clickable. With v0 , the team can create a fully interactive, multi-view prototype in under two hours, showing an embedded Zapier experience inside the partner’s own product. Chu’s background is in backend development, not frontend engineering or design, but v0 lets her build these experiences without coordinating a separate design and frontend effort for every partner conversation. Partners can click through the flow and share it with colleagues, using the prototype as a blueprint for implementation alongside the API documentation. Sharing sensitive internal data securely In marketing, Joe Stych set out to make the team’s scattered knowledge easier to use. He had spent years in product marketing before becoming a agentic go-to-market engineer, but had never worked out of a Git repository or deployed an application. At an internal hackathon, he built Marketing Hive, a shared source for positioning, messaging, personas, and competitive intelligence. Sharing his local prototype meant making sensitive information accessible to colleagues without exposing it to everyone else. “The Hive holds our positioning, personas, and competitive intel, so I couldn't just send people a link. On Vercel it was behind our SSO from the first deploy, so I could share it without exposing it” says Joe Stych, Senior Lead, Agentic GTM at Zapier. Zapier’s data and security teams had already endorsed Vercel. Stych deployed through the company’s approved internal tooling environment, with access gated behind Zapier’s single sign-on. He develops in Cursor and keeps code and source material in GitLab, where changes trigger Vercel builds and deployments . If an update needs t",
-    "summary": "Zapier, a company that connects software tools, uses Vercel to build things quickly. Its partnerships team now makes interactive demos in under two hours instead of weeks, and a marketer built a shared, login-protected knowledge hub for more than 60 colleagues.",
-    "tags": [
-      "software development",
-      "tools for teams",
-      "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/how-openevidence-scales-medical-search-for-doctors",
-    "company": "Vercel",
-    "title": "How OpenEvidence scales medical search for 650K doctors",
-    "published": "2026-11-03",
-    "excerpt": "OpenEvidence on Vercel Serves 650,000 doctors with medical search Completes production deployments in about five minutes Absorbs traffic spikes without additional capacity provisioning Reduced serverless spend by 90% with Fluid compute Updates doctor- and patient-facing applications independently OpenEvidence helps physicians find medical evidence during care, whether they’re checking a dosage on intensive care rounds or handling a case outside their specialty without a specialist nearby. Answers draw on peer-reviewed literature and include citations, so doctors can examine the sources behind them. OpenEvidence’s small team began using Vercel to get early experiments online and kept that workflow as the product grew, relying on the platform to handle web deployments and capacity. Building software physicians depend on The stakes are different when software helps inform medical decisions. An incorrect answer can affect how a doctor treats a patient, while an unavailable application can cut off access to evidence when it is needed. OpenEvidence supported more than 20 million clinical consultations in January 2026 . The company also reported that more than 100 million Americans were treated by doctors using OpenEvidence in 2025 . \"Honestly, life or death is not inaccurate,\" says Kush Khosla, Engineering Lead at OpenEvidence. \"We operate in situations where it's an ER and they really need to know what's going on. Uptime is very, very important to us.\" \"A lot of doctors and medical professionals are used to really outdated software,\" says Andy Yoon, Engineering Lead at OpenEvidence. A more modern experience still needs to meet physicians' expectations of speed, stability, clarity, and information they can trust. The small team needs a way to test updates to the web application before putting them into production and to roll back if something goes wrong. Keeping releases simple as the audience grows Andy recalls why Vercel suited the team he joined at OpenEvidence. \"I was pretty much the only engineer on our team coming from an actual frontend background,\" he says. \"Most of our team works in Python and machine learning.\" He adds, \"Given the makeup of our engineering team, Vercel really scaled with our needs so well.\" The team builds its physician-facing web application with the Next.js framework . When engineers push changes to a development branch, Vercel builds and deploys a preview , giving them a link they can use for live demos and share with colleagues to try new features. Pushing or merging into the production branch then triggers the production build and deployment. If a release needs reverting, the team can roll back to a previous deployment . That workflow lets the team release multiple times a day, with each change becoming available to a physician audience that Kush thinks about whenever he ships something: More doctors without more provisioning Keeping that application available means handling demand the team can’t always anticipate. Andy was scrolling through Slack when he saw the message that OpenEvidence had gone viral on TikTok, reaching around two million views in under a week. He watched traffic climb and checked the logs. Response times stayed fast and error rates remained near zero , and with no additional capacity to provision, he went back to his work. Beyond sudden spikes, the team has accommodated sustained growth without rebuilding the web application. \"Not once have I had to think, now that we have five times as many doctors, what's happening to page loads or time to first paint,\" Kush says. \"The scaling has happened so naturally that we end up focusing on other things.\" A 90% drop in serverless spend As usage grew, VP of Engineering Micah Smith was watching compute costs. The team enabled Fluid compute for its functions on Vercel, and Micah described the result alongside the wider infrastructure budget: \"We reduced our serverless spend by 90% while maintaining the same performance, and even as we've scale",
-    "summary": "OpenEvidence, a medical search tool used by about 650,000 doctors, runs its web app on Vercel, which lets its small team ship updates several times a day and handle traffic spikes without adding servers. After turning on Fluid compute, the company cut its serverless computing bill by 90% while keeping performance the same.",
-    "tags": [
-      "medical software",
-      "cloud costs",
-      "web deployment"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/how-mercor-ships-internal-apps-and-billions-of-production-tokens-on-one-platform",
-    "company": "Vercel",
-    "title": "How Mercor ships internal apps and billions of production tokens on one platform",
-    "published": "2026-11-03",
-    "excerpt": "Mercor on Vercel Batch jobs cut from 12 hours to 2 hours 18M requests and 63B tokens routed through AI Gateway in 10 days Expert access provisioned in seconds via Vercel Passport Over 2,000 projects created by hundreds of internal builders Mercor connects hundreds of thousands of domain experts with frontier AI labs, helping those labs generate the human data they need to train and evaluate leading models. It also runs large batches of automated grading jobs to evaluate models for labs and enterprises. Demand arrives in bursts that can push model traffic to peak capacity for days, even as individual evaluation or labeling jobs carry 24-hour deadlines. With so little time to deliver, requests waiting on a provider’s rate limits can put a client’s deadline at risk. Mercor’s business teams also need applications tailored to each engagement, giving experts a way to see their tasks and progress without waiting for changes to the core platform. For Aaron Brown, Mercor’s Head of Security, enabling more people to build means making it easier to give them the access they need and keep track of how they use it. Mercor uses Vercel AI Gateway to manage model access and Vercel Passport to handle secure access to their applications. When model capacity becomes a customer deadline Mercor’s mix of direct integrations and third-party gateways could not provide enough token-per-minute capacity for its open-model workloads when demand surged. As requests hit provider limits and entered retry queues, time-sensitive batch jobs stretched beyond 12 hours, consuming more than half of a client’s 24-hour deadline. AI Gateway provided more inference capacity and failover routing between providers when requests hit rate limits, helping batch work continue instead of waiting in retry queues. Mercor reports that those jobs now finish in 2 to 3 hours, leaving more time to complete the rest of the client’s work. In its first 10 days on Gateway, the team routed 18 million requests and 63 billion tokens, without hitting rate limits. Mercor continues to use multiple gateways and vendors, valuing Vercel for its combination of model access, controls, and hands-on support when the team needs more capacity. Engineers also get one API for leading foundation model providers and a growing catalog of open models, so they can try a new model without building another provider integration. Giving engineers room to experiment within limits As model use grew, Mercor needed to understand where token spend was going, but its previous setup offered little visibility into usage by team and project. A single loop error in a script could exhaust the available budget. Hundreds of Mercor engineers now use open models through AI Gateway with per-user keys that carry expiration dates, token limits, and spend limits. Security can give experimentation a budget and an end date, then use the usage records to see which user, project, and workload is driving consumption. Engineers can try different models through the same gateway under those controls, without managing another set of provider credentials each time. Managing access as business teams build A few hundred people across Mercor’s business teams now build applications on Vercel, where the company’s project count has grown from fewer than a dozen to roughly 2,000. Many of those projects are temporary environments for a specific client engagement. One production use case gives experts detailed views of their project tasks and progress. Rather than ask engineering to add every engagement’s interface to the core platform, business teams build the interfaces themselves and share them with the experts doing the work. To share those applications, teams need to control who can sign in without taking on a separate authentication setup for every project. Passport provides that common authentication layer, handling sign-in to Vercel deployments through an existing identity provider. Mercor’s identity team built a product called Audiences, in",
-    "summary": "Mercor, which connects domain experts with AI labs, moved its model traffic to Vercel's AI Gateway. Its time-sensitive batch jobs dropped from over 12 hours to 2-3 hours, and the team routed 18 million requests without hitting rate limits.",
-    "tags": [
-      "ai infrastructure",
-      "batch processing",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
     "company": "OpenAI",
     "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
@@ -1296,36 +1636,6 @@
       "ai tools",
       "real estate",
       "property management"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/cisco-cyber",
-    "company": "OpenAI",
-    "title": "How Cisco defends at machine speed with OpenAI",
-    "published": "2026-11-03",
-    "excerpt": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
-    "summary": "Cisco is using OpenAI's AI models together with its network data to help businesses defend against attacks faster. The goal is security systems that can adjust to threats as they happen.",
-    "tags": [
-      "cybersecurity",
-      "ai",
-      "networking"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-    "company": "OpenAI",
-    "title": "Accelerating engineering for the physical world",
-    "published": "2026-11-03",
-    "excerpt": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
-    "summary": "OpenAI published a post about how its ChatGPT and Codex tools are helping engineers work faster on designing physical products. The work covers areas like CAD drawings, circuit board design, and computer simulations.",
-    "tags": [
-      "engineering",
-      "ai tools",
-      "product design"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1515,36 +1825,6 @@
       "ai",
       "cryptography",
       "security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/scaling-git-at-openai",
-    "company": "OpenAI",
-    "title": "Scaling Git at OpenAI",
-    "published": "2026-11-02",
-    "excerpt": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
-    "summary": "OpenAI built a new storage system called Pando to handle its code repositories at a very large scale, driven by the heavy coding work that its Codex tool makes possible. It still works with Git, the tool developers already use to track code changes.",
-    "tags": [
-      "version control",
-      "developer tools",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-    "company": "OpenAI",
-    "title": "Rewarding defenders with bigger bug bounties",
-    "published": "2026-11-02",
-    "excerpt": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
-    "summary": "OpenAI is paying security researchers more money for the bugs they find. It is also adding bonus rewards for high-quality reports, long-time reporters, and special focus campaigns.",
-    "tags": [
-      "bug bounty",
-      "security",
-      "openai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2008,50 +2288,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/smarter-cost-controls-serverless",
-    "company": "Databricks",
-    "title": "Smarter cost controls for serverless",
-    "published": "2026-10-29",
-    "excerpt": "At Databricks, our serverless compute usage has grown more than 3x in the past year,...",
-    "summary": "Databricks says its serverless computing use has grown more than three times in the past year. The post introduces new ways to control spending on it, though the teaser does not list the details.",
-    "tags": [
-      "cloud costs",
-      "serverless computing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/postgres-managed-service",
-    "company": "Databricks",
-    "title": "What to Look for in a Postgres Managed Service: A Technical Buyer's Checklist",
-    "published": "2026-10-29",
-    "excerpt": "Managed is a label, not a specification. Evaluate a cloud database managed service...",
-    "summary": "Databricks has published a checklist to help technical buyers judge what a good managed Postgres database service should include. The article points out that the word \"managed\" alone does not tell you what you are actually getting.",
-    "tags": [
-      "databases",
-      "postgres",
-      "cloud services"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-procore-powering-construction-analytics-opensharing-0",
-    "company": "Databricks",
-    "title": "How Procore is powering construction analytics with OpenSharing",
-    "published": "2026-10-29",
-    "excerpt": "Connecting an industry built on disconnected dataConstruction runs on data that rarely sits in one place...",
-    "summary": "Databricks describes how Procore, a construction software company, uses a sharing method called OpenSharing to let its construction data be used across different companies and tools. The post focuses on bringing together data that is usually scattered across many separate systems.",
-    "tags": [
-      "construction",
-      "data sharing",
-      "analytics"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://huggingface.co/blog/mistral-large4",
     "company": "Hugging Face",
     "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
@@ -2272,51 +2508,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
-    "company": "Google Developers",
-    "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
-    "published": "2026-10-28",
-    "excerpt": "This post walks through the Agents CLI evaluation loop for systematically improving agent performance through continuous testing and grading. It demonstrates how to catch prompt regressions, evaluate model backend swaps using side-by-side trace comparisons, and automate evaluation passes. Developers will also learn how to integrate nightly scheduled runs with threshold-based alerting to track quality over time.",
-    "summary": "This Google post shows how to test AI agents over time using the Agents CLI tool. It covers catching prompt regressions, comparing model swaps side by side, and running nightly checks that alert you when quality drops.",
-    "tags": [
-      "ai agents",
-      "software testing",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
-    "company": "Google Developers",
-    "title": "Architecting Governed, Self-Evolving AI Agents on Google Cloud",
-    "published": "2026-10-28",
-    "excerpt": "Learn how Project Chrysalis combines Google Cloud's Gemini Enterprise Agent Platform, Agent Development Kit (ADK), BigQuery, and a four-gate defense-in-depth security stack (Model Armor, Cloud KMS, Binary Authorization, and OPA) to build governed, self-evolving AI agents that remediate live production outages in 1.8 seconds.",
-    "summary": "Google Developers describes Project Chrysalis, a system of AI agents that fix live production outages automatically. It uses several Google Cloud tools plus layered security checks, and the authors say it can remediate an outage in about 1.8 seconds.",
-    "tags": [
-      "ai agents",
-      "cloud security",
-      "outage recovery"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
-    "company": "Google Developers",
-    "title": "Announcing New vLLM and SGLang Inference Engines on TPU",
-    "published": "2026-10-28",
-    "excerpt": "This post announces native PyTorch backends for vLLM and SGLang powered by TorchTPU, enabling developers to run and optimize serving workloads using familiar PyTorch tools. Built in collaboration with open-source project maintainers, these engines include optimized TPU kernel implementations, production-ready features like KV cache management with TPU Sync, and disaggregated serving. Public benchmarks demonstrate state-of-the-art performance and industry-leading cost efficiency on Ironwood TPU across long-context and agentic workloads.",
-    "summary": "Google announced new versions of two popular tools, vLLM and SGLang, that let developers run AI models on Google's TPU chips using PyTorch, a common programming framework. The post says benchmarks show strong speed and lower cost on its newest TPU, Ironwood.",
-    "tags": [
-      "ai inference",
-      "google cloud",
-      "chips"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
     "company": "Google DeepMind",
     "title": "Gemini 4 Carbon: Our next frontier model",
@@ -2489,21 +2680,6 @@
       "gaming hardware",
       "ai",
       "laptops"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
-    "company": "NVIDIA",
-    "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
-    "published": "2026-10-27",
-    "excerpt": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads... Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads with the infrastructure they already have. NVIDIA GPUs already support several approaches to sharing. Multi-instance GPU (MIG) splits a GPU into hardware-isolated instances that are transparent to the application… Source",
-    "summary": "NVIDIA describes a way to share one graphics chip among several AI tasks in Kubernetes, the system that runs software in clusters. Sharing lets teams fit more work onto hardware they already own instead of leaving whole chips idle.",
-    "tags": [
-      "gpu sharing",
-      "kubernetes",
-      "ai infrastructure"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2731,21 +2907,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/allenai/litpivot",
-    "company": "Hugging Face",
-    "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-    "published": "2026-10-23",
-    "excerpt": "",
-    "summary": "Hugging Face has released LitPivot, a tool that helps researchers shape their ideas by placing them within the existing body of scientific papers. The post is only a title with no article text, so details beyond that are unclear.",
-    "tags": [
-      "research tools",
-      "scientific papers",
-      "ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
     "company": "Cloudflare",
     "title": "Bringing post-quantum cryptography to geographically fenced key management",
@@ -2874,21 +3035,6 @@
       "netflix",
       "cloud infrastructure",
       "isolation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-    "company": "Hugging Face",
-    "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-    "published": "2026-10-22",
-    "excerpt": "",
-    "summary": "Hugging Face describes ThinkingBox, a way to train AI agents using rewards based on grading results stored in a database. The post suggests this helps agents learn from clear, checkable outcomes.",
-    "tags": [
-      "ai agents",
-      "machine learning",
-      "training methods"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3234,21 +3380,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
-    "company": "Cloudflare",
-    "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-    "published": "2026-10-19",
-    "excerpt": "The recent disclosure of a major vulnerability in Citrix NetScaler pointed to a widespread weak point: a login page is an attack surface that can be used to compromise and access an application server. Indeed, the disclosures included an actively exploited flaw that allowed attackers to execute commands on affected gateways without signing in. As with any emergency patch, admins had to weigh cutting off or disrupting their users’ access with the risk of delaying a critical security update. If you’re a NetScaler customer and you haven’t patched your instance, stop reading and go do that. This was a bad one. Once you’ve finished the patch, we’ll explore how to avoid a future fire drill by laying additional security controls. This issue extends beyond NetScaler and can be applied to any internal application available on the Internet. Remote desktop portals, administrative consoles, and other publicly accessible authentication pages all deserve the same scrutiny: Does the intended audience require unrestricted Internet reachability? And can an attacker bypass this authentication check to reach the application's server? Citrix released software updates to address the flaw , and Cloudflare followed with an emergency web application firewall (WAF) rule on October 1. But having a patch available does not guarantee safety: every instance has to be identified, updated, and tested. Applying updates across a production deployment is painful — it can result in downtime or cause disruptions to employees who still need their desktops throughout that process. Customers, patients, and others dependent on users of a remote desktop definitely don’t care about your security patch. Using a web application firewall (WAF) can buy some additional time before a patch can be fully rolled out, but it’s reactive and does not account for the next exploit that’s discovered. Cloudflare and other security vendors do their best to cover variations and similar attacks. But AI is hastening how rapidly attackers can discover new and novel variants. That’s why it is crucial to build defense in depth , to ensure that no specific software failure or exploit will lead to a critical security issue. Cloudflare combines access policies, web application security, and restricted origin connections to protect the authentication service before a new vulnerability is disclosed. Access controls limit who can reach the application server; WAF inspection evaluates web requests for attacks; origin restrictions prevent direct connections from bypassing those defenses. These reduce exposure without waiting for a new exploit signature or replacing the existing desktop platform. The NetScaler exploit Citrix's September 27, 2026 bulletin reported observed exploitation of CVE-2026-88771 and CVE-2026-88772. The first allows unauthenticated command execution on affected appliances, including in their default configuration. The second affects configurations using Datagram Transport Layer Security, or DTLS. Further advisories on October 3 and October 8 addressed additional vulnerabilities in SAML configurations. These exploits allowed attackers to execute arbitrary scripts on target machines and also execute denial of service attacks. CISA's alert and Mandiant's technical investigation cover the vulnerabilities, observed exploitation, and response guidance in more detail. For details of the available web application protection, see Cloudflare's emergency WAF release for CVE-2026-88771 . In a typical Citrix deployment, the user authenticates through NetScaler Gateway, which then uses a secure ticket authority to pass through to the StoreFront, which presents the applications and desktops available to that user. The native-installed Citrix app then uses that information to establish a separate connection using Citrix's Independent Computing Architecture (ICA) protocol. The gateway validates the ticket before proxying the desktop connection. Citrix documents these as distinct stages of the ",
-    "summary": "A serious flaw in Citrix NetScaler gateways let attackers run commands without logging in, and it is being actively exploited. The post urges fast patching, plus extra layers like access limits and firewall rules to guard login pages against future flaws.",
-    "tags": [
-      "cybersecurity",
-      "vulnerabilities",
-      "remote access"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/",
     "company": "AWS",
     "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
@@ -3288,34 +3419,6 @@
     "tags": [
       "ai",
       "jobs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/employment-at-anthropic",
-    "company": "Anthropic",
-    "title": "How employment is changing at Anthropic",
-    "published": "2026-10-16",
-    "excerpt": "How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.",
-    "summary": "Anthropic is looking at how AI has changed work and hiring inside the company. Because it is an early adopter of AI, the company suggests its experience may show how jobs across the economy could shift.",
-    "tags": [
-      "ai and jobs",
-      "hiring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-    "company": "Anthropic",
-    "title": "Claude reveals ECDSA curve origins",
-    "published": "2026-10-16",
-    "excerpt": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
-    "summary": "Anthropic says its Claude AI has helped explain where one widely used encryption standard came from, a question that had puzzled experts for decades. The post is a short teaser, so details of the explanation are not given here.",
-    "tags": [
-      "encryption",
-      "ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4541,21 +4644,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/",
-    "company": "AWS",
-    "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
-    "published": "2026-09-22",
-    "excerpt": "Today, Amazon CloudWatch introduces CloudWatch Omni, a unified observability experience for application and AI workloads that is app-centric, AI-powered, built on open standards, and delivered off-console. CloudWatch Omni is a purpose-built observability, evaluation, and experimentation solution for AI agents. It helps teams design, evaluate, and operate AI agents across any model provider, framework, or runtime, with an eval-driven workflow, support for the tools you already use, and observability delivered where you work: directly in your IDE and through a standalone web experience, separate from the AWS Management Console. Organizations deploying agentic AI systems face observability challenges that traditional monitoring can’t address. Agent behavior is non-deterministic: a prompt change can degrade response quality even when standard metrics show no errors. Teams spend hours manually reviewing logs across multiple systems, unable to pinpoint what changed or why. Existing tools force teams to choose between siloed generative AI monitoring or fragmented solutions requiring constant context-switching between their coding environment and browser-based dashboards. CloudWatch Omni captures every trace and includes built-in evaluators for correctness, coherence, retrieval quality, and tool selection, among others. You can compare prompt versions side by side in the playground, build test datasets from production traffic, run experiments across different configurations, and detect regressions automatically. Two surfaces for development and operations CloudWatch Omni delivers observability through two complementary surfaces. Developers get a native extension inside VS Code and Kiro (the currently supported IDEs), where traces appear as you run your agent with a playground and evaluators a click away. Operators get a standalone web experience, separate from the AWS Management Console to monitor the fleet, accessible through SSO with no AWS console needed. Both share the same data: the trace a developer debugs is the trace an operator investigates. The Cloud Login feature connects your local IDE environment to your AWS account, enabling you to send telemetry data to Amazon CloudWatch for persistent storage, share traces with your team, and access production dashboards. This connection is optional. You can use CloudWatch Omni entirely locally during development, then connect to the cloud when you are ready to monitor agents in production. Getting started CloudWatch Omni offers two ways to get started: through the IDE extension (for VS Code and Kiro) or directly through the cloud experience, where you can start sending telemetry data to CloudWatch without installing any IDE extension. In this walkthrough, I install the extension, create an agent, run it, and explore the traces and evaluation tools from my IDE. After installing the CloudWatch Omni extension from the VS Code Marketplace , the CloudWatch Omni icon appears in the Activity Bar. From the welcome screen, I selected Get started with Sample Project to load a pre-configured agent with sample trace data or use shortcut to Command Palette using Command + Shift + P (on macOS) or Ctrl + Shift + P (on Windows/Linux) and select Omni: Create a new Project Figure 1. CloudWatch Omni welcome screen & create new project in VS Code The sample project comes with an agent implementation and example datasets. Part of the getting-started experience is adding OpenTelemetry instrumentation, and CloudWatch Omni guides you through each step. You can also create a new agent from scratch. CloudWatch Omni walks you through the process using an interactive chat where you define the agent’s purpose, select a model provider, and configure tools. All data is stored locally by default. You can optionally connect to AWS to send data to Amazon CloudWatch. After verifying the configuration, I started the local dev server and sent a question to the agent. What makes this different from a typical chatbot inter",
-    "summary": "AWS launched CloudWatch Omni, a tool that tracks and tests AI agents, so teams can see how an agent behaves and spot when a change makes it worse. It works inside VS Code and Kiro for developers and in a separate web view for operators.",
-    "tags": [
-      "ai agents",
-      "monitoring",
-      "aws"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://shopify.engineering/helix",
     "company": "Shopify",
     "title": "Helix: The internal tool powering our Shopify app's native migration",
@@ -4837,21 +4925,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://research.google/blog/transfer-learning-for-genomic-prediction-in-underrepresented-populations/",
-    "company": "Google Research",
-    "title": "Transfer learning for genomic prediction in underrepresented populations",
-    "published": "2026-09-03",
-    "excerpt": "General Science",
-    "summary": "Google Research describes a way to use transfer learning to help predict genetic traits in groups that are underrepresented in existing genomic data. The article's text is only a short teaser, so details beyond the title are not available.",
-    "tags": [
-      "genomics",
-      "machine learning",
-      "health research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/",
     "company": "Spotify",
     "title": "Portal by Spotify cut my Claude Code token usage by 90%",
@@ -5099,21 +5172,6 @@
     "tags": [
       "discord",
       "app updates"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
-    "company": "GitHub",
-    "title": "Using the GitHub Copilot SDK for Java",
-    "published": "2026-08-10",
-    "excerpt": "Java developers no longer have to rely on Java framework-specific approaches to drive AI from their enterprise apps. While it is true that Langchain4j empowered developers by disintermediating specific AI vendors, you still had a dependency on Langchain4j. And with Spring AI, well, of course you had a dependency on design choices made by Spring, if not on Spring itself. Now, GitHub Copilot SDK for Java is the first truly framework agnostic way to drive AI from Java. And with its BYOK support, GitHub Copilot SDK for Java is also AI vendor neutral. 💡 Even though it’s called GitHub Copilot SDK, you can use it with any direct model provider, such as OpenAI, Azure, Anthropic, or OpenAI-compatible endpoints, by passing a provider / ProviderConfig with your own baseUrl + apiKey (or bearer token). No Copilot subscription required. The GitHub Copilot SDK for Java is a client library that empowers your server-side Java code to create Copilot agent sessions, register tools, send prompts, and receive structured responses—all programmatically. It works in server environments, including Jakarta EE and Spring. If you’ve been building enterprise Java for any length of time, this SDK will feel like home: CompletableFuture , annotations, lambdas, virtual threads, it’s all here. This post shows you how to use the SDK, walks through a complete Jakarta EE 11 sample application, and leaves you with concrete next steps to try it yourself. I chose Jakarta EE 11 for my demo because I was the lead release coordinator for that release. I believe in open standards as the best way to empower developers. For more on Jakarta EE 11 see this InfoQ article . This sample app is an agent harness using Jakarta EE 11. But, of course, developers can build their own agent harness using the well-known Java frameworks and libraries of their choice. Clone the sample app and try it yourself > Where to get it The SDK is available as a Maven dependency: <dependency> <groupId>com.github</groupId> <artifactId>copilot-sdk-java</artifactId> <version>1.0.7-preview.1</version> </dependency> Prerequisites: JDK 17 or 25 (25 recommended — unlocks virtual threads and other modern features) Maven 3.9+ A GitHub account with an active Copilot subscription The Copilot CLI installed locally at version 1.0.71 or later. Walk through the sample app The best way to see the SDK in action is to run this sample application . Get the code git clone https://github.com/microsoft/Build26-BRK206-your-agent-anywhere-multiclient-multidevice-with-github-copilot-sdk.git cd Build26-BRK206-your-agent-anywhere-multiclient-multidevice-with-github-copilot-sdk/src/java-agent-orchestrator mvn clean package liberty:run # Open http://localhost:9080/index.xhtml The Java demo is built on: Concern Technology Runtime Open Liberty 26.0.0.5 Platform Jakarta EE 11 (Faces 4.1, CDI 4.1, WebSocket 2.2, Data 1.0, Persistence 3.2) UI PrimeFaces 15.0.16 AI orchestration Copilot SDK for Java 1.0.7-preview.1 Database H2 in-memory (10 seed property listings) What the app does The application is a real-estate lead-management agent pipeline. A customer submits an enquiry (“I’m looking for a 3-bedroom house in London under £800,000”), and the system spins up an isolated Copilot Agent on a virtual thread to process it through a pipeline: The architecture uses Jakarta WebSocket to push real-time status updates from the server to the browser, so you can watch agents progress through phases as the model calls tools: Submit multiple inquiries simultaneously to see concurrent virtual-thread agents in action. Each one processes independently with its own Copilot session. SDK features in action Let’s walk through the key SDK features as they appear in the sample code. Defining tools with @CopilotTool This is the headline API. If you’ve ever written a @GET endpoint in JAX-RS or an @MessageDriven bean, this will feel instantly familiar: @CopilotTool(value = \"Sets the current phase of the agent. Use this to report progress.\", name = \"set_cu",
-    "summary": "GitHub released a Java library that lets server-side Java apps run AI agents that can use tools. It works with any AI provider, not just GitHub Copilot, and does not need a Copilot subscription. A sample Jakarta EE app shows how to use it.",
-    "tags": [
-      "ai agents",
-      "java",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
