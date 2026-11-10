@@ -1,5 +1,376 @@
 [
   {
+    "url": "https://www.databricks.com/blog/unity-catalog-metric-views-now-power-bi-one-unified-governed-semantic-layer-all-your-reporting",
+    "company": "Databricks",
+    "title": "Unity Catalog Metric Views, now in Power BI: one unified, governed semantic layer for all your reporting and AI",
+    "published": "2026-11-10",
+    "excerpt": "Organizations want a single, trusted definition of their business semantics. Revenue,...",
+    "summary": "Databricks now lets Power BI users work with Unity Catalog metric views, so business terms like revenue are defined once and shared across reports and AI tools. The goal is one trusted, controlled set of definitions instead of each tool calculating numbers its own way.",
+    "tags": [
+      "data governance",
+      "business intelligence",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/news/roadshow-launch",
+    "company": "Anthropic",
+    "title": "Anthropic launches roadshow for proposed initial public offering",
+    "published": "2026-11-10",
+    "excerpt": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+    "summary": "Anthropic has started its roadshow, a series of meetings with investors, for a planned stock market debut. The company is offering its Class A common stock to the public for the first time.",
+    "tags": [
+      "ipo",
+      "anthropic",
+      "stock market"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/speed-insights-and-web-analytics-now-support-custom-environments",
+    "company": "Vercel",
+    "title": "Speed Insights and Web Analytics now support custom environments",
+    "published": "2026-11-10",
+    "excerpt": "Speed Insights and Web Analytics now fully support custom environments . Previously, data captured on deployments to a custom environment was attributed to the Preview environment. That data is now attributed to the custom environment it came from, so you can track performance and traffic for staging, QA, or canary environments separately from Production and Preview. You can view this data in several places: Dashboard: use the Environment dropdown in Speed Insights and Web Analytics to pick a custom environment CLI: query it with the vc metrics command Query builder: filter and break down by environment Aggregation API: query it programmatically (Web Analytics only) This change only affects how data is attributed. No new data points are collected, and no configuration changes are needed. Custom environments are available on Pro and Enterprise plans. Learn more in the environments documentation . Read more",
+    "summary": "Vercel's performance and traffic tools now show data from custom environments, like staging or QA, separately. Before, that data was lumped in with Preview; now you can view each custom environment on its own.",
+    "tags": [
+      "web performance",
+      "analytics",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Gemini 4 Carbon now available on AI Gateway",
+    "published": "2026-11-10",
+    "excerpt": "Gemini 4 Carbon from Google is now available on AI Gateway. It is available at 50% off through November 30, 2026: Gemini 4 Carbon is built for complex software engineering, sustained agentic work, and cybersecurity defense. It has a 1M-token context window for working with large codebases and long inputs. On engineering tasks, Carbon carries demanding work through multiple stages, with improvements in coding, full-stack web development, and scientific reasoning. Its cybersecurity capabilities span finding vulnerabilities, validating their risk, and developing patches. Google also reports more reliable execution of multi-step plans, fewer unsupported claims, and better collaboration when requirements are ambiguous, helping agents follow through while respecting project constraints. Use google/gemini-4-carbon as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select google/gemini-4-carbon in the agent. See the coding agents guide for details. Try Gemini 4 Carbon in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Google's Gemini 4 Carbon AI model is now available through Vercel's AI Gateway, a service for calling AI models, at half price until November 30, 2026. It is aimed at complex software engineering, long multi-step tasks, and finding and fixing security weaknesses.",
+    "tags": [
+      "ai models",
+      "software engineering",
+      "cybersecurity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://shopify.engineering/shopify-app-rebuild",
+    "company": "Shopify",
+    "title": "How we rebuilt the Shopify app in 12 weeks",
+    "published": "2026-11-10",
+    "excerpt": "What changed when agents started writing our mobile code, and how we redesigned our architecture, tooling, and workflow around validation.",
+    "summary": "Shopify rebuilt its mobile app in 12 weeks after AI agents began writing much of its code. The team also redesigned its setup and workflow around checking that the code works.",
+    "tags": [
+      "mobile apps",
+      "ai coding",
+      "software engineering"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-businesses-chatgpt",
+    "company": "OpenAI",
+    "title": "Introducing Businesses in ChatGPT",
+    "published": "2026-11-10",
+    "excerpt": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+    "summary": "OpenAI has launched Businesses in ChatGPT, a way for companies to manage their business information inside ChatGPT. Businesses can also see how they show up there and turn customer interest into action.",
+    "tags": [
+      "chatgpt",
+      "business tools",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+    "company": "OpenAI",
+    "title": "Helping caregivers use AI in everyday life",
+    "published": "2026-11-10",
+    "excerpt": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+    "summary": "OpenAI is offering free, hands-on ChatGPT workshops for caregivers in five U.S. cities. The goal is to help them learn practical ways to use AI in their everyday lives.",
+    "tags": [
+      "ai tools",
+      "caregiving",
+      "free workshops"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+    "company": "OpenAI",
+    "title": "Closing the AI guidance gap in education",
+    "published": "2026-11-10",
+    "excerpt": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+    "summary": "OpenAI shared new research and lessons from its education work in Europe, the Middle East, and Africa. The focus is helping teachers, building AI skills, and supporting students who learn on their own.",
+    "tags": [
+      "ai in education",
+      "teachers",
+      "ai literacy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/ai-effect-on-freelance-work",
+    "company": "OpenAI",
+    "title": "Work at the Frontier: AI’s effect on freelance work",
+    "published": "2026-11-10",
+    "excerpt": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+    "summary": "OpenAI and Upwork studied how AI is changing freelance work. They found that demand is shifting, freelancers are combining new skills, and AI-related projects are getting bigger budgets and more hours.",
+    "tags": [
+      "ai",
+      "freelancing",
+      "jobs"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://medium.com/airbnb-engineering/skipper-airbnbs-embedded-workflow-engine-is-now-open-source-78dd354f472b?source=rss----53c7c27702d5---4",
+    "company": "Airbnb",
+    "title": "Skipper, Airbnb’s embedded workflow engine, is now open source",
+    "published": "2026-11-10",
+    "excerpt": "Durable workflows, running inside your service with no separate orchestration cluster. By : Ricardo Gamba , Andriy Sergiyenko Skipper , an embedded workflow engine used in production by teams all across Airbnb, is now available to the open source community. Skipper lets you express multi-step business processes as Java or Kotlin classes, persist their progress, and recover from crashes and transient failures. It runs inside your service and reuses its existing dependencies. Skipper is available under the Apache 2.0 license. The code is on GitHub , alongside documentation and runnable examples. Our earlier engineering deep dive explains how we built it. Here, we’ll focus on the architecture of Skipper and where it fits in the ecosystem of options for development around workflows. Why we developed Skipper A process that spans multiple services, waits for human input, or involves a mix of synchronous and asynchronous steps, needs persistent storage for recording its progress. When a server restarts, it must know what has already happened, what (if anything) should be retried, and what is still awaiting processing. Implementing this separately for each process would mean repeatedly solving the same problems around partial failure, timers, and recovery, with associated testing and debugging; using a proven library is likely to improve quality and reduce toil. Existing workflow engines meet these challenges. A common approach relies on a central orchestration service, whether self-hosted or fully managed, to handle durable execution. This setup provides a unified platform for multiple teams, streamlining central operations and monitoring. For Airbnb, we wanted a new approach, one in which each service owned its workflows within its existing deployment and database. For critical services, that meant avoiding an additional shared orchestration dependency. It also let workflow execution stay in-process, without a separate coordinator between steps. That requirement shaped Skipper’s architecture, as shown in the figure. With Skipper, the service’s replicas also run the workflow runtime and scheduler. In a typical production deployment, they share a database that holds workflow state and scheduled work. The scheduler polls for runnable tasks and uses leases to coordinate ownership. If a replica fails, another can recover the work; takeover timing depends on scheduling and lease settings. This reduces the number of separately deployed systems. It also puts responsibility for workflow execution, database capacity, and recovery with the service’s team. The duty of assuming those responsibilities is part of the tradeoff. We believe that Skipper will appeal to teams that have a robust operational environment and need a workflow engine that adapts to their existing ways of working. A workflow is a class Skipper has two main abstractions. A workflow describes the orchestration: decisions, ordering, and waits. Actions perform work with potential side effects, such as calling an API or updating a database. Skipper records action results so they can be reused during recovery. Consider a hypothetical listing-publication process. Some listings require a human review before publication; afterward, the host receives a notification: class PublishListing : Workflow() { private val listing = actions<ListingActions>() @StateField var reviewApproved: Boolean? = null @WorkflowMethod suspend fun publish(request: PublicationRequest): Boolean { if (request.requiresReview) { val reviewed = waitUntil( { reviewApproved != null }, Duration.ofDays(1) ) if (!reviewed || reviewApproved != true) return false } listing.publish(request.listingId, request.requestId) listing.notifyHost(request.listingId, request.requestId) return true } @SignalMethod fun recordReview(approved: Boolean) { reviewApproved = approved } } waitUntil hibernates the workflow without holding a thread. The recordReview signal lets an API handler or queue consumer supply the review decision. A redep",
+    "summary": "Airbnb has released Skipper, its tool for running multi-step business processes inside a service, as open source under Apache 2.0. It saves progress so work can resume after crashes, without needing a separate central coordination system.",
+    "tags": [
+      "open source",
+      "software tools",
+      "airbnb"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+    "company": "Hugging Face",
+    "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+    "published": "2026-11-10",
+    "excerpt": "",
+    "summary": "Hugging Face now lets you pay for its Hub services through your Google Cloud account. This means teams can bill Hub usage on the same bill they already get from Google.",
+    "tags": [
+      "cloud billing",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/decision",
+    "company": "Hugging Face",
+    "title": "Decision Models in Hugging Face",
+    "published": "2026-11-10",
+    "excerpt": "",
+    "summary": "Hugging Face has published a post titled \"Decision Models in Hugging Face,\" but the article text is missing, so details are unclear. The title suggests it covers models used to help make decisions.",
+    "tags": [
+      "machine learning",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/",
+    "company": "Meta Engineering",
+    "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+    "published": "2026-11-10",
+    "excerpt": "Triton Low-Level Extensions (TLX) , is an extension to Triton that helps engineers optimize GPU performance while preserving Triton’s productive programming model. TLX introduces explicit warp-group and cluster-level orchestration, letting developers adopt new hardware capabilities without sacrificing velocity. TLX has demonstrated performance improvements in RecSys training, RecSys inference, and large-scale LLM pretraining. Modern GPU architectures increasingly rely on execution-oriented features such as warp specialization, asynchronous memory movement, tensor memory, and cluster-level execution to optimize their performance. But these same features also expose a growing gap between low-level programming models for control and high-level programming models for productivity. To bridge this gap, we built Triton Low-Level Extensions (TLX), an extension that gives engineers explicit control over GPU execution while preserving Triton’s productive programming model. Today, TLX powers production workloads across Meta, from AI training to large-scale LLM pretraining, enabling engineers to adopt new hardware capabilities quickly without sacrificing developer velocity. Across NVIDIA and AMD GPUs, TLX is pushing the frontier of GPU performance — combining state-of-the-art kernels with explicit execution orchestration and model-aware fusion to deliver end-to-end improvements beyond what standalone libraries can achieve. From AI Models to GPU Kernels To understand where TLX fits, it helps to trace the path from an AI model to the GPU instructions that ultimately execute it. At Meta, machine learning (ML) workloads are built on a common software stack centered around PyTorch. Model code is transformed through graph capture, optimization, compilation, and lowering before eventually becoming GPU kernels running across large accelerator fleets. Over the past several years, Triton has evolved from an experimental kernel language into a foundational component of this stack. A significant share of production GPU kernels — both compiler-generated and hand-optimized — are now implemented in Triton. Improvements at this layer can therefore propagate broadly across training and inference workloads, making kernel performance an increasingly important lever for improving end-to-end system efficiency. Figure 1: Normalized kernel count growth at Meta over a 10-month period (start = 1.0 in month 1). Over this period, Triton kernel count grew ~3.8x compared with ~2.0x for CUDA, reflecting Triton’s rapidly expanding role in Meta’s GPU software stack. This shift has also changed who writes kernels. Kernel optimization is no longer the exclusive domain of GPU specialists. ML engineers routinely profile workloads, identify bottlenecks, and optimize the hottest kernels through autotuning, fusion, memory-layout improvements, or algorithmic restructuring. Triton’s productivity allows many of these iterations to happen in hours rather than days, enabling engineers to stay close to the model-development workflow. As a result, GPU kernel development has increasingly become part of the standard optimization toolkit for ML engineers. Triton already provides a productive foundation for many memory-bound workloads through fusion and compiler-managed memory-access optimizations. Building on these strengths, TLX addresses a complementary challenge: coordinating execution groups, asynchronous data movement, and shared resources on modern GPUs. The Problem: When Hardware Evolves Faster Than Programming Models While Triton dramatically improved developer productivity, modern GPU architectures have evolved in ways that place increasing emphasis on execution orchestration rather than computation alone. NVIDIA’s Hopper introduced warp specialization and the Tensor Memory Accelerator (TMA). NVIDIA’s Blackwell GPU expanded this trend further with Tensor Memory (TMEM), cluster-level execution, paired-CTA execution, and increasingly asynchronous execution mechanisms. These capab",
+    "summary": "Meta built TLX, an add-on to the Triton GPU programming tool that lets engineers directly control how GPU work is organized while keeping Triton's easier style. Meta says TLX is already speeding up its AI training and large language model work, on both NVIDIA and AMD GPUs.",
+    "tags": [
+      "gpu programming",
+      "machine learning",
+      "meta"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/",
+    "company": "Meta Engineering",
+    "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+    "published": "2026-11-10",
+    "excerpt": "Your algorithm is a suite of AI-powered tools that makes Facebook recommendations more transparent and steerable, with a single editable view of the interests that shape Feed and Reels. We’re sharing how Your algorithm turns people’s natural language preferences into responsive recommendations, and how LLMs are tailored to specific tasks within the system. Traditionally, the recommendation systems behind what people see on Facebook have learned from implicit engagement signals. While this allows them to scale well, it also means they adapt slowly and capture little nuance. But what if people could interact directly with the algorithms that rank and recommend what they see to instantly make their recommendations more personal and customized? Your algorithm is an end-to-end system that addresses the limitations of adaptability and nuance in recommendations. This new suite of AI-powered tools lets people on Facebook state, in their own words, what they want to see in their Feed and Reels. By tasking a collection of large language models (LLMs) with understanding, storing, and tracking people’s stated preferences along with their user behavior, we’ve created a recommendation system that responds to people’s preferences and adjusts the content they see. An Overview of the Your Algorithm System Architecture The Your algorithm page has three parts (Figure 1): At the top, a one-sentence Lately Summary that describes recent viewing activity. Below it are two lists: “Interested In,” prefilled with interests inferred from past activity. “Not Interested In,” capturing topics the user has explicitly marked as not interested, or has X-ed out or hidden on Facebook. People can use the interface to add interests (using natural language), move them between lists, or remove them. Every change applies responsively to both Feed and Reels, and will further update as the person gives feedback on individual posts. Figure 1: The Your algorithm page. Your algorithm system has several components that cover the full lifecycle of a preference, from inferring and validating it to applying it in ranking and delivery (Figure 2). Profile generation builds the initial interest profile. Preference management validates each change, enriches it with the signals ranking needs, and saves it to a single store that both Feed and Reels read, ensuring that the preferences shown on the page are the same ones used in ranking. Ranking applies the “Interested In” and “Not Interested In” lists throughout the funnel. Delivery optimization helps each change take effect more responsively. Figure 2: An overview of the Your algorithm system. From Preferences Into Recommendations Turning a stated preference into recommendations poses three distinct problems. An interest added to Interested In needs to deliver relevant content quickly, without crowding out everything else. An interest added to Not Interested In needs to hold reliably, even though topics are fuzzy and any single filter misses some matches. And both need to take effect responsively, even when the next recommendations were cached before the change. Your algorithm addresses each problem with dedicated logic across the recommendation funnel, from retrieval through reranking to the device (Figure 3). Interested In: Surfacing New Interests Without Flooding Each interest in Interested In drives four dedicated retrieval sources. Two find matching content directly (through search and through clusters of closely related topics), and two extend reach through the content graph and item-to-item similarity. Retrieving explicitly for each interest ensures enough relevant candidates for downstream ranking. This is important because, without it, content about a brand-new interest might never enter the ranking pipeline at all. Candidates that pass a relevance check, which compares the meaning of the interest with each candidate, receive a promotion in late-stage ranking so they can compete alongside other content. A control layer in",
+    "summary": "Facebook is testing a new \"Your algorithm\" page where people can type in topics they want more or less of in their Feed and Reels. Changes apply quickly, using AI tools that understand the preferences in plain words, which makes recommendations more personal than before.",
+    "tags": [
+      "facebook",
+      "recommendations",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
+    "company": "Google Developers",
+    "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
+    "published": "2026-11-10",
+    "excerpt": "Google AI Edge Gallery now supports on-device, offline Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) capabilities for building developer-friendly voice applications. Developers can leverage ML Kit for optimized Android performance, or use MediaPipe Tasks and LiteRT for cross-platform open-weight model integration. This local pipeline seamlessly pairs lightweight speech models with on-device small language models like Gemini Nano and Gemma 4 to enable real-time streaming transcription and low-latency synthesis.",
+    "summary": "Google's AI Edge Gallery now lets apps turn speech into text and text into speech entirely on the phone, without internet. This means faster voice features that still work offline and keep audio on the device.",
+    "tags": [
+      "voice apps",
+      "on-device ai",
+      "android"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
+    "company": "Google Developers",
+    "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
+    "published": "2026-11-10",
+    "excerpt": "This post walks through the Agents CLI evaluation loop for systematically improving agent performance through continuous testing and grading. It demonstrates how to catch prompt regressions, evaluate model backend swaps using side-by-side trace comparisons, and automate evaluation passes. Developers will also learn how to integrate nightly scheduled runs with threshold-based alerting to track quality over time.",
+    "summary": "Google's developer blog shows how to test AI agents repeatedly to keep them working well. It covers catching prompts that got worse, comparing model swaps side by side, and running automatic nightly checks that alert the team when quality drops.",
+    "tags": [
+      "ai agents",
+      "software testing",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
+    "company": "Google Developers",
+    "title": "Architecting Governed, Self-Evolving AI Agents on Google Cloud",
+    "published": "2026-11-10",
+    "excerpt": "Learn how Project Chrysalis combines Google Cloud's Gemini Enterprise Agent Platform, Agent Development Kit (ADK), BigQuery, and a four-gate defense-in-depth security stack (Model Armor, Cloud KMS, Binary Authorization, and OPA) to build governed, self-evolving AI agents that remediate live production outages in 1.8 seconds.",
+    "summary": "Google Developers describes Project Chrysalis, a system of AI agents that fixes live production outages automatically. It reports the agents can remediate an outage in about 1.8 seconds, with several security checks built in to keep them under control.",
+    "tags": [
+      "ai agents",
+      "cloud security",
+      "outages"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/",
+    "company": "Google Developers",
+    "title": "Announcing New vLLM and SGLang Inference Engines on TPU",
+    "published": "2026-11-10",
+    "excerpt": "This post announces native PyTorch backends for vLLM and SGLang powered by TorchTPU, enabling developers to run and optimize serving workloads using familiar PyTorch tools. Built in collaboration with open-source project maintainers, these engines include optimized TPU kernel implementations, production-ready features like KV cache management with TPU Sync, and disaggregated serving. Public benchmarks demonstrate state-of-the-art performance and industry-leading cost efficiency on Ironwood TPU across long-context and agentic workloads.",
+    "summary": "Google announced new versions of two popular tools, vLLM and SGLang, that let developers run AI models on Google's TPU chips using PyTorch, a common AI toolkit. Google says tests show strong speed and lower cost on its newest TPU, Ironwood.",
+    "tags": [
+      "ai inference",
+      "google tpu",
+      "pytorch"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+    "company": "NVIDIA",
+    "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
+    "published": "2026-11-10",
+    "excerpt": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference... NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference replicas—speeding startup and recovery. When inference demand spikes or a replica fails, available GPUs don’t translate immediately into serving capacity. Initializing an LLM workload—a process known as a cold start—can take minutes… Source",
+    "summary": "NVIDIA released Snapshot, a free open-source tool that saves a set-up GPU workload so new copies can start and recover quickly. Starting an AI model from scratch can take minutes, and this aims to cut that wait when demand spikes or a server fails.",
+    "tags": [
+      "gpu computing",
+      "ai inference",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+    "company": "NVIDIA",
+    "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+    "published": "2026-11-10",
+    "excerpt": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide... Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide a foundation for developing these capabilities, but moving them into a vehicle requires additional work to reduce model size, preserve useful reasoning, and validate performance on the target hardware. NVIDIA Alpamayo 2 Edge addresses… Source",
+    "summary": "NVIDIA describes how it is making large self-driving car reasoning models small and fast enough to run inside a vehicle. The work involves shrinking the models while keeping their reasoning useful, then testing them on the car's hardware.",
+    "tags": [
+      "self-driving cars",
+      "ai models",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+    "company": "NVIDIA",
+    "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+    "published": "2026-11-10",
+    "excerpt": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and... NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR). Both are new projects available in public preview. AI Factory customers often want to consume GPU capacity through the Kubernetes APIs, tools, and ecosystem they already use, with the factory operating… Source",
+    "summary": "NVIDIA released two new open source projects, NVIDIA Kubernetes Engine and NVIDIA Kubernetes Recipes, in public preview. They help companies run GPU computing power using the Kubernetes tools they already know.",
+    "tags": [
+      "cloud computing",
+      "gpu",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
+    "company": "NVIDIA",
+    "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
+    "published": "2026-11-10",
+    "excerpt": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per... AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per session holds memory for sessions that aren’t doing anything, and deleting Pods between turns pays a multi-second cold start every time and loses the agent’s state. RL post-training hits the same wall. Agent Substrate, now donated to the… Source",
+    "summary": "AI agents sit idle much of the time, but Kubernetes, the system that runs software in containers, wasn't built for that. NVIDIA is releasing Agent Substrate, a new project for running many idle agents efficiently, and has donated it to an open-source group.",
+    "tags": [
+      "ai agents",
+      "kubernetes",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "company": "Google DeepMind",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "published": "2026-11-10",
+    "excerpt": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "summary": "Google DeepMind's AlphaProof Code AI agents wrote three million lines of formal proofs to check the core encryption behind the Signal messaging app. The work aims to show that complex software can be verified in depth.",
+    "tags": [
+      "software security",
+      "ai",
+      "encryption"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "company": "Google DeepMind",
+    "title": "Gemini 4 Carbon is now available",
+    "published": "2026-11-10",
+    "excerpt": "",
+    "summary": "Google DeepMind announced that Gemini 4 Carbon is now available. The post itself gives no further details, so the specifics of what it can do are unknown.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/6-easy-ways-to-use-the-figma-agent-right-now/",
+    "company": "Figma",
+    "title": "6 easy ways to use the Figma agent right now",
+    "published": "2026-11-09",
+    "excerpt": "From making designs more expressive and automating busywork, to exploring more possibilities on the canvas, here are six ways to push designers further with the Figma agent.",
+    "summary": "Figma shares six simple ways designers can use its built-in AI agent today. The tips cover making designs more expressive, handling routine work automatically, and trying out more ideas on the canvas.",
+    "tags": [
+      "design tools",
+      "ai assistants"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/turn-buying-signals-pipeline-sendoso-gifts-genie-one",
     "company": "Databricks",
     "title": "Turn buying signals into pipeline with Sendoso gifts in Genie One",
@@ -424,6 +795,20 @@
       "robotics",
       "nvidia",
       "robot arms"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "company": "Google DeepMind",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "published": "2026-11-09",
+    "excerpt": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "summary": "Google DeepMind has released Gemini Robotics 2.5, an AI model that helps robots see, understand instructions, and act. It is described as making robots more skillful with their hands, more reliable, and safer.",
+    "tags": [
+      "robotics",
+      "ai models"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1329,35 +1714,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
-    "published": "2026-11-04",
-    "excerpt": "Kimi K3.1 Pro and its higher-speed version, Kimi K3.1 Pro Highspeed , are now available on AI Gateway from more Zero Data Retention (ZDR) providers. Until today, Moonshot AI was the only provider serving either model. K3.1 Pro improves on earlier Kimi models in coding, 3D modeling, and financial analysis, and can carry long agent runs from a small fix to a full project. Both models have a 1M-token context window and accept image input, and Highspeed suits interactive work like coding agents, where response time matters. Call either model through the AI SDK , the Chat Completions , Responses , and Anthropic Messages APIs, or a coding agent connected to AI Gateway. For Highspeed, use moonshotai/kimi-k3.1-pro-highspeed in place of the model name below. Use moonshotai/kimi-k3.1-pro as the model name: Setting zeroDataRetention in the gateway provider options requires ZDR for that request. To require it for every request your team sends, including requests from coding agents, turn on ZDR in the AI Gateway dashboard settings . With either one on, AI Gateway routes only to providers with a ZDR agreement. If none is available for the model, the request fails instead of going to a provider without one. To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select moonshotai/kimi-k3.1-pro or moonshotai/kimi-k3.1-pro-highspeed in the agent. See the coding agents guide for details. Try Kimi K3.1 Pro in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Kimi K3.1 Pro and its faster Highspeed version are now available on Vercel's AI Gateway from more providers that promise not to keep your data. Before this, only Moonshot AI served these models there.",
-    "tags": [
-      "ai models",
-      "data privacy"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
-    "company": "Vercel",
-    "title": "Workflow SDK adds idempotent starts",
-    "published": "2026-11-04",
-    "excerpt": "The Workflow SDK 's start() function can now admit a run and claim a hook in one atomic step. Duplicate workflow starts fail safely. The atomic start replaces the previous getHookByToken() -then- start() pattern, whose gap between the lookup and the start left a documented duplicate-start race. Subscribe to messages inside the run The claimed Hook exists from the moment the run is admitted, so resumeHook works even before the run begins executing, and early payloads are buffered and delivered in order. Inside the workflow, createHook({ token }) with the same token binds to the already-claimed hook: guaranteed, registering nothing new, adding no step, and resolving getConflict() to null . Idempotency with no extra code The token is the idempotency key, and it comes from your own domain: an order ID, an invoice ID, an import ID, or a request ID. The token alone guarantees idempotency. Exactly one run owns it, and a duplicate start() throws HookConflictError carrying the owner's conflictingRunId and never becomes a run. The workflow doesn't have to open the hook at all, and if it never does, the token was only an idempotency key and the run completes normally. Setting experimental_minRetention keeps the token unavailable after the run ends, counted from start() , so late duplicates are still refused. Upgrade to workflow 5.3.1 and read the idempotency documentation to get started. Read more",
-    "summary": "Vercel's Workflow SDK now lets a job start and claim its ID in one safe step, so duplicate starts are refused instead of running twice. This fixes a known race where two near-simultaneous starts could both succeed.",
-    "tags": [
-      "software development",
-      "workflows",
-      "reliability"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
     "company": "Google Research",
     "title": "Agile Deliberation: How AI helps humans define the gray areas",
@@ -1413,36 +1769,6 @@
       "ai",
       "customer service",
       "enterprise software"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-    "company": "OpenAI",
-    "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-    "published": "2026-11-04",
-    "excerpt": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
-    "summary": "OpenAI's Daybreak Red, which offers its GPT-5.6 Cyber model, is now available to approved customers in AWS GovCloud (US-East) through Amazon Bedrock. It is meant for authorized cybersecurity work.",
-    "tags": [
-      "ai",
-      "cybersecurity",
-      "cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
-    "company": "OpenAI",
-    "title": "A thousand fewer paths to root",
-    "published": "2026-11-04",
-    "excerpt": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
-    "summary": "OpenAI built an automated system that found, checked, and wrote fixes for 948 Linux kernel bugs that let attackers gain higher control of a computer. This matters because it shows AI can help clean up serious security flaws in widely used operating system software.",
-    "tags": [
-      "security",
-      "linux",
-      "ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1606,36 +1932,6 @@
       "ai agents",
       "monitoring",
       "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-    "company": "OpenAI",
-    "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-    "published": "2026-11-03",
-    "excerpt": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-    "summary": "OpenAI has named Jill Hazelbaker as its new Chief Corporate Affairs Officer. She will lead the company's communications and public image worldwide.",
-    "tags": [
-      "openai",
-      "company news",
-      "leadership"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/heimstaden",
-    "company": "OpenAI",
-    "title": "Heimstaden is changing residential real estate management with AI",
-    "published": "2026-11-03",
-    "excerpt": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
-    "summary": "Heimstaden, a European property company, is using OpenAI's ChatGPT Enterprise and Codex tools to change how it manages residential buildings. The company says the tools help it cut costs and give employees more capability.",
-    "tags": [
-      "ai tools",
-      "real estate",
-      "property management"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2068,21 +2364,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/databricks-and-sap-unleash-end-end-data-ai-capabilities-level-enterprise-ai-transformation",
-    "company": "Databricks",
-    "title": "Databricks and SAP unleash end-to-end data & AI capabilities to level up enterprise AI transformation",
-    "published": "2026-10-30",
-    "excerpt": "Today's AI models are more capable than ever. What they still lack is the business...",
-    "summary": "Databricks and SAP announced a partnership to offer data and AI tools together for large companies. The article's teaser says today's AI models lack business context, which the partnership aims to address.",
-    "tags": [
-      "enterprise ai",
-      "data platforms",
-      "partnerships"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
     "company": "Stripe",
     "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
@@ -2181,36 +2462,6 @@
       "gpu computing",
       "data storage",
       "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
-    "company": "NVIDIA",
-    "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-    "published": "2026-10-30",
-    "excerpt": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces... Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces policies, along with optimization and observability tools for reliable execution. For production agents, the challenge lies in making these agents capable and safe to operate with access to real enterprise systems and data. Source",
-    "summary": "NVIDIA introduces NemoClaw, a tool for building AI agents, which are programs that act on their own. It aims to help developers run these agents safely with set rules, plus tools to monitor and improve them, so they can use real company systems and data.",
-    "tags": [
-      "ai agents",
-      "ai safety",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
-    "company": "NVIDIA",
-    "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
-    "published": "2026-10-30",
-    "excerpt": "Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference... Teams building AI applications need a repeatable path from a model configuration to a working inference endpoint. NVIDIA Dynamo is a distributed inference framework that coordinates model serving across GPU workers. Deploying it on Kubernetes is only a first step. A successful model deployment requires more: GPU drivers, resource allocation, scheduling, networking, and monitoring must all work… Source",
-    "summary": "NVIDIA shares how to set up NVIDIA Dynamo, a tool that splits AI model work across many graphics chips, on Kubernetes, a system for running software on groups of computers. Getting it to run takes more than the first install, since drivers, chip assignment, networking, and monitoring must also work.",
-    "tags": [
-      "ai",
-      "cloud computing",
-      "kubernetes"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2355,81 +2606,6 @@
       "software testing",
       "ai tools",
       "bug prevention"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
-    "company": "Google Developers",
-    "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
-    "published": "2026-10-29",
-    "excerpt": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
-    "summary": "Google Play services now runs GPU-based AI model work for apps, about 1.4 times faster, through a new tool called CompiledModel. Using it instead of bundled files makes apps roughly 8 MB smaller and lets the AI engine update automatically on devices.",
-    "tags": [
-      "android",
-      "machine learning",
-      "app performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check/",
-    "company": "Google Developers",
-    "title": "Evaluating AI agents: moving past the vibe check",
-    "published": "2026-10-29",
-    "excerpt": "A practical engineering guide and reference architecture for establishing continuous evaluation pipelines for multi-turn AI agents using Gemini Enterprise Agent Platform, Google ADK, and OpenInference standards.",
-    "summary": "Google Developers published a practical guide for checking AI agents automatically over time, instead of relying on informal manual testing. It shows a setup that uses Google's agent tools and common tracing standards to keep evaluating agents that hold multi-step conversations.",
-    "tags": [
-      "ai agents",
-      "testing",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
-    "company": "Google Developers",
-    "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
-    "published": "2026-10-29",
-    "excerpt": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
-    "summary": "Google shows how to build apps where an AI agent creates the screen layout itself, using the A2UI standard with CopilotKit tools. It works with several popular agent frameworks, including LangChain, AWS Strands, Microsoft agents, and Google ADK.",
-    "tags": [
-      "ai agents",
-      "app development",
-      "user interface"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/",
-    "company": "Google Developers",
-    "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
-    "published": "2026-10-29",
-    "excerpt": "Google AI Edge Model Explorer now supports custom compiler intermediate representations and open-source adapters like TOSA, VGF, and PTE for on-device machine learning. Developers can leverage hierarchical graph visualization, split-pane views, and per-node trace overlays to catch export regressions and verify hardware delegation. These tools enable engineering teams to transparently debug execution graphs and pinpoint cycle-level latency bottlenecks locally.",
-    "summary": "Google's Model Explorer tool can now show the internal step-by-step graphs that custom compilers use for on-device AI models. Developers can use it to see visually where a model's export or hardware setup goes wrong and where it runs slowly.",
-    "tags": [
-      "machine learning",
-      "developer tools",
-      "on-device ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
-    "company": "NVIDIA",
-    "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-    "published": "2026-10-29",
-    "excerpt": "Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These... Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These simulations come with a cost-accuracy trade-off. Quantum-mechanical methods such as density functional theory (DFT) can provide accurate energies and forces, but their computational cost often limits their use for large systems or long… Source",
-    "summary": "NVIDIA describes ways to speed up computer simulations of how atoms and molecules behave. Accurate methods are very slow, so faster tools that still give good results are needed for large systems.",
-    "tags": [
-      "computer simulation",
-      "materials science",
-      "gpu computing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2611,20 +2787,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-    "company": "Hugging Face",
-    "title": "Build specialized multimodal models with LFM3",
-    "published": "2026-10-27",
-    "excerpt": "",
-    "summary": "Hugging Face has announced LFM3, a new family of multimodal models, meaning AI models that work with more than one kind of input such as text and images. The article is only a short teaser, so further details are not available here.",
-    "tags": [
-      "ai models",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://engineering.fb.com/2026/10/27/security/privacylib/",
     "company": "Meta Engineering",
     "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
@@ -2665,21 +2827,6 @@
       "discord",
       "privacy",
       "web search"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
-    "company": "NVIDIA",
-    "title": "NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games",
-    "published": "2026-10-27",
-    "excerpt": "NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX... NVIDIA RTX Spark is a new Windows PC platform for AI development, creation, and gaming in slim laptops and compact desktops. Powered by an NVIDIA Blackwell RTX GPU and NVIDIA Grace CPU, it combines up to 128 GB of unified memory with the full NVIDIA CUDA stack and RTX technologies including ray tracing and DLSS 5. This post covers the following technologies for game developers building on RTX… Source",
-    "summary": "NVIDIA has introduced RTX Spark, a new Windows PC platform for AI work, content creation, and gaming in thin laptops and small desktops. It pairs NVIDIA's graphics chip with its CPU and offers up to 128 GB of shared memory.",
-    "tags": [
-      "gaming hardware",
-      "ai",
-      "laptops"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2887,21 +3034,6 @@
       "software engineering",
       "java",
       "netflix"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-    "company": "Hugging Face",
-    "title": "Does Your Model Run on AWS Trainium? Look It Up",
-    "published": "2026-10-23",
-    "excerpt": "",
-    "summary": "Hugging Face has added a way to check whether a given AI model can run on AWS Trainium, Amazon's custom chip for training AI. The title suggests users can simply look up a model to find out. The article text itself is empty, so details are limited.",
-    "tags": [
-      "ai models",
-      "cloud computing",
-      "amazon aws"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3405,20 +3537,6 @@
       "anthropic",
       "company news",
       "funding"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/expectations-for-the-future",
-    "company": "Anthropic",
-    "title": "Working at the frontier shapes expectations for the future",
-    "published": "2026-10-16",
-    "excerpt": "We’re sharing two reports: the first covers how AI is changing employment inside Anthropic, and the second looks at the gap between how the public and Anthropic employees expect AI to affect work and the economy.",
-    "summary": "Anthropic has shared two reports. One looks at how AI is changing jobs inside the company. The other compares what the public and Anthropic staff expect AI to do to work and the economy.",
-    "tags": [
-      "ai",
-      "jobs"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3993,20 +4111,6 @@
       "cloud computing",
       "aws",
       "web apps"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/4-team-rituals-that-drive-ai-adoption/",
-    "company": "Figma",
-    "title": "4 team rituals that drive AI adoption",
-    "published": "2026-10-10",
-    "excerpt": "Elevating AI’s impact from individual productivity gains to team-wide wins requires meeting people where they are. Here’s how teams at Figma, Sephora, Mercari, and Atlassian are making it easier for people to drive real value with AI.",
-    "summary": "Figma describes four team habits that help groups use AI together, not just alone. Teams at Figma, Sephora, Mercari, and Atlassian share how they make AI tools easier to use for shared work.",
-    "tags": [
-      "ai adoption",
-      "team habits"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4793,20 +4897,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-    "company": "Google DeepMind",
-    "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "published": "2026-09-15",
-    "excerpt": "",
-    "summary": "Google DeepMind has announced Gemini 3.8 Live and a version called Gemini 3.8 Live Extended Thinking. The article text is empty, so details beyond the names are not known.",
-    "tags": [
-      "ai models",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01?source=rss----4c5a5f6279b6---4",
     "company": "Pinterest",
     "title": "Evolving Pinterest’s Embedding Retrieval Platform",
@@ -4910,21 +5000,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-    "company": "Google DeepMind",
-    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-    "published": "2026-09-08",
-    "excerpt": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-    "summary": "Google DeepMind released AlphaGenome Atlas, a map that predicts what happens when any single DNA letter changes, covering about 9 billion possible changes in the human genome. It could help researchers figure out which genetic changes might affect how genes work.",
-    "tags": [
-      "genetics",
-      "ai",
-      "dna"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/",
     "company": "Spotify",
     "title": "Portal by Spotify cut my Claude Code token usage by 90%",
@@ -4935,20 +5010,6 @@
       "ai coding tools",
       "spotify",
       "cost savings"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
-    "company": "Google DeepMind",
-    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-    "published": "2026-09-03",
-    "excerpt": "",
-    "summary": "Google DeepMind has introduced WeatherNext 3, a new AI model for forecasting weather around the world. The company presents it as its most advanced and accurate weather model so far.",
-    "tags": [
-      "weather forecasting",
-      "ai models"
     ],
     "summarized": true,
     "summary_version": 2
@@ -5143,35 +5204,6 @@
       "login",
       "airbnb",
       "user experience"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://discord.com/blog/link-world-of-warcraft-with-discord",
-    "company": "Discord",
-    "title": "Link Discord and WoW to Keep the Guild Chatting Wherever You Are",
-    "published": "2026-08-11",
-    "excerpt": "Gather your guildmates! Link your Discord and Battle.net accounts to unlock synced guild chat across Discord and World of Warcraft.",
-    "summary": "Discord now lets you link your Discord and Battle.net accounts. Once linked, your guild chat syncs between Discord and World of Warcraft, so you can talk with guildmates on either app.",
-    "tags": [
-      "discord",
-      "gaming",
-      "world of warcraft"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://discord.com/blog/discord-update-august-11-2026-changelog",
-    "company": "Discord",
-    "title": "Discord Update: August 11, 2026 Changelog",
-    "published": "2026-08-11",
-    "excerpt": "Here's the Discord Changelog from August 11, 2026, so you can stay informed on what’s new in recent app updates!",
-    "summary": "Discord posted its changelog for August 11, 2026, listing recent app updates. The teaser does not name the specific changes, so details are not available here.",
-    "tags": [
-      "discord",
-      "app updates"
     ],
     "summarized": true,
     "summary_version": 2
