@@ -1,5 +1,375 @@
 [
   {
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "company": "OpenAI",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "published": "2026-11-12",
+    "excerpt": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+    "summary": "OpenAI shares a short conversation with Sam Nickless, CEO of the Australian law firm Gilbert + Tobin, about how the firm is changing its work using AI. The text is only a brief teaser, so the details of his plans are not included.",
+    "tags": [
+      "ai",
+      "law firms",
+      "business"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work",
+    "company": "Databricks",
+    "title": "The new Genie: autonomous AI for complex enterprise work",
+    "published": "2026-11-11",
+    "excerpt": "AI assistants can run analyses and summarize meetings, but employees still manage...",
+    "summary": "Databricks has introduced a new Genie, an AI assistant that can work on complex business tasks on its own. The article is a short teaser, so details are limited, but it aims to go beyond simple tasks like running analyses or summarizing meetings.",
+    "tags": [
+      "ai assistants",
+      "enterprise software"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/genie-one-ai-cowork-home-everyone",
+    "company": "Databricks",
+    "title": "Genie One: The AI cowork home for everyone",
+    "published": "2026-11-11",
+    "excerpt": "In today’s enterprise, work rarely stays in one application. A single task can involve...",
+    "summary": "Databricks has introduced Genie One, an AI assistant meant to help everyday workers with tasks that span many apps. The article is only a short teaser, so details beyond that are unclear.",
+    "tags": [
+      "ai assistants",
+      "enterprise software"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/genie-genie-ontology-delivers-16-accuracy-less-half-tokens",
+    "company": "Databricks",
+    "title": "Genie with Genie Ontology Delivers 1.6× the Accuracy with Less than Half the Tokens",
+    "published": "2026-11-11",
+    "excerpt": "We developed a new enterprise data-agent benchmark in collaboration with Turing to...",
+    "summary": "Databricks says its Genie data assistant, when given an ontology (a map of how business data fits together), answers questions about 1.6 times as accurately while using less than half the computing text. The results come from a new test for enterprise data agents built with Turing.",
+    "tags": [
+      "data tools",
+      "ai assistants",
+      "benchmarks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work",
+    "company": "Databricks",
+    "title": "From enterprise context to action: Genie Agents now analyze more data sources to transform your work",
+    "published": "2026-11-11",
+    "excerpt": "Thousands of teams use Genie Agents to turn deep operational questions into actionable outcomes every day...",
+    "summary": "Databricks says its Genie Agents can now look at more data sources to help teams answer detailed business questions and act on the answers. Thousands of teams already use them daily for this kind of work.",
+    "tags": [
+      "data analysis",
+      "ai agents",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-doubles-down-ai-products-opens-new-235000-square-foot-san-francisco-headquarters",
+    "company": "Databricks",
+    "title": "Databricks Doubles Down on AI Products, Opens New 235,000-Square-Foot San Francisco Headquarters",
+    "published": "2026-11-11",
+    "excerpt": "Last week, we opened our new headquarters at One Sansome Street in San Francisco,...",
+    "summary": "Databricks, a data software company, opened a new 235,000-square-foot office in San Francisco and says it is putting more effort into its AI products. The article is a short teaser, so the details beyond the move and the AI focus are not clear.",
+    "tags": [
+      "databricks",
+      "office move",
+      "ai products"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/bring-your-business-context-chatgpt-claude-microsoft-copilot-cowork-and-grok-bot",
+    "company": "Databricks",
+    "title": "Bring your business context to ChatGPT, Claude, Microsoft Copilot Cowork and Grok Bot",
+    "published": "2026-11-11",
+    "excerpt": "Every business is adding more data to their AI-powered workflows. But more data doesn't...",
+    "summary": "Databricks announced a way to connect business data to popular AI chatbots like ChatGPT, Claude, Microsoft Copilot, and Grok. The aim is to let these tools use a company's own context when answering questions.",
+    "tags": [
+      "ai chatbots",
+      "business data",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/announcing-ga-genie-ontology",
+    "company": "Databricks",
+    "title": "Announcing GA of Genie Ontology",
+    "published": "2026-11-11",
+    "excerpt": "AI agents are only as useful as their understanding of the business in which they work. Within a given domain...",
+    "summary": "Databricks has released its Genie Ontology feature for general use. It helps AI agents understand how a business's data and terms fit together, so they can give more useful answers.",
+    "tags": [
+      "ai agents",
+      "data platforms"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/air-gapped-not-data-dark-how-bright-machines-gives-customers-live-factory-dashboards-without",
+    "company": "Databricks",
+    "title": "Air gapped, not data dark: how Bright Machines gives customers live factory dashboards without opening the plant",
+    "published": "2026-11-11",
+    "excerpt": "Bright Machines gives customers live, governed dashboards of their factory data without...",
+    "summary": "Bright Machines describes a way to show customers live factory dashboards without connecting the factory to the internet. The teaser suggests the plant stays closed off while customers still see their data.",
+    "tags": [
+      "factory data",
+      "data security",
+      "dashboards"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/gemini-decision-1-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Gemini Decision 1 now available on AI Gateway",
+    "published": "2026-11-11",
+    "excerpt": "Gemini Decision 1 from Google is now available on AI Gateway. The multimodal decision model works with text, images, audio, video, and PDF documents, returning Boolean probabilities, choices, and scores. Use it to route requests, check policies, filter agent tools, or rank results without generating output tokens. Use google/gemini-decision-1 with the AI SDK, TypeSafe-compatible API, or Decisions API. PDF, audio, and video inputs are supported through AI SDK 7. The TypeSafe-compatible and Decisions APIs support text and image inputs. AI Gateway provides a unified way to access models and track usage and cost. Decision calls appear in logs and count toward budgets alongside other model requests. See the decision documentation for Choice, Score, and Boolean questions. To pick a decision model, browse the available models or read our decision model guides . Read more",
+    "summary": "Vercel's AI Gateway now offers Google's Gemini Decision 1, a model that reads text, images, audio, video, and PDFs and gives yes/no answers, choices, or scores without writing long replies. It can help route requests, check rules, or rank results, and its calls show up in the usage logs and budgets.",
+    "tags": [
+      "ai models",
+      "developer tools",
+      "google gemini"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://shopify.engineering/generative-discovery",
+    "company": "Shopify",
+    "title": "Shopify’s generative discovery model",
+    "published": "2026-11-11",
+    "excerpt": "How we train and serve a shared generative model for personalized search and recommendation at Shopify scale.",
+    "summary": "Shopify describes how it trains and runs one shared generative AI model that powers personalized search and product recommendations across its many stores. The goal is to show shoppers more relevant items at large scale.",
+    "tags": [
+      "ai",
+      "e-commerce",
+      "recommendations"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
+    "company": "Google Research",
+    "title": "Using wearables to enable cardiovascular-kidney-metabolic (CKM) risk profiling for personalized coaching",
+    "published": "2026-11-11",
+    "excerpt": "Health & Bioscience",
+    "summary": "Google Research describes using data from wearable devices, like smartwatches, to help assess a person's risk of heart, kidney, and metabolic health problems. The goal is to give each person more tailored health coaching. The text provided is only a short teaser, so details are limited.",
+    "tags": [
+      "wearables",
+      "heart health",
+      "health coaching"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "company": "OpenAI",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "published": "2026-11-11",
+    "excerpt": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+    "summary": "JioStar's chief architect, Vijay Seshadri, shares how his team uses AI to help people find content across a service with about 500 million users. He also covers lessons on testing AI, adding safety limits, and running AI in real products.",
+    "tags": [
+      "ai",
+      "streaming",
+      "lessons learned"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "company": "OpenAI",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "published": "2026-11-11",
+    "excerpt": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+    "summary": "OpenAI is offering a free year of ChatGPT Plus to veterans and service members leaving the military. More than 20,000 people have already claimed it, and the post shares how they use it to prepare for civilian jobs.",
+    "tags": [
+      "ai tools",
+      "veterans",
+      "careers"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/token-pooling",
+    "company": "Hugging Face",
+    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+    "published": "2026-11-11",
+    "excerpt": "",
+    "summary": "Hugging Face has published a post on training embedding models that group multiple vectors per text in a way that works with token pooling, a technique for shrinking those vectors to save storage. The teaser gives few details beyond this topic.",
+    "tags": [
+      "machine learning",
+      "search"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/qvac/botpsy",
+    "company": "Hugging Face",
+    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "published": "2026-11-11",
+    "excerpt": "",
+    "summary": "Hugging Face introduced BotPsy, a small AI assistant that can run directly on a phone or laptop instead of in the cloud. It is a language model with under a billion parameters, built to take actions for the user. The article itself is only a title, so details are limited.",
+    "tags": [
+      "ai assistants",
+      "on-device ai",
+      "language models"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
+    "company": "Meta Engineering",
+    "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+    "published": "2026-11-11",
+    "excerpt": "Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire system. We built Intelligent Delivery, an ML-driven system that allocates resources across the serving stack toward the system-wide optimum. It has delivered ~10% incremental ranking performance on top of model and system advancements since 2017. We’re sharing a few of Intelligent Delivery’s capabilities: how we build ML models to predict the marginal utility of compute, multi-layered mechanisms to move resources across the system, and how we increasingly leverage agentic AI to continuously detect and respond to system shifts. As frontier ads ranking systems advance toward larger models, broader candidate sets, and richer delivery architectures, they also place greater demands on serving efficiency. Compute resources do not scale at the rate that models and system complexity do. The challenge is not just how to build more powerful models, but how to operate them efficiently across a heterogeneous system, with finite serving capacity, and under a tight latency budget. We recently shared how we put idle inference capacity to work . This post covers how we decide where each unit of compute goes to achieve globally optimal system efficiency. Intelligent Delivery is our approach to the problem, and it has contributed an additional ~10% improvement in ads ranking performance on top of model and system advancements across major surfaces, from 2017 through the first half of 2026. It introduces an ML-driven, increasingly AI-operated adaptive optimization layer that continuously directs resources toward the requests, models, hardware fleets, and ranking stages with the highest marginal utility. This helps us run advanced ads ranking models efficiently in production, getting more out of every unit of compute to serve better ads for people who use our apps and services. The Goal and What Makes It Difficult One of our goals is to create a delivery system that continuously converges on its global optimum, regardless of how user behavior changes, models evolve, and the serving stack grows more complex. Three fundamental properties of ads delivery systems make this challenging: The marginal impact of compute is highly heterogeneous and context-dependent: The same additional unit of compute can generate very different returns depending on the product surface, user intent, candidate quality, and system state. Request-aware signals alone are not sufficient; allocating well means estimating, for every request, the return on every available tunable system parameter, where each knob behaves differently at each stage of the funnel. We need to produce a per-request result calculation across a vast decision space within milliseconds. Local optimality does not translate to global optimality: Result estimation is just the start; the serving stack must also be dynamically controllable. Ads delivery spans multi-stage ranking , hundreds of models, generations of hardware, and many data centers. Resources cannot be shifted freely and reliably across these boundaries without adaptive controls that account for complex dependencies throughout the stack. The global optimum is a moving target: The optimization landscape is continuously shifting. Every new model, hardware generation, or new architecture changes the landscape and can invalidate previously optimal allocation decisions. The system needs to adapt quickly enough to retain its optimality. Intelligent Delivery includes three capabilities, each designed to address one of these fundamental system challenges. Capabilities of Intelligent Delivery 1. Request Understanding: A Shared ML Intelligence Layer for Compute Some ad requests benefit more from additional computation than others. Initially, we captured these differences through ",
+    "summary": "Meta built Intelligent Delivery, a system that uses machine learning to decide where extra computing power should go when showing ads. Since 2017 it has added about 10% better ad performance on top of other upgrades, helping large ad models run efficiently.",
+    "tags": [
+      "ads",
+      "machine learning",
+      "computing power"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+    "company": "Google Developers",
+    "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
+    "published": "2026-11-11",
+    "excerpt": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
+    "summary": "LiteRT, Google's tool for running AI models on phones, now runs on the phone's graphics chip through Google Play services. Apps can be about 8 MB smaller, run about 1.4x faster, and get updates automatically.",
+    "tags": [
+      "mobile apps",
+      "ai on devices",
+      "android"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+    "company": "Google Developers",
+    "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
+    "published": "2026-11-11",
+    "excerpt": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
+    "summary": "Google shows how to build apps where AI agents create their own user interfaces, using a tool called A2UI with CopilotKit. The method works with several popular agent frameworks, including LangChain, AWS Strands, Microsoft agents, and Google ADK.",
+    "tags": [
+      "ai agents",
+      "user interfaces",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/",
+    "company": "Google Developers",
+    "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
+    "published": "2026-11-11",
+    "excerpt": "Google AI Edge Model Explorer now supports custom compiler intermediate representations and open-source adapters like TOSA, VGF, and PTE for on-device machine learning. Developers can leverage hierarchical graph visualization, split-pane views, and per-node trace overlays to catch export regressions and verify hardware delegation. These tools enable engineering teams to transparently debug execution graphs and pinpoint cycle-level latency bottlenecks locally.",
+    "summary": "Google's Model Explorer tool can now show the internal structure of machine learning models built for phones and small devices, and it works with several compiler formats. This helps engineers spot where a model slows down or breaks on the device.",
+    "tags": [
+      "machine learning",
+      "developer tools",
+      "on-device ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+    "company": "Google Developers",
+    "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
+    "published": "2026-11-11",
+    "excerpt": "A2UI 1.0 is an open protocol for generative UI that enables AI agents to render interactive, native screens across web, mobile, and desktop applications. Developers can leverage open-source renderer SDKs—including React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose—alongside agent SDKs for Python, TypeScript, and Dart. The release introduces bidirectional function calls, swappable inference formats, and secure data binding to help teams seamlessly integrate generative UI into their product stacks.",
+    "summary": "Google released A2UI 1.0, an open standard that lets AI agents build interactive screens for web, phone, and desktop apps. It comes with free tools for many common app frameworks, so teams can add AI-built screens to their products.",
+    "tags": [
+      "ai agents",
+      "app development",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+    "company": "NVIDIA",
+    "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+    "published": "2026-11-11",
+    "excerpt": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform... As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform configuration captured in a recipe. Application teams define and update these workloads independently of the platform recipe, so a reproducible deployment bundle alone cannot establish which workload artifacts are running on each node. Source",
+    "summary": "NVIDIA describes how teams running AI workloads on tools like Dynamo, Kubeflow, or Slurm need to see what is actually running on each machine. A saved platform setup alone does not show this, since app teams change their workloads separately.",
+    "tags": [
+      "ai infrastructure",
+      "gpu computing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "company": "Google DeepMind",
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "published": "2026-11-11",
+    "excerpt": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "summary": "Google DeepMind has released AlphaGenome 2, a new AI tool aimed at understanding how cells read DNA. It is designed to predict how changes in DNA may affect different human cell types and disease.",
+    "tags": [
+      "ai",
+      "dna",
+      "medicine"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/choosing-quepaxa/",
+    "company": "Cloudflare",
+    "title": "Choosing QuePaxa, an unusual consensus algorithm",
+    "published": "2026-11-11",
+    "excerpt": "Cloudflare recently announced Meerkat , an experimental distributed consensus service designed to manage our internal global control plane. It is powered by a new consensus algorithm published by researchers Tennage & Băsescu et al. called QuePaxa (2023). QuePaxa is an unusual choice; most consensus systems use well-established consensus algorithms like Raft, (Multi-)Paxos or Viewstamped Replication. These algorithms are well understood, have mature implementations, and usually work well. Unfortunately, common consensus algorithms often suffer in wide-area networks with volatile network connectivity and latency, i.e., networks like the Internet, which is where Meerkat runs. These algorithms rely on a single leader process being available and having predictable latency. If the leader goes down, experiences higher latency than usual, or is disconnected, the entire consensus system slows down or becomes unavailable until the leader is replaced. This is unacceptable for Meerkat. Meerkat’s global deployment environment led us to a newer consensus algorithm, QuePaxa, which promises better stability despite volatility, in large part by not relying on a leader to make progress. In this post we’ll explain why we chose QuePaxa and how the QuePaxa algorithm works. What we’re building and why it’s unique Meerkat is a distributed system in which replicas agree upon an ordered log of events, where each event is decided by a consensus algorithm. Consensus algorithms allow a group of machines to agree on a single shared truth, even if some of those machines crash or disconnect. Consensus algorithms provide an important guarantee: machines never decide conflicting values. This ensures Meerkat replicas’ logs never diverge. Meerkat uses its consensus-powered log to expose applications like a key-value store, where each entry in the log is a get or a put . Because the consensus algorithm guarantees replicas’ logs never diverge, they all construct the same key-value (KV) state. Comparable consensus-powered systems include Consul, etcd, and Apache ZooKeeper. Unlike similar systems, however, Meerkat was designed for global scale . A Meerkat cluster may be distributed across continents and connected by links that often exhibit high and variable latency. This is an unusual setup for consensus systems, which are usually deployed in smaller, more local networks, and have strict latency requirements . The challenges of consensus at a global scale While all consensus algorithms ensure that replicas agree on the same value, many of them become disproportionately unavailable or slow when network conditions degrade (but machines do not crash). We have seen this happen firsthand: in 2020, the partial failure of a core Cloudflare network switch caused a consensus-powered system to degrade and the dashboard to operate 80x slower than usual, for six hours. Critically, the system lost no data. But it became unavailable for writes until the issue was resolved, which is unacceptable. Ideally, a consensus algorithm should be able to make progress despite latency spikes and broken connections, not just replica failures. This is particularly a problem at global scale, where faults are more likely to originate in the network, and not our own servers. Let’s examine two common traits of consensus algorithms that can lead to degradation under hostile network conditions: destructive interference and fault detection. Later, we’ll see how QuePaxa sidesteps both of these issues. Destructive interference and leaders Consider Paxos, the veritable grandfather of most consensus algorithms. A lot of consensus algorithms inherit the structure of Paxos – both the good and the not-so-good bits. Leaving an egregious amount of detail out, here’s how Paxos works. There are two kinds of processes: proposers and acceptors. Abstractly, the goal of the system is for a majority of acceptors to agree on a value proposed by some proposer. There are two phases: the Prepare phase, and the Accept",
+    "summary": "Cloudflare chose a newer agreement method called QuePaxa for Meerkat, its experimental system that keeps data copies in sync across the world. Common methods slow down or stop when one central coordinator is slow or cut off, which happened to Cloudflare in 2020, so QuePaxa aims to keep working through bad network conditions.",
+    "tags": [
+      "distributed systems",
+      "cloudflare",
+      "reliability"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "company": "AWS",
+    "title": "Test your applications against AWS locally with AWS Emulator",
+    "published": "2026-11-11",
+    "excerpt": "Today we’re announcing AWS Emulator, a local emulator for Amazon Web Services (AWS) that you run on your machine. The AWS Command Line Interface (AWS CLI) , the AWS SDKs , and your coding agents speak to it over a local HTTPS endpoint using the same AWS APIs they would use in the cloud, from your laptop. AWS Emulator has no additional service fee. You pay only for AWS resources when you deploy on AWS. Its source is on GitHub. You install it from an RPM or Debian package on Linux, and on macOS and Windows you run it in Docker. How it works You install the emulator, start it, and point your tools at the local endpoint. When AWS Emulator starts, it generates its own credentials, a config file, and a certificate, and writes them to ~/.aws/emulator/9297/ . You set environment variables so the AWS SDK talks to your laptop instead of AWS, and your application code stays unchanged. From there, your existing tests, CLI scripts, and coding agents keep working the way they already do. A unit test that creates an Amazon DynamoDB table, writes an item, and reads it back is the same test, and it runs on your machine without a deployment. A coding agent can create resources, check the result, and iterate again without waiting on a deployment in a Region. The emulator is implemented in Rust so that it stays light on CPU and memory on a laptop. It supports the APIs of AWS services that have an API model in the AWS API models repository on GitHub, and because it’s built from those models, the same ones the AWS SDKs use, your requests and the errors you get back have the same shape as on AWS. If you are a developer, especially one working with coding agents such as Kiro or Claude Code, you can use that loop to test AWS interactions of real complexity locally. Let’s try it out To get started, I installed the package on Amazon Linux 2023 . The package adds the aws-emulator command to /usr/bin/ , so it’s on the path. PKG=https://downloads.aws.com/aws-emulator/packages/aws-emulator/LTS/latest sudo dnf install -y $PKG/aws-emulator-x86_64.rpm aws-emulator -v On macOS and Windows, you build a Docker image from the short Dockerfile in the documentation and run the emulator in a container. We don’t publish a ready-made image. I started the emulator with aws-emulator . It serves HTTPS on 127.0.0.1:9297 , so only my own computer can reach it, and it writes its log as JSON lines that show the address, the config file, and the certificate file. aws-emulator In another terminal, I set the environment variables that point the AWS CLI at the emulator, and unset any variables that could supply real AWS credentials. export AWS_ENDPOINT_URL=https://127.0.0.1:9297 export AWS_SHARED_CREDENTIALS_FILE=~/.aws/emulator/9297/emulator_credentials export AWS_CONFIG_FILE=~/.aws/emulator/9297/config export AWS_EC2_METADATA_DISABLED=true export AWS_DISABLE_HOST_PREFIX_INJECTION=true export AWS_REGION=us-east-1 export AWS_DEFAULT_REGION=us-east-1 unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_PROFILE The emulator generates new keys each time it starts. Its access key IDs start with EMULATOR , so you can’t mistake them for real AWS keys, and it rejects requests signed with any other keys. To confirm that my shell was talking to the emulator, I checked the health endpoint and the caller identity. The emulator uses a single account, 000000000000 . curl --cacert ~/.aws/emulator/9297/ca.pem https://127.0.0.1:9297/__admin/health aws sts get-caller-identity Then I created a bucket, copied in a small object, and listed it. $ aws s3 mb s3://local-getting-started make_bucket: local-getting-started $ echo \"hello from the emulator\" > hello.txt $ aws s3 cp hello.txt s3://local-getting-started/ upload: ./hello.txt to s3://local-getting-started/hello.txt $ aws s3 ls s3://local-getting-started/ With the AWS CLI pointed at my laptop, I had the same commands I already use and a local endpoint that answered them. Next I wanted to see it the way I actually work now, so with t",
+    "summary": "AWS has released AWS Emulator, a free program that runs on your own computer and copies AWS services locally. Your existing tools and code can test against it without deploying to the cloud, and you only pay for real AWS resources when you deploy.",
+    "tags": [
+      "aws",
+      "developer tools",
+      "testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/unity-catalog-metric-views-now-power-bi-one-unified-governed-semantic-layer-all-your-reporting",
     "company": "Databricks",
     "title": "Unity Catalog Metric Views, now in Power BI: one unified, governed semantic layer for all your reporting and AI",
@@ -45,6 +415,20 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/minimax-h3-image-and-highspeed-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "MiniMax H3 Image and Highspeed now available on AI Gateway",
+    "published": "2026-11-10",
+    "excerpt": "MiniMax H3 Image and MiniMax H3 Image Highspeed are now available on AI Gateway. Generate images from text or edit existing images with one API key and no separate MiniMax account. Both models support custom dimensions and aspect ratios, including 2K and 4K outputs. Use a text prompt to create a product visual or illustration, then pass the image back with instructions to change colors, subjects, or composition. The Highspeed variant offers faster generation with the same generation and editing options. Use minimax/minimax-h3-image or minimax/minimax-h3-image-highspeed as the model name: To edit the generated image, pass it back with an instruction: Both models also support the OpenAI-compatible /v1/images/generations and /v1/images/edits routes. See the image generation guide for details. Try MiniMax H3 Image in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and managing access with one API key. View requests and spend in your dashboard. AI Gateway reflects provider pricing with no markup and no platform fee on inference. See AI Gateway pricing for details. You can view all image models available on AI Gateway. Read more",
+    "summary": "Vercel's AI Gateway now offers two MiniMax image models that can create images from text or edit existing ones, using a single API key. A faster version is also available, and both support sizes up to 4K.",
+    "tags": [
+      "ai image generation",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/gemini-4-carbon-now-available-on-ai-gateway",
     "company": "Vercel",
     "title": "Gemini 4 Carbon now available on AI Gateway",
@@ -75,6 +459,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://openai.com/index/singapore-airlines-travel-work",
+    "company": "OpenAI",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "published": "2026-11-10",
+    "excerpt": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+    "summary": "Singapore Airlines is using OpenAI's AI models to improve customer support, help travelers find trips, and help employees work faster. Its Kris chatbot has doubled its customer satisfaction scores.",
+    "tags": [
+      "airlines",
+      "ai chatbots",
+      "customer support"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/introducing-businesses-chatgpt",
     "company": "OpenAI",
     "title": "Introducing Businesses in ChatGPT",
@@ -100,6 +499,21 @@
       "ai tools",
       "caregiving",
       "free workshops"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/cogent-security",
+    "company": "OpenAI",
+    "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+    "published": "2026-11-10",
+    "excerpt": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+    "summary": "Cogent and OpenAI are working together to build cyber defense systems for businesses. Their tool uses OpenAI models and company-specific information to have AI agents automatically fix security weak spots.",
+    "tags": [
+      "cybersecurity",
+      "ai agents",
+      "openai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1272,20 +1686,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/builders-guide-scaling-databricks-apps",
-    "company": "Databricks",
-    "title": "A builder’s guide to scaling Databricks Apps",
-    "published": "2026-11-05",
-    "excerpt": "Congratulations, you've built an app on Databricks Apps, and it's gone from a couple...",
-    "summary": "Databricks published a guide for teams whose app built on Databricks Apps has grown from a few users to many. It explains how to make such an app handle more traffic. The article text is only a short teaser, so details are limited.",
-    "tags": [
-      "databricks",
-      "scaling apps"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/how-researchers-use-claude",
     "company": "Anthropic",
     "title": "AI for scientific discovery: How researchers use Claude",
@@ -1310,21 +1710,6 @@
       "vercel",
       "scheduled tasks",
       "cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Gemini Omni 1.2 Flash now available on AI Gateway",
-    "published": "2026-11-05",
-    "excerpt": "Gemini Omni 1.2 Flash from Google is now available on AI Gateway. Generate videos from text prompts with one API key and no separate Google account. Gemini Omni 1.2 Flash generates 3–15 second videos with native audio and edits 3–15 second source clips with up to six reference images. Extend videos by 3–10 seconds per call, up to 30 seconds total, or refine generated clips in follow-up calls using previousInteractionId . Output supports 360p, 720p, 1080p, and 4K in 16:9 or 9:16. Use generateText or streamText in AI SDK to receive the generated video as a file. Generate a video Use google/gemini-omni-1.2-flash as the model name. This example generates a three-second, 360p clip and saves it as video.mp4 : Receive video in a streaming response With streamText , read fullStream to handle generated files as they arrive. The video is delivered as a completed file: AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. Explore more models in the AI Gateway model catalog . Read more",
-    "summary": "Vercel now lets developers use Google's Gemini Omni 1.2 Flash to make short videos from text, through one API key. The model creates 3 to 15 second clips with sound and can edit or extend them.",
-    "tags": [
-      "ai video",
-      "google gemini",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1444,36 +1829,6 @@
       "ai tools",
       "fitness",
       "workplace productivity"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-    "company": "OpenAI",
-    "title": "Australian universities are creating AI-native graduates",
-    "published": "2026-11-05",
-    "excerpt": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-    "summary": "Australian universities are giving students wider access to ChatGPT and bringing AI into classes. The goal is to prepare graduates for jobs where AI is common.",
-    "tags": [
-      "ai in education",
-      "universities",
-      "australia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/ads/customers/flipsnack",
-    "company": "OpenAI",
-    "title": "Flipsnack grows product signups with conversion optimization",
-    "published": "2026-11-05",
-    "excerpt": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-    "summary": "Flipsnack ran ChatGPT ads focused on getting people to sign up for its product. The campaign grew sign-ups while lowering the cost of each new sign-up.",
-    "tags": [
-      "advertising",
-      "marketing",
-      "chatgpt"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1671,20 +2026,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/enterprise-case-open-weight-models-databricks",
-    "company": "Databricks",
-    "title": "The Enterprise Case for Open-Weight Models on Databricks",
-    "published": "2026-11-04",
-    "excerpt": "As field engineers at Databricks, we spend our days inside enterprise AI deployments,...",
-    "summary": "Databricks engineers write about why companies may choose open-weight AI models, meaning models whose trained parameters are public, for their own systems. The post is based on their work with enterprise customers, though only a short teaser was provided.",
-    "tags": [
-      "ai models",
-      "enterprise software"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
     "company": "Anthropic",
     "title": "Investigating vault particles with Claude",
@@ -1694,21 +2035,6 @@
     "tags": [
       "ai research",
       "biology"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-token-scanning-expands-to-more-public-sources",
-    "company": "Vercel",
-    "title": "Vercel token scanning expands to more public sources",
-    "published": "2026-11-04",
-    "excerpt": "Vercel has partnered with Truffle Security to expand automated detection and revocation of publicly exposed Vercel tokens. Revoking exposed credentials helps prevent unauthorized access to your projects and unexpected costs from unauthorized use of services such as Vercel Sandbox and Vercel AI Gateway . If your token is revoked, you’ll receive an email from us explaining why. Truffle Security reports tokens exposed in public sources including GitHub, GitLab, Docker, npm, PyPI, Hugging Face, Android APKs, and Firefox Add-ons. Vercel has revoked hundreds of tokens reported by Truffle Security. A separate Vercel scanner now checks each new monthly Common Crawl dataset of public web pages and automatically revokes any exposed Vercel tokens it finds. Learn more about creating tokens, setting their scopes, and managing them in the access token documentation . Read more",
-    "summary": "Vercel now works with Truffle Security to find and shut off Vercel access keys that people accidentally left in public places like GitHub and npm. Vercel has already shut off hundreds of these keys, and anyone whose key is shut off gets an email explaining why. This helps stop strangers from using your projects and running up charges.",
-    "tags": [
-      "security",
-      "cloud services",
-      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1724,51 +2050,6 @@
       "ai",
       "google research",
       "decision making"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/openai-to-acquire-pierre",
-    "company": "OpenAI",
-    "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-    "published": "2026-11-04",
-    "excerpt": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
-    "summary": "OpenAI says it will buy Pierre Computer Company. The deal is meant to add tools to Codex, OpenAI's coding assistant, to help people build, understand, and review code.",
-    "tags": [
-      "openai",
-      "acquisitions",
-      "coding tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-images-2-6",
-    "company": "OpenAI",
-    "title": "Introducing Images 2.6",
-    "published": "2026-11-04",
-    "excerpt": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
-    "summary": "OpenAI released Images 2.6, a new version of its image tool. It generates images faster, can make GIFs, edits more precisely, and adds new controls in ChatGPT, Codex, and the API.",
-    "tags": [
-      "ai images",
-      "openai",
-      "image editing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/devrev-enterprise-self-service",
-    "company": "OpenAI",
-    "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
-    "published": "2026-11-04",
-    "excerpt": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-    "summary": "DevRev now uses OpenAI's GPT-6.1 Sol model to run its Computer and Operator tools, which handle customer service tasks on their own. The company says the model balances good reasoning, quick responses, and lower cost for businesses.",
-    "tags": [
-      "ai",
-      "customer service",
-      "enterprise software"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1903,35 +2184,6 @@
       "cloud storage",
       "data lakes",
       "aws"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/declare-and-optimize-unique-constraints-databricks",
-    "company": "Databricks",
-    "title": "Declare and optimize with UNIQUE constraints on Databricks",
-    "published": "2026-11-03",
-    "excerpt": "Data teams often maintain uniqueness guarantees in their pipelines, but without a...",
-    "summary": "Databricks now lets teams declare UNIQUE constraints on tables, which tell the system that certain values must not repeat. The article says this helps keep data clean and can also help the system run queries faster.",
-    "tags": [
-      "databases",
-      "data pipelines"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/claude-platform-now-supports-native-opentelemetry-observability-databricks-mlflow",
-    "company": "Databricks",
-    "title": "Claude Platform now supports native OpenTelemetry observability in Databricks MLflow",
-    "published": "2026-11-03",
-    "excerpt": "An agent can return a plausible answer while missing an important finding or reading the same source repeatedly...",
-    "summary": "Databricks says its MLflow tool now works directly with Claude's platform to record how AI agents run, using OpenTelemetry, a common standard for tracking software activity. This helps teams see when an agent gives a plausible answer but misses key facts or repeats work.",
-    "tags": [
-      "ai agents",
-      "monitoring",
-      "databricks"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2091,21 +2343,6 @@
     "tags": [
       "design tools",
       "collaboration"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/lakebase-postgres-now-generally-available-google-cloud",
-    "company": "Databricks",
-    "title": "Lakebase Postgres is now generally available on Google Cloud",
-    "published": "2026-11-02",
-    "excerpt": "We're excited to announce that Lakebase Postgres is generally available on Google Cloud...",
-    "summary": "Databricks has released its Lakebase Postgres database to everyone on Google Cloud, so customers there can now use it in full production. The text is a short teaser, so no further details are given.",
-    "tags": [
-      "databases",
-      "google cloud",
-      "databricks"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2290,21 +2527,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/lakebase-branching-cicd-lessons-100-pr-databases",
-    "company": "Databricks",
-    "title": "Lakebase branching for CI/CD: lessons from 100 PR databases",
-    "published": "2026-10-31",
-    "excerpt": "The problem: testing against production data shouldn't take over 30 minutesSnorkel...",
-    "summary": "Databricks describes how its Lakebase database feature can create a separate copy of a database for each code change under review, so tests can run against realistic data. The post reports lessons from running about 100 of these temporary databases in practice.",
-    "tags": [
-      "databases",
-      "software testing",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
     "company": "Google Developers",
     "title": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive",
@@ -2315,50 +2537,6 @@
       "google docs",
       "markdown",
       "collaboration"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
-    "company": "Google Developers",
-    "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
-    "published": "2026-10-31",
-    "excerpt": "The Agents CLI Extension System enables developers to use frameworks like LangChain, LangGraph, or custom enterprise stacks while retaining a unified deployment and evaluation workflow. It details a first-party LangChain template that scaffolds, runs, and deploys agents without requiring the Agent Development Kit (ADK). Additionally, it demonstrates how platform teams can author custom extensions to enforce policies such as automated software bill of materials (SBOM) scans during deployment.",
-    "summary": "Google's Agents CLI now supports plug-in extensions, so teams can build AI agents with LangChain or other tools, not just Google's own kit. It includes a ready-made LangChain template and shows how companies can add their own rules, such as security checks before deployment.",
-    "tags": [
-      "ai agents",
-      "developer tools",
-      "deployment"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/wealth-management-client-onboarding-needs-more-ai",
-    "company": "Databricks",
-    "title": "Wealth Management Client Onboarding Needs More Than AI",
-    "published": "2026-10-30",
-    "excerpt": "Wealth Management client onboarding can stall even when every system has done its job. The document is collected...",
-    "summary": "Databricks argues that signing up new wealth management clients is slow for reasons beyond the software itself. The article is a short teaser, so it does not explain the full fix.",
-    "tags": [
-      "wealth management",
-      "client onboarding",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/deliberate-decisions-and-enterprise-ai-value",
-    "company": "Databricks",
-    "title": "Deliberate decisions and enterprise AI value",
-    "published": "2026-10-30",
-    "excerpt": "AI progress is moving quickly. Expectations are rising, experimentation is spreading...",
-    "summary": "Databricks argues that enterprises need to make deliberate decisions about AI to get real business value. The post is a short teaser, so details beyond this framing are not available.",
-    "tags": [
-      "enterprise ai",
-      "ai strategy"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2392,51 +2570,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/native-model-authoring-for-edge-with-litert-tensor-api/",
-    "company": "Google Developers",
-    "title": "Native Model Authoring for Edge with LiteRT Tensor API",
-    "published": "2026-10-30",
-    "excerpt": "Meet the LiteRT Tensor API: giving developers native C++ control over the model graph to unify end-to-end ML computations on heterogeneous edge hardware.",
-    "summary": "Google introduced the LiteRT Tensor API, which lets developers write models directly in C++ for devices at the edge, like phones and small gadgets. It aims to run whole machine learning tasks smoothly across different kinds of hardware.",
-    "tags": [
-      "machine learning",
-      "on-device ai",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
-    "company": "Google Developers",
-    "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
-    "published": "2026-10-30",
-    "excerpt": "TorchTPU integrates a native torch.device(\"tpu\") backend directly into PyTorch, allowing developers to train large-scale models on Google Cloud TPUs without rewriting code in JAX. The TorchTitan TPU fork enhances this with production-grade scaling primitives like SimpleFSDP, Graph Trainer, and custom Pallas kernels that achieve high Model Flops Utilization (MFU) across dense and MoE architectures. Developers can leverage these battle-tested optimization playbooks, recipes, and the Hugging Face modeling backend to efficiently scale their own workloads on TPU infrastructure.",
-    "summary": "Google is adding a built-in option to run PyTorch code on its TPU chips, so people can train large AI models without rewriting them in another language. A special version of TorchTitan, a PyTorch training tool, adds scaling features and speed-ups to help those models run efficiently.",
-    "tags": [
-      "machine learning",
-      "pytorch",
-      "google cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/devfest-is-back/",
-    "company": "Google Developers",
-    "title": "DevFest is back!",
-    "published": "2026-10-30",
-    "excerpt": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
-    "summary": "Google's DevFest 2026 runs from October to December with over 800 events worldwide. Developers can join hands-on sessions to learn Google's AI tools for building and securing apps.",
-    "tags": [
-      "ai",
-      "developer events",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
     "company": "NVIDIA",
     "title": "Run AI Models for Edge Application Development with Just a Few Commands",
@@ -2446,21 +2579,6 @@
     "tags": [
       "edge ai",
       "robotics",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
-    "company": "NVIDIA",
-    "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-    "published": "2026-10-30",
-    "excerpt": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path... NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path between NVIDIA GPUs and storage targets to increase bandwidth, minimize latency, and reduce CPU and memory utilization across a broad range of platforms, application frameworks, and workload patterns. Configuring NVIDIA GPUDirect Storage… Source",
-    "summary": "NVIDIA has written a guide on checking and setting up GPUDirect Storage, a feature that lets graphics chips read and write data directly from storage. It is meant to speed up data transfers and ease the load on the main processor and memory.",
-    "tags": [
-      "gpu computing",
-      "data storage",
       "nvidia"
     ],
     "summarized": true,
@@ -2654,21 +2772,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-    "company": "Hugging Face",
-    "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-    "published": "2026-10-28",
-    "excerpt": "",
-    "summary": "Hugging Face and NVIDIA announced Nemotron 3.5 Transcribe, a speech-to-text tool that handles many languages and can be guided with instructions. It also released Granary v2, a large set of training audio for building such tools.",
-    "tags": [
-      "speech recognition",
-      "ai models",
-      "open data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/",
     "company": "Meta Engineering",
     "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
@@ -2768,20 +2871,6 @@
       "ai",
       "machine learning",
       "research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/allenai/novelty-bench",
-    "company": "Hugging Face",
-    "title": "Can we trust LLMs to judge whether a research idea is novel?",
-    "published": "2026-10-27",
-    "excerpt": "",
-    "summary": "Hugging Face asks whether large AI language models can be trusted to judge if a research idea is new. The post is only a title, so details of their findings are not known from this text.",
-    "tags": [
-      "ai research",
-      "language models"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3388,21 +3477,6 @@
       "typescript",
       "developer tools",
       "performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://blog.cloudflare.com/emudhra-certificate-compromise/",
-    "company": "Cloudflare",
-    "title": "8 eMudhra certificates are compromised. Here's what you need to know",
-    "published": "2026-10-20",
-    "excerpt": "On October 19, 2026, at approximately 17:00 UTC, Cloudflare became aware that private keys associated with eight eMudhra intermediate certificates were compromised. These certificates were widely trusted by browsers, operating systems, and also within Cloudflare. Because the keys themselves are weak, an attacker can create a forged certificate for any domain and use it to impersonate servers to intercept or modify traffic. This is a serious security incident with implications across the Internet. For reference, here is a link to more information about how SSL certificates work and why they are so critical to the operation of the Internet. We immediately prioritized patching critical services across Cloudflare to protect our customers ahead of the public disclosure of the vulnerability. Our security review has not identified active exploitation of this issue on Cloudflare services. We have released updates for the Cloudflare One Clients, also known as WARP or the 1.1.1.1 app, and Cloudflare Tunnel, also known as cloudflared. We have also deployed mitigations across our CDN, Developer, and Zero Trust products. If you are using Cloudflare Zero Trust with Gateway and an up-to-date client (see below), you are automatically protected. Our response We prioritized updating services that use public certificates to authenticate remote endpoints, including proxies connecting to origins and applications calling external APIs. In parallel, we updated shared trust stores, base images, and other shared foundations, providing a common mitigation path for services that inherit their certificate trust from those sources. We paired these updates with reloads, restarts, and image deployments needed to activate them. Applications with bundled or custom trust stores received separate assessment and updates. This work addresses certificate-based authentication, not a weakness in TLS’s encryption algorithms. Teams across Cloudflare are presently working on further remediation. We are making progress, but there's much work still to be done. Some customers will need to take action on software or trust configurations that they operate, especially on their origin servers. The recommended actions are summarized below. What customers should do Developer guidance For developers, look beneath the SDK. An API client may delegate certificate verification to an HTTP library, a language runtime, the operating system, or a custom trust configuration. Updating the SDK alone may not change the underlying policy. Once you patch, you may notice certificate errors in your dashboards. It's important to not resolve these errors by disabling verification. That would remove the authentication protection these updates are intended to restore. This incident affects many software stacks that rely on the WebPKI for authentication. Mozilla’s Dennis Jackson has crowdsourced a list of commonly used packages that have been patched. We advise readers to upgrade as soon as possible. (Note that some of these may be indirect dependencies of your software stack, so look at the dependency tree.) Apply the relevant dependency updates, rebuild affected images, and confirm whether applications require a reload, restart, or redeployment. Dennis Jackson’s test site provides browser checks, non-browser testing instructions, and package update information. Results apply to the verification path being tested, not every application on the device. Validate through the application’s actual TLS path. A successful browser test does not prove that a background service is protected. Neither does a curl test if the application uses a different verifier. Timeline The timeline of events so far is below. Date and Time Event October 19, approximately 17:00 UTC Cloudflare becomes aware of the compromise and begins assessment. October 20, 02:00 UTC Cloudflare One Client and WARP app security updates published across platforms. October 20 09:15 UTC Cloudflare Tunnel (cloudflared) security update published. O",
-    "summary": "Cloudflare found that private keys for eight eMudhra certificates, which browsers and systems widely trust, were stolen. Attackers could use them to fake secure websites, so Cloudflare patched its services and says it found no active abuse of its own systems.",
-    "tags": [
-      "security",
-      "certificates",
-      "cloud"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4690,20 +4764,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-    "company": "Google DeepMind",
-    "title": "Advancing Private AI Compute with secure, server-side memory",
-    "published": "2026-09-23",
-    "excerpt": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-    "summary": "Google DeepMind announced a new way for its AI to store a user's memory on the server, with privacy protections. The teaser is short, so details beyond that are not clear yet.",
-    "tags": [
-      "ai privacy",
-      "personal ai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/new-trends-in-global-card-fraud-how-3d-secure-and-regional-mandates-are-affecting-risk",
     "company": "Stripe",
     "title": "New trends in global card fraud: How 3D Secure and regional mandates are affecting risk",
@@ -4728,21 +4788,6 @@
       "online safety",
       "privacy",
       "teens"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/",
-    "company": "AWS",
-    "title": "Now on Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
-    "published": "2026-09-22",
-    "excerpt": "Amazon CloudWatch now offers CloudWatch Omni, an AI-powered observability experience for the applications and AI agents you run together. You reach Omni through a dedicated URL for your organization and sign in with the identities you already manage, so working in Omni does not require access to the AWS Management Console. Omni is built on OpenTelemetry: the telemetry you already send to CloudWatch appears in Omni with nothing to reconfigure, and any other workload you instrument with OpenTelemetry sends its telemetry to an OpenTelemetry Protocol (OTLP) endpoint. CloudWatch Omni offers both agent observability and application observability in a single experience. In our companion post , we introduced the agent observability capabilities of Omni for generative AI and agentic workloads. In this post, we present the application observability experience. Engineering teams spend a significant portion of their observability time maintaining dashboards, tuning thresholds, and switching between tools to piece together what happened during an incident. When an issue crosses team boundaries, context gets lost in Slack threads and screenshots rather than flowing naturally to the next engineer. CloudWatch Omni changes this by organizing observability around your applications rather than individual signals, and bringing your whole team into the same workspace. What CloudWatch Omni brings CloudWatch Omni addresses three problems that engineering teams told us they face today. One collaborative experience for your whole team. Every engineer accesses CloudWatch Omni through a single URL with enterprise SSO (via IAM Identity Center , supporting Okta, EntraID, and other providers). No AWS Console access is required. SREs, developers, database engineers, and managers share the same data and investigation context. When an investigation escalates, the next person joins the same session with full context already in front of them. The system adapts as your applications evolve. CloudWatch Omni discovers your services, maps dependencies, and adjusts alarms automatically. Instead of manually curating dashboards and tuning thresholds, you declare what matters (availability targets, latency budgets, error rate thresholds) and Omni adapts as your system changes. When you deploy new services, Omni updates the application topology automatically. AI-powered investigation with Amazon DevOps Agent. Amazon DevOps Agent participates alongside your team in investigation sessions, correlating signals and suggesting next steps. The agent works from the same telemetry your engineers see, so its suggestions are grounded in the actual state of your application. It identifies correlated events across services, traces root cause paths through your dependency graph, and maintains investigation history for post-incident review. How an investigation works When something breaks, CloudWatch Omni opens an investigation session pre-loaded with context. Here is a typical incident workflow: An alarm fires on elevated error rates in your checkout service. Omni opens a session showing the service topology, correlated signals (a deployment 10 minutes earlier, increased latency from a downstream payment API), and DevOps Agent’s initial analysis. Your on-call SRE confirms the deployment correlation, pulls in the trace view to identify failing endpoints, and checks if the payment API latency correlates with a capacity limit. The SRE escalates to the payments team. The payments engineer joins the same session and sees everything found so far, plus DevOps Agent’s correlation with a configuration change in the payment provider’s API gateway. They identify the root cause and roll back. The entire investigation history is captured automatically. No separate incident report needed. Walkthrough: setting up your first Space To set up CloudWatch Omni for your team, open the CloudWatch console and click “Try CloudWatch Omni.” Figure 1. CloudWatch console — Omni setup page Next, connect your ide",
-    "summary": "Amazon has launched CloudWatch Omni, a shared workspace where engineering teams monitor and investigate their apps together, with an AI assistant helping spot likely causes of problems. Team members sign in with their existing company logins and do not need AWS console access.",
-    "tags": [
-      "cloud monitoring",
-      "ai tools",
-      "incident response"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4937,20 +4982,6 @@
       "mobile apps",
       "shopify",
       "coding tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
-    "company": "Google Research",
-    "title": "ToolGrad: Efficient tool-use dataset generation with textual \"gradients\"",
-    "published": "2026-09-10",
-    "excerpt": "Machine Intelligence",
-    "summary": "Google Research introduces ToolGrad, a way to automatically create training examples that teach AI models to use tools. The article is only a short teaser, so details of how it works are not clear from this text.",
-    "tags": [
-      "ai training",
-      "machine learning"
     ],
     "summarized": true,
     "summary_version": 2
@@ -5175,35 +5206,6 @@
       "discord",
       "brazil",
       "regulation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://shopify.engineering/mobile-e2e-testing",
-    "company": "Shopify",
-    "title": "How we raised mobile end-to-end test stability to 98%",
-    "published": "2026-08-12",
-    "excerpt": "We rebuilt our mobile end-to-end testing framework with a strict API and computer vision, raising test stability drastically.",
-    "summary": "Shopify rebuilt its framework for automated mobile app tests, making them much more reliable. Test pass stability rose to 98%, meaning far fewer false failures.",
-    "tags": [
-      "mobile apps",
-      "software testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://medium.com/airbnb-engineering/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb-3a8a4c917137?source=rss----53c7c27702d5---4",
-    "company": "Airbnb",
-    "title": "Flexible Authentication: Reimagining authentication for millions of users at Airbnb",
-    "published": "2026-08-12",
-    "excerpt": "Rebuilding login and signup surfaced product insights, not just technical challenges. Here’s how we designed Flexible Authentication at the intersection of product intuition and technical architecture. By : Jose Santos , Mike Barry For Airbnb, logins at irregular intervals are normal. A guest books a trip in January and may not open the app again until summer. A host checks back only when a reservation comes in, and may be busy with other activities when it does. For a two-sided marketplace where a failed login means a lost booking, and lost revenue for both the guest and the host, long gaps between sessions are a structural challenge, not an edge case. Our authentication system had grown organically over a decade, adding new login methods like Social Login, Email OTP, and Phone over time. We recognized that our users have diverse needs: many, such as hosts, use Airbnb daily, while others visit less frequently, when they are planning trips or traveling. To provide a seamless experience, we needed to ensure we were doing a great job supporting all of these usage patterns, helping users pick up exactly where they left off, regardless of how much time had passed or which device they were using. In this blog post, we’ll walk through how we rebuilt Airbnb’s authentication flows using a new paradigm we call Flexible Authentication , and how each architectural decision was guided by insights into the user’s experience. Identify first then Challenge The ‘Identify first then Challenge’ model was the product insight that reframed the project. Our old system treated authentication as a single question: can this person prove who they are? The real question is more nuanced: given the multiple aspects of the user session, what’s the easiest way for them to verify it? A traveler in Brazil who registered with a phone number is better served by a WhatsApp one-time password (OTP) than by SMS, since WhatsApp penetration far exceeds SMS in this market. A returning host in South Korea is better served by their Naver login, the leading South Korean identity provider, than by their Google ID. The right challenge depends on the person and context. Based on this insight, we adopted an Identify first then Challenge model that splits the flow into two distinct stages. First, the person tells us who they are, using whatever method they want. This may be an email address, phone number, or social login. Once we know which account they are trying to log in to, a configurable policy engine picks the challenge that is most likely to succeed. We lead with that challenge and offer all other options as fallbacks. “Identify first then Challenge” model diagram. The policy engine can use all available aspects of the user session and the account they are logging into, including historical information, to pick the challenge most likely to succeed. We have only started to scratch the surface of optimizing this policy engine. The key architectural decision is that the client never decides which challenge to present . The server makes that call, and the client renders whatever screen it receives. This separation lets us tune authentication strategy per-region without shipping new client code across the many devices Airbnb guests and hosts use. This has made experimentation much easier. Try another way Our old system had a frustrating failure mode: if you couldn’t complete the challenge presented to you, you were stuck. Forgot your password? You could reset it, but the reset flow was its own journey with its own drop-off points. Couldn’t receive an SMS? Tough luck, go back and enter your email so you can try password login instead. The product team articulated a principle that became a hard engineering requirement: every authentication screen must offer an escape . No dead ends. If someone can’t complete the primary challenge, they should always see a “try another way” option with all other options they can use to log in. Every challenge screen has a “Try another way” bu",
-    "summary": "Airbnb rebuilt its login system so the server picks the sign-in method most likely to work for each person, such as WhatsApp codes in Brazil or Naver in South Korea. Every login screen now also offers a 'try another way' option so people are never stuck.",
-    "tags": [
-      "login",
-      "airbnb",
-      "user experience"
     ],
     "summarized": true,
     "summary_version": 2
