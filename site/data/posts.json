@@ -1,5 +1,153 @@
 [
   {
+    "url": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+    "company": "Figma",
+    "title": "How 3D transforms and Figma’s agent brought a launch video to life",
+    "published": "2026-11-12",
+    "excerpt": "See how Figma’s Brand Studio team combined 3D design, agent-built plugins, shaders, and motion to create a video together on the canvas.",
+    "summary": "Figma's Brand Studio team made a launch video on its design canvas, using 3D design, a helper agent that built custom plugins, shaders, and motion effects. The post shows how these tools worked together to create the video.",
+    "tags": [
+      "design tools",
+      "3d design",
+      "video"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/lakehousert-scale-real-time-analytics-not-your-bill",
+    "company": "Databricks",
+    "title": "Lakehouse//RT: Scale real-time analytics, not your bill",
+    "published": "2026-11-12",
+    "excerpt": "AI agents are pushing the limits of data warehouses. A human analyst might run a...",
+    "summary": "Databricks describes a new real-time analytics approach, aimed at letting companies handle fast-moving data without costs rising too steeply. The teaser says AI agents are straining current data warehouses, which typically serve people running occasional queries.",
+    "tags": [
+      "data analytics",
+      "cloud costs",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-h6ai-builds-ai-powered-financial-automation-lakebase-postgres",
+    "company": "Databricks",
+    "title": "How H6.ai builds AI-powered financial automation with Lakebase Postgres",
+    "published": "2026-11-12",
+    "excerpt": "Traditional accounts payable and invoice processing tools often force companies into a trade-off...",
+    "summary": "Databricks describes how H6.ai uses its Lakebase Postgres database to build AI tools that automate financial work like invoice and bill processing. The teaser suggests older payment tools force companies to trade speed for control.",
+    "tags": [
+      "ai automation",
+      "invoices",
+      "databases"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-constellation-building-governed-data-foundation-databricks",
+    "company": "Databricks",
+    "title": "How Constellation is building a governed data foundation on Databricks",
+    "published": "2026-11-12",
+    "excerpt": "Constellation operates the largest nuclear fleet in the United States. For them,...",
+    "summary": "Constellation, which runs the largest nuclear power fleet in the US, describes how it is building a data system on Databricks that controls who can access its data. The article is only a short teaser, so details are limited.",
+    "tags": [
+      "data management",
+      "energy",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-block-powers-collaborative-ai-agents-buzz-and-unity-gateway",
+    "company": "Databricks",
+    "title": "How Block powers collaborative AI agents with Buzz and Unity Gateway",
+    "published": "2026-11-12",
+    "excerpt": "Inside Block, Buzz brings employees and AI agents into a shared workspace. With Databricks...",
+    "summary": "Block has built Buzz, a shared workspace where employees and AI agents work together. Databricks' Unity Gateway is part of how this works, though the teaser gives few other details.",
+    "tags": [
+      "ai agents",
+      "databricks",
+      "workplace tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/genie-slack-now-generally-available-governed-ai-cowork-right-where-work-happens",
+    "company": "Databricks",
+    "title": "Genie in Slack is now Generally Available: Governed AI cowork, right where work happens",
+    "published": "2026-11-12",
+    "excerpt": "Many business questions can’t be started and answered within the same conversation. ...",
+    "summary": "Databricks has released Genie in Slack to all users. It lets people ask data questions and get answers from inside Slack, with company data rules still applied.",
+    "tags": [
+      "ai assistants",
+      "data tools",
+      "slack"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/eclipse-aerospace-simplifies-flight-data-ingestion-databricks",
+    "company": "Databricks",
+    "title": "Eclipse Aerospace simplifies flight-data ingestion with Databricks",
+    "published": "2026-11-12",
+    "excerpt": "As organizations in aerospace, manufacturing, life sciences, and other data-intensive...",
+    "summary": "Eclipse Aerospace describes how it uses Databricks to make it simpler to bring in and handle flight data. The teaser is short, so details are limited, but the aim is to make collecting large amounts of data from aircraft easier to manage.",
+    "tags": [
+      "aerospace",
+      "data processing",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/gemini-4-hydrogen-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Gemini 4 Hydrogen now available on AI Gateway",
+    "published": "2026-11-12",
+    "excerpt": "Gemini 4 Hydrogen from Google is now available on AI Gateway. Gemini 4 Hydrogen succeeds Gemini 3.8 Flash, improving agentic coding, knowledge work, and tool use while staying in the same latency class. It handles longer engineering tasks and produces better-researched documents, spreadsheets, and presentations in fewer agent steps. Hydrogen follows system instructions, formatting requirements, and task boundaries more closely, with more reliable tool orchestration across long conversations. Improvements in visual reasoning and technical problem-solving support multimodal workflows, while stronger grounding reduces unsupported claims in search-backed answers and invented tool or test results in coding reports. Use google/gemini-4-hydrogen as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select google/gemini-4-hydrogen in the agent. See the coding agents guide for details. Try Gemini 4 Hydrogen in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Google's new Gemini 4 Hydrogen AI model is now available through Vercel's AI Gateway. It is said to do better at long coding and office tasks and follow instructions more closely, while responding about as fast as before.",
+    "tags": [
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/wtf-are-evals",
+    "company": "Vercel",
+    "title": "WTF are evals? How to test agents and the software they use",
+    "published": "2026-11-12",
+    "excerpt": "Agents are now users of software, doing work on people's behalf. Whether you're building the agent or the software it uses (API, CLI, MCP server, SDK), evals give you a way to measure how well that work gets done. Agents probably missed your launch video and billboard on Highway 101, but they still go through the same funnel a human does to find and use a product: Discovery , Selection , Access , and Success . You can build evals for any stage of this funnel. Here, we’ll focus on the final stage, Success : whether the agent completes the user’s task correctly. That's more difficult to check than it sounds. An agent can place a “successful” order for a hot latte when the user asked for an iced one. The request worked, so the logs in your Observability stack look fine. And because LLM outputs vary between runs, one good manual test can’t tell you whether a fix worked. You need to repeat the same tasks and grade the outcomes, before and after the change. That’s what an eval can do for you. Here’s how we build one. The agentic testing pyramid If a test asks “did it work?” an eval asks “how often does it work, and how well?” You give an agent a task, grade the outcome, and aggregate the results across repeated attempts. We group agentic software tests by how many LLM calls they typically need: deterministic tests (0), one-turn evals (1), and E2E evals (2+ across a whole task). This has turned out to be a great proxy for the effort to build them, the time they take to run, and the cost of running them. Just like in the practical test pyramid , the cheap and fast tests should make up the bulk of your test suite. To use the pyramid, start with the problem you want to catch and pick the lowest tier that can catch it. For Success , that's the top. A one-turn eval checks a single decision, like which command the agent runs first. But Success depends on the whole sequence of steps (e.g. search for cafes → filter on user criteria → place the latte order). Each one can look reasonable on its own, and the agent can still get the wrong outcome. An E2E eval lets the agent work through the whole task in an environment, then checks whether the final result meets the user’s requirements. You’ve probably seen a few already; most popular coding benchmarks, like SWE-bench and Terminal-Bench , are E2E evals. Example Say you own SF Beans, an API for ordering coffee in San Francisco. One of the best ways to give agents access to your service is through a CLI, so you’re shipping sfbeans . Here’s a typical request from one of your customers: Get me a large iced latte with whole milk, ready for pickup by 9:00, under $8 including tip. I’m in the Mission. Here’s what sfbeans knows at 8:30am: Fog City Roasters: ice machine is down, so no iced drinks today (temperature) 24th St Beans: latte is $7.50 on the menu, but $9.27 after tax and tip (budget) Dolores Drip: latte is $5.50, but the earliest pickup is 9:20 (time) Valencia Grind: $7.42 after tax and tip, ready at 8:50 (meets all three) Here’s what you could test at each layer of the pyramid for sfbeans : How to build an end-to-end eval We’ll build the coffee eval with Harbor , an open-source framework from the creators of Terminal-Bench that runs agents in containers, checks results, and records their actions. Here are the terms we’ll use: Task : one problem for the agent to solve, with a starting environment and a way to check whether it succeeded Variant : the agent setup you’re testing, like the model, prompt, tools, memory and skills Trial : one attempt by one variant at one task Run (a job in Harbor): every variant tried on every task, several times each Trace (a trajectory in Harbor): everything recorded during a trial: messages, tool calls, logs, files and final output Step 1: Set a goal Building E2E evals for everything isn’t practical. With traditional software, you can aim for 100% test coverage. With agents, the surface you’d need to cover is everything an LLM might do with your product, and even",
+    "summary": "Vercel explains how to test whether AI agents successfully complete tasks using software like a coffee-ordering API. Because agents can give wrong results that look fine in logs, the post recommends running the same tasks many times and grading outcomes, using open-source tool Harbor.",
+    "tags": [
+      "ai agents",
+      "software testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://shopify.engineering/cyber-chaos-monkey",
+    "company": "Shopify",
+    "title": "Cyber Chaos Monkey: Staying ahead of security threats with AI agents",
+    "published": "2026-11-12",
+    "excerpt": "How we pair AI agents with our knowledge of Shopify’s systems to safely attack our production infrastructure, find bugs, and reduce risks.",
+    "summary": "Shopify describes a new approach where AI agents are used to safely test its live systems by simulating attacks. The goal is to find security bugs early and reduce risks before real attackers can exploit them.",
+    "tags": [
+      "security",
+      "ai agents",
+      "shopify"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
     "company": "OpenAI",
     "title": "Gilbert + Tobin rethinks the business of law with AI",
@@ -10,6 +158,200 @@
       "ai",
       "law firms",
       "business"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/children-first-declaration",
+    "company": "OpenAI",
+    "title": "Supporting research on AI and children’s safety",
+    "published": "2026-11-12",
+    "excerpt": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+    "summary": "OpenAI is giving $2 million to research on how AI affects children's safety. The money will support shared tools for measuring both the risks and the benefits AI can bring to young people.",
+    "tags": [
+      "ai safety",
+      "children",
+      "research funding"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/amplitude",
+    "company": "OpenAI",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "published": "2026-11-12",
+    "excerpt": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "summary": "Amplitude built an AI helper called Wave, mostly using OpenAI models, that finds what to build, helps teams make changes with coding tools, and checks how those changes work. The article says this lets product updates ship in 1 to 2 days.",
+    "tags": [
+      "ai agents",
+      "product development",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "company": "OpenAI",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "published": "2026-11-12",
+    "excerpt": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+    "summary": "Holiday Extras, a travel services company, is using OpenAI's Codex coding tool to build new apps and features. The company hopes this will help turn more visitors into bookings and open up new ways to grow.",
+    "tags": [
+      "ai coding",
+      "travel",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2?source=rss----4c5a5f6279b6---4",
+    "company": "Pinterest",
+    "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
+    "published": "2026-11-12",
+    "excerpt": "Skyler Zheng | Software Engineer II; Chris Moradi | Staff Data Scientist; Lu Liu | Staff Software Engineer; Aman Gairola | Manager II; Michael Chau | Manager II The Compliance Problem Compliance means following the right steps at the right time Pinterest’s Analytics Agent helps teams answer questions such as “How did query latency for the ads reporting pipeline change last week?” It searches the company’s data ecosystem, analyzes the relevant information, and recommends an answer or course of action. Not every question requires the same steps. We call the agent compliant when it identifies and follows the steps that apply. Improving compliance is intended to make answers more consistent and reduce the risk of incomplete or inaccurate results. Examples include: Read the data-discovery skill when it needs help finding the right tools or sources. Inspect table metadata before writing SQL to learn what the columns mean, which filters are required, and whether the table has important usage notes. Search every relevant source type , including tables, dashboards, and metrics, rather than stopping at the first useful result. These are three examples from a broader set of compliance rules, and whether they apply depends on the question. If a user provides the appropriate table, the agent may not need the data-discovery skill, while an open-ended question may require a broader search. The agent must decide which rules apply and follow them when needed. That flexibility also makes compliance difficult. When the agent skips a required step, it may stop at the first table it finds, miss an important filter in the metadata, or overlook a certified metric with a more authoritative definition. It could then confidently report that “latency is down 4.2%.”[1] The answer may sound reasonable while using the wrong definition, pipeline stage, or reporting window. Why manually revising the agent’s instructions was not enough Measuring noncompliance showed us where the agent failed, but not how to fix it. After parsing existing chat logs, we found that table searches occurred more than ten times as often as chart and dashboard searches.[2] For a separate rule requiring the agent to read the data-discovery skill, compliance reached only 64% across a broader set of chats even after we manually revised the agent’s instructions.[3] It was often difficult to predict which change would improve the agent because the model could interpret reasonable instructions in unexpected ways. One guardrail designed to keep the agent within its intended scope seemed reasonable: Scope: Only answer questions within your domain. For unrelated requests, politely decline and suggest that the user try a general-purpose assistant. The guardrail produced an unexpected response: User, paraphrased: “What are the cloud storage costs for this table, and how long is its data retained?” Agent, paraphrased: “This is outside my domain. Please try a general-purpose assistant.” Although the topic sounded like specialized infrastructure, it was an in-scope data question because the agent had access to relevant storage data. The agent had misclassified the question and declined without searching. We identified the cause only after trying and evaluating several changes. Manually revising the agent’s instructions therefore became a process of trial and error, with no reliable way to know whether a change would generalize or break something else. We needed a repeatable process that could propose a change, test it, and use the results to guide the next attempt. That cycle of proposing, testing, and learning became the foundation of what we call loop engineering. We explain the full approach later in this article. Before building it, however, we first needed test suites that defined success and protected behavior that already worked. Build the Evaluation Framework Start with paired test suites We built a separate pair of test suites for each compliance rule we wanted to improve, such as readin",
+    "summary": "Pinterest's Analytics Agent sometimes skipped steps it should have followed, such as checking table details or searching every data source, which could lead to wrong answers. Engineers built a repeatable loop that tests changes to the agent's instructions and learns from the results, instead of editing them by trial and error.",
+    "tags": [
+      "ai agents",
+      "data analytics",
+      "pinterest"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "company": "Hugging Face",
+    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "published": "2026-11-12",
+    "excerpt": "",
+    "summary": "Hugging Face has introduced LLMON, a new markup language built for large language models, and it is now used in its Granite 4.1 3B and 8B models. The post is a short title-only teaser, so details are limited.",
+    "tags": [
+      "ai models",
+      "language models",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/3d-lora-finetuning",
+    "company": "Hugging Face",
+    "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+    "published": "2026-11-12",
+    "excerpt": "",
+    "summary": "Hugging Face has published a guide on how to adjust existing 3D generation models so they work better for a specific purpose. The article's full text was not provided, so details beyond the title are unknown.",
+    "tags": [
+      "3d models",
+      "ai training",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/discord-linux-a-year-of-upgrades",
+    "company": "Discord",
+    "title": "Discord <3 Linux: A Year of Upgrades",
+    "published": "2026-11-12",
+    "excerpt": "Discord on Linux got a glow-up: a new Rust updater, hardware encoding, Wayland screen share, Steam Deck support, and global keybinds. And we’re not done yet!",
+    "summary": "Discord made several upgrades to its Linux app over the past year. These include a new updater, hardware video encoding, screen sharing on Wayland (a newer Linux display system), Steam Deck support, and global keyboard shortcuts.",
+    "tags": [
+      "linux",
+      "discord",
+      "apps"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
+    "company": "Google Developers",
+    "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
+    "published": "2026-11-12",
+    "excerpt": "The Agents CLI Extension System enables developers to use frameworks like LangChain, LangGraph, or custom enterprise stacks while retaining a unified deployment and evaluation workflow. It details a first-party LangChain template that scaffolds, runs, and deploys agents without requiring the Agent Development Kit (ADK). Additionally, it demonstrates how platform teams can author custom extensions to enforce policies such as automated software bill of materials (SBOM) scans during deployment.",
+    "summary": "Google's Agents CLI now supports extensions, so teams can build AI agents with LangChain or other tools and still use one shared workflow for testing and deploying. It includes a ready-made LangChain starter that works without Google's ADK, and shows how companies can add their own rules, such as automatic security checks before deployment.",
+    "tags": [
+      "ai agents",
+      "developer tools",
+      "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/",
+    "company": "Google Developers",
+    "title": "Integrating TorchTPU into TorchTitan and Optimizing Models for TPU",
+    "published": "2026-11-12",
+    "excerpt": "TorchTPU integrates a native torch.device(\"tpu\") backend directly into PyTorch, allowing developers to train large-scale models on Google Cloud TPUs without rewriting code in JAX. The TorchTitan TPU fork enhances this with production-grade scaling primitives like SimpleFSDP, Graph Trainer, and custom Pallas kernels that achieve high Model Flops Utilization (MFU) across dense and MoE architectures. Developers can leverage these battle-tested optimization playbooks, recipes, and the Hugging Face modeling backend to efficiently scale their own workloads on TPU infrastructure.",
+    "summary": "Google's TorchTPU lets people train large AI models on Google's TPU chips using PyTorch, a common AI tool, without rewriting code in another language. A TorchTitan version adds tools to scale training across many chips efficiently.",
+    "tags": [
+      "ai training",
+      "pytorch",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
+    "company": "Google Developers",
+    "title": "How Agent Anomaly Detection scores on benchmarks we didn't write",
+    "published": "2026-11-12",
+    "excerpt": "Agent Anomaly Detection (AAD) provides asynchronous, low-latency monitoring for AI agents by analyzing OpenTelemetry traces and logs to flag goal hijacks and tool misuse. Tested across five public security benchmarks, AAD successfully caught 87% of harmful instructions carried out by agents without adding runtime latency. Developers can integrate AAD alongside semantic governance and strict tool limits as part of a defense-in-depth strategy to secure agentic applications.",
+    "summary": "Google's new Agent Anomaly Detection checks logs of AI agents after the fact to spot when they are misused or hijacked. In tests on five outside security benchmarks, it caught 87% of harmful agent actions without slowing the agent down.",
+    "tags": [
+      "ai agents",
+      "security",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/devfest-is-back/",
+    "company": "Google Developers",
+    "title": "DevFest is back!",
+    "published": "2026-11-12",
+    "excerpt": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
+    "summary": "DevFest 2026 is a set of about 800 developer events running October to December, with nearly a million people expected. Attendees can learn Google's AI tools, such as Gemini, through hands-on workshops, focused on building, securing, and scaling AI apps.",
+    "tags": [
+      "ai",
+      "developer events",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+    "company": "Google Developers",
+    "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
+    "published": "2026-11-12",
+    "excerpt": "How pairing Go's surviving compiler bounds-check traps with Gemini 4 Argon and the Z3 constraint solver catches latent out-of-bounds panics in Go code and uncovers a slice-capacity blind spot in go test -fuzz.",
+    "summary": "Google shows a way to find hidden crash bugs in Go code that normal fuzz testing misses. It combines Gemini, an AI model, with a math tool called Z3 that checks whether bad inputs are possible.",
+    "tags": [
+      "go programming",
+      "software testing",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "company": "Google DeepMind",
+    "title": "Introducing Gemini 4 Hydrogen",
+    "published": "2026-11-12",
+    "excerpt": "",
+    "summary": "Google DeepMind has announced Gemini 4 Hydrogen, a new version of its Gemini AI model. The article text provided is empty, so no further details can be confirmed.",
+    "tags": [
+      "ai models",
+      "google"
     ],
     "summarized": true,
     "summary_version": 2
@@ -73,6 +415,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.databricks.com/blog/detecting-credential-driven-attacks-databricks",
+    "company": "Databricks",
+    "title": "Detecting credential-driven attacks on Databricks",
+    "published": "2026-11-11",
+    "excerpt": "At Databricks, we know your data is your most valuable asset. Databricks has worked...",
+    "summary": "Databricks describes how it spots attacks that use stolen login credentials on its data platform. The post is only a short teaser, so the specific methods are not yet clear.",
+    "tags": [
+      "security",
+      "data platforms",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/databricks-doubles-down-ai-products-opens-new-235000-square-foot-san-francisco-headquarters",
     "company": "Databricks",
     "title": "Databricks Doubles Down on AI Products, Opens New 235,000-Square-Foot San Francisco Headquarters",
@@ -98,6 +455,21 @@
       "ai chatbots",
       "business data",
       "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/brickster-voices-meet-alasdair-anderson",
+    "company": "Databricks",
+    "title": "Brickster Voices: Meet Alasdair Anderson",
+    "published": "2026-11-11",
+    "excerpt": "Q: What does a typical week look like for a Lead Solutions Architect, and how would...",
+    "summary": "Databricks shares an interview with Alasdair Anderson, a Lead Solutions Architect, about his day-to-day work and what the job involves. The teaser only covers the start of the interview, so the full details are not shown.",
+    "tags": [
+      "careers",
+      "databricks",
+      "solutions architecture"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1317,51 +1689,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-feeds-opensharing-part-2-how-implement",
-    "company": "Databricks",
-    "title": "Read, don't copy: replacing file feeds with OpenSharing - Part 2 (How to Implement)",
-    "published": "2026-11-06",
-    "excerpt": "Many data-sharing architectures begin with a familiar pattern: A provider exports...",
-    "summary": "Databricks describes how to set up OpenSharing, a way for a company to let partners read its data directly instead of receiving copied file exports. This is part two of a series, focusing on the practical steps to put it in place.",
-    "tags": [
-      "data sharing",
-      "databricks",
-      "data engineering"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/read-dont-copy-replacing-file-and-api-feeds-opensharing-part-1-why",
-    "company": "Databricks",
-    "title": "Read, don't copy: replacing file and API feeds with OpenSharing - Part 1 (The Why)",
-    "published": "2026-11-06",
-    "excerpt": "If you ingest data from your customers over SFTP or APIs, you have probably asked...",
-    "summary": "Databricks describes a new approach called OpenSharing that lets companies read shared data directly instead of receiving copied files or API feeds. This first part explains the reasons behind the change; the article itself is only a short teaser here.",
-    "tags": [
-      "data sharing",
-      "databricks",
-      "data pipelines"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-public-sector-organizations-can-govern-ai-scale",
-    "company": "Databricks",
-    "title": "How public sector organizations can govern AI at scale",
-    "published": "2026-11-06",
-    "excerpt": "Every government CIO has the same mandate right now: adopt AI, move faster, do more...",
-    "summary": "Databricks argues that government agencies need clear rules for governing AI as they use it more widely. The article is a short teaser, so it does not give specific steps or examples.",
-    "tags": [
-      "ai governance",
-      "public sector",
-      "government technology"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
     "company": "Anthropic",
     "title": "Teaching AI to build scientific models",
@@ -1460,21 +1787,6 @@
       "ai models",
       "chat",
       "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
-    "company": "Vercel",
-    "title": "AI Gateway adds DeepSeek Search and Fetch tools",
-    "published": "2026-11-06",
-    "excerpt": "DeepSeek Search and DeepSeek Fetch are now available through AI Gateway . Search finds relevant pages with titles, URLs, and summaries. Fetch retrieves page content as Markdown for your model to read. Use both tools with any model that supports tool calling, using one AI Gateway API key. No separate DeepSeek account is required, and you can keep the same tools when switching model providers. These helpers are available in AI SDK 6.0.321 and later on v6, or 7.0.160 and later on v7. Update with pnpm add ai@latest and set your AI_GATEWAY_API_KEY . To combine search and page retrieval, pass both helpers in tools : You can also use alternative search tools with DeepSeek Fetch if DeepSeek Search fails: Search fallback is model-directed, so provider order and retry limits are best effort. DeepSeek Fetch can retrieve a result URL from any of these search tools. Search and Fetch each cost $0.75 per 1,000 billable requests. Failed requests, timeouts, and empty results have no tool charge. Model tokens are billed separately. See the DeepSeek Search documentation and DeepSeek Fetch documentation for configuration options and pricing details. AI Gateway provides one API for calling models, tracking usage and cost, and configuring routing, retries, and failover. You can use an AI Gateway API key or bring your own provider key . Read more",
-    "summary": "Vercel's AI Gateway now offers DeepSeek Search and DeepSeek Fetch tools. Search finds relevant web pages, and Fetch pulls a page's content so an AI model can read it, all using one Gateway API key.",
-    "tags": [
-      "ai tools",
-      "web search",
-      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1613,79 +1925,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/which-data-collaboration-tool-opensharing-clean-rooms-marketplace",
-    "company": "Databricks",
-    "title": "Which Data Collaboration Tool: OpenSharing, Clean Rooms, Marketplace",
-    "published": "2026-11-05",
-    "excerpt": "The world of sharing has extended far past tables. We can now securely share all...",
-    "summary": "Databricks has written about its three ways to share data with other companies: open sharing, clean rooms, and a marketplace. The post helps readers pick which one fits their needs. The text provided is only a short teaser, so details are limited.",
-    "tags": [
-      "data sharing",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/real-time-fraud-detection-feature-views",
-    "company": "Databricks",
-    "title": "Real-time fraud detection with Feature Views",
-    "published": "2026-11-05",
-    "excerpt": "Real-time fraud detection depends on three kinds of features: what a customer did...",
-    "summary": "Databricks describes how to spot fraud as it happens, using features built from recent customer activity. The post only briefly introduces the idea, so details are limited.",
-    "tags": [
-      "fraud detection",
-      "real-time data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/push-based-cdc-unity-catalog-zerobus-ingest-and-debezium",
-    "company": "Databricks",
-    "title": "Push-based CDC into Unity Catalog with Zerobus Ingest and Debezium",
-    "published": "2026-11-05",
-    "excerpt": "Data in operational databases drives business decisions, and much of that analysis...",
-    "summary": "Databricks describes a way to send database change records into its Unity Catalog data system using a tool called Zerobus Ingest together with Debezium, which picks up changes as they happen. The teaser suggests this helps keep analysis of operational data current.",
-    "tags": [
-      "databases",
-      "data pipelines",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/introducing-apache-spark-43-now-available-databricks-runtime-19",
-    "company": "Databricks",
-    "title": "Introducing Apache Spark® 4.3 - Now available in Databricks Runtime 19",
-    "published": "2026-11-05",
-    "excerpt": "IntroductionApache Spark 4.3 brings stateful processing to Real-Time Mode, achieving...",
-    "summary": "Databricks has released Apache Spark 4.3 in its Databricks Runtime 19. The new version adds support for remembering information across steps in Real-Time Mode, which is useful for processing live data streams.",
-    "tags": [
-      "data processing",
-      "apache spark",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/delta-sharing-opensharing-what-changed-whats-next",
-    "company": "Databricks",
-    "title": "From Delta Sharing to OpenSharing: what changed, what's next",
-    "published": "2026-11-05",
-    "excerpt": "Delta Sharing has been the way thousands of organizations exchange live data across...",
-    "summary": "Databricks describes how its data-sharing tool Delta Sharing has grown into a broader effort called OpenSharing, which aims to let organizations exchange live data across different platforms. The post covers what changed and what comes next.",
-    "tags": [
-      "data sharing",
-      "databricks",
-      "open standards"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/how-researchers-use-claude",
     "company": "Anthropic",
     "title": "AI for scientific discovery: How researchers use Claude",
@@ -1695,21 +1934,6 @@
     "tags": [
       "ai",
       "science research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
-    "company": "Vercel",
-    "title": "Vercel Schedules is now in public beta",
-    "published": "2026-11-05",
-    "excerpt": "Vercel Schedules is now in public beta on all plans. Run tasks on a recurring cadence or at a single point in time, in production, preview, or custom environments. Schedules in vercel.json can target a private Vercel Function, an HTTP path, or a Vercel Queue topic, and schedules created at runtime target a Queue topic. Any schedule can be enabled, disabled, or run on demand without redeploying. Define a static schedule: Adding a schedule/v1beta trigger makes the function private. It has no public URL and only the Vercel schedule infrastructure can invoke it. Handle the dispatch: Create a schedule at runtime: Schedules is the successor to Cron Jobs . Existing Cron Jobs continue to work, and the migration guide covers moving them to Schedules. Schedules also power dynamic schedules in Eve and experimental scheduled tasks in Nitro projects . Vercel Schedules is billed starting at $5 per 1M runs and $10 per 1M creations on Pro and Enterprise. Hobby includes 500 schedule creations and 5,000 runs per month. Read the blog post for more on how Schedules works, then get started with the Schedules documentation . Read more",
-    "summary": "Vercel has released Schedules in public beta on all plans, letting users run tasks on a repeating timetable or at one set time. It replaces the older Cron Jobs feature, which still works, and pricing starts at $5 per million runs on paid plans.",
-    "tags": [
-      "vercel",
-      "scheduled tasks",
-      "cloud"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1784,51 +2008,6 @@
       "ai tools",
       "workplace",
       "software development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-gpt-6-cyber",
-    "company": "OpenAI",
-    "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-    "published": "2026-11-05",
-    "excerpt": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-    "summary": "OpenAI has introduced GPT-6 Cyber, a new AI model built to find security weaknesses in software that attackers could exploit, and to help develop fixes. It is designed to stay within the scope it is authorized to work in.",
-    "tags": [
-      "cybersecurity",
-      "ai models",
-      "software security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/franklin-templeton",
-    "company": "OpenAI",
-    "title": "Franklin Templeton uses OpenAI to support investment research",
-    "published": "2026-11-05",
-    "excerpt": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-    "summary": "Franklin Templeton, an investment firm, is building AI tools with OpenAI to help with investment research. The first focus is equity research, where the tools aim to help portfolio managers compare views and check investment risks.",
-    "tags": [
-      "ai tools",
-      "investing",
-      "finance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/cultfit-builds-with-codex",
-    "company": "OpenAI",
-    "title": "Cult.fit builds operational muscle with Codex",
-    "published": "2026-11-05",
-    "excerpt": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-    "summary": "Cult.fit, a fitness company, is using OpenAI's Codex tool to help teams in different departments build their own tools and work faster. The teaser suggests this is changing how day-to-day work gets done.",
-    "tags": [
-      "ai tools",
-      "fitness",
-      "workplace productivity"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2084,21 +2263,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/three-layers-one-repo-a-tour-of-googleadk-recipes/",
-    "company": "Google Developers",
-    "title": "Three layers, one repo: a tour of google/adk-recipes",
-    "published": "2026-11-04",
-    "excerpt": "The google/adk-recipes repository unifies Agent Development Kit (ADK) resources into three structured layers—core/, plugins/, and contrib/—serving as a single source of truth for building AI agents. Developers can leverage reference patterns, install modular vertical skills (such as retail product search and virtual try-on) directly into their coding assistants, and deploy production-ready services across multiple languages. This cohesive structure streamlines the entire workflow from initial scaffolding to full deployment on Google Cloud infrastructure.",
-    "summary": "Google released a single code repository called adk-recipes that gathers tools and examples for building AI agents in three groups: core, plugins, and community contributions. It includes ready-made examples like product search and deploying services on Google Cloud, which can help developers get started faster.",
-    "tags": [
-      "ai agents",
-      "google cloud",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/use-nvidia-nemo-to-turn-agent-failures-into-tests-and-harness-fixes/",
     "company": "NVIDIA",
     "title": "Use NVIDIA NeMo to Turn Agent Failures into Tests and Harness Fixes",
@@ -2269,21 +2433,6 @@
     "tags": [
       "gift cards",
       "discord"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
-    "company": "Google Developers",
-    "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
-    "published": "2026-11-03",
-    "excerpt": "Per-token API prices keep falling, yet engineering bills for autonomous coding agents keep climbing....",
-    "summary": "Google Developers describes using small, cheap classifiers to decide which Gemini model and how much 'thinking' effort each task gets. The goal is to lower the total cost of running coding agents, even though per-token prices keep dropping.",
-    "tags": [
-      "ai costs",
-      "gemini",
-      "coding agents"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2482,36 +2631,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
-    "company": "Google Developers",
-    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
-    "published": "2026-11-01",
-    "excerpt": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
-    "summary": "API Gateway now supports live, always-open data connections such as streaming and WebSockets, in preview, without changing your existing API setup. This lets live and AI-powered apps run through the gateway while keeping logins, usage limits, and monitoring in place.",
-    "tags": [
-      "cloud",
-      "apis",
-      "streaming"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/step-by-step-guide-build-a-voice-agent-that-never-goes-silent-using-adk/",
-    "company": "Google Developers",
-    "title": "Step by Step guide: Build a Voice Agent That Never Goes Silent using ADK",
-    "published": "2026-11-01",
-    "excerpt": "The open-source Agent Development Kit (ADK) and gemini-3.8-live enable developers to build responsive voice agents by implementing non-blocking tools in Python. Developers can use streaming tools to yield progress updates or background execution patterns to keep conversations fluid during long-running backend queries. Additionally, configuring response scheduling behaviors such as WHEN_IDLE, INTERRUPT, or SILENT gives developers precise control over when and how tool results are delivered into the conversation.",
-    "summary": "Google shows how to build a voice assistant in Python using its open-source Agent Development Kit that keeps talking while slow tasks run in the background. It covers sending progress updates and controlling when tool results are spoken, so conversations feel smoother.",
-    "tags": [
-      "voice assistants",
-      "python",
-      "ai agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.figma.com/blog/the-tldr-on-figma-weave/",
     "company": "Figma",
     "title": "The TL;DR on Figma Weave: Make your creative process repeatable",
@@ -2522,21 +2641,6 @@
       "design tools",
       "ai",
       "creative work"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
-    "company": "Google Developers",
-    "title": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive",
-    "published": "2026-10-31",
-    "excerpt": "Google Workspace now offers native support for Markdown (.md) files, allowing developers and AI agents to seamlessly collaborate on documentation directly in Google Docs without manual file conversions. This integration preserves native file fidelity for use with Git repositories and developer tools while unlocking standard Docs features like line-level commenting, rendered Drive previews, and tracked version history.",
-    "summary": "Google Docs and Drive can now open, preview, and edit Markdown (.md) files directly, without converting them first. Developers and AI tools can work on the same docs, and comments and version history still work.",
-    "tags": [
-      "google docs",
-      "markdown",
-      "collaboration"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2680,35 +2784,6 @@
     "tags": [
       "ai models",
       "software updates"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/anydecisionmodel",
-    "company": "Hugging Face",
-    "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
-    "published": "2026-10-29",
-    "excerpt": "",
-    "summary": "Hugging Face has introduced two new open models, AnySpeechRecognizer and AnyDecisionModel, designed to run on Apple devices. The article is only a title here, so details are limited.",
-    "tags": [
-      "speech recognition",
-      "apple devices",
-      "open models"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/announcing-project-protostar",
-    "company": "Hugging Face",
-    "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
-    "published": "2026-10-29",
-    "excerpt": "",
-    "summary": "Hugging Face has announced Project ProtoStar, an effort to make publicly funded science data ready for use with AI. The article text is empty, so details beyond the title are unknown.",
-    "tags": [
-      "ai",
-      "open science"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4030,20 +4105,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.figma.com/blog/source-material-manon-macasaet/",
-    "company": "Figma",
-    "title": "Source material: Creative director Manon Macasaet’s spirituality shapes her process",
-    "published": "2026-10-13",
-    "excerpt": "The creative behind Poison Candy Apple is inspired by Harajuku fashion, early internet Tumblr, old rave graphics, and kidrobots.",
-    "summary": "Figma shares a profile of creative director Manon Macasaet, who says her spiritual beliefs shape how she works. Her style draws on Harajuku fashion, early Tumblr, old rave graphics, and kidrobot toys.",
-    "tags": [
-      "design",
-      "creative work"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/economics-of-ai-monetization",
     "company": "Stripe",
     "title": "The “alien” economics of AI monetization",
@@ -4745,20 +4806,6 @@
       "ai adoption",
       "engineering productivity",
       "dropbox"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-    "company": "Google DeepMind",
-    "title": "Gemini 3.8 text-to-speech says hello",
-    "published": "2026-09-23",
-    "excerpt": "",
-    "summary": "Google DeepMind has announced Gemini 3.8, a text-to-speech system that can turn written words into spoken audio. The article itself is only a short teaser, so no further details are available.",
-    "tags": [
-      "speech ai",
-      "google"
     ],
     "summarized": true,
     "summary_version": 2
