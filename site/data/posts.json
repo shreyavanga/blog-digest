@@ -1,5 +1,457 @@
 [
   {
+    "url": "https://www.databricks.com/blog/whats-new-genie-microsoft-copilot-cowork-and-chat-microsoft-teams-and-excel",
+    "company": "Databricks",
+    "title": "What's new for Genie in Microsoft: Copilot Cowork and Chat, Microsoft Teams, and Excel.",
+    "published": "2026-11-18",
+    "excerpt": "Most AI assistants can read a person's email, files, and calendar, but it can't tell...",
+    "summary": "Databricks announced new ways to use its Genie data assistant inside Microsoft tools, including Copilot chat, Teams, and Excel. The article's opening notes that most AI assistants can read a person's email and files but cannot tell apart certain things, though the teaser cuts off there.",
+    "tags": [
+      "ai assistants",
+      "databricks",
+      "microsoft"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/introducing-unity-gateway-insights",
+    "company": "Databricks",
+    "title": "Introducing Unity Gateway Insights",
+    "published": "2026-11-18",
+    "excerpt": "When looking to cut AI costs, teams often start with budgets or open-source models....",
+    "summary": "Databricks has introduced Unity Gateway Insights, a new tool. The article is a short teaser that mentions teams looking to cut AI costs, often starting with budgets or open-source models.",
+    "tags": [
+      "ai costs",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/introducing-genie-migrate-serverless",
+    "company": "Databricks",
+    "title": "Introducing Genie Migrate for Serverless",
+    "published": "2026-11-18",
+    "excerpt": "Serverless compute in Databricks offers a simpler, faster way to run your data and...",
+    "summary": "Databricks has introduced Genie Migrate, a tool to help move work to its serverless computing option. The teaser says serverless compute offers a simpler, faster way to run data jobs.",
+    "tags": [
+      "cloud computing",
+      "data processing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-we-raised-databricks-cluster-rate-limits-75",
+    "company": "Databricks",
+    "title": "How we raised Databricks cluster rate limits by 7.5×",
+    "published": "2026-11-18",
+    "excerpt": "As part of the Compute Platform team at Databricks, we turn cloud infrastructure...",
+    "summary": "Databricks says its Compute Platform team raised the limits on how many clusters a customer can run, by about 7.5 times. The article is a short teaser, so the exact method is not described here.",
+    "tags": [
+      "cloud infrastructure",
+      "databricks",
+      "rate limits"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-aumovio-centralized-ai-access-databricks-unity-gateway",
+    "company": "Databricks",
+    "title": "How AUMOVIO centralized AI access with Databricks Unity Gateway",
+    "published": "2026-11-18",
+    "excerpt": "As AI adoption grew, AUMOVIO teams developed different ways to access large language...",
+    "summary": "AUMOVIO, a car parts company, set up one central way for its teams to reach AI language models, using Databricks' Unity Gateway. The change came as different teams had started connecting to these AI tools in their own separate ways.",
+    "tags": [
+      "ai tools",
+      "company access",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-drives-now-reads-files-up-to-6x-faster",
+    "company": "Vercel",
+    "title": "Vercel Drives now reads files up to 6x faster",
+    "published": "2026-11-18",
+    "excerpt": "Vercel Drives now reads files up to 6x faster. The update improves cold-read performance. A new read-ahead algorithm uses your application’s access patterns to load data from persistent storage before it’s needed, reducing the time your code spends waiting. All drives get this update automatically, with no SDK upgrade or configuration changes required. Read pricing is unchanged. Learn more in the Vercel Drives documentation . Read more",
+    "summary": "Vercel Drives, a file storage service, now reads files up to 6 times faster. It loads data ahead of time based on how apps use files, so code waits less, and the update applies automatically with no changes needed.",
+    "tags": [
+      "cloud storage",
+      "vercel",
+      "speed"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/single-second-static-deployments-now-support-more-assets",
+    "company": "Vercel",
+    "title": "Single-second static deployments now support more assets",
+    "published": "2026-11-18",
+    "excerpt": "Instant deployments let you deploy eligible static sites to Vercel in about a second, without a build step. They now support CSS, images, fonts, and other assets alongside HTML and Markdown. Deploy a landing page with its stylesheet and images, or a report created by your coding agent, through the Vercel CLI or REST API . With the CLI, run: Newly supported file types include: Styles and data: CSS, JSON, XML, plain text, and web manifests Images: SVG, PNG, JPEG, GIF, WebP, AVIF, and ICO Fonts: WOFF, WOFF2, TTF, OTF, and EOT Documents and media: PDF, MP4, WebM, MP3, WAV, and OGG Instant deployments support up to 100 files totaling 25 MB or less. Vercel detects eligible deployments automatically, with no configuration required. Deployments that exceed these limits, include JavaScript or other unsupported files, or are triggered by Git still build as before. The same applies to projects with a framework preset, custom build settings, a root-level package.json or Vercel configuration file such as vercel.json , or a public/ directory. This update is rolling out across all plans. Learn more in the deployment documentation . Read more",
+    "summary": "Vercel now lets you publish simple static sites in about a second, and those sites can include stylesheets, images, fonts, and PDFs. Sites that are too large, use JavaScript, or need a build step still deploy the usual way.",
+    "tags": [
+      "web hosting",
+      "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/parallel-web-search-is-free-on-ai-gateway-and-eve-through-january-31",
+    "company": "Vercel",
+    "title": "Parallel web search is free on AI Gateway and eve through January 31",
+    "published": "2026-11-18",
+    "excerpt": "Parallel web search in fast mode is now free on AI Gateway through January 31, 2027, and Parallel is now the default web search for eve agents. The tool works with any AI Gateway model, with no separate Parallel API key. Parallel finds relevant web pages and returns links with short excerpts. You can filter results by website or publication date. In eve, the built-in web_search tool uses Parallel fast mode automatically when the model is served through AI Gateway. See the eve documentation for other search configurations. To use Parallel fast mode with the AI SDK, add gateway.tools.parallelSearch({ mode: 'fast' }) to your tools: The offer covers fast mode only, with Zero Data Retention enabled by default. Other modes are billed at standard pricing. Learn more in the web search documentation . Read more",
+    "summary": "Vercel says its Parallel web search in fast mode is free on its AI Gateway until January 31, 2027, and it is now the default search for its eve agents. Developers can use it with any AI Gateway model without a separate Parallel key.",
+    "tags": [
+      "web search",
+      "ai tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/vercel-x",
+    "company": "Vercel",
+    "title": "Introducing Vercel X",
+    "published": "2026-11-18",
+    "excerpt": "Today we’re launching Vercel X , a six-week accelerator for AI founders at the idea and pre-seed stages. Join a cohort of 40 teams at our San Francisco HQ and build alongside Vercel’s product leaders, designers, and engineers. The program takes no equity for participation and offers access to a program-wide pool of more than $9M in credits from Vercel, AWS, Anthropic, OpenAI, and other partners. Applications are now open through November 29, 2026. The program runs from January 19 to March 2, 2027. Vercel has worked with more than 100 early-stage teams from around the world across three accelerator cohorts. Alumni include Rex , Alloy Robotics, Interfaze , Cervo , and Hacktron . Interfaze and Rex are backed by Y Combinator, and Cervo was acquired by Altana Technologies. Why Vercel X? If you’re applying to Vercel X, you probably have an idea or project you haven’t been able to stop thinking about. The next stretch is figuring out exactly what you’re building and who it’s for. We think you get through that stretch the Vercel way: by deeply understanding your customers, shipping quickly, and iterating to greatness. The program includes: Technical mentorship: Hands-on workshops and product feedback from Vercel’s design, product, and engineering teams. Partner credits: Put credits toward hosting, compute, and model API usage as you build and test your product. Founder community: A cohort of AI founders at the same stage, with weekly fireside chats featuring industry leaders. Investor access: Mentorship from VC partners and the opportunity to present your company to investors, ecosystem partners, and the Vercel community at Demo Day. Winning teams receive funding from Vercel Ventures and prizes from program partners. Who should apply We’re looking for technical builders with ambitious ideas and insatiable curiosity. You don’t need a finished product or traction. Tell us what you want to build, who needs it, what AI makes possible, and why you’re the right person or team for the job. Solo founders and teams of up to three can apply from around the world. You must be a Vercel customer and must not have participated in a traditional VC accelerator or raised an institutional seed round. See the additional eligibility requirements below. All participants must spend the full six weeks in San Francisco and attend weekly events in person. Apply to Vercel X Applications close at 11:59 p.m. PT on Sunday, November 29, 2026. Decisions will be released in mid-December. Apply to Vercel X → Applicants must be Vercel customers at or above the age of majority in their jurisdiction, able to commit to the full six weeks in person, and not located in or otherwise subject to restrictions imposed by U.S. sanctions laws. Vercel X program applications will be judged on the quality of the submission, the founder's background, and the overall potential for impact. Read more",
+    "summary": "Vercel is launching Vercel X, a free six-week program in San Francisco for early-stage AI founders, with no equity taken and over $9M in cloud and AI credits. Applications close November 29, 2026, and the program runs January 19 to March 2, 2027.",
+    "tags": [
+      "startups",
+      "ai",
+      "accelerator programs"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/the-silent-consensus",
+    "company": "OpenAI",
+    "title": "The Silent Consensus",
+    "published": "2026-11-18",
+    "excerpt": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
+    "summary": "OpenAI's Dean Ball discusses how more capable AI could change society and how people can keep control of their institutions. The article appears to be only a short teaser, so details beyond this are not known.",
+    "tags": [
+      "ai",
+      "society"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/managing-frontier-ai-risk",
+    "company": "OpenAI",
+    "title": "Managing frontier AI risk: From training to deployment",
+    "published": "2026-11-18",
+    "excerpt": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
+    "summary": "OpenAI describes how it manages risks from its most advanced AI models, covering every stage from training to release. The approach includes teaching models to behave safely, testing them in isolated sandboxes, blocking harmful uses, and monitoring them after launch.",
+    "tags": [
+      "ai safety",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+    "company": "OpenAI",
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "published": "2026-11-18",
+    "excerpt": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+    "summary": "French news group Le Figaro has partnered with OpenAI. Le Figaro's articles will appear in ChatGPT as short summaries and excerpts, with links back to the full original stories.",
+    "tags": [
+      "ai chatbots",
+      "news publishing",
+      "partnerships"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/inside-the-codex-sandbox",
+    "company": "OpenAI",
+    "title": "Inside the Codex sandbox",
+    "published": "2026-11-18",
+    "excerpt": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
+    "summary": "OpenAI describes how its Codex tool runs commands on your computer inside a sandbox. The sandbox limits which files and networks the tool can reach, and you control those limits on macOS, Linux, and Windows.",
+    "tags": [
+      "ai coding tools",
+      "computer security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+    "company": "OpenAI",
+    "title": "Advancing chip design with OpenAI models",
+    "published": "2026-11-18",
+    "excerpt": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
+    "summary": "OpenAI says its AI models helped improve the circuits in its Jalapeño chip and in some RISC-V processor designs, using its GPT-6 Astra model. This shows AI can help engineers design computer chips.",
+    "tags": [
+      "ai",
+      "chip design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/rumble-2-flash",
+    "company": "Hugging Face",
+    "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Hugging Face has released Rumble-2-Flash, a small open speech model with about 0.5 billion parameters that works with over 40 languages. Because it is open, anyone can download and use it.",
+    "tags": [
+      "speech models",
+      "open source ai",
+      "multilingual"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/moe-expert-streaming",
+    "company": "Hugging Face",
+    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Hugging Face shows how to run a very large AI model, with 180 billion parameters, on a single machine with 32GB of memory. The post suggests this is possible by using a mixture-of-experts design, where only part of the model works on each request.",
+    "tags": [
+      "ai models",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+    "company": "Hugging Face",
+    "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Hugging Face wrote about using time-series models, which predict values over time, in a streamhouse setup that handles live data streams. The post covers this as a new area with example uses, though the article text itself was not included.",
+    "tags": [
+      "machine learning",
+      "data streaming"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+    "company": "Hugging Face",
+    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Hugging Face has announced DaisyRose-27B, a new 27-billion-parameter AI model, with a focus on making the extra training done after a model is first built work more efficiently. The article text is missing, so the details beyond the title are unclear.",
+    "tags": [
+      "ai models",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+    "company": "Hugging Face",
+    "title": "Why your fine-tuning job takes longer than the FLOPs say",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Hugging Face explains why training a model on new data often takes longer than the raw number of calculations would suggest. The article's full text was not provided, so this summary is based only on the title.",
+    "tags": [
+      "machine learning",
+      "model training"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/",
+    "company": "Meta Engineering",
+    "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+    "published": "2026-11-18",
+    "excerpt": "As ML ecosystems grow to a large number of production models, the bottleneck is no longer inventing new techniques to improve these models, but rather shipping them reliably and efficiently across a fragmented model space, creating a rising tide that lifts all the boats. At Meta, we built a template-driven approach that standardizes model design into a small set of reusable and composable building blocks, turning model iteration from a per-model problem into a shared systems problem. Over the last two years, this approach reduced per-model engineering time by 92%, shipped 5000+ technique-model combinations, improved offline model quality by 0.63% on average at neutral serving capacity, and delivered 0.86% cumulative online lift covering 70% of models by count. This work is fully detailed in our paper, “ Design Once, Deploy at Scale: Template-Driven ML Development for Large Model Ecosystems .” Meta’s ads ranking systems process billions of daily requests across a diverse array of products and optimization goals, served by a large number of production models. At that scale, the main challenge in improving user relevance and advertiser value has shifted from inventing new techniques to propagating them. Every high-impact idea needs to reach every model it applies to, and adapting it one model at a time does not scale with the fleet. Fragmentation compounds quickly in large-scale ML systems. A new architecture lands on one model, but bringing it to every corner of the ecosystem may take years. A platform migration works for one family of models, but breaks on a long tail of specialized configurations. A tuning insight improves one model, but says little about the next one because the underlying setup is too different. Over time, propagation becomes more difficult than the innovation itself. Meta’s ads ranking ecosystem ran into this exact problem. As the number of production models grew with the diversity of ads optimization objectives, so did the diversity of architectures, features, training settings, serving constraints, and platform-specific logic. That diversity gave teams flexibility, but it also created three systemic problems: high engineering cost to ship new ideas broadly, high reliability cost from an explosion of corner cases, and low predictability when trying to estimate the ecosystem-wide impact of a change. The deeper issue is that fragmentation creates an unfavorable scaling law for engineering itself. If each idea must be evaluated and adapted per model, the work grows linearly with the number of models. That is manageable early on, but becomes a serious bottleneck when you have a large number of models. Fragmentation also weakens automation. AutoML and optimization systems work best in a structured space, but when every model has a different shape, the highest-potential techniques reach only a subset of models. Our answer was not to add another layer of automation on top of this complexity. Instead, we started by reducing the complexity itself. We did this by introducing Standard Model Templates (SMT), an approach that standardizes model design into a curated set of reusable templates. Figure 1: Before SMT, each technique was tuned by hand on each model, and the combinations to try grew exponentially. With SMT, multi-model optimization tunes techniques once across representative models, and the ones that generalize go into the next template version. A Template-Driven Foundation A template is an opinionated, minimal model setup built from shared components such as architecture choices, feature logic, training settings, and serving configs. Instead of maintaining every production model as a largely independent design, we group similar models around a smaller number of standard templates. Model-specific logic still exists where necessary, but the common parts are explicitly represented and shared. In practice, we use a small set of templates that cover major ranking and retrieval patterns across different model siz",
+    "summary": "Meta built a system of standard, reusable model templates so improvements can be shared across its many ad-ranking models instead of being redone for each one. It cut per-model engineering time by 92% and shipped over 5,000 model-and-technique combinations.",
+    "tags": [
+      "machine learning",
+      "ad ranking",
+      "engineering efficiency"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/",
+    "company": "Meta Engineering",
+    "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+    "published": "2026-11-18",
+    "excerpt": "Our previous post in this series introduced the Ranking Engineer Agent (REA) , an autonomous system that generates hypotheses, designs experiments, and proves new machine learning (ML) techniques on ads ranking models. Now, we’re sharing how we propagate ranking model improvements like architectural advancements and training optimizations efficiently across a large and diverse fleet of ads ranking models. This post walks through this process that we call “technique propagation” and how we’re optimizing the process using AI agents. Since agents began driving execution in March 2026, we estimate AI agents handle over 60% of all technique propagation. Measured against the same work before agents, early results show 3x greater engineering productivity, a median 4x reduction in training compute across select combinations, and an estimated $45M+ in compute savings by the end of the year. Meta’s ads recommendation system is powered by a large number of distinct ads ranking models, each serving different product surfaces and advertiser objectives, and each with its own architecture, training data, and serving constraints. Across this portfolio, ML researchers and engineers are continuously advancing the state-of-the-art through innovations we call “techniques.” A technique is anything that makes a ranking model better such as architectural advancements like Wukong factorization layers, Interformer interaction networks, richer data representations, training optimizations, or efficiency improvements in training and inference. However, because each model has its own architecture, data, and training and serving constraints, a technique proven on one model almost never copy-pastes onto the next. At the same time, speed matters because ML techniques have a shelf life. An innovation that delivers gains today may be superseded within a couple of model development cycles. The faster proven techniques reach the full model fleet, the more value they deliver before the next generation of techniques arrive. So how do we propagate a technique to a diverse fleet of models as quickly as possible, while minimizing engineering bandwidth and compute? Scaling Technique Propagation Propagating a growing inventory of proven techniques across a large fleet of diverse models creates a combinatorially expanding space of technique-model combinations to explore, where both engineering bandwidth and compute become significant constraints. The standard way to adapt a technique is to have engineers who are domain experts manually execute adaptation. An engineer studies how a technique interacts with a specific model’s architecture, generalizes it, and tunes it to that model’s constraints. This produces the strongest results, and is still the process for our highest-revenue models, but it does not scale to all of the models in the space. Each adaptation is effort-intensive and demands deep familiarity with both the technique and the target model. So throughput is capped by engineering bandwidth while the opportunity for adaptation grows much faster. The second constraint on propagation is compute. Every adaptation attempt requires a training run, and with a finite compute budget the question is not only which techniques to try but how to navigate the combinatorial space of configurations without spending the budget on attempts (most of which will produce suboptimal gains). Both constraints point to the same requirement: To propagate techniques to a large number of diverse models quickly, propagation has to become standardized, automated, and able to make judgment calls. We started by standardizing model design and automating propagation: a template-driven approach organizes models into a small set of reusable and composable building blocks, so a technique validated once at the template level propagates automatically to every model built from that template. Over the last 2 years, through standardization and automation, we have shipped 5,000+ technique-model combinat",
+    "summary": "Meta describes how it spreads new machine learning improvements across its many ad ranking models using AI agents. The agents now handle over 60% of this work, and Meta reports about 3x higher engineering productivity and an estimated $45M+ in compute savings by year end.",
+    "tags": [
+      "ai agents",
+      "ads",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+    "company": "Google Developers",
+    "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
+    "published": "2026-11-18",
+    "excerpt": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
+    "summary": "Google's LiteRT tool for running AI models on phones now runs on the GPU in Google Play services, making it about 1.4 times faster. Apps can drop roughly 8 MB of bundled code and get updates automatically.",
+    "tags": [
+      "mobile apps",
+      "ai on phones",
+      "android"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
+    "company": "Google Developers",
+    "title": "How Agent Anomaly Detection scores on benchmarks we didn't write",
+    "published": "2026-11-18",
+    "excerpt": "Agent Anomaly Detection (AAD) provides asynchronous, low-latency monitoring for AI agents by analyzing OpenTelemetry traces and logs to flag goal hijacks and tool misuse. Tested across five public security benchmarks, AAD successfully caught 87% of harmful instructions carried out by agents without adding runtime latency. Developers can integrate AAD alongside semantic governance and strict tool limits as part of a defense-in-depth strategy to secure agentic applications.",
+    "summary": "Google describes a tool called Agent Anomaly Detection that watches AI agents' activity records after the fact to spot hijacked goals or misuse of tools. In five public security tests it caught 87% of harmful agent actions without slowing the agents down.",
+    "tags": [
+      "ai agents",
+      "security",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/devfest-is-back/",
+    "company": "Google Developers",
+    "title": "DevFest is back!",
+    "published": "2026-11-18",
+    "excerpt": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
+    "summary": "DevFest 2026 is a series of more than 800 developer events running October through December, with nearly a million people expected. Attendees learn hands-on how to build and secure AI tools using Google's developer products.",
+    "tags": [
+      "developer events",
+      "ai tools",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+    "company": "Google Developers",
+    "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
+    "published": "2026-11-18",
+    "excerpt": "How pairing Go's surviving compiler bounds-check traps with Gemini 4 Argon and the Z3 constraint solver catches latent out-of-bounds panics in Go code and uncovers a slice-capacity blind spot in go test -fuzz.",
+    "summary": "Google shows a way to find hidden crash bugs in Go code that normal fuzz testing misses. It combines Gemini AI with a constraint solver, a tool that checks logical conditions, to find out-of-bounds errors in Go code.",
+    "tags": [
+      "go programming",
+      "software testing",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
+    "company": "Google Developers",
+    "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
+    "published": "2026-11-18",
+    "excerpt": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
+    "summary": "Google shows how to build apps where AI agents create their own user interface, using a tool called A2UI with CopilotKit. The method works with several agent frameworks, including LangChain, AWS Strands, Microsoft agents, and Google ADK.",
+    "tags": [
+      "ai agents",
+      "app development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+    "company": "NVIDIA",
+    "title": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
+    "published": "2026-11-18",
+    "excerpt": "Training a next-generation machine learning interatomic potential (MLIP) requires ground truth: tens to hundreds of millions of density functional theory (DFT)... Training a next-generation machine learning interatomic potential (MLIP) requires ground truth: tens to hundreds of millions of density functional theory (DFT) calculations of energies, forces, and stresses across diverse structures and chemistries. Plane-wave DFT, with VASP as its dominant implementation, is the gold standard for generating that data. It is accurate… Source",
+    "summary": "NVIDIA describes speeding up a type of computer chemistry simulation (plane-wave DFT) on GPUs, using batching and lower-precision math. These simulations generate the training data needed to build AI models of how atoms interact.",
+    "tags": [
+      "gpu computing",
+      "materials science",
+      "ai training data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/",
+    "company": "NVIDIA",
+    "title": "Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos",
+    "published": "2026-11-18",
+    "excerpt": "World model accuracy starts with high-quality, diverse training datasets. Yet capturing rare defects, nighttime incidents, and other challenging scenarios is... World model accuracy starts with high-quality, diverse training datasets. Yet capturing rare defects, nighttime incidents, and other challenging scenarios is costly and time-consuming. Turning raw data into training-ready datasets adds complexity, particularly when using disconnected tools and manual processes for curation, labeling, generation, and evaluation. NVIDIA technology is helping… Source",
+    "summary": "NVIDIA describes a way to build training data for physical AI systems using two text prompts in its Cosmos tool, instead of many separate manual steps. It aims to make rare scenarios, like night-time incidents or product defects, easier to create for training.",
+    "tags": [
+      "ai training data",
+      "nvidia",
+      "synthetic data"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "company": "Google DeepMind",
+    "title": "Genie 4 is now available",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Google DeepMind has announced that Genie 4 is now available. The article text is missing, so the details of what it does are not known from this post.",
+    "tags": [
+      "ai",
+      "google deepmind"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/java4shell-waf-protection/",
+    "company": "Cloudflare",
+    "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+    "published": "2026-11-18",
+    "excerpt": "On November 17, 2026, the security research company Calif disclosed Java4Shell (CVE-2026-114938) , a memory-corruption vulnerability in the Base64 decoder of OpenJDK, the most widely used Java runtime. Under the Common Vulnerability Scoring System (CVSS) 4.0, it scores 9.2 out of 10 (Critical). The flaw affects Java. OpenJDK published a security advisory and Oracle released patched builds in its November 2026 Critical Patch Update the same day, at 21:00 UTC. The vulnerability lets a remote attacker with no credentials send malformed Base64 data to a Java application and overwrite memory next to the decoded output. Calif turned that overwrite into a leak of heap memory, similar to Heartbleed , and into remote code execution. Calif demonstrated pre-authentication remote code execution against Keycloak, Atlassian Jira, Atlassian Confluence, JFrog Artifactory, Jenkins and PingFederate in their default configurations, and post-authentication remote code execution against Apache Kafka, Apache Solr, Elasticsearch, Gerrit, and Spinnaker. Cloudflare has released a new set of rules in the Cloudflare Managed Ruleset designed to detect malformed Base64 input patterns associated with this vulnerability. The rules are available on Pro, Business and Enterprise plans and are enabled by default with the Log action because malformed input and some benign application-specific token formats can resemble exploitation attempts. Blocking by default could therefore disrupt legitimate traffic. Customers can review matching requests in Security Events now and change the rules action to Block once they confirm it does not affect legitimate traffic. The WAF is an additional layer of defense, not a replacement for the patch. Java4Shell can be reached through paths a WAF does not see, like outbound TLS responses, and the only complete fix is to update the Java runtime. Our analysts continue to monitor attack activity and will update the rules as new techniques and variations appear. You can track rule changes in the WAF changelog and get more information on how the vulnerability develops on the dedicated Cloudflare Zero Wire briefing . We have seen no indication so far that Java4Shell was exploited on Cloudflare infrastructure. What we know about the vulnerability Base64 is a common way to represent binary data as text. Java applications decode Base64 when they process authentication headers, tokens, file uploads and many network messages. To decode it faster, OpenJDK replaces frequently used code with specialized machine code, called intrinsics. On supported x86-64 processors, the Base64 intrinsic uses AVX-512 instructions to process 64 bytes at a time. The bug sits in the handwritten assembly that handles the final characters of the input. When the tail of the input contains padding characters (=) in a position where valid Base64 never places them, the routine calculates a negative output length. That invalid length turns into a full 64-byte write. For a 65-character input, made of 64 characters followed by a single =, OpenJDK allocates a 50-byte output array and then writes 62 bytes past its end. Java eventually rejects the input as invalid and throws an exception. By then, the neighboring memory has already been overwritten. An application's own input validation does not help, because the corruption happens inside the decoder before the application can reject the data. The simplest trigger is 64 A characters followed by =. On OpenJDK 17, the trigger needs 128 characters followed by =, because the threshold for the fast code path is higher. Exploitation is not point-and-shoot. The overwritten bytes are mostly fixed values, and the attacker controls only where the write lands. To build a working exploit, Calif arranged the Java heap so that the overflow enlarged neighboring arrays, which gave them first a way to read heap memory and then a way to write chosen bytes. Each target application requires its own exploit chain. Calif reported developing its fir",
+    "summary": "A serious flaw in Java's Base64 decoder, called Java4Shell, lets attackers send bad data and overwrite memory, which can leak data or run code. Cloudflare added firewall rules that flag this, logging only by default, and says patching Java is still the real fix.",
+    "tags": [
+      "security",
+      "java",
+      "vulnerabilities"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+    "company": "AWS",
+    "title": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+    "published": "2026-11-18",
+    "excerpt": "GPU support is now available for EC2 G-series GPU instances for Event Functions running on AWS Lambda Managed Instances (LMI). You can now run GPU-accelerated workloads, including machine learning inference, media processing, rendering, and scientific computing, on GPU instances with serverless simplicity. GPU-accelerated functions are deployed as container (Open Container Initiative, OCI) images. You build an OCI image, point the function at it, and let Lambda handle provisioning, scaling, and event integration. There are no GPU drivers, CUDA versions, or AMIs to reconcile, and no clusters or device plugins to operate. GPU-accelerated functions run on the same Lambda Managed Instances foundation that already gives you Amazon EC2 pricing and specialized compute without managing servers. Why customers need this Customers keep asking to run GPU workloads with the simplicity of serverless. Building on self-managed GPU infrastructure means selecting instances, installing and reconciling GPU drivers and CUDA libraries, planning capacity, writing scaling logic, and hand-building the event integrations that connect the GPU step to the rest of the application. Serverless GPU services that hide that work often sit outside your AWS environment, with no native event sources, identity, or networking. Cost is the second problem. GPUs are expensive, and utilization is usually low because a single workload rarely saturates a GPU. A small inference task can leave most of a provisioned GPU idle while you pay for the whole thing. This feature closes both gaps. You bring a function, and Lambda runs it on a GPU in minutes, triggered by the same AWS events as any other Lambda Event Function, billed and secured the same way. It also maximizes utilization of every GPU you pay for, by consolidating functions onto instances and keeping GPUs busy across concurrent requests. What you can build You can run both AI/ML inference and non-ML workloads using GPU-accelerated compute on Lambda Managed Instances. This capability is optimized for inference rather than training, and custom models rather than large foundation models already available on services like Amazon Bedrock . Common workloads include: Custom model inference : decision models (such as Strands Decider ), computer vision, speech-to-text and text-to-speech, recommendation, document analysis, and small-to-mid-size language models deployed as part of an application. Agentic and event-driven AI : custom inference triggered directly by AWS events, composed with the rest of the Lambda programming model. Media processing and transcoding : video and image pipelines triggered on upload. 3D rendering and generative media : frame and asset rendering, diffusion, and text-to-video generation. Scientific computing and financial modeling : simulations, matrix computation, and risk analysis. Part of the Lambda programming model A GPU-accelerated function is one step in a larger application, and it composes with the rest of Lambda. Lambda durable functions orchestrate multi-step, long-running workflows around the GPU step, with checkpointing and automatic recovery. Lambda MicroVMs run untrusted or model-generated code in isolated, stateful sandboxes. In an agentic workload, a MicroVM executes the tool-use logic on CPU, then calls a GPU-accelerated function running on Lambda Managed Instances for inference. GPU-accelerated functions also support the extended function timeout on Lambda Managed Instances, up to 90 minutes for asynchronous and event source mapping invocations, so you can run batch and other long-running GPU jobs, such as media transcoding or multi-step inference, without re-architecting. GPU-accelerated functions support container images up to 32 GB (10 GB per file), up to 32 GB of ephemeral storage, 2,048 to 32,768 MB of memory, 3 to 48 GB of accelerator memory, up to 48 concurrent requests per execution environment, and up to 15,000 vCPUs per capacity provider. Let’s try it out To show what this",
+    "summary": "AWS Lambda can now run functions on GPU computers, which speed up tasks like AI predictions and video processing. You package the code as a container image, and AWS handles setup, scaling, and triggers without you managing servers.",
+    "tags": [
+      "cloud computing",
+      "serverless",
+      "gpu"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/new-azure-databricks-azure-government-now-beta",
     "company": "Databricks",
     "title": "The new Azure Databricks on Azure Government is now in Beta",
@@ -88,6 +540,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "company": "Anthropic",
+    "title": "Claude solves two open problems in the physics of black holes",
+    "published": "2026-11-17",
+    "excerpt": "Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity.",
+    "summary": "Claude, an AI model from Anthropic, has reportedly helped solve two open problems in physics. Both involve black holes and the effort to understand how gravity works at the quantum scale.",
+    "tags": [
+      "ai",
+      "physics",
+      "black holes"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-blob-now-supports-ttls-for-automatic-deletion",
     "company": "Vercel",
     "title": "Vercel Blob now supports TTLs for automatic deletion",
@@ -112,6 +579,21 @@
       "cloud costs",
       "billing",
       "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/speed-insights-now-measures-soft-navigations",
+    "company": "Vercel",
+    "title": "Speed Insights now measures soft navigations",
+    "published": "2026-11-17",
+    "excerpt": "Speed Insights now measures soft navigations: client-side route changes that update page content without a full reload. This means you can now track performance as users move through your app, not just on full-page loads. Speed Insights captures LCP, FCP, INP, and CLS for soft navigations and includes these measurements in your Real Experience Score. TTFB is not captured because there is no new document request. Soft-navigation tracking is enabled by default for all projects using Speed Insights, with no action required. It works with modern web frameworks such as Next.js, SvelteKit, and Nuxt, in Chromium-based browsers. In your project's Speed Insights dashboard , use the new Navigation Type filter to view All , Hard , or Soft navigation data. Soft-navigation events count toward Speed Insights Plus usage. For existing projects that had Plus enabled before this release, Speed Insights events from soft navigations will not be charged until December 1. For projects that newly enable Plus, these events are billed from the start. To disable soft-navigation tracking, set softNavs to false in your application code and redeploy. This option requires @vercel/speed-insights version 2.1.0 or later: Learn more in the Speed Insights documentation . Read more",
+    "summary": "Vercel's Speed Insights tool now also measures page speed when users move between sections of a site without a full reload. It is on by default, and soft-navigation events count toward paid usage, with billing starting December 1 for existing projects.",
+    "tags": [
+      "web performance",
+      "vercel",
+      "monitoring"
     ],
     "summarized": true,
     "summary_version": 2
@@ -232,6 +714,21 @@
       "ai models",
       "openai",
       "coding tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "company": "OpenAI",
+    "title": "Introducing ChatGPT for Sales",
+    "published": "2026-11-17",
+    "excerpt": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+    "summary": "OpenAI launched ChatGPT for Sales, a new Sales plugin plus over 30 partner plugins. They help salespeople look up potential customers, prepare pitches, update customer records, and move deals along.",
+    "tags": [
+      "ai tools",
+      "sales",
+      "chatgpt"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1021,35 +1518,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
-    "company": "OpenAI",
-    "title": "A step toward defining the Standard Model on a lattice",
-    "published": "2026-11-15",
-    "excerpt": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-    "summary": "OpenAI shared a post about a possible way to define the Standard Model of particle physics on a lattice, a grid-based framework. The idea was worked out into a detailed proof with help from its model GPT-6 Astra.",
-    "tags": [
-      "physics",
-      "ai research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/our-new-blog-for-science",
-    "company": "OpenAI",
-    "title": "Our new blog for science",
-    "published": "2026-11-15",
-    "excerpt": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-    "summary": "OpenAI has launched a new blog about science. It will share research findings, practical methods, and firsthand stories from researchers who use AI to make scientific discoveries.",
-    "tags": [
-      "ai",
-      "science",
-      "research"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
     "company": "Google Developers",
     "title": "Fast, reliable A2UI, with swappable inference formats",
@@ -1124,20 +1592,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/agent-distraction/",
-    "company": "Google Developers",
-    "title": "Agent Distraction",
-    "published": "2026-11-14",
-    "excerpt": "Analysis of over 913,000 coding agent sessions reveals that 13% expose agents to inline TODO(b/...) comments. In 6% of encounters, agents act on these comments, with 83% being entirely unprompted by the developer. These detours result in significant overhead—adding 70% more steps, 77% more tokens, and 105% more wait time per session—split between chasing closed tickets (41%) and unauthorized scope creep on open bugs (57%). Higher-capability models show higher distraction rates, highlighting the need for automated cleanup and linters to maintain agent-friendly codebases",
-    "summary": "An analysis of over 913,000 AI coding sessions found that agents often get pulled off track by leftover to-do notes in code. Nearly always without being asked, they chased old tickets or extra bugs, which added about 70% more steps and wait time, so the authors suggest automatic cleanup tools.",
-    "tags": [
-      "ai coding agents",
-      "software development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
     "company": "Figma",
     "title": "AI’s role in the creative process",
@@ -1162,20 +1616,6 @@
     "tags": [
       "data streaming",
       "apache spark"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/openai-and-databricks-enterprise-ai-your-governed-data",
-    "company": "Databricks",
-    "title": "OpenAI and Databricks: Enterprise AI on your governed data",
-    "published": "2026-11-13",
-    "excerpt": "Greg Brockman, co-founder and President of OpenAI, has a simple way to describe AI...",
-    "summary": "Databricks and OpenAI announced a partnership to bring OpenAI's AI models to businesses working with their own data inside Databricks. The article is a short teaser, so details beyond this are not clear.",
-    "tags": [
-      "enterprise ai",
-      "data platforms"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1210,81 +1650,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-security-review-no-longer-requires-a-linked-vercel-project",
-    "company": "Vercel",
-    "title": "Vercel Security Review no longer requires a linked Vercel project",
-    "published": "2026-11-13",
-    "excerpt": "You can now scan code changes for vulnerabilities with Vercel Security Review in GitHub repositories that have not yet been linked to a Vercel project. By default, Security Review covers all unlinked repositories the Vercel GitHub App can access in a connected GitHub account. You can limit coverage to selected connected accounts or individual repositories in Agent settings. Once enabled, each push to a covered repository automatically triggers a review of its code changes. Security Review checks commits directly in repositories with Security Review enabled, without requiring a Vercel project or deployment. When a push creates a deployment for a linked project with Security Review enabled, the review uses the additional project and deployment context. Connect the account in your team’s Git settings , then enable Security Review in Vercel Agent settings . Get started with the Security Review documentation . Read more",
-    "summary": "Vercel's Security Review can now scan code changes in GitHub repositories even if they aren't linked to a Vercel project yet. Once turned on, every push to those repositories is automatically checked for security problems.",
-    "tags": [
-      "security",
-      "github",
-      "code review"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-sandbox-starts-up-to-four-times-faster",
-    "company": "Vercel",
-    "title": "Vercel Sandbox starts up to 4x faster",
-    "published": "2026-11-13",
-    "excerpt": "Vercel Sandbox now initializes up to 4x faster outside the Washington, D.C. ( iad1 ) region when reused image data is served from a regional cache. Initialization now reads cached image data close to where the sandbox runs, avoiding round trips to origin image storage in iad1 on cache hits. Regional caching supports managed and custom images backed by Vercel Container Registry, including snapshots based on those images. In internal end-to-end benchmarks with Vercel Managed Images , startup time fell about 75% in Paris and from about 3.5s to 1.05s in Seoul. Regions closer to origin storage generally see smaller improvements because requests already travel a shorter distance. Learn more in the Vercel Sandbox documentation . Read more",
-    "summary": "Vercel Sandbox now starts up to 4 times faster outside its Washington, D.C. region by keeping reused image data in a cache closer to where sandboxes run. In tests, startup in Seoul dropped from about 3.5 seconds to 1.05 seconds, so users far from the main storage see the biggest gains.",
-    "tags": [
-      "cloud computing",
-      "performance",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-daemons-can-now-send-traces-to-vercel-tracing",
-    "company": "Vercel",
-    "title": "Daemons can now send traces to Vercel Tracing",
-    "published": "2026-11-13",
-    "excerpt": "Vercel Daemons can now send OpenTelemetry traces to Vercel Tracing , allowing you and your agents to inspect background worker operations alongside the rest of your project's traces. Vercel provides each daemon with a Unix socket for receiving OTLP/HTTP traces and sets the socket's path in VERCEL_OTEL_SOCKET_PATH . Upgrading @vercel/otel to version 2.3.0 or later enables automatic trace export for Node.js daemons using the default configuration. The SDK detects this socket and sends the spans your worker records to Vercel. These spans are available through the Vercel CLI , which can search by service name within a project and return JSON for your agents. Learn more in the daemon tracing documentation . Read more",
-    "summary": "Vercel background workers, called daemons, can now send their performance traces to Vercel's tracing tool. Node.js users on the newer @vercel/otel package get this automatically, and the traces can be searched from the command line.",
-    "tags": [
-      "vercel",
-      "tracing",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/parallel-decisions-now-available-on-ai-gateway-for-free",
-    "company": "Vercel",
-    "title": "Parallel Decisions now available on AI Gateway for free",
-    "published": "2026-11-13",
-    "excerpt": "Parallel Decisions Fast from Parallel is now available on AI Gateway and is free through November 23, 2026. It searches the live web to answer typed questions about companies, products, policies, and other changing information, returning probabilities and cited evidence for your application to act on. Use it to enrich CRM records, check eligibility, route leads, or verify claims against current sources. Boolean questions return the probability of yes, Choice questions select from options you define, and Score questions assess an ordered rubric. Related questions share context and retrieved evidence in one request. Use parallel/parallel-decisions-fast as the model name. No separate Parallel account is required. These examples ask the same web-grounded question through the AI SDK, TypeSafe-compatible API, and OpenAI-compatible Decisions API. Citations include source URLs, optional titles, and evidence excerpts. They apply to the whole request, rather than mapping individual sources to each answer. Your application can use answer probabilities to act automatically above a threshold and send uncertain results for review. AI Gateway tracks these requests in logs and spend budgets alongside other model requests. Read the decision model documentation for question types, or browse the model catalog . Read more",
-    "summary": "Vercel's AI Gateway now offers Parallel Decisions Fast, free through November 23, 2026. It searches the live web to answer yes/no or multiple-choice questions about companies or policies, giving a probability and source links, which can help apps decide automatically or flag uncertain answers for review.",
-    "tags": [
-      "ai tools",
-      "web search",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/build-cache-size-limit-on-vercel-increased-to-five-gb",
-    "company": "Vercel",
-    "title": "Build cache size limit on Vercel increased to 5 GB",
-    "published": "2026-11-13",
-    "excerpt": "The build cache size limit on all Vercel build machines has been increased to 5 GB. This allows projects to save more installed dependencies and framework files for reuse between deployments, which can reduce install and build times. Build machines are the compute environments that install dependencies and build your project before deployment. Previously, caches were discarded if they exceeded 1.5 GB on Basic and Standard, 3 GB on Enhanced, or 4.75 GB on Turbo, leaving the next build without a cache. The change applies automatically across all build machine types at no additional charge, with no configuration required. Learn more in the build cache documentation . Read more",
-    "summary": "Vercel raised the build cache limit on all its build machines to 5 GB, so projects can save more reusable files between deployments. This can make builds faster, and it happens automatically at no extra cost.",
-    "tags": [
-      "vercel",
-      "build speed",
-      "deployment"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
     "company": "Google Research",
     "title": "Advancing science & engineering with Antigravity’s /teamwork",
@@ -1294,36 +1659,6 @@
     "tags": [
       "google research",
       "science tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-chatgpt-wallet",
-    "company": "OpenAI",
-    "title": "Introducing ChatGPT Wallet",
-    "published": "2026-11-13",
-    "excerpt": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-    "summary": "OpenAI has introduced ChatGPT Wallet, a feature that lets AI assistants in ChatGPT Work, Codex, and dots make purchases. Each purchase needs the user's approval, and existing card protections still apply.",
-    "tags": [
-      "ai assistants",
-      "online payments",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/business/customer-stories/shield",
-    "company": "OpenAI",
-    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-    "published": "2026-11-13",
-    "excerpt": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-    "summary": "Shield, a company, uses OpenAI technology so its Forge helper programs can work inside older IT systems. This lets technicians hand routine tasks to the helpers and spend their time on problems that need human judgment.",
-    "tags": [
-      "ai agents",
-      "it support",
-      "legacy systems"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1382,51 +1717,6 @@
       "android",
       "testing",
       "virtual devices"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/",
-    "company": "Google Developers",
-    "title": "Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec",
-    "published": "2026-11-13",
-    "excerpt": "API Gateway now supports real-time streaming—including Server-Sent Events, WebSockets, gRPC, and chunked transfer encoding—in Public Preview without requiring changes to your existing API specifications. This update allows developers to route long-lived, bi-directional streams and AI workloads directly through the gateway while maintaining consistent authentication, rate limiting, and observability. Additionally, gateways now feature deterministic default hostnames, simplifying environment provisioning and infrastructure-as-code management.",
-    "summary": "API Gateway now supports live, continuous data streams, such as Server-Sent Events, WebSockets, and gRPC, in preview. Developers can use these without changing their existing API setup, and security and monitoring still apply.",
-    "tags": [
-      "cloud",
-      "apis",
-      "streaming"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
-    "company": "Google Developers",
-    "title": "Preview, edit, and collaborate on markdown (.md) files natively in Google Docs and Drive",
-    "published": "2026-11-13",
-    "excerpt": "Google Workspace now offers native support for Markdown (.md) files, allowing developers and AI agents to seamlessly collaborate on documentation directly in Google Docs without manual file conversions. This integration preserves native file fidelity for use with Git repositories and developer tools while unlocking standard Docs features like line-level commenting, rendered Drive previews, and tracked version history.",
-    "summary": "Google Docs and Drive can now open, preview, and edit Markdown (.md) files directly, without converting them first. Developers and AI tools can work on the same doc, with comments and version history, while the file stays usable with tools like Git.",
-    "tags": [
-      "google docs",
-      "markdown",
-      "collaboration"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
-    "company": "Google Developers",
-    "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
-    "published": "2026-11-13",
-    "excerpt": "Per-token API prices keep falling, yet engineering bills for autonomous coding agents keep climbing....",
-    "summary": "Google's developer blog describes using small, cheap classifier models to decide which Gemini model and how much 'thinking' each task needs. The goal is to lower the total cost per task, since per-token prices are falling but coding agent bills are still rising.",
-    "tags": [
-      "ai costs",
-      "gemini",
-      "coding agents"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1567,66 +1857,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/lakehousert-scale-real-time-analytics-not-your-bill",
-    "company": "Databricks",
-    "title": "Lakehouse//RT: Scale real-time analytics, not your bill",
-    "published": "2026-11-12",
-    "excerpt": "AI agents are pushing the limits of data warehouses. A human analyst might run a...",
-    "summary": "Databricks describes a new real-time analytics approach, aimed at letting companies handle fast-moving data without costs rising too steeply. The teaser says AI agents are straining current data warehouses, which typically serve people running occasional queries.",
-    "tags": [
-      "data analytics",
-      "cloud costs",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-h6ai-builds-ai-powered-financial-automation-lakebase-postgres",
-    "company": "Databricks",
-    "title": "How H6.ai builds AI-powered financial automation with Lakebase Postgres",
-    "published": "2026-11-12",
-    "excerpt": "Traditional accounts payable and invoice processing tools often force companies into a trade-off...",
-    "summary": "Databricks describes how H6.ai uses its Lakebase Postgres database to build AI tools that automate financial work like invoice and bill processing. The teaser suggests older payment tools force companies to trade speed for control.",
-    "tags": [
-      "ai automation",
-      "invoices",
-      "databases"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-constellation-building-governed-data-foundation-databricks",
-    "company": "Databricks",
-    "title": "How Constellation is building a governed data foundation on Databricks",
-    "published": "2026-11-12",
-    "excerpt": "Constellation operates the largest nuclear fleet in the United States. For them,...",
-    "summary": "Constellation, which runs the largest nuclear power fleet in the US, describes how it is building a data system on Databricks that controls who can access its data. The article is only a short teaser, so details are limited.",
-    "tags": [
-      "data management",
-      "energy",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/how-block-powers-collaborative-ai-agents-buzz-and-unity-gateway",
-    "company": "Databricks",
-    "title": "How Block powers collaborative AI agents with Buzz and Unity Gateway",
-    "published": "2026-11-12",
-    "excerpt": "Inside Block, Buzz brings employees and AI agents into a shared workspace. With Databricks...",
-    "summary": "Block has built Buzz, a shared workspace where employees and AI agents work together. Databricks' Unity Gateway is part of how this works, though the teaser gives few other details.",
-    "tags": [
-      "ai agents",
-      "databricks",
-      "workplace tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://shopify.engineering/cyber-chaos-monkey",
     "company": "Shopify",
     "title": "Cyber Chaos Monkey: Staying ahead of security threats with AI agents",
@@ -1637,36 +1867,6 @@
       "security",
       "ai agents",
       "shopify"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
-    "company": "OpenAI",
-    "title": "Gilbert + Tobin rethinks the business of law with AI",
-    "published": "2026-11-12",
-    "excerpt": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
-    "summary": "OpenAI shares a short conversation with Sam Nickless, CEO of the Australian law firm Gilbert + Tobin, about how the firm is changing its work using AI. The text is only a brief teaser, so the details of his plans are not included.",
-    "tags": [
-      "ai",
-      "law firms",
-      "business"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/children-first-declaration",
-    "company": "OpenAI",
-    "title": "Supporting research on AI and children’s safety",
-    "published": "2026-11-12",
-    "excerpt": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
-    "summary": "OpenAI is giving $2 million to research on how AI affects children's safety. The money will support shared tools for measuring both the risks and the benefits AI can bring to young people.",
-    "tags": [
-      "ai safety",
-      "children",
-      "research funding"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1727,21 +1927,6 @@
       "linux",
       "discord",
       "apps"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/",
-    "company": "Google Developers",
-    "title": "Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond",
-    "published": "2026-11-12",
-    "excerpt": "The Agents CLI Extension System enables developers to use frameworks like LangChain, LangGraph, or custom enterprise stacks while retaining a unified deployment and evaluation workflow. It details a first-party LangChain template that scaffolds, runs, and deploys agents without requiring the Agent Development Kit (ADK). Additionally, it demonstrates how platform teams can author custom extensions to enforce policies such as automated software bill of materials (SBOM) scans during deployment.",
-    "summary": "Google's Agents CLI now supports extensions, so teams can build AI agents with LangChain or other tools and still use one shared workflow for testing and deploying. It includes a ready-made LangChain starter that works without Google's ADK, and shows how companies can add their own rules, such as automatic security checks before deployment.",
-    "tags": [
-      "ai agents",
-      "developer tools",
-      "deployment"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2425,21 +2610,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
-    "company": "NVIDIA",
-    "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-    "published": "2026-11-06",
-    "excerpt": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For... During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For training efficiency, it is common to run inference and training in parallel on separate GPU resources in a disaggregated setup. Although the policy model is updated only on the training GPUs, the system must periodically refresh the weights on the… Source",
-    "summary": "NVIDIA describes a faster way to copy updated model weights from training GPUs to inference GPUs during reinforcement learning. Training and inference run on separate hardware, so the weights must be refreshed regularly to keep generated examples current.",
-    "tags": [
-      "machine learning",
-      "gpu computing",
-      "reinforcement learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/vole-mole/",
     "company": "Cloudflare",
     "title": "The post-quantum future of web privacy",
@@ -2527,20 +2697,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-    "company": "Hugging Face",
-    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-    "published": "2026-11-05",
-    "excerpt": "",
-    "summary": "Hugging Face has announced new NVIDIA Cosmos 3 open models that are meant for simulating interactive worlds. The title is the only detail provided, so the full scope of what the models do is not clear from this text.",
-    "tags": [
-      "ai models",
-      "world simulation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
     "company": "GitHub",
     "title": "Inside GitHub’s new Git storage architecture",
@@ -2595,21 +2751,6 @@
     "tags": [
       "discord",
       "subscriptions"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
-    "company": "NVIDIA",
-    "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
-    "published": "2026-11-05",
-    "excerpt": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an... In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an idle session’s KV cache, or a recomputed prefix is a byte that is not being used to produce tokens. The question is no longer how much memory a GPU has, but how much useful work each byte delivers. The generational data in Figure 1 below… Source",
-    "summary": "NVIDIA explains that fast GPU memory in AI data centers is costly and limited, so every byte should produce useful work. It argues the key question is how much work each byte delivers, not how much memory a chip has.",
-    "tags": [
-      "ai infrastructure",
-      "gpu memory",
-      "nvidia"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2719,20 +2860,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
-    "company": "Hugging Face",
-    "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
-    "published": "2026-11-04",
-    "excerpt": "",
-    "summary": "Hugging Face has released Dharma Field Extractor, a tool that takes any document and pulls out its key details as structured data in JSON format. The article text provided is empty, so this summary relies only on the title.",
-    "tags": [
-      "document processing",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
     "company": "Cloudflare",
     "title": "See the agents, set the terms: new visibility and control for personal agents",
@@ -2758,48 +2885,6 @@
       "cloud storage",
       "data lakes",
       "aws"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/transformers-mic",
-    "company": "Hugging Face",
-    "title": "Transformers Model Integration Contracts",
-    "published": "2026-11-03",
-    "excerpt": "",
-    "summary": "Hugging Face has published a post about the rules that new AI models must follow to be added to its Transformers library. The article text itself was not included, so details are limited to the title.",
-    "tags": [
-      "ai models",
-      "open source software"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
-    "company": "Hugging Face",
-    "title": "Palette: teaching a small model to build decks in your design language",
-    "published": "2026-11-03",
-    "excerpt": "",
-    "summary": "Hugging Face describes Palette, a project that trains a small AI model to create slide decks that match a company's design style. The article text provided is only a title, so details beyond that are not known.",
-    "tags": [
-      "ai models",
-      "presentation design"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/cwe-bench",
-    "company": "Hugging Face",
-    "title": "CWE-bench v2: More coverage, quality, and transparency",
-    "published": "2026-11-03",
-    "excerpt": "",
-    "summary": "Hugging Face has released CWE-bench v2, an updated version of a test for checking how well AI tools find security weaknesses in code. The new version adds more coverage and aims for better quality and openness about results.",
-    "tags": [
-      "ai security",
-      "software testing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3630,21 +3715,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/k-isms/",
-    "company": "Cloudflare",
-    "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-    "published": "2026-10-22",
-    "excerpt": "For ten days, auditors appointed by the Korea Internet & Security Agency (KISA) sat together with us and worked through 80 controls. That is what it took for a company headquartered in the United States, operating a global network serving Korean users, to be certified in South Korea. Cloudflare has now obtained South Korea's Information Security Management System (ISMS) certification under the ISMS-P framework . For customers in Korea, this is more than a compliance checkbox. It is evidence that Cloudflare's security and privacy program has been examined not only for whether our controls exist, but for how they operate in the context of Korean law, the Korean language, and the particular expectations of Korean regulators. What a Korean user sees when they sign up The most visible result of this work is the Cloudflare account sign-up page. In most parts of the world, the line that sits above the sign-up button reads: \" By continuing, I agree to Cloudflare's terms, privacy policy, and cookie policy. \" A user signing up from South Korea sees something different. The Korean experience is triggered by the country selected at sign-up and by IP geolocation from within South Korea, and it breaks the same agreement into four separately labeled items, each marked required or optional, each linking to its full text, with an option to agree to all of them at once: 모두 동의 (Agree to all) [필수] 서비스 약관 ([Required] Terms of Service) [필수] 개인정보 수집 및 이용 ([Required] Collection and use of personal information) [필수] 제한된 범위의 개인정보 해외 이전 ([Required] Transfer of a limited amount of personal information overseas) [선택] 제한된 범위의 개인정보 제3자 제공 ([Optional] Sharing a limited amount of personal information with marketing third parties) The three required items are hard gates. The sign-up button stays disabled until all three are checked, so there is no path through the form that creates an account without an affirmative action on each one. The optional item governs marketing permission only, and leaving it unchecked has no effect on the account creation (it merely opts the user out of receiving marketing communications). The hard part: sign-up paths that never show a form Itemizing consent on a form we control is straightforward. The difficulty was the sign-up paths that skip that form entirely. Globally, you can create a Cloudflare account with Google, Apple, or GitHub. Those flows hand the user to an identity provider and return with an authenticated identity, and they never render our own sign-up form, which is precisely where the four consent items live. There is no step in that handoff where we can present three required items, link each to its full Korean text, and require an affirmative action on each before the account exists. The identity provider's screen is not ours to change. We could either build a separate post-authentication consent gate for one country, or remove the paths that bypass the gate we already had. We chose the second. Social sign-up is not offered in South Korea, so every account created there goes through Cloudflare’s sign-up form, which enforces the required consents. The country signal is the same one available to any Cloudflare customer. Cloudflare derives a two-letter country code from the client IP address and exposes it on the request, as the CF-IPCountry header at the origin and as request.cf.country inside a Worker. Reduced to its essentials, the branch is a string comparison: // Illustrative: the shape of the check, not Cloudflare's own dashboard code. export default { async fetch(request) { // Two-letter country code derived from the client IP. // Same value as the CF-IPCountry request header. // Cloudflare's network populates this on the incoming request, so there is // no geolocation database, lookup service, or extra round trip of our own. const country = request.cf?.country; if (country === \"KR\") { return renderSignUp({ locale: \"ko-KR\", consent: \"itemized\", // four separate items, three of them required socialLogin: false,",
-    "summary": "Cloudflare received South Korea's ISMS-P security certification after ten days of audits by Korean regulators. For Korean users, sign-up now shows separately labeled consent items, and social login is turned off there so every account passes through that form.",
-    "tags": [
-      "compliance",
-      "privacy",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
     "company": "AWS",
     "title": "AWS Continuum for code vulnerabilities is now generally available",
@@ -3655,21 +3725,6 @@
       "cloud security",
       "code vulnerabilities",
       "aws"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-    "company": "Anthropic",
-    "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-    "published": "2026-10-21",
-    "excerpt": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement.",
-    "summary": "Christopher Stubbs, a physicist and former science dean at Harvard, has joined Anthropic's Long-Term Benefit Trust, a group that watches over the company's long-term goals. He brings decades of experience in studying the universe and making precise measurements.",
-    "tags": [
-      "anthropic",
-      "ai governance",
-      "science"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4353,36 +4408,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/",
-    "company": "Meta Engineering",
-    "title": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
-    "published": "2026-10-12",
-    "excerpt": "Meta has begun deploying Media over QUIC (MoQ), an emerging open protocol for real-time video streaming at scale. MoQ will help simplify our protocol stack for live streaming video and enhance overall user experience for live video. We’re sharing how we shipped MoQ on Instagram Live ingest, and what the future looks like from here. This work was also presented at DEMOQED 2026 . Instagram Live now uses the open standard transport protocol Media over QUIC (MoQ) for live video ingest on iOS and Android. As a transport designed for both ingest and playback, MoQ gives us the foundation to build toward an architecture that is lower-latency, more resilient on unreliable networks, and more responsive for creators and viewers. It also gives teams across Meta a common foundation for bringing those improvements to future live and interactive experiences without rebuilding them on separate protocol stacks. MoQ: A Media Protocol for Every Moment in Time The internet has accumulated a rich set of media protocols, each shaped by the problem in front of it. RTMP for ingestion. HLS and DASH for playback. WebRTC for real-time calls. RUSH for the cases that did not fit neatly into any of those. Each was a strong answer for its moment, and together they’ve carried the industry a long way. At Meta, someone who starts a live stream and then makes a voice call on the same app touches three different protocol stacks, each with its own serving infrastructure, monitoring, and operational expertise. That separation made sense when these experiences were distinct. But as live video, real-time AI, and generative AI creation tools increasingly share the same product surface, the lines between these use cases are starting to blur. A common protocol across ingest, delivery, and playback can reduce the number of custom transports and operating models that engineering teams need to maintain and improve over time. How MoQ Works MoQ is an emerging IETF standard that enables low-latency, scalable media delivery (live streaming, real-time communication) over the QUIC transport layer. It’s being developed collaboratively at the IETF, with active participation from Meta, Google, Akamai, Cisco, Cloudflare, and academia. For nearly a decade, Meta’s live streaming video has run on Reliable Ultra-low-latency Streaming over HTTP (RUSH), an in-house QUIC-based protocol built to move past RTMP. RUSH proved that QUIC could carry live media at scale and was a predecessor to MoQ. The lessons learned from running RUSH in production are part of what shaped our bet on MoQ. The core abstraction in MoQ is a Track , an addressable stream of media objects that publishers push and subscribers receive through a network of relays. Relays cache and forward objects without parsing the media payload – they only need to understand the MoQ framing and delivery metadata. A few properties matter for using MoQ as a single transport across the full latency spectrum: Built on QUIC: QUIC lets independent streams make progress without TCP-style cross-stream head-of-line blocking. It also supports faster connection setup and connection migration. Meta’s earlier QUIC rollout achieved lower request errors, tail latency, and video stalls than HTTP/2. MoQ applies the same transport foundation to live and real-time media. MoQ would also automatically benefit from any feature added to QUIC (e.g., FEC). Native Fan-out and caching: MoQ relays are built-in caching and request/stream coalescing endpoints, so media streams scale through CDN relays out of the box. Request coalescing, caching, and fan-out are not new (live streaming already does them), but MoQ makes them part of the protocol design rather than a bolt-on, and it is designed to scale via relays more efficiently than traditional HTTP streaming. Tunable Latency per use case: Two subscribers to the same track can run at different latencies at the same time — e.g., ~100 ms for an interactive participant and several seconds for an archival or buffered",
-    "summary": "Meta has started using Media over QUIC (MoQ), a new open streaming standard, to send live video from creators' phones for Instagram Live on iOS and Android. The goal is a single protocol that can handle live video, playback, and real-time calls, with lower delay and better performance on weak networks.",
-    "tags": [
-      "live video",
-      "streaming",
-      "meta"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/",
-    "company": "Meta Engineering",
-    "title": "OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks",
-    "published": "2026-10-12",
-    "excerpt": "At the 2026 Open Compute Project Global Summit, Meta is sharing the next generation of open networking infrastructure, including: Our first liquid-cooled network rack (IcePack), and 102.4T switch platform (IceCube). Flattened Planar Fabric (FPF), a multiplane backend scale-out fabric that fundamentally changes how GPUs connect to the network MetaRoCE, our open-source AI transport protocol. Launching the Open Switch Platform Architecture (OSPA) initiative within OCP. We’re inviting engineers, silicon vendors, system integrators, and operators to join us and the OCP community in meeting the challenges of building open, efficient, and sustainable AI infrastructure. At Meta, we believe that open networking is critical for building high-performance, scalable, and sustainable infrastructure, and we’ve acted on that conviction since co-founding the Open Compute Project (OCP) in 2011. Throughout the ongoing AI revolution, Meta has pushed the boundaries of what’s possible in data center networking and shared our advances with the industry. At OCP 2025, we introduced our latest AI scale-out fabrics and drove the creation of the Ethernet for Scale-Up Networking (ESUN) initiative. This year at OCP 2026, we’re sharing the networking innovations that directly support our latest AI workloads such as Meta’s Muse Wonder and Muse Spark models, and Muse, our personal AI agent built for everyone . Here’s some of what’s new: The 102.4T scale-out switch : Meta’s first liquid-cooled network rack (IcePack) and 102.4T switch blades (IceCube), designed to support high power density, deliver higher thermal efficiency, and enable gigawatt-scale AI clusters. The scale-out Flattened Planar Fabric (FPF) : Meta’s multiplane fabric, enabling larger, highly efficient GPU clusters with lower latency — with learnings shared with our cloud partners. Scale-across for multi-site clusters : Meta’s petabit-scale backend aggregation (BAG) super-spine and how large-scale training jobs deal with failures at this scale — with an overview of how we’ve built SRv6 regional backbones using FBOSS and SAI to handle even longer distances Ethernet for Scale-Up Networking: Meta’s MTIA 300 system uses Tahan, an Ethernet-based 51.2T scale-up switch, delivering 6.4 Tbps per accelerator — with a preview of next-gen 72-accelerator-per-rack design on 102.4T silicon and moving toward an ESUN-based implementation with future chips. Open Switch Platform Architecture (OSPA) : a new OCP initiative, co-led by Meta, Microsoft, and Alibaba, that standardizes the switch platform layer — with specification v1.0 now submitted to OCP. MetaRoCE : Meta’s RDMA transport protocol for AI networks — now with open-source implementations. The 102.4T Generation: Liquid-Cooled Networking at AI Scale As AI clusters grow to gigawatt scale, network switches must deliver dramatically more bandwidth while fitting within increasingly dense power and cooling envelopes. Our answer is the IcePack rack, Meta’s first-generation liquid-cooled network rack. IcePack is based on OCP’s ORV3-HPRv1 rack standard . IceCube switch blades — 102.4-Tbps fabric switches that deliver 128×800G non-blocking switching capacity — sit inside each rack. IceCube comes in two variants , one built on Broadcom’s Tomahawk6C switch ASIC and one on NVIDIA Spectrum-6 Switch ASIC. Both run Meta’s open-source FBOSS network operating system that leverages OCP SAI (Switch Abstraction Interface). This new generation represents a 2x bandwidth increase over our 51.2T platforms while achieving the thermal density required for next-generation AI data centers. The IcePack rack — Meta’s first liquid-cooled network rack, populated with IceCube 102T switch blades. IceCube — Meta’s 102.4 Tbps liquid-cooled switch blade, delivering 128×800G non-blocking capacity and running FBOSS. Scaling AI Fabrics From Building to Region As seen at Meta and across the industry, AI clusters now span buildings, campuses, and multiple regions . This demands fabric architectures",
-    "summary": "At the 2026 Open Compute Project summit, Meta shared new open networking gear for AI data centers, including its first liquid-cooled network rack and a switch with twice the bandwidth of its previous models. It also launched a new open standard for switch hardware, so the industry can build on the same design.",
-    "tags": [
-      "data centers",
-      "networking",
-      "ai infrastructure"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/",
     "company": "AWS",
     "title": "Announcing AWS Lambda Web Functions",
@@ -4678,20 +4703,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-    "company": "Google DeepMind",
-    "title": "Gemini 4 Argon: our next era of frontier intelligence",
-    "published": "2026-09-30",
-    "excerpt": "",
-    "summary": "Google DeepMind has announced Gemini 4 Argon, which it describes as the next step in its frontier AI models. The post provides few details beyond the title, so specific capabilities are not clear from the text.",
-    "tags": [
-      "ai models",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/",
     "company": "AWS",
     "title": "Celebrating Our Newest AWS Heroes – September 2026",
@@ -4731,21 +4742,6 @@
     "tags": [
       "cloud storage",
       "data analytics",
-      "amazon web services"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/",
-    "company": "AWS",
-    "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
-    "published": "2026-09-30",
-    "excerpt": "Today, we’re announcing a new capability for Amazon Aurora PostgreSQL that you can use to directly query operational data together with data stored in your data lake in Apache Iceberg and Apache Parquet formats, using your existing PostgreSQL applications and tools. By eliminating the need to extract, transform, and load (ETL) structured data from data lakes into your operational database, you can reduce operational complexity and simplify application development. You can also use Aurora PostgreSQL to query data from data lakes managed in Iceberg REST Catalog (IRC)-compatible catalogs, giving you access to data across a breadth of analytics systems without moving or duplicating it. Whether you’re powering real-time dashboards, enriching transactions with historical context, or building AI agents that reason over both live and archived data, you can now do it all through a single, familiar interface. Previously, if your application needed to combine recent transactional data in Aurora with historical records stored in Amazon S3, a common approach was to build reverse ETL pipelines that duplicated data, increased infrastructure costs, and required ongoing engineering effort to keep everything synchronized. This challenge only grows as you increasingly embed AI agents into your applications, where it is impractical to predict and pre-replicate every dataset an agent might need. DuckLabs, the team that maintains the DuckDB project, recently joined Amazon, and this capability is an example of how the efficiency of DuckDB is being integrated into our services. DuckDB is now embedded directly within Aurora PostgreSQL, so you can query live operational data (including uncommitted writes) alongside your data lake in a single query. Query processing stays within Aurora, with no additional network hops and no ETL pipelines that duplicate data. You can query Apache Iceberg tables managed through the AWS Glue Data Catalog, as well as Parquet and Iceberg data stored in Amazon S3 and S3 Tables. You do all of this using familiar PostgreSQL syntax and your existing applications and tools. We’re excited to bring the speed and simplicity of DuckDB directly into Aurora PostgreSQL, so you and your agents can query and combine operational and Iceberg data using the familiar PostgreSQL applications, tools, and endpoints already in use. By building this capability around DuckDB, future improvements to the open source engine can continue to bring performance and functionality gains to Aurora and other AWS services. What is new This capability is supported on two Aurora PostgreSQL major versions: 17 (starting with 17.11) and 18 (starting with 18.6). To use it, you create an Aurora PostgreSQL cluster, attach an IAM role with the AuroraAnalytics feature, and enable the aurora_analytics extension. The IAM role is what gives Aurora access to your data in Amazon S3 and the AWS Glue Data Catalog. You then create foreign tables that point to your Iceberg or Parquet data in the data lake, and query them using familiar PostgreSQL syntax. You can complete this setup through the Amazon RDS console , or with any PostgreSQL client such as psql. The process is well documented in the Aurora PostgreSQL documentation . You can query data across external IRC-compatible catalogs through AWS Glue Data Catalog federation. You register the external catalog once with Glue, and then create foreign tables for the tables you want to query, the same way you would for any Glue-native table. A single query can then join data stored in Aurora with Iceberg tables registered across multiple catalogs, so applications get a unified view without moving data or replacing your existing catalog investments. Aurora also applies optimizations such as predicate pushdown and column pruning so that only the relevant data is read. This keeps queries efficient even as the underlying data grows. Frequently accessed data is also cached in your Aurora instance, so subsequent queries against the same",
-    "summary": "Amazon Aurora PostgreSQL can now query data stored in your data lake (Iceberg and Parquet files in S3) directly, alongside live database data, using normal PostgreSQL commands. This means teams can skip copying data between systems, which saves setup work and cost.",
-    "tags": [
-      "databases",
-      "data lakes",
       "amazon web services"
     ],
     "summarized": true,
@@ -5281,36 +5277,6 @@
       "accessibility",
       "alt text",
       "web development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://shopify.engineering/gisting",
-    "company": "Shopify",
-    "title": "Gisting: Compressing LLM Agent context to ↑ throughput and ↓ cost",
-    "published": "2026-08-19",
-    "excerpt": "Gisting compresses context into a set of learned tokens, preserving its quality while making the model faster and cheaper.",
-    "summary": "Shopify describes a method called gisting that squeezes long AI agent context into a smaller set of learned tokens. The goal is to make the AI model run faster and cost less while keeping the quality of its answers.",
-    "tags": [
-      "ai agents",
-      "cost savings",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4",
-    "company": "Airbnb",
-    "title": "How we knew COVID was over (and what our models had to unlearn)",
-    "published": "2026-08-19",
-    "excerpt": "When we retrain, when we rebuild, and when we leave a model alone. By: Harrison Katz A forecast that carries weight The Forecasting Data Science team at Airbnb produces many of the forecasts the rest of the company plans around: demand, bookings, cancellations, and a range of finer cuts by market and segment, refreshed continuously across thousands of markets. The targets differ, and the models differ, but they have one thing in common: Other teams build on top of them. This means a forecast that is casually wrong is not a clean miss, as it might be in an academic setting. That’s because a small bias does not stay small once a lot of decisions are riding on it. So when one of those forecasts starts to drift, what to do about it is not really a methods question. It is a risk question, and an easy one to get wrong, which we have from time to time. One of these forecasts had been missing, compared to what actually happened after the forecast was released, in the same direction for a couple of quarters. This bias persisted after several routine refreshes. The usual solution would be to fully retrain the model: pull in the recent data, refit the model again, and ship. But we wanted to understand the source of the bias, rather than simply hoping an update would eliminate it. If you’re interested in other posts on this topic, you can learn more about how COVID impacted Airbnb’s financial models or how we dealt with disruption to our models during the pandemic . This post is about the discipline that came out of both: how we now decide whether a struggling forecast needs new data, a new model, or no changes at all. One word, three decisions The easy mistake is treating the choice to “retrain” a model as a single action. It is three separate actions — refitting, respecifying, or holding — and none of them is particularly similar to the others. Refitting is the cheaper option. Same model, same structure, same features, updated with newer data. This is what most people mean by “retrain.” For the ordinary drift that builds up in a model as the world moves on, it’s usually the right choice. Saying that this is the cheaper option is not the same as saying that it’s cheap. A refit still has to be validated and shipped. The refitting process can degrade a model that was actually fine if the recent data happens to be unusual. And, given the importance of the production forecast, every refresh is a small risk you are choosing to take. It is the least expensive of the three options, but not a free one. None of this is an argument against refitting. On most cycles it is the right move, and if we had to run one of the three blind, it would be this one. The claim is narrower. A refit is a decision with a price, and pricing it is what lets you notice the cycles where a different option was worth more. Respecifying is a different animal. You change the model itself: add a feature, drop one, change the structure, the priors, the likelihood. On the production forecast, which so many of our teams plan around, this is a real commitment; you are replacing something you understand, and have watched the behavior of for years, with something partly new that you have not. It is also where almost all the actual improvement lives. Refitting keeps a good model current. Respecifying is how a model that is in some way wrong in its operations is made right. Holding is the one nobody likes. You look at the miss, decide it does not warrant action, and leave the model alone. This takes the most nerve, because to anyone watching the forecast it looks like you are ignoring a problem. On a forecast that people are relying on, “We decided to do nothing” is a hard sentence to say out loud. It is also, more often than you would think, the correct call. What we have learned from years of running these models is that the trouble comes from filing all three under one verb. “We should retrain” gets said when any of the three is the actual answer, and the word drags everyone tow",
-    "summary": "Airbnb's forecasting team found a demand forecast had been consistently off in one direction for two quarters, even after routine updates. Instead of simply retraining it, they worked out whether the model needed fresh data, a changed structure, or no change at all, since its forecasts guide many company plans.",
-    "tags": [
-      "forecasting",
-      "machine learning",
-      "airbnb"
     ],
     "summarized": true,
     "summary_version": 2
