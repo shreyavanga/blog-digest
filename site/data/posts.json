@@ -1,5 +1,315 @@
 [
   {
+    "url": "https://www.databricks.com/blog/java4shell-vulnerability-cve-2026-114938-assessment",
+    "company": "Databricks",
+    "title": "Java4Shell vulnerability (CVE-2026-114938) assessment",
+    "published": "2026-11-19",
+    "excerpt": "As of November 19 at 10 AM Pacific Time:Prior to Java4Shell’s public disclosure (CVE-2026-114938),...",
+    "summary": "Databricks posted an assessment of a newly disclosed security flaw called Java4Shell (CVE-2026-114938), which affects Java software. The teaser only gives a timestamp and does not say how the flaw affects users.",
+    "tags": [
+      "security",
+      "java",
+      "vulnerabilities"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/how-partners-use-genies-free-tier-azure-databricks",
+    "company": "Databricks",
+    "title": "How partners use Genie's free tier on Azure Databricks",
+    "published": "2026-11-19",
+    "excerpt": "Every Azure Databricks user gets $10 of free Genie usage each month, usage that many...",
+    "summary": "Azure Databricks now gives every user $10 of free Genie usage each month. The teaser shows how partners use this free tier, but does not give further details.",
+    "tags": [
+      "cloud computing",
+      "databricks",
+      "free tier"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/databricks-wins-team-award-ai-capital-markets-0",
+    "company": "Databricks",
+    "title": "Databricks Wins A-Team Award for AI in Capital Markets",
+    "published": "2026-11-19",
+    "excerpt": "Recognized for AI and governance, together.Capital markets have no shortage of AI...",
+    "summary": "Databricks won an A-Team award for its work on AI in capital markets, which is the finance world of stocks and trading. The award recognizes its AI tools and its approach to governance, meaning rules for managing data and AI safely.",
+    "tags": [
+      "artificial intelligence",
+      "finance",
+      "data governance"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/customerlake-conversions",
+    "company": "Databricks",
+    "title": "Introducing CustomerLake Conversions: Improve advertising performance with first-party customer context",
+    "published": "2026-11-19",
+    "excerpt": "Two purchases can look identical in campaign reports and mean very different things to your business...",
+    "summary": "Databricks announced CustomerLake Conversions, a tool that uses a company's own customer data to help ad campaigns. The idea is that a campaign report can look the same for two sales that matter very differently to a business. The article is only a short teaser, so details are limited.",
+    "tags": [
+      "advertising",
+      "customer data",
+      "data platforms"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/bulk-migrate-your-dashboards-aibi-genie-code",
+    "company": "Databricks",
+    "title": "Bulk migrate your dashboards to AI/BI with Genie Code",
+    "published": "2026-11-19",
+    "excerpt": "In our previous post, Migrate Your Dashboards to AI/BI with Genie Code, we walked...",
+    "summary": "Databricks has a new way to move many dashboards at once into its AI/BI tool, using Genie Code. The post is a follow-up to an earlier guide on moving one dashboard, and the teaser gives no further details.",
+    "tags": [
+      "dashboards",
+      "data tools",
+      "migration"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/ai-architecture-patterns-regulated-industries",
+    "company": "Databricks",
+    "title": "Four AI Architecture Patterns for Regulated Industries",
+    "published": "2026-11-19",
+    "excerpt": "Enterprise AI cannot replace every deterministic control. These four patterns help...",
+    "summary": "Databricks shares four ways to design AI systems for industries with strict rules, like banking or healthcare. The teaser suggests the patterns keep key safety checks in place, since AI alone can't replace every fixed control.",
+    "tags": [
+      "ai",
+      "regulated industries"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-billing-cli-is-now-available",
+    "company": "Vercel",
+    "title": "Vercel Billing CLI is now available",
+    "published": "2026-11-19",
+    "excerpt": "You can now check your team’s billing overview, review and download invoices, and preview upcoming charges with the Vercel CLI . All billing commands, including usage, contracts, and budgets, are now grouped under vercel billing . Billing overview and invoice history are available on all plans, subject to your team’s existing billing permissions. Upcoming invoice estimates require an active paid subscription. Billing overview Check your team’s plan, billing status, billing cycle, balance due, and overdue invoices: In CLI 65.17.0 and later, this overview also includes configured invoice details such as your billing address, tax ID, and purchase order. Invoices and upcoming charges Use vercel billing invoices to review invoices, download PDFs, and preview upcoming charges. For inspect and download , replace <INVOICE_ID> with a full invoice ID from the list output: Upcoming charges are estimates and may change until the end of the billing period. For scripts and agents, add --json to vercel billing overview or any vercel billing invoices subcommand for structured output. Existing usage, contract, and budget commands now also use the same prefix: vercel usage → vercel billing usage vercel contract → vercel billing contract vercel budgets → vercel billing budgets The previous command names continue to work as aliases. To get started, update your Vercel CLI with vercel upgrade . Learn more in the Billing & Invoices documentation . Read more",
+    "summary": "Vercel's command-line tool can now show your team's billing status, list and download invoices, and preview upcoming charges. These billing commands are grouped under one new prefix, and the old names still work.",
+    "tags": [
+      "billing",
+      "developer tools",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/liquid-ais-d1-2-and-d1-2-ultra-are-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Liquid AI's d1.2 and d1.2-ultra are now available on AI Gateway",
+    "published": "2026-11-19",
+    "excerpt": "Liquid AI’s d1.2 and d1.2-ultra are now available on AI Gateway with audio input and bounding box support. These decision models return structured answers instead of generating text. Ask Boolean questions for yes/no probabilities, Choice questions to select a category, or Score questions to rate an input against a rubric. Multiple questions can share the same input in one request. d1.2 is the faster, lower-cost model. d1.2-ultra is Liquid AI’s most accurate decision model. Use liquid/d1.2 or liquid/d1.2-ultra as the model name. Before running the examples, set AI_GATEWAY_API_KEY to an AI Gateway API key . Classify a voicemail with AI SDK 7 Pass audio as a file part in state . This example reads voicemail.flac and returns the probability that the caller is requesting a refund. It requires ai 7.0.136 or later. For image classification, pass image bytes with the matching media type, such as image/png . Locate an object with the Decisions API Box questions return top and bottom as fractions of the image height, and left and right as fractions of its width. This Python example uses the Decisions API to locate a signature in form.png and print its bounding box: Decision requests appear in AI Gateway logs and count toward budgets . Learn more in the decision model documentation , or browse all decision models . Read more",
+    "summary": "Liquid AI's d1.2 and d1.2-ultra models are now on Vercel's AI Gateway. Unlike text generators, they give structured answers like yes/no probabilities, picked categories, or scores, and can now handle audio and locate objects in images.",
+    "tags": [
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+    "company": "Google Research",
+    "title": "A game you cannot win unless you have a quantum computer",
+    "published": "2026-11-19",
+    "excerpt": "Quantum",
+    "summary": "Google Research describes a new game that can only be won with a quantum computer. The article is only a short teaser, so the details of how it works are not clear here.",
+    "tags": [
+      "quantum computing",
+      "games"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "company": "OpenAI",
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "published": "2026-11-19",
+    "excerpt": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+    "summary": "OpenAI describes its \"Performance Factory,\" a set of automated workflows built on Codex that finds and fixes speed problems. The goal is to keep ChatGPT running fast for users.",
+    "tags": [
+      "chatgpt",
+      "software speed",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone/",
+    "company": "Spotify",
+    "title": "When Can You Ship on Offline Evals Alone?",
+    "published": "2026-11-19",
+    "excerpt": "TL;DR Teams building AI features want to skip slow A/B tests and decide from offline evals alone. This post... The post When Can You Ship on Offline Evals Alone? appeared first on Spotify Engineering .",
+    "summary": "Spotify's engineers look at when a team can release an AI feature based only on offline tests, skipping slow live A/B experiments. The post is a short teaser, so the details of their method aren't shown here.",
+    "tags": [
+      "ai features",
+      "testing",
+      "spotify"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/discord-update-november-19-2026",
+    "company": "Discord",
+    "title": "Discord Update: November 19, 2026",
+    "published": "2026-11-19",
+    "excerpt": "Here's the Discord Changelog from November 19, 2026, so you can stay informed on what’s new in recent app updates!",
+    "summary": "Discord posted its November 19, 2026 changelog, a list of recent app updates. The teaser does not name the specific changes.",
+    "tags": [
+      "discord",
+      "app updates"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+    "company": "Google Developers",
+    "title": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs",
+    "published": "2026-11-19",
+    "excerpt": "This post walks developers through training a multi-turn, tool-using LLM agent using Tunix and Gemma 4 on Cloud TPUs. By leveraging agentic Group Relative Policy Optimization (GRPO) and asynchronous vLLM rollouts, the approach significantly improves complex reasoning and tool compliance in interactive environments.",
+    "summary": "This post shows how to train an AI agent that uses tools over several back-and-forth steps, using Google's Tunix software and Gemma 4 on Google's TPU chips. The method is said to improve the agent's reasoning and how well it follows tool rules.",
+    "tags": [
+      "ai agents",
+      "machine learning",
+      "google tpu"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/",
+    "company": "Google Developers",
+    "title": "Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText",
+    "published": "2026-11-19",
+    "excerpt": "Streaming DiLoCo in MaxText enables developers to efficiently train large language models across geographically distributed TPU slices by streaming parameter fragments instead of synchronizing full models at every step. This approach slashes cross-slice communication volume by over 60× and eliminates network stalls, allowing seamless multi-datacenter scaling without degrading model convergence or quality.",
+    "summary": "Google describes a new way to train large AI language models across TPU computer groups in different data centers. It sends small pieces of the model instead of the whole thing each step, cutting network traffic over 60 times without hurting results.",
+    "tags": [
+      "ai training",
+      "cloud computing",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
+    "company": "Google Developers",
+    "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
+    "published": "2026-11-19",
+    "excerpt": "Per-token API prices keep falling, yet engineering bills for autonomous coding agents keep climbing....",
+    "summary": "Google describes using cheap classifier models to choose which Gemini model and thinking level to use for each task. The idea is that the cost per finished task matters more than the price per token, since coding agents can still get expensive even as token prices drop.",
+    "tags": [
+      "ai costs",
+      "gemini",
+      "coding agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/agent-distraction/",
+    "company": "Google Developers",
+    "title": "Agent Distraction",
+    "published": "2026-11-19",
+    "excerpt": "Analysis of over 913,000 coding agent sessions reveals that 13% expose agents to inline TODO(b/...) comments. In 6% of encounters, agents act on these comments, with 83% being entirely unprompted by the developer. These detours result in significant overhead—adding 70% more steps, 77% more tokens, and 105% more wait time per session—split between chasing closed tickets (41%) and unauthorized scope creep on open bugs (57%). Higher-capability models show higher distraction rates, highlighting the need for automated cleanup and linters to maintain agent-friendly codebases",
+    "summary": "An analysis of over 913,000 AI coding sessions found that agents often get pulled off track by leftover to-do notes in code, and act on them without being asked. This adds a lot of extra steps and waiting time, so cleaning up old notes may help.",
+    "tags": [
+      "ai agents",
+      "software development",
+      "coding tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/",
+    "company": "NVIDIA",
+    "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
+    "published": "2026-11-19",
+    "excerpt": "Reinforcement learning (RL) uses rewards to train models to solve problems and complete tasks more successfully. Inference drives this process. Workers generate... Reinforcement learning (RL) uses rewards to train models to solve problems and complete tasks more successfully. Inference drives this process. Workers generate rollouts: sequences of model outputs, actions, and environment interactions. The RL framework scores the results, updates model weights, and sends those weights back to the workers for the next round. As RL training scales… Source",
+    "summary": "NVIDIA describes a way to speed up reinforcement learning, a method that trains AI models using rewards. The work focuses on the step where workers generate model outputs, which slows down training as systems grow. The post introduces NVIDIA Dynamo to reduce that bottleneck.",
+    "tags": [
+      "ai training",
+      "nvidia",
+      "reinforcement learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+    "company": "NVIDIA",
+    "title": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+    "published": "2026-11-19",
+    "excerpt": "In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating... In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating conditions. Yet limits on how quickly the measured data can be moved and processed often shape how an instrument is designed, from readout electronics to acquisition timing. What could scientific instrument makers simplify—or make possible—if… Source",
+    "summary": "NVIDIA describes a way to process data from scientific instruments directly on graphics chips, so measurements can be analyzed as they arrive. This could let AI adjust experiments and processes live, without being limited by how fast data can be moved.",
+    "tags": [
+      "ai",
+      "scientific instruments",
+      "gpu computing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
+    "company": "NVIDIA",
+    "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+    "published": "2026-11-19",
+    "excerpt": "A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received... A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received as token IDs or decoded text, into visible text, reasoning, and tool calls an application can use. In this post, you’ll learn how tool-call parsing works and use an AI agent to build a parser for a new model. You’ll start with a… Source",
+    "summary": "NVIDIA explains how a parser turns raw AI model output into normal text, reasoning, and tool calls an app can use. It also shows how to use an AI agent to build such a parser in Rust for a new model.",
+    "tags": [
+      "ai agents",
+      "rust programming",
+      "ai models"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/",
+    "company": "Cloudflare",
+    "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
+    "published": "2026-11-19",
+    "excerpt": "Visitors to government election websites surged 363% on November 3, the date of the 2026 midterm elections in the United States. Across Cloudflare's election protection programs, we also detected a significant shift in the types and timing of cyberattacks throughout 2026. Unlike what we saw in other recent elections, attackers focused on gaining access to internal systems and data, rather than knocking websites offline. Government election websites faced website vulnerability attempts 180 times more often than denial-of-service (DDoS) attacks, and at roughly ten times the rate of Cloudflare's broader customer base. We also found evidence of at least one attempt to exploit a recently disclosed critical PHP vulnerability on a state government voting website in the Western United States. These attacks peaked in late October, several weeks before the election. Vulnerability exploit attempts climbed steadily throughout 2026: from 200,000 per day in January, to 2 million per day in October. However, on Election Day in the U.S., Cloudflare detected no escalation in attack volume and zero major DDoS incidents across protected election sites, marking a sharp contrast to other recent elections, such as in Moldova last year. Our data regarding cyberattacks on election institutions came from organizations participating in Cloudflare's free cybersecurity programs: the Athenian Project , Cloudflare for Campaigns , and Project Galileo . Together, these initiatives helped protect more than 1,400 election-related websites during the 2026 U.S. midterm elections, including those belonging to state and local governments, candidates, political parties, voting-rights advocates, journalists, and civil society groups. Cloudflare launched its first election protection program in 2016 after widespread reports of cyberattacks targeting the U.S. elections. A decade later, it is remarkable to see how far governments and campaigns have come in securing their digital infrastructure. We are proud to help protect democratic institutions and are encouraged that cyberattacks were once again not a disruptive factor in 2026. In this post, we examine traffic and attacks observed against those organizations on Election Day, analyze the most common types of attacks of the 2026 cycle, and provide recommendations based on those findings. Election Day: significant voter traffic, minimal attacks Ordinary user traffic to state and local government election websites was higher on Election Day (November 3) than any other day in 2026. Traffic to those sites increased to approximately 602 million requests, up from 130 million on November 1. By comparison, traffic across the rest of Cloudflare’s global network rose by only 12% over the same period. State and local government election websites provide authoritative information to voters on how to register, where to vote, and who won. Because of their critical role, these platforms are often targeted by those seeking to suppress voter turnout, disrupt the reporting of results, or steal sensitive information. On Election Day itself, Cloudflare did not record a single significant distributed denial-of-service (DDoS) attack across any of its 1,400 election-related websites. The only significant DDoS attack occurred on November 2, targeting a candidate for the U.S. House of Representatives in California and totaled 520,000 requests. By comparison, the Moldovan Election Commission experienced more than 898 million malicious requests in a single 12-hour period on their Election Day in 2025, with attacks peaking at 324,333 requests per second. Prior to Election Day: the most common attacks in the 2026 cycle Website vulnerability scans were by far the most common attack observed by Cloudflare in the 2026 U.S. election cycle. In the 12 months leading up to the election, Cloudflare mitigated 392 million such attacks on government election websites alone. Website vulnerability attacks exploit outdated or vulnerable website code to gain ac",
+    "summary": "Cloudflare reports that on U.S. midterm Election Day in 2026, election websites got much more traffic, but almost no disruptive attacks. Hackers mostly tried to break into election websites and their systems rather than knock them offline.",
+    "tags": [
+      "cybersecurity",
+      "elections",
+      "website security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/source-material-chase-rutherford/",
+    "company": "Figma",
+    "title": "Source material: Creative Director Chase Rutherford on what makes something iconic",
+    "published": "2026-11-18",
+    "excerpt": "From internet ephemera and fashion to found images, objects, and cultural oddities, Chase explores how the things around us can be pulled apart, recontextualized, and turned into something new.",
+    "summary": "Figma shares a talk with creative director Chase Rutherford about what makes something iconic. He looks at how everyday things like internet posts, fashion, found photos, and odd objects can be taken apart and reused to make something new.",
+    "tags": [
+      "design",
+      "creativity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/whats-new-genie-microsoft-copilot-cowork-and-chat-microsoft-teams-and-excel",
     "company": "Databricks",
     "title": "What's new for Genie in Microsoft: Copilot Cowork and Chat, Microsoft Teams, and Excel.",
@@ -73,6 +383,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+    "company": "Anthropic",
+    "title": "Anthropic prices initial public offering",
+    "published": "2026-11-18",
+    "excerpt": "Anthropic prices initial public offering",
+    "summary": "Anthropic, the AI company, has set the price for its first public stock sale. The article is only a short headline, so no further details like the amount raised or share price are known.",
+    "tags": [
+      "ai",
+      "ipo",
+      "stock market"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/vercel-drives-now-reads-files-up-to-6x-faster",
     "company": "Vercel",
     "title": "Vercel Drives now reads files up to 6x faster",
@@ -83,6 +408,21 @@
       "cloud storage",
       "vercel",
       "speed"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-board-is-now-available",
+    "company": "Vercel",
+    "title": "Vercel Board is now available",
+    "published": "2026-11-18",
+    "excerpt": "Vercel Board is now available on all plans. It’s an experimental message board that gives agents a shared, secure place to coordinate tasks and keep context together. Use Board to build agent workflows, swarms, and software factories with: Each task’s discussion and results kept together in one thread. Control over which channels agents and users can access and what they can do. Messages and replies that sync both ways with Slack, GitHub, and other tools through Vercel Connect . Use your own agents, harnesses, and execution environments. Agents access Board through the Vercel CLI or JavaScript SDK. To get started, install the Board skill: Or paste this into your agent: Read the announcement , or learn more in the Vercel Board documentation . Read more",
+    "summary": "Vercel has released Vercel Board on all plans. It is an experimental message board where AI agents and people can share tasks, discussions, and results in one secure place.",
+    "tags": [
+      "ai agents",
+      "vercel",
+      "developer tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -117,6 +457,20 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/gemini-4-neon-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Gemini 4 Neon now available on AI Gateway",
+    "published": "2026-11-18",
+    "excerpt": "Gemini 4 Neon from Google is now available on AI Gateway. Gemini 4 Neon is a major upgrade over the earlier, lighter Gemini 4 model, delivering output quality close to Google’s larger Gemini 4 models with faster responses. It’s built for coding, agent workflows, and multi-step tasks. The model accepts text, images, video, and documents, with a 1M-token context window. It supports tool calling, structured outputs, grounding with Google Search and Google Maps, and four reasoning levels: low, medium, high, and xhigh. Use google/gemini-4-neon as the model ID: To use Gemini 4 Neon in Codex, Cursor, or another supported agent, see the coding agents guide . Try Gemini 4 Neon in the model playground , or explore all language models . Read more",
+    "summary": "Google's new Gemini 4 Neon AI model is now available through Vercel's AI Gateway. It is a faster, stronger upgrade over the earlier lighter version, aimed at coding and multi-step tasks.",
+    "tags": [
+      "ai models",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/blog/vercel-x",
     "company": "Vercel",
     "title": "Introducing Vercel X",
@@ -132,6 +486,36 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/blog/introducing-vercel-board",
+    "company": "Vercel",
+    "title": "Introducing Vercel Board",
+    "published": "2026-11-18",
+    "excerpt": "Software development is moving from individual agents completing tasks to teams of agents working on more complex projects. A single agent can track its work in a Markdown file, but there isn't a purpose-built primitive for tracking tasks, delegation, statuses, logs, and completed work across many agents and subagents. We ran into this coordination problem internally and started experimenting with a shared message board as a primitive on two key projects: Our security agents : We deployed a swarm of agents to analyze our codebases for vulnerabilities, push fixes and updates, and now we keep track of their work via Board. v0's software factory : After seeing how well Board worked for security agents, we rebuilt v0's software factory on it, and it now merges over 50% of PRs. Along the way, we added multiple features like grants for different levels of access (for humans and agents), two-way sync for multiple tools (like Slack), and a lot more. Today we are launching Vercel Board as an experimental agentic primitive. It packages what we've learned about coordinating work across agent fleets and builds towards a future where multiple teams of humans and agents orchestrate swarms, software factories, and other agentic workflows. We built Board for our own needs, but invite curious developers to test it alongside us and give feedback. It is harness agnostic and fits well into existing multi-agent reinforcement learning. Claude Code, Codex, Pi, OpenCode, eve, fx, Mastra, and LangChain can collaborate as if they were a single harness. How it works Board is a headless communication primitive and message store for your agents across tools and environments. Your agents read from and write to Board through the CLI or JavaScript SDK. Install the Board skill to give your agent instructions for using it: Each board is organized into channels and threads . A thread keeps the conversation, context, and updates together, while labels track details such as the associated pull request or current status. Once a task is on Board, an agent can claim it, post updates, and record the result. For example, a coding agent can use the CLI to find an open bug, claim it, and share a pull request for review: The thread keeps the original report, findings, and pull request so another agent or person can review the work. Run npx @vercel/board inspect to open the Board viewer and follow activity across channels and threads in real time. Wake agents and schedule follow-ups You can configure a watcher to run agents when a new reply is posted or a label changes. For example, if there is a reply in Slack or by another agent, it can trigger the agent to address their feedback and post an update or pull request in the same thread. On Vercel, matching events wake your deployment, so no process needs to stay running between events. Agents can also schedule follow-ups with vercel board schedule . For example, after an agent has opened a pull request it can remind itself to check CI in 5 minutes. This makes agents feel much more proactive, as they can check things without requiring a new message from a human. For a pull request tracked in Board thread 812, the agent would run: Note that agents can keep internal notes and check-ins on Board with --no-sync , while sharing progress updates through connected tools. Sync with existing tools A task can be pushed directly to Board or synced from a connected tool like Slack or GitHub. The Board SDK handles two-way sync, mirroring replies, reactions, edits, and deletions between Board and your connected tools: Share structured data Messages in Board can also include structured data based on a schema you define. Board validates the data when posted so agents can read fields directly without extracting them from the raw message text. For example, a security finding could include the affected repository, severity, and status with the agent's message. Here is an example schema, security-finding@1 (where @1 is the version): Control ac",
+    "summary": "Vercel released Board, an experimental message board that lets teams of AI agents track tasks, claim work, post updates, and share results in one place. It is built for coordinating many agents working on larger software projects.",
+    "tags": [
+      "ai agents",
+      "software development",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://shopify.engineering/secure-agentic-apps",
+    "company": "Shopify",
+    "title": "Building secure mobile apps in the agentic era",
+    "published": "2026-11-18",
+    "excerpt": "How we scale our security with attack surface maps, focused AI reviews, and checks that improve with every vulnerability fixed.",
+    "summary": "Shopify describes how it protects its mobile apps as attacks grow more automated. It uses maps of where attackers could get in, AI tools that review code with a narrow focus, and security checks that get better each time a flaw is fixed.",
+    "tags": [
+      "mobile apps",
+      "security",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/the-silent-consensus",
     "company": "OpenAI",
     "title": "The Silent Consensus",
@@ -141,6 +525,21 @@
     "tags": [
       "ai",
       "society"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "company": "OpenAI",
+    "title": "Research acceleration: The jagged frontier",
+    "published": "2026-11-18",
+    "excerpt": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+    "summary": "OpenAI looks at how coding agents are speeding up AI research and where they still perform unevenly. The post also considers what this may mean for AI systems that help improve themselves.",
+    "tags": [
+      "ai research",
+      "coding agents",
+      "ai safety"
     ],
     "summarized": true,
     "summary_version": 2
@@ -198,6 +597,21 @@
     "tags": [
       "ai",
       "chip design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/sumitomo-life",
+    "company": "OpenAI",
+    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+    "published": "2026-11-18",
+    "excerpt": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+    "summary": "Sumitomo Life, an insurance company, uses ChatGPT Enterprise for research, writing proposals, and drafting code for investment analysis. Its executives used the tool early, which helped other staff start using it too.",
+    "tags": [
+      "ai tools",
+      "insurance",
+      "workplace adoption"
     ],
     "summarized": true,
     "summary_version": 2
@@ -408,6 +822,20 @@
     "summary_version": 2
   },
   {
+    "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "company": "Google DeepMind",
+    "title": "Introducing Gemini 4 Neon",
+    "published": "2026-11-18",
+    "excerpt": "",
+    "summary": "Google DeepMind has announced Gemini 4 Neon, a new version of its Gemini AI model. The article text provided was empty, so no further details are available.",
+    "tags": [
+      "ai models",
+      "google"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://deepmind.google/blog/genie-4-is-now-available/",
     "company": "Google DeepMind",
     "title": "Genie 4 is now available",
@@ -417,6 +845,21 @@
     "tags": [
       "ai",
       "google deepmind"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/open-clairic/",
+    "company": "Cloudflare",
+    "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+    "published": "2026-11-18",
+    "excerpt": "Cloudflare has become a neolab. We’re building our own frontier AI models for our customers and the open-source community. Today, we’re announcing two open-weight model releases: We’re introducing an updated version of Clairic . Since the preview, we’ve improved extraction from complex documents including images and PDFs (new!), with more reliable handling of tables, lists, and dates, and better grounding of answers in the source material. We’re introducing Clairic-flash , a lighter, faster version of Clairic that delivers strong extraction and prediction performance in a compact, 9-billion-parameter model. Both extraction models are hosted on Workers AI and full open weights are available on Hugging Face . We’re also excited to re-introduce ourselves as the Workers AI superintelligence team, the frontier AI research team behind Clef , Clairic, and lots more in the works. This team is working quickly to push the AI frontier and build useful models for Cloudflare’s customers and the open source community. A new version of Clairic: redesigned after the preview release Since announcing Clairic in preview, we have received a ton of use cases and helpful feedback on how customers wanted to use an extraction model. We heard about use cases ranging from extracting data from images like receipts to reading values from support tickets. We knew that we wanted extraction to be the clear focus for the model, so it had to excel at reading from unstructured data. We decided to go back to the drawing board with Clairic and redesigned our architecture, differentiating this new version of Clairic from our preview release. For ordinary text and number extraction fields, we now use parallel slot autoregressive generation instead of a single forward pass. Each field uses the tokens it has already written to choose its next token, then stops at its own end marker. All the fields advance together in the serving batch, still giving lightning-fast latency per request. This boosted our accuracy in extraction for both text and images, and the trade-off in accuracy offsets the small latency cost. For computation, estimation, and extraction use cases, we trained special heads that can handle estimates, forecasts, durations, calculated dates, and explicit arithmetic. Although the model architecture evolved, we kept the parts of the typed API interface that make the answers useful: confidence scores, character spans, and probabilities are still intact with every request. The model is still incredibly fast and cheap. From the evals below, you can see how our newer versions of Clairic have greatly improved on extraction across text, images, PDFs, and more. Eval Clairic-preview Clairic Clairic-flash D1.2 + OCR ScaleDown Fresh text fields, 96 requests 295/336 335/336 328/336 304/336 259/336 Internal eval (mchen) - mixed-input fields, 36 requests 207/226 221/226 213/226 116/226 156/226 Tracked customer assertions, 139 request shapes 1,033/1,263 1,263/1,263 1,263/1,263 973/1,263 653/1,263 Synthetic receipt fields in text and images 369/576 576/576 576/576 397/576 280/576 There are no public extraction benchmarks yet, but we ran our internal evals for other emerging extraction models on the market, such as Liquid AI’s D1.2 (pipelined with Apple Vision for optical character recognition) and Scaledown’s Extract . Our Clairic models excel across extraction use cases, but take these evals as directional guidance since they are self-reported. We wanted to show an illustrative picture of how Clairic is performing across generalized extraction use cases and celebrate the fact that other companies are releasing extraction models as well — confirming our original hypothesis that extraction was a pain point for LLM users because of the cost, latency, and accuracy. But is it fast? We ran latency tests for Clairic and Clairic-flash, measuring complete HTTP response from a self-hosted server, including all fields in the request. Even with the redesigned architecture, you can ",
+    "summary": "Cloudflare released two free-to-use AI models for pulling data out of documents, including images and PDFs. An improved full version and a smaller, faster version called Clairic-flash are now available, with model files shared publicly.",
+    "tags": [
+      "ai models",
+      "open source",
+      "cloudflare"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1001,51 +1444,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/introducing-databricks-ai-index-state-enterprise-ai-tokenomics",
-    "company": "Databricks",
-    "title": "Introducing the Databricks AI Index: The state of enterprise AI tokenomics",
-    "published": "2026-11-16",
-    "excerpt": "Developers have more AI models and coding agents to choose from than ever before....",
-    "summary": "Databricks has released a new AI Index report on how companies use and pay for AI models. The article is only a short teaser, so the full findings are not clear from it.",
-    "tags": [
-      "ai models",
-      "enterprise ai",
-      "cloud costs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/clean-data-was-never-enough-how-ifs-copperleaf-taught-ai-its-business-databricks-genie-one-0",
-    "company": "Databricks",
-    "title": "Clean data was never enough: How IFS Copperleaf taught AI its business with Databricks Genie One",
-    "published": "2026-11-16",
-    "excerpt": "IFS Copperleaf is a leading global provider of Asset Investment Planning (AIP) software...",
-    "summary": "IFS Copperleaf, a company that makes software for planning investments in physical assets, used Databricks Genie to teach its AI how its business works. The post suggests clean data alone was not enough for the AI to give useful answers.",
-    "tags": [
-      "ai",
-      "data",
-      "business software"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/build-real-time-next-best-offer-recommender-using-databricks-feature-views",
-    "company": "Databricks",
-    "title": "Build a real-time next-best-offer recommender using Databricks Feature Views",
-    "published": "2026-11-16",
-    "excerpt": "Real-time personalization depends on understanding what customers want in the moment...",
-    "summary": "Databricks describes how to build a system that suggests the next best offer to a customer in real time, using its Feature Views tool. The teaser is short, so details about how it works are not clear from this text alone.",
-    "tags": [
-      "recommendations",
-      "real-time data",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
     "company": "Anthropic",
     "title": "Updating our coordinated vulnerability disclosure policy timelines",
@@ -1099,49 +1497,6 @@
     "tags": [
       "ai video",
       "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/hy4-flash-now-available-on-ai-gateway-for-50-off",
-    "company": "Vercel",
-    "title": "Hy4 Flash now available on AI Gateway for 50% off",
-    "published": "2026-11-16",
-    "excerpt": "Hy4 Flash from Tencent is now available on AI Gateway with an introductory 50% discount on input, cached input, and output tokens through November 29, 2026. Hy4 Flash is the new lower-cost model in the Hy4 family. It keeps the full Hy4 feature set at roughly a tenth of the price per token: reasoning with preserved thinking across turns, tool calling, structured outputs, prompt caching, and image input, with the same 1M-token context window. Reasoning can be turned off for requests that don't need it, which suits high-volume coding, agent, and document workloads. Use tencent/hy4-flash as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select tencent/hy4-flash in the agent. See the coding agents guide for details. Try Hy4 Flash in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
-    "summary": "Vercel now offers Tencent's Hy4 Flash model on its AI Gateway at half price through November 29, 2026. It is a cheaper version of the Hy4 family that keeps most of its features at about a tenth of the cost.",
-    "tags": [
-      "ai models",
-      "cloud pricing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/ai-gateway-now-supports-private-inference",
-    "company": "Vercel",
-    "title": "AI Gateway now supports Private Inference",
-    "published": "2026-11-16",
-    "excerpt": "Private Inference connects your own model endpoints to AI Gateway . Enterprises running fine-tuned, self-hosted, or prerelease models used to need separate keys, client code, and logs for them. Those models can now run through the same authentication, SDKs and APIs , and observability as catalog models , so every model your team uses is managed in one place. Use Private Inference to: Switch between private and catalog models: Call private models through Chat Completions, Responses, or Messages. AI Gateway translates each request to your endpoint's format, so switching only changes the model ID. Keep models scoped to your team: Only your Vercel team can view or call private models, and they aren't listed in the public catalog. Credentials are stored encrypted, and you can enable Zero Data Retention per provider. Connect coding agents: Use private models in Claude Code, Codex, Cursor, and other coding agents connected to AI Gateway. Monitor traffic together: View private model requests alongside catalog traffic in logs , trace drains , and custom reporting . Observability charts break down requests, tokens, and time to first token by private model. Configure fallbacks: Optionally fall back to a catalog model if your private endpoint fails. To get started, open the Private Inference page and add your endpoint as a private provider. Enter its base URL, select its API format, and add its credentials. Then add the models it serves. You can also register the provider and model with the Vercel CLI , version 65.16.0 or later: Call the model using its private/<slug> ID: Private model requests appear in AI Gateway logs alongside requests to catalog models. type: embedded-entry-inline id: 1GzjEiRrj3NaTriLhtBYIX Read the Private Inference documentation for supported model types, requirements, and billing details. Read more",
-    "summary": "Vercel's AI Gateway can now connect a company's own AI models, such as custom or self-hosted ones, alongside the public catalog models. Teams can manage, call, and monitor all their models in one place, with private models kept visible only to their team.",
-    "tags": [
-      "ai models",
-      "developer tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/agent-evals",
-    "company": "Vercel",
-    "title": "Agents are users, so your software needs evals",
-    "published": "2026-11-16",
-    "excerpt": "Agents are now users of software, doing work on people's behalf. Whether you're building the agent or the software it uses (API, CLI, MCP server, SDK), evals give you a way to measure how well that work gets done. Agents probably missed your launch video and billboard on Highway 101, but they still go through the same funnel a human does to find and use a product: Discovery , Selection , Access , and Success . You can build evals for any stage of this funnel. Here, we’ll focus on the final stage, Success : whether the agent completes the user’s task correctly. That's more difficult to check than it sounds. An agent can place a “successful” order for a hot latte when the user asked for an iced one. The request worked, so the logs in your Observability stack look fine. And because LLM outputs vary between runs, one good manual test can’t tell you whether a fix worked. You need to repeat the same tasks and grade the outcomes, before and after the change. That’s what an eval is, a test you run many times and score. Here’s how we build one. The agentic testing pyramid If a test asks “did it work?”, an eval asks “how often does it work, and how well?” We group agentic software tests by how many LLM calls they typically need: deterministic tests (0), one-turn evals (1), and E2E evals (2+ across a whole task). This has turned out to be a great proxy for the effort to build them, the time they take to run, and the cost of running them. Just like in the practical test pyramid , the cheap and fast tests should make up the bulk of your test suite. To use the pyramid, start with the problem you want to catch and pick the lowest tier that can catch it. For Success , that's the top. A one-turn eval checks a single decision, like which command the agent runs first. But Success depends on the whole sequence of steps (e.g. search for cafes → filter on user criteria → place the latte order). Each one can look reasonable on its own, and the agent can still get the wrong outcome. An E2E eval lets the agent work through the whole task in an environment, then checks whether the final result meets the user’s requirements. You’ve probably seen a few already; most popular coding benchmarks, like SWE-bench and Terminal-Bench , are E2E evals. Example Say you own SF Beans, an API for ordering coffee in San Francisco. One of the best ways to give agents access to your service is through a CLI, so you’re shipping sfbeans . Here’s a typical request from one of your customers: Get me a large iced latte with whole milk, ready for pickup by 9:00, under $8 including tip. I’m in the Mission. Here’s what sfbeans knows at 8:30am: Fog City Roasters: ice machine is down, so no iced drinks today (temperature) 24th St Beans: latte is $7.50 on the menu, but $9.27 after tax and tip (budget) Dolores Drip: latte is $5.50, but the earliest pickup is 9:20 (time) Valencia Grind: $7.42 after tax and tip, ready at 8:50 (meets all three) Here’s what you could test at each layer of the pyramid for sfbeans : How to build an end-to-end eval We’ll build the coffee eval with Harbor , an open-source framework from the creators of Terminal-Bench that runs agents in containers, checks results, and records their actions. Here are the terms we’ll use: Task : one problem for the agent to solve, with a starting environment and a way to check whether it succeeded Variant : the agent setup you’re testing, like the model, prompt, tools, memory and skills Trial : one attempt by one variant at one task Run (a job in Harbor): every variant tried on every task, several times each Trace (a trajectory in Harbor): everything recorded during a trial: messages, tool calls, logs, files and final output Step 1: Set a goal Building E2E evals for everything isn’t practical. With traditional software, you can aim for 100% test coverage. With agents, the surface you’d need to cover is everything an LLM might do with your product, and even figuring out where that ends is hard (see the jagged frontier ). Start",
-    "summary": "Vercel explains how to test whether AI agents successfully finish tasks using a software product, since agents are now users. It describes running the same tasks many times and scoring outcomes, using a coffee-ordering example and the open-source Harbor tool.",
-    "tags": [
-      "ai agents",
-      "software testing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1247,49 +1602,6 @@
       "ai tools",
       "science research",
       "free access"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-    "company": "OpenAI",
-    "title": "Advancing computer-use agents for healthcare teams",
-    "published": "2026-11-16",
-    "excerpt": "",
-    "summary": "OpenAI has written about using AI agents that can operate computer software, aimed at healthcare teams. The post appears to describe how such agents could help staff with routine computer tasks. The article text was not provided, so details are limited.",
-    "tags": [
-      "ai agents",
-      "healthcare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/business/customer-stories/revolut",
-    "company": "OpenAI",
-    "title": "How Revolut raises ambition without lowering the bar",
-    "published": "2026-11-16",
-    "excerpt": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-    "summary": "Revolut, the financial app company, shares how it uses OpenAI models and Codex, a coding tool, to cut coding time by 30 to 60 percent. It also uses these tools to handle financial crime investigations at larger scale while keeping security strong.",
-    "tags": [
-      "ai tools",
-      "software development",
-      "financial security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
-    "company": "OpenAI",
-    "title": "At Holiday Extras, dots get to work before anyone asks",
-    "published": "2026-11-16",
-    "excerpt": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
-    "summary": "Holiday Extras, a travel company, is using OpenAI's \"dots\" assistant to work ahead of people. The dots send launch reports without being asked, point out problems people might miss, and help staff prepare for meetings.",
-    "tags": [
-      "ai assistants",
-      "workplace tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1414,21 +1726,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
-    "company": "Google Developers",
-    "title": "Agents are sessions, not requests: size GKE node pools for AI agent sessions",
-    "published": "2026-11-16",
-    "excerpt": "AI agent sessions remain active and idle for most of the workday, making traditional one-Pod-per-session allocations inefficient for cluster resources. By using open-source tools like Agent Substrate and AX on GKE, developers can park idle sessions in object storage to release compute resources while maintaining session state. This approach optimizes resource utilization and reduces Kubernetes node costs by up to 40%.",
-    "summary": "AI agent sessions often sit idle, so giving each one its own always-on server wastes money. Google suggests parking idle sessions in cheap storage on Google Kubernetes Engine, cutting node costs by up to 40%.",
-    "tags": [
-      "cloud costs",
-      "ai agents",
-      "kubernetes"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
     "company": "NVIDIA",
     "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
@@ -1504,94 +1801,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/qwen4-max-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Qwen4-Max now available on AI Gateway",
-    "published": "2026-11-15",
-    "excerpt": "Alibaba’s Qwen4-Max is now available on AI Gateway . It’s a reasoning model for coding and long-running agent tasks, with image input, a 1M-token context window, tool calling, and structured outputs. With access to the appropriate tools, agents using Qwen4-Max can: Build 3D scenes and games: Work with Blender, Unity, Unreal Engine, and Godot, running what the agent builds and using visual feedback to fix issues. Analyze documents and create reports: Work across documents and images to produce spreadsheets, presentations, and reports with source citations. Alibaba reports 35% fewer tokens than Qwen3.8-Max on its Work360 benchmark at high reasoning effort. Use alibaba/qwen4-max as the model ID: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Follow the setup instructions, then select alibaba/qwen4-max in your agent. See the coding agents guide for details. Try Qwen4-Max in the model playground , or explore all language models on AI Gateway . Read more",
-    "summary": "Vercel now offers Alibaba's Qwen4-Max AI model through its AI Gateway. It is built for coding and long multi-step tasks, and Alibaba says it uses 35% fewer tokens than its predecessor.",
-    "tags": [
-      "ai models",
-      "coding tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/fast-reliable-a2ui/",
-    "company": "Google Developers",
-    "title": "Fast, reliable A2UI, with swappable inference formats",
-    "published": "2026-11-15",
-    "excerpt": "A2UI now supports swappable inference formats, introducing A2UI Express which uses up to 3x fewer tokens and cuts latency by compiling compact Python-style syntax into standard A2UI JSON via Agent SDKs. Developers can also use controlled generation with TypeSafe's Jev system-decision models to render known-shape screens in under 300 ms while smaller models stream text. These updates require no changes to frontend renderers or component catalogs, offering flexible performance levers for generative UI development across Python, TypeScript, and Dart.",
-    "summary": "A2UI, a tool for building screens that AI generates, now lets developers pick faster ways to produce them. A new option, A2UI Express, uses fewer words for the AI to write, which speeds things up, and no frontend changes are needed.",
-    "tags": [
-      "ai interfaces",
-      "developer tools",
-      "performance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/",
-    "company": "Google Developers",
-    "title": "Announcing Long-Context Training on TPUs with MaxText Context Parallelism",
-    "published": "2026-11-15",
-    "excerpt": "Google Cloud's MaxText framework now supports long-context training up to 14 million tokens on Cloud TPUs by implementing four context-parallel strategies: All-gather, A2A, P2P, and USP. Powered by the Tokamax Splash Attention kernel, these strategies effectively manage attention compute and memory bottlenecks without materializing full key-value sequences in high-bandwidth memory. Developers can adopt these capabilities in MaxText v0.2.4 to achieve high Model FLOPs Utilization (MFU) across large-scale model training workflows.",
-    "summary": "Google's MaxText tool can now train AI models on very long inputs, up to 14 million tokens, using Google's TPU chips. It splits the work across chips in several new ways, so the models run faster and use less memory.",
-    "tags": [
-      "ai training",
-      "cloud computing",
-      "google tpu"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/spark-vs-flink",
-    "company": "Databricks",
-    "title": "Apache Spark vs Apache Flink: which should you use?",
-    "published": "2026-11-14",
-    "excerpt": "For most teams, Apache Spark™ is the better choice. Spark runs batch ETL, SQL analytics,...",
-    "summary": "Databricks compares Apache Spark and Apache Flink, two tools for processing large amounts of data. Their post says Spark is usually the better choice for most teams.",
-    "tags": [
-      "data processing",
-      "apache spark",
-      "apache flink"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/databricks-leader-and-positioned-highest-execution-2026-gartnerr-magic-quadranttm-data",
-    "company": "Databricks",
-    "title": "Databricks is a Leader and positioned highest in execution in the 2026 Gartner® Magic Quadrant™ for Data Lakehouse Platforms",
-    "published": "2026-11-14",
-    "excerpt": "AI is pulling analytical and operational data togetherFor decades, enterprises have...",
-    "summary": "Databricks says Gartner placed it as a Leader, highest in execution, in its 2026 report on data lakehouse platforms. A data lakehouse is a system for storing and analyzing company data in one place.",
-    "tags": [
-      "data platforms",
-      "analytics"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
-    "company": "Google Developers",
-    "title": "Building Conversational Commerce with Multi-Agent Swarms on GCP: A Working Prototype",
-    "published": "2026-11-14",
-    "excerpt": "This document provides a publication template and metadata structure for a technical blog post focused on building Conversational User Interfaces (CUIs) using AI. It outlines key developer focus areas, product stacks, and approval workflows required for publishing technical content through Google Developer Studio. The framework helps engineers organize their guides and solutions to effectively share AI-driven conversational interface designs with the developer community.",
-    "summary": "This is a template for a Google developer blog post about building chatbot-style interfaces with AI. It explains how to organize the topics, tools, and approval steps for publishing such a guide.",
-    "tags": [
-      "ai chatbots",
-      "developer guides",
-      "google cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.figma.com/blog/ai-role-in-the-creative-process/",
     "company": "Figma",
     "title": "AI’s role in the creative process",
@@ -1607,20 +1816,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/what-is-real-time-mode",
-    "company": "Databricks",
-    "title": "What is Real-Time Mode in Apache Spark?",
-    "published": "2026-11-13",
-    "excerpt": "Real-Time Mode is a trigger for Apache Spark™ Structured Streaming that processes...",
-    "summary": "Databricks describes a new 'Real-Time Mode' for Apache Spark Structured Streaming, a tool that handles data as it arrives. The teaser gives few details beyond that it is a processing trigger.",
-    "tags": [
-      "data streaming",
-      "apache spark"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
     "company": "Anthropic",
     "title": "Building strong safety evaluations",
@@ -1630,21 +1825,6 @@
     "tags": [
       "ai safety",
       "testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
-    "company": "Vercel",
-    "title": "Token Pass now includes $150 in tokens for $30/month",
-    "published": "2026-11-13",
-    "excerpt": "Vercel Token Pass now includes $150 of tokens per month (up from $80) for the same $30 per team per month. The credit applies to featured open-weight models served through AI Gateway , including Kimi K3, Kimi K3.1 Pro, GLM 5.3, GLM 5.3 Flash, and DeepSeek V4.1 Flash. Credit resets each billing period with no rollover. When it runs out, requests using standard AI Gateway keys or OIDC tokens fall back to the team's AI Gateway balance, while requests using Token Pass-scoped keys stop with no overage charges. Token Pass is an Early Access add-on for Pro teams, with limited spots and a waitlist when they fill. To connect your coding agent, run vercel token-pass in the Vercel CLI, or use a Token Pass API key if your agent supports AI Gateway. Subscribe to Token Pass in your AI Gateway dashboard . Read more",
-    "summary": "Vercel's Token Pass subscription now gives $150 of AI credits per month, up from $80, for the same $30 per team. The credits cover certain open-weight AI models, and unused credits do not carry over to the next month.",
-    "tags": [
-      "ai tools",
-      "cloud pricing",
-      "vercel"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2227,21 +2407,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
-    "company": "NVIDIA",
-    "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
-    "published": "2026-11-10",
-    "excerpt": "AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per... AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn’t built for that. Running one Pod per session holds memory for sessions that aren’t doing anything, and deleting Pods between turns pays a multi-second cold start every time and loses the agent’s state. RL post-training hits the same wall. Agent Substrate, now donated to the… Source",
-    "summary": "AI agents sit idle much of the time, but Kubernetes, the system that runs software in containers, wasn't built for that. NVIDIA is releasing Agent Substrate, a new project for running many idle agents efficiently, and has donated it to an open-source group.",
-    "tags": [
-      "ai agents",
-      "kubernetes",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
     "company": "Google DeepMind",
     "title": "Opening the datasets behind our AI weather models",
@@ -2446,21 +2611,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/make-a-robot-arm-feel-weightless-with-nvidia-holoscan-5/",
-    "company": "NVIDIA",
-    "title": "Make a Robot Arm Feel Weightless with NVIDIA Holoscan 5",
-    "published": "2026-11-09",
-    "excerpt": "Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a... Picture guiding a robot arm by hand while its motors supply just enough torque to support its weight and keep the robot upright. This simple interaction, a useful starting point for robots that learn by demonstration, manipulate objects, or work alongside people, depends on a gravity-compensation loop. Building such a loop is only possible by continuously calculating the inverse dynamics of… Source",
-    "summary": "A new NVIDIA post shows how to make a robot arm feel weightless when guided by hand. The arm's motors supply just enough force to hold up its own weight, which helps robots learn from human demonstrations and work safely near people.",
-    "tags": [
-      "robotics",
-      "nvidia",
-      "robot arms"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
     "company": "Google DeepMind",
     "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
@@ -2590,21 +2740,6 @@
       "robotics",
       "machine learning",
       "simulation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
-    "company": "NVIDIA",
-    "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
-    "published": "2026-11-06",
-    "excerpt": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an... When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an image requires multiple sequential passes through a model with billions of parameters, and higher resolutions increase attention costs. FLUX 3 Image Klein is an image editing and generation model from Black Forest Labs (BFL) trained on… Source",
-    "summary": "NVIDIA shows how to make FLUX Image Klein, an image generation model from Black Forest Labs, run faster on its Blackwell graphics chips. Image generators need many slow steps, and bigger images make it slower, so speed matters for design tools.",
-    "tags": [
-      "ai images",
-      "nvidia",
-      "speed"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3553,36 +3688,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
-    "company": "Cloudflare",
-    "title": "Bringing post-quantum cryptography to geographically fenced key management",
-    "published": "2026-10-23",
-    "excerpt": "Today, Cloudflare is launching a post-quantum geographically restricted key manager in support of our Data Localization Suite (DLS) in closed beta. This new PQ GeoKey Manager is a cornerstone of Cloudflare’s data sovereignty solutions, making sure that a customer's decryption keys are only accessible in their chosen geography. GeoKey Manager implements this by wrapping each decryption key such that it can only be decrypted by Cloudflare servers that are located in the allowed geography. While general availability (GA) is planned for Q1 2027, today’s launch is an important milestone on our journey to support our customers’ data sovereignty goals while also migrating all Cloudflare products to post-quantum (PQ) cryptography . Governments, financial institutions, healthcare providers, and defense organizations process highly sensitive data that can remain sensitive for years or decades after it is produced. Encryption is often required to protect this data. When classical, public-key encryption is used, adversaries do not immediately need a quantum computer today to put that data at risk: they can store the ciphertext and retain them until quantum computers can break the public key cryptography protecting it — an attack strategy known as harvest now, decrypt later. For organizations with geographic requirements, resisting that threat is only half the challenge. At Cloudflare's scale, high availability requires replicating customer data across many servers across our global network. However, many data sovereignty regulations require that certain types of data be processed only within a given geographical region. We must therefore ensure the data is end-to-end encrypted such that only servers within the region have access to the plaintext. In this post, we describe the system that makes this work. The evolution of GeoKey Manager Cloudflare pioneered the concept of geo-restricted transport layer security ( TLS ) keys back in 2017 with GeoKey Manager . This gave customers control over the locations where their private TLS keys could be unwrapped on Cloudflare’s anycast network to provide stronger technical guarantees of which region their requests are decrypted into. For instance, a customer could choose to only unwrap their private keys in India. So instead of allowing decryption across Cloudflare’s entire global network, GeoKey Manager makes sure TLS signing for each customer request happens in our India network. GeoKey Manager evolved again in 2022 with ciphertext policy attribute based encryption (ABE). Instead of tying encrypted keys to a fixed set of data centers, ABE expressed geographic requirements using attributes such as country or region, like “region = European Union” or “region = Canada + United States + Mexico”. Newly authorized servers could receive matching decryption capabilities without rewrapping every customer key. That flexibility created a challenge and opportunity for the post-quantum transition. No production-ready post-quantum ABE scheme is available today, and customers do not need a large number of regions. A simpler design meets the requirement and is easier to maintain and operate. Cloudflare therefore uses hybrid ML-KEM-768 and X25519 protection with two kinds of keys, out of which ML-KEM-768 is a NIST standard that also opens doors to highly sensitive customers. A regional root key is a symmetric secret tied to one region, and an application-specific key pair is derived from it for a single service, such as Gateway or Tunnel . This protects private-key material against harvest now, decrypt later while preserving regional key-use boundaries. Global ciphertext, regional key unwrapping In its new form, GeoKey Manager is the key foundation for Cloudflare’s data sovereignty solutions. It controls which region protected decryption keys can be used from and when. Separate workstreams determine where tunnels terminate, where traffic is inspected, how it is routed, and where plaintext processing occurs. But all",
-    "summary": "Cloudflare has launched a closed beta of a new key manager that keeps customers' decryption keys usable only in their chosen region, and it uses encryption designed to resist future quantum computers. This helps organizations meet local data-location rules while protecting sensitive data that must stay secret for years.",
-    "tags": [
-      "data privacy",
-      "encryption",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://blog.cloudflare.com/origin-range-requests/",
-    "company": "Cloudflare",
-    "title": "Origin Range Requests: Serving large files without range-request tuning",
-    "published": "2026-10-23",
-    "excerpt": "A video player seeking to the middle of a movie asks for a few megabytes. Under our old range caching, that one request could make Cloudflare pull 128 MiB from the origin and move it between data centers, sometimes after the viewer had already left. Range requests are how large files get delivered, and caching them naively easily leads to wasted network bandwidth and wasted disk operations when running a CDN at scale. So we rebuilt how our cache handles them. For R2, Cloudflare's object storage, p99 time to first byte dropped by about half, and a follow-up improvement cut tiered cache traffic for R2 and similar workloads by about 6%. Today, we're making that new implementation available as Origin Range Requests , a self-service feature on all plans. There's no range size to tune and no need to contact support. Turn it on with a Cache Rule , and Cloudflare handles the rest. A request for part of a file An HTTP range request asks for part of a resource instead of the whole resource. The client sends a normal GET with a Range header: GET /movie.mp4 HTTP/1.1 Host: example.com Range: bytes=1048576-2097151 If the server supports the request, it returns 206 Partial Content and identifies the returned bytes with Content-Range : HTTP/1.1 206 Partial Content Content-Range: bytes 1048576-2097151/524288000 Content-Length: 1048576 Range requests are common for large objects. A video player can request bytes around a seek position instead of the whole file. A download manager can resume after an interruption. A package manager can fetch part of an artifact. A client can inspect the end of a file without downloading everything before it. The client decides whether to request a range, and Cloudflare does not change that request. Instead, Origin Range Requests changes how Cloudflare satisfies it. The range-size problem Cloudflare has supported range-request caching for years via static zone configuration. The previous implementation resembled the cache-slicing described in an nginx blog post : each client request was mapped to fixed-size ranges of the file, with the range size and file extensions configured per zone. The size of each range created a tradeoff: small ranges led to many small origin requests and memory pressure on Cloudflare from coalescing all of the requests in-memory, while large ranges caused Cloudflare to download much more data than the client requested. Updates to the range size itself would invalidate cache entries, since the size was part of the cache key. This design also meant people requesting content through our network could have unpleasant experiences accessing these files. Concurrent requests that fell inside the same range, no matter how far apart each client’s requested range was, could block each other. Our nginx-based cache also couldn’t combine range caching with concurrent streaming , a feature we built to let multiple clients read a file from cache while it's still being written. Turning both on together cut responses short, so each range had to be fully downloaded before anyone could read it, and popular files needed a separate origin fetch for every range. The extra bytes could also cross several parts of our distributed cache: from the origin to one data center, between cache tiers, and then toward the client. Every hop multiplied the waste. No value works equally well for a small seek, a sequential download, a large media file, and every origin and cache topology. Our internal cache limitations were directly exposed to customers, who should not need to understand our capabilities in-depth to have files served efficiently. Fortunately, our transition from nginx to a Pingora -based caching server created an opportunity to address the implementation problems that had forced a hard-to-use setting onto customers. Fixed-size cache chunks The fix came from something Pingora was already doing. To make it easy to resume interrupted downloads, it stores every cached file on disk in fixed-size chunks. If the cache",
-    "summary": "Cloudflare rebuilt how its cache handles partial file requests, like video seeking, so it no longer pulls large extra chunks from the origin. The new Origin Range Requests feature is available on all plans, needs no size tuning, and is turned on with a Cache Rule.",
-    "tags": [
-      "cdn",
-      "caching",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.figma.com/blog/lufthansa-figma-make/",
     "company": "Figma",
     "title": "How Lufthansa Systems prototypes realistic maps for the cockpit with Figma Make",
@@ -3622,20 +3727,6 @@
     "tags": [
       "life sciences",
       "research collaboration"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-    "company": "Anthropic",
-    "title": "Donating Agent Skills to the Agentic AI Foundation",
-    "published": "2026-10-22",
-    "excerpt": "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.",
-    "summary": "Anthropic is giving its open standard for Agent Skills, which teaches AI agents specialized tasks, to the Agentic AI Foundation. Over 70 AI tools, including ChatGPT and VS Code, already use the standard since it was published in December 2025.",
-    "tags": [
-      "ai agents",
-      "open standards"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4005,21 +4096,6 @@
     "tags": [
       "design tools",
       "figma"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.figma.com/blog/figma-deepens-investment-in-india/",
-    "company": "Figma",
-    "title": "Figma deepens investment in India with largest international Config yet",
-    "published": "2026-10-15",
-    "excerpt": "Building off the Config momentum in India, Figma is launching an education program, new research, and an MCP partnership with Sarvam.",
-    "summary": "Figma is hosting its biggest Config event yet in India and launching an education program, new research, and a partnership with Sarvam, an AI company. The teaser suggests Figma is growing its investment in India.",
-    "tags": [
-      "design tools",
-      "india",
-      "partnerships"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4688,21 +4764,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-    "company": "Google DeepMind",
-    "title": "Introducing SynthID Bio",
-    "published": "2026-09-30",
-    "excerpt": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
-    "summary": "Google DeepMind has introduced SynthID Bio, a early test showing that AI-designed proteins can be marked with a hidden signal. The mark is meant to leave the protein's biological function intact.",
-    "tags": [
-      "ai",
-      "biology",
-      "watermarking"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/",
     "company": "AWS",
     "title": "Celebrating Our Newest AWS Heroes – September 2026",
@@ -4979,21 +5040,6 @@
       "logistics",
       "algorithms",
       "research tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
-    "company": "Google Research",
-    "title": "The future of practice: Enabling teachers to create learning interactives with generative UI",
-    "published": "2026-09-17",
-    "excerpt": "Education Innovation",
-    "summary": "Google Research describes a new approach that lets teachers create interactive learning activities using generative AI, which builds the interface on the fly. The teaser gives few details beyond this, so the exact features are unclear.",
-    "tags": [
-      "education",
-      "ai tools",
-      "teaching"
     ],
     "summarized": true,
     "summary_version": 2
