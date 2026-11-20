@@ -1,5 +1,287 @@
 [
   {
+    "url": "https://www.databricks.com/blog/interactive-databricks-reference-architectures-across-70-industries",
+    "company": "Databricks",
+    "title": "Interactive Databricks Reference Architectures Across 70 Industries",
+    "published": "2026-11-20",
+    "excerpt": "Why we built itMost Databricks architecture talks used to start with the same slide: ingestion on the left...",
+    "summary": "Databricks has released interactive reference architecture diagrams covering 70 industries, showing how its data platform is typically set up for different kinds of businesses. The idea is to give readers a starting point that matches their own field instead of a generic overview.",
+    "tags": [
+      "data platforms",
+      "cloud architecture",
+      "industry use cases"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/news/ipo-close",
+    "company": "Anthropic",
+    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+    "published": "2026-11-20",
+    "excerpt": "Today Anthropic, PBC announced the closing of its initial public offering of an aggregate of 1,127,000,000 shares of its Class A common stock at a public offering price of $83.00 per share, including the full exercise by the underwriters of their option to purchase an additional 147,000,000 shares of Class A common stock from Anthropic at the initial public offering price.",
+    "summary": "Anthropic has completed its first public stock sale, selling about 1.13 billion shares at $83 each, including extra shares the underwriters took up. This means the company is now publicly traded.",
+    "tags": [
+      "anthropic",
+      "stock market",
+      "ipo"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib",
+    "company": "Vercel",
+    "title": "Vercel Functions now support request bodies up to 20MiB",
+    "published": "2026-11-20",
+    "excerpt": "Vercel Functions now accept inbound request bodies up to 20MiB, up from 4.5MB, in Public Beta. To turn this on, set the VERCEL_SUPPORT_LARGE_REQUEST_BODY=1 environment variable. The opt-in applies to the whole project in the environment where you set it, so you can test the larger limit on preview before enabling it in production. It requires the project's functions to use the performance memory setting of 4GB. It applies to functions on the Node.js, Python, and Bun runtimes, and to Routing Middleware. Functions and Routing Middleware on the Edge runtime keep the 4.5MB cap and return 413 on oversize bodies, so moving them onto the larger limit means switching to the Node.js runtime with runtime: 'nodejs' , or proxy.ts in Next.js. When a project opts in, Routing Middleware receives request headers and metadata but no request body, enforced at the project level. Middleware still runs and still sees every other request header, so body-dependent middleware behavior is the one thing that becomes unavailable. This avoids sending the body twice, to both middleware and the target function, which would raise cost and time to first byte. When handling larger request bodies, read the body promptly and avoid holding it in memory to prevent backpressure and memory issues. Learn more in the Vercel Functions limitations documentation . Read more",
+    "summary": "Vercel's serverless functions can now accept uploads up to 20MB, up from 4.5MB, in a beta test. Teams turn it on with a setting, but edge functions keep the old limit and middleware no longer receives request bodies.",
+    "tags": [
+      "serverless",
+      "cloud hosting",
+      "web development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/vercel-completes-iso-iec-42001-2023-certification",
+    "company": "Vercel",
+    "title": "Vercel completes ISO/IEC 42001:2023 certification",
+    "published": "2026-11-20",
+    "excerpt": "Vercel has completed its ISO/IEC 42001:2023 certification, meeting the international standard for AI management systems. This certification gives our customers confidence to ship fast with agents on Vercel, demonstrating how Vercel designs, builds, operates, and governs our AI products. Our AI management system covers Vercel’s underlying infrastructure and core AI products, including AI Gateway, Vercel Agent, v0, AI-based open source software and frameworks, as well as the people and processes behind them. Vercel’s certificate is available here , and additional audit documentation is available through our Trust Center . What is ISO 42001? ISO/IEC 42001:2023 is the international standard for AI management systems and applies to any organization that develops, provides, or uses AI. An AI management system is the set of policies, roles, processes, and controls through which an organization consistently governs AI activities. The standard includes requirements for leadership accountability, AI risk assessment, lifecycle management, data governance, transparency, and continual improvement. The requirement that makes ISO 42001 distinct from security standards is the AI system impact assessment. Security frameworks cover how an organization protects information, but ISO 42001 covers how it builds and uses AI, including the assessment of how an AI system impacts the people it touches, and the benefits and harms that would result when that system materially changes. To obtain the certification, we underwent a two-stage audit performed by an independent, accredited certification body, which evaluated whether our AI management system is designed correctly and operates effectively. The certificate is valid for three years, with annual surveillance audits in between. “Enterprises want agents in production, but no one should have to choose between moving fast with AI and governing it well,” said Talha Tariq, CTO for Security. “We built our AI governance to run as continuously as we ship, and ISO 42001 is the independent check that it works.” What this means for customers AI moved into the critical path of how software gets built faster than the governance around it did. Teams are shipping agents, assistants, and model-backed features on Vercel every day, and the questions that follow are no longer hypothetical: Who is accountable when a model behaves unexpectedly? What data reached a model? How is the system monitored once it’s live? Who decided the system was ready? We pursued ISO 42001 because we are committed to providing enterprise-grade AI products. This certification attests that we run deliberate, auditable AI systems. How we govern AI at Vercel There are three primary ways AI is governed at Vercel. Impact assessments Vercel conducts AI system impact assessments which cover foreseeable benefits, harms, failures, and misuse. We reassess these risks and benefits when the system materially changes. Evaluations before release We maintain evals for our AI systems covering performance, safety, and security, with human review for material changes. Clear data commitments Where it is not the default option based on pricing plan, we provide customers the ability to set their data handling preferences ranging from zero data retention (ZDR) to training opt-out. Our AI policy is available at v0.app/policy. Ship fast, with confidence We are committed to helping teams ship fast with confidence in the way AI is built and governed at Vercel. ISO 42001 is proof of that commitment, giving our customers: Confidence in agentic infrastructure: Vercel’s AI systems have been audited, which means customers using our AI products start from a reviewed foundation instead of an unexamined one. Governance can ship at the speed of the product: Agents now drive the development and deployment of applications. Governance and oversight that occurs quarterly can’t govern software that changes hourly, so we built a system that reviews AI as continuously as we ship it. S",
+    "summary": "Vercel has earned ISO/IEC 42001 certification, an international standard for how companies manage their AI systems. An independent auditor checked its AI products, including its AI Gateway and Vercel Agent, and the certificate lasts three years.",
+    "tags": [
+      "ai governance",
+      "certification",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-medchembench",
+    "company": "OpenAI",
+    "title": "Can AI help scientists identify promising drug candidates?",
+    "published": "2026-11-20",
+    "excerpt": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+    "summary": "OpenAI has released MedChemBench, a test that checks how well AI models understand molecules, reason from lab evidence, and pick promising compounds for early drug discovery. It helps show whether AI can be useful for finding new medicines.",
+    "tags": [
+      "ai",
+      "drug discovery"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "company": "OpenAI",
+    "title": "Combatting adversarial distillation",
+    "published": "2026-11-20",
+    "excerpt": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+    "summary": "OpenAI describes its approach to stopping adversarial distillation, where outside parties try to copy its AI models' abilities by querying them. The approach layers model training, safeguards, detection, and enforcement to make that copying harder.",
+    "tags": [
+      "ai",
+      "model security",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/hebbia",
+    "company": "OpenAI",
+    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+    "published": "2026-11-20",
+    "excerpt": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+    "summary": "Hebbia, a company that builds tools for financial research, tested the new GPT-6 Astra model before its release. Its tests found the model covered more sources, cited more relevant material, and presented results better.",
+    "tags": [
+      "ai models",
+      "financial research",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/inkling2mini",
+    "company": "Hugging Face",
+    "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+    "published": "2026-11-20",
+    "excerpt": "",
+    "summary": "Hugging Face has announced Inkling 2 Mini, a new AI model designed to run well on a person's own computer rather than only in the cloud. The post highlights strong performance for a model that fits on local hardware.",
+    "tags": [
+      "ai models",
+      "local ai",
+      "hugging face"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+    "company": "Hugging Face",
+    "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+    "published": "2026-11-20",
+    "excerpt": "",
+    "summary": "Hugging Face has introduced harness adapters, a way to adjust an AI model so it works better with a specific software setup. The announcement says this can improve performance and lower costs, though the article text provided is empty, so details are limited.",
+    "tags": [
+      "ai models",
+      "machine learning tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/",
+    "company": "Google Developers",
+    "title": "How to securely connect internal Cloud Run MCP servers to Gemini Enterprise",
+    "published": "2026-11-20",
+    "excerpt": "How to connect Gemini Enterprise privately to internal StreamableHTTP MCP servers on Cloud Run using Egress Agent Gateway, Private Service Connect, FQDN-scoped Private Cloud DNS, and dual-header OAuth 2.0 authentication.",
+    "summary": "Google explains how to privately connect Gemini Enterprise to internal tool servers running on Cloud Run, keeping them off the public internet. The setup uses a gateway, private network links, and a login method that checks two sets of credentials.",
+    "tags": [
+      "cloud security",
+      "ai tools",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/",
+    "company": "Google Developers",
+    "title": "How to handle user, connector, and agent auth in Gemini Enterprise with a custom UI",
+    "published": "2026-11-20",
+    "excerpt": "When building a custom enterprise UI on top of Gemini Enterprise's :streamAssist API, developers must manually implement three core authentication layers. These include authenticating users or workloads via Google Identity or Workforce/Workload Identity Federation, managing third-party 3-legged OAuth (3LO) for Federated Connectors through the Keystore, and configuring on-demand per-tool OAuth for custom ADK agents using Vertex AI Agent Engine and GCP Auth Manager.",
+    "summary": "Google explains how developers building their own app on Gemini Enterprise must handle sign-in in three places: the users themselves, connected third-party services, and custom AI agents. Each needs its own login setup, which the developer has to build by hand.",
+    "tags": [
+      "authentication",
+      "gemini enterprise",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/",
+    "company": "Google Developers",
+    "title": "Announcing Long-Context Training on TPUs with MaxText Context Parallelism",
+    "published": "2026-11-20",
+    "excerpt": "Google Cloud's MaxText framework now supports long-context training up to 14 million tokens on Cloud TPUs by implementing four context-parallel strategies: All-gather, A2A, P2P, and USP. Powered by the Tokamax Splash Attention kernel, these strategies effectively manage attention compute and memory bottlenecks without materializing full key-value sequences in high-bandwidth memory. Developers can adopt these capabilities in MaxText v0.2.4 to achieve high Model FLOPs Utilization (MFU) across large-scale model training workflows.",
+    "summary": "Google's MaxText tool can now train AI models on very long inputs, up to 14 million tokens, using Google's TPU chips. It splits the work across chips in four different ways, which makes long training runs more efficient.",
+    "tags": [
+      "ai training",
+      "google cloud",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/agents-are-sessions-not-requests-size-gke-node-pools-for-ai-agent-sessions/",
+    "company": "Google Developers",
+    "title": "Agents are sessions, not requests: size GKE node pools for AI agent sessions",
+    "published": "2026-11-20",
+    "excerpt": "AI agent sessions remain active and idle for most of the workday, making traditional one-Pod-per-session allocations inefficient for cluster resources. By using open-source tools like Agent Substrate and AX on GKE, developers can park idle sessions in object storage to release compute resources while maintaining session state. This approach optimizes resource utilization and reduces Kubernetes node costs by up to 40%.",
+    "summary": "AI agent sessions sit idle most of the day, so giving each one its own dedicated server space wastes capacity. The post shows how to park idle sessions in cheap storage on Google's Kubernetes service, freeing up machines and cutting node costs by up to 40%.",
+    "tags": [
+      "cloud costs",
+      "ai agents",
+      "kubernetes"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
+    "company": "Google Developers",
+    "title": "Agent Anomaly Detection: Safeguarding agents across other clouds",
+    "published": "2026-11-20",
+    "excerpt": "Agent Anomaly Detection now monitors ADK agents running across AWS, Azure, or on-premises by analyzing their traces and logs in your Google Cloud project. By ingesting OpenTelemetry-formatted data through the Telemetry API, it evaluates full conversations for behavioral drift without needing access to the agent's underlying runtime. This enables security teams to detect risks like rogue behaviors, tool misuse, and resource exhaustion across multi-cloud environments.",
+    "summary": "Google's Agent Anomaly Detection can now watch AI agents running on AWS, Azure, or your own servers, by reading their activity logs in Google Cloud. It spots unusual behavior like misuse of tools or runaway resource use, so security teams can catch problems across several cloud providers.",
+    "tags": [
+      "ai agents",
+      "cloud security",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+    "company": "Cloudflare",
+    "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+    "published": "2026-11-20",
+    "excerpt": "On November 19, 2026, the Ruby team disclosed ruby2shell ( CVE-2026-132825 ), a heap buffer overflow in the way Ruby changes the case of strings. Ruby rates the flaw Critical and says it is aware of proofs of concept that achieve remote code execution in some scenarios. Fixes shipped in Ruby 3.3.14, 3.4.13, and 4.0.10 . The reach is wide. Veria Labs reports that Ruby on Rails and classic-style Sinatra applications reach the bug in their default configuration, before any authentication. Self-hosted products that bundle Ruby, including GitLab, GitHub Enterprise Server, Mastodon, OpenProject, Discourse and Chatwoot, shipped an affected Ruby in their latest release at the time of disclosure. Cloudflare WAF blocks ruby2shell for all customers, including those on the Free plan. We have added two rules to both the Cloudflare Free Managed Ruleset and the Cloudflare Managed Ruleset, with Block as the default action: one for ruby2shell and one for GHSA-87fm-7w84-j2px, a related integer overflow in Ruby string case conversion fixed in the same releases. The WAF is a compensating control, not a replacement for patching. Exploits can reach the bug through paths a WAF does not see, and the only complete fix is to upgrade Ruby. Our team continues to monitor attack traffic and will update the rules as new techniques appear. You can track rule changes in the WAF changelog and get the latest on the vulnerability in the Cloudflare Zero Wire briefing . Cloudflare has patched its own systems that use Ruby, and we have found no indication of compromise. What we know about ruby2shell Ruby strings carry an encoding, and Ruby still supports many legacy single-byte encodings, such as ISO-8859-1 (Latin-1) and Windows-1252, alongside UTF-8. In a single-byte encoding each character takes one byte, so changing the case of a string usually produces output of the same length. The German sharp s (ß) breaks that assumption. Its uppercase form is two characters, SS. In 14 ISO-8859 and Windows-125x encodings, Ruby writes those two bytes but checks for room for only one. According to Veria Labs, a string with 21 sharp s characters overflows the output buffer by one byte. The methods that reach the bug are upcase , swapcase , downcase(:fold) and casecmp? . UTF-8 strings take a different code path and are not affected. A one-byte overflow can look harmless. In a memory-corruption exploit, though, a single byte written past the end of a heap buffer can be enough to corrupt an adjacent object or allocator metadata. Ruby says it is aware of proofs of concept that turn this flaw into code execution, and Veria Labs says it will publish its own proof of concept about a week after disclosure. We expect scanning to start soon after. Why default Rails and Sinatra apps are exposed HTML forms can only send GET and POST requests. To simulate PUT, PATCH, or DELETE, many web frameworks accept a _method parameter in a POST request. Rack, the interface most Ruby web frameworks build on, implements this in its MethodOverride middleware, which converts the value of _method to uppercase. Rails includes this middleware by default, and classic-style Sinatra applications enable it. An attacker can send a multipart POST request whose _method part declares a legacy character set and contains a run of sharp s characters. The framework upcases the value while it is still routing the request, before any application code or authentication check runs. Veria Labs reports that other frameworks and plain Rack applications are not exposed by default. Application code that changes the case of strings received in a legacy encoding may still be affected, wherever the string comes from. Who is affected Condition Details Ruby version Ruby 3.3.13 and earlier, 3.4.0 through 3.4.12, and 4.0.0 through 4.0.9. Veria Labs reports the bug has been present since Ruby 2.4.0. Ruby 3.2 and earlier have reached end of life and will not receive the fix. Framework Rails and classic-style Sinatra in their default conf",
+    "summary": "Ruby disclosed a serious flaw (ruby2shell) that can let attackers run code on servers, and it affects common web apps by default. Cloudflare's firewall now blocks it for all customers, but upgrading Ruby is the only full fix.",
+    "tags": [
+      "security",
+      "ruby",
+      "web firewalls"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+    "company": "Cloudflare",
+    "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+    "published": "2026-11-20",
+    "excerpt": "On November 19, 2026, the security research company depthfirst disclosed phpAfterShell (CVE-2026-126714) , a vulnerability in PHP's default file-based session handler that can lead to remote code execution. Under the Common Vulnerability Scoring System (CVSS) 4.0, it scores 9.2 out of 10 (Critical). The PHP project fixed it the same day in versions 8.2.36, 8.3.37, 8.4.28, 8.5.13, and 8.6.0. These releases fix 16 other security vulnerabilities, six of them also rated critical. Cloudflare’s web application firewall (WAF) blocks known phpAfterShell attack patterns, including for customers on the Free plan. The protection comes from a PHP remote code execution rule we first deployed in October 2026 for the php2shell vulnerabilities. That rule already detected part of the phpAfterShell attack pattern before the vulnerability was disclosed, and on November 19 we updated its detection logic to cover phpAfterShell. The rule is part of both the Cloudflare Free Managed Ruleset and the Cloudflare Managed Ruleset, is enabled by default, and its default action is Block. In the same WAF release, we added three new rules to the Cloudflare Managed Ruleset for paid plans: one for a request smuggling flaw in PHP-FPM (CVE-2026-129289), and two for flaws in PHP's SOAP extension (CVE-2026-15353 and CVE-2026-129506) that PHP fixed in the same releases. These rules are enabled by default with the Log action, because the request patterns they look for can also appear in legitimate traffic, and blocking by default could disrupt it. Customers can review matching requests in Security Events now and change the action to Block once they confirm the rules do not affect legitimate traffic. The WAF is an additional layer of defense, not a replacement for the patch. Several of the critical flaws depend on server configuration or can be reached through paths a WAF does not see, and the only complete fix is to upgrade PHP and restart every worker. Our analysts continue to monitor attack activity and will update the rules as new techniques and variations appear. You can track rule changes in the WAF changelog and follow how the vulnerabilities develop in the dedicated Cloudflare Zero Wire briefing . There appears to be no indication so far that these vulnerabilities have been exploited. As of November 19, 2026, none of the 17 vulnerabilities was listed in CISA's Known Exploited Vulnerabilities catalog , and no source we reviewed reports exploitation in the wild. What we know about phpAfterShell PHP stores session data in files by default. When an application calls session_start(), PHP reads the session file and deserializes its content into the $_SESSION array. When the request ends, PHP writes the updated session back to the same file. phpAfterShell is triggered when that write is interrupted. The session file can then hold the beginning of the new session data followed by the end of the old one. On the next request, session_start() deserializes this mixed content. If an attacker controlled the old data, PHP can end up deserializing objects of the attacker's choice. An attacker trying to exploit the flaw is likely to first search for a way to place controlled data in the session. PHP's advisory names two: Session upload progress , a PHP feature that writes information about a running file upload into the session. A remote client can use it to shape the stored data. Applications that store large user-controlled strings in the session . According to PHP, code execution also requires an interruption at a useful point in the write and a suitable deserialization gadget chain in the application. depthfirst reports that it reached code execution without an application gadget by chaining a second, undisclosed memory-corruption bug in a PHP-native class. The sources we reviewed do not establish whether that second bug is fixed in the November 19 releases. depthfirst says it discovered and reported phpAfterShell. The CVE record credits Leo Lin and Asahi as reporters. The",
+    "summary": "Cloudflare says its firewall now blocks known attacks using a serious PHP flaw called phpAfterShell, which can let attackers run their own code on a server. PHP released a fix the same day, and the firewall is only a backup, so servers still need the update.",
+    "tags": [
+      "security",
+      "php",
+      "web firewall"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/nginx2root/",
+    "company": "Cloudflare",
+    "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+    "published": "2026-11-20",
+    "excerpt": "On November 18, 2026, F5 and nginx.org disclosed ten vulnerabilities in nginx. Five of them, detailed by the Xint research team and published under the name nginx2root , are memory corruption flaws that an unauthenticated attacker can use to crash an nginx worker or, per Xint's research, run commands on the server. Xint also found a Linux kernel bug that turns that foothold into root on the host, including from inside a Docker container. Other teams found the two HTTP/2 bugs independently: F5 also credits Rapid7, Wiz Research and Ikotas Labs for CVE-2026-123007, and Metnir, Wiz Research, and Palo Alto Networks Unit 42 for CVE-2026-123633. nginx is an HTTP web server that also serves as reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server. nginx runs a large share of the world's web servers, so this is a patch-now event. But if your nginx server is reachable only through Cloudflare's proxy, attackers cannot reach the vulnerable code paths for the most serious of these bugs, giving you protection while you update your servers. Here is where Cloudflare stands, what that protection covers, where it stops, and how the bugs work. The short version Cloudflare's edge is not affected. Much of the proxy that handles customer traffic at our edge now runs on FL2, written in Rust. We reviewed the parts still built on our heavily modified nginx fork against all five bugs before disclosure, and an update closing the related code paths finished rolling out globally before the vulnerabilities were published. The same releases fix five other nginx CVEs, including CVE-2026-118899, an infinite loop while reading a request body over TLS 1.3. Origins behind Cloudflare's HTTP proxy are shielded from the HTTP/2 and HTTP/3 attacks. For proxied hostnames, Cloudflare terminates every client HTTP/2 and HTTP/3 connection at our edge and opens a separate connection to your origin. The attacker's frames never reach your nginx. The resolver and mail proxy vulnerabilities depend on specific configuration. Many configurations of nginx will not be vulnerable, but the safest way to be sure is to update your install or disable features. You should still patch. Update to nginx 1.30.7 or 1.31.9 (or your vendor's fixed build) and restart. Some configurations, covered below, are not protected by the proxy. What was disclosed nginx2root is five independent bugs. Each one works on its own and each one needs a different configuration. CVE Bug class Affected configuration First affected release CVE-2026-123007 Integer overflow leading to out-of-bounds heap read/write HTTP/2 enabled 1.9.5 (2015) CVE-2026-123633 Use-after-free HTTP/2 with proxy_pass to a backend, worker low on worker_connections 1.19.7 CVE-2026-121810 Use-after-free HTTP/3 (QUIC) with proxy_pass to a backend 1.25.0 CVE-2026-123634 Use-after-free resolver + proxy_pass with variables + a subrequest ( mirror or SSI) 0.6.18 CVE-2026-113425 Use-after-free Mail proxy with proxy on and auth_http 0.5.33 F5 rates each one High (CVSS 3.1: 8.1) and Critical (CVSS 4.0: 9.2), and notes that code execution requires disabling or bypassing ASLR (Address Space Layout Randomization). For CVE-2026-123007, Xint's write-up shows how it leaked memory addresses to do exactly that. CVE-2026-123007 is the one to worry about most. It only needs HTTP/2 turned on, which is commonly enabled on TLS deployments, and it has been in every nginx release since HTTP/2 support shipped in 1.9.5. Xint ran the exploit over the public Internet against servers on AWS, GCP and Azure. Xint searched Shodan on November 10, before the disclosure, and found 56.7 million hosts matching product:nginx . Of the 11.94 million that reported a version, 98.9% fell in the affected range. As of November 19, Censys's nginx2root exposure tracker counts about 8.8 million services running a potentially affected version with HTTP/2 enabled. Version strings don't prove a host is vulnerable, since distributions backport fixes, but the",
+    "summary": "Ten nginx web server flaws were disclosed, five of them (nginx2root) letting an attacker crash the server or possibly run commands. Cloudflare says its own edge is safe and that sites behind its proxy are shielded from the worst bugs, but server owners should still update nginx now.",
+    "tags": [
+      "security",
+      "web servers",
+      "vulnerabilities"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/why-postgresql-19-shipped-late",
+    "company": "Databricks",
+    "title": "Why PostgreSQL 19 shipped late",
+    "published": "2026-11-19",
+    "excerpt": "PostgreSQL 19 is now generally available, and there are some really cool things in...",
+    "summary": "PostgreSQL 19, a popular database program, is now officially released to everyone. The post is a short teaser, so details about why it shipped late are not shown.",
+    "tags": [
+      "databases",
+      "software releases"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/postgresql-19-available-lakebase",
+    "company": "Databricks",
+    "title": "PostgreSQL 19 is available on Lakebase",
+    "published": "2026-11-19",
+    "excerpt": "PostgreSQL 19 reached GA today and it's already available on Lakebase. New major...",
+    "summary": "PostgreSQL 19, a new major version of the popular database software, is now available on Databricks' Lakebase service. The announcement is brief, so details beyond that are not given.",
+    "tags": [
+      "databases",
+      "postgresql",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/java4shell-vulnerability-cve-2026-114938-assessment",
     "company": "Databricks",
     "title": "Java4Shell vulnerability (CVE-2026-114938) assessment",
@@ -25,6 +307,35 @@
       "cloud computing",
       "databricks",
       "free tier"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
+    "company": "Databricks",
+    "title": "Genie ZeroOps, now in public beta: An autonomous agent that fixes data pipelines, with lessons from 80,000 customer issues",
+    "published": "2026-11-19",
+    "excerpt": "In June we introduced Genie ZeroOps, an autonomous agent that detects, investigates,...",
+    "summary": "Databricks has released Genie ZeroOps in public beta, an automated helper that finds, investigates, and works to fix problems in data pipelines. The company says it draws on lessons from about 80,000 customer issues.",
+    "tags": [
+      "data pipelines",
+      "automation",
+      "databricks"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/genie-one-accuracy-why-curated-agents-need-governed-context",
+    "company": "Databricks",
+    "title": "Genie One Accuracy: Why Curated Agents Need Governed Context",
+    "published": "2026-11-19",
+    "excerpt": "Ask Finance and Underwriting whether the loss ratio improved from 2024 to 2025, and...",
+    "summary": "Databricks describes a problem with AI data assistants: when Finance and Underwriting ask the same question, such as whether the loss ratio improved from 2024 to 2025, they can get different answers. The post argues that AI agents need carefully managed, trusted context to give accurate answers.",
+    "tags": [
+      "ai assistants",
+      "data accuracy"
     ],
     "summarized": true,
     "summary_version": 2
@@ -104,6 +415,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://vercel.com/changelog/priority-projects-now-in-public-beta",
+    "company": "Vercel",
+    "title": "Priority Projects now in public beta",
+    "published": "2026-11-19",
+    "excerpt": "Priority Projects are now in public beta for Pro and Enterprise teams. This optional upgrade for individual Vercel projects adds bot and traffic-source signals, Page Integrity for monitoring and controlling client-side scripts and connections, and additional Firewall controls and alerts. Bot signals Bot protection is free on all plans. You can enable it to challenge non-browser traffic while allowing verified bots. Priority adds more detailed bot signals: categories, verification status, and names where available. Use these signals in: Firewall rules: Match on bot_name , bot_category , bot_status , and bot_protection in the dashboard or with vercel firewall rules add . Application code: Read x-vercel-bot-category , x-vercel-bot-name , and x-vercel-verified-bot from request headers in Routing Middleware and Vercel Functions. See the header reference for verified and claimed bot names. Logs and Observability: Logs show the Firewall action on all plans. Priority adds the matched rule and bot details where available. In Firewall Observability, Priority adds botCategory for unverified traffic. Log Drains also include bot classifications. Traffic Sources Priority adds Traffic Sources labels for requests from Tor exit nodes, VPNs, open or anonymizing proxies, and residential proxies. It also labels traffic flagged by abuse blocklists. Use these labels in custom Firewall rules, analyze them in Firewall Observability, or read them from the x-vercel-waf-source request header in your application. A request can have multiple labels. Use the Traffic Sources managed ruleset to log, challenge, or block traffic by source category. Review matching traffic before enabling blocking, since these categories can also include legitimate users. To enable the Traffic Sources managed ruleset from the CLI, run vercel firewall managed-rulesets enable traffic-sources . This stages the change; review it with vercel firewall diff , then apply it with vercel firewall publish . Page Integrity Priority Projects get access to Page Integrity to monitor client-side scripts and connections, receive alerts when new scripts or connections are detected, and block unapproved resources. Page Integrity maintains a resource inventory and uses Content Security Policy (CSP) for discovery and enforcement, without adding client-side JavaScript. It operates in three stages: Detect: Discover scripts using report-only CSP headers on sampled requests. Review: Approve or reject scripts and record business justifications. Block: Enforce a CSP that blocks scripts outside the approved inventory. Page Integrity must be enabled separately. Configure monitoring and review resources in the dashboard; the CLI can also show its resource inventory: Firewall controls and alerts Anomaly alerts DDoS alerts are available on all plans. Priority adds anomaly alerts for bot traffic and requests matching system or custom Firewall rules. Use these alerts to investigate potential attacks and unusual traffic patterns. Configure notifications in your team’s Settings > Alerts , with delivery options including email, Slack, and webhooks. View recent alerts with vercel alerts --since 24h . To manage alert configuration from the CLI, see vercel monitors . OWASP Core Ruleset On Pro, Priority lets you enable the OWASP Core Ruleset to protect against common web application attacks. Enterprise projects can already enable it without Priority. Add it as a team default from Security > Rules , or enable it for a linked project via the CLI with vercel firewall managed-rulesets enable owasp --yes followed by vercel firewall publish . OWASP inspection is billed separately per inspected request and GB of inspected payload. Response-based rate limiting Priority adds response conditions to the rate-limit rules available on all plans. Count requests toward a limit only when their responses match specified HTTP status codes or response headers. For example, count 401 responses from failed login attempts or 404 responses ",
+    "summary": "Vercel has released Priority Projects in public beta for Pro and Enterprise teams. It is an optional upgrade that adds more detailed bot and traffic-source signals, tools to watch and control scripts on web pages, and extra security alerts and rules.",
+    "tags": [
+      "web security",
+      "vercel",
+      "bot traffic"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://vercel.com/changelog/liquid-ais-d1-2-and-d1-2-ultra-are-now-available-on-ai-gateway",
     "company": "Vercel",
     "title": "Liquid AI's d1.2 and d1.2-ultra are now available on AI Gateway",
@@ -113,6 +439,51 @@
     "tags": [
       "ai models",
       "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/gpt-live-1-1-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "GPT-Live 1.1 now available on AI Gateway",
+    "published": "2026-11-19",
+    "excerpt": "GPT-Live 1.1 from OpenAI is now available on AI Gateway. GPT-Live 1.1 is a full-duplex voice model, so it listens while it speaks and a caller can pause, interrupt, or add detail mid-reply. Compared with the previous GPT-Live model, it transcribes speech more accurately and keeps a more consistent accent and voice across languages. It uses the same Live endpoint and client delegation, so an existing GPT-Live integration only needs the new model ID. Simple example without delegation Run openai/gpt-live-1.1 by itself: Delegate work and keep talking Turn on client delegation, and use the session instructions to tell GPT-Live 1.1 when to ask for help. It asks by sending delegation-created. Answer with any text model on AI Gateway and return the result on the commentary channel for GPT-Live to speak. This example uses openai/gpt-6.2-sol and builds on the session above: Your application controls delegated work and its permissions, confirmations, and cancellation. Delegated model requests are billed separately through AI Gateway, and voice-session usage continues while they run. These snippets omit the WebSocket connection, event parsing, transcript assembly, audio streaming, and shutdown. See the GPT-Live guide for connection setup, audio streaming, and complete examples. Try GPT-Live 1.1 in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all models available on AI Gateway. Read more",
+    "summary": "GPT-Live 1.1, a voice AI model from OpenAI, is now available on Vercel's AI Gateway. It can listen while it talks, so callers can interrupt or add detail mid-reply, and it transcribes speech more accurately.",
+    "tags": [
+      "ai voice",
+      "vercel",
+      "openai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/agents-can-now-find-vercel-cli-commands-by-describing-the-task",
+    "company": "Vercel",
+    "title": "Agents can now find Vercel CLI commands by describing the task",
+    "published": "2026-11-19",
+    "excerpt": "Coding agents can now use vercel help search to find Vercel CLI commands by describing a task in plain language. The search returns a list of matching commands. Add --with-help to include the help page for the first result in the same call. For example, vercel help search \"roll back production\" --with-help returns the options and examples for vercel rollback . Search also supports: API endpoints: When a Vercel API endpoint matches the task, search returns a vercel api command with the request path and placeholders for every required input. The agent can fill in the values without guessing the path. JSON output: Use --json to return search results as JSON. Combine it with --with-help to include usage instructions, options, and examples for the first result. Search recognizes common wording, such as “show” instead of “list,” and handles minor spelling mistakes. The CLI also includes a skill that tells coding agents to start with vercel help search when looking for a command. Vercel doesn't log your search text. Update to the latest Vercel CLI with vercel upgrade . Read more",
+    "summary": "Vercel's command-line tool now lets AI coding helpers find the right command by describing a task in plain words, such as \"roll back production.\" It can also show usage help and handles small spelling mistakes, which saves the helper from guessing.",
+    "tags": [
+      "developer tools",
+      "ai agents",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+    "company": "Stripe",
+    "title": "Give your agents controlled access to analyze your data and move funds",
+    "published": "2026-11-19",
+    "excerpt": "Stripe Treasury now lets agents transfer funds, convert currencies, and pay vendors within limits you set. Give agents the access they need to help run your business, with customizable controls and human approvals.",
+    "summary": "Stripe Treasury now lets AI agents move money, exchange currencies, and pay vendors. Businesses can set limits on what the agents may do and require a person to approve certain actions.",
+    "tags": [
+      "payments",
+      "ai agents",
+      "finance tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -142,6 +513,64 @@
       "chatgpt",
       "software speed",
       "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/learn/pr-scans-demo",
+    "company": "OpenAI",
+    "title": "See PR scans in action",
+    "published": "2026-11-19",
+    "excerpt": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+    "summary": "OpenAI posted a short video showing how PR scans work. It walks through how a presenter looks at scan results inside a pull request workflow.",
+    "tags": [
+      "code review",
+      "security scanning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/learn/deploying-daybreak-red",
+    "company": "OpenAI",
+    "title": "Deploying Daybreak Red",
+    "published": "2026-11-19",
+    "excerpt": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+    "summary": "OpenAI published a guide on setting up Daybreak Red, a tool for security investigations that are watched by people. The guide covers safety controls, how to set it up, and how to monitor it.",
+    "tags": [
+      "ai safety",
+      "cybersecurity",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "company": "OpenAI",
+    "title": "Get started with Daybreak Blue",
+    "published": "2026-11-19",
+    "excerpt": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+    "summary": "OpenAI posted a video walkthrough showing how to get started with Daybreak Blue, including a look at the setup process. The post is a short guide to onboarding rather than a detailed technical write-up.",
+    "tags": [
+      "openai",
+      "onboarding",
+      "setup guide"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "company": "OpenAI",
+    "title": "Explore the Codex Security Plugin",
+    "published": "2026-11-19",
+    "excerpt": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+    "summary": "OpenAI has released a short demo video showing how the Codex Security Plugin works, from setup to reviewing its results. The teaser does not say what the plugin does in detail.",
+    "tags": [
+      "security tools",
+      "openai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -954,35 +1383,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/azure-databricks-sessions-microsoft-ignite-2026",
-    "company": "Databricks",
-    "title": "Azure Databricks sessions at Microsoft Ignite 2026",
-    "published": "2026-11-17",
-    "excerpt": "Azure Databricks is a Visionary-level sponsor at Microsoft Ignite 2026, November...",
-    "summary": "Databricks, a data analytics company, will present Azure Databricks sessions at Microsoft Ignite 2026 in November. The article is only a short teaser, so details beyond that are not given.",
-    "tags": [
-      "data analytics",
-      "conferences",
-      "cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/advancing-catalog-interoperability-unity-catalog-and-google-clouds-borderless-lakehouse",
-    "company": "Databricks",
-    "title": "Advancing Catalog Interoperability with Unity Catalog and Google Cloud’s Borderless Lakehouse",
-    "published": "2026-11-17",
-    "excerpt": "The Lakehouse architecture is becoming more open than ever. What started with open...",
-    "summary": "Databricks and Google Cloud announced closer teamwork so that data stored in one company's catalog system can be used from the other's. The goal is to let companies use their data across both platforms without copying it.",
-    "tags": [
-      "data platforms",
-      "cloud"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/claude-black-hole-physics",
     "company": "Anthropic",
     "title": "Claude solves two open problems in the physics of black holes",
@@ -1082,36 +1482,6 @@
       "ai models",
       "coding tools",
       "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/decision-1-1-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Decision-1.1 now available on AI Gateway",
-    "published": "2026-11-17",
-    "excerpt": "Decision-1.1 from Microsoft AI is now available on AI Gateway. It is more accurate, better calibrated, and faster than Decision-1. The decision model returns structured answers instead of free-form text for tasks such as routing support requests, choosing which model should handle a request, selecting the next step in a workflow, or grading AI responses. Boolean: the probability that a condition is true Choice: a selected category and probabilities for each option Score: a numerical rating on a scale you define Multiple questions can share the same input in one request. Better calibration means the model's probabilities track how often it is right, so your application can set thresholds for when to act, flag a case for review, or escalate. Decision-1.1 accepts the same request format as Decision-1. To switch, change the model ID to microsoft/decision-1.1 . Call it through the AI SDK , the OpenAI-compatible Decisions API , or the AI CLI . The examples below require ai 7.0.128 or later for TypeScript, or the OpenAI Python SDK 3.26.0 or later for Python. Decision requests appear in request logs , count toward budgets , and support decision fallbacks . Try Decision-1.1 in the model playground , or see the decision models documentation for request formats and question types. Read more",
-    "summary": "Vercel now offers Microsoft's Decision-1.1 model, which is more accurate and faster than its predecessor. It returns structured answers like yes/no odds or chosen categories, useful for routing requests or grading AI replies.",
-    "tags": [
-      "ai models",
-      "vercel",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/eve-is-now-generally-available",
-    "company": "Vercel",
-    "title": "Introducing eve 1.0",
-    "published": "2026-11-17",
-    "excerpt": "Today we're announcing eve 1.0 , the open-source framework for building production-ready agents. Since the public preview in June , we've worked with early adopters to prepare eve for 1.0, shipping 230+ releases and merging thousands of pull requests. With this release, eve is now generally available. We've made eve faster, expanded integrations, and improved observability. Security controls let you decide which actions need approval and what data gets collected. We've also made it easier for coding agents to build with, measuring that experience with a rigorous evaluation suite. With eve handling your harness and infrastructure, you and your agent can focus on building instead. Build production agents on a harness you own The harness in eve is the loop that calls models, runs tools, and delegates work to subagents. You choose the model, add or replace tools, edit instructions, and decide which actions need approval. The open-source Workflow SDK saves progress as the agent runs, so it can pick up from its last completed step after a crash. Multiplayer sessions and agent-to-agent calls are built in. For managed hosting, deploy your eve agent to Vercel. Vercel Workflows handles durable execution, and Vercel Sandbox runs agent-generated code in isolation. Build software factories that turn requests into tested pull requests, company brains that answer questions from your business data, or customer-facing agents in your product. Thousands of businesses already run eve in production for internal and customer-facing agents. Rillet built a software factory on eve that takes in customer requests, converts them into specs, tests the changes, and opens PRs for human review. Rillet tripled its shipping rate in three months. Clay built monty, a data agent that answers employees’ questions in Slack. Just over two months in, 30–40% of the company used it every week. Lindy 's agent framework roundup names eve “Best for durable backend agents”. Collaborate in multiplayer agent sessions Multiplayer lets several people work with an agent in one shared session. eve keeps track of who said what and directs approvals and sign-ins to the right person. You can set up memory for each user or the whole team. In the native Slack channel , each thread is one shared session. Approvals appear as buttons that only the right person can answer, and a live task card shows progress and timing. You can follow up in the thread without mentioning the agent again, cancel the current turn, or reset the session from Slack. Ambient mode lets an agent listen in channels you choose, even without being mentioned. Guided by goals you set per channel, it decides when to speak up, help, or take on a task, and when to stay quiet. To limit model costs, a small decision model screens every message first, and only the ones that might be for the agent start a turn. Slack is one of several native channels, alongside Microsoft Teams, Discord, Telegram, GitHub, Linear, Twilio, Web Chat, and iMessage. The Chat SDK channel adds support for any Chat SDK platform adapter, including WhatsApp, Messenger, Google Chat, and email. Each channel is one file, and the same agent can work across all of them. See the integrations directory for the full list. Build agent UIs with Next.js and other frameworks eve 1.0 expands our native integrations for Next.js, Nuxt, SvelteKit, TanStack Start, and Vite. The framework integrations build your agent alongside your app and set up its routes. On Vercel, you can deploy the agent and your site as one project, or host them separately. The client libraries let you work with tool calls, approval requests, and questions in a consistent way across frameworks. Use that session data to build custom UIs: stream replies into agent chats, embed an agent in a page, or show the agent's tool calls in your own components. Use eve add channel/web to scaffold a chat app with AI Elements components, or add eve's React, Vue, or Svelte bindings to an existing UI. Build mul",
-    "summary": "Vercel has released eve 1.0, a free, open-source tool for building AI agents that can run on your own setup. It is now generally available, with faster performance, more connections to other apps like Slack, and stronger controls over which actions need approval.",
-    "tags": [
-      "ai agents",
-      "open source",
-      "software tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1400,50 +1770,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/teach-genie-one-your-workflows-ultimate-guide-skills-genie-one",
-    "company": "Databricks",
-    "title": "Teach Genie One your workflows: The ultimate guide for skills in Genie One",
-    "published": "2026-11-16",
-    "excerpt": "Every team has “recipes” that govern how they work. The way finance puts together...",
-    "summary": "Databricks has published a guide on teaching its Genie One assistant your team's own step-by-step workflows, called skills. The article is only a short teaser, so the full details are not visible here.",
-    "tags": [
-      "ai assistants",
-      "workflows"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/talk-your-clinical-data-unlocking-aws-healthlake-opensharing-and-genie-one",
-    "company": "Databricks",
-    "title": "Talk to your clinical data: unlocking AWS HealthLake with OpenSharing and Genie One",
-    "published": "2026-11-16",
-    "excerpt": "Many healthcare and life sciences organizations have standardized on AWS HealthLake to manage clinical data...",
-    "summary": "Databricks describes a way to connect AWS HealthLake, a service that stores patient health records, to its data tools so people can ask questions about clinical data in plain language. The teaser is short, so details beyond this are not clear.",
-    "tags": [
-      "healthcare data",
-      "cloud data",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/tabular-foundation-models-databricks-ai-runtime",
-    "company": "Databricks",
-    "title": "Tabular foundation models on Databricks AI Runtime",
-    "published": "2026-11-16",
-    "excerpt": "Many of the most valuable predictive machine learning applications rely on tabular data...",
-    "summary": "Databricks describes running tabular foundation models, which are pre-trained models for spreadsheet-style data, on its AI Runtime. The article is only a short teaser, so details beyond that are unclear. The post focuses on predicting outcomes from table data, a common business need.",
-    "tags": [
-      "machine learning",
-      "databricks",
-      "tabular data"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
     "company": "Anthropic",
     "title": "Updating our coordinated vulnerability disclosure policy timelines",
@@ -1453,155 +1779,6 @@
     "tags": [
       "cybersecurity",
       "software security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-sandbox-python-sdk-1-0-is-now-available",
-    "company": "Vercel",
-    "title": "Vercel Sandbox Python SDK 1.0 is now available",
-    "published": "2026-11-16",
-    "excerpt": "The Vercel Sandbox Python SDK has reached 1.0, stabilizing its public API and bringing feature parity with the TypeScript SDK. Use it to run AI-generated code, test changes, and analyze datasets in isolated sandboxes from your Python application. The SDK includes context managers for automatic sandbox cleanup and AnyIO -based async support for asyncio and Trio. For synchronous code, use vercel.sandbox.sync . Install with uv add 'vercel-sandbox>=1.0' and configure authentication . If you’re upgrading from 0.x, review the 1.0 release notes for breaking changes, including the switch to bytes for command input and output. Learn more in the Python SDK documentation . Read more",
-    "summary": "Vercel released version 1.0 of its Python tool for running code in isolated sandboxes, matching its TypeScript version. It works with both async and regular Python code, and users upgrading from earlier versions should check the breaking changes.",
-    "tags": [
-      "python",
-      "developer tools",
-      "sandboxing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/set-budgets-for-projects-and-products-in-spend-management",
-    "company": "Vercel",
-    "title": "Set budgets for projects and products in Spend Management",
-    "published": "2026-11-16",
-    "excerpt": "Spend Management now supports budgets for individual projects and products, alongside existing team budgets. Project budgets: Track spend for one project and optionally pause its production deployments when the budget is reached, without pausing other projects. Product budgets: Track spend on one product, such as Fast Data Transfer, across your team. Only team and project budgets support automatic pausing of production deployments. Open the new Spend Management page to manage budgets, view spend for the current billing cycle, and see which thresholds have been reached. Vercel sends notifications at 50%, 75%, and 100% of each budget. You can also manage budgets with the Vercel CLI : Spend Management is included at no additional cost for Pro teams and Enterprise teams on Flexible Commitment plans. Customers in the Organizations private beta can also set a budget across all teams in their organization. Learn more in the Spend Management documentation . Read more",
-    "summary": "Vercel now lets you set spending limits for single projects and single products, not just whole teams. For projects, you can optionally pause production deployments when the limit is hit, without affecting your other projects.",
-    "tags": [
-      "cloud costs",
-      "hosting",
-      "budgets"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/seedance-2-5-flash-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Seedance 2.5 Flash now available on AI Gateway",
-    "published": "2026-11-16",
-    "excerpt": "ByteDance’s Seedance 2.5 Flash is now available on AI Gateway . Seedance 2.5 Flash is a faster, lower-cost version of Seedance 2.5 . The output is close to the standard model in human realism, reference-based editing, and prompt adherence. Generate videos with synchronized audio from text prompts or image, video, and audio references. Clips can be 4 to 30 seconds long at up to 720p and 24 frames per second, in landscape, square, or portrait formats. You can also edit or extend existing videos, or provide images to set the first and last frames. Use bytedance/seedance-2.5-flash with AI SDK 7 to generate a video with audio from a text prompt: To guide generation with reference images and videos, pass their URLs in inputReferences . Images and videos are numbered separately in the prompt as [Image 1] , [Video 1] , and so on: Try Seedance 2.5 Flash in the model playground , or follow the video generation quickstart . Read more",
-    "summary": "Vercel now offers ByteDance's Seedance 2.5 Flash, a faster and cheaper version of its video model. It creates short clips with sound from text, images, or existing videos.",
-    "tags": [
-      "ai video",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/the-kings-trust-and-openai",
-    "company": "OpenAI",
-    "title": "The King’s Trust and OpenAI launch £1m partnership",
-    "published": "2026-11-16",
-    "excerpt": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
-    "summary": "The King's Trust and OpenAI have launched a £1 million partnership. It aims to help up to 25,000 young people across the UK learn practical AI skills for work.",
-    "tags": [
-      "ai skills",
-      "youth jobs",
-      "education"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/strengthening-online-child-safety",
-    "company": "OpenAI",
-    "title": "Strengthening the fight against online child sexual abuse with new tools and support",
-    "published": "2026-11-16",
-    "excerpt": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
-    "summary": "OpenAI announced new tools, practical guidance, and partnerships aimed at stopping online child sexual abuse. The goal is to help prevent, spot, and respond to this kind of harm online.",
-    "tags": [
-      "child safety",
-      "online safety",
-      "ai policy"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/science-at-the-frontier",
-    "company": "OpenAI",
-    "title": "Science at the Frontier: How scientists use ChatGPT",
-    "published": "2026-11-16",
-    "excerpt": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
-    "summary": "OpenAI surveyed more than 1,800 scientists about how they use ChatGPT in their research. The report covers their daily work habits, how much more productive they feel, and what they expect for future discoveries.",
-    "tags": [
-      "ai",
-      "science research",
-      "chatgpt"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-    "company": "OpenAI",
-    "title": "Our first phase of embedded assessments",
-    "published": "2026-11-16",
-    "excerpt": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
-    "summary": "OpenAI has started a first round of outside checks on its AI models. Independent groups Apollo Research, METR, Transluce, and Goodfire will test how well the models behave safely and how well monitoring systems work.",
-    "tags": [
-      "ai safety",
-      "openai",
-      "model testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
-    "company": "OpenAI",
-    "title": "More ways to move care forward with ChatGPT for Healthcare",
-    "published": "2026-11-16",
-    "excerpt": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-    "summary": "OpenAI has released new features for ChatGPT for Healthcare, including tools that can use a computer to carry out tasks, better medical answers, and add-ons that work with healthcare software. The goal is to help people get real work done in healthcare settings.",
-    "tags": [
-      "healthcare",
-      "ai tools",
-      "chatgpt"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/lvmh-media-division-partnership",
-    "company": "OpenAI",
-    "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
-    "published": "2026-11-16",
-    "excerpt": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
-    "summary": "LVMH's media division has announced a partnership with OpenAI. The goal is to use AI to support journalism and make its publications easier to reach through ChatGPT.",
-    "tags": [
-      "ai",
-      "journalism",
-      "partnerships"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-    "company": "OpenAI",
-    "title": "Broadening access to AI for scientists",
-    "published": "2026-11-16",
-    "excerpt": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
-    "summary": "OpenAI is giving 200,000 researchers around the world free access to its top AI models through its ChatGPT for Academic Researchers program. The goal is to make powerful AI tools easier for scientists to use in their work.",
-    "tags": [
-      "ai tools",
-      "science research",
-      "free access"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1646,81 +1823,6 @@
       "discord",
       "gaming",
       "app design"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
-    "company": "Google Developers",
-    "title": "What is Pathways? Single-controller training for large models",
-    "published": "2026-11-16",
-    "excerpt": "Pathways is a single-controller distributed training system designed to coordinate large-scale model training across multiple accelerator groups by representing computations as a global dataflow graph. Unlike traditional SPMD models like DDP and FSDP that rely on synchronous collectives, Pathways uses asynchronous dispatch and a central scheduler to maximize hardware utilization and prevent deadlocks in complex workloads. By decoupling model definition from physical hardware via virtual devices, developers can efficiently scale complex training architectures and seamlessly handle dynamic workloads like reinforcement learning post-training.",
-    "summary": "Google describes Pathways, a system that coordinates training of very large AI models across many groups of chips from one central controller. It can keep chips busier and handle more complex training jobs than older approaches.",
-    "tags": [
-      "ai training",
-      "machine learning",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
-    "company": "Google Developers",
-    "title": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch",
-    "published": "2026-11-16",
-    "excerpt": "How we eliminated floating-point train–inference logprob drift for on-policy LLM reinforcement learning across 64 Cloud TPU v5p chips using a generalizable four-part JAX and Pallas recipe in Tunix.",
-    "summary": "Google describes a method that makes the training and the running of an AI language model produce exactly matching numbers when learning with feedback, across 64 Google TPU chips. Before this, tiny rounding differences between the two steps could make learning unstable.",
-    "tags": [
-      "machine learning",
-      "google tpu",
-      "ai training"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide/",
-    "company": "Google Developers",
-    "title": "TPU Model Design Considerations and Optimization Guide",
-    "published": "2026-11-16",
-    "excerpt": "The newly launched AI-Hypercomputer/tpu-codesign guide provides hardware-grounded design rules to help developers maximize performance on TPUs for LLMs and Mixture-of-Experts (MoE) workloads. Key principles include aligning reduction and output dimensions to 256 for systolic arrays, adopting LatentMoE to compress routed token traffic, and mapping parallel axes directly onto physical links.",
-    "summary": "Google has released a guide with practical design rules to help developers get better speed from its TPU chips when running large AI language models. It covers tips like matching certain model sizes to the chip's hardware layout and shrinking data sent between parts of mixture-of-experts models.",
-    "tags": [
-      "ai hardware",
-      "machine learning",
-      "google tpu"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/",
-    "company": "Google Developers",
-    "title": "Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection",
-    "published": "2026-11-16",
-    "excerpt": "This guide walks developers through setting up Agent Anomaly Detection on the Gemini Enterprise Agent Platform to monitor AI agent telemetry and catch behavioral risks. It demonstrates how to deploy a sample customer support agent, trigger out-of-scope security findings, and configure proactive alerts using Cloud Monitoring and Security Command Center.",
-    "summary": "Google published a hands-on guide showing how to use Agent Anomaly Detection to watch AI agents for unusual or risky behavior. It walks through deploying a sample support agent and setting up alerts for when it acts outside its expected scope.",
-    "tags": [
-      "ai agents",
-      "security",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/",
-    "company": "Google Developers",
-    "title": "From prompt to app: Build with Google Maps in AI Studio",
-    "published": "2026-11-16",
-    "excerpt": "Developers can now build applications powered by Google Maps Platform directly within Google AI Studio by prompting Gemini with real-world geospatial concepts. The integration eliminates traditional configuration hurdles by providing one-click demo keys that generate instantly without requiring Cloud Console redirects or credit cards. This setup grants developers immediate access to core APIs—including Maps, Places, and Routes—supported by daily sandbox quotas for seamless prototyping.",
-    "summary": "Developers can now build apps using Google Maps inside Google AI Studio by describing what they want to Gemini. Demo keys come with one click, with no extra setup or credit card needed, making quick prototypes easier.",
-    "tags": [
-      "google maps",
-      "app development",
-      "ai tools"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2730,21 +2832,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://huggingface.co/blog/allenai/toyblocks",
-    "company": "Hugging Face",
-    "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-    "published": "2026-11-06",
-    "excerpt": "",
-    "summary": "Hugging Face has released ToyBlocks, a simple, controlled virtual world for teaching and testing robots. The post, based on its title alone, appears to introduce it as a fixed setup where researchers can compare how well robots learn.",
-    "tags": [
-      "robotics",
-      "machine learning",
-      "simulation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/vole-mole/",
     "company": "Cloudflare",
     "title": "The post-quantum future of web privacy",
@@ -2813,20 +2900,6 @@
     "tags": [
       "health tech",
       "wearables"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/phonon-tts",
-    "company": "Hugging Face",
-    "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-    "published": "2026-11-05",
-    "excerpt": "",
-    "summary": "Hugging Face has launched Phonon TTS, a speech model that turns text into spoken audio and runs directly on a device. The company says it performs at the top of standard speech benchmarks.",
-    "tags": [
-      "speech ai",
-      "on-device ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3496,36 +3569,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-    "company": "Cloudflare",
-    "title": "What took the Internet offline in Q3 2026",
-    "published": "2026-10-27",
-    "excerpt": "The Internet can feel invisible when everything is working normally. But when connectivity breaks, the many systems it depends upon become evident in an instant. Because Cloudflare’s global network handles more than 20% of the web’s traffic, it offers a unique perspective of how Internet traffic is behaving. When failures in infrastructure, power, policy, or security disrupt access to the Internet, Cloudflare Radar can observe the impact by monitoring traffic to our customers. Each quarter, we review the disruptions detected and annotated on Radar, highlighting what happened, where it happened, and the broader conditions that shaped each event. In this post, we examine the major categories of Internet disruptions observed during the third quarter of 2026, including government-directed shutdowns, power outages and natural disasters. Disruptions at a glance Between July and September, Internet disruptions were largely driven by failures in the systems the Internet depends on. Power grids failed in Cuba, Honduras, Guam, Ukraine, and several other countries. Natural disasters damaged electricity and telecommunications infrastructure from Nepal to Colombia. Government-directed shutdowns remained the most frequent source of disruption, driven largely by exam-related shutdowns in Iraq, while renewed conflict in Ethiopia’s Tigray region showed how quickly connectivity can become part of a broader political and humanitarian crisis. Outages within the United States, Japan, and Portugal — countries with a relatively strong history of Internet resilience — remind us that no country is immune to disruption. In total, Cloudflare Radar recorded 49 disruptions during the quarter. Government-directed shutdowns accounted for 19 incidents, including 18 exam shutdowns in Iraq. Power outages followed with 14 incidents, while natural disasters accounted for five. Power failure was a leading cause of disruptions The Internet is designed to be distributed and resilient, but that resilience still depends on electricity. When power fails, routers, mobile base stations, data centers, interconnection facilities, and the networks that connect them can fail with it. Over the past three months, that dependency was one of the clearest patterns in Radar’s disruption data. Power outages were the second-most common cause of disruptions by incident count this quarter, behind government-directed exam shutdowns. In Cuba, Internet disruptions followed the erratic patterns of an unstable power grid. Radar observed four power-related outages across the quarter, meaning connectivity was affected by grid failures at least once a month. The outages took place July 6, July 14, August 3, and a three-day blackout from September 18 to 20. The traffic volume decreases ranged from 18% on July 14 to 59% on August 3. Honduras illustrated how a localized infrastructure failure can produce national-level effects. A power failure on September 10 at an interconnection facility affected at least 11 major providers, showing how concentrated traffic exchange points can become single points of failure. The outage lasted approximately three hours, during which HTTP traffic across the country fell by 63%. Two notable exceptions were the cross-border provider Telecomunicaciones de Guatemala (AS14754) and mobile carrier Celtel (AS52262), which were unaffected. This suggests that their Honduran connectivity may rely more heavily on infrastructure outside the country. Cloudflare Radar - Traffic volume by autonomous system On July 5, a power outage in Sevastopol, Ukraine, caused an eight-hour blackout, with HTTP traffic dropping by 98%. A little over a month later, on August 12, drone strikes targeting energy infrastructure caused another power outage, resulting in a ten-hour Internet disruption and up to a 95% decline in traffic volume. As discussed in more detail below, geopolitical conflict remains a major driver of Internet disruptions. These incidents also show how conflict, energy infra",
-    "summary": "Cloudflare reviewed internet outages from July to September 2026, finding 49 disruptions. Power failures were a leading cause, knocking out connections in places like Cuba, Honduras and Ukraine, and exam-related government shutdowns in Iraq were the most common overall.",
-    "tags": [
-      "internet outages",
-      "power grids",
-      "cloudflare"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://blog.cloudflare.com/php-ctf/",
-    "company": "Cloudflare",
-    "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
-    "published": "2026-10-27",
-    "excerpt": "Last week was one for the Internet security history books. First, eight eMudhra intermediate certificates were compromised , creating the possibility of forged certificates that could be used to impersonate servers. Then came php2shell : serious vulnerabilities in PHP, the runtime behind a large portion of the Web. Cloudflare worked around the clock as these events unfolded to protect our customers and help protect the Internet. We shipped client updates and multiple mitigations , updated our web application firewall (WAF) with new rules to block attackers from exploiting the PHP vulnerabilities, and introduced a new feature called full transaction detection . As always in situations like this, these new capabilities were made available on all plans, including Free. Put our WAF to the test Protecting systems from vulnerabilities like these is always an ongoing process, not a one-time event. The widespread adoption of AI allows attackers to discover new vectors with unprecedented speed and efficiency, so collecting real-world data to test our assumptions and strengthen defenses is essential. That’s why today we're launching the Cloudflare PHP Capture the Flag challenge , run through our Bug Bounty program . We've put a deliberately vulnerable PHP installation behind our WAF, and we're inviting security researchers on HackerOne to try to bypass the protections and capture a flag. How this Capture the Flag (CTF) works We are keeping this simple. The challenge focuses on CVE-2026-109618 and CVE-2026-109619 , the two PHP vulnerabilities behind php2shell . The target runs stock PHP 8.5.11 (with standard PHP extensions), Apache 2 (via mod_php), and an empty index.php inside a Cloudflare Container , with our default WAF protection rules for these vulnerabilities enabled in front of it. Inside the sandbox is a file called /flag . The sandbox is reset every few minutes, including the flag file. Your mission, should you choose to accept it: bypass the WAF protections, exploit the PHP sandbox, and recover the contents of /flag . You can use your own research tools. The challenge page has the environment details, scope, and flag verification form. Challenge requirements This limited-time challenge is run via Cloudflare's Bug Bounty program on HackerOne . All aspects of this challenge are subject to HackerOne terms and the Cloudflare HackerOne program rules the (“Bounty Terms”). If you find an eligible bypass, you must follow these requirements in order to claim the bounty: All participants must sign up for a HackerOne account and review and agree to the Bounty Terms before participating in the CTF. Demonstrate attacker-controlled PHP code or command execution inside the sandbox through an authorized POST request. Use that remote code execution (RCE) to recover the current contents of /flag, then successfully verify the flag through the CTF user interface (UI). Verify promptly before a reset; retain the successful result for later review. Submit a private report to Cloudflare on HackerOne. Include PHP CTF in the title and provide: The endpoint, complete payload, and request sequence, preserving relevant headers, encoding, and body bytes. Raw request/response captures or a readable proof of concept sufficient to reproduce the full chain. An explanation of the WAF bypass, executed code or command, and how that execution recovered /flag. The attempt ID, successful UI verification result, and exploit/verification UTC timestamps. Include the flag privately if needed for verification. What makes the method or payload materially distinct, and related submissions you know about. UI verification does not submit a HackerOne report or establish reporting priority. File disclosure without RCE, RCE without successful flag recovery and UI verification, local-only exploits, rediscovery of the known PHP vulnerabilities, and WAF detection differences or partial chains without the full objective are not eligible. Awards require a materially distinct bypass m",
-    "summary": "Cloudflare is running a time-limited hacking challenge where security researchers try to break through its firewall protections for a deliberately weak PHP website and steal a hidden file. The goal is to test defenses against two serious PHP flaws, since AI now helps attackers find new weaknesses faster.",
-    "tags": [
-      "cybersecurity",
-      "web security",
-      "bug bounty"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/news/s1-sec",
     "company": "Anthropic",
     "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
@@ -3581,21 +3624,6 @@
       "ai infrastructure",
       "data center networking",
       "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-    "company": "Cloudflare",
-    "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
-    "published": "2026-10-26",
-    "excerpt": "On September 8, 2026, we were alerted by a security researcher, Gadi Evron from Knostic , to a tenant isolation issue affecting the GLM-5.3 Workers AI model ( @cf/zai-org/glm-5.3 ) starting on August 27, 2026. We have remediated the issue, and we restored the model on September 9. We have confirmed that no other model hosted on Workers AI was affected. Between August 27 and September 9, a small number of customers using the GLM 5.3 Workers AI model received responses that contained data from other customers' requests made to the same model shortly before theirs. In total, 155 responses were affected, all to prompts longer than 681,280 tokens. After excluding our own testing and the researcher's, the requests we identified are consistent in timing and volume with ordinary long-context use, not with someone repeatedly exploiting the bug. We found no evidence of deliberate exploitation. Today we are publishing this report alongside a post from SGLang, the open-source inference engine that we use, as a coordinated disclosure. This post describes the bug that caused this issue, our response timeline, and the subsequent hardening we have conducted on our production SGLang deployments. We also detail our continued efforts with the upstream maintainers of SGLang to address this and similar bugs. What happened GLM is a text generation model from Z.ai that is built for agentic coding workflows; it is one of the many models available through Workers AI. Gadi Evron submitted a report on September 8 through our HackerOne program stating that very long prompts sent to @cf/zai-org/glm-5.3 on Workers AI sometimes returned text that belonged to other users' sessions. Cloudflare reproduced the issue the next morning and took the model offline within 40 minutes of declaring an incident. We then deployed a corrected configuration and a patched inference engine, and restored service the same day. This specific report of cross-request KV cache exposure was the result of two overlapping issues. The first was a misconfiguration of the open-source inference engine, SGLang, used by Cloudflare. We deployed GLM 5.3 with a 1,048,576-token context window, but the KV cache pool on our prefill GPUs only had room for 681,280 tokens. We were aware of this mismatch before launch. We expected the engine to return an error for any prompt it could not process, and our long-context tests returned successful responses, so we did not believe this to be an issue. The second was a bug in how SGLang handled the resulting over-length requests in disaggregated prefill/decode mode. A prompt that did not fit the pool was internally marked as rejected and replaced with a one-token placeholder, but instead of aborting the request and returning a client error, prefill generated the KV cache for the placeholder prompt and transferred it to the decode node. The decode node received a \"transfer complete\" message and assumed that prefill overwrote the KV cache from previous requests with the full prompt for this request, when in fact it left the majority of the previous state intact. The decode node subsequently generated a response while attending over stale cache pages that still held data from earlier requests. As a result, responses to prompts longer than 681,280 tokens could contain data from other users' GLM 5.3 sessions. Immediate remediation After disabling the model , we took the following actions to correct this vulnerability before restoring public access to it: To fix our configuration, we made the pool hold the full context. We adjusted our GLM 5.3 configuration to match our GLM 5.2 configuration, which freed enough GPU memory that the prefill KV pool now holds about 2.04 million tokens, roughly twice the 1,048,576-token context length. A prompt that fits the context window now always fits the pool, so the rejection path is never reached for a valid request. This alone prevents the bug from being exercised. To fix the engine, we also made the rejection path safe. Rely",
-    "summary": "Cloudflare found that its GLM-5.3 AI model sometimes sent very long requests' replies containing bits of other customers' data, from August 27 to September 9, 2026. About 155 replies were affected, and they fixed the problem by correcting the model's memory setup and patching the software.",
-    "tags": [
-      "ai security",
-      "cloud services",
-      "data privacy"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3713,20 +3741,6 @@
       "software security",
       "ai",
       "software testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-    "company": "Anthropic",
-    "title": "Open call for guest investigators in the life sciences",
-    "published": "2026-10-22",
-    "excerpt": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
-    "summary": "Anthropic is inviting scientists in life sciences to apply to work with its team on special projects. The post is a short open call, so it does not say which projects or how the work will run.",
-    "tags": [
-      "life sciences",
-      "research collaboration"
     ],
     "summarized": true,
     "summary_version": 2
