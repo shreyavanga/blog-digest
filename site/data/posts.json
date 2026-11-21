@@ -1,5 +1,109 @@
 [
   {
+    "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
+    "company": "Google Developers",
+    "title": "What is Pathways? Single-controller training for large models",
+    "published": "2026-11-21",
+    "excerpt": "Pathways is a single-controller distributed training system designed to coordinate large-scale model training across multiple accelerator groups by representing computations as a global dataflow graph. Unlike traditional SPMD models like DDP and FSDP that rely on synchronous collectives, Pathways uses asynchronous dispatch and a central scheduler to maximize hardware utilization and prevent deadlocks in complex workloads. By decoupling model definition from physical hardware via virtual devices, developers can efficiently scale complex training architectures and seamlessly handle dynamic workloads like reinforcement learning post-training.",
+    "summary": "Google describes Pathways, a system that runs very large AI model training from one central controller across many groups of chips. It schedules work so hardware stays busy and jobs are less likely to get stuck, which helps with complex training such as reinforcement learning.",
+    "tags": [
+      "ai training",
+      "machine learning infrastructure"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
+    "company": "Google Developers",
+    "title": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch",
+    "published": "2026-11-21",
+    "excerpt": "How we eliminated floating-point train–inference logprob drift for on-policy LLM reinforcement learning across 64 Cloud TPU v5p chips using a generalizable four-part JAX and Pallas recipe in Tunix.",
+    "summary": "Google describes a method to make training and running a language model produce exactly the same numbers when learning by trial and error on Google's TPU chips. Before this, small rounding differences between the two steps could make learning unstable.",
+    "tags": [
+      "machine learning",
+      "tpu chips",
+      "ai training"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/tpu-model-design-considerations-and-optimization-guide/",
+    "company": "Google Developers",
+    "title": "TPU Model Design Considerations and Optimization Guide",
+    "published": "2026-11-21",
+    "excerpt": "The newly launched AI-Hypercomputer/tpu-codesign guide provides hardware-grounded design rules to help developers maximize performance on TPUs for LLMs and Mixture-of-Experts (MoE) workloads. Key principles include aligning reduction and output dimensions to 256 for systolic arrays, adopting LatentMoE to compress routed token traffic, and mapping parallel axes directly onto physical links.",
+    "summary": "Google released a new guide with design rules to help software run faster on its TPU chips, which are used for AI. It covers tips for large language models and a model style called Mixture-of-Experts.",
+    "tags": [
+      "ai hardware",
+      "machine learning",
+      "google tpu"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/securing-your-agents-a-hands-on-guide-to-agent-anomaly-detection/",
+    "company": "Google Developers",
+    "title": "Securing Your Agents: A Hands-On Guide to Agent Anomaly Detection",
+    "published": "2026-11-21",
+    "excerpt": "This guide walks developers through setting up Agent Anomaly Detection on the Gemini Enterprise Agent Platform to monitor AI agent telemetry and catch behavioral risks. It demonstrates how to deploy a sample customer support agent, trigger out-of-scope security findings, and configure proactive alerts using Cloud Monitoring and Security Command Center.",
+    "summary": "Google published a hands-on guide for setting up Agent Anomaly Detection, a tool that watches AI agents for risky behavior. It shows how to deploy a sample support agent, trigger security alerts, and set up notifications.",
+    "tags": [
+      "ai agents",
+      "security",
+      "cloud monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/",
+    "company": "Google Developers",
+    "title": "From prompt to app: Build with Google Maps in AI Studio",
+    "published": "2026-11-21",
+    "excerpt": "Developers can now build applications powered by Google Maps Platform directly within Google AI Studio by prompting Gemini with real-world geospatial concepts. The integration eliminates traditional configuration hurdles by providing one-click demo keys that generate instantly without requiring Cloud Console redirects or credit cards. This setup grants developers immediate access to core APIs—including Maps, Places, and Routes—supported by daily sandbox quotas for seamless prototyping.",
+    "summary": "Developers can now build apps that use Google Maps inside Google AI Studio by describing what they want to Gemini. Demo keys work with one click, with no extra setup or credit card needed.",
+    "tags": [
+      "google maps",
+      "ai tools",
+      "app development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+    "company": "Google Developers",
+    "title": "Check what your AI agents do before they do it, with Semantic governance policies",
+    "published": "2026-11-21",
+    "excerpt": "Semantic governance policies enable developers to govern AI agents by evaluating every proposed tool call inline before execution. Operating via Agent Gateway, the policy engine checks each action against user intent and plain-language rules to prevent unauthorized data sharing and prompt injection attacks. Developers can easily attach natural-language constraints to their agents and monitor auditable verdicts through Cloud Logging.",
+    "summary": "Google describes a new way to check what AI agents are about to do before they act. Each planned action is compared against the user's intent and plain-language rules, which can block unauthorized data sharing and tricks that hijack the agent.",
+    "tags": [
+      "ai agents",
+      "security",
+      "google cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/workflow-lab-specs-and-the-figma-agent/",
+    "company": "Figma",
+    "title": "Workflow lab: Turning context into a plan with Specs and the Figma agent",
+    "published": "2026-11-20",
+    "excerpt": "Bringing scattered context onto the canvas helps teams connect the diagrams, designs, and technical decisions they need to build, all in one place. This workflow shows how Specs and the Figma agent provide a container for that context so implementation is easy.",
+    "summary": "Figma describes a workflow that gathers scattered notes, diagrams, and design decisions onto one canvas. It uses a tool called Specs and its built-in agent to turn that information into a plan, which should make building the product easier.",
+    "tags": [
+      "design tools",
+      "product planning",
+      "figma"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://www.databricks.com/blog/interactive-databricks-reference-architectures-across-70-industries",
     "company": "Databricks",
     "title": "Interactive Databricks Reference Architectures Across 70 Industries",
@@ -55,6 +159,20 @@
       "ai governance",
       "certification",
       "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+    "company": "Google Research",
+    "title": "How Google Duplex evolved to also call businesses for you in Gemini",
+    "published": "2026-11-20",
+    "excerpt": "Generative AI",
+    "summary": "Google says its Duplex phone-calling technology now also calls businesses for you inside Gemini. The post covers how the feature has grown from its earlier version.",
+    "tags": [
+      "ai assistants",
+      "google"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1602,95 +1720,6 @@
       "ai agents",
       "github copilot",
       "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
-    "company": "Google Developers",
-    "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
-    "published": "2026-11-17",
-    "excerpt": "Google AI Edge Gallery now supports on-device, offline Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) capabilities for building developer-friendly voice applications. Developers can leverage ML Kit for optimized Android performance, or use MediaPipe Tasks and LiteRT for cross-platform open-weight model integration. This local pipeline seamlessly pairs lightweight speech models with on-device small language models like Gemini Nano and Gemma 4 to enable real-time streaming transcription and low-latency synthesis.",
-    "summary": "Google's AI Edge Gallery now lets apps turn speech into text and text into speech without an internet connection, right on the device. This means voice features can work offline and respond quickly.",
-    "tags": [
-      "speech recognition",
-      "on-device ai",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
-    "company": "Google Developers",
-    "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
-    "published": "2026-11-17",
-    "excerpt": "This post walks through the Agents CLI evaluation loop for systematically improving agent performance through continuous testing and grading. It demonstrates how to catch prompt regressions, evaluate model backend swaps using side-by-side trace comparisons, and automate evaluation passes. Developers will also learn how to integrate nightly scheduled runs with threshold-based alerting to track quality over time.",
-    "summary": "Google shows how to test AI agents over time using its Agents CLI tool. It covers catching prompt regressions, comparing model swaps side by side, and running nightly checks that alert when quality drops.",
-    "tags": [
-      "ai agents",
-      "software testing"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
-    "company": "Google Developers",
-    "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
-    "published": "2026-11-17",
-    "excerpt": "Google's Gemini 4 Hydrogen brings strong spatial and embodied reasoning capabilities to a fast, efficient model built specifically for robotics. To help developers put these capabilities to work, the new Robotics plugin for Google Antigravity transforms the platform into a comprehensive workbench supporting rapid hardware bring-up, MuJoCo simulation, and closed-loop control. Developers can leverage these tools to transition from an unboxed robot arm to a fully functional real-to-sim-to-real application in an afternoon using natural language prompts and day-one support in the google-genai SDKs.",
-    "summary": "Google released Gemini 4 Hydrogen, a fast AI model built for robots that can better understand space and physical surroundings. A new Robotics plugin for Google Antigravity helps developers set up robot arms, test them in simulation, and control them, using plain language prompts.",
-    "tags": [
-      "robotics",
-      "ai models",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
-    "company": "Google Developers",
-    "title": "Build full-stack Android apps with Gemini in Google AI Studio",
-    "published": "2026-11-17",
-    "excerpt": "Google AI Studio now lets developers build, test, and ship full-stack Kotlin Android apps from a single prompt—complete with Cloud Firestore, Firebase Authentication, Firebase AI Logic, a faster HD emulator with audio, visual screenshot debugging, and direct publishing to your personal Google Play library.",
-    "summary": "Google AI Studio can now create full Android apps written in Kotlin from one written request. Developers can also test them in a faster emulator, debug with screenshots, and publish straight to their Google Play account.",
-    "tags": [
-      "android apps",
-      "google ai studio",
-      "app development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
-    "company": "Google Developers",
-    "title": "Accelerating development for massive Git repositories",
-    "published": "2026-11-17",
-    "excerpt": "Meet Another Build File Service (ABFS), Google's open-source content-addressable filesystem and build cache that cuts Android checkouts to <8s and builds to ~2m.",
-    "summary": "Google released ABFS, a free tool that speeds up work on very large code projects. It cuts Android code downloads to under 8 seconds and builds to about 2 minutes.",
-    "tags": [
-      "software development",
-      "open source",
-      "build speed"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
-    "company": "Google Developers",
-    "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
-    "published": "2026-11-17",
-    "excerpt": "A2UI 1.0 is an open protocol for generative UI that enables AI agents to render interactive, native screens across web, mobile, and desktop applications. Developers can leverage open-source renderer SDKs—including React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose—alongside agent SDKs for Python, TypeScript, and Dart. The release introduces bidirectional function calls, swappable inference formats, and secure data binding to help teams seamlessly integrate generative UI into their product stacks.",
-    "summary": "Google released A2UI 1.0, a free, open set of tools that lets AI agents create interactive screens for web, phone, and desktop apps. It works with common app-building tools like React and Flutter.",
-    "tags": [
-      "ai agents",
-      "app development",
-      "open source"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4101,20 +4130,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.figma.com/blog/introducing-figma-specs/",
-    "company": "Figma",
-    "title": "Introducing Specs: Markdown as a medium",
-    "published": "2026-10-15",
-    "excerpt": "We’re launching Specs, a container for your context that lives on the Figma canvas.",
-    "summary": "Figma is launching Specs, a new tool that lets you keep notes and context for a project directly on the Figma canvas. The teaser does not give more detail about how it works.",
-    "tags": [
-      "design tools",
-      "figma"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/real-time-stripe-data-postgres",
     "company": "Stripe",
     "title": "Sync real-time Stripe data to Postgres with Stripe Data Pipeline",
@@ -5039,21 +5054,6 @@
       "developer tools",
       "dropbox",
       "api documentation"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://research.google/blog/millemiglia-a-realistic-instance-generator-for-middle-mile-logistics/",
-    "company": "Google Research",
-    "title": "MilleMiglia: A realistic instance generator for middle-mile logistics",
-    "published": "2026-09-18",
-    "excerpt": "Algorithms & Theory",
-    "summary": "Google Research has released MilleMiglia, a tool that generates realistic test problems for planning middle-mile shipping, the leg that moves goods between warehouses and hubs. The text provided is only a short teaser, so details are limited. It can help researchers test shipping planning methods on realistic data.",
-    "tags": [
-      "logistics",
-      "algorithms",
-      "research tools"
     ],
     "summarized": true,
     "summary_version": 2
