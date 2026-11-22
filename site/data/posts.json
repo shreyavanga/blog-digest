@@ -1,5 +1,94 @@
 [
   {
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "company": "OpenAI",
+    "title": "Perplexity and Intelligence",
+    "published": "2026-11-22",
+    "excerpt": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+    "summary": "OpenAI wrote a post about perplexity, a score for how well an AI model predicts text, and how it can measure progress in AI. The idea is that developers could use it as a shared way to judge new abilities.",
+    "tags": [
+      "ai models",
+      "ai evaluation"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
+    "company": "Google Developers",
+    "title": "On-Device Speech Recognition and Text-to-Speech in Google AI Edge Gallery",
+    "published": "2026-11-22",
+    "excerpt": "Google AI Edge Gallery now supports on-device, offline Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) capabilities for building developer-friendly voice applications. Developers can leverage ML Kit for optimized Android performance, or use MediaPipe Tasks and LiteRT for cross-platform open-weight model integration. This local pipeline seamlessly pairs lightweight speech models with on-device small language models like Gemini Nano and Gemma 4 to enable real-time streaming transcription and low-latency synthesis.",
+    "summary": "Google's AI Edge Gallery app now lets developers build voice features that run fully on the phone, without internet. It can turn speech into text and text into speech, and it works with Google's small language models.",
+    "tags": [
+      "voice apps",
+      "on-device ai",
+      "developers"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/gemini-hydrogen-for-robotics/",
+    "company": "Google Developers",
+    "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics",
+    "published": "2026-11-22",
+    "excerpt": "Google's Gemini 4 Hydrogen brings strong spatial and embodied reasoning capabilities to a fast, efficient model built specifically for robotics. To help developers put these capabilities to work, the new Robotics plugin for Google Antigravity transforms the platform into a comprehensive workbench supporting rapid hardware bring-up, MuJoCo simulation, and closed-loop control. Developers can leverage these tools to transition from an unboxed robot arm to a fully functional real-to-sim-to-real application in an afternoon using natural language prompts and day-one support in the google-genai SDKs.",
+    "summary": "Google released Gemini 4 Hydrogen, a fast AI model built for robots, plus a Robotics plugin for its Antigravity developer tool. Developers can now go from a new robot arm to a working robot app in about an afternoon, using plain-language instructions.",
+    "tags": [
+      "robotics",
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+    "company": "Google Developers",
+    "title": "Build full-stack Android apps with Gemini in Google AI Studio",
+    "published": "2026-11-22",
+    "excerpt": "Google AI Studio now lets developers build, test, and ship full-stack Kotlin Android apps from a single prompt—complete with Cloud Firestore, Firebase Authentication, Firebase AI Logic, a faster HD emulator with audio, visual screenshot debugging, and direct publishing to your personal Google Play library.",
+    "summary": "Google AI Studio can now help build full Android apps written in Kotlin from one written request. It also lets developers test the app in a faster emulator and publish it to their Google Play account.",
+    "tags": [
+      "android apps",
+      "google ai",
+      "app development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
+    "company": "Google Developers",
+    "title": "Accelerating development for massive Git repositories",
+    "published": "2026-11-22",
+    "excerpt": "Meet Another Build File Service (ABFS), Google's open-source content-addressable filesystem and build cache that cuts Android checkouts to <8s and builds to ~2m.",
+    "summary": "Google has released ABFS, a free, open-source tool for handling very large code projects. It speeds up downloading the Android code, cutting checkout time to under 8 seconds and builds to about 2 minutes.",
+    "tags": [
+      "software development",
+      "open source",
+      "build tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+    "company": "Google Developers",
+    "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
+    "published": "2026-11-22",
+    "excerpt": "A2UI 1.0 is an open protocol for generative UI that enables AI agents to render interactive, native screens across web, mobile, and desktop applications. Developers can leverage open-source renderer SDKs—including React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose—alongside agent SDKs for Python, TypeScript, and Dart. The release introduces bidirectional function calls, swappable inference formats, and secure data binding to help teams seamlessly integrate generative UI into their product stacks.",
+    "summary": "Google released version 1.0 of A2UI, an open tool that lets AI agents build interactive screens for web, phone, and desktop apps. It works with many common app frameworks, so developers can add AI-built screens without starting from scratch.",
+    "tags": [
+      "ai agents",
+      "app development",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
     "company": "Google Developers",
     "title": "What is Pathways? Single-controller training for large models",
@@ -1265,80 +1354,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
-    "company": "Google Developers",
-    "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
-    "published": "2026-11-18",
-    "excerpt": "LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
-    "summary": "Google's LiteRT tool for running AI models on phones now runs on the GPU in Google Play services, making it about 1.4 times faster. Apps can drop roughly 8 MB of bundled code and get updates automatically.",
-    "tags": [
-      "mobile apps",
-      "ai on phones",
-      "android"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
-    "company": "Google Developers",
-    "title": "How Agent Anomaly Detection scores on benchmarks we didn't write",
-    "published": "2026-11-18",
-    "excerpt": "Agent Anomaly Detection (AAD) provides asynchronous, low-latency monitoring for AI agents by analyzing OpenTelemetry traces and logs to flag goal hijacks and tool misuse. Tested across five public security benchmarks, AAD successfully caught 87% of harmful instructions carried out by agents without adding runtime latency. Developers can integrate AAD alongside semantic governance and strict tool limits as part of a defense-in-depth strategy to secure agentic applications.",
-    "summary": "Google describes a tool called Agent Anomaly Detection that watches AI agents' activity records after the fact to spot hijacked goals or misuse of tools. In five public security tests it caught 87% of harmful agent actions without slowing the agents down.",
-    "tags": [
-      "ai agents",
-      "security",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/devfest-is-back/",
-    "company": "Google Developers",
-    "title": "DevFest is back!",
-    "published": "2026-11-18",
-    "excerpt": "DevFest 2026 runs from October 1 to December 31, bringing together nearly a million developers across more than 800 global events centered on the agentic AI era. Under the theme \"Build, Secure, Scale,\" participants gain hands-on experience with Google’s developer stack—including Gemini, Google AI Studio, Google Antigravity, and Web MCP—through live workshops and codelabs. The conference focuses on enabling developers to prototype rapidly, ensure secure and private deployments, and leverage production-ready infrastructure.",
-    "summary": "DevFest 2026 is a series of more than 800 developer events running October through December, with nearly a million people expected. Attendees learn hands-on how to build and secure AI tools using Google's developer products.",
-    "tags": [
-      "developer events",
-      "ai tools",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
-    "company": "Google Developers",
-    "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
-    "published": "2026-11-18",
-    "excerpt": "How pairing Go's surviving compiler bounds-check traps with Gemini 4 Argon and the Z3 constraint solver catches latent out-of-bounds panics in Go code and uncovers a slice-capacity blind spot in go test -fuzz.",
-    "summary": "Google shows a way to find hidden crash bugs in Go code that normal fuzz testing misses. It combines Gemini AI with a constraint solver, a tool that checks logical conditions, to find out-of-bounds errors in Go code.",
-    "tags": [
-      "go programming",
-      "software testing",
-      "ai tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/",
-    "company": "Google Developers",
-    "title": "Build Generative UI Apps with A2UI & CopilotKit Agents",
-    "published": "2026-11-18",
-    "excerpt": "See Google A2Ui in action! Learn how to natively render agentic UIs across Langchain, AWS Strands, Microsoft agents, and Google ADK using CopilotKit SDKs for A2UI.",
-    "summary": "Google shows how to build apps where AI agents create their own user interface, using a tool called A2UI with CopilotKit. The method works with several agent frameworks, including LangChain, AWS Strands, Microsoft agents, and Google ADK.",
-    "tags": [
-      "ai agents",
-      "app development"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
     "company": "NVIDIA",
     "title": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
@@ -1660,21 +1675,6 @@
       "ai tools",
       "sales",
       "chatgpt"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/astra-law-6-2",
-    "company": "OpenAI",
-    "title": "Astra for Law leads in legal intelligence",
-    "published": "2026-11-17",
-    "excerpt": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
-    "summary": "OpenAI's new Astra for Law ranked first in a launch test covering 24 areas of law. All ChatGPT Enterprise customers can now ask for access.",
-    "tags": [
-      "legal ai",
-      "openai",
-      "chatgpt enterprise"
     ],
     "summarized": true,
     "summary_version": 2
