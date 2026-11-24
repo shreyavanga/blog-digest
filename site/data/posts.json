@@ -1,5 +1,344 @@
 [
   {
+    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
+    "company": "Google Developers",
+    "title": "How Agent Anomaly Detection scores on benchmarks we didn't write",
+    "published": "2026-11-24",
+    "excerpt": "Agent Anomaly Detection (AAD) provides asynchronous, low-latency monitoring for AI agents by analyzing OpenTelemetry traces and logs to flag goal hijacks and tool misuse. Tested across five public security benchmarks, AAD successfully caught 87% of harmful instructions carried out by agents without adding runtime latency. Developers can integrate AAD alongside semantic governance and strict tool limits as part of a defense-in-depth strategy to secure agentic applications.",
+    "summary": "Google describes a tool called Agent Anomaly Detection that watches how AI agents behave by reviewing their activity logs after the fact, without slowing them down. In tests on five public security benchmarks, it caught 87% of harmful instructions the agents carried out.",
+    "tags": [
+      "ai agents",
+      "security",
+      "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/did-the-user-ask-for-this-securing-ai-agents-against-intent-hijacking-with-semantic-governance-policies/",
+    "company": "Google Developers",
+    "title": "Did the user ask for this? Securing AI agents against intent hijacking with Semantic governance policies",
+    "published": "2026-11-24",
+    "excerpt": "Semantic governance policies protect AI agents from indirect prompt injection and intent hijacking by validating every proposed tool call against user intent and natural language constraints before execution. As demonstrated on the AgentDojo benchmark using a Gemini 2.5 Flash agent, this mechanism reduced attack success rates from 48.7% to 0.9% while maintaining high task utility. Developers can leverage these policies in preview within the Gemini platform via Agent Gateway to secure tool-use workflows.",
+    "summary": "Google describes a way to stop AI assistants from being tricked into doing things the user never asked for, by checking each planned action against the user's intent before it runs. In a test, attacks succeeded about 49% of the time without it and under 1% with it.",
+    "tags": [
+      "ai security",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/catch-go-bugs-that-fuzzing-misses-with-gemini-and-a-constraint-solver/",
+    "company": "Google Developers",
+    "title": "Catch Go bugs that fuzzing misses with Gemini and a constraint solver",
+    "published": "2026-11-24",
+    "excerpt": "How pairing Go's surviving compiler bounds-check traps with Gemini 4 Argon and the Z3 constraint solver catches latent out-of-bounds panics in Go code and uncovers a slice-capacity blind spot in go test -fuzz.",
+    "summary": "Google shows how combining the Gemini AI model with a constraint solver (a tool that checks whether rules can be broken) finds hidden crash bugs in Go code that standard fuzz testing misses. It also points out a gap in Go's built-in fuzzing tool.",
+    "tags": [
+      "go programming",
+      "bug finding",
+      "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/announcing-general-availability-native-lakebase-postgres-sink-spark-structured-streaming",
+    "company": "Databricks",
+    "title": "Announcing General Availability of native Lakebase Postgres sink for Spark Structured Streaming",
+    "published": "2026-11-23",
+    "excerpt": "Low-latency use cases like fraud detection, live personalization, and real-time feature...",
+    "summary": "Databricks has released a native connection that lets Spark streaming jobs write their results directly into Lakebase, its Postgres database. It is now generally available, meaning everyone can use it, and it is aimed at fast-reacting uses like fraud detection and live personalization.",
+    "tags": [
+      "databricks",
+      "streaming data",
+      "databases"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.anthropic.com/research/working-with-ai",
+    "company": "Anthropic",
+    "title": "Working with AI",
+    "published": "2026-11-23",
+    "excerpt": "We interviewed people at 58 companies that use Claude about how AI is changing their work. They described few layoffs but reduced hiring, and said the most valuable uses of AI often involved reorganizing roles and workplaces around it.",
+    "summary": "Anthropic interviewed people at 58 companies that use its AI, Claude, about how it is changing their work. Most reported few layoffs but slower hiring, and said the biggest gains came from reorganizing jobs and workplaces around AI.",
+    "tags": [
+      "ai at work",
+      "hiring",
+      "workplace change"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-drives-adds-cli-commands-and-standalone-sdks",
+    "company": "Vercel",
+    "title": "Vercel Drives adds CLI commands and standalone SDKs",
+    "published": "2026-11-23",
+    "excerpt": "You can now create, list, fork, and delete Vercel Drives with the new vercel drives commands or standalone SDKs for TypeScript ( @vercel/drives ) and Python ( vercel-drives ). Drives also have a REST API at /v1/drives and Drive-specific permissions, so managing them no longer requires Sandbox APIs or permissions. With the latest Vercel CLI, link your project with vercel link if needed, then run: Install the TypeScript SDK with npm install @vercel/drives , or the Python SDK with pip install vercel-drives , then run: Drives still mount into Vercel Sandboxes as before, and existing Sandbox CLI commands and SDK code continue to work. Drives also now have their own pages in the Vercel dashboard and Observability . Drives are available on Hobby, Pro, and Enterprise plans. Learn more in the Drives documentation . Read more",
+    "summary": "Vercel now lets you create, list, fork, and delete Drives (storage that attaches to Vercel Sandboxes) using new command-line tools, TypeScript and Python libraries, or a web API. Existing Sandbox tools still work, and Drives have their own dashboard pages.",
+    "tags": [
+      "cloud storage",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/choose-ai-gateway-providers-by-headquarters-country",
+    "company": "Vercel",
+    "title": "Choose AI Gateway providers by headquarters country",
+    "published": "2026-11-23",
+    "excerpt": "Provider headquarters sends your AI Gateway requests only to providers headquartered in countries you choose, so you can meet compliance and procurement rules about where your AI vendors are located. You can configure provider headquarters to be an allowlist of the countries to use, or a denylist of the countries to block. AI Gateway skips providers in blocked countries and routes requests to the rest of the list, so a model stays accessible as long as it is available in one of its allowed provider locations. Use provider headquarters with regional hosting and regional inference to control where a request is received, where the model runs, and who runs it. Set provider headquarters for your team Pro and Enterprise customers can apply their provider headquarters list to every AI Gateway request across their team. Configure the list in AI Gateway settings . Provider headquarters settings are applied automatically as AI Gateway adds models and providers. Providers without a headquarters country on record never receive your requests. Set provider headquarters per request On any plan, set headquarters in the gateway provider options to restrict a single request. Pass country codes for an allowlist, or prefix every code with ! for a denylist, as in ['!US'] . If your team has a list, a request can only narrow it. In the examples below, requests are only sent to providers based in the US and Germany: Both settings filter providers, so a model stays available as long as one of its providers is based in an allowed country. If no provider is available in an allowed country, AI Gateway tries your fallback models. If no fallback models are available in allowed countries, or if no fallback models are configured, the request will fail without trying to route to providers in other locations. Read the provider headquarters documentation for the countries supported, pricing and setup details. Read more",
+    "summary": "Vercel's AI Gateway can now send your AI requests only to model providers based in countries you pick, either an allowed list or a blocked list. This helps teams meet rules about where their AI vendors are located.",
+    "tags": [
+      "ai",
+      "compliance",
+      "cloud"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/catch-missing-feature-flags-before-they-reach-production",
+    "company": "Vercel",
+    "title": "Catch missing feature flags before they reach production",
+    "published": "2026-11-23",
+    "excerpt": "Vercel Flags can now block a deployment from reaching production if you’ve declared a flag in code but haven’t created it in your project. Without that definition, your app can silently fall back to the flag’s default value, even if that turns on a feature you meant to keep off. The Flag Definitions Present Deployment Check runs when a deployment is ready. If any flags are missing, the check fails and lists them in the results, where you can create each one before redeploying. The check reads your Flags SDK discovery endpoint. With flags@4.5.0 or later on Vercel, it works without FLAGS_SECRET ; earlier versions still require the secret. To turn on blocking, teams on all plans can enable the check in their project’s Build and Deployment settings and mark it as required. See the Deployment Checks documentation for setup details. Read more",
+    "summary": "Vercel now lets you stop a release if your code uses a feature flag that was never created in your project. Without it, the app can quietly use a default setting that might turn on a feature you meant to keep off.",
+    "tags": [
+      "software releases",
+      "feature flags",
+      "deployment"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/ai-gateway-now-supports-extraction-models",
+    "company": "Vercel",
+    "title": "AI Gateway now supports extraction models",
+    "published": "2026-11-23",
+    "excerpt": "Extraction models are now on AI Gateway. They find specific details in the content you provide, such as an invoice number or contact names, and return them as separate fields your code can use. ScaleDown Extract-1 is the first available extraction model. It extracts text values or lists of text values from text, images, and PDFs. You can use it to process invoices, contracts, and other records. Extraction is currently available through the AI SDK only. With ai@7.0.176 or later, use experimental_extract and the model ID scaledown/extract-1 : Each key in fields has an entry in result.answers . If a field is not found, its value is null . Extract-1 returns confidence scores from 0 to 1 for matches, including individual list items, so you can flag uncertain results for review. For text input, it can also return character offsets showing where a match appears. To extract from a PDF or image, pass it as a file part in state : Extraction requests appear in AI Gateway logs and spend tracking. See the extraction quickstart for setup and authentication. Read more",
+    "summary": "Vercel's AI Gateway now offers extraction models that pull specific details, like invoice numbers or contact names, from text, images, and PDFs into separate fields. The first one, ScaleDown Extract-1, is available through the AI SDK and also gives confidence scores so uncertain results can be checked.",
+    "tags": [
+      "ai tools",
+      "document processing",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits",
+    "company": "Vercel",
+    "title": "AI Gateway now runs canary ZDR audits",
+    "published": "2026-11-23",
+    "excerpt": "AI Gateway now runs canary audits against inference providers to detect when prompt content is read outside the inference path. Contractual Zero Data Retention (ZDR) agreements and point-in-time security audits establish how a provider should handle your data, but production infrastructure changes continuously. Canary audits add a detection layer on top. Each canary audit run: Mints unique URLs that exist nowhere else, each mapped privately to a specific provider, model, and audit run. Sends prompts containing those URLs through the normal inference path, with ZDR requested for covered providers and non-ZDR pairs included as positive controls. Watches for traffic. A ZDR provider should never retain, inspect, or crawl prompt content, so a canary URL should never receive a request. Records any request to a canary URL, identifying the provider, model, and run for investigation. Canary audits complement contractual ZDR agreements and independent audits rather than replacing them. Read more about AI Gateway security and compliance measures in the documentation . Read more",
+    "summary": "Vercel's AI Gateway now sends secret test web addresses through AI providers to check whether any provider reads or stores the prompts it handles. If a provider visits one of these hidden addresses, Vercel will know and investigate, which adds a check on top of written promises about data handling.",
+    "tags": [
+      "ai",
+      "data privacy",
+      "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/introducing-audited-zdr-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Introducing Audited ZDR on AI Gateway",
+    "published": "2026-11-23",
+    "excerpt": "AI is now used in every part of a business, and as a result, companies send source code, customer records, and regulated data through inference providers. The assurance that no data is retained after processing is still publicly unverified. Payment platforms, cloud infrastructure, and most other layers that handle data this sensitive have a way to prove their controls to outside parties, and inference will follow the same path. Today we are introducing Audited ZDR on AI Gateway. A provider is labeled Audited ZDR only after an independent security firm tests its zero data retention claims against its code, infrastructure, and live traffic, then publishes the report. Baseten , Modal , and Wafer are launch partners that have already begun audits, and more providers are encouraged to join to help raise the bar for security and privacy. Audited ZDR builds on two steps we took toward stronger governance earlier this year: We launched team-wide Zero Data Retention (ZDR) so teams could route traffic exclusively to providers stating a ZDR policy. We completed our ISO/IEC 42001:2023 certification , which put Vercel’s own AI systems under independent third-party audit. We are now asking inference providers for the same thing we asked of ourselves: independent verification. Why a contract is not enough ZDR guarantees rely on contracts and self-attestation. A provider agrees not to retain prompts or completions, and customers take that commitment on faith. For teams sending proprietary code, customer information, or regulated data through models, self-reported ZDR contracts don't provide enough assurance. Are prompts landing in debug logs, crash dumps, or tracing pipelines? Can a rate limit push a request marked ZDR to a non-ZDR endpoint? Can a support engineer's debugging tools surface a customer's prompt? Answering these questions means running a bespoke security review for every provider and the models they host. An audit answers them in public. What Audited ZDR verifies To qualify for Audited ZDR on AI Gateway, an inference provider engages an independent security firm, chosen from among respected third-party auditors, to run the audit. The firm then tests the provider's zero data retention policy across the serving path for every model, endpoint, feature, and tool that handles AI Gateway traffic. The audit confirms that customer data is never written or retained on durable storage in any system. Customer data means prompts, completions, system prompts, embeddings, files, images and audio, tool and function-call payloads, and any derived data that could identify them. Coverage spans request logs, traces, metrics, crash dumps, prompt caches, abuse monitoring, analytics, backups, support tools, and training, fine-tuning, and evaluation datasets. The audit confirms that once a response is returned to AI Gateway, that content is deleted from the inference provider's systems. Where a request uses caching, such as a KV cache, the cache must stay in volatile storage only for the period of the request, and never be written to durable storage. The audit requires this behavior to be disclosed. The audit also confirms: That a request marked ZDR never fails over to a non-ZDR endpoint, tool, or feature That no human or automated process accesses customer data outside handling the request itself That sub-processors with access comply with all of the above That no training on customer data occurs Auditors verify this by reviewing the inference provider's serving-path source code and infrastructure configuration, then running live tests. They send marked prompts through AI Gateway and search the provider's logging, caching, and storage systems for any trace of them. Every passing provider publishes the report under the auditor's name. It covers scope, methodology, dates, findings, and fix status, with any exceptions disclosed and redactions limited to exploit detail. AI Gateway links directly to the report. Canary monitoring between audits An independ",
+    "summary": "Vercel is launching \"Audited ZDR\" on its AI Gateway. Inference providers get a label only after an independent security firm checks that they really don't keep customer data, and publishes the report.",
+    "tags": [
+      "ai privacy",
+      "data security",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://stripe.com/blog/custom-software-specialized-workflows-and-other-new-growth-paths-from-saas-platform-summit",
+    "company": "Stripe",
+    "title": "Custom software, specialized workflows, and other new growth paths from SaaS Platform Summit",
+    "published": "2026-11-23",
+    "excerpt": "SaaS platforms have long built for specific verticals. Now AI makes it practical to build for one merchant. At Stripe’s SaaS Platform Summit, founders and operators shared how custom software and embedded finance can open new revenue streams.",
+    "summary": "Stripe's SaaS Platform Summit discussed how AI now makes it practical for software companies to build custom tools for single customers. Speakers said this, along with built-in payments, can open new ways to earn money.",
+    "tags": [
+      "software",
+      "payments",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+    "company": "Google Research",
+    "title": "Supercharging transformer residual connections",
+    "published": "2026-11-23",
+    "excerpt": "Algorithms & Theory",
+    "summary": "Google Research shares a new approach to improving the residual connections inside transformer models, the building blocks behind many AI systems. The teaser gives few details beyond the title, so the exact method and results are unclear.",
+    "tags": [
+      "ai models",
+      "machine learning research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/introducing-shirudo",
+    "company": "OpenAI",
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "published": "2026-11-23",
+    "excerpt": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+    "summary": "OpenAI and Cisco released Shirudo, a free, open-source tool for Linux computers. It helps teams keep systems protected while they install security updates.",
+    "tags": [
+      "security",
+      "linux",
+      "open source"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "company": "OpenAI",
+    "title": "Connected intelligence for in-house legal",
+    "published": "2026-11-23",
+    "excerpt": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+    "summary": "OpenAI and guest speakers from legal firms discuss how AI can help in-house legal teams use business context, build reusable workflows, and work better with outside lawyers. The article is a short teaser for a video talk.",
+    "tags": [
+      "legal ai",
+      "ai tools",
+      "lawyers"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "company": "OpenAI",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "published": "2026-11-23",
+    "excerpt": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+    "summary": "Richpanel, a customer support company, now uses OpenAI's GPT-6 models to power AI agents that handle customer conversations and follow support procedures. The title says this helps companies automate 50% of support within 30 days.",
+    "tags": [
+      "customer support",
+      "ai agents"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/robotrack",
+    "company": "Hugging Face",
+    "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+    "published": "2026-11-23",
+    "excerpt": "",
+    "summary": "Hugging Face has introduced RoboTrack, a tool for following points on objects as robots handle them in real settings. The article title is the only detail available, so the exact method is unclear.",
+    "tags": [
+      "robotics",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/agentic-evals",
+    "company": "Hugging Face",
+    "title": "How to build and maintain an agentic evaluation",
+    "published": "2026-11-23",
+    "excerpt": "",
+    "summary": "Hugging Face shares a guide on building and keeping up a way to test AI agents. The text provided is only a title, so details beyond that are not known. Checking how well AI agents work is a key step before trusting them.",
+    "tags": [
+      "ai agents",
+      "testing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/introducing-auto-clips",
+    "company": "Discord",
+    "title": "Introducing Auto Clips: Just Play the Game, We’ll Save the Clip",
+    "published": "2026-11-23",
+    "excerpt": "Today, we're thrilled to announce Auto Clips. Just hop on voice, launch a game, and play. When your call erupts, Discord captures the exact moment everyone loses it. Rolling out in early access for Nitro members over the coming weeks.",
+    "summary": "Discord is launching Auto Clips, a feature that saves a short video of a moment when a voice call gets excited during a game, without you having to record it. It is starting in early access for Nitro members over the coming weeks.",
+    "tags": [
+      "discord",
+      "gaming",
+      "video clips"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+    "company": "NVIDIA",
+    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+    "published": "2026-11-23",
+    "excerpt": "As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing... As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing query times helps keep analytics responsive and can lower compute costs. NVIDIA and DuckLabs collaborated to release Sirius as a DuckDB core extension, bringing GPU acceleration to DuckDB’s analytical query engine. With two SQL commands… Source",
+    "summary": "NVIDIA and DuckLabs released Sirius, an add-on for the DuckDB data tool that uses graphics chips (GPUs) to run analytical queries faster. It can be turned on with two SQL commands, which can help keep data work responsive and cut compute costs.",
+    "tags": [
+      "databases",
+      "gpu computing",
+      "data analytics"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/",
+    "company": "NVIDIA",
+    "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
+    "published": "2026-11-23",
+    "excerpt": "Sparse linear systems are at the core of nearly every engineering and scientific simulation, from structural mechanics and computational fluid dynamics to... Sparse linear systems are at the core of nearly every engineering and scientific simulation, from structural mechanics and computational fluid dynamics to circuit simulation and power grid analysis. As problem sizes and complexity grow, and accuracy needs tighten, developers need a direct solver that scales on GPUs without giving up the robustness that production simulations depend on. Source",
+    "summary": "NVIDIA released cuDSS 1.0, a tool that solves the large math problems behind engineering simulations on graphics chips (GPUs). It aims to be fast on big problems while staying reliable enough for real-world engineering work.",
+    "tags": [
+      "gpu computing",
+      "engineering simulation",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "company": "Google DeepMind",
+    "title": "Finding faster quantum algorithms with agents and formal verification",
+    "published": "2026-11-23",
+    "excerpt": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+    "summary": "Google DeepMind describes using teams of AI agents, with formal verification to check their work, to find faster quantum computing algorithms. The teaser says this could help with fusion energy and chemistry problems.",
+    "tags": [
+      "quantum computing",
+      "ai agents",
+      "research"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/",
+    "company": "Cloudflare",
+    "title": "Probing DNS at Cloudflare",
+    "published": "2026-11-23",
+    "excerpt": "Imagine this: you’ve just pushed a release. All the unit tests passed and your dashboards are green. You sit back to relax but then suddenly your phone starts blowing up: prod is broken. This is something the Cloudflare DNS team has experienced firsthand. In one rollout of the service that publishes DNS records to our edge, a scheduling bug let some record changes sit unpublished for hours. The service stayed up and was healthy, but new hostnames were slow to resolve and certificates couldn't be issued until the bug was squashed. DNS failures are hard to catch because they are slow, spread across the network, and partial in where they cause impact. We needed to figure out a way to test DNS the way customers experience it: constantly, from every data center, and against production. For us, the answer was to extend Flamingo, the end-to-end testing framework we were already using to run hundreds of millions of tests a day against Cloudflare's edge. This post covers how Flamingo's modular design lets us add DNS support, how we measure propagation, and how those measurements now decide whether a release goes ahead or gets rolled back. A little background At Cloudflare we’re obsessed with improving performance and safety for our customers. It’s crucial that our code is tested constantly, both at scale and against the real Cloudflare edge that our users operate in. That’s one reason why we created a tool called Flamingo: to measure the behavior of our production environments and make sure that code in lower-tier environments behaves as expected. We’ve already written a little about how this tool has been used in the upgrades to our CDN stack. However, this is only a small portion of how we use Flamingo internally. One of the features of Flamingo is its modular architecture that enables teams to extend the capabilities of the tool to speak other networking protocols. In our case, we wanted to use these modular capabilities to test DNS. What is Flamingo? Testing is hard. Testing at scale, when you have a widely distributed system, is even harder. There are many complex pathways that requests take and multiple systems that each network request must traverse before making its way to the origin. Unit testing alone is not nearly enough for this. We need to run constant automated testing against real systems and measure the outcomes of those requests to make informed decisions on the health of a service. Enter Flamingo. Originally built around complex multi-step HTTP testing, its capabilities and scope have increased substantially over the years. Flamingo is built from the ground up with Cloudflare’s infrastructure in mind. We built a control plane and scheduler that let teams target specific environments, data centers, or percentages of metals. We needed to integrate with custom reporting, metrics, and analytics tooling. Additionally, it needed to be a tool with predictable performance and run well on bare-metal servers in resource-constrained environments. Being delightful When we’re building internal tooling like this, we strive to create a delightful developer experience. Internal tooling should be as easy as possible to use, but also powerful enough to handle over 80% of all use cases. And in order for a new edge acceptance test framework to be successful, it needs to be built in such a way that it forces teams to follow common guidelines and build reusable scripts in an environment that is stable, scalable, and manages complexity. One thing that is not delightful is debugging a test. If you allow a user to write tests in a traditional programming language, when their test fails they then both need to debug the upstream system being tested and the test itself. This is why we built Flamingo to use a custom domain-specific language (DSL) consisting of a simple setup-request-response format. For example, let’s imagine that we want to make sure we are redirecting all unencrypted traffic to its encrypted counterpart. TEST test-redirect SET ",
+    "summary": "Cloudflare's DNS team found that a scheduling bug could leave DNS record changes unpublished for hours, slowing new hostnames. They extended their testing tool, Flamingo, to test DNS constantly from every data center, against live systems.",
+    "tags": [
+      "dns",
+      "testing",
+      "cloudflare"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://openai.com/index/perplexity-and-intelligence",
     "company": "OpenAI",
     "title": "Perplexity and Intelligence",
@@ -233,6 +572,21 @@
       "serverless",
       "cloud hosting",
       "web development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/vercel-completes-iso-iec-42001-2023-certification",
+    "company": "Vercel",
+    "title": "Vercel completes ISO/IEC 42001:2023 certification",
+    "published": "2026-11-20",
+    "excerpt": "Vercel has achieved ISO/IEC 42001:2023 certification for its AI management system. The standard sets requirements for how organizations govern AI, assess risks, and assign responsibility. View Vercel’s certificate . Additional audit documentation is available through our Trust Center . Read the full announcement . Read more",
+    "summary": "Vercel has earned ISO/IEC 42001:2023, an international certification for how a company manages its AI systems. The standard covers how AI is governed, how risks are checked, and who is responsible for them.",
+    "tags": [
+      "ai governance",
+      "certification",
+      "security compliance"
     ],
     "summarized": true,
     "summary_version": 2
@@ -827,51 +1181,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/",
-    "company": "Google Developers",
-    "title": "Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText",
-    "published": "2026-11-19",
-    "excerpt": "Streaming DiLoCo in MaxText enables developers to efficiently train large language models across geographically distributed TPU slices by streaming parameter fragments instead of synchronizing full models at every step. This approach slashes cross-slice communication volume by over 60× and eliminates network stalls, allowing seamless multi-datacenter scaling without degrading model convergence or quality.",
-    "summary": "Google describes a new way to train large AI language models across TPU computer groups in different data centers. It sends small pieces of the model instead of the whole thing each step, cutting network traffic over 60 times without hurting results.",
-    "tags": [
-      "ai training",
-      "cloud computing",
-      "google"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/",
-    "company": "Google Developers",
-    "title": "Cost per task: Using cheap classifiers to route across Gemini models and thinking levels",
-    "published": "2026-11-19",
-    "excerpt": "Per-token API prices keep falling, yet engineering bills for autonomous coding agents keep climbing....",
-    "summary": "Google describes using cheap classifier models to choose which Gemini model and thinking level to use for each task. The idea is that the cost per finished task matters more than the price per token, since coding agents can still get expensive even as token prices drop.",
-    "tags": [
-      "ai costs",
-      "gemini",
-      "coding agents"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/agent-distraction/",
-    "company": "Google Developers",
-    "title": "Agent Distraction",
-    "published": "2026-11-19",
-    "excerpt": "Analysis of over 913,000 coding agent sessions reveals that 13% expose agents to inline TODO(b/...) comments. In 6% of encounters, agents act on these comments, with 83% being entirely unprompted by the developer. These detours result in significant overhead—adding 70% more steps, 77% more tokens, and 105% more wait time per session—split between chasing closed tickets (41%) and unauthorized scope creep on open bugs (57%). Higher-capability models show higher distraction rates, highlighting the need for automated cleanup and linters to maintain agent-friendly codebases",
-    "summary": "An analysis of over 913,000 AI coding sessions found that agents often get pulled off track by leftover to-do notes in code, and act on them without being asked. This adds a lot of extra steps and waiting time, so cleaning up old notes may help.",
-    "tags": [
-      "ai agents",
-      "software development",
-      "coding tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/",
     "company": "NVIDIA",
     "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
@@ -1122,21 +1431,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/blog/introducing-vercel-board",
-    "company": "Vercel",
-    "title": "Introducing Vercel Board",
-    "published": "2026-11-18",
-    "excerpt": "Software development is moving from individual agents completing tasks to teams of agents working on more complex projects. A single agent can track its work in a Markdown file, but there isn't a purpose-built primitive for tracking tasks, delegation, statuses, logs, and completed work across many agents and subagents. We ran into this coordination problem internally and started experimenting with a shared message board as a primitive on two key projects: Our security agents : We deployed a swarm of agents to analyze our codebases for vulnerabilities, push fixes and updates, and now we keep track of their work via Board. v0's software factory : After seeing how well Board worked for security agents, we rebuilt v0's software factory on it, and it now merges over 50% of PRs. Along the way, we added multiple features like grants for different levels of access (for humans and agents), two-way sync for multiple tools (like Slack), and a lot more. Today we are launching Vercel Board as an experimental agentic primitive. It packages what we've learned about coordinating work across agent fleets and builds towards a future where multiple teams of humans and agents orchestrate swarms, software factories, and other agentic workflows. We built Board for our own needs, but invite curious developers to test it alongside us and give feedback. It is harness agnostic and fits well into existing multi-agent reinforcement learning. Claude Code, Codex, Pi, OpenCode, eve, fx, Mastra, and LangChain can collaborate as if they were a single harness. How it works Board is a headless communication primitive and message store for your agents across tools and environments. Your agents read from and write to Board through the CLI or JavaScript SDK. Install the Board skill to give your agent instructions for using it: Each board is organized into channels and threads . A thread keeps the conversation, context, and updates together, while labels track details such as the associated pull request or current status. Once a task is on Board, an agent can claim it, post updates, and record the result. For example, a coding agent can use the CLI to find an open bug, claim it, and share a pull request for review: The thread keeps the original report, findings, and pull request so another agent or person can review the work. Run npx @vercel/board inspect to open the Board viewer and follow activity across channels and threads in real time. Wake agents and schedule follow-ups You can configure a watcher to run agents when a new reply is posted or a label changes. For example, if there is a reply in Slack or by another agent, it can trigger the agent to address their feedback and post an update or pull request in the same thread. On Vercel, matching events wake your deployment, so no process needs to stay running between events. Agents can also schedule follow-ups with vercel board schedule . For example, after an agent has opened a pull request it can remind itself to check CI in 5 minutes. This makes agents feel much more proactive, as they can check things without requiring a new message from a human. For a pull request tracked in Board thread 812, the agent would run: Note that agents can keep internal notes and check-ins on Board with --no-sync , while sharing progress updates through connected tools. Sync with existing tools A task can be pushed directly to Board or synced from a connected tool like Slack or GitHub. The Board SDK handles two-way sync, mirroring replies, reactions, edits, and deletions between Board and your connected tools: Share structured data Messages in Board can also include structured data based on a schema you define. Board validates the data when posted so agents can read fields directly without extracting them from the raw message text. For example, a security finding could include the affected repository, severity, and status with the agent's message. Here is an example schema, security-finding@1 (where @1 is the version): Control ac",
-    "summary": "Vercel released Board, an experimental message board that lets teams of AI agents track tasks, claim work, post updates, and share results in one place. It is built for coordinating many agents working on larger software projects.",
-    "tags": [
-      "ai agents",
-      "software development",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://shopify.engineering/secure-agentic-apps",
     "company": "Shopify",
     "title": "Building secure mobile apps in the agentic era",
@@ -1369,6 +1663,21 @@
     "summary_version": 2
   },
   {
+    "url": "https://developer.nvidia.com/blog/connecting-energy-use-to-scientific-output-with-science-per-joule/",
+    "company": "NVIDIA",
+    "title": "Connecting Energy Use to Scientific Output with Science per Joule",
+    "published": "2026-11-18",
+    "excerpt": "For high-performance computing (HPC) centers operating under a fixed power budget, every joule spent computing needs to translate into useful scientific work.... For high-performance computing (HPC) centers operating under a fixed power budget, every joule spent computing needs to translate into useful scientific work. Performance alone tells only part of the story: how much energy does it take to complete a simulation, predict a protein structure, or generate a protein design? Floating-point operations per second (FLOPS) per watt measures… Source",
+    "summary": "NVIDIA proposes a new way to measure supercomputers: how much useful science gets done per unit of energy, not just raw speed. This matters because data centers with limited power need to know how much research each unit of electricity buys.",
+    "tags": [
+      "supercomputers",
+      "energy use",
+      "scientific computing"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/",
     "company": "NVIDIA",
     "title": "Build Training-Ready Physical AI Datasets with Two Prompts in NVIDIA Cosmos",
@@ -1501,21 +1810,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/branch-sync-serve-what-our-lakebase-hackathon-taught-us-about-building-lakebase",
-    "company": "Databricks",
-    "title": "Branch, sync, serve: What our Lakebase Hackathon taught us about building on Lakebase",
-    "published": "2026-11-17",
-    "excerpt": "How Databricks hackathons workWe run these hackathons for a simple reason: the fastest...",
-    "summary": "Databricks ran an internal hackathon to test its Lakebase database, and this post shares what the teams learned while building with it. The article is only a short teaser, so the details of the lessons are not shown here.",
-    "tags": [
-      "databases",
-      "hackathons",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/claude-black-hole-physics",
     "company": "Anthropic",
     "title": "Claude solves two open problems in the physics of black holes",
@@ -1531,95 +1825,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-blob-now-supports-ttls-for-automatic-deletion",
-    "company": "Vercel",
-    "title": "Vercel Blob now supports TTLs for automatic deletion",
-    "published": "2026-11-17",
-    "excerpt": "Vercel Blob can now delete blobs automatically. Pass ttlDays when you write a blob and it is deleted that many days after upload, from 1 to 730 days. The TTL counts from the blob's upload date. Use TTLs for blobs you would otherwise delete yourself, such as session transcripts, exports, and temporary uploads. ttlDays works on put() , copy() , putImage() , multipart uploads, and presigned upload URLs. Every write result and head() response now includes expiresAt , so you know when a blob is due for deletion. setTtl() changes or removes the TTL of blobs you already have, one URL or up to 1,000 at a time, without re-uploading them. In Vercel CLI 65.16.0 and later, pass --ttl-days to vercel blob put , put-image , copy or presign , and use vercel blob set-ttl on existing blobs. Setting a TTL costs one Advanced Operation per started 60 days, on top of the write. A 7-day TTL costs one, and the 730-day maximum costs 13. Clearing a TTL and the deletions themselves are free. You can track TTL operations in the Blob section of the Observability tab. npm install @vercel/blob@2.9.0 Learn more in the Vercel Blob documentation . Read more",
-    "summary": "Vercel Blob can now delete stored files automatically after a set number of days, from 1 to 730. You set this when uploading, or change it later, and setting it costs a small extra fee per 60 days.",
-    "tags": [
-      "cloud storage",
-      "file uploads"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/standard-build-billing-new-teams",
-    "company": "Vercel",
-    "title": "Standard builds move to usage-based billing for new teams",
-    "published": "2026-11-17",
-    "excerpt": "Starting today, new Pro and Enterprise teams no longer include a Standard build slot. This brings Standard builds under the same usage-based billing model as other build machines. On Pro, Standard builds cost $0.014 per build minute, and your monthly usage credit applies to build usage. Enterprise rates follow your contract. Standard builds remain billable after switching from Elastic to Standard for teams covered by this change. Select a build machine in team settings or project settings , or read more about managing your builds . Read more",
-    "summary": "Vercel now charges new Pro and Enterprise teams for Standard builds based on how much they use, instead of including a Standard build slot. On Pro, each build minute costs $0.014, and your monthly usage credit can cover it.",
-    "tags": [
-      "cloud costs",
-      "billing",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/speed-insights-now-measures-soft-navigations",
-    "company": "Vercel",
-    "title": "Speed Insights now measures soft navigations",
-    "published": "2026-11-17",
-    "excerpt": "Speed Insights now measures soft navigations: client-side route changes that update page content without a full reload. This means you can now track performance as users move through your app, not just on full-page loads. Speed Insights captures LCP, FCP, INP, and CLS for soft navigations and includes these measurements in your Real Experience Score. TTFB is not captured because there is no new document request. Soft-navigation tracking is enabled by default for all projects using Speed Insights, with no action required. It works with modern web frameworks such as Next.js, SvelteKit, and Nuxt, in Chromium-based browsers. In your project's Speed Insights dashboard , use the new Navigation Type filter to view All , Hard , or Soft navigation data. Soft-navigation events count toward Speed Insights Plus usage. For existing projects that had Plus enabled before this release, Speed Insights events from soft navigations will not be charged until December 1. For projects that newly enable Plus, these events are billed from the start. To disable soft-navigation tracking, set softNavs to false in your application code and redeploy. This option requires @vercel/speed-insights version 2.1.0 or later: Learn more in the Speed Insights documentation . Read more",
-    "summary": "Vercel's Speed Insights tool now also measures page speed when users move between sections of a site without a full reload. It is on by default, and soft-navigation events count toward paid usage, with billing starting December 1 for existing projects.",
-    "tags": [
-      "web performance",
-      "vercel",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/pull-request-only-preset-now-available-for-preview-builds",
-    "company": "Vercel",
-    "title": "Pull-request-only preset now available for preview builds",
-    "published": "2026-11-17",
-    "excerpt": "A new Ignored Build Step preset lets you skip preview builds for branches without an open pull request. Production deployments and previews for branches with open pull requests continue to build. On GitHub and GitLab projects, skipped preview deployments are canceled before consuming any Build CPU Minutes. To enable this, open your project’s Deployments > Configuration . Under Ignored Build Step , select Only build previews for pull requests from the Behavior menu and click Save . Learn more in the Ignored Build Step documentation . Read more",
-    "summary": "Vercel added an option to build preview versions only for branches that have an open pull request, skipping the rest. This saves build time and cost, because skipped previews on GitHub and GitLab are canceled before they use any build minutes.",
-    "tags": [
-      "deployments",
-      "cloud costs",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/mai-image-2-7-and-mai-image-2-7-flash-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "MAI-Image-2.7 and MAI-Image-2.7-Flash now available on AI Gateway",
-    "published": "2026-11-17",
-    "excerpt": "Microsoft’s MAI-Image-2.7 and MAI-Image-2.7-Flash are now available in public preview on AI Gateway . Both increase the maximum output size to 2048 x 2048 pixels and add transparent backgrounds for generated and edited images. Generate images from text or edit existing images with one AI Gateway API key, without a Microsoft account. Both models support photorealistic images, text rendering, and targeted edits to products, portraits, and layouts. Use up to five reference images to guide edits or combine subjects. MAI-Image-2.7 ( microsoft/mai-image-2.7 ): for final assets where image quality is the priority MAI-Image-2.7-Flash ( microsoft/mai-image-2.7-flash ): for faster, lower-cost generation when exploring prompts or creating variations Set the AI_GATEWAY_API_KEY environment variable, then use either model ID with AI SDK 6 or later . To generate a transparent PNG, set providerOptions.azure.background to 'transparent' : To edit an image, provide it as a reference and describe what to change: You can also generate and edit images from the terminal with the AI CLI , using the same API key and model IDs: Try MAI-Image-2.7 or MAI-Image-2.7-Flash in the model playground, or follow the image generation guide . Read more",
-    "summary": "Microsoft's two image-making AI models, MAI-Image-2.7 and a faster, cheaper version called Flash, can now be used through Vercel's AI Gateway in public preview. They can now make images up to 2048 x 2048 pixels, produce transparent backgrounds, and edit pictures using up to five reference images.",
-    "tags": [
-      "ai images",
-      "microsoft",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/gpt-6-2-astra-and-sol-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "GPT-6.2 Astra and Sol now available on AI Gateway",
-    "published": "2026-11-17",
-    "excerpt": "GPT-6.2 Astra and GPT-6.2 Sol from OpenAI are now available on AI Gateway . GPT-6.2 Astra: for complex, multi-step projects, with improvements to implementing and testing changes in existing codebases, following document templates, and computer use GPT-6.2 Sol: for everyday coding, writing, and agent workflows, including building interactive web applications from a written brief Use openai/gpt-6.2-astra or openai/gpt-6.2-sol as the model ID. For the API examples, set AI_GATEWAY_API_KEY to your AI Gateway API key . Both models also support the Responses API . For lower latency at higher per-token rates, both models support fast mode and OpenAI’s Ultrafast service tier . To request Ultrafast, set providerOptions.openai.serviceTier to 'ultrafast' in the AI SDK, or set service_tier to 'ultrafast' in Chat Completions and Responses requests. GPT-6.2 Astra’s Ultrafast output-token price is 60% lower than GPT-6 Astra’s. To use the models in coding agents like Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select openai/gpt-6.2-astra or openai/gpt-6.2-sol in the agent. See the coding agents guide for details. Try GPT-6.2 Astra or GPT-6.2 Sol in the playground. Read more",
-    "summary": "Vercel now offers two new OpenAI models, GPT-6.2 Astra for complex multi-step coding projects and GPT-6.2 Sol for everyday coding and writing. Both can also be used in coding tools like Codex and Cursor, and an faster, pricier option is available.",
-    "tags": [
-      "ai models",
-      "coding tools",
-      "openai"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
     "company": "OpenAI",
     "title": "Strengthening NATO and allied cyber defenses with AI",
@@ -1630,51 +1835,6 @@
       "cybersecurity",
       "ai",
       "defense"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-openai-for-chile",
-    "company": "OpenAI",
-    "title": "Introducing OpenAI for Chile",
-    "published": "2026-11-17",
-    "excerpt": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
-    "summary": "OpenAI and the government of Chile are partnering to help the country use AI responsibly. The effort aims to build skills in public services and help local startups build AI tools.",
-    "tags": [
-      "ai",
-      "government",
-      "chile"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-    "company": "OpenAI",
-    "title": "Introducing GPT-6.2 Astra and Sol",
-    "published": "2026-11-17",
-    "excerpt": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
-    "summary": "OpenAI has released two new AI models, GPT-6.2 Astra and Sol. They are said to do better at work tasks, coding, and using computers, while costing less to run in ChatGPT, Codex, and the API.",
-    "tags": [
-      "ai models",
-      "openai",
-      "coding tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
-    "company": "OpenAI",
-    "title": "Introducing ChatGPT for Sales",
-    "published": "2026-11-17",
-    "excerpt": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
-    "summary": "OpenAI launched ChatGPT for Sales, a new Sales plugin plus over 30 partner plugins. They help salespeople look up potential customers, prepare pitches, update customer records, and move deals along.",
-    "tags": [
-      "ai tools",
-      "sales",
-      "chatgpt"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2493,51 +2653,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
-    "company": "NVIDIA",
-    "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
-    "published": "2026-11-10",
-    "excerpt": "NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference... NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference replicas—speeding startup and recovery. When inference demand spikes or a replica fails, available GPUs don’t translate immediately into serving capacity. Initializing an LLM workload—a process known as a cold start—can take minutes… Source",
-    "summary": "NVIDIA released Snapshot, a free open-source tool that saves a set-up GPU workload so new copies can start and recover quickly. Starting an AI model from scratch can take minutes, and this aims to cut that wait when demand spikes or a server fails.",
-    "tags": [
-      "gpu computing",
-      "ai inference",
-      "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
-    "company": "NVIDIA",
-    "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
-    "published": "2026-11-10",
-    "excerpt": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide... Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide a foundation for developing these capabilities, but moving them into a vehicle requires additional work to reduce model size, preserve useful reasoning, and validate performance on the target hardware. NVIDIA Alpamayo 2 Edge addresses… Source",
-    "summary": "NVIDIA describes how it is making large self-driving car reasoning models small and fast enough to run inside a vehicle. The work involves shrinking the models while keeping their reasoning useful, then testing them on the car's hardware.",
-    "tags": [
-      "self-driving cars",
-      "ai models",
-      "nvidia"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
-    "company": "NVIDIA",
-    "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
-    "published": "2026-11-10",
-    "excerpt": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and... NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR). Both are new projects available in public preview. AI Factory customers often want to consume GPU capacity through the Kubernetes APIs, tools, and ecosystem they already use, with the factory operating… Source",
-    "summary": "NVIDIA released two new open source projects, NVIDIA Kubernetes Engine and NVIDIA Kubernetes Recipes, in public preview. They help companies run GPU computing power using the Kubernetes tools they already know.",
-    "tags": [
-      "cloud computing",
-      "gpu",
-      "open source"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
     "company": "Google DeepMind",
     "title": "Opening the datasets behind our AI weather models",
@@ -2665,20 +2780,6 @@
       "ai datasets",
       "japan",
       "finance"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-    "company": "Hugging Face",
-    "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
-    "published": "2026-11-09",
-    "excerpt": "",
-    "summary": "Hugging Face has shared a new idea called HOPE, aimed at keeping parts of an AI model that work together connected. The article text was empty, so details are limited to the title.",
-    "tags": [
-      "ai models",
-      "machine learning"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2841,21 +2942,6 @@
       "machine learning",
       "recommendation systems",
       "pinterest"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-    "company": "Hugging Face",
-    "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-    "published": "2026-11-06",
-    "excerpt": "",
-    "summary": "Hugging Face has added Egyptian and Nigerian English accents to its Open ASR Leaderboard, which ranks speech-to-text tools. This lets people compare how well those tools understand these accents.",
-    "tags": [
-      "speech recognition",
-      "accents",
-      "ai benchmarks"
     ],
     "summarized": true,
     "summary_version": 2
@@ -3391,21 +3477,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-    "company": "Cloudflare",
-    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-    "published": "2026-10-29",
-    "excerpt": "Welcome to the 26th edition of Cloudflare's DDoS Threat Report. This edition covers the third quarter of 2026 — July, August, and September — and returns the series to its quarterly cadence following the combined H1 2026 volume. The analysis is produced by Cloudforce One , Cloudflare's Threat Intelligence organization, providing a comprehensive analysis of the evolving threat landscape of Distributed Denial of Service (DDoS) attacks based on data from the Cloudflare network . Key insights Short-burst, low-bandwidth attacks lasting under 10 minutes and 1 Gbps surged by 208%. Conversely, hyper-volumetric attacks exceeding 1 Tbps plummeted by nearly 69% from Q2, possibly a reflection of law enforcement actions against four major Internet of Things (IoT) botnets earlier in the year. However, variants continue to emerge, proving that IoT botnets remain a durable, high-volume threat to network infrastructure. Threat actors dramatically shifted their reflection and amplification tactics, abruptly abandoning CLDAP floods, which collapsed by 99.5% quarter-over-quarter. Instead, attackers pivoted heavily toward other connectionless protocols, driving a 215% surge in DNS amplification and a 122% increase in general UDP floods. Attack targets broadened significantly across both industries and geographies, with the United States reclaiming the most-attacked position from China. Canada and Israel experienced sharp spikes in targeted attacks — jumping 10 and 7 spots respectively — while juggling geopolitical tensions, trade disputes, and contentious domestic events. At the same time, the operational focus shifted away from media organizations toward a wider array of industry targets, including consumer services, Internet infrastructure, and adult entertainment. Q3 by the numbers: 8,200 DDoS attacks every hour Across its network in the third quarter of 2026, Cloudflare autonomously mitigated 18.2 million network-layer DDoS attacks and 14.4 trillion HTTP DDoS requests. That works out to approximately 8,226 network-layer DDoS attacks per hour, or about 197,400 per day — one attack every 0.44 seconds. The quarter's mitigated traffic totaled 272.6 PB at the network layer and 95.1 PB at the HTTP layer. More swarms, fewer giants Short-burst, mid-range, high-count attacks — the operational signature of DDoS-for-hire \"booter\" services — accelerated this quarter. These attacks primarily targeted computer software, gambling and casinos, and information technology industries. Cloudflare autonomously mitigated 18.2 million network-layer DDoS attacks in Q3 2026, a +208% increase from the same quarter in 2025 : 96% ended in under 10 minutes 98% stayed under 1 Gbps, more than enough to overwhelm a server or website On the other hand, network-level hyper-volumetric attacks (those exceeding 1 Tbps) reversed course, dropping to 251 attacks in Q3 from 805 in Q2 — coinciding with law enforcement action in early 2026 that dismantled four of the largest IoT DDoS botnets: Aisuru, KimWolf, JackSkid, and Mossad. Still, IoT-based botnets remain a durable high-volume threat as the ecosystem churns through new variants such as Dysphoria and Evooo1Bot . Mirai -classified mitigation peaked in August at 57.23 PB, representing 46.5% of all mitigated network-layer bytes in Q3, including four days — August 16, 19, 23, and 25 — that each cleared three petabytes. The quarter's longest sustained Mirai attack ran 49.7 hours between August 19 and August 21. Vector shifts: the collapse of CLDAP and rise of UDP The most dramatic vector shift of the quarter was downward. CLDAP (Connectionless Lightweight Directory Access Protocol) attacks — where small queries with a forged victim IP address trick public domain controllers (UDP 389) into reflecting massive, amplified responses back at the target — experienced a dramatic +580% quarter-over-quarter surge in the first half of the year before collapsing to just 0.05% of attacks in Q3. Meanwhile, DNS amplification surged 215% to account f",
-    "summary": "Cloudflare's Q3 2026 report says tiny, short attacks under 10 minutes and 1 Gbps jumped 208%, while huge attacks over 1 Tbps fell about 69% after police shut down four major botnets. Attackers also switched methods, dropping one attack type almost entirely and using DNS and UDP floods more.",
-    "tags": [
-      "ddos attacks",
-      "cybersecurity",
-      "internet threats"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.figma.com/blog/source-material-brent-david-freaney/",
     "company": "Figma",
     "title": "Source material: \"BRAT\" Art Director Brent David Freaney finds design inspiration from everyday life",
@@ -3755,21 +3826,6 @@
       "design tools",
       "aviation software",
       "prototyping"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.anthropic.com/research/formal-verification",
-    "company": "Anthropic",
-    "title": "LLMs are making formal software verification feasible at a much larger scale",
-    "published": "2026-10-22",
-    "excerpt": "Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases. With AI models, however, this is beginning to change. Here, we used Claude to prove security properties in over one hundred real-world open-source libraries over the span of a few weeks.",
-    "summary": "Anthropic used its Claude AI to mathematically prove certain security properties in over a hundred real open-source code libraries in a few weeks. Such proofs used to be practical only for small programs, so this suggests AI could make checking large software for bugs much more feasible.",
-    "tags": [
-      "software security",
-      "ai",
-      "software testing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4645,20 +4701,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-    "company": "Google DeepMind",
-    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-    "published": "2026-10-06",
-    "excerpt": "",
-    "summary": "Google DeepMind has released EmbeddingGemma 2, a new open, lightweight model that turns text and images into numbers so computers can compare and search them. The post is only a title with no article body, so further details are not known.",
-    "tags": [
-      "ai models",
-      "search"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/",
     "company": "AWS",
     "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
@@ -4951,20 +4993,6 @@
     "tags": [
       "discord",
       "app updates"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://research.google/blog/coherent-long-form-video-generation/",
-    "company": "Google Research",
-    "title": "Automating coherent long-form video generation",
-    "published": "2026-09-24",
-    "excerpt": "Generative AI",
-    "summary": "Google Research describes a new method for automatically making longer videos that stay consistent from start to finish. The teaser gives few details beyond the topic of generating coherent long-form video with AI.",
-    "tags": [
-      "ai video",
-      "generative ai"
     ],
     "summarized": true,
     "summary_version": 2
@@ -5307,36 +5335,6 @@
       "recommendations",
       "machine learning",
       "pinterest"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://medium.com/airbnb-engineering/project-lighthouse-part-3-introducing-project-lighthouse-anonymize-74f8b26653fb?source=rss----53c7c27702d5---4",
-    "company": "Airbnb",
-    "title": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize",
-    "published": "2026-08-25",
-    "excerpt": "Project Lighthouse — Part 3: Introducing project-lighthouse-anonymize The data in Project Lighthouse is powered by privacy-preserving anonymization code. We’ve put this code into open source, and published two new technical papers detailing the scalable algorithms and data quality frameworks behind it. By: Adam Bloomston Introduction In 2020, we launched Project Lighthouse, which we developed in partnership with leading civil rights and privacy organizations. As our 2020 announcement details, Project Lighthouse enables us to measure potential disparities in user experiences. This work uses perceived race data that is never linked to individual accounts; we only use this data for measuring potential disparities, and users who want to opt-out can do so by turning off the data use settings in their account’s Privacy page. Our results , shared in 2024, demonstrate how we use these analyses to measure our progress in mitigating those disparities. Earlier this year, we open-sourced project-lighthouse-anonymize , the Python library that powers Project Lighthouse’s anonymization process. To provide the full technical foundation for this work, we also published two new papers on arXiv alongside the code release. Together with our original 2020 paper, these three papers form a complete story: the foundational methodology, the scalable implementation, and the quality validation framework. The foundational methodology (2020) Our original 2020 paper established the privacy-by-design approach for Project Lighthouse and provides the rationale for choosing k-anonymity as the technical privacy model to prevent sensitive attribute disclosure at scale. For an introduction to this paper, see our first blog post on p-sensitive k-anonymity and our second blog post on measurement with anonymized data. Core Mondrian: Scalable partition-based anonymization (2025) The first of our new papers, Core Mondrian: Basic Mondrian beyond k-anonymity , presents the k-anonymity algorithm at the heart of the open source library. Core Mondrian extends the classic Mondrian algorithm with: Extensible architecture , using the Strategy Pattern to support k-anonymity and future privacy model extensions Parallel processing , with a hybrid recursive-queue execution model (combining immediate recursive processing for small partitions with queue-based parallel processing for large partitions) Other enhancements , including NaN-pattern pre-partitioning (accommodating missing values) and dynamic suppression budget management This algorithm enables scalable anonymization of large datasets while preserving the ability to use the underlying data for statistical analyses. Measuring Data Quality for Project Lighthouse (2025) The second of the new papers, Measuring Data Quality for Project Lighthouse , addresses a critical question: how do you know if your anonymized data are “good enough” for your analysis? The paper introduces a comprehensive framework for measuring data quality under anonymization, including: Three primary metrics : Pearson correlation (preserving linear relationships between original and anonymized values) Revised Information Loss Metric or RILM (measuring how well the “shape” or geometric size of data is preserved — higher scores mean less distortion) Normalized Mutual Information v1 or NMIv1 (measuring entropy preservation, essentially how much information content is retained) Empirical validation methodology : We reframe data quality assessment as a machine learning classification problem, using synthetic datasets to validate that our metrics and thresholds successfully predict when anonymized data will produce statistically valid results Default thresholds : The paper and library include the specific threshold values we use for Project Lighthouse, which may serve as useful starting points for others implementing similar systems This framework enables analysts without deep anonymization expertise to confidently assess whether their anonymized data supports v",
-    "summary": "Airbnb open-sourced the Python tool that anonymizes data for its Project Lighthouse, which measures possible unfair differences in user experience. It also published two papers explaining how the tool scales to large datasets and how to check that the anonymized data is still useful.",
-    "tags": [
-      "privacy",
-      "open source",
-      "data quality"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
-    "company": "GitHub",
-    "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
-    "published": "2026-08-24",
-    "excerpt": "More than one in four images on the web’s most popular home pages have alt text that’s missing, vague, or copied from adjacent images. That’s from WebAIM’s 2026 WebAIM Million report, which found that alt text,an HTML attribute containing text describing the content of an image, was missing on 16.2% of images across the top million home pages. Among the images that did have alt text, another 10.8% provided an undescriptive attribute, such as alt=\"image\" , a raw filename, or a description duplicated from a neighbor. While automated tooling reliably flags missing alt text, it isn’t as good at fixing poorly written alt text. Most alt text checkers test whether an accessible name for an image exists, not whether the provided alt text says anything useful about the associated image, and that’s a deliberate design choice: a quality-oriented rule with false positives is a rule teams switch off. So alt=\"IMG_2847.png\" passes. So does the same alt=\"3/5 stars\" on five different star-shaped icons. We built an alt text plugin for the GitHub Accessibility Scanner to help improve your alt text. This post covers where we drew the line between what a checker can prove and what it can only suspect, why our worst bug turned out to be a layout problem rather than a parsing one, and what changed once we let a model into the loop. If you’re building automated checks of your own, for accessibility or otherwise, the tradeoffs should transfer. Proving a string is wrong without seeing the picture Presence of alt text is an objective fact; the attribute is there or it isn’t. Quality is often a judgment call. A machine can’t prove whether a sentence adequately describes a picture in context from markup. However, not all quality is subjective. There’s several checks you can perform based on the alt text alone, with no need to consult the image content: The attribute is absent (not empty) or whitespace-only. The alt is a filename, such as hero.png , IMG_2847.jpg . The alt is a placeholder somebody meant to replace, such as TODO , tbd . The alt is one generic word naming the medium instead of the content, such as image , logo , chart . The same alt repeats across adjacent images. Every one of those is a claim about a string, and that became our dividing line. Five deterministic rules run by default which need no credentials for running AI models or network calls. One opt-in rule calls a model with provided image content and surrounding context, for judgments an alt text string can’t support on its own. First, we had to determine which images to judge on a scanned webpage. We use Playwright’s role-based locator rather than querySelectorAll('img') , so anything not included in the browser’s accessibility tree drops out, including anything carrying alt=\"\" . That last exclusion matters most. An empty alt is the author explicitly saying the image is decorative, and flagging it would punish exactly the behavior you want to encourage. So, how strict should it be? A quality checker lives or dies on false positives, so we chose closed sets over clever heuristics. The vague-alt rule normalizes a string, then checks it against a curated list of words that carry no information on their own. It fires only on an exact match: alt=\"image\" gets flagged. alt=\"image of the login screen with the SSO button highlighted\" doesn’t. Rules this literal miss plenty of bad alt text. We took the miss over the false positive, because a reliable checker that developers enable beats one that gets switched off. Repetition is a layout problem, not a DOM problem Repeated alt text presented an interesting problem. Picture a row of five star-shaped icons that each say \"3/5 stars\" . A screen reader user hears the same thing five times and learns nothing new from four of them. Our first version walked the images in document order and flagged any run sharing the same normalized alt. It caught things it shouldn’t have. For example, a footer “GitHub” logo and a header “GitHub” logo might sit next t",
-    "summary": "GitHub wrote about a new plugin that checks image descriptions (alt text) for quality, not just presence. Its checks flag things like filenames, vague words such as \"image,\" and the same text repeated across images, since screen reader users hear these and learn little.",
-    "tags": [
-      "accessibility",
-      "alt text",
-      "web development"
     ],
     "summarized": true,
     "summary_version": 2
