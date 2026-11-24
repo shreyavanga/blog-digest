@@ -1,5 +1,195 @@
 [
   {
+    "url": "https://vercel.com/changelog/standard-builds-for-existing-pro-teams-have-moved-to-usage-based-billing",
+    "company": "Vercel",
+    "title": "Standard builds for existing Pro teams have moved to usage-based billing",
+    "published": "2026-11-25",
+    "excerpt": "Existing Pro teams will no longer include a Standard build slot. This brings Standard builds under the same usage-based billing model as other build machines. Standard builds cost $0.014 per build minute, and your monthly usage credit applies to build usage. Billing applies to all projects on the team. See included and Standard build minutes for your team on the Usage page . Select a build machine in team settings or project settings . To learn more, read more about managing your builds . Read more",
+    "summary": "Vercel's existing Pro teams no longer get a free build slot for Standard builds. Standard builds are now billed by usage, at $0.014 per build minute, with the monthly usage credit applying.",
+    "tags": [
+      "cloud billing",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/sharing-catalog-metadata-across-data-platforms-engines-and-agents",
+    "company": "Databricks",
+    "title": "Sharing catalog metadata across data platforms, engines, and agents",
+    "published": "2026-11-24",
+    "excerpt": "We’re excited to announce support for catalog labels – a new capability in the Apache...",
+    "summary": "Databricks announced support for a new feature called catalog labels in the Apache open-source data project. Labels are short tags attached to data catalogs, so different tools can share and read the same descriptive info.",
+    "tags": [
+      "data platforms",
+      "open source",
+      "metadata"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/agentic-cdp-data-modeling-data-foundation",
+    "company": "Databricks",
+    "title": "Data Modeling Best Practices for an Agentic CDP, Part 1: The Data Foundation",
+    "published": "2026-11-24",
+    "excerpt": "A customer saved a jacket to their wishlist on your site 9 days ago. This morning...",
+    "summary": "Databricks describes the first part of a guide to organizing customer data so an AI-driven customer data platform can work well. The teaser opens with a shopper who saved a jacket to a wishlist, a sign of how such systems track customer behavior.",
+    "tags": [
+      "customer data",
+      "data modeling",
+      "ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/inkling-2-mini-now-available-on-ai-gateway",
+    "company": "Vercel",
+    "title": "Inkling 2 Mini now available on AI Gateway",
+    "published": "2026-11-24",
+    "excerpt": "Inkling 2 Mini from Thinking Machines is now available on AI Gateway. The small multimodal reasoning model is built for agentic coding, tool use, and knowledge work, with text and image inputs and text output. Inkling 2 Mini has 26.4 billion total parameters and 3.4 billion active per token. The model runs its middle layers more than once for every token, which lets it reason further before writing anything down and often reach an answer with fewer reasoning tokens. Like Inkling 2 Small, it is strongest on long-running agentic tasks. The model has a 1M-token context window, and reasoning effort can be set from none through max . Use thinkingmachines/inkling-2-mini as the model name: To use it in Claude Code, Codex, Cursor, and more, install the latest Vercel CLI and run setup: Then select thinkingmachines/inkling-2-mini in the agent. See the coding agents guide for details. Try Inkling 2 Mini in the model playground . AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in custom reporting , Zero Data Retention support , budgets for API keys , routing rules , and more. AI Gateway reflects provider pricing with no markup and does not charge a platform fee on inference, including on Bring Your Own Key (BYOK) requests. You can view all language models available on AI Gateway. Read more",
+    "summary": "Vercel now offers Inkling 2 Mini, a small AI model from Thinking Machines, through its AI Gateway service. The model is built for coding agents and multi-step tasks, and it can read text and images.",
+    "tags": [
+      "ai models",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/delete-run-data-workflow-sdk",
+    "company": "Vercel",
+    "title": "Delete a run's data on demand in Workflow SDK",
+    "published": "2026-11-24",
+    "excerpt": "The Workflow SDK now lets you delete a finished run's stored data on demand. This feature gives you the ability to quickly meet compliance and security requirements when sensitive data needs to be purged from run payloads. Deleting a run's data deletes any inputs, outputs, hook payloads, and error traces for the run and its related entities. This does not delete the run's metadata : the run is still listed in observability. Attributes, hook tokens, and timings for steps and events can still be inspected. You can delete a run's data from the Vercel Dashboard, or via the CLI: You can also delete a run's data programmatically from your code: Deletion applies to finished runs only, so a run that is still going is skipped and keeps running. If you want to delete a run's payload as soon as it finishes, use the retention settings instead. Upgrade to workflow@5.7.0 or higher to use this feature. Learn more in the deleteRuns() reference . Read more",
+    "summary": "Vercel's Workflow SDK can now delete a finished run's stored data on demand, such as inputs, outputs, and error logs. The run itself still shows up in monitoring, which helps teams meet privacy and compliance rules.",
+    "tags": [
+      "software tools",
+      "data privacy",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/all-sandbox-runtimes-now-use-vercel-managed-images",
+    "company": "Vercel",
+    "title": "All Sandbox runtimes now use Vercel Managed Images",
+    "published": "2026-11-24",
+    "excerpt": "All Vercel Sandbox runtimes now use Vercel Managed Images (VMIs). Legacy runtimes, such as node22 , now use the open-source images in the vercel/sandbox repository , distributed through Vercel Container Registry (VCR). Sandboxes created with these now come with 64 GB of storage and use the same infrastructure as sandboxes powered by VCR. The universal image is released nightly, and rolling tags such as latest pick up operating system, dependency, and coding agent updates. Pin an image digest when you need a reproducible environment. Sandboxes created with version 3 or later of the JavaScript Sandbox SDK use vercel/sandbox/universal:latest by default. The universal image includes Node.js, Python, coding agents such as Claude Code and Pi, and common utilities. You can pull it at vcr.vercel.com/vercel/sandbox/universal:latest . Learn more in the Sandbox documentation . Read more",
+    "summary": "Vercel Sandbox now runs all its environments on Vercel Managed Images. New sandboxes get 64 GB of storage, and a nightly 'universal' image includes Node.js, Python, and coding agents like Claude Code.",
+    "tags": [
+      "cloud sandboxes",
+      "vercel"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/changelog/agents-can-now-manage-ai-gateway-through-vercel-mcp",
+    "company": "Vercel",
+    "title": "Agents can now manage AI Gateway through Vercel MCP",
+    "published": "2026-11-24",
+    "excerpt": "Your agent can now manage AI Gateway through Vercel MCP . Ask it in plain language to: Manage virtual models : Create reusable model IDs with saved settings, then list, inspect, update, or restore them. Configure routing rules : View, add, and update team-wide rules that redirect requests to another model or block them. Set spending budgets : View and set budgets for your team, projects, and members, and configure defaults. To create a virtual model, for example, ask your agent: Create a virtual model named coding-agent that uses anthropic/claude-opus-5.5 with Zero Data Retention enabled. Your apps and coding agents using AI Gateway can then use vmc/coding-agent as the model ID. You can change its model or settings later without updating those clients or redeploying your app. To get started, connect your agent to Vercel MCP with team-level access and the required AI Gateway permissions. Your Vercel team permissions still apply. Read more",
+    "summary": "Vercel's AI Gateway can now be managed by AI agents through Vercel MCP, a connection tool. You can ask your agent to create reusable model names, set routing rules, and set spending limits, and changes apply without updating your apps.",
+    "tags": [
+      "ai tools",
+      "cloud costs",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "company": "OpenAI",
+    "title": "Searching for distant planets with Astra",
+    "published": "2026-11-24",
+    "excerpt": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+    "summary": "Two amateur astronomers used OpenAI's Codex and a tool called Astra to search public data from NASA's Kepler and TESS space telescopes. They found possible new planets orbiting distant stars.",
+    "tags": [
+      "space",
+      "ai tools",
+      "astronomy"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "company": "OpenAI",
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "published": "2026-11-24",
+    "excerpt": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+    "summary": "OpenAI reports that its GPT-6 models can design proteins, creating both protein shapes and their building-block sequences. Lab tests showed the designed proteins stuck to five target molecules.",
+    "tags": [
+      "ai models",
+      "protein design",
+      "biology"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "company": "OpenAI",
+    "title": "How Intentful uses dots to make more time for growth",
+    "published": "2026-11-24",
+    "excerpt": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+    "summary": "Intentful, a company, uses an AI assistant called dot to save its team time. The assistant helps research websites and draft proposals, and it flags important messages and helps resolve issues without being asked.",
+    "tags": [
+      "ai assistants",
+      "productivity"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "company": "OpenAI",
+    "title": "How iFood scales coding agents across 15,000 repositories",
+    "published": "2026-11-24",
+    "excerpt": "",
+    "summary": "iFood, a Brazilian food delivery company, describes how it runs coding agents, which are AI tools that write and change software, across about 15,000 code repositories. The post is a short teaser, so details beyond this are not shown.",
+    "tags": [
+      "ai coding tools",
+      "software development"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+    "company": "Hugging Face",
+    "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+    "published": "2026-11-24",
+    "excerpt": "",
+    "summary": "Hugging Face shares a workflow for teaching a tiny robot duck to avoid obstacles, training it in a computer simulation and then moving that skill to a real robot. The method uses Isaac Lab and Newton, tools for robot simulation.",
+    "tags": [
+      "robotics",
+      "simulation",
+      "machine learning"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://discord.com/blog/black-friday-2026",
+    "company": "Discord",
+    "title": "Black Friday Has Taken Over Discord",
+    "published": "2026-11-24",
+    "excerpt": "Black Friday deals are spreading across Discord: 10,000 Orbs with Nitro, exclusive decos when you gift, Shop discounts, and Orbs back in Rust and Bloons TD 6 Game Shops.",
+    "summary": "Discord is running Black Friday deals across the app. These include 10,000 Orbs with Nitro, special decorations when you gift, shop discounts, and Orbs offered in the Rust and Bloons TD 6 game shops.",
+    "tags": [
+      "discord",
+      "shopping deals",
+      "black friday"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
     "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/",
     "company": "Google Developers",
     "title": "How Agent Anomaly Detection scores on benchmarks we didn't write",
@@ -10,6 +200,36 @@
       "ai agents",
       "security",
       "monitoring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/from-files-to-cited-answers-in-one-api-call-managed-ingestion-and-searchdocuments-in-agent-retrieval/",
+    "company": "Google Developers",
+    "title": "From Files to Cited Answers in One API Call: Managed Ingestion and SearchDocuments in Agent Retrieval",
+    "published": "2026-11-24",
+    "excerpt": "Agent Retrieval in Vertex AI introduces managed ingestion and SearchDocuments to replace custom chunking and embedding pipelines. Developers can now import document and video files directly from Cloud Storage and query them with a single API call for cited page numbers and timestamped results. The feature supports hybrid retrieval, metadata filtering, reranking, and multimodal video audio search.",
+    "summary": "Google's Vertex AI now lets developers load document and video files straight from cloud storage and ask questions with one call. Answers come back with page numbers or video timestamps, so you can check where they came from without building the search setup yourself.",
+    "tags": [
+      "cloud ai",
+      "search tools",
+      "developer tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developers.googleblog.com/distributed-llm-training-across-metros-streaming-diloco-in-maxtext/",
+    "company": "Google Developers",
+    "title": "Distributed LLM Training Across Metros: Streaming DiLoCo in MaxText",
+    "published": "2026-11-24",
+    "excerpt": "Streaming DiLoCo in MaxText enables developers to efficiently train large language models across geographically distributed TPU slices by streaming parameter fragments instead of synchronizing full models at every step. This approach slashes cross-slice communication volume by over 60× and eliminates network stalls, allowing seamless multi-datacenter scaling without degrading model convergence or quality.",
+    "summary": "Google describes a way to train large AI language models across TPU computer groups spread over different data centers. Instead of sending full model updates every step, it sends small pieces over time, cutting data sent between sites by over 60 times while keeping model quality.",
+    "tags": [
+      "ai training",
+      "cloud computing",
+      "google"
     ],
     "summarized": true,
     "summary_version": 2
@@ -39,6 +259,110 @@
       "go programming",
       "bug finding",
       "ai tools"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools/",
+    "company": "NVIDIA",
+    "title": "What’s New for Game Developers: AI Animation and RTX Tools",
+    "published": "2026-11-24",
+    "excerpt": "This month’s NVIDIA game development updates help teams bring new graphics, animation, and local AI capabilities into their engines while balancing image... This month’s NVIDIA game development updates help teams bring new graphics, animation, and local AI capabilities into their engines while balancing image quality, performance, and creative intent. This post covers: In an interview, Gaijin Entertainment shares how it integrated DLSS 5 with 3D-Guided Neural Rendering into War Thunder’s Dagor Engine while preserving the game’s… Source",
+    "summary": "NVIDIA shares new tools for game developers, including AI animation and graphics features. One example: the game War Thunder's studio shares how it added DLSS 5 to its game engine.",
+    "tags": [
+      "game development",
+      "ai",
+      "graphics"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/qa-how-everstone-brings-where-winds-meet-to-life-with-nvidia-dlss-5/",
+    "company": "NVIDIA",
+    "title": "Q&A: How Everstone Brings Where Winds Meet to Life with NVIDIA DLSS 5",
+    "published": "2026-11-24",
+    "excerpt": "Where Winds Meet moves between distant mountain landscapes, bustling streets, and quiet moments with its characters. For Everstone Studio, bringing more... Where Winds Meet moves between distant mountain landscapes, bustling streets, and quiet moments with its characters. For Everstone Studio, bringing more realistic lighting and materials to this wuxia world means keeping its aesthetics, recognizable characters, and carefully composed atmosphere intact. The team’s ongoing work with NVIDIA DLSS and Streamline provided a foundation for… Source",
+    "summary": "Everstone Studio shared how it is using NVIDIA DLSS 5 to add more realistic lighting and materials to its game Where Winds Meet, while keeping its look and characters intact. The article is a short teaser, so details are limited.",
+    "tags": [
+      "gaming",
+      "graphics",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/prepare-market-data-for-forecasting-with-nvidia-megatron-core/",
+    "company": "NVIDIA",
+    "title": "Prepare Market Data for Forecasting with NVIDIA Megatron Core",
+    "published": "2026-11-24",
+    "excerpt": "Market data arrives as a stream of trades and quotes: every execution, bid, and ask, timestamped to the microsecond. Preparing this data for AI-based market... Market data arrives as a stream of trades and quotes: every execution, bid, and ask, timestamped to the microsecond. Preparing this data for AI-based market forecasting requires turning price and volume histories into consistent inputs for model training and inference. A common first step is aggregating the data into bars—one row per instrument per time unit—with price, volume… Source",
+    "summary": "NVIDIA explains how to prepare stock market trade and price data so AI models can use it to forecast markets. A common first step is grouping the raw trades into regular time-based rows, one per instrument.",
+    "tags": [
+      "market data",
+      "ai forecasting",
+      "nvidia"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers/",
+    "company": "NVIDIA",
+    "title": "How to Run NVIDIA Cosmos 3 on Local AI Devices Using Hugging Face Diffusers",
+    "published": "2026-11-24",
+    "excerpt": "Running video generation models locally can be challenging when model weights and intermediate data exceed available GPU memory. NVIDIA Cosmos 3 Nano is a world... Running video generation models locally can be challenging when model weights and intermediate data exceed available GPU memory. NVIDIA Cosmos 3 Nano is a world foundation model that generates videos from text, images, and other inputs to support physical AI development. Learn more about NVIDIA Cosmos for physical AI. This tutorial walks you through how to run Cosmos 3 Nano on a GPU with as… Source",
+    "summary": "NVIDIA shows how to run its Cosmos 3 Nano video generation model on local computers using Hugging Face tools. Local runs can strain GPU memory, so the guide explains how to make it fit.",
+    "tags": [
+      "ai video",
+      "nvidia",
+      "local ai"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/",
+    "company": "AWS",
+    "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
+    "published": "2026-11-24",
+    "excerpt": "Some limits shape architecture more than any feature does. AWS Lambda launched in 2014 with a 60-second timeout, moved to 5 minutes in 2015 and to 15 minutes in 2018, and then stayed there for eight years. Last week the limit doubled, and in the same week Lambda learned to run on GPUs and gave platform teams their own runtimes. That is a lot of Lambda for one week. Two other threads ran through the week. A new AWS Local Zone in Bogotá brought AWS infrastructure closer to users in Colombia. And AWS Security Token Service (AWS STS) , Amazon Cognito , and Amazon CloudFront each shipped a piece of identity for agents: who an agent is when it shows up at your door, and how little it should be allowed to do. Now, let’s get into this week’s AWS news… Headlines AWS Local Zone in Bogotá, Colombia – AWS opened a new Local Zone in Bogotá, so you can now run applications that need single-digit millisecond latency closer to users in Colombia. AWS Local Zones place compute, storage, and networking near large metropolitan areas with the same APIs and tools as a Region, for workloads like real-time gaming, live streaming, and financial transactions. The Bogotá Local Zone supports Amazon EC2 C7i, M7i, and R7i instances, Amazon EBS gp3, gp2, and io1 volumes with local snapshots, Amazon S3 One Zone-Infrequent Access, Amazon ECS , Amazon EKS , AWS Direct Connect , and Application Load Balancer. To start, enable us-east-1-bog-1a in AWS Global View. AWS Lambda now supports a 30-minute timeout for on-demand Event Functions – You can now configure any Event Function with a timeout of up to 30 minutes (1,800 seconds), double the previous limit, for synchronous, asynchronous, and event source mapping invocations. On Lambda Managed Instances, synchronous invocations also go to 30 minutes, while asynchronous and event source mapping invocations keep the 90-minute timeout from September. Standard Lambda pricing applies, in all commercial Regions. Agentic requests that chain model and tool calls, media transcoding, and file conversion are the workloads AWS calls out. Before raising the value, read the considerations in the Compute blog post : a service that invokes your function synchronously applies its own timeout, client read and socket timeouts need to be longer, and a NAT gateway drops idle connections after 350 seconds, so long calls need keep-alives. For longer work, durable functions still run for up to a year, and now emit OpenTelemetry traces . AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances – You can now run GPU-accelerated inference, media processing, rendering, and scientific computing as Lambda functions, packaged as OCI container images, with no GPU drivers, CUDA versions, or AMIs to reconcile. In the walkthrough, four concurrent requests shared one copy of the model on a single GPU and finished in about the same time as one. It’s optimized for inference with custom models, on G-series instances from G4dn to G6e. You pay the EC2 instance fee (Savings Plans and Reserved Instances apply), a 9.75% management fee for GPU instances, and $0.20 per million requests. Last week’s launches Here are some launches and updates from this past week that caught my attention: Amazon Polly now supports voice cloning – You can now create a custom voice in Amazon Polly from a few minutes of recordings of a consenting speaker, running on the Polly generative engine. It launches in seven languages, including English, Spanish, and Portuguese, and each cloned voice speaks the language it was recorded in. Polly doesn’t keep the recordings or train on them. Creating a voice is free, and you pay for the speech you synthesize. It’s a gated release, so request access through your account team. The ML blog post covers brand-voice use cases for contact centers, voice agents, and content. AWS Lambda now supports customer-managed runtimes – You can now manage a Lambda runtime as its own resource, separate from function deployment. Platf",
+    "summary": "AWS opened a new data center zone in Bogotá, Colombia, to run fast apps closer to users there. AWS Lambda, its function-running service, also now allows functions to run up to 30 minutes, double the old limit, and supports GPU chips for AI work.",
+    "tags": [
+      "cloud computing",
+      "aws",
+      "serverless"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.figma.com/blog/introducing-figma-agent-in-figjam-and-slides/",
+    "company": "Figma",
+    "title": "The Figma agent is now available in FigJam and Slides",
+    "published": "2026-11-23",
+    "excerpt": "Whether you’re exploring an idea, preparing for a meeting, or presenting your designs, the Figma agent can help you move work forward.",
+    "summary": "Figma's AI agent can now be used in FigJam and Slides, not just in design files. The teaser says it can help with exploring ideas, preparing for meetings, and presenting designs.",
+    "tags": [
+      "figma",
+      "ai tools",
+      "design"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://www.databricks.com/blog/what-5400-malicious-npm-packages-reveal-about-software-supply-chain-risk-2026",
+    "company": "Databricks",
+    "title": "What 5,400 Malicious npm Packages Reveal about Software Supply Chain Risk in 2026",
+    "published": "2026-11-23",
+    "excerpt": "Executive summaryThis report is the first of a series of blogs analyzing the supply chain threat landscape...",
+    "summary": "Databricks published a report on about 5,400 malicious npm packages, which are bits of code shared through a popular software library site. It is the first in a series looking at risks to the software supply chain.",
+    "tags": [
+      "software security",
+      "supply chain"
     ],
     "summarized": true,
     "summary_version": 2
@@ -143,6 +467,36 @@
       "ai",
       "data privacy",
       "security"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/kazunari-hanao-joins-vercel-as-country-manager-japan",
+    "company": "Vercel",
+    "title": "Kazunari Hanao joins Vercel as Country Manager, Japan",
+    "published": "2026-11-23",
+    "excerpt": "日本語版はこちら： Vercel日本法人の代表に花尾和成が就任いたしました Kazunari Hanao has joined Vercel as Country Manager for Japan, based in Tokyo. His appointment is part of our continued investment in the Japanese market, including plans to expand our local team. Japanese developers were early adopters of Next.js. And today, Vercel's customers in Japan include Mitsubishi Corporation, Fujitsu Limited, U-NEXT CO., Ltd., and DeNA Co., Ltd., alongside startups like SANU Inc. and Reiwa Travel, Inc. Kazunari has spent the last decade building and leading software businesses in Japan. He joins Vercel from Pendo, where he was President of Pendo Japan. Before that, he built HashiCorp’s Japan business and spent nearly five years in sales leadership at Pivotal in Tokyo. I asked him about the opportunity in Japan and his decision to join Vercel. Why are you optimistic about Vercel's future in Japan? Japan is at a turning point in how software gets built. The country has innovative companies and talented developers, but complex enterprise IT environments are slowing the adoption of frontier AI to the point that businesses can’t capture its value. Vercel’s opportunity is to help Japanese enterprises move from experimentation to production, and run AI applications securely, reliably, and efficiently at scale. Cost, governance, and security for AI have become business priorities, not just technical ones. Almost every CXO I've met recently is working through those questions. What interested you in working for Vercel? I've always been drawn to technology that simplifies complexity and helps businesses move faster. Vercel felt like a natural continuation of that, with bigger potential. AI is transforming the whole software development lifecycle, and Vercel has a real chance to become a foundational platform for the next generation of applications. Ultimately what convinced me was the vision, the developer-first culture, and the chance to build something in Japan from the ground up. I enjoy building businesses, bringing talented people together, and creating an environment where teams feel empowered to take on hard problems. Vercel gives me the chance to do that with technology I believe in. What have you learned building businesses in Japan for global companies? Building a successful business is about much more than growing revenue. It starts with bringing together the right people, uniting them around a shared goal, earning the trust of customers and partners, and building a culture where every team member feels ownership. I've also learned how much it matters to connect global innovation with the specific needs of Japanese customers. During our first meetings, Guillermo and I talked about a future where countless digital services in Japan run on Vercel, and people experience its value every day whether they realize it or not. \"Vercel Everywhere\" is the future I want to build. What’s next in 2027 We're bringing our flagship conference, Ship, to Tokyo for the first time in 2027. It's a chance to hear directly from the Vercel team and from Japanese companies building on the platform. We'll share more details at vercel.com/ship in the new year. We’re also growing our Tokyo team across sales, solutions engineering, and partnerships. A larger local team will help us support Japanese customers and deepen our partnerships with Classmethod, AWS Japan, and Sitecore Japan. Watch our careers page for upcoming opportunities in Japan. Read more",
+    "summary": "Vercel has named Kazunari Hanao as its Country Manager for Japan, based in Tokyo, as part of plans to grow its team there. The company also announced it will hold its Ship conference in Tokyo in 2027.",
+    "tags": [
+      "vercel",
+      "japan",
+      "hiring"
+    ],
+    "summarized": true,
+    "summary_version": 2
+  },
+  {
+    "url": "https://vercel.com/blog/ja-kazunari-hanao-joins-vercel-as-country-manager-japan",
+    "company": "Vercel",
+    "title": "Vercel日本法人の代表に花尾和成が就任いたしました",
+    "published": "2026-11-23",
+    "excerpt": "（本記事は、 英語版の就任発表 の日本語訳に、花尾本人の就任のご挨拶を加えたものです。） Vercel日本法人の代表に、 花尾和成 が就任いたしました（東京拠点）。今後、Vercelは花尾とともに国内のチームを拡充し、日本市場への投資をさらに進めていきます。 弊社が10年以上前に公開したNext.jsを、日本の開発者の皆さまはいち早く使い始めてくださいました。そして現在、日本では三菱商事、富士通、U-NEXT、ディー・エヌ・エーといった大企業から、SANUや令和トラベルといったスタートアップまで、幅広い企業にVercelをご利用いただいています。 花尾はこの10年間、日本でソフトウェア企業の運営にリーダーシップを発揮してきました。前職ではPendoの日本法人社長を務め、それ以前にはHashiCorpの日本事業を立ち上げ、Pivotalの東京オフィスで営業部門を統括しました。 就任にあたり、花尾から皆さまへのメッセージをご紹介します。 このたび、Vercelの日本法人代表に就任いたしました花尾和成です。私は20年以上IT業界に身を置き、そのうち10年以上は、開発者が開発そのものに集中できるようにするプロダクトに携わってまいりました。この経験を活かし、日本の開発者の皆さまと、その先にあるビジネスの価値を最大化することに貢献してまいります。 Vercelには、CEOのギシェルモ・ラウチを筆頭に、日本を好きなメンバーが数多くいます。こうした仲間の後押しを受けながら素晴らしいチームをつくり、Vercelが日本市場にとってかけがえのない存在となることを目指します。そして究極的には、直接的にも間接的にも、Vercelが日本のあらゆる場所で使われている世界を実現したいと考えています。 今後ともご指導ご鞭撻のほど、よろしくお願い申し上げます。 ここからは、私（Nick Bogaty, CRO）が聞き手を務めた花尾へのインタビューをお届けします。日本市場にどのような可能性を感じているのか、Vercelへの入社を決めた理由とあわせて伺いました。 Vercelが日本でさらに成長できるとお考えなのは、なぜですか？ 日本のソフトウェア開発は、まさに転換期を迎えています。日本には革新的な企業が多く、高い技術力を持つ開発者の皆さまが活躍されています。一方で、多くの企業では既存のシステムが複雑になり、最先端のAIの導入がなかなか進んでいません。その結果、AIを十分に活用できていないケースもあります。 日本企業がAIのポテンシャルを引き出すには、AIを試す段階から本番運用へ進む必要があります。Vercelは、その一歩を後押しできると考えています。AIアプリケーションを大規模に、安全かつ安定して、効率よく運用できるよう支える。これはまさに、Vercelが強みを発揮できる領域です。 そして、AIにかかるコストをどう管理するか、どんなルールで運用するか、セキュリティをどう確保するか。いまやどれも技術部門だけでなく、経営陣にとっても優先課題です。最近お会いした経営幹部の方々も、こうした課題に取り組んでいると口をそろえておっしゃっていました。この点でも、Vercelは日本企業の力になれると考えています。 Vercelへの入社を決めた理由をお聞かせください。 複雑なことをシンプルにし、企業がもっとすばやく動けるようにする。以前から、そんなテクノロジーに魅力を感じてきました。Vercelなら、これまで私が取り組んできたことを、さらに大きな規模で実現できると思ったのです。いま、AIはソフトウェアの開発から運用まで、そのあり方を変えつつあります。そのなかで、Vercelは次世代のアプリケーションを支える基盤になれると考えています。 入社の決め手になったのは、Vercelのビジョンと、開発者の皆さまを第一に考える文化です。そして、日本で一から事業をつくっていけることにも惹かれました。私がやりがいを感じるのは、事業を立ち上げ、優れた人材を集め、チームが主体的に難しい課題に挑める環境をつくることです。Vercelでは、私自身が可能性を信じている技術を軸に、そうした仕事に取り組めると思いました。 グローバル企業の日本事業を立ち上げるなかで、何を学ばれましたか？ 事業を軌道に乗せるには、売上を伸ばすだけでは足りません。まずは仲間を集め、同じ目標に向かって力を合わせることが大切です。お客様やパートナー企業の信頼を得ることも欠かせません。そして、チームの一人ひとりが当事者意識を持ち、みずから動ける文化をつくること。そうした積み重ねが、事業の土台になります。 世界で生まれる新しい技術を、日本で暮らす方々が日々使うサービスに活かし、身近な課題の解決につなげることの大切さも学びました。CEOのギシェルモと出会った頃、日本で使われる数えきれないほどのデジタルサービスがVercel上で動く未来について語り合いました。Vercelの名前を知らない人にも、日々使うサービスを通じて、私たちの技術の価値が届く。私が実現したいのは、そんな「Vercel Everywhere」の未来です。 2027年に向けた取り組み 2027年には、Vercelの代表的なカンファレンス「Ship」を初めて東京で開催します。Vercelの社員だけでなく、Vercelを活用してサービスを開発する日本企業の皆さまからも、それぞれの取り組みについて直接お聞きいただける機会となるよう準備を進めています。詳細は年明けに vercel.com/ship でお知らせいたします。 また、東京オフィスのチームも拡充します。営業、ソリューションエンジニアリング、パートナーシップの各分野で仲間を増やし、日本のお客様をより手厚くサポートできる体制をつくります。クラスメソッド、AWS Japan、Sitecore Japanといったパートナー企業との連携も、さらに深めていきます。日本での採用情報については、 採用ページ にて順次お知らせします。 Read more",
+    "summary": "Vercel has appointed Kazunari Hanao as head of its Japan branch in Tokyo. The company plans to grow its local team, hold its Ship conference in Tokyo in 2027, and expand work with Japanese partners.",
+    "tags": [
+      "vercel",
+      "japan business",
+      "hiring"
     ],
     "summarized": true,
     "summary_version": 2
@@ -754,21 +1108,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/",
-    "company": "Google Developers",
-    "title": "Agent Anomaly Detection: Safeguarding agents across other clouds",
-    "published": "2026-11-20",
-    "excerpt": "Agent Anomaly Detection now monitors ADK agents running across AWS, Azure, or on-premises by analyzing their traces and logs in your Google Cloud project. By ingesting OpenTelemetry-formatted data through the Telemetry API, it evaluates full conversations for behavioral drift without needing access to the agent's underlying runtime. This enables security teams to detect risks like rogue behaviors, tool misuse, and resource exhaustion across multi-cloud environments.",
-    "summary": "Google's Agent Anomaly Detection can now watch AI agents running on AWS, Azure, or your own servers, by reading their activity logs in Google Cloud. It spots unusual behavior like misuse of tools or runaway resource use, so security teams can catch problems across several cloud providers.",
-    "tags": [
-      "ai agents",
-      "cloud security",
-      "monitoring"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
     "company": "Cloudflare",
     "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
@@ -1020,21 +1359,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/agents-can-now-find-vercel-cli-commands-by-describing-the-task",
-    "company": "Vercel",
-    "title": "Agents can now find Vercel CLI commands by describing the task",
-    "published": "2026-11-19",
-    "excerpt": "Coding agents can now use vercel help search to find Vercel CLI commands by describing a task in plain language. The search returns a list of matching commands. Add --with-help to include the help page for the first result in the same call. For example, vercel help search \"roll back production\" --with-help returns the options and examples for vercel rollback . Search also supports: API endpoints: When a Vercel API endpoint matches the task, search returns a vercel api command with the request path and placeholders for every required input. The agent can fill in the values without guessing the path. JSON output: Use --json to return search results as JSON. Combine it with --with-help to include usage instructions, options, and examples for the first result. Search recognizes common wording, such as “show” instead of “list,” and handles minor spelling mistakes. The CLI also includes a skill that tells coding agents to start with vercel help search when looking for a command. Vercel doesn't log your search text. Update to the latest Vercel CLI with vercel upgrade . Read more",
-    "summary": "Vercel's command-line tool now lets AI coding helpers find the right command by describing a task in plain words, such as \"roll back production.\" It can also show usage help and handles small spelling mistakes, which saves the helper from guessing.",
-    "tags": [
-      "developer tools",
-      "ai agents",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
     "company": "Stripe",
     "title": "Give your agents controlled access to analyze your data and move funds",
@@ -1161,21 +1485,6 @@
     "tags": [
       "discord",
       "app updates"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
-    "company": "Google Developers",
-    "title": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs",
-    "published": "2026-11-19",
-    "excerpt": "This post walks developers through training a multi-turn, tool-using LLM agent using Tunix and Gemma 4 on Cloud TPUs. By leveraging agentic Group Relative Policy Optimization (GRPO) and asynchronous vLLM rollouts, the approach significantly improves complex reasoning and tool compliance in interactive environments.",
-    "summary": "This post shows how to train an AI agent that uses tools over several back-and-forth steps, using Google's Tunix software and Gemma 4 on Google's TPU chips. The method is said to improve the agent's reasoning and how well it follows tool rules.",
-    "tags": [
-      "ai agents",
-      "machine learning",
-      "google tpu"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1343,94 +1652,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://vercel.com/changelog/vercel-drives-now-reads-files-up-to-6x-faster",
-    "company": "Vercel",
-    "title": "Vercel Drives now reads files up to 6x faster",
-    "published": "2026-11-18",
-    "excerpt": "Vercel Drives now reads files up to 6x faster. The update improves cold-read performance. A new read-ahead algorithm uses your application’s access patterns to load data from persistent storage before it’s needed, reducing the time your code spends waiting. All drives get this update automatically, with no SDK upgrade or configuration changes required. Read pricing is unchanged. Learn more in the Vercel Drives documentation . Read more",
-    "summary": "Vercel Drives, a file storage service, now reads files up to 6 times faster. It loads data ahead of time based on how apps use files, so code waits less, and the update applies automatically with no changes needed.",
-    "tags": [
-      "cloud storage",
-      "vercel",
-      "speed"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/vercel-board-is-now-available",
-    "company": "Vercel",
-    "title": "Vercel Board is now available",
-    "published": "2026-11-18",
-    "excerpt": "Vercel Board is now available on all plans. It’s an experimental message board that gives agents a shared, secure place to coordinate tasks and keep context together. Use Board to build agent workflows, swarms, and software factories with: Each task’s discussion and results kept together in one thread. Control over which channels agents and users can access and what they can do. Messages and replies that sync both ways with Slack, GitHub, and other tools through Vercel Connect . Use your own agents, harnesses, and execution environments. Agents access Board through the Vercel CLI or JavaScript SDK. To get started, install the Board skill: Or paste this into your agent: Read the announcement , or learn more in the Vercel Board documentation . Read more",
-    "summary": "Vercel has released Vercel Board on all plans. It is an experimental message board where AI agents and people can share tasks, discussions, and results in one secure place.",
-    "tags": [
-      "ai agents",
-      "vercel",
-      "developer tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/single-second-static-deployments-now-support-more-assets",
-    "company": "Vercel",
-    "title": "Single-second static deployments now support more assets",
-    "published": "2026-11-18",
-    "excerpt": "Instant deployments let you deploy eligible static sites to Vercel in about a second, without a build step. They now support CSS, images, fonts, and other assets alongside HTML and Markdown. Deploy a landing page with its stylesheet and images, or a report created by your coding agent, through the Vercel CLI or REST API . With the CLI, run: Newly supported file types include: Styles and data: CSS, JSON, XML, plain text, and web manifests Images: SVG, PNG, JPEG, GIF, WebP, AVIF, and ICO Fonts: WOFF, WOFF2, TTF, OTF, and EOT Documents and media: PDF, MP4, WebM, MP3, WAV, and OGG Instant deployments support up to 100 files totaling 25 MB or less. Vercel detects eligible deployments automatically, with no configuration required. Deployments that exceed these limits, include JavaScript or other unsupported files, or are triggered by Git still build as before. The same applies to projects with a framework preset, custom build settings, a root-level package.json or Vercel configuration file such as vercel.json , or a public/ directory. This update is rolling out across all plans. Learn more in the deployment documentation . Read more",
-    "summary": "Vercel now lets you publish simple static sites in about a second, and those sites can include stylesheets, images, fonts, and PDFs. Sites that are too large, use JavaScript, or need a build step still deploy the usual way.",
-    "tags": [
-      "web hosting",
-      "deployment"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/parallel-web-search-is-free-on-ai-gateway-and-eve-through-january-31",
-    "company": "Vercel",
-    "title": "Parallel web search is free on AI Gateway and eve through January 31",
-    "published": "2026-11-18",
-    "excerpt": "Parallel web search in fast mode is now free on AI Gateway through January 31, 2027, and Parallel is now the default web search for eve agents. The tool works with any AI Gateway model, with no separate Parallel API key. Parallel finds relevant web pages and returns links with short excerpts. You can filter results by website or publication date. In eve, the built-in web_search tool uses Parallel fast mode automatically when the model is served through AI Gateway. See the eve documentation for other search configurations. To use Parallel fast mode with the AI SDK, add gateway.tools.parallelSearch({ mode: 'fast' }) to your tools: The offer covers fast mode only, with Zero Data Retention enabled by default. Other modes are billed at standard pricing. Learn more in the web search documentation . Read more",
-    "summary": "Vercel says its Parallel web search in fast mode is free on its AI Gateway until January 31, 2027, and it is now the default search for its eve agents. Developers can use it with any AI Gateway model without a separate Parallel key.",
-    "tags": [
-      "web search",
-      "ai tools",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/changelog/gemini-4-neon-now-available-on-ai-gateway",
-    "company": "Vercel",
-    "title": "Gemini 4 Neon now available on AI Gateway",
-    "published": "2026-11-18",
-    "excerpt": "Gemini 4 Neon from Google is now available on AI Gateway. Gemini 4 Neon is a major upgrade over the earlier, lighter Gemini 4 model, delivering output quality close to Google’s larger Gemini 4 models with faster responses. It’s built for coding, agent workflows, and multi-step tasks. The model accepts text, images, video, and documents, with a 1M-token context window. It supports tool calling, structured outputs, grounding with Google Search and Google Maps, and four reasoning levels: low, medium, high, and xhigh. Use google/gemini-4-neon as the model ID: To use Gemini 4 Neon in Codex, Cursor, or another supported agent, see the coding agents guide . Try Gemini 4 Neon in the model playground , or explore all language models . Read more",
-    "summary": "Google's new Gemini 4 Neon AI model is now available through Vercel's AI Gateway. It is a faster, stronger upgrade over the earlier lighter version, aimed at coding and multi-step tasks.",
-    "tags": [
-      "ai models",
-      "vercel"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://vercel.com/blog/vercel-x",
-    "company": "Vercel",
-    "title": "Introducing Vercel X",
-    "published": "2026-11-18",
-    "excerpt": "Today we’re launching Vercel X , a six-week accelerator for AI founders at the idea and pre-seed stages. Join a cohort of 40 teams at our San Francisco HQ and build alongside Vercel’s product leaders, designers, and engineers. The program takes no equity for participation and offers access to a program-wide pool of more than $9M in credits from Vercel, AWS, Anthropic, OpenAI, and other partners. Applications are now open through November 29, 2026. The program runs from January 19 to March 2, 2027. Vercel has worked with more than 100 early-stage teams from around the world across three accelerator cohorts. Alumni include Rex , Alloy Robotics, Interfaze , Cervo , and Hacktron . Interfaze and Rex are backed by Y Combinator, and Cervo was acquired by Altana Technologies. Why Vercel X? If you’re applying to Vercel X, you probably have an idea or project you haven’t been able to stop thinking about. The next stretch is figuring out exactly what you’re building and who it’s for. We think you get through that stretch the Vercel way: by deeply understanding your customers, shipping quickly, and iterating to greatness. The program includes: Technical mentorship: Hands-on workshops and product feedback from Vercel’s design, product, and engineering teams. Partner credits: Put credits toward hosting, compute, and model API usage as you build and test your product. Founder community: A cohort of AI founders at the same stage, with weekly fireside chats featuring industry leaders. Investor access: Mentorship from VC partners and the opportunity to present your company to investors, ecosystem partners, and the Vercel community at Demo Day. Winning teams receive funding from Vercel Ventures and prizes from program partners. Who should apply We’re looking for technical builders with ambitious ideas and insatiable curiosity. You don’t need a finished product or traction. Tell us what you want to build, who needs it, what AI makes possible, and why you’re the right person or team for the job. Solo founders and teams of up to three can apply from around the world. You must be a Vercel customer and must not have participated in a traditional VC accelerator or raised an institutional seed round. See the additional eligibility requirements below. All participants must spend the full six weeks in San Francisco and attend weekly events in person. Apply to Vercel X Applications close at 11:59 p.m. PT on Sunday, November 29, 2026. Decisions will be released in mid-December. Apply to Vercel X → Applicants must be Vercel customers at or above the age of majority in their jurisdiction, able to commit to the full six weeks in person, and not located in or otherwise subject to restrictions imposed by U.S. sanctions laws. Vercel X program applications will be judged on the quality of the submission, the founder's background, and the overall potential for impact. Read more",
-    "summary": "Vercel is launching Vercel X, a free six-week program in San Francisco for early-stage AI founders, with no equity taken and over $9M in cloud and AI credits. Applications close November 29, 2026, and the program runs January 19 to March 2, 2027.",
-    "tags": [
-      "startups",
-      "ai",
-      "accelerator programs"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://shopify.engineering/secure-agentic-apps",
     "company": "Shopify",
     "title": "Building secure mobile apps in the agentic era",
@@ -1499,49 +1720,6 @@
       "ai chatbots",
       "news publishing",
       "partnerships"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/inside-the-codex-sandbox",
-    "company": "OpenAI",
-    "title": "Inside the Codex sandbox",
-    "published": "2026-11-18",
-    "excerpt": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-    "summary": "OpenAI describes how its Codex tool runs commands on your computer inside a sandbox. The sandbox limits which files and networks the tool can reach, and you control those limits on macOS, Linux, and Windows.",
-    "tags": [
-      "ai coding tools",
-      "computer security"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/advancing-chip-design-with-our-models",
-    "company": "OpenAI",
-    "title": "Advancing chip design with OpenAI models",
-    "published": "2026-11-18",
-    "excerpt": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Astra.",
-    "summary": "OpenAI says its AI models helped improve the circuits in its Jalapeño chip and in some RISC-V processor designs, using its GPT-6 Astra model. This shows AI can help engineers design computer chips.",
-    "tags": [
-      "ai",
-      "chip design"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/business/customer-stories/sumitomo-life",
-    "company": "OpenAI",
-    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-    "published": "2026-11-18",
-    "excerpt": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-    "summary": "Sumitomo Life, an insurance company, uses ChatGPT Enterprise for research, writing proposals, and drafting code for investment analysis. Its executives used the tool early, which helped other staff start using it too.",
-    "tags": [
-      "ai tools",
-      "insurance",
-      "workplace adoption"
     ],
     "summarized": true,
     "summary_version": 2
@@ -1766,50 +1944,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.databricks.com/blog/new-azure-databricks-azure-government-now-beta",
-    "company": "Databricks",
-    "title": "The new Azure Databricks on Azure Government is now in Beta",
-    "published": "2026-11-17",
-    "excerpt": "Modern data and AI, built for the missionGovernment agencies and their mission-critical...",
-    "summary": "Databricks has released a beta version of its data and AI platform for Azure Government, a cloud service for government agencies. The teaser suggests it is aimed at government missions that need data and AI tools.",
-    "tags": [
-      "cloud computing",
-      "government",
-      "data platforms"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/liveramp-rampid-identity-resolution-packaged-clean-rooms",
-    "company": "Databricks",
-    "title": "How packaged clean rooms bring RampID to your lakehouse",
-    "published": "2026-11-17",
-    "excerpt": "Partner identity resolution used to mean sending your PII to the vendorHistorically on Databricks...",
-    "summary": "Databricks describes how a packaged clean room lets companies use RampID, an identity-matching service, directly on their data lakehouse. The idea is that customers no longer have to send raw personal data to the vendor to match people across datasets.",
-    "tags": [
-      "data privacy",
-      "clean rooms",
-      "databricks"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://www.databricks.com/blog/built-object-storage-served-cache",
-    "company": "Databricks",
-    "title": "Built on object storage, served from cache",
-    "published": "2026-11-17",
-    "excerpt": "The common argument against running Postgres on object storage goes like this:Postgres...",
-    "summary": "Databricks describes a way to run the Postgres database on cheap object storage, the kind used for file storage in the cloud. The article is a teaser, so the full details of how it works are not clear here. Tags are based only on the title.",
-    "tags": [
-      "databases",
-      "cloud storage"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://www.anthropic.com/research/claude-black-hole-physics",
     "company": "Anthropic",
     "title": "Claude solves two open problems in the physics of black holes",
@@ -1820,21 +1954,6 @@
       "ai",
       "physics",
       "black holes"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-    "company": "OpenAI",
-    "title": "Strengthening NATO and allied cyber defenses with AI",
-    "published": "2026-11-17",
-    "excerpt": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-    "summary": "OpenAI says it is working with NATO and allied cyber agencies to help trusted defenders find security weaknesses, test fixes, and protect important systems. The goal is stronger defense of essential computer systems.",
-    "tags": [
-      "cybersecurity",
-      "ai",
-      "defense"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2223,51 +2342,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
-    "company": "NVIDIA",
-    "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
-    "published": "2026-11-13",
-    "excerpt": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The... Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The black hole itself emits no light, so telescopes capture radio emission from superheated gas swirling outside the event horizon. The black hole’s intense gravity bends the paths of this light, shaping the bright ring that frames the central… Source",
-    "summary": "NVIDIA shows how its cuPhoton tool uses graphics chips to process black hole imaging, which is hard because black holes are tiny and faint from Earth. Telescopes pick up radio glow from hot gas around the black hole, and its gravity bends that light into a ring.",
-    "tags": [
-      "black holes",
-      "gpu computing",
-      "astronomy"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/",
-    "company": "NVIDIA",
-    "title": "Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS",
-    "published": "2026-11-13",
-    "excerpt": "Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general... Many scientific simulations, from molecular chemistry to materials science, spend the majority of their execution time computing high-precision dense general matrix multiplications (GEMM). These operations are called DGEMM for real 64-bit floating-point numbers and ZGEMM for complex 64-bit floating-point numbers. cuBLAS is widely used by HPC and AI applications to accelerate GEMM and other Basic… Source",
-    "summary": "NVIDIA shares new math methods in its cuBLAS library that speed up high-precision matrix calculations. These calculations are a major time cost in science tools that simulate chemistry and materials.",
-    "tags": [
-      "scientific computing",
-      "nvidia",
-      "gpu software"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
-    "company": "NVIDIA",
-    "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
-    "published": "2026-11-13",
-    "excerpt": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing... Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing behind natural movement, from everyday actions to complex tasks. But a robot cannot simply copy the same joint motion from a human. Its proportions, joint structure, and range of motion are different, so the movement needs to be adapted to fit… Source",
-    "summary": "NVIDIA released a tool called SOMA Retargeter that adapts recorded human movements so robots can copy them. Robots have different body shapes and joints than people, so the motion must be adjusted before a robot can use it.",
-    "tags": [
-      "robotics",
-      "humanoid robots",
-      "machine learning"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://blog.cloudflare.com/spend-management/",
     "company": "Cloudflare",
     "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
@@ -2486,20 +2560,6 @@
       "ads",
       "machine learning",
       "computing power"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
-    "company": "NVIDIA",
-    "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
-    "published": "2026-11-11",
-    "excerpt": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform... As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform configuration captured in a recipe. Application teams define and update these workloads independently of the platform recipe, so a reproducible deployment bundle alone cannot establish which workload artifacts are running on each node. Source",
-    "summary": "NVIDIA describes how teams running AI workloads on tools like Dynamo, Kubeflow, or Slurm need to see what is actually running on each machine. A saved platform setup alone does not show this, since app teams change their workloads separately.",
-    "tags": [
-      "ai infrastructure",
-      "gpu computing"
     ],
     "summarized": true,
     "summary_version": 2
@@ -2765,21 +2825,6 @@
       "netflix",
       "fact checking",
       "ai systems"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-    "company": "Hugging Face",
-    "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
-    "published": "2026-11-09",
-    "excerpt": "",
-    "summary": "Hugging Face has released a new synthetic dataset of made-up personas that reflect Japan's population and financial life. It can be used to train or test AI tools for money-related tasks in Japan without using real people's private data.",
-    "tags": [
-      "ai datasets",
-      "japan",
-      "finance"
     ],
     "summarized": true,
     "summary_version": 2
@@ -4172,20 +4217,6 @@
     "summary_version": 2
   },
   {
-    "url": "https://www.figma.com/blog/websites-with-payload-in-figma/",
-    "company": "Figma",
-    "title": "Create, ship, and manage data-backed websites with Payload in Figma",
-    "published": "2026-10-15",
-    "excerpt": "With Payload in Figma, teams can go from prototype to production together, managing their content and data all in one place.",
-    "summary": "Figma announced Payload, a feature that lets teams build websites from designs and manage their content and data in one place. The teaser says this helps teams move from prototype to live site together.",
-    "tags": [
-      "web design",
-      "content management"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
     "url": "https://stripe.com/blog/real-time-stripe-data-postgres",
     "company": "Stripe",
     "title": "Sync real-time Stripe data to Postgres with Stripe Data Pipeline",
@@ -4860,21 +4891,6 @@
       "cloud storage",
       "search",
       "ai tools"
-    ],
-    "summarized": true,
-    "summary_version": 2
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/",
-    "company": "AWS",
-    "title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
-    "published": "2026-09-30",
-    "excerpt": "Amazon S3 Tables now support all data types in the Apache Iceberg V3 specification. You can create V3 tables or upgrade existing V2 tables to take advantage of V3 features like deletion vectors, row lineage, and new data types such as variant, nanosecond timestamps, unknown, geometry, and geography. Apache Iceberg has become the open standard for managing large analytics datasets. It lets you manage petabyte-scale tables with features like schema evolution, hidden partitioning, and time travel queries, while keeping your data in open Parquet files in data lakes on object storage like Amazon S3 . Amazon S3 Tables offer storage purpose-built to keep Iceberg tables performant and cost-effective as they grow, with fully managed features like automatic compaction, maintenance, replication, and Intelligent-Tiering. Teams running analytics on Apache Iceberg V2 tables often hit the same limits as their data grows. A compliance request to delete 50,000 user records from a 2-billion-row table leaves behind positional delete files that slow queries until compaction runs. Semi-structured events land as JSON strings that every query has to parse. Geospatial coordinates and nanosecond-precision timestamps get encoded as strings or integers. Each workaround adds storage cost, query latency, and pipeline code. With V3, Iceberg solves these challenges by offering native support for semi-structured and geospatial data, faster row-level operations, and built-in row lineage for data governance. Starting today, Amazon S3 Tables support all V3 data types, including variant, nanosecond timestamps, geometry, geography, and unknown, along with deletion vectors and row lineage. You can create new V3 tables or upgrade existing V2 tables in place, and S3 Tables continue to run compaction and maintenance for you. Apache Iceberg V3 V3 is the latest version of the Iceberg specification . Among its many improvements, V3 introduces capabilities that address the most common pain points in V2. This includes: Deletion vectors replace V2’s positional delete files with a compact binary format. That 50,000-row compliance delete now writes a single deletion vector file instead of thousands of small deletes, significantly reducing compaction time and delete file overhead. Row lineage adds _row_id and _last_updated_sequence_number to each record automatically. Your downstream pipelines can query these fields to find changed rows without scanning the full table. New data types let you store semi-structured, geospatial, and nanosecond-precision data natively instead of encoding it as strings or integers: Nanosecond timestamp(tz) for nanosecond-precision timestamps Geometry and geography for geospatial data Unknown for columns with no known type Variant data type stores semi-structured data in columnar format. During writes, the engine shreds variant data into hidden columns and collects statistics. At query time, those statistics enable file pruning that significantly reduces I/O compared to parsing JSON strings. The following sections walk through how to use these V3 capabilities in practice, with examples that show how to create tables, work with the new data types, and manage data at scale. Getting started A retail analytics team tracks user behavior across web and mobile apps. Each event has a different structure: page views include URLs and duration, purchases include items and amounts, and searches include query terms and result counts. With V3’s variant type, you store all event shapes in one table without predefined schemas: CREATE TABLE my_catalog.namespace.clickstream ( event_id bigint, event_time timestamp, user_id string, payload variant ) USING iceberg TBLPROPERTIES ('format-version' = '3') Insert events with different payload shapes without worrying about schema evolution: INSERT INTO my_catalog.namespace.clickstream VALUES (1, current_timestamp(), 'user-42', PARSE_JSON('{\"action\": \"purchase\", \"amount\": 99.99, \"items\": [\"laptop_stand\"]}')), (2, current_tim",
-    "summary": "Amazon S3 Tables now support every data type in the newest Apache Iceberg table version (V3), so teams can build new tables or upgrade old ones. This means mixed-format data like app events, map locations, and very precise timestamps can be stored directly, with fewer workarounds and faster queries.",
-    "tags": [
-      "cloud storage",
-      "data analytics",
-      "amazon web services"
     ],
     "summarized": true,
     "summary_version": 2
